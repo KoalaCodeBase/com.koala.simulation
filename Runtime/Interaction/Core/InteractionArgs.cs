@@ -1,8 +1,11 @@
+using Koala.Simulation.Common;
+
 namespace Koala.Simulation.Interaction.Core
 {
     /// <summary>
     /// Holds identifiers for the interactor and interactable involved in an interaction.
     /// </summary>
+    [DocfxIgnore]
     public struct InteractionArgs
     {
         /// <summary>

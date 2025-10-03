@@ -1,3 +1,4 @@
+using Koala.Simulation.Common;
 using UnityEditor;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ namespace Koala.Simulation.Interaction.Core
     /// <summary>
     /// Provides editor utilities for creating interaction display UI elements.
     /// </summary>
+    [DocfxIgnore]
     public class KoalaControls
     {
         /// <summary>

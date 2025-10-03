@@ -9,7 +9,7 @@ namespace Koala.Simulation.Interaction.Components
     /// <summary>
     /// UI label that displays an interaction prompt with its corresponding input key.
     /// </summary>
-    [AddComponentMenu("Koala/Simulation/UI/Interaction Label")]
+    [AddComponentMenu("Simulation/Interaction/Interaction Label")]
     [Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")]
     public sealed class InteractionLabel : MonoBehaviour
     {
@@ -39,7 +39,7 @@ namespace Koala.Simulation.Interaction.Components
         /// <param name="context">The interaction context containing action name and prompt.</param>
         public void Set(InteractionContext context)
         {
-            if (InputService.TryGetSprite(context.ActionName, out var sprite))
+            if (InputManager.TryGetSprite(context.ActionName, out var sprite))
             {
                 _keyMappedSpriteImage.sprite = sprite;
                 _keyMappedSpriteImage.gameObject.SetActive(true);
@@ -48,7 +48,7 @@ namespace Koala.Simulation.Interaction.Components
             }
             else
             {
-                _keyTMP.text = InputService.GetKeyByActionName(context.ActionName);
+                _keyTMP.text = InputManager.GetKeyDisplayName(context.ActionName);
                 _keyTMP.gameObject.SetActive(true);
                 _keyImage.gameObject.SetActive(true);
                 _keyMappedSpriteImage.gameObject.SetActive(false);

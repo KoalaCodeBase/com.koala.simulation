@@ -2,7 +2,7 @@
     "name": "PlayerInputAction",
     "maps": [
         {
-            "name": "PlayerActions",
+            "name": "Gameplay",
             "id": "da49e145-b32c-4788-8b5c-2206cd845aac",
             "actions": [
                 {
@@ -42,7 +42,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Interact",
+                    "name": "Use",
                     "type": "Button",
                     "id": "f4ebe76a-d0a0-4362-b269-ca27b2a40863",
                     "expectedControlType": "",
@@ -51,13 +51,40 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "LeftMouseTest",
+                    "name": "Open",
+                    "type": "Button",
+                    "id": "2a02544b-17fa-42ec-81e8-3e12f2be9b17",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MouseLeft",
                     "type": "Button",
                     "id": "34a70296-afcc-45da-98ff-7e77733e76e3",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MouseRight",
+                    "type": "Button",
+                    "id": "6730d588-cad4-4320-bb49-5dfe639387be",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Scroll",
+                    "type": "Value",
+                    "id": "5ce29530-94fd-4781-a357-d2a49f2d0176",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -244,7 +271,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";KeyboardMouse",
-                    "action": "Interact",
+                    "action": "Use",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -255,7 +282,40 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftMouseTest",
+                    "action": "MouseLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5496596-8082-4bd7-aa42-8b00d82c1279",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1eb92e02-216f-4b4e-98de-64939518959b",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Open",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "574673ee-2a15-41ee-a696-d4bed5edb4ab",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Scroll",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

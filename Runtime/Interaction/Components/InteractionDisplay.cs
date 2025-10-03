@@ -6,13 +6,13 @@ namespace Koala.Simulation.Interaction.Components
 {
     /// <summary>
     /// Displays active interaction prompts in the UI using a fixed pool of 12 labels.
-    /// </summary>
-    /// <remarks>
+    /// <note type="tip">
     /// It is strongly recommended to place this component on its own dedicated Canvas,
     /// as frequent updates may otherwise cause unnecessary layout rebuilds
     /// in other UI elements.
-    /// </remarks>
-    [AddComponentMenu("Koala/Simulation/UI/Interaction Display")]
+    /// </note>
+    /// </summary>
+    [AddComponentMenu("Simulation/Interaction/Interaction Display")]
     [Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")]
     [DefaultExecutionOrder(1)]
     public sealed class InteractionDisplay : MonoBehaviour

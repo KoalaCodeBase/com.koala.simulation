@@ -1,10 +1,12 @@
 using System;
+using Koala.Simulation.Common;
 
 namespace Koala.Simulation.Interaction.Core
 {
     /// <summary>
     /// Holds contextual data for an interaction, including action details and callback behavior.
     /// </summary>
+    [DocfxIgnore]
     public readonly struct InteractionContext
     {
         /// <summary>

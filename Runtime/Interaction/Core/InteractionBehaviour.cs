@@ -24,7 +24,7 @@ namespace Koala.Simulation.Interaction.Core
             if (!IsInteractable())
                 return;
 
-            OnInteract(args);
+            OnInteract(InteractorRegistry.Get(args.interactorId), InteractableRegistry.Get(args.interactableId));
             OnInteractionPerform?.Invoke();
         }
 
@@ -63,6 +63,6 @@ namespace Koala.Simulation.Interaction.Core
         /// Override to define custom interaction logic.
         /// </summary>
         /// <param name="args">Interaction arguments containing interactor and interactable IDs.</param>
-        protected virtual void OnInteract(InteractionArgs args) { }
+        protected virtual void OnInteract(Interactor interactor, InteractableObject interactable) { }
     }
 }

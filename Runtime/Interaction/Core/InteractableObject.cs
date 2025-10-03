@@ -2,42 +2,40 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 using UnityEngine.Events;
+using Koala.Simulation.Common;
 
 namespace Koala.Simulation.Interaction.Core
 {
     /// <summary>
-    /// Base component for objects that can be interacted with in the simulation.
-    /// Holds a collection of <see cref="InteractionBehaviour"/> instances
-    /// and exposes them as <see cref="InteractionContext"/> entries.
+    /// Base class for all interactable objects in the simulation.
+    /// 
+    /// Provides a registry ID, manages attached interaction behaviours,
+    /// and triggers interaction events when interacted with.
+    /// 
+    /// Inherit this class to create custom interactable objects by overriding
+    /// lifecycle hooks such as <see cref="OnAwake"/>, <see cref="OnEnabled"/>, and <see cref="OnDisabled"/>.
+    /// <note type="tip">
+    /// Inherit this class and define its <see cref="InteractionBehaviour"/>s
+    /// to start to interact with the object.
+    /// 
+    /// See: <xref uid="Koala.Simulation.Interaction.Components.Interactable" altProperty="fullName" displayProperty="name"/>
+    /// </note>
     /// </summary>
     public abstract class InteractableObject : MonoBehaviour
     {
-        /// <summary>
-        /// Interaction behaviours that define available interactions for this object.
-        /// </summary>
         [SerializeField] private List<InteractionBehaviour> _interactionBehaviours = new();
-
-        /// <summary>
-        /// Event invoked when an interaction begins on this object.
-        /// </summary>
         [SerializeField] private UnityEvent OnInteract;
-
-        /// <summary>
-        /// Event invoked when an interaction ends on this object.
-        /// </summary>
         [SerializeField] private UnityEvent OnInteractEnd;
 
-        // cache re-use için tek liste
         private readonly List<InteractionContext> _contextCache = new(12);
-
         private int _id;
-        /// <summary>
-        /// The unique ID of this interactable object.
-        /// </summary>
+
+        [DocfxIgnore]
         protected int Id => _id;
 
+
         /// <summary>
-        /// Called when an interaction is successfully performed on any of the behaviours.
+        /// Event invoked when one of the <see cref="InteractionBehaviour"/> triggers an interaction.
         /// </summary>
         public event Action OnBehaviourInteraction;
 
@@ -73,12 +71,8 @@ namespace Koala.Simulation.Interaction.Core
             OnInteractEnd?.Invoke();
         }
 
-        /// <summary>
-        /// Retrieves all interaction contexts available for this object,
-        /// without binding them to a specific interactor.
-        /// </summary>
-        /// <returns>A list of available interaction contexts.</returns>
-        public IReadOnlyList<InteractionContext> GetInteractions()
+        [DocfxIgnore]
+        internal IReadOnlyList<InteractionContext> GetInteractions()
         {
             _contextCache.Clear();
             OnInteract?.Invoke();
@@ -99,13 +93,8 @@ namespace Koala.Simulation.Interaction.Core
             return _contextCache;
         }
 
-        /// <summary>
-        /// Retrieves all interaction contexts available for this object,
-        /// binding them to a specific interactor by ID.
-        /// </summary>
-        /// <param name="interactorId">The ID of the interactor requesting interactions.</param>
-        /// <returns>A list of available interaction contexts bound to the interactor.</returns>
-        public IReadOnlyList<InteractionContext> GetInteractions(int interactorId)
+        [DocfxIgnore]
+        internal IReadOnlyList<InteractionContext> GetInteractions(int interactorId)
         {
             _contextCache.Clear();
             OnInteract?.Invoke();
@@ -128,17 +117,17 @@ namespace Koala.Simulation.Interaction.Core
         }
 
         /// <summary>
-        /// Hook for subclasses to add extra initialization logic during <see cref="Awake"/>.
+        /// Called during Awake. Override to implement custom initialization logic.
         /// </summary>
         protected virtual void OnAwake() { }
 
         /// <summary>
-        /// Hook for subclasses to add extra logic when the object is enabled.
+        /// Called during OnEnable. Override to implement custom logic when enabled.
         /// </summary>
         protected virtual void OnEnabled() { }
 
         /// <summary>
-        /// Hook for subclasses to add extra logic when the object is disabled.
+        /// Called during OnDisable. Override to implement custom logic when disabled.
         /// </summary>
         protected virtual void OnDisabled() { }
     }

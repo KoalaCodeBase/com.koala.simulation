@@ -1,10 +1,12 @@
 using System.Collections.Generic;
+using Koala.Simulation.Common;
 
 namespace Koala.Simulation.Interaction.Core
 {
     /// <summary>
     /// Provides registration and lookup for interactors by ID.
     /// </summary>
+    [DocfxIgnore]
     public static class InteractorRegistry
     {
         private static int _nextId = 1;
@@ -33,6 +35,7 @@ namespace Koala.Simulation.Interaction.Core
     /// <summary>
     /// Provides registration and lookup for interactable objects by ID.
     /// </summary>
+    [DocfxIgnore]
     public static class InteractableRegistry
     {
         private static int _nextId = 1;

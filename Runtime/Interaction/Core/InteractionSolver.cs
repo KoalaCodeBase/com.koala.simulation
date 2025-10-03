@@ -5,47 +5,39 @@ using UnityEngine.InputSystem;
 
 namespace Koala.Simulation.Interaction.Core
 {
-    /// <summary>
-    /// Resolves available interactions from nearby interactable objects and triggers callbacks on input.
-    /// </summary>
     public class InteractionSolver : IDisposable
     {
         private readonly Dictionary<string, InteractionContext> _currentInteractions = new(8);
         private readonly List<InteractableObject> _lastSerie = new();
+        private readonly HashSet<string> _heldActions = new();
         private readonly bool _generateInteractionArgs;
         private readonly int _id;
+        private float _nextTickTime;
+        private float _tickInterval = 0.1f;
 
-        /// <summary>
-        /// Invoked when the set of available interactions changes.
-        /// Subscribe to this event to get the current interactions belongs this solver.
-        /// </summary>
         public event Action<IReadOnlyDictionary<string, InteractionContext>> OnNewInteraction;
 
-        /// <summary>
-        /// Creates a new interaction solver.
-        /// </summary>
-        /// <param name="generateInteractionArgs">Whether interaction arguments should be generated.</param>
-        /// <param name="id">The solver ID used for filtering interactions.</param>
         public InteractionSolver(bool generateInteractionArgs, int id)
         {
             _generateInteractionArgs = generateInteractionArgs;
             _id = id;
-            InputService.OnInputReceive += OnInputReceive;
+
+            InputManager.OnAnyActionPhase += OnInputReceive;
+            InputManager.Subscribe("MouseLeft", OnMouseButtonPerform, InputActionPhase.Started);
+            InputManager.Subscribe("MouseRight", OnMouseButtonPerform, InputActionPhase.Started);
+            InputManager.Subscribe("MouseLeft", OnMouseButtonCancel, InputActionPhase.Canceled);
+            InputManager.Subscribe("MouseRight", OnMouseButtonCancel, InputActionPhase.Canceled);
         }
 
-        /// <summary>
-        /// Unsubscribes from input events and cleans up resources.
-        /// </summary>
         public void Dispose()
         {
-            InputService.OnInputReceive -= OnInputReceive;
+            InputManager.OnAnyActionPhase -= OnInputReceive;
+            InputManager.Unsubscribe("MouseLeft", OnMouseButtonPerform);
+            InputManager.Unsubscribe("MouseRight", OnMouseButtonPerform);
+            InputManager.Unsubscribe("MouseLeft", OnMouseButtonCancel);
+            InputManager.Unsubscribe("MouseRight", OnMouseButtonCancel);
         }
 
-        /// <summary>
-        /// Updates the solver with a new set of interactable objects and resolves their interactions.
-        /// Call this method when you handle set of <see cref="InteractableObject"/> to solve their interactions.
-        /// </summary>
-        /// <param name="interactableObjects">The list of interactable objects in range.</param>
         public void Solve(List<InteractableObject> interactableObjects)
         {
             _currentInteractions.Clear();
@@ -73,23 +65,51 @@ namespace Koala.Simulation.Interaction.Core
             _lastSerie.AddRange(interactableObjects);
         }
 
-        /// <summary>
-        /// Clears all interactions and signals the end of any active ones.
-        /// To ensure no data remains on the solver, call this method when there are no interactable objects left to process.
-        /// </summary>
         public void Reset()
         {
             _currentInteractions.Clear();
             foreach (var interactable in _lastSerie)
                 interactable.OnInteractionEnded();
             _lastSerie.Clear();
+            _heldActions.Clear();
             OnNewInteraction?.Invoke(_currentInteractions);
         }
 
         private void OnInputReceive(InputAction.CallbackContext ctx)
         {
+            if (ctx.action.name == "MouseLeft" || ctx.action.name == "MouseRight")
+                return;
+
             if (_currentInteractions.TryGetValue(ctx.action.name, out var interaction))
-                interaction.OnInteract?.Invoke();
+            {
+                if (ctx.performed)
+                    interaction.OnInteract?.Invoke();
+            }
+        }
+
+        private void OnMouseButtonPerform(InputAction.CallbackContext ctx)
+        {
+            if (!_heldActions.Contains(ctx.action.name))
+                _heldActions.Add(ctx.action.name);
+        }
+
+        private void OnMouseButtonCancel(InputAction.CallbackContext ctx)
+        {
+            if (_heldActions.Contains(ctx.action.name))
+                _heldActions.Remove(ctx.action.name);
+        }
+
+        public void Tick()
+        {
+            if (UnityEngine.Time.time < _nextTickTime)
+                return;
+            _nextTickTime = UnityEngine.Time.time + _tickInterval;
+
+            foreach (var actionName in _heldActions)
+            {
+                if (_currentInteractions.TryGetValue(actionName, out var interaction))
+                    interaction.OnInteract?.Invoke();
+            }
         }
     }
 }
