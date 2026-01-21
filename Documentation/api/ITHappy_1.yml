@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: ITHappy
+  commentId: N:ITHappy
+  id: ITHappy
+  children:
+  - ITHappy.AnimationNode
+  - ITHappy.AnimationNode.AnimationFPS
+  - ITHappy.AnimationPipeline
+  - ITHappy.AnimationState
+  - ITHappy.CharacterRandom
+  - ITHappy.MoveAnimation
+  - ITHappy.ObjectSwitcher
+  langs:
+  - csharp
+  - vb
+  name: ITHappy
+  nameWithType: ITHappy
+  fullName: ITHappy
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: ITHappy.MoveAnimation
+  commentId: T:ITHappy.MoveAnimation
+  href: ITHappy.MoveAnimation.html
+  name: MoveAnimation
+  nameWithType: MoveAnimation
+  fullName: ITHappy.MoveAnimation
+- uid: ITHappy.AnimationState
+  commentId: T:ITHappy.AnimationState
+  href: ITHappy.AnimationState.html
+  name: AnimationState
+  nameWithType: AnimationState
+  fullName: ITHappy.AnimationState
+- uid: ITHappy.CharacterRandom
+  commentId: T:ITHappy.CharacterRandom
+  href: ITHappy.CharacterRandom.html
+  name: CharacterRandom
+  nameWithType: CharacterRandom
+  fullName: ITHappy.CharacterRandom
+- uid: ITHappy.AnimationPipeline
+  commentId: T:ITHappy.AnimationPipeline
+  href: ITHappy.AnimationPipeline.html
+  name: AnimationPipeline
+  nameWithType: AnimationPipeline
+  fullName: ITHappy.AnimationPipeline
+- uid: ITHappy.AnimationNode
+  commentId: T:ITHappy.AnimationNode
+  parent: ITHappy
+  href: ITHappy.AnimationNode.html
+  name: AnimationNode
+  nameWithType: AnimationNode
+  fullName: ITHappy.AnimationNode
+- uid: ITHappy.AnimationNode.AnimationFPS
+  commentId: T:ITHappy.AnimationNode.AnimationFPS
+  parent: ITHappy
+  href: ITHappy.AnimationNode.html
+  name: AnimationNode.AnimationFPS
+  nameWithType: AnimationNode.AnimationFPS
+  fullName: ITHappy.AnimationNode.AnimationFPS
+  spec.csharp:
+  - uid: ITHappy.AnimationNode
+    name: AnimationNode
+    href: ITHappy.AnimationNode.html
+  - name: .
+  - uid: ITHappy.AnimationNode.AnimationFPS
+    name: AnimationFPS
+    href: ITHappy.AnimationNode.AnimationFPS.html
+  spec.vb:
+  - uid: ITHappy.AnimationNode
+    name: AnimationNode
+    href: ITHappy.AnimationNode.html
+  - name: .
+  - uid: ITHappy.AnimationNode.AnimationFPS
+    name: AnimationFPS
+    href: ITHappy.AnimationNode.AnimationFPS.html
+- uid: ITHappy.ObjectSwitcher
+  commentId: T:ITHappy.ObjectSwitcher
+  href: ITHappy.ObjectSwitcher.html
+  name: ObjectSwitcher
+  nameWithType: ObjectSwitcher
+  fullName: ITHappy.ObjectSwitcher
+- uid: ITHappy
+  commentId: N:ITHappy
+  href: ITHappy.html
+  name: ITHappy
+  nameWithType: ITHappy
+  fullName: ITHappy

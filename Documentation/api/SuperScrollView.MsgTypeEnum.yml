@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.MsgTypeEnum
+  commentId: T:SuperScrollView.MsgTypeEnum
+  id: MsgTypeEnum
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.MsgTypeEnum.Count
+  - SuperScrollView.MsgTypeEnum.Picture
+  - SuperScrollView.MsgTypeEnum.Str
+  langs:
+  - csharp
+  - vb
+  name: MsgTypeEnum
+  nameWithType: MsgTypeEnum
+  fullName: SuperScrollView.MsgTypeEnum
+  type: Enum
+  source:
+    id: MsgTypeEnum
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ChatMsgDataSourceMgr.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public enum MsgTypeEnum
+    content.vb: Public Enum MsgTypeEnum
+- uid: SuperScrollView.MsgTypeEnum.Str
+  commentId: F:SuperScrollView.MsgTypeEnum.Str
+  id: Str
+  parent: SuperScrollView.MsgTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Str
+  nameWithType: MsgTypeEnum.Str
+  fullName: SuperScrollView.MsgTypeEnum.Str
+  type: Field
+  source:
+    id: Str
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ChatMsgDataSourceMgr.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: Str = 0
+    return:
+      type: SuperScrollView.MsgTypeEnum
+- uid: SuperScrollView.MsgTypeEnum.Picture
+  commentId: F:SuperScrollView.MsgTypeEnum.Picture
+  id: Picture
+  parent: SuperScrollView.MsgTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Picture
+  nameWithType: MsgTypeEnum.Picture
+  fullName: SuperScrollView.MsgTypeEnum.Picture
+  type: Field
+  source:
+    id: Picture
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ChatMsgDataSourceMgr.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: Picture = 1
+    return:
+      type: SuperScrollView.MsgTypeEnum
+- uid: SuperScrollView.MsgTypeEnum.Count
+  commentId: F:SuperScrollView.MsgTypeEnum.Count
+  id: Count
+  parent: SuperScrollView.MsgTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: MsgTypeEnum.Count
+  fullName: SuperScrollView.MsgTypeEnum.Count
+  type: Field
+  source:
+    id: Count
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ChatMsgDataSourceMgr.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: Count = 2
+    return:
+      type: SuperScrollView.MsgTypeEnum
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: SuperScrollView.MsgTypeEnum
+  commentId: T:SuperScrollView.MsgTypeEnum
+  parent: SuperScrollView
+  href: SuperScrollView.MsgTypeEnum.html
+  name: MsgTypeEnum
+  nameWithType: MsgTypeEnum
+  fullName: SuperScrollView.MsgTypeEnum

@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Noise.FractalType
+  commentId: T:AssetKits.ParticleImage.Noise.FractalType
+  id: Noise.FractalType
+  parent: AssetKits.ParticleImage
+  children:
+  - AssetKits.ParticleImage.Noise.FractalType.DomainWarpIndependent
+  - AssetKits.ParticleImage.Noise.FractalType.DomainWarpProgressive
+  - AssetKits.ParticleImage.Noise.FractalType.FBm
+  - AssetKits.ParticleImage.Noise.FractalType.None
+  - AssetKits.ParticleImage.Noise.FractalType.PingPong
+  - AssetKits.ParticleImage.Noise.FractalType.Ridged
+  langs:
+  - csharp
+  - vb
+  name: Noise.FractalType
+  nameWithType: Noise.FractalType
+  fullName: AssetKits.ParticleImage.Noise.FractalType
+  type: Enum
+  source:
+    id: FractalType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 57
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public enum Noise.FractalType
+    content.vb: Public Enum Noise.FractalType
+- uid: AssetKits.ParticleImage.Noise.FractalType.None
+  commentId: F:AssetKits.ParticleImage.Noise.FractalType.None
+  id: None
+  parent: AssetKits.ParticleImage.Noise.FractalType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Noise.FractalType.None
+  fullName: AssetKits.ParticleImage.Noise.FractalType.None
+  type: Field
+  source:
+    id: None
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 59
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: None = 0
+    return:
+      type: AssetKits.ParticleImage.Noise.FractalType
+- uid: AssetKits.ParticleImage.Noise.FractalType.FBm
+  commentId: F:AssetKits.ParticleImage.Noise.FractalType.FBm
+  id: FBm
+  parent: AssetKits.ParticleImage.Noise.FractalType
+  langs:
+  - csharp
+  - vb
+  name: FBm
+  nameWithType: Noise.FractalType.FBm
+  fullName: AssetKits.ParticleImage.Noise.FractalType.FBm
+  type: Field
+  source:
+    id: FBm
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 60
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: FBm = 1
+    return:
+      type: AssetKits.ParticleImage.Noise.FractalType
+- uid: AssetKits.ParticleImage.Noise.FractalType.Ridged
+  commentId: F:AssetKits.ParticleImage.Noise.FractalType.Ridged
+  id: Ridged
+  parent: AssetKits.ParticleImage.Noise.FractalType
+  langs:
+  - csharp
+  - vb
+  name: Ridged
+  nameWithType: Noise.FractalType.Ridged
+  fullName: AssetKits.ParticleImage.Noise.FractalType.Ridged
+  type: Field
+  source:
+    id: Ridged
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 61
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Ridged = 2
+    return:
+      type: AssetKits.ParticleImage.Noise.FractalType
+- uid: AssetKits.ParticleImage.Noise.FractalType.PingPong
+  commentId: F:AssetKits.ParticleImage.Noise.FractalType.PingPong
+  id: PingPong
+  parent: AssetKits.ParticleImage.Noise.FractalType
+  langs:
+  - csharp
+  - vb
+  name: PingPong
+  nameWithType: Noise.FractalType.PingPong
+  fullName: AssetKits.ParticleImage.Noise.FractalType.PingPong
+  type: Field
+  source:
+    id: PingPong
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 62
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: PingPong = 3
+    return:
+      type: AssetKits.ParticleImage.Noise.FractalType
+- uid: AssetKits.ParticleImage.Noise.FractalType.DomainWarpProgressive
+  commentId: F:AssetKits.ParticleImage.Noise.FractalType.DomainWarpProgressive
+  id: DomainWarpProgressive
+  parent: AssetKits.ParticleImage.Noise.FractalType
+  langs:
+  - csharp
+  - vb
+  name: DomainWarpProgressive
+  nameWithType: Noise.FractalType.DomainWarpProgressive
+  fullName: AssetKits.ParticleImage.Noise.FractalType.DomainWarpProgressive
+  type: Field
+  source:
+    id: DomainWarpProgressive
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 63
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: DomainWarpProgressive = 4
+    return:
+      type: AssetKits.ParticleImage.Noise.FractalType
+- uid: AssetKits.ParticleImage.Noise.FractalType.DomainWarpIndependent
+  commentId: F:AssetKits.ParticleImage.Noise.FractalType.DomainWarpIndependent
+  id: DomainWarpIndependent
+  parent: AssetKits.ParticleImage.Noise.FractalType
+  langs:
+  - csharp
+  - vb
+  name: DomainWarpIndependent
+  nameWithType: Noise.FractalType.DomainWarpIndependent
+  fullName: AssetKits.ParticleImage.Noise.FractalType.DomainWarpIndependent
+  type: Field
+  source:
+    id: DomainWarpIndependent
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 64
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: DomainWarpIndependent = 5
+    return:
+      type: AssetKits.ParticleImage.Noise.FractalType
+references:
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  href: AssetKits.html
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+- uid: AssetKits.ParticleImage.Noise.FractalType
+  commentId: T:AssetKits.ParticleImage.Noise.FractalType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.FractalType
+  nameWithType: Noise.FractalType
+  fullName: AssetKits.ParticleImage.Noise.FractalType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.FractalType
+    name: FractalType
+    href: AssetKits.ParticleImage.Noise.FractalType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.FractalType
+    name: FractalType
+    href: AssetKits.ParticleImage.Noise.FractalType.html

@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.Core.InteractionContext
+  commentId: T:Koala.Simulation.Interaction.Core.InteractionContext
+  id: InteractionContext
+  parent: Koala.Simulation.Interaction.Core
+  children:
+  - Koala.Simulation.Interaction.Core.InteractionContext.#ctor(System.String,System.String,System.Action)
+  - Koala.Simulation.Interaction.Core.InteractionContext.#ctor(System.String,System.String,System.Action,Koala.Simulation.Interaction.Core.InteractionArgs)
+  langs:
+  - csharp
+  - vb
+  name: InteractionContext
+  nameWithType: InteractionContext
+  fullName: Koala.Simulation.Interaction.Core.InteractionContext
+  type: Struct
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionContext.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InteractionContext
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionContext.cs
+    startLine: 7
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Holds contextual data for an interaction, including action details and callback behavior.
+  example: []
+  syntax:
+    content: public readonly struct InteractionContext
+    content.vb: Public Structure InteractionContext
+- uid: Koala.Simulation.Interaction.Core.InteractionContext.#ctor(System.String,System.String,System.Action)
+  commentId: M:Koala.Simulation.Interaction.Core.InteractionContext.#ctor(System.String,System.String,System.Action)
+  id: '#ctor(System.String,System.String,System.Action)'
+  parent: Koala.Simulation.Interaction.Core.InteractionContext
+  langs:
+  - csharp
+  - vb
+  name: InteractionContext(string, string, Action)
+  nameWithType: InteractionContext.InteractionContext(string, string, Action)
+  fullName: Koala.Simulation.Interaction.Core.InteractionContext.InteractionContext(string, string, System.Action)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionContext.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: .ctor
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionContext.cs
+    startLine: 35
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Creates a new interaction context with an action name, prompt, and callback.
+  example: []
+  syntax:
+    content: public InteractionContext(string actionName, string prompt, Action onInteractCallback)
+    parameters:
+    - id: actionName
+      type: System.String
+      description: The name of the action.
+    - id: prompt
+      type: System.String
+      description: The message shown to the player.
+    - id: onInteractCallback
+      type: System.Action
+      description: The callback to invoke on interaction.
+    content.vb: Public Sub New(actionName As String, prompt As String, onInteractCallback As Action)
+  overload: Koala.Simulation.Interaction.Core.InteractionContext.#ctor*
+  nameWithType.vb: InteractionContext.New(String, String, Action)
+  fullName.vb: Koala.Simulation.Interaction.Core.InteractionContext.New(String, String, System.Action)
+  name.vb: New(String, String, Action)
+- uid: Koala.Simulation.Interaction.Core.InteractionContext.#ctor(System.String,System.String,System.Action,Koala.Simulation.Interaction.Core.InteractionArgs)
+  commentId: M:Koala.Simulation.Interaction.Core.InteractionContext.#ctor(System.String,System.String,System.Action,Koala.Simulation.Interaction.Core.InteractionArgs)
+  id: '#ctor(System.String,System.String,System.Action,Koala.Simulation.Interaction.Core.InteractionArgs)'
+  parent: Koala.Simulation.Interaction.Core.InteractionContext
+  langs:
+  - csharp
+  - vb
+  name: InteractionContext(string, string, Action, InteractionArgs)
+  nameWithType: InteractionContext.InteractionContext(string, string, Action, InteractionArgs)
+  fullName: Koala.Simulation.Interaction.Core.InteractionContext.InteractionContext(string, string, System.Action, Koala.Simulation.Interaction.Core.InteractionArgs)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionContext.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: .ctor
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionContext.cs
+    startLine: 50
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Creates a new interaction context with an action name, prompt, callback, and arguments.
+  example: []
+  syntax:
+    content: public InteractionContext(string actionName, string prompt, Action onInteractCallback, InteractionArgs interactionArgs)
+    parameters:
+    - id: actionName
+      type: System.String
+      description: The name of the action.
+    - id: prompt
+      type: System.String
+      description: The message shown to the player.
+    - id: onInteractCallback
+      type: System.Action
+      description: The callback to invoke on interaction.
+    - id: interactionArgs
+      type: Koala.Simulation.Interaction.Core.InteractionArgs
+      description: Additional data passed with the interaction.
+    content.vb: Public Sub New(actionName As String, prompt As String, onInteractCallback As Action, interactionArgs As InteractionArgs)
+  overload: Koala.Simulation.Interaction.Core.InteractionContext.#ctor*
+  nameWithType.vb: InteractionContext.New(String, String, Action, InteractionArgs)
+  fullName.vb: Koala.Simulation.Interaction.Core.InteractionContext.New(String, String, System.Action, Koala.Simulation.Interaction.Core.InteractionArgs)
+  name.vb: New(String, String, Action, InteractionArgs)
+references:
+- uid: Koala.Simulation.Interaction.Core
+  commentId: N:Koala.Simulation.Interaction.Core
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Core
+  nameWithType: Koala.Simulation.Interaction.Core
+  fullName: Koala.Simulation.Interaction.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+- uid: Koala.Simulation.Interaction.Core.InteractionContext.#ctor*
+  commentId: Overload:Koala.Simulation.Interaction.Core.InteractionContext.#ctor
+  href: Koala.Simulation.Interaction.Core.InteractionContext.html#Koala_Simulation_Interaction_Core_InteractionContext__ctor_System_String_System_String_System_Action_
+  name: InteractionContext
+  nameWithType: InteractionContext.InteractionContext
+  fullName: Koala.Simulation.Interaction.Core.InteractionContext.InteractionContext
+  nameWithType.vb: InteractionContext.New
+  fullName.vb: Koala.Simulation.Interaction.Core.InteractionContext.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Interaction.Core.InteractionArgs
+  commentId: T:Koala.Simulation.Interaction.Core.InteractionArgs
+  parent: Koala.Simulation.Interaction.Core
+  href: Koala.Simulation.Interaction.Core.InteractionArgs.html
+  name: InteractionArgs
+  nameWithType: InteractionArgs
+  fullName: Koala.Simulation.Interaction.Core.InteractionArgs

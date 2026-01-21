@@ -1,0 +1,1037 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Internal.ES3IO
+  commentId: T:ES3Internal.ES3IO
+  id: ES3IO
+  parent: ES3Internal
+  children:
+  - ES3Internal.ES3IO.CombinePathAndFilename(System.String,System.String)
+  - ES3Internal.ES3IO.CommitBackup(ES3Settings)
+  - ES3Internal.ES3IO.CopyFile(System.String,System.String)
+  - ES3Internal.ES3IO.CreateDirectory(System.String)
+  - ES3Internal.ES3IO.DeleteDirectory(System.String)
+  - ES3Internal.ES3IO.DeleteFile(System.String)
+  - ES3Internal.ES3IO.DirectoryExists(System.String)
+  - ES3Internal.ES3IO.FileExists(System.String)
+  - ES3Internal.ES3IO.GetDirectories(System.String,System.Boolean)
+  - ES3Internal.ES3IO.GetDirectoryPath(System.String,System.Char)
+  - ES3Internal.ES3IO.GetExtension(System.String)
+  - ES3Internal.ES3IO.GetFiles(System.String,System.Boolean)
+  - ES3Internal.ES3IO.GetTimestamp(System.String)
+  - ES3Internal.ES3IO.MoveDirectory(System.String,System.String)
+  - ES3Internal.ES3IO.MoveFile(System.String,System.String)
+  - ES3Internal.ES3IO.ReadAllBytes(System.String)
+  - ES3Internal.ES3IO.UsesForwardSlash(System.String)
+  - ES3Internal.ES3IO.WriteAllBytes(System.String,System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: ES3IO
+  nameWithType: ES3IO
+  fullName: ES3Internal.ES3IO
+  type: Class
+  source:
+    id: ES3IO
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static class ES3IO
+    content.vb: Public Module ES3IO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ES3Internal.ES3IO.GetTimestamp(System.String)
+  commentId: M:ES3Internal.ES3IO.GetTimestamp(System.String)
+  id: GetTimestamp(System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: GetTimestamp(string)
+  nameWithType: ES3IO.GetTimestamp(string)
+  fullName: ES3Internal.ES3IO.GetTimestamp(string)
+  type: Method
+  source:
+    id: GetTimestamp
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static DateTime GetTimestamp(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+    return:
+      type: System.DateTime
+    content.vb: Public Shared Function GetTimestamp(filePath As String) As Date
+  overload: ES3Internal.ES3IO.GetTimestamp*
+  nameWithType.vb: ES3IO.GetTimestamp(String)
+  fullName.vb: ES3Internal.ES3IO.GetTimestamp(String)
+  name.vb: GetTimestamp(String)
+- uid: ES3Internal.ES3IO.GetExtension(System.String)
+  commentId: M:ES3Internal.ES3IO.GetExtension(System.String)
+  id: GetExtension(System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: GetExtension(string)
+  nameWithType: ES3IO.GetExtension(string)
+  fullName: ES3Internal.ES3IO.GetExtension(string)
+  type: Method
+  source:
+    id: GetExtension
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static string GetExtension(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetExtension(path As String) As String
+  overload: ES3Internal.ES3IO.GetExtension*
+  nameWithType.vb: ES3IO.GetExtension(String)
+  fullName.vb: ES3Internal.ES3IO.GetExtension(String)
+  name.vb: GetExtension(String)
+- uid: ES3Internal.ES3IO.DeleteFile(System.String)
+  commentId: M:ES3Internal.ES3IO.DeleteFile(System.String)
+  id: DeleteFile(System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: DeleteFile(string)
+  nameWithType: ES3IO.DeleteFile(string)
+  fullName: ES3Internal.ES3IO.DeleteFile(string)
+  type: Method
+  source:
+    id: DeleteFile
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static void DeleteFile(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+    content.vb: Public Shared Sub DeleteFile(filePath As String)
+  overload: ES3Internal.ES3IO.DeleteFile*
+  nameWithType.vb: ES3IO.DeleteFile(String)
+  fullName.vb: ES3Internal.ES3IO.DeleteFile(String)
+  name.vb: DeleteFile(String)
+- uid: ES3Internal.ES3IO.FileExists(System.String)
+  commentId: M:ES3Internal.ES3IO.FileExists(System.String)
+  id: FileExists(System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: FileExists(string)
+  nameWithType: ES3IO.FileExists(string)
+  fullName: ES3Internal.ES3IO.FileExists(string)
+  type: Method
+  source:
+    id: FileExists
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static bool FileExists(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FileExists(filePath As String) As Boolean
+  overload: ES3Internal.ES3IO.FileExists*
+  nameWithType.vb: ES3IO.FileExists(String)
+  fullName.vb: ES3Internal.ES3IO.FileExists(String)
+  name.vb: FileExists(String)
+- uid: ES3Internal.ES3IO.MoveFile(System.String,System.String)
+  commentId: M:ES3Internal.ES3IO.MoveFile(System.String,System.String)
+  id: MoveFile(System.String,System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: MoveFile(string, string)
+  nameWithType: ES3IO.MoveFile(string, string)
+  fullName: ES3Internal.ES3IO.MoveFile(string, string)
+  type: Method
+  source:
+    id: MoveFile
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static void MoveFile(string sourcePath, string destPath)
+    parameters:
+    - id: sourcePath
+      type: System.String
+    - id: destPath
+      type: System.String
+    content.vb: Public Shared Sub MoveFile(sourcePath As String, destPath As String)
+  overload: ES3Internal.ES3IO.MoveFile*
+  nameWithType.vb: ES3IO.MoveFile(String, String)
+  fullName.vb: ES3Internal.ES3IO.MoveFile(String, String)
+  name.vb: MoveFile(String, String)
+- uid: ES3Internal.ES3IO.CopyFile(System.String,System.String)
+  commentId: M:ES3Internal.ES3IO.CopyFile(System.String,System.String)
+  id: CopyFile(System.String,System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: CopyFile(string, string)
+  nameWithType: ES3IO.CopyFile(string, string)
+  fullName: ES3Internal.ES3IO.CopyFile(string, string)
+  type: Method
+  source:
+    id: CopyFile
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static void CopyFile(string sourcePath, string destPath)
+    parameters:
+    - id: sourcePath
+      type: System.String
+    - id: destPath
+      type: System.String
+    content.vb: Public Shared Sub CopyFile(sourcePath As String, destPath As String)
+  overload: ES3Internal.ES3IO.CopyFile*
+  nameWithType.vb: ES3IO.CopyFile(String, String)
+  fullName.vb: ES3Internal.ES3IO.CopyFile(String, String)
+  name.vb: CopyFile(String, String)
+- uid: ES3Internal.ES3IO.MoveDirectory(System.String,System.String)
+  commentId: M:ES3Internal.ES3IO.MoveDirectory(System.String,System.String)
+  id: MoveDirectory(System.String,System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: MoveDirectory(string, string)
+  nameWithType: ES3IO.MoveDirectory(string, string)
+  fullName: ES3Internal.ES3IO.MoveDirectory(string, string)
+  type: Method
+  source:
+    id: MoveDirectory
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static void MoveDirectory(string sourcePath, string destPath)
+    parameters:
+    - id: sourcePath
+      type: System.String
+    - id: destPath
+      type: System.String
+    content.vb: Public Shared Sub MoveDirectory(sourcePath As String, destPath As String)
+  overload: ES3Internal.ES3IO.MoveDirectory*
+  nameWithType.vb: ES3IO.MoveDirectory(String, String)
+  fullName.vb: ES3Internal.ES3IO.MoveDirectory(String, String)
+  name.vb: MoveDirectory(String, String)
+- uid: ES3Internal.ES3IO.CreateDirectory(System.String)
+  commentId: M:ES3Internal.ES3IO.CreateDirectory(System.String)
+  id: CreateDirectory(System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: CreateDirectory(string)
+  nameWithType: ES3IO.CreateDirectory(string)
+  fullName: ES3Internal.ES3IO.CreateDirectory(string)
+  type: Method
+  source:
+    id: CreateDirectory
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static void CreateDirectory(string directoryPath)
+    parameters:
+    - id: directoryPath
+      type: System.String
+    content.vb: Public Shared Sub CreateDirectory(directoryPath As String)
+  overload: ES3Internal.ES3IO.CreateDirectory*
+  nameWithType.vb: ES3IO.CreateDirectory(String)
+  fullName.vb: ES3Internal.ES3IO.CreateDirectory(String)
+  name.vb: CreateDirectory(String)
+- uid: ES3Internal.ES3IO.DirectoryExists(System.String)
+  commentId: M:ES3Internal.ES3IO.DirectoryExists(System.String)
+  id: DirectoryExists(System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: DirectoryExists(string)
+  nameWithType: ES3IO.DirectoryExists(string)
+  fullName: ES3Internal.ES3IO.DirectoryExists(string)
+  type: Method
+  source:
+    id: DirectoryExists
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static bool DirectoryExists(string directoryPath)
+    parameters:
+    - id: directoryPath
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function DirectoryExists(directoryPath As String) As Boolean
+  overload: ES3Internal.ES3IO.DirectoryExists*
+  nameWithType.vb: ES3IO.DirectoryExists(String)
+  fullName.vb: ES3Internal.ES3IO.DirectoryExists(String)
+  name.vb: DirectoryExists(String)
+- uid: ES3Internal.ES3IO.GetDirectoryPath(System.String,System.Char)
+  commentId: M:ES3Internal.ES3IO.GetDirectoryPath(System.String,System.Char)
+  id: GetDirectoryPath(System.String,System.Char)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: GetDirectoryPath(string, char)
+  nameWithType: ES3IO.GetDirectoryPath(string, char)
+  fullName: ES3Internal.ES3IO.GetDirectoryPath(string, char)
+  type: Method
+  source:
+    id: GetDirectoryPath
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static string GetDirectoryPath(string path, char seperator = '/')
+    parameters:
+    - id: path
+      type: System.String
+    - id: seperator
+      type: System.Char
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetDirectoryPath(path As String, seperator As Char = "/"c) As String
+  overload: ES3Internal.ES3IO.GetDirectoryPath*
+  nameWithType.vb: ES3IO.GetDirectoryPath(String, Char)
+  fullName.vb: ES3Internal.ES3IO.GetDirectoryPath(String, Char)
+  name.vb: GetDirectoryPath(String, Char)
+- uid: ES3Internal.ES3IO.UsesForwardSlash(System.String)
+  commentId: M:ES3Internal.ES3IO.UsesForwardSlash(System.String)
+  id: UsesForwardSlash(System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: UsesForwardSlash(string)
+  nameWithType: ES3IO.UsesForwardSlash(string)
+  fullName: ES3Internal.ES3IO.UsesForwardSlash(string)
+  type: Method
+  source:
+    id: UsesForwardSlash
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static bool UsesForwardSlash(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function UsesForwardSlash(path As String) As Boolean
+  overload: ES3Internal.ES3IO.UsesForwardSlash*
+  nameWithType.vb: ES3IO.UsesForwardSlash(String)
+  fullName.vb: ES3Internal.ES3IO.UsesForwardSlash(String)
+  name.vb: UsesForwardSlash(String)
+- uid: ES3Internal.ES3IO.CombinePathAndFilename(System.String,System.String)
+  commentId: M:ES3Internal.ES3IO.CombinePathAndFilename(System.String,System.String)
+  id: CombinePathAndFilename(System.String,System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: CombinePathAndFilename(string, string)
+  nameWithType: ES3IO.CombinePathAndFilename(string, string)
+  fullName: ES3Internal.ES3IO.CombinePathAndFilename(string, string)
+  type: Method
+  source:
+    id: CombinePathAndFilename
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static string CombinePathAndFilename(string directoryPath, string fileOrDirectoryName)
+    parameters:
+    - id: directoryPath
+      type: System.String
+    - id: fileOrDirectoryName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function CombinePathAndFilename(directoryPath As String, fileOrDirectoryName As String) As String
+  overload: ES3Internal.ES3IO.CombinePathAndFilename*
+  nameWithType.vb: ES3IO.CombinePathAndFilename(String, String)
+  fullName.vb: ES3Internal.ES3IO.CombinePathAndFilename(String, String)
+  name.vb: CombinePathAndFilename(String, String)
+- uid: ES3Internal.ES3IO.GetDirectories(System.String,System.Boolean)
+  commentId: M:ES3Internal.ES3IO.GetDirectories(System.String,System.Boolean)
+  id: GetDirectories(System.String,System.Boolean)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: GetDirectories(string, bool)
+  nameWithType: ES3IO.GetDirectories(string, bool)
+  fullName: ES3Internal.ES3IO.GetDirectories(string, bool)
+  type: Method
+  source:
+    id: GetDirectories
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static string[] GetDirectories(string path, bool getFullPaths = true)
+    parameters:
+    - id: path
+      type: System.String
+    - id: getFullPaths
+      type: System.Boolean
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetDirectories(path As String, getFullPaths As Boolean = True) As String()
+  overload: ES3Internal.ES3IO.GetDirectories*
+  nameWithType.vb: ES3IO.GetDirectories(String, Boolean)
+  fullName.vb: ES3Internal.ES3IO.GetDirectories(String, Boolean)
+  name.vb: GetDirectories(String, Boolean)
+- uid: ES3Internal.ES3IO.DeleteDirectory(System.String)
+  commentId: M:ES3Internal.ES3IO.DeleteDirectory(System.String)
+  id: DeleteDirectory(System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: DeleteDirectory(string)
+  nameWithType: ES3IO.DeleteDirectory(string)
+  fullName: ES3Internal.ES3IO.DeleteDirectory(string)
+  type: Method
+  source:
+    id: DeleteDirectory
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 94
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static void DeleteDirectory(string directoryPath)
+    parameters:
+    - id: directoryPath
+      type: System.String
+    content.vb: Public Shared Sub DeleteDirectory(directoryPath As String)
+  overload: ES3Internal.ES3IO.DeleteDirectory*
+  nameWithType.vb: ES3IO.DeleteDirectory(String)
+  fullName.vb: ES3Internal.ES3IO.DeleteDirectory(String)
+  name.vb: DeleteDirectory(String)
+- uid: ES3Internal.ES3IO.GetFiles(System.String,System.Boolean)
+  commentId: M:ES3Internal.ES3IO.GetFiles(System.String,System.Boolean)
+  id: GetFiles(System.String,System.Boolean)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: GetFiles(string, bool)
+  nameWithType: ES3IO.GetFiles(string, bool)
+  fullName: ES3Internal.ES3IO.GetFiles(string, bool)
+  type: Method
+  source:
+    id: GetFiles
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static string[] GetFiles(string path, bool getFullPaths = true)
+    parameters:
+    - id: path
+      type: System.String
+    - id: getFullPaths
+      type: System.Boolean
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetFiles(path As String, getFullPaths As Boolean = True) As String()
+  overload: ES3Internal.ES3IO.GetFiles*
+  nameWithType.vb: ES3IO.GetFiles(String, Boolean)
+  fullName.vb: ES3Internal.ES3IO.GetFiles(String, Boolean)
+  name.vb: GetFiles(String, Boolean)
+- uid: ES3Internal.ES3IO.ReadAllBytes(System.String)
+  commentId: M:ES3Internal.ES3IO.ReadAllBytes(System.String)
+  id: ReadAllBytes(System.String)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: ReadAllBytes(string)
+  nameWithType: ES3IO.ReadAllBytes(string)
+  fullName: ES3Internal.ES3IO.ReadAllBytes(string)
+  type: Method
+  source:
+    id: ReadAllBytes
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static byte[] ReadAllBytes(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function ReadAllBytes(path As String) As Byte()
+  overload: ES3Internal.ES3IO.ReadAllBytes*
+  nameWithType.vb: ES3IO.ReadAllBytes(String)
+  fullName.vb: ES3Internal.ES3IO.ReadAllBytes(String)
+  name.vb: ReadAllBytes(String)
+- uid: ES3Internal.ES3IO.WriteAllBytes(System.String,System.Byte[])
+  commentId: M:ES3Internal.ES3IO.WriteAllBytes(System.String,System.Byte[])
+  id: WriteAllBytes(System.String,System.Byte[])
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: WriteAllBytes(string, byte[])
+  nameWithType: ES3IO.WriteAllBytes(string, byte[])
+  fullName: ES3Internal.ES3IO.WriteAllBytes(string, byte[])
+  type: Method
+  source:
+    id: WriteAllBytes
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 116
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static void WriteAllBytes(string path, byte[] bytes)
+    parameters:
+    - id: path
+      type: System.String
+    - id: bytes
+      type: System.Byte[]
+    content.vb: Public Shared Sub WriteAllBytes(path As String, bytes As Byte())
+  overload: ES3Internal.ES3IO.WriteAllBytes*
+  nameWithType.vb: ES3IO.WriteAllBytes(String, Byte())
+  fullName.vb: ES3Internal.ES3IO.WriteAllBytes(String, Byte())
+  name.vb: WriteAllBytes(String, Byte())
+- uid: ES3Internal.ES3IO.CommitBackup(ES3Settings)
+  commentId: M:ES3Internal.ES3IO.CommitBackup(ES3Settings)
+  id: CommitBackup(ES3Settings)
+  parent: ES3Internal.ES3IO
+  langs:
+  - csharp
+  - vb
+  name: CommitBackup(ES3Settings)
+  nameWithType: ES3IO.CommitBackup(ES3Settings)
+  fullName: ES3Internal.ES3IO.CommitBackup(ES3Settings)
+  type: Method
+  source:
+    id: CommitBackup
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 121
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static void CommitBackup(ES3Settings settings)
+    parameters:
+    - id: settings
+      type: ES3Settings
+    content.vb: Public Shared Sub CommitBackup(settings As ES3Settings)
+  overload: ES3Internal.ES3IO.CommitBackup*
+references:
+- uid: ES3Internal
+  commentId: N:ES3Internal
+  href: ES3Internal.html
+  name: ES3Internal
+  nameWithType: ES3Internal
+  fullName: ES3Internal
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ES3Internal.ES3IO.GetTimestamp*
+  commentId: Overload:ES3Internal.ES3IO.GetTimestamp
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_GetTimestamp_System_String_
+  name: GetTimestamp
+  nameWithType: ES3IO.GetTimestamp
+  fullName: ES3Internal.ES3IO.GetTimestamp
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: ES3Internal.ES3IO.GetExtension*
+  commentId: Overload:ES3Internal.ES3IO.GetExtension
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_GetExtension_System_String_
+  name: GetExtension
+  nameWithType: ES3IO.GetExtension
+  fullName: ES3Internal.ES3IO.GetExtension
+- uid: ES3Internal.ES3IO.DeleteFile*
+  commentId: Overload:ES3Internal.ES3IO.DeleteFile
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_DeleteFile_System_String_
+  name: DeleteFile
+  nameWithType: ES3IO.DeleteFile
+  fullName: ES3Internal.ES3IO.DeleteFile
+- uid: ES3Internal.ES3IO.FileExists*
+  commentId: Overload:ES3Internal.ES3IO.FileExists
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_FileExists_System_String_
+  name: FileExists
+  nameWithType: ES3IO.FileExists
+  fullName: ES3Internal.ES3IO.FileExists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ES3Internal.ES3IO.MoveFile*
+  commentId: Overload:ES3Internal.ES3IO.MoveFile
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_MoveFile_System_String_System_String_
+  name: MoveFile
+  nameWithType: ES3IO.MoveFile
+  fullName: ES3Internal.ES3IO.MoveFile
+- uid: ES3Internal.ES3IO.CopyFile*
+  commentId: Overload:ES3Internal.ES3IO.CopyFile
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_CopyFile_System_String_System_String_
+  name: CopyFile
+  nameWithType: ES3IO.CopyFile
+  fullName: ES3Internal.ES3IO.CopyFile
+- uid: ES3Internal.ES3IO.MoveDirectory*
+  commentId: Overload:ES3Internal.ES3IO.MoveDirectory
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_MoveDirectory_System_String_System_String_
+  name: MoveDirectory
+  nameWithType: ES3IO.MoveDirectory
+  fullName: ES3Internal.ES3IO.MoveDirectory
+- uid: ES3Internal.ES3IO.CreateDirectory*
+  commentId: Overload:ES3Internal.ES3IO.CreateDirectory
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_CreateDirectory_System_String_
+  name: CreateDirectory
+  nameWithType: ES3IO.CreateDirectory
+  fullName: ES3Internal.ES3IO.CreateDirectory
+- uid: ES3Internal.ES3IO.DirectoryExists*
+  commentId: Overload:ES3Internal.ES3IO.DirectoryExists
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_DirectoryExists_System_String_
+  name: DirectoryExists
+  nameWithType: ES3IO.DirectoryExists
+  fullName: ES3Internal.ES3IO.DirectoryExists
+- uid: ES3Internal.ES3IO.GetDirectoryPath*
+  commentId: Overload:ES3Internal.ES3IO.GetDirectoryPath
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_GetDirectoryPath_System_String_System_Char_
+  name: GetDirectoryPath
+  nameWithType: ES3IO.GetDirectoryPath
+  fullName: ES3Internal.ES3IO.GetDirectoryPath
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: ES3Internal.ES3IO.UsesForwardSlash*
+  commentId: Overload:ES3Internal.ES3IO.UsesForwardSlash
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_UsesForwardSlash_System_String_
+  name: UsesForwardSlash
+  nameWithType: ES3IO.UsesForwardSlash
+  fullName: ES3Internal.ES3IO.UsesForwardSlash
+- uid: ES3Internal.ES3IO.CombinePathAndFilename*
+  commentId: Overload:ES3Internal.ES3IO.CombinePathAndFilename
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_CombinePathAndFilename_System_String_System_String_
+  name: CombinePathAndFilename
+  nameWithType: ES3IO.CombinePathAndFilename
+  fullName: ES3Internal.ES3IO.CombinePathAndFilename
+- uid: ES3Internal.ES3IO.GetDirectories*
+  commentId: Overload:ES3Internal.ES3IO.GetDirectories
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_GetDirectories_System_String_System_Boolean_
+  name: GetDirectories
+  nameWithType: ES3IO.GetDirectories
+  fullName: ES3Internal.ES3IO.GetDirectories
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: ES3Internal.ES3IO.DeleteDirectory*
+  commentId: Overload:ES3Internal.ES3IO.DeleteDirectory
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_DeleteDirectory_System_String_
+  name: DeleteDirectory
+  nameWithType: ES3IO.DeleteDirectory
+  fullName: ES3Internal.ES3IO.DeleteDirectory
+- uid: ES3Internal.ES3IO.GetFiles*
+  commentId: Overload:ES3Internal.ES3IO.GetFiles
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_GetFiles_System_String_System_Boolean_
+  name: GetFiles
+  nameWithType: ES3IO.GetFiles
+  fullName: ES3Internal.ES3IO.GetFiles
+- uid: ES3Internal.ES3IO.ReadAllBytes*
+  commentId: Overload:ES3Internal.ES3IO.ReadAllBytes
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_ReadAllBytes_System_String_
+  name: ReadAllBytes
+  nameWithType: ES3IO.ReadAllBytes
+  fullName: ES3Internal.ES3IO.ReadAllBytes
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: ES3Internal.ES3IO.WriteAllBytes*
+  commentId: Overload:ES3Internal.ES3IO.WriteAllBytes
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_WriteAllBytes_System_String_System_Byte___
+  name: WriteAllBytes
+  nameWithType: ES3IO.WriteAllBytes
+  fullName: ES3Internal.ES3IO.WriteAllBytes
+- uid: ES3Internal.ES3IO.CommitBackup*
+  commentId: Overload:ES3Internal.ES3IO.CommitBackup
+  href: ES3Internal.ES3IO.html#ES3Internal_ES3IO_CommitBackup_ES3Settings_
+  name: CommitBackup
+  nameWithType: ES3IO.CommitBackup
+  fullName: ES3Internal.ES3IO.CommitBackup
+- uid: ES3Settings
+  commentId: T:ES3Settings
+  href: ES3Settings.html
+  name: ES3Settings
+  nameWithType: ES3Settings
+  fullName: ES3Settings

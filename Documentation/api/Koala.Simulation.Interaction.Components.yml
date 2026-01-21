@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.Components
+  commentId: N:Koala.Simulation.Interaction.Components
+  id: Koala.Simulation.Interaction.Components
+  children:
+  - Koala.Simulation.Interaction.Components.Interactable
+  - Koala.Simulation.Interaction.Components.InteractionDisplay
+  - Koala.Simulation.Interaction.Components.InteractionLabel
+  - Koala.Simulation.Interaction.Components.InteractionRaycaster
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Interaction.Components
+  nameWithType: Koala.Simulation.Interaction.Components
+  fullName: Koala.Simulation.Interaction.Components
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Interaction.Components.Interactable
+  commentId: T:Koala.Simulation.Interaction.Components.Interactable
+  href: Koala.Simulation.Interaction.Components.Interactable.html
+  name: Interactable
+  nameWithType: Interactable
+  fullName: Koala.Simulation.Interaction.Components.Interactable
+- uid: Koala.Simulation.Interaction.Components.InteractionLabel
+  commentId: T:Koala.Simulation.Interaction.Components.InteractionLabel
+  href: Koala.Simulation.Interaction.Components.InteractionLabel.html
+  name: InteractionLabel
+  nameWithType: InteractionLabel
+  fullName: Koala.Simulation.Interaction.Components.InteractionLabel
+- uid: Koala.Simulation.Interaction.Components.InteractionRaycaster
+  commentId: T:Koala.Simulation.Interaction.Components.InteractionRaycaster
+  href: Koala.Simulation.Interaction.Components.InteractionRaycaster.html
+  name: InteractionRaycaster
+  nameWithType: InteractionRaycaster
+  fullName: Koala.Simulation.Interaction.Components.InteractionRaycaster
+- uid: Koala.Simulation.Interaction.Components.InteractionDisplay
+  commentId: T:Koala.Simulation.Interaction.Components.InteractionDisplay
+  href: Koala.Simulation.Interaction.Components.InteractionDisplay.html
+  name: InteractionDisplay
+  nameWithType: InteractionDisplay
+  fullName: Koala.Simulation.Interaction.Components.InteractionDisplay

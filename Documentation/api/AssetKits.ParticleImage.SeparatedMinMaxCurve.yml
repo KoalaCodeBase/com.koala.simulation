@@ -1,0 +1,665 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  commentId: T:AssetKits.ParticleImage.SeparatedMinMaxCurve
+  id: SeparatedMinMaxCurve
+  parent: AssetKits.ParticleImage
+  children:
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve.#ctor(System.Single,System.Boolean,System.Boolean)
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve.#ctor(UnityEngine.AnimationCurve,System.Boolean,System.Boolean)
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve.Evaluate(System.Single,System.Single)
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateXY(System.Single,System.Single)
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateZ(System.Single,System.Single)
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve.mainCurve
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve.separated
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve.xCurve
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve.yCurve
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve.zCurve
+  langs:
+  - csharp
+  - vb
+  name: SeparatedMinMaxCurve
+  nameWithType: SeparatedMinMaxCurve
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  type: Struct
+  source:
+    id: SeparatedMinMaxCurve
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2804
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct SeparatedMinMaxCurve
+    content.vb: >-
+      <Serializable>
+
+      Public Structure SeparatedMinMaxCurve
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.separated
+  commentId: F:AssetKits.ParticleImage.SeparatedMinMaxCurve.separated
+  id: separated
+  parent: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  langs:
+  - csharp
+  - vb
+  name: separated
+  nameWithType: SeparatedMinMaxCurve.separated
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.separated
+  type: Field
+  source:
+    id: separated
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2809
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public bool separated
+    return:
+      type: System.Boolean
+    content.vb: Public separated As Boolean
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.mainCurve
+  commentId: F:AssetKits.ParticleImage.SeparatedMinMaxCurve.mainCurve
+  id: mainCurve
+  parent: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  langs:
+  - csharp
+  - vb
+  name: mainCurve
+  nameWithType: SeparatedMinMaxCurve.mainCurve
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.mainCurve
+  type: Field
+  source:
+    id: mainCurve
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2810
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public ParticleSystem.MinMaxCurve mainCurve
+    return:
+      type: UnityEngine.ParticleSystem.MinMaxCurve
+    content.vb: Public mainCurve As ParticleSystem.MinMaxCurve
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.xCurve
+  commentId: F:AssetKits.ParticleImage.SeparatedMinMaxCurve.xCurve
+  id: xCurve
+  parent: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  langs:
+  - csharp
+  - vb
+  name: xCurve
+  nameWithType: SeparatedMinMaxCurve.xCurve
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.xCurve
+  type: Field
+  source:
+    id: xCurve
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2811
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public ParticleSystem.MinMaxCurve xCurve
+    return:
+      type: UnityEngine.ParticleSystem.MinMaxCurve
+    content.vb: Public xCurve As ParticleSystem.MinMaxCurve
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.yCurve
+  commentId: F:AssetKits.ParticleImage.SeparatedMinMaxCurve.yCurve
+  id: yCurve
+  parent: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  langs:
+  - csharp
+  - vb
+  name: yCurve
+  nameWithType: SeparatedMinMaxCurve.yCurve
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.yCurve
+  type: Field
+  source:
+    id: yCurve
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2812
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public ParticleSystem.MinMaxCurve yCurve
+    return:
+      type: UnityEngine.ParticleSystem.MinMaxCurve
+    content.vb: Public yCurve As ParticleSystem.MinMaxCurve
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.zCurve
+  commentId: F:AssetKits.ParticleImage.SeparatedMinMaxCurve.zCurve
+  id: zCurve
+  parent: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  langs:
+  - csharp
+  - vb
+  name: zCurve
+  nameWithType: SeparatedMinMaxCurve.zCurve
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.zCurve
+  type: Field
+  source:
+    id: zCurve
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2813
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public ParticleSystem.MinMaxCurve zCurve
+    return:
+      type: UnityEngine.ParticleSystem.MinMaxCurve
+    content.vb: Public zCurve As ParticleSystem.MinMaxCurve
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.#ctor(System.Single,System.Boolean,System.Boolean)
+  commentId: M:AssetKits.ParticleImage.SeparatedMinMaxCurve.#ctor(System.Single,System.Boolean,System.Boolean)
+  id: '#ctor(System.Single,System.Boolean,System.Boolean)'
+  parent: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  langs:
+  - csharp
+  - vb
+  name: SeparatedMinMaxCurve(float, bool, bool)
+  nameWithType: SeparatedMinMaxCurve.SeparatedMinMaxCurve(float, bool, bool)
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.SeparatedMinMaxCurve(float, bool, bool)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2815
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public SeparatedMinMaxCurve(float startValue, bool separated = false, bool separable = true)
+    parameters:
+    - id: startValue
+      type: System.Single
+    - id: separated
+      type: System.Boolean
+    - id: separable
+      type: System.Boolean
+    content.vb: Public Sub New(startValue As Single, separated As Boolean = False, separable As Boolean = True)
+  overload: AssetKits.ParticleImage.SeparatedMinMaxCurve.#ctor*
+  nameWithType.vb: SeparatedMinMaxCurve.New(Single, Boolean, Boolean)
+  fullName.vb: AssetKits.ParticleImage.SeparatedMinMaxCurve.New(Single, Boolean, Boolean)
+  name.vb: New(Single, Boolean, Boolean)
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.#ctor(UnityEngine.AnimationCurve,System.Boolean,System.Boolean)
+  commentId: M:AssetKits.ParticleImage.SeparatedMinMaxCurve.#ctor(UnityEngine.AnimationCurve,System.Boolean,System.Boolean)
+  id: '#ctor(UnityEngine.AnimationCurve,System.Boolean,System.Boolean)'
+  parent: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  langs:
+  - csharp
+  - vb
+  name: SeparatedMinMaxCurve(AnimationCurve, bool, bool)
+  nameWithType: SeparatedMinMaxCurve.SeparatedMinMaxCurve(AnimationCurve, bool, bool)
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.SeparatedMinMaxCurve(UnityEngine.AnimationCurve, bool, bool)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2825
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public SeparatedMinMaxCurve(AnimationCurve startValue, bool separated = false, bool separable = true)
+    parameters:
+    - id: startValue
+      type: UnityEngine.AnimationCurve
+    - id: separated
+      type: System.Boolean
+    - id: separable
+      type: System.Boolean
+    content.vb: Public Sub New(startValue As AnimationCurve, separated As Boolean = False, separable As Boolean = True)
+  overload: AssetKits.ParticleImage.SeparatedMinMaxCurve.#ctor*
+  nameWithType.vb: SeparatedMinMaxCurve.New(AnimationCurve, Boolean, Boolean)
+  fullName.vb: AssetKits.ParticleImage.SeparatedMinMaxCurve.New(UnityEngine.AnimationCurve, Boolean, Boolean)
+  name.vb: New(AnimationCurve, Boolean, Boolean)
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.Evaluate(System.Single,System.Single)
+  commentId: M:AssetKits.ParticleImage.SeparatedMinMaxCurve.Evaluate(System.Single,System.Single)
+  id: Evaluate(System.Single,System.Single)
+  parent: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  langs:
+  - csharp
+  - vb
+  name: Evaluate(float, float)
+  nameWithType: SeparatedMinMaxCurve.Evaluate(float, float)
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.Evaluate(float, float)
+  type: Method
+  source:
+    id: Evaluate
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2835
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public Vector3 Evaluate(float time, float lerp)
+    parameters:
+    - id: time
+      type: System.Single
+    - id: lerp
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function Evaluate(time As Single, lerp As Single) As Vector3
+  overload: AssetKits.ParticleImage.SeparatedMinMaxCurve.Evaluate*
+  nameWithType.vb: SeparatedMinMaxCurve.Evaluate(Single, Single)
+  fullName.vb: AssetKits.ParticleImage.SeparatedMinMaxCurve.Evaluate(Single, Single)
+  name.vb: Evaluate(Single, Single)
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateZ(System.Single,System.Single)
+  commentId: M:AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateZ(System.Single,System.Single)
+  id: EvaluateZ(System.Single,System.Single)
+  parent: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  langs:
+  - csharp
+  - vb
+  name: EvaluateZ(float, float)
+  nameWithType: SeparatedMinMaxCurve.EvaluateZ(float, float)
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateZ(float, float)
+  type: Method
+  source:
+    id: EvaluateZ
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2845
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public Vector3 EvaluateZ(float time, float lerp)
+    parameters:
+    - id: time
+      type: System.Single
+    - id: lerp
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function EvaluateZ(time As Single, lerp As Single) As Vector3
+  overload: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateZ*
+  nameWithType.vb: SeparatedMinMaxCurve.EvaluateZ(Single, Single)
+  fullName.vb: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateZ(Single, Single)
+  name.vb: EvaluateZ(Single, Single)
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateXY(System.Single,System.Single)
+  commentId: M:AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateXY(System.Single,System.Single)
+  id: EvaluateXY(System.Single,System.Single)
+  parent: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  langs:
+  - csharp
+  - vb
+  name: EvaluateXY(float, float)
+  nameWithType: SeparatedMinMaxCurve.EvaluateXY(float, float)
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateXY(float, float)
+  type: Method
+  source:
+    id: EvaluateXY
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2855
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public Vector2 EvaluateXY(float time, float lerp)
+    parameters:
+    - id: time
+      type: System.Single
+    - id: lerp
+      type: System.Single
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Function EvaluateXY(time As Single, lerp As Single) As Vector2
+  overload: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateXY*
+  nameWithType.vb: SeparatedMinMaxCurve.EvaluateXY(Single, Single)
+  fullName.vb: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateXY(Single, Single)
+  name.vb: EvaluateXY(Single, Single)
+references:
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  href: AssetKits.html
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.ParticleSystem.MinMaxCurve
+  commentId: T:UnityEngine.ParticleSystem.MinMaxCurve
+  parent: UnityEngine
+  isExternal: true
+  name: ParticleSystem.MinMaxCurve
+  nameWithType: ParticleSystem.MinMaxCurve
+  fullName: UnityEngine.ParticleSystem.MinMaxCurve
+  spec.csharp:
+  - uid: UnityEngine.ParticleSystem
+    name: ParticleSystem
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.ParticleSystem.MinMaxCurve
+    name: MinMaxCurve
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine.ParticleSystem
+    name: ParticleSystem
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.ParticleSystem.MinMaxCurve
+    name: MinMaxCurve
+    isExternal: true
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.#ctor*
+  commentId: Overload:AssetKits.ParticleImage.SeparatedMinMaxCurve.#ctor
+  href: AssetKits.ParticleImage.SeparatedMinMaxCurve.html#AssetKits_ParticleImage_SeparatedMinMaxCurve__ctor_System_Single_System_Boolean_System_Boolean_
+  name: SeparatedMinMaxCurve
+  nameWithType: SeparatedMinMaxCurve.SeparatedMinMaxCurve
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.SeparatedMinMaxCurve
+  nameWithType.vb: SeparatedMinMaxCurve.New
+  fullName.vb: AssetKits.ParticleImage.SeparatedMinMaxCurve.New
+  name.vb: New
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.AnimationCurve
+  commentId: T:UnityEngine.AnimationCurve
+  parent: UnityEngine
+  isExternal: true
+  name: AnimationCurve
+  nameWithType: AnimationCurve
+  fullName: UnityEngine.AnimationCurve
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.Evaluate*
+  commentId: Overload:AssetKits.ParticleImage.SeparatedMinMaxCurve.Evaluate
+  href: AssetKits.ParticleImage.SeparatedMinMaxCurve.html#AssetKits_ParticleImage_SeparatedMinMaxCurve_Evaluate_System_Single_System_Single_
+  name: Evaluate
+  nameWithType: SeparatedMinMaxCurve.Evaluate
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.Evaluate
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateZ*
+  commentId: Overload:AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateZ
+  href: AssetKits.ParticleImage.SeparatedMinMaxCurve.html#AssetKits_ParticleImage_SeparatedMinMaxCurve_EvaluateZ_System_Single_System_Single_
+  name: EvaluateZ
+  nameWithType: SeparatedMinMaxCurve.EvaluateZ
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateZ
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateXY*
+  commentId: Overload:AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateXY
+  href: AssetKits.ParticleImage.SeparatedMinMaxCurve.html#AssetKits_ParticleImage_SeparatedMinMaxCurve_EvaluateXY_System_Single_System_Single_
+  name: EvaluateXY
+  nameWithType: SeparatedMinMaxCurve.EvaluateXY
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve.EvaluateXY
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2

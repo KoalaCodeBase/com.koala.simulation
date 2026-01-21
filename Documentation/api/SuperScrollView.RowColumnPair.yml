@@ -1,0 +1,566 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.RowColumnPair
+  commentId: T:SuperScrollView.RowColumnPair
+  id: RowColumnPair
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.RowColumnPair.#ctor(System.Int32,System.Int32)
+  - SuperScrollView.RowColumnPair.Equals(SuperScrollView.RowColumnPair)
+  - SuperScrollView.RowColumnPair.Equals(System.Object)
+  - SuperScrollView.RowColumnPair.GetHashCode
+  - SuperScrollView.RowColumnPair.mColumn
+  - SuperScrollView.RowColumnPair.mRow
+  - SuperScrollView.RowColumnPair.op_Equality(SuperScrollView.RowColumnPair,SuperScrollView.RowColumnPair)
+  - SuperScrollView.RowColumnPair.op_Inequality(SuperScrollView.RowColumnPair,SuperScrollView.RowColumnPair)
+  langs:
+  - csharp
+  - vb
+  name: RowColumnPair
+  nameWithType: RowColumnPair
+  fullName: SuperScrollView.RowColumnPair
+  type: Struct
+  source:
+    id: RowColumnPair
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public struct RowColumnPair
+    content.vb: Public Structure RowColumnPair
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SuperScrollView.RowColumnPair.#ctor(System.Int32,System.Int32)
+  commentId: M:SuperScrollView.RowColumnPair.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: SuperScrollView.RowColumnPair
+  langs:
+  - csharp
+  - vb
+  name: RowColumnPair(int, int)
+  nameWithType: RowColumnPair.RowColumnPair(int, int)
+  fullName: SuperScrollView.RowColumnPair.RowColumnPair(int, int)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public RowColumnPair(int row1, int column1)
+    parameters:
+    - id: row1
+      type: System.Int32
+    - id: column1
+      type: System.Int32
+    content.vb: Public Sub New(row1 As Integer, column1 As Integer)
+  overload: SuperScrollView.RowColumnPair.#ctor*
+  nameWithType.vb: RowColumnPair.New(Integer, Integer)
+  fullName.vb: SuperScrollView.RowColumnPair.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: SuperScrollView.RowColumnPair.Equals(SuperScrollView.RowColumnPair)
+  commentId: M:SuperScrollView.RowColumnPair.Equals(SuperScrollView.RowColumnPair)
+  id: Equals(SuperScrollView.RowColumnPair)
+  parent: SuperScrollView.RowColumnPair
+  langs:
+  - csharp
+  - vb
+  name: Equals(RowColumnPair)
+  nameWithType: RowColumnPair.Equals(RowColumnPair)
+  fullName: SuperScrollView.RowColumnPair.Equals(SuperScrollView.RowColumnPair)
+  type: Method
+  source:
+    id: Equals
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public bool Equals(RowColumnPair other)
+    parameters:
+    - id: other
+      type: SuperScrollView.RowColumnPair
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As RowColumnPair) As Boolean
+  overload: SuperScrollView.RowColumnPair.Equals*
+- uid: SuperScrollView.RowColumnPair.op_Equality(SuperScrollView.RowColumnPair,SuperScrollView.RowColumnPair)
+  commentId: M:SuperScrollView.RowColumnPair.op_Equality(SuperScrollView.RowColumnPair,SuperScrollView.RowColumnPair)
+  id: op_Equality(SuperScrollView.RowColumnPair,SuperScrollView.RowColumnPair)
+  parent: SuperScrollView.RowColumnPair
+  langs:
+  - csharp
+  - vb
+  name: operator ==(RowColumnPair, RowColumnPair)
+  nameWithType: RowColumnPair.operator ==(RowColumnPair, RowColumnPair)
+  fullName: SuperScrollView.RowColumnPair.operator ==(SuperScrollView.RowColumnPair, SuperScrollView.RowColumnPair)
+  type: Operator
+  source:
+    id: op_Equality
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public static bool operator ==(RowColumnPair a, RowColumnPair b)
+    parameters:
+    - id: a
+      type: SuperScrollView.RowColumnPair
+    - id: b
+      type: SuperScrollView.RowColumnPair
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As RowColumnPair, b As RowColumnPair) As Boolean
+  overload: SuperScrollView.RowColumnPair.op_Equality*
+  nameWithType.vb: RowColumnPair.=(RowColumnPair, RowColumnPair)
+  fullName.vb: SuperScrollView.RowColumnPair.=(SuperScrollView.RowColumnPair, SuperScrollView.RowColumnPair)
+  name.vb: =(RowColumnPair, RowColumnPair)
+- uid: SuperScrollView.RowColumnPair.op_Inequality(SuperScrollView.RowColumnPair,SuperScrollView.RowColumnPair)
+  commentId: M:SuperScrollView.RowColumnPair.op_Inequality(SuperScrollView.RowColumnPair,SuperScrollView.RowColumnPair)
+  id: op_Inequality(SuperScrollView.RowColumnPair,SuperScrollView.RowColumnPair)
+  parent: SuperScrollView.RowColumnPair
+  langs:
+  - csharp
+  - vb
+  name: operator !=(RowColumnPair, RowColumnPair)
+  nameWithType: RowColumnPair.operator !=(RowColumnPair, RowColumnPair)
+  fullName: SuperScrollView.RowColumnPair.operator !=(SuperScrollView.RowColumnPair, SuperScrollView.RowColumnPair)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public static bool operator !=(RowColumnPair a, RowColumnPair b)
+    parameters:
+    - id: a
+      type: SuperScrollView.RowColumnPair
+    - id: b
+      type: SuperScrollView.RowColumnPair
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As RowColumnPair, b As RowColumnPair) As Boolean
+  overload: SuperScrollView.RowColumnPair.op_Inequality*
+  nameWithType.vb: RowColumnPair.<>(RowColumnPair, RowColumnPair)
+  fullName.vb: SuperScrollView.RowColumnPair.<>(SuperScrollView.RowColumnPair, SuperScrollView.RowColumnPair)
+  name.vb: <>(RowColumnPair, RowColumnPair)
+- uid: SuperScrollView.RowColumnPair.GetHashCode
+  commentId: M:SuperScrollView.RowColumnPair.GetHashCode
+  id: GetHashCode
+  parent: SuperScrollView.RowColumnPair
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: RowColumnPair.GetHashCode()
+  fullName: SuperScrollView.RowColumnPair.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: SuperScrollView.RowColumnPair.GetHashCode*
+- uid: SuperScrollView.RowColumnPair.Equals(System.Object)
+  commentId: M:SuperScrollView.RowColumnPair.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: SuperScrollView.RowColumnPair
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: RowColumnPair.Equals(object)
+  fullName: SuperScrollView.RowColumnPair.Equals(object)
+  type: Method
+  source:
+    id: Equals
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: SuperScrollView.RowColumnPair.Equals*
+  nameWithType.vb: RowColumnPair.Equals(Object)
+  fullName.vb: SuperScrollView.RowColumnPair.Equals(Object)
+  name.vb: Equals(Object)
+- uid: SuperScrollView.RowColumnPair.mRow
+  commentId: F:SuperScrollView.RowColumnPair.mRow
+  id: mRow
+  parent: SuperScrollView.RowColumnPair
+  langs:
+  - csharp
+  - vb
+  name: mRow
+  nameWithType: RowColumnPair.mRow
+  fullName: SuperScrollView.RowColumnPair.mRow
+  type: Field
+  source:
+    id: mRow
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 82
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int mRow
+    return:
+      type: System.Int32
+    content.vb: Public mRow As Integer
+- uid: SuperScrollView.RowColumnPair.mColumn
+  commentId: F:SuperScrollView.RowColumnPair.mColumn
+  id: mColumn
+  parent: SuperScrollView.RowColumnPair
+  langs:
+  - csharp
+  - vb
+  name: mColumn
+  nameWithType: RowColumnPair.mColumn
+  fullName: SuperScrollView.RowColumnPair.mColumn
+  type: Field
+  source:
+    id: mColumn
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int mColumn
+    return:
+      type: System.Int32
+    content.vb: Public mColumn As Integer
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SuperScrollView.RowColumnPair.#ctor*
+  commentId: Overload:SuperScrollView.RowColumnPair.#ctor
+  href: SuperScrollView.RowColumnPair.html#SuperScrollView_RowColumnPair__ctor_System_Int32_System_Int32_
+  name: RowColumnPair
+  nameWithType: RowColumnPair.RowColumnPair
+  fullName: SuperScrollView.RowColumnPair.RowColumnPair
+  nameWithType.vb: RowColumnPair.New
+  fullName.vb: SuperScrollView.RowColumnPair.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SuperScrollView.RowColumnPair.Equals*
+  commentId: Overload:SuperScrollView.RowColumnPair.Equals
+  href: SuperScrollView.RowColumnPair.html#SuperScrollView_RowColumnPair_Equals_SuperScrollView_RowColumnPair_
+  name: Equals
+  nameWithType: RowColumnPair.Equals
+  fullName: SuperScrollView.RowColumnPair.Equals
+- uid: SuperScrollView.RowColumnPair
+  commentId: T:SuperScrollView.RowColumnPair
+  parent: SuperScrollView
+  href: SuperScrollView.RowColumnPair.html
+  name: RowColumnPair
+  nameWithType: RowColumnPair
+  fullName: SuperScrollView.RowColumnPair
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SuperScrollView.RowColumnPair.op_Equality*
+  commentId: Overload:SuperScrollView.RowColumnPair.op_Equality
+  href: SuperScrollView.RowColumnPair.html#SuperScrollView_RowColumnPair_op_Equality_SuperScrollView_RowColumnPair_SuperScrollView_RowColumnPair_
+  name: operator ==
+  nameWithType: RowColumnPair.operator ==
+  fullName: SuperScrollView.RowColumnPair.operator ==
+  nameWithType.vb: RowColumnPair.=
+  fullName.vb: SuperScrollView.RowColumnPair.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: SuperScrollView.RowColumnPair.op_Equality*
+    name: ==
+    href: SuperScrollView.RowColumnPair.html#SuperScrollView_RowColumnPair_op_Equality_SuperScrollView_RowColumnPair_SuperScrollView_RowColumnPair_
+- uid: SuperScrollView.RowColumnPair.op_Inequality*
+  commentId: Overload:SuperScrollView.RowColumnPair.op_Inequality
+  href: SuperScrollView.RowColumnPair.html#SuperScrollView_RowColumnPair_op_Inequality_SuperScrollView_RowColumnPair_SuperScrollView_RowColumnPair_
+  name: operator !=
+  nameWithType: RowColumnPair.operator !=
+  fullName: SuperScrollView.RowColumnPair.operator !=
+  nameWithType.vb: RowColumnPair.<>
+  fullName.vb: SuperScrollView.RowColumnPair.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: SuperScrollView.RowColumnPair.op_Inequality*
+    name: '!='
+    href: SuperScrollView.RowColumnPair.html#SuperScrollView_RowColumnPair_op_Inequality_SuperScrollView_RowColumnPair_SuperScrollView_RowColumnPair_
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: SuperScrollView.RowColumnPair.GetHashCode*
+  commentId: Overload:SuperScrollView.RowColumnPair.GetHashCode
+  href: SuperScrollView.RowColumnPair.html#SuperScrollView_RowColumnPair_GetHashCode
+  name: GetHashCode
+  nameWithType: RowColumnPair.GetHashCode
+  fullName: SuperScrollView.RowColumnPair.GetHashCode
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )

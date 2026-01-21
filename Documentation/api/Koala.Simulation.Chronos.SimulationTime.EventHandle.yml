@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Chronos.SimulationTime.EventHandle
+  commentId: T:Koala.Simulation.Chronos.SimulationTime.EventHandle
+  id: SimulationTime.EventHandle
+  parent: Koala.Simulation.Chronos
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: SimulationTime.EventHandle
+  nameWithType: SimulationTime.EventHandle
+  fullName: Koala.Simulation.Chronos.SimulationTime.EventHandle
+  type: Class
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: EventHandle
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 56
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public sealed class SimulationTime.EventHandle
+    content.vb: Public NotInheritable Class SimulationTime.EventHandle
+  inheritance:
+  - System.Object
+references:
+- uid: Koala.Simulation.Chronos
+  commentId: N:Koala.Simulation.Chronos
+  href: Koala.html
+  name: Koala.Simulation.Chronos
+  nameWithType: Koala.Simulation.Chronos
+  fullName: Koala.Simulation.Chronos
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Chronos
+    name: Chronos
+    href: Koala.Simulation.Chronos.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Chronos
+    name: Chronos
+    href: Koala.Simulation.Chronos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

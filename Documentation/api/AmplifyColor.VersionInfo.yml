@@ -1,0 +1,603 @@
+### YamlMime:ManagedReference
+items:
+- uid: AmplifyColor.VersionInfo
+  commentId: T:AmplifyColor.VersionInfo
+  id: VersionInfo
+  parent: AmplifyColor
+  children:
+  - AmplifyColor.VersionInfo.Current
+  - AmplifyColor.VersionInfo.FullNumber
+  - AmplifyColor.VersionInfo.Major
+  - AmplifyColor.VersionInfo.Matches(AmplifyColor.VersionInfo)
+  - AmplifyColor.VersionInfo.Minor
+  - AmplifyColor.VersionInfo.Number
+  - AmplifyColor.VersionInfo.Release
+  - AmplifyColor.VersionInfo.StaticToString
+  - AmplifyColor.VersionInfo.ToString
+  langs:
+  - csharp
+  - vb
+  name: VersionInfo
+  nameWithType: VersionInfo
+  fullName: AmplifyColor.VersionInfo
+  type: Class
+  source:
+    id: VersionInfo
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class VersionInfo
+    content.vb: >-
+      <Serializable>
+
+      Public Class VersionInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: AmplifyColor.VersionInfo.Major
+  commentId: F:AmplifyColor.VersionInfo.Major
+  id: Major
+  parent: AmplifyColor.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: Major
+  nameWithType: VersionInfo.Major
+  fullName: AmplifyColor.VersionInfo.Major
+  type: Field
+  source:
+    id: Major
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public const byte Major = 1
+    return:
+      type: System.Byte
+    content.vb: Public Const Major As Byte = 1
+- uid: AmplifyColor.VersionInfo.Minor
+  commentId: F:AmplifyColor.VersionInfo.Minor
+  id: Minor
+  parent: AmplifyColor.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: Minor
+  nameWithType: VersionInfo.Minor
+  fullName: AmplifyColor.VersionInfo.Minor
+  type: Field
+  source:
+    id: Minor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public const byte Minor = 9
+    return:
+      type: System.Byte
+    content.vb: Public Const Minor As Byte = 9
+- uid: AmplifyColor.VersionInfo.Release
+  commentId: F:AmplifyColor.VersionInfo.Release
+  id: Release
+  parent: AmplifyColor.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: Release
+  nameWithType: VersionInfo.Release
+  fullName: AmplifyColor.VersionInfo.Release
+  type: Field
+  source:
+    id: Release
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public const byte Release = 0
+    return:
+      type: System.Byte
+    content.vb: Public Const Release As Byte = 0
+- uid: AmplifyColor.VersionInfo.StaticToString
+  commentId: M:AmplifyColor.VersionInfo.StaticToString
+  id: StaticToString
+  parent: AmplifyColor.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: StaticToString()
+  nameWithType: VersionInfo.StaticToString()
+  fullName: AmplifyColor.VersionInfo.StaticToString()
+  type: Method
+  source:
+    id: StaticToString
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public static string StaticToString()
+    return:
+      type: System.String
+    content.vb: Public Shared Function StaticToString() As String
+  overload: AmplifyColor.VersionInfo.StaticToString*
+- uid: AmplifyColor.VersionInfo.ToString
+  commentId: M:AmplifyColor.VersionInfo.ToString
+  id: ToString
+  parent: AmplifyColor.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: VersionInfo.ToString()
+  fullName: AmplifyColor.VersionInfo.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: AmplifyColor.VersionInfo.ToString*
+- uid: AmplifyColor.VersionInfo.FullNumber
+  commentId: P:AmplifyColor.VersionInfo.FullNumber
+  id: FullNumber
+  parent: AmplifyColor.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: FullNumber
+  nameWithType: VersionInfo.FullNumber
+  fullName: AmplifyColor.VersionInfo.FullNumber
+  type: Property
+  source:
+    id: FullNumber
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public static int FullNumber { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property FullNumber As Integer
+  overload: AmplifyColor.VersionInfo.FullNumber*
+- uid: AmplifyColor.VersionInfo.Number
+  commentId: P:AmplifyColor.VersionInfo.Number
+  id: Number
+  parent: AmplifyColor.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: VersionInfo.Number
+  fullName: AmplifyColor.VersionInfo.Number
+  type: Property
+  source:
+    id: Number
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public int Number { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Number As Integer
+  overload: AmplifyColor.VersionInfo.Number*
+- uid: AmplifyColor.VersionInfo.Current
+  commentId: M:AmplifyColor.VersionInfo.Current
+  id: Current
+  parent: AmplifyColor.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: Current()
+  nameWithType: VersionInfo.Current()
+  fullName: AmplifyColor.VersionInfo.Current()
+  type: Method
+  source:
+    id: Current
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public static VersionInfo Current()
+    return:
+      type: AmplifyColor.VersionInfo
+    content.vb: Public Shared Function Current() As VersionInfo
+  overload: AmplifyColor.VersionInfo.Current*
+- uid: AmplifyColor.VersionInfo.Matches(AmplifyColor.VersionInfo)
+  commentId: M:AmplifyColor.VersionInfo.Matches(AmplifyColor.VersionInfo)
+  id: Matches(AmplifyColor.VersionInfo)
+  parent: AmplifyColor.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: Matches(VersionInfo)
+  nameWithType: VersionInfo.Matches(VersionInfo)
+  fullName: AmplifyColor.VersionInfo.Matches(AmplifyColor.VersionInfo)
+  type: Method
+  source:
+    id: Matches
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public static bool Matches(VersionInfo version)
+    parameters:
+    - id: version
+      type: AmplifyColor.VersionInfo
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Matches(version As VersionInfo) As Boolean
+  overload: AmplifyColor.VersionInfo.Matches*
+references:
+- uid: AmplifyColor
+  commentId: N:AmplifyColor
+  href: AmplifyColor.html
+  name: AmplifyColor
+  nameWithType: AmplifyColor
+  fullName: AmplifyColor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: AmplifyColor.VersionInfo.StaticToString*
+  commentId: Overload:AmplifyColor.VersionInfo.StaticToString
+  href: AmplifyColor.VersionInfo.html#AmplifyColor_VersionInfo_StaticToString
+  name: StaticToString
+  nameWithType: VersionInfo.StaticToString
+  fullName: AmplifyColor.VersionInfo.StaticToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: AmplifyColor.VersionInfo.ToString*
+  commentId: Overload:AmplifyColor.VersionInfo.ToString
+  href: AmplifyColor.VersionInfo.html#AmplifyColor_VersionInfo_ToString
+  name: ToString
+  nameWithType: VersionInfo.ToString
+  fullName: AmplifyColor.VersionInfo.ToString
+- uid: AmplifyColor.VersionInfo.FullNumber*
+  commentId: Overload:AmplifyColor.VersionInfo.FullNumber
+  href: AmplifyColor.VersionInfo.html#AmplifyColor_VersionInfo_FullNumber
+  name: FullNumber
+  nameWithType: VersionInfo.FullNumber
+  fullName: AmplifyColor.VersionInfo.FullNumber
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AmplifyColor.VersionInfo.Number*
+  commentId: Overload:AmplifyColor.VersionInfo.Number
+  href: AmplifyColor.VersionInfo.html#AmplifyColor_VersionInfo_Number
+  name: Number
+  nameWithType: VersionInfo.Number
+  fullName: AmplifyColor.VersionInfo.Number
+- uid: AmplifyColor.VersionInfo.Current*
+  commentId: Overload:AmplifyColor.VersionInfo.Current
+  href: AmplifyColor.VersionInfo.html#AmplifyColor_VersionInfo_Current
+  name: Current
+  nameWithType: VersionInfo.Current
+  fullName: AmplifyColor.VersionInfo.Current
+- uid: AmplifyColor.VersionInfo
+  commentId: T:AmplifyColor.VersionInfo
+  parent: AmplifyColor
+  href: AmplifyColor.VersionInfo.html
+  name: VersionInfo
+  nameWithType: VersionInfo
+  fullName: AmplifyColor.VersionInfo
+- uid: AmplifyColor.VersionInfo.Matches*
+  commentId: Overload:AmplifyColor.VersionInfo.Matches
+  href: AmplifyColor.VersionInfo.html#AmplifyColor_VersionInfo_Matches_AmplifyColor_VersionInfo_
+  name: Matches
+  nameWithType: VersionInfo.Matches
+  fullName: AmplifyColor.VersionInfo.Matches
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

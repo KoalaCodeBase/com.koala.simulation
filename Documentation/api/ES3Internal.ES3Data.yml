@@ -1,0 +1,417 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Internal.ES3Data
+  commentId: T:ES3Internal.ES3Data
+  id: ES3Data
+  parent: ES3Internal
+  children:
+  - ES3Internal.ES3Data.#ctor(ES3Types.ES3Type,System.Byte[])
+  - ES3Internal.ES3Data.#ctor(System.Type,System.Byte[])
+  - ES3Internal.ES3Data.bytes
+  - ES3Internal.ES3Data.type
+  langs:
+  - csharp
+  - vb
+  name: ES3Data
+  nameWithType: ES3Data
+  fullName: ES3Internal.ES3Data
+  type: Struct
+  source:
+    id: ES3Data
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3File.cs
+    startLine: 479
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public struct ES3Data
+    content.vb: Public Structure ES3Data
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ES3Internal.ES3Data.type
+  commentId: F:ES3Internal.ES3Data.type
+  id: type
+  parent: ES3Internal.ES3Data
+  langs:
+  - csharp
+  - vb
+  name: type
+  nameWithType: ES3Data.type
+  fullName: ES3Internal.ES3Data.type
+  type: Field
+  source:
+    id: type
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3File.cs
+    startLine: 481
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public ES3Type type
+    return:
+      type: ES3Types.ES3Type
+    content.vb: Public type As ES3Type
+- uid: ES3Internal.ES3Data.bytes
+  commentId: F:ES3Internal.ES3Data.bytes
+  id: bytes
+  parent: ES3Internal.ES3Data
+  langs:
+  - csharp
+  - vb
+  name: bytes
+  nameWithType: ES3Data.bytes
+  fullName: ES3Internal.ES3Data.bytes
+  type: Field
+  source:
+    id: bytes
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3File.cs
+    startLine: 482
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public byte[] bytes
+    return:
+      type: System.Byte[]
+    content.vb: Public bytes As Byte()
+- uid: ES3Internal.ES3Data.#ctor(System.Type,System.Byte[])
+  commentId: M:ES3Internal.ES3Data.#ctor(System.Type,System.Byte[])
+  id: '#ctor(System.Type,System.Byte[])'
+  parent: ES3Internal.ES3Data
+  langs:
+  - csharp
+  - vb
+  name: ES3Data(Type, byte[])
+  nameWithType: ES3Data.ES3Data(Type, byte[])
+  fullName: ES3Internal.ES3Data.ES3Data(System.Type, byte[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3File.cs
+    startLine: 484
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public ES3Data(Type type, byte[] bytes)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: bytes
+      type: System.Byte[]
+    content.vb: Public Sub New(type As Type, bytes As Byte())
+  overload: ES3Internal.ES3Data.#ctor*
+  nameWithType.vb: ES3Data.New(Type, Byte())
+  fullName.vb: ES3Internal.ES3Data.New(System.Type, Byte())
+  name.vb: New(Type, Byte())
+- uid: ES3Internal.ES3Data.#ctor(ES3Types.ES3Type,System.Byte[])
+  commentId: M:ES3Internal.ES3Data.#ctor(ES3Types.ES3Type,System.Byte[])
+  id: '#ctor(ES3Types.ES3Type,System.Byte[])'
+  parent: ES3Internal.ES3Data
+  langs:
+  - csharp
+  - vb
+  name: ES3Data(ES3Type, byte[])
+  nameWithType: ES3Data.ES3Data(ES3Type, byte[])
+  fullName: ES3Internal.ES3Data.ES3Data(ES3Types.ES3Type, byte[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3File.cs
+    startLine: 490
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public ES3Data(ES3Type type, byte[] bytes)
+    parameters:
+    - id: type
+      type: ES3Types.ES3Type
+    - id: bytes
+      type: System.Byte[]
+    content.vb: Public Sub New(type As ES3Type, bytes As Byte())
+  overload: ES3Internal.ES3Data.#ctor*
+  nameWithType.vb: ES3Data.New(ES3Type, Byte())
+  fullName.vb: ES3Internal.ES3Data.New(ES3Types.ES3Type, Byte())
+  name.vb: New(ES3Type, Byte())
+references:
+- uid: ES3Internal
+  commentId: N:ES3Internal
+  href: ES3Internal.html
+  name: ES3Internal
+  nameWithType: ES3Internal
+  fullName: ES3Internal
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ES3Types.ES3Type
+  commentId: T:ES3Types.ES3Type
+  parent: ES3Types
+  name: ES3Type
+  nameWithType: ES3Type
+  fullName: ES3Types.ES3Type
+- uid: ES3Types
+  commentId: N:ES3Types
+  href: ES3Types.html
+  name: ES3Types
+  nameWithType: ES3Types
+  fullName: ES3Types
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: ES3Internal.ES3Data.#ctor*
+  commentId: Overload:ES3Internal.ES3Data.#ctor
+  href: ES3Internal.ES3Data.html#ES3Internal_ES3Data__ctor_System_Type_System_Byte___
+  name: ES3Data
+  nameWithType: ES3Data.ES3Data
+  fullName: ES3Internal.ES3Data.ES3Data
+  nameWithType.vb: ES3Data.New
+  fullName.vb: ES3Internal.ES3Data.New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

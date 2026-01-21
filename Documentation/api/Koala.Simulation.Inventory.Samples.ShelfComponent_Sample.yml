@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample
+  commentId: T:Koala.Simulation.Inventory.Samples.ShelfComponent_Sample
+  id: ShelfComponent_Sample
+  parent: Koala.Simulation.Inventory.Samples
+  children:
+  - Koala.Simulation.Inventory.Samples.ShelfComponent_Sample.Container
+  langs:
+  - csharp
+  - vb
+  name: ShelfComponent_Sample
+  nameWithType: ShelfComponent_Sample
+  fullName: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample
+  type: Class
+  source:
+    remote:
+      path: Runtime/Inventory/Samples/ShelfComponent_Sample.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ShelfComponent_Sample
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Samples/ShelfComponent_Sample.cs
+    startLine: 73
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory.Samples
+  summary: >-
+    A sample component showing how to use a <xref href="Koala.Simulation.Inventory.Core.Container" data-throw-if-not-resolved="false"></xref> in the scene.
+
+
+    Demonstrates creating a container, applying filters,
+
+    saving and loading container state, and interacting with items at runtime.
+  example:
+  - >-
+    <pre><code class="lang-csharp">public class ShelfComponent_Sample : MonoBehaviour
+
+    {
+        [SerializeField] private string _containerId;
+        [SerializeField] private int _capacity = 10;
+
+        private Container _container;
+
+        public Container Container =&gt; _container;
+
+        private void Awake()
+        {
+            //Saving a data
+
+            // Create a new container with the given prefab id and capacity
+            // Auto generates a unique id
+            _container = new Container(
+                _containerId,
+                _capacity
+            );
+
+            // Add a filter to the container
+            // So when adding items, only common and uncommon items will be added
+            RarityFilter rarityFilter = new RarityFilter(
+                new string[] { "common", "uncommon" }
+            );
+            _container.AddFilter(rarityFilter);
+
+            // Always save after updating the important data.
+            SaveSystem.SaveContainers();
+        }
+
+        private void Start()
+        {
+            // Loading a data
+
+            List&lt;IContainer&gt; loaded = SaveSystem.LoadAllContainers();
+
+            _container = loaded[0] as Container;
+
+            Vector3 position = _container.Position.ToVector3();
+            Quaternion rotation = _container.Rotation.ToQuaternion();
+
+            transform.position = position;
+            transform.rotation = rotation;
+
+            Debug.Log($"Loaded Container {_container}: UniqueId={_container.UniqueId}, PrefabId={_container.PrefabId}, Items={_container.GetItems().Count}");
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            // Returns false as the item is not common or uncommon.
+            // Assume the created item is legendary.
+            _container.TryAdd(new Item("legendary_apple"));
+        }
+    }</code></pre>
+  syntax:
+    content: 'public class ShelfComponent_Sample : MonoBehaviour'
+    content.vb: Public Class ShelfComponent_Sample Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample.Container
+  commentId: P:Koala.Simulation.Inventory.Samples.ShelfComponent_Sample.Container
+  id: Container
+  parent: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample
+  langs:
+  - csharp
+  - vb
+  name: Container
+  nameWithType: ShelfComponent_Sample.Container
+  fullName: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample.Container
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Samples/ShelfComponent_Sample.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Container
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Samples/ShelfComponent_Sample.cs
+    startLine: 78
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory.Samples
+  syntax:
+    content: public Container Container { get; }
+    parameters: []
+    return:
+      type: Koala.Simulation.Inventory.Core.Container
+    content.vb: Public ReadOnly Property Container As Container
+  overload: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample.Container*
+references:
+- uid: Koala.Simulation.Inventory.Core.Container
+  commentId: T:Koala.Simulation.Inventory.Core.Container
+  parent: Koala.Simulation.Inventory.Core
+  href: Koala.Simulation.Inventory.Core.Container.html
+  name: Container
+  nameWithType: Container
+  fullName: Koala.Simulation.Inventory.Core.Container
+- uid: Koala.Simulation.Inventory.Samples
+  commentId: N:Koala.Simulation.Inventory.Samples
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Samples
+  nameWithType: Koala.Simulation.Inventory.Samples
+  fullName: Koala.Simulation.Inventory.Samples
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Samples
+    name: Samples
+    href: Koala.Simulation.Inventory.Samples.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Samples
+    name: Samples
+    href: Koala.Simulation.Inventory.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Koala.Simulation.Inventory.Core
+  commentId: N:Koala.Simulation.Inventory.Core
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Core
+  nameWithType: Koala.Simulation.Inventory.Core
+  fullName: Koala.Simulation.Inventory.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample.Container*
+  commentId: Overload:Koala.Simulation.Inventory.Samples.ShelfComponent_Sample.Container
+  href: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample.html#Koala_Simulation_Inventory_Samples_ShelfComponent_Sample_Container
+  name: Container
+  nameWithType: ShelfComponent_Sample.Container
+  fullName: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample.Container

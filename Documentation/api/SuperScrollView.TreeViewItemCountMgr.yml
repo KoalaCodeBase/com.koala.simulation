@@ -1,0 +1,656 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.TreeViewItemCountMgr
+  commentId: T:SuperScrollView.TreeViewItemCountMgr
+  id: TreeViewItemCountMgr
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.TreeViewItemCountMgr.AddTreeItem(System.Int32,System.Boolean)
+  - SuperScrollView.TreeViewItemCountMgr.Clear
+  - SuperScrollView.TreeViewItemCountMgr.GetTotalItemAndChildCount
+  - SuperScrollView.TreeViewItemCountMgr.GetTreeItem(System.Int32)
+  - SuperScrollView.TreeViewItemCountMgr.IsTreeItemExpand(System.Int32)
+  - SuperScrollView.TreeViewItemCountMgr.QueryTreeItemByTotalIndex(System.Int32)
+  - SuperScrollView.TreeViewItemCountMgr.SetItemChildCount(System.Int32,System.Int32)
+  - SuperScrollView.TreeViewItemCountMgr.SetItemExpand(System.Int32,System.Boolean)
+  - SuperScrollView.TreeViewItemCountMgr.ToggleItemExpand(System.Int32)
+  - SuperScrollView.TreeViewItemCountMgr.TreeViewItemCount
+  langs:
+  - csharp
+  - vb
+  name: TreeViewItemCountMgr
+  nameWithType: TreeViewItemCountMgr
+  fullName: SuperScrollView.TreeViewItemCountMgr
+  type: Class
+  source:
+    id: TreeViewItemCountMgr
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public class TreeViewItemCountMgr
+    content.vb: Public Class TreeViewItemCountMgr
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SuperScrollView.TreeViewItemCountMgr.AddTreeItem(System.Int32,System.Boolean)
+  commentId: M:SuperScrollView.TreeViewItemCountMgr.AddTreeItem(System.Int32,System.Boolean)
+  id: AddTreeItem(System.Int32,System.Boolean)
+  parent: SuperScrollView.TreeViewItemCountMgr
+  langs:
+  - csharp
+  - vb
+  name: AddTreeItem(int, bool)
+  nameWithType: TreeViewItemCountMgr.AddTreeItem(int, bool)
+  fullName: SuperScrollView.TreeViewItemCountMgr.AddTreeItem(int, bool)
+  type: Method
+  source:
+    id: AddTreeItem
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void AddTreeItem(int count, bool isExpand)
+    parameters:
+    - id: count
+      type: System.Int32
+    - id: isExpand
+      type: System.Boolean
+    content.vb: Public Sub AddTreeItem(count As Integer, isExpand As Boolean)
+  overload: SuperScrollView.TreeViewItemCountMgr.AddTreeItem*
+  nameWithType.vb: TreeViewItemCountMgr.AddTreeItem(Integer, Boolean)
+  fullName.vb: SuperScrollView.TreeViewItemCountMgr.AddTreeItem(Integer, Boolean)
+  name.vb: AddTreeItem(Integer, Boolean)
+- uid: SuperScrollView.TreeViewItemCountMgr.Clear
+  commentId: M:SuperScrollView.TreeViewItemCountMgr.Clear
+  id: Clear
+  parent: SuperScrollView.TreeViewItemCountMgr
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: TreeViewItemCountMgr.Clear()
+  fullName: SuperScrollView.TreeViewItemCountMgr.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: SuperScrollView.TreeViewItemCountMgr.Clear*
+- uid: SuperScrollView.TreeViewItemCountMgr.GetTreeItem(System.Int32)
+  commentId: M:SuperScrollView.TreeViewItemCountMgr.GetTreeItem(System.Int32)
+  id: GetTreeItem(System.Int32)
+  parent: SuperScrollView.TreeViewItemCountMgr
+  langs:
+  - csharp
+  - vb
+  name: GetTreeItem(int)
+  nameWithType: TreeViewItemCountMgr.GetTreeItem(int)
+  fullName: SuperScrollView.TreeViewItemCountMgr.GetTreeItem(int)
+  type: Method
+  source:
+    id: GetTreeItem
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public TreeViewItemCountData GetTreeItem(int treeIndex)
+    parameters:
+    - id: treeIndex
+      type: System.Int32
+    return:
+      type: SuperScrollView.TreeViewItemCountData
+    content.vb: Public Function GetTreeItem(treeIndex As Integer) As TreeViewItemCountData
+  overload: SuperScrollView.TreeViewItemCountMgr.GetTreeItem*
+  nameWithType.vb: TreeViewItemCountMgr.GetTreeItem(Integer)
+  fullName.vb: SuperScrollView.TreeViewItemCountMgr.GetTreeItem(Integer)
+  name.vb: GetTreeItem(Integer)
+- uid: SuperScrollView.TreeViewItemCountMgr.SetItemChildCount(System.Int32,System.Int32)
+  commentId: M:SuperScrollView.TreeViewItemCountMgr.SetItemChildCount(System.Int32,System.Int32)
+  id: SetItemChildCount(System.Int32,System.Int32)
+  parent: SuperScrollView.TreeViewItemCountMgr
+  langs:
+  - csharp
+  - vb
+  name: SetItemChildCount(int, int)
+  nameWithType: TreeViewItemCountMgr.SetItemChildCount(int, int)
+  fullName: SuperScrollView.TreeViewItemCountMgr.SetItemChildCount(int, int)
+  type: Method
+  source:
+    id: SetItemChildCount
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void SetItemChildCount(int treeIndex, int count)
+    parameters:
+    - id: treeIndex
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    content.vb: Public Sub SetItemChildCount(treeIndex As Integer, count As Integer)
+  overload: SuperScrollView.TreeViewItemCountMgr.SetItemChildCount*
+  nameWithType.vb: TreeViewItemCountMgr.SetItemChildCount(Integer, Integer)
+  fullName.vb: SuperScrollView.TreeViewItemCountMgr.SetItemChildCount(Integer, Integer)
+  name.vb: SetItemChildCount(Integer, Integer)
+- uid: SuperScrollView.TreeViewItemCountMgr.SetItemExpand(System.Int32,System.Boolean)
+  commentId: M:SuperScrollView.TreeViewItemCountMgr.SetItemExpand(System.Int32,System.Boolean)
+  id: SetItemExpand(System.Int32,System.Boolean)
+  parent: SuperScrollView.TreeViewItemCountMgr
+  langs:
+  - csharp
+  - vb
+  name: SetItemExpand(int, bool)
+  nameWithType: TreeViewItemCountMgr.SetItemExpand(int, bool)
+  fullName: SuperScrollView.TreeViewItemCountMgr.SetItemExpand(int, bool)
+  type: Method
+  source:
+    id: SetItemExpand
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void SetItemExpand(int treeIndex, bool isExpand)
+    parameters:
+    - id: treeIndex
+      type: System.Int32
+    - id: isExpand
+      type: System.Boolean
+    content.vb: Public Sub SetItemExpand(treeIndex As Integer, isExpand As Boolean)
+  overload: SuperScrollView.TreeViewItemCountMgr.SetItemExpand*
+  nameWithType.vb: TreeViewItemCountMgr.SetItemExpand(Integer, Boolean)
+  fullName.vb: SuperScrollView.TreeViewItemCountMgr.SetItemExpand(Integer, Boolean)
+  name.vb: SetItemExpand(Integer, Boolean)
+- uid: SuperScrollView.TreeViewItemCountMgr.ToggleItemExpand(System.Int32)
+  commentId: M:SuperScrollView.TreeViewItemCountMgr.ToggleItemExpand(System.Int32)
+  id: ToggleItemExpand(System.Int32)
+  parent: SuperScrollView.TreeViewItemCountMgr
+  langs:
+  - csharp
+  - vb
+  name: ToggleItemExpand(int)
+  nameWithType: TreeViewItemCountMgr.ToggleItemExpand(int)
+  fullName: SuperScrollView.TreeViewItemCountMgr.ToggleItemExpand(int)
+  type: Method
+  source:
+    id: ToggleItemExpand
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void ToggleItemExpand(int treeIndex)
+    parameters:
+    - id: treeIndex
+      type: System.Int32
+    content.vb: Public Sub ToggleItemExpand(treeIndex As Integer)
+  overload: SuperScrollView.TreeViewItemCountMgr.ToggleItemExpand*
+  nameWithType.vb: TreeViewItemCountMgr.ToggleItemExpand(Integer)
+  fullName.vb: SuperScrollView.TreeViewItemCountMgr.ToggleItemExpand(Integer)
+  name.vb: ToggleItemExpand(Integer)
+- uid: SuperScrollView.TreeViewItemCountMgr.IsTreeItemExpand(System.Int32)
+  commentId: M:SuperScrollView.TreeViewItemCountMgr.IsTreeItemExpand(System.Int32)
+  id: IsTreeItemExpand(System.Int32)
+  parent: SuperScrollView.TreeViewItemCountMgr
+  langs:
+  - csharp
+  - vb
+  name: IsTreeItemExpand(int)
+  nameWithType: TreeViewItemCountMgr.IsTreeItemExpand(int)
+  fullName: SuperScrollView.TreeViewItemCountMgr.IsTreeItemExpand(int)
+  type: Method
+  source:
+    id: IsTreeItemExpand
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 94
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public bool IsTreeItemExpand(int treeIndex)
+    parameters:
+    - id: treeIndex
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsTreeItemExpand(treeIndex As Integer) As Boolean
+  overload: SuperScrollView.TreeViewItemCountMgr.IsTreeItemExpand*
+  nameWithType.vb: TreeViewItemCountMgr.IsTreeItemExpand(Integer)
+  fullName.vb: SuperScrollView.TreeViewItemCountMgr.IsTreeItemExpand(Integer)
+  name.vb: IsTreeItemExpand(Integer)
+- uid: SuperScrollView.TreeViewItemCountMgr.TreeViewItemCount
+  commentId: P:SuperScrollView.TreeViewItemCountMgr.TreeViewItemCount
+  id: TreeViewItemCount
+  parent: SuperScrollView.TreeViewItemCountMgr
+  langs:
+  - csharp
+  - vb
+  name: TreeViewItemCount
+  nameWithType: TreeViewItemCountMgr.TreeViewItemCount
+  fullName: SuperScrollView.TreeViewItemCountMgr.TreeViewItemCount
+  type: Property
+  source:
+    id: TreeViewItemCount
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 130
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int TreeViewItemCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TreeViewItemCount As Integer
+  overload: SuperScrollView.TreeViewItemCountMgr.TreeViewItemCount*
+- uid: SuperScrollView.TreeViewItemCountMgr.GetTotalItemAndChildCount
+  commentId: M:SuperScrollView.TreeViewItemCountMgr.GetTotalItemAndChildCount
+  id: GetTotalItemAndChildCount
+  parent: SuperScrollView.TreeViewItemCountMgr
+  langs:
+  - csharp
+  - vb
+  name: GetTotalItemAndChildCount()
+  nameWithType: TreeViewItemCountMgr.GetTotalItemAndChildCount()
+  fullName: SuperScrollView.TreeViewItemCountMgr.GetTotalItemAndChildCount()
+  type: Method
+  source:
+    id: GetTotalItemAndChildCount
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 138
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int GetTotalItemAndChildCount()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetTotalItemAndChildCount() As Integer
+  overload: SuperScrollView.TreeViewItemCountMgr.GetTotalItemAndChildCount*
+- uid: SuperScrollView.TreeViewItemCountMgr.QueryTreeItemByTotalIndex(System.Int32)
+  commentId: M:SuperScrollView.TreeViewItemCountMgr.QueryTreeItemByTotalIndex(System.Int32)
+  id: QueryTreeItemByTotalIndex(System.Int32)
+  parent: SuperScrollView.TreeViewItemCountMgr
+  langs:
+  - csharp
+  - vb
+  name: QueryTreeItemByTotalIndex(int)
+  nameWithType: TreeViewItemCountMgr.QueryTreeItemByTotalIndex(int)
+  fullName: SuperScrollView.TreeViewItemCountMgr.QueryTreeItemByTotalIndex(int)
+  type: Method
+  source:
+    id: QueryTreeItemByTotalIndex
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\TreeViewItemCountMgr.cs
+    startLine: 149
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public TreeViewItemCountData QueryTreeItemByTotalIndex(int totalIndex)
+    parameters:
+    - id: totalIndex
+      type: System.Int32
+    return:
+      type: SuperScrollView.TreeViewItemCountData
+    content.vb: Public Function QueryTreeItemByTotalIndex(totalIndex As Integer) As TreeViewItemCountData
+  overload: SuperScrollView.TreeViewItemCountMgr.QueryTreeItemByTotalIndex*
+  nameWithType.vb: TreeViewItemCountMgr.QueryTreeItemByTotalIndex(Integer)
+  fullName.vb: SuperScrollView.TreeViewItemCountMgr.QueryTreeItemByTotalIndex(Integer)
+  name.vb: QueryTreeItemByTotalIndex(Integer)
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SuperScrollView.TreeViewItemCountMgr.AddTreeItem*
+  commentId: Overload:SuperScrollView.TreeViewItemCountMgr.AddTreeItem
+  href: SuperScrollView.TreeViewItemCountMgr.html#SuperScrollView_TreeViewItemCountMgr_AddTreeItem_System_Int32_System_Boolean_
+  name: AddTreeItem
+  nameWithType: TreeViewItemCountMgr.AddTreeItem
+  fullName: SuperScrollView.TreeViewItemCountMgr.AddTreeItem
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SuperScrollView.TreeViewItemCountMgr.Clear*
+  commentId: Overload:SuperScrollView.TreeViewItemCountMgr.Clear
+  href: SuperScrollView.TreeViewItemCountMgr.html#SuperScrollView_TreeViewItemCountMgr_Clear
+  name: Clear
+  nameWithType: TreeViewItemCountMgr.Clear
+  fullName: SuperScrollView.TreeViewItemCountMgr.Clear
+- uid: SuperScrollView.TreeViewItemCountMgr.GetTreeItem*
+  commentId: Overload:SuperScrollView.TreeViewItemCountMgr.GetTreeItem
+  href: SuperScrollView.TreeViewItemCountMgr.html#SuperScrollView_TreeViewItemCountMgr_GetTreeItem_System_Int32_
+  name: GetTreeItem
+  nameWithType: TreeViewItemCountMgr.GetTreeItem
+  fullName: SuperScrollView.TreeViewItemCountMgr.GetTreeItem
+- uid: SuperScrollView.TreeViewItemCountData
+  commentId: T:SuperScrollView.TreeViewItemCountData
+  parent: SuperScrollView
+  href: SuperScrollView.TreeViewItemCountData.html
+  name: TreeViewItemCountData
+  nameWithType: TreeViewItemCountData
+  fullName: SuperScrollView.TreeViewItemCountData
+- uid: SuperScrollView.TreeViewItemCountMgr.SetItemChildCount*
+  commentId: Overload:SuperScrollView.TreeViewItemCountMgr.SetItemChildCount
+  href: SuperScrollView.TreeViewItemCountMgr.html#SuperScrollView_TreeViewItemCountMgr_SetItemChildCount_System_Int32_System_Int32_
+  name: SetItemChildCount
+  nameWithType: TreeViewItemCountMgr.SetItemChildCount
+  fullName: SuperScrollView.TreeViewItemCountMgr.SetItemChildCount
+- uid: SuperScrollView.TreeViewItemCountMgr.SetItemExpand*
+  commentId: Overload:SuperScrollView.TreeViewItemCountMgr.SetItemExpand
+  href: SuperScrollView.TreeViewItemCountMgr.html#SuperScrollView_TreeViewItemCountMgr_SetItemExpand_System_Int32_System_Boolean_
+  name: SetItemExpand
+  nameWithType: TreeViewItemCountMgr.SetItemExpand
+  fullName: SuperScrollView.TreeViewItemCountMgr.SetItemExpand
+- uid: SuperScrollView.TreeViewItemCountMgr.ToggleItemExpand*
+  commentId: Overload:SuperScrollView.TreeViewItemCountMgr.ToggleItemExpand
+  href: SuperScrollView.TreeViewItemCountMgr.html#SuperScrollView_TreeViewItemCountMgr_ToggleItemExpand_System_Int32_
+  name: ToggleItemExpand
+  nameWithType: TreeViewItemCountMgr.ToggleItemExpand
+  fullName: SuperScrollView.TreeViewItemCountMgr.ToggleItemExpand
+- uid: SuperScrollView.TreeViewItemCountMgr.IsTreeItemExpand*
+  commentId: Overload:SuperScrollView.TreeViewItemCountMgr.IsTreeItemExpand
+  href: SuperScrollView.TreeViewItemCountMgr.html#SuperScrollView_TreeViewItemCountMgr_IsTreeItemExpand_System_Int32_
+  name: IsTreeItemExpand
+  nameWithType: TreeViewItemCountMgr.IsTreeItemExpand
+  fullName: SuperScrollView.TreeViewItemCountMgr.IsTreeItemExpand
+- uid: SuperScrollView.TreeViewItemCountMgr.TreeViewItemCount*
+  commentId: Overload:SuperScrollView.TreeViewItemCountMgr.TreeViewItemCount
+  href: SuperScrollView.TreeViewItemCountMgr.html#SuperScrollView_TreeViewItemCountMgr_TreeViewItemCount
+  name: TreeViewItemCount
+  nameWithType: TreeViewItemCountMgr.TreeViewItemCount
+  fullName: SuperScrollView.TreeViewItemCountMgr.TreeViewItemCount
+- uid: SuperScrollView.TreeViewItemCountMgr.GetTotalItemAndChildCount*
+  commentId: Overload:SuperScrollView.TreeViewItemCountMgr.GetTotalItemAndChildCount
+  href: SuperScrollView.TreeViewItemCountMgr.html#SuperScrollView_TreeViewItemCountMgr_GetTotalItemAndChildCount
+  name: GetTotalItemAndChildCount
+  nameWithType: TreeViewItemCountMgr.GetTotalItemAndChildCount
+  fullName: SuperScrollView.TreeViewItemCountMgr.GetTotalItemAndChildCount
+- uid: SuperScrollView.TreeViewItemCountMgr.QueryTreeItemByTotalIndex*
+  commentId: Overload:SuperScrollView.TreeViewItemCountMgr.QueryTreeItemByTotalIndex
+  href: SuperScrollView.TreeViewItemCountMgr.html#SuperScrollView_TreeViewItemCountMgr_QueryTreeItemByTotalIndex_System_Int32_
+  name: QueryTreeItemByTotalIndex
+  nameWithType: TreeViewItemCountMgr.QueryTreeItemByTotalIndex
+  fullName: SuperScrollView.TreeViewItemCountMgr.QueryTreeItemByTotalIndex

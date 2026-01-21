@@ -1,0 +1,279 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Input.InputSettingsService
+  commentId: T:Koala.Simulation.Input.InputSettingsService
+  id: InputSettingsService
+  parent: Koala.Simulation.Input
+  children:
+  - Koala.Simulation.Input.InputSettingsService.ClearOverrides(UnityEngine.InputSystem.InputActionAsset)
+  - Koala.Simulation.Input.InputSettingsService.LoadOverrides(UnityEngine.InputSystem.InputActionAsset)
+  - Koala.Simulation.Input.InputSettingsService.SaveOverrides(UnityEngine.InputSystem.InputActionAsset)
+  langs:
+  - csharp
+  - vb
+  name: InputSettingsService
+  nameWithType: InputSettingsService
+  fullName: Koala.Simulation.Input.InputSettingsService
+  type: Class
+  source:
+    remote:
+      path: Runtime/Input/InputSettingsService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InputSettingsService
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputSettingsService.cs
+    startLine: 32
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Handles saving, loading, and clearing of input binding overrides.
+
+
+    Works with Unity's new Input System to persist user key rebinding changes 
+
+    into the simulation's save file (<code>world.es3</code>) using Easy Save (ES3).
+
+
+    Key features:
+
+    - Saves all current binding overrides as JSON
+
+    - Loads and applies saved overrides at startup
+
+    - Clears overrides and resets to default bindings
+
+    - Automatically invalidates the <xref href="Koala.Simulation.Input.InputManager" data-throw-if-not-resolved="false"></xref> cache
+
+
+    This service is called internally by <xref href="Koala.Simulation.Input.InputRebindService" data-throw-if-not-resolved="false"></xref>, 
+
+    but can also be used directly if needed.
+  example:
+  - >-
+    Example: Saving and loading overrides manually
+
+    <pre><code class="lang-csharp">// Save current bindings
+
+    InputSettingsService.SaveOverrides(myActionAsset);
+
+
+    // Load bindings on startup
+
+    InputSettingsService.LoadOverrides(myActionAsset);
+
+
+    // Reset all bindings to defaults
+
+    InputSettingsService.ClearOverrides(myActionAsset);</code></pre>
+  syntax:
+    content: public static class InputSettingsService
+    content.vb: Public Module InputSettingsService
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Input.InputSettingsService.SaveOverrides(UnityEngine.InputSystem.InputActionAsset)
+  commentId: M:Koala.Simulation.Input.InputSettingsService.SaveOverrides(UnityEngine.InputSystem.InputActionAsset)
+  id: SaveOverrides(UnityEngine.InputSystem.InputActionAsset)
+  parent: Koala.Simulation.Input.InputSettingsService
+  langs:
+  - csharp
+  - vb
+  name: SaveOverrides(InputActionAsset)
+  nameWithType: InputSettingsService.SaveOverrides(InputActionAsset)
+  fullName: Koala.Simulation.Input.InputSettingsService.SaveOverrides(UnityEngine.InputSystem.InputActionAsset)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputSettingsService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: SaveOverrides
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputSettingsService.cs
+    startLine: 42
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Saves all binding overrides from the given action asset into the save file.
+
+    Automatically invalidates the <xref href="Koala.Simulation.Input.InputManager" data-throw-if-not-resolved="false"></xref> cache.
+  example: []
+  syntax:
+    content: public static void SaveOverrides(InputActionAsset asset)
+    parameters:
+    - id: asset
+      type: UnityEngine.InputSystem.InputActionAsset
+      description: The InputActionAsset containing overrides to save.
+    content.vb: Public Shared Sub SaveOverrides(asset As InputActionAsset)
+  overload: Koala.Simulation.Input.InputSettingsService.SaveOverrides*
+- uid: Koala.Simulation.Input.InputSettingsService.LoadOverrides(UnityEngine.InputSystem.InputActionAsset)
+  commentId: M:Koala.Simulation.Input.InputSettingsService.LoadOverrides(UnityEngine.InputSystem.InputActionAsset)
+  id: LoadOverrides(UnityEngine.InputSystem.InputActionAsset)
+  parent: Koala.Simulation.Input.InputSettingsService
+  langs:
+  - csharp
+  - vb
+  name: LoadOverrides(InputActionAsset)
+  nameWithType: InputSettingsService.LoadOverrides(InputActionAsset)
+  fullName: Koala.Simulation.Input.InputSettingsService.LoadOverrides(UnityEngine.InputSystem.InputActionAsset)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputSettingsService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: LoadOverrides
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputSettingsService.cs
+    startLine: 55
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Loads binding overrides from the save file into the given action asset.
+
+    Automatically invalidates the <xref href="Koala.Simulation.Input.InputManager" data-throw-if-not-resolved="false"></xref> cache.
+  example: []
+  syntax:
+    content: public static void LoadOverrides(InputActionAsset asset)
+    parameters:
+    - id: asset
+      type: UnityEngine.InputSystem.InputActionAsset
+      description: The InputActionAsset to apply overrides to.
+    content.vb: Public Shared Sub LoadOverrides(asset As InputActionAsset)
+  overload: Koala.Simulation.Input.InputSettingsService.LoadOverrides*
+- uid: Koala.Simulation.Input.InputSettingsService.ClearOverrides(UnityEngine.InputSystem.InputActionAsset)
+  commentId: M:Koala.Simulation.Input.InputSettingsService.ClearOverrides(UnityEngine.InputSystem.InputActionAsset)
+  id: ClearOverrides(UnityEngine.InputSystem.InputActionAsset)
+  parent: Koala.Simulation.Input.InputSettingsService
+  langs:
+  - csharp
+  - vb
+  name: ClearOverrides(InputActionAsset)
+  nameWithType: InputSettingsService.ClearOverrides(InputActionAsset)
+  fullName: Koala.Simulation.Input.InputSettingsService.ClearOverrides(UnityEngine.InputSystem.InputActionAsset)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputSettingsService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ClearOverrides
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputSettingsService.cs
+    startLine: 72
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Clears all binding overrides from the given action asset and deletes saved data.
+
+    Automatically invalidates the <xref href="Koala.Simulation.Input.InputManager" data-throw-if-not-resolved="false"></xref> cache.
+  example: []
+  syntax:
+    content: public static void ClearOverrides(InputActionAsset asset)
+    parameters:
+    - id: asset
+      type: UnityEngine.InputSystem.InputActionAsset
+      description: The InputActionAsset to clear overrides from.
+    content.vb: Public Shared Sub ClearOverrides(asset As InputActionAsset)
+  overload: Koala.Simulation.Input.InputSettingsService.ClearOverrides*
+references:
+- uid: Koala.Simulation.Input.InputManager
+  commentId: T:Koala.Simulation.Input.InputManager
+  href: Koala.Simulation.Input.InputManager.html
+  name: InputManager
+  nameWithType: InputManager
+  fullName: Koala.Simulation.Input.InputManager
+- uid: Koala.Simulation.Input.InputRebindService
+  commentId: T:Koala.Simulation.Input.InputRebindService
+  href: Koala.Simulation.Input.InputRebindService.html
+  name: InputRebindService
+  nameWithType: InputRebindService
+  fullName: Koala.Simulation.Input.InputRebindService
+- uid: Koala.Simulation.Input
+  commentId: N:Koala.Simulation.Input
+  href: Koala.html
+  name: Koala.Simulation.Input
+  nameWithType: Koala.Simulation.Input
+  fullName: Koala.Simulation.Input
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Input.InputSettingsService.SaveOverrides*
+  commentId: Overload:Koala.Simulation.Input.InputSettingsService.SaveOverrides
+  href: Koala.Simulation.Input.InputSettingsService.html#Koala_Simulation_Input_InputSettingsService_SaveOverrides_UnityEngine_InputSystem_InputActionAsset_
+  name: SaveOverrides
+  nameWithType: InputSettingsService.SaveOverrides
+  fullName: Koala.Simulation.Input.InputSettingsService.SaveOverrides
+- uid: UnityEngine.InputSystem.InputActionAsset
+  commentId: T:UnityEngine.InputSystem.InputActionAsset
+  parent: UnityEngine.InputSystem
+  name: InputActionAsset
+  nameWithType: InputActionAsset
+  fullName: UnityEngine.InputSystem.InputActionAsset
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+- uid: Koala.Simulation.Input.InputSettingsService.LoadOverrides*
+  commentId: Overload:Koala.Simulation.Input.InputSettingsService.LoadOverrides
+  href: Koala.Simulation.Input.InputSettingsService.html#Koala_Simulation_Input_InputSettingsService_LoadOverrides_UnityEngine_InputSystem_InputActionAsset_
+  name: LoadOverrides
+  nameWithType: InputSettingsService.LoadOverrides
+  fullName: Koala.Simulation.Input.InputSettingsService.LoadOverrides
+- uid: Koala.Simulation.Input.InputSettingsService.ClearOverrides*
+  commentId: Overload:Koala.Simulation.Input.InputSettingsService.ClearOverrides
+  href: Koala.Simulation.Input.InputSettingsService.html#Koala_Simulation_Input_InputSettingsService_ClearOverrides_UnityEngine_InputSystem_InputActionAsset_
+  name: ClearOverrides
+  nameWithType: InputSettingsService.ClearOverrides
+  fullName: Koala.Simulation.Input.InputSettingsService.ClearOverrides

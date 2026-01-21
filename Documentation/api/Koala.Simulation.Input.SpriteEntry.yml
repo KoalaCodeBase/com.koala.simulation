@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Input.SpriteEntry
+  commentId: T:Koala.Simulation.Input.SpriteEntry
+  id: SpriteEntry
+  parent: Koala.Simulation.Input
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: SpriteEntry
+  nameWithType: SpriteEntry
+  fullName: Koala.Simulation.Input.SpriteEntry
+  type: Struct
+  source:
+    remote:
+      path: Runtime/Input/Input_SpriteAsset.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: SpriteEntry
+    path: ../Packages/com.koala.simulation/Runtime/Input/Input_SpriteAsset.cs
+    startLine: 68
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  example:
+  - >-
+    <pre><code class="lang-csharp">[Serializable]
+
+    public struct SpriteEntry
+
+    {
+        // Action name inside the InputActionAsset.
+        public string Key;
+
+        // The sprite to be used.
+        public Sprite Value;
+    }</code></pre>
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct SpriteEntry
+    content.vb: >-
+      <Serializable>
+
+      Public Structure SpriteEntry
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+references:
+- uid: Koala.Simulation.Input
+  commentId: N:Koala.Simulation.Input
+  href: Koala.html
+  name: Koala.Simulation.Input
+  nameWithType: Koala.Simulation.Input
+  fullName: Koala.Simulation.Input
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html

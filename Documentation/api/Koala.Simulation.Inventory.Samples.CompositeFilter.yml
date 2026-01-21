@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.Samples.CompositeFilter
+  commentId: T:Koala.Simulation.Inventory.Samples.CompositeFilter
+  id: CompositeFilter
+  parent: Koala.Simulation.Inventory.Samples
+  children:
+  - Koala.Simulation.Inventory.Samples.CompositeFilter.#ctor(System.Boolean,Koala.Simulation.Inventory.Core.IItemFilter[])
+  - Koala.Simulation.Inventory.Samples.CompositeFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  langs:
+  - csharp
+  - vb
+  name: CompositeFilter
+  nameWithType: CompositeFilter
+  fullName: Koala.Simulation.Inventory.Samples.CompositeFilter
+  type: Class
+  source:
+    remote:
+      path: Runtime/Inventory/Samples/TagFilter.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CompositeFilter
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Samples/TagFilter.cs
+    startLine: 45
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory.Samples
+  summary: 'Example usage of <xref href="Koala.Simulation.Inventory.Core.IItemFilter" data-throw-if-not-resolved="false"></xref>:'
+  example: []
+  syntax:
+    content: 'public sealed class CompositeFilter : IItemFilter'
+    content.vb: Public NotInheritable Class CompositeFilter Implements IItemFilter
+  inheritance:
+  - System.Object
+  implements:
+  - Koala.Simulation.Inventory.Core.IItemFilter
+- uid: Koala.Simulation.Inventory.Samples.CompositeFilter.#ctor(System.Boolean,Koala.Simulation.Inventory.Core.IItemFilter[])
+  commentId: M:Koala.Simulation.Inventory.Samples.CompositeFilter.#ctor(System.Boolean,Koala.Simulation.Inventory.Core.IItemFilter[])
+  id: '#ctor(System.Boolean,Koala.Simulation.Inventory.Core.IItemFilter[])'
+  parent: Koala.Simulation.Inventory.Samples.CompositeFilter
+  langs:
+  - csharp
+  - vb
+  name: CompositeFilter(bool, params IItemFilter[])
+  nameWithType: CompositeFilter.CompositeFilter(bool, params IItemFilter[])
+  fullName: Koala.Simulation.Inventory.Samples.CompositeFilter.CompositeFilter(bool, params Koala.Simulation.Inventory.Core.IItemFilter[])
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Inventory/Samples/TagFilter.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: .ctor
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Samples/TagFilter.cs
+    startLine: 50
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory.Samples
+  syntax:
+    content: public CompositeFilter(bool useAnd, params IItemFilter[] filters)
+    parameters:
+    - id: useAnd
+      type: System.Boolean
+    - id: filters
+      type: Koala.Simulation.Inventory.Core.IItemFilter[]
+    content.vb: Public Sub New(useAnd As Boolean, ParamArray filters As IItemFilter())
+  overload: Koala.Simulation.Inventory.Samples.CompositeFilter.#ctor*
+  nameWithType.vb: CompositeFilter.New(Boolean, ParamArray IItemFilter())
+  fullName.vb: Koala.Simulation.Inventory.Samples.CompositeFilter.New(Boolean, ParamArray Koala.Simulation.Inventory.Core.IItemFilter())
+  name.vb: New(Boolean, ParamArray IItemFilter())
+- uid: Koala.Simulation.Inventory.Samples.CompositeFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  commentId: M:Koala.Simulation.Inventory.Samples.CompositeFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  id: Accepts(Koala.Simulation.Inventory.Core.IItem)
+  parent: Koala.Simulation.Inventory.Samples.CompositeFilter
+  langs:
+  - csharp
+  - vb
+  name: Accepts(IItem)
+  nameWithType: CompositeFilter.Accepts(IItem)
+  fullName: Koala.Simulation.Inventory.Samples.CompositeFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Samples/TagFilter.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Accepts
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Samples/TagFilter.cs
+    startLine: 56
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory.Samples
+  summary: Determines whether the given item is allowed by the filter.
+  example: []
+  syntax:
+    content: public bool Accepts(IItem item)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.Core.IItem
+      description: The item to evaluate.
+    return:
+      type: System.Boolean
+      description: True if the item is accepted; otherwise false.
+    content.vb: Public Function Accepts(item As IItem) As Boolean
+  overload: Koala.Simulation.Inventory.Samples.CompositeFilter.Accepts*
+  implements:
+  - Koala.Simulation.Inventory.Core.IItemFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+references:
+- uid: Koala.Simulation.Inventory.Core.IItemFilter
+  commentId: T:Koala.Simulation.Inventory.Core.IItemFilter
+  parent: Koala.Simulation.Inventory.Core
+  href: Koala.Simulation.Inventory.Core.IItemFilter.html
+  name: IItemFilter
+  nameWithType: IItemFilter
+  fullName: Koala.Simulation.Inventory.Core.IItemFilter
+- uid: Koala.Simulation.Inventory.Samples
+  commentId: N:Koala.Simulation.Inventory.Samples
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Samples
+  nameWithType: Koala.Simulation.Inventory.Samples
+  fullName: Koala.Simulation.Inventory.Samples
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Samples
+    name: Samples
+    href: Koala.Simulation.Inventory.Samples.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Samples
+    name: Samples
+    href: Koala.Simulation.Inventory.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Koala.Simulation.Inventory.Core
+  commentId: N:Koala.Simulation.Inventory.Core
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Core
+  nameWithType: Koala.Simulation.Inventory.Core
+  fullName: Koala.Simulation.Inventory.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Inventory.Samples.CompositeFilter.#ctor*
+  commentId: Overload:Koala.Simulation.Inventory.Samples.CompositeFilter.#ctor
+  href: Koala.Simulation.Inventory.Samples.CompositeFilter.html#Koala_Simulation_Inventory_Samples_CompositeFilter__ctor_System_Boolean_Koala_Simulation_Inventory_Core_IItemFilter___
+  name: CompositeFilter
+  nameWithType: CompositeFilter.CompositeFilter
+  fullName: Koala.Simulation.Inventory.Samples.CompositeFilter.CompositeFilter
+  nameWithType.vb: CompositeFilter.New
+  fullName.vb: Koala.Simulation.Inventory.Samples.CompositeFilter.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koala.Simulation.Inventory.Core.IItemFilter[]
+  isExternal: true
+  href: Koala.Simulation.Inventory.Core.IItemFilter.html
+  name: IItemFilter[]
+  nameWithType: IItemFilter[]
+  fullName: Koala.Simulation.Inventory.Core.IItemFilter[]
+  nameWithType.vb: IItemFilter()
+  fullName.vb: Koala.Simulation.Inventory.Core.IItemFilter()
+  name.vb: IItemFilter()
+  spec.csharp:
+  - uid: Koala.Simulation.Inventory.Core.IItemFilter
+    name: IItemFilter
+    href: Koala.Simulation.Inventory.Core.IItemFilter.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Koala.Simulation.Inventory.Core.IItemFilter
+    name: IItemFilter
+    href: Koala.Simulation.Inventory.Core.IItemFilter.html
+  - name: (
+  - name: )
+- uid: Koala.Simulation.Inventory.Samples.CompositeFilter.Accepts*
+  commentId: Overload:Koala.Simulation.Inventory.Samples.CompositeFilter.Accepts
+  href: Koala.Simulation.Inventory.Samples.CompositeFilter.html#Koala_Simulation_Inventory_Samples_CompositeFilter_Accepts_Koala_Simulation_Inventory_Core_IItem_
+  name: Accepts
+  nameWithType: CompositeFilter.Accepts
+  fullName: Koala.Simulation.Inventory.Samples.CompositeFilter.Accepts
+- uid: Koala.Simulation.Inventory.Core.IItemFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  commentId: M:Koala.Simulation.Inventory.Core.IItemFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  parent: Koala.Simulation.Inventory.Core.IItemFilter
+  href: Koala.Simulation.Inventory.Core.IItemFilter.html#Koala_Simulation_Inventory_Core_IItemFilter_Accepts_Koala_Simulation_Inventory_Core_IItem_
+  name: Accepts(IItem)
+  nameWithType: IItemFilter.Accepts(IItem)
+  fullName: Koala.Simulation.Inventory.Core.IItemFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  spec.csharp:
+  - uid: Koala.Simulation.Inventory.Core.IItemFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+    name: Accepts
+    href: Koala.Simulation.Inventory.Core.IItemFilter.html#Koala_Simulation_Inventory_Core_IItemFilter_Accepts_Koala_Simulation_Inventory_Core_IItem_
+  - name: (
+  - uid: Koala.Simulation.Inventory.Core.IItem
+    name: IItem
+    href: Koala.Simulation.Inventory.Core.IItem.html
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Inventory.Core.IItemFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+    name: Accepts
+    href: Koala.Simulation.Inventory.Core.IItemFilter.html#Koala_Simulation_Inventory_Core_IItemFilter_Accepts_Koala_Simulation_Inventory_Core_IItem_
+  - name: (
+  - uid: Koala.Simulation.Inventory.Core.IItem
+    name: IItem
+    href: Koala.Simulation.Inventory.Core.IItem.html
+  - name: )
+- uid: Koala.Simulation.Inventory.Core.IItem
+  commentId: T:Koala.Simulation.Inventory.Core.IItem
+  parent: Koala.Simulation.Inventory.Core
+  href: Koala.Simulation.Inventory.Core.IItem.html
+  name: IItem
+  nameWithType: IItem
+  fullName: Koala.Simulation.Inventory.Core.IItem

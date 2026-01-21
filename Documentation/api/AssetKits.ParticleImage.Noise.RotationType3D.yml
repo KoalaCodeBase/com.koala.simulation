@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Noise.RotationType3D
+  commentId: T:AssetKits.ParticleImage.Noise.RotationType3D
+  id: Noise.RotationType3D
+  parent: AssetKits.ParticleImage
+  children:
+  - AssetKits.ParticleImage.Noise.RotationType3D.ImproveXYPlanes
+  - AssetKits.ParticleImage.Noise.RotationType3D.ImproveXZPlanes
+  - AssetKits.ParticleImage.Noise.RotationType3D.None
+  langs:
+  - csharp
+  - vb
+  name: Noise.RotationType3D
+  nameWithType: Noise.RotationType3D
+  fullName: AssetKits.ParticleImage.Noise.RotationType3D
+  type: Enum
+  source:
+    id: RotationType3D
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 50
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public enum Noise.RotationType3D
+    content.vb: Public Enum Noise.RotationType3D
+- uid: AssetKits.ParticleImage.Noise.RotationType3D.None
+  commentId: F:AssetKits.ParticleImage.Noise.RotationType3D.None
+  id: None
+  parent: AssetKits.ParticleImage.Noise.RotationType3D
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Noise.RotationType3D.None
+  fullName: AssetKits.ParticleImage.Noise.RotationType3D.None
+  type: Field
+  source:
+    id: None
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 52
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: None = 0
+    return:
+      type: AssetKits.ParticleImage.Noise.RotationType3D
+- uid: AssetKits.ParticleImage.Noise.RotationType3D.ImproveXYPlanes
+  commentId: F:AssetKits.ParticleImage.Noise.RotationType3D.ImproveXYPlanes
+  id: ImproveXYPlanes
+  parent: AssetKits.ParticleImage.Noise.RotationType3D
+  langs:
+  - csharp
+  - vb
+  name: ImproveXYPlanes
+  nameWithType: Noise.RotationType3D.ImproveXYPlanes
+  fullName: AssetKits.ParticleImage.Noise.RotationType3D.ImproveXYPlanes
+  type: Field
+  source:
+    id: ImproveXYPlanes
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 53
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: ImproveXYPlanes = 1
+    return:
+      type: AssetKits.ParticleImage.Noise.RotationType3D
+- uid: AssetKits.ParticleImage.Noise.RotationType3D.ImproveXZPlanes
+  commentId: F:AssetKits.ParticleImage.Noise.RotationType3D.ImproveXZPlanes
+  id: ImproveXZPlanes
+  parent: AssetKits.ParticleImage.Noise.RotationType3D
+  langs:
+  - csharp
+  - vb
+  name: ImproveXZPlanes
+  nameWithType: Noise.RotationType3D.ImproveXZPlanes
+  fullName: AssetKits.ParticleImage.Noise.RotationType3D.ImproveXZPlanes
+  type: Field
+  source:
+    id: ImproveXZPlanes
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 54
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: ImproveXZPlanes = 2
+    return:
+      type: AssetKits.ParticleImage.Noise.RotationType3D
+references:
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  href: AssetKits.html
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+- uid: AssetKits.ParticleImage.Noise.RotationType3D
+  commentId: T:AssetKits.ParticleImage.Noise.RotationType3D
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.RotationType3D
+  nameWithType: Noise.RotationType3D
+  fullName: AssetKits.ParticleImage.Noise.RotationType3D
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.RotationType3D
+    name: RotationType3D
+    href: AssetKits.ParticleImage.Noise.RotationType3D.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.RotationType3D
+    name: RotationType3D
+    href: AssetKits.ParticleImage.Noise.RotationType3D.html

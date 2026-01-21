@@ -1,0 +1,1316 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Internal.ES3JSONReader
+  commentId: T:ES3Internal.ES3JSONReader
+  id: ES3JSONReader
+  parent: ES3Internal
+  children:
+  - ES3Internal.ES3JSONReader.Dispose
+  - ES3Internal.ES3JSONReader.ReadKeyPrefix(System.Boolean)
+  - ES3Internal.ES3JSONReader.ReadKeySuffix
+  - ES3Internal.ES3JSONReader.ReadPropertyName
+  - ES3Internal.ES3JSONReader.baseReader
+  langs:
+  - csharp
+  - vb
+  name: ES3JSONReader
+  nameWithType: ES3JSONReader
+  fullName: ES3Internal.ES3JSONReader
+  type: Class
+  source:
+    id: ES3JSONReader
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Readers\ES3JSONReader.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: 'public class ES3JSONReader : ES3Reader, IDisposable'
+    content.vb: Public Class ES3JSONReader Inherits ES3Reader Implements IDisposable
+  inheritance:
+  - System.Object
+  - ES3Reader
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - ES3Reader.settings
+  - ES3Reader.serializationDepth
+  - ES3Reader.Properties
+  - ES3Reader.Read``1
+  - ES3Reader.ReadInto``1(System.Object)
+  - ES3Reader.SetPrivateProperty(System.String,System.Object,System.Object)
+  - ES3Reader.SetPrivateField(System.String,System.Object,System.Object)
+  - ES3Reader.Read``1(System.String)
+  - ES3Reader.Read``1(System.String,{T})
+  - ES3Reader.ReadInto``1(System.String,{T})
+  - ES3Reader.ReadObject``1(System.Object,ES3Types.ES3Type)
+  - ES3Reader.ReadObject``1(ES3Types.ES3Type)
+  - ES3Reader.Create
+  - ES3Reader.Create(System.String)
+  - ES3Reader.Create(System.String,ES3Settings)
+  - ES3Reader.Create(ES3Settings)
+  - ES3Reader.Create(System.Byte[])
+  - ES3Reader.Create(System.Byte[],ES3Settings)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ES3Internal.ES3JSONReader.baseReader
+  commentId: F:ES3Internal.ES3JSONReader.baseReader
+  id: baseReader
+  parent: ES3Internal.ES3JSONReader
+  langs:
+  - csharp
+  - vb
+  name: baseReader
+  nameWithType: ES3JSONReader.baseReader
+  fullName: ES3Internal.ES3JSONReader.baseReader
+  type: Field
+  source:
+    id: baseReader
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Readers\ES3JSONReader.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public StreamReader baseReader
+    return:
+      type: System.IO.StreamReader
+    content.vb: Public baseReader As StreamReader
+- uid: ES3Internal.ES3JSONReader.ReadPropertyName
+  commentId: M:ES3Internal.ES3JSONReader.ReadPropertyName
+  id: ReadPropertyName
+  parent: ES3Internal.ES3JSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadPropertyName()
+  nameWithType: ES3JSONReader.ReadPropertyName()
+  fullName: ES3Internal.ES3JSONReader.ReadPropertyName()
+  type: Method
+  source:
+    id: ReadPropertyName
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Readers\ES3JSONReader.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  example: []
+  syntax:
+    content: public override string ReadPropertyName()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ReadPropertyName() As String
+  overridden: ES3Reader.ReadPropertyName
+  overload: ES3Internal.ES3JSONReader.ReadPropertyName*
+- uid: ES3Internal.ES3JSONReader.ReadKeyPrefix(System.Boolean)
+  commentId: M:ES3Internal.ES3JSONReader.ReadKeyPrefix(System.Boolean)
+  id: ReadKeyPrefix(System.Boolean)
+  parent: ES3Internal.ES3JSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadKeyPrefix(bool)
+  nameWithType: ES3JSONReader.ReadKeyPrefix(bool)
+  fullName: ES3Internal.ES3JSONReader.ReadKeyPrefix(bool)
+  type: Method
+  source:
+    id: ReadKeyPrefix
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Readers\ES3JSONReader.cs
+    startLine: 81
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  example: []
+  syntax:
+    content: protected override Type ReadKeyPrefix(bool ignoreType = false)
+    parameters:
+    - id: ignoreType
+      type: System.Boolean
+    return:
+      type: System.Type
+    content.vb: Protected Overrides Function ReadKeyPrefix(ignoreType As Boolean = False) As Type
+  overridden: ES3Reader.ReadKeyPrefix(System.Boolean)
+  overload: ES3Internal.ES3JSONReader.ReadKeyPrefix*
+  nameWithType.vb: ES3JSONReader.ReadKeyPrefix(Boolean)
+  fullName.vb: ES3Internal.ES3JSONReader.ReadKeyPrefix(Boolean)
+  name.vb: ReadKeyPrefix(Boolean)
+- uid: ES3Internal.ES3JSONReader.ReadKeySuffix
+  commentId: M:ES3Internal.ES3JSONReader.ReadKeySuffix
+  id: ReadKeySuffix
+  parent: ES3Internal.ES3JSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadKeySuffix()
+  nameWithType: ES3JSONReader.ReadKeySuffix()
+  fullName: ES3Internal.ES3JSONReader.ReadKeySuffix()
+  type: Method
+  source:
+    id: ReadKeySuffix
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Readers\ES3JSONReader.cs
+    startLine: 101
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  example: []
+  syntax:
+    content: protected override void ReadKeySuffix()
+    content.vb: Protected Overrides Sub ReadKeySuffix()
+  overridden: ES3Reader.ReadKeySuffix
+  overload: ES3Internal.ES3JSONReader.ReadKeySuffix*
+- uid: ES3Internal.ES3JSONReader.Dispose
+  commentId: M:ES3Internal.ES3JSONReader.Dispose
+  id: Dispose
+  parent: ES3Internal.ES3JSONReader
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ES3JSONReader.Dispose()
+  fullName: ES3Internal.ES3JSONReader.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Readers\ES3JSONReader.cs
+    startLine: 565
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  summary: Disposes of the reader and it's underlying stream.
+  example: []
+  syntax:
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose()
+  overridden: ES3Reader.Dispose
+  overload: ES3Internal.ES3JSONReader.Dispose*
+references:
+- uid: ES3Internal
+  commentId: N:ES3Internal
+  href: ES3Internal.html
+  name: ES3Internal
+  nameWithType: ES3Internal
+  fullName: ES3Internal
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ES3Reader
+  commentId: T:ES3Reader
+  href: ES3Reader.html
+  name: ES3Reader
+  nameWithType: ES3Reader
+  fullName: ES3Reader
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: ES3Reader.settings
+  commentId: F:ES3Reader.settings
+  parent: ES3Reader
+  href: ES3Reader.html#ES3Reader_settings
+  name: settings
+  nameWithType: ES3Reader.settings
+  fullName: ES3Reader.settings
+- uid: ES3Reader.serializationDepth
+  commentId: F:ES3Reader.serializationDepth
+  parent: ES3Reader
+  href: ES3Reader.html#ES3Reader_serializationDepth
+  name: serializationDepth
+  nameWithType: ES3Reader.serializationDepth
+  fullName: ES3Reader.serializationDepth
+- uid: ES3Reader.Properties
+  commentId: P:ES3Reader.Properties
+  parent: ES3Reader
+  href: ES3Reader.html#ES3Reader_Properties
+  name: Properties
+  nameWithType: ES3Reader.Properties
+  fullName: ES3Reader.Properties
+- uid: ES3Reader.Read``1
+  commentId: M:ES3Reader.Read``1
+  parent: ES3Reader
+  href: ES3Reader.html#ES3Reader_Read__1
+  name: Read<T>()
+  nameWithType: ES3Reader.Read<T>()
+  fullName: ES3Reader.Read<T>()
+  nameWithType.vb: ES3Reader.Read(Of T)()
+  fullName.vb: ES3Reader.Read(Of T)()
+  name.vb: Read(Of T)()
+  spec.csharp:
+  - uid: ES3Reader.Read``1
+    name: Read
+    href: ES3Reader.html#ES3Reader_Read__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Read``1
+    name: Read
+    href: ES3Reader.html#ES3Reader_Read__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: ES3Reader.ReadInto``1(System.Object)
+  commentId: M:ES3Reader.ReadInto``1(System.Object)
+  parent: ES3Reader
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_ReadInto__1_System_Object_
+  name: ReadInto<T>(object)
+  nameWithType: ES3Reader.ReadInto<T>(object)
+  fullName: ES3Reader.ReadInto<T>(object)
+  nameWithType.vb: ES3Reader.ReadInto(Of T)(Object)
+  fullName.vb: ES3Reader.ReadInto(Of T)(Object)
+  name.vb: ReadInto(Of T)(Object)
+  spec.csharp:
+  - uid: ES3Reader.ReadInto``1(System.Object)
+    name: ReadInto
+    href: ES3Reader.html#ES3Reader_ReadInto__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.ReadInto``1(System.Object)
+    name: ReadInto
+    href: ES3Reader.html#ES3Reader_ReadInto__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: ES3Reader.SetPrivateProperty(System.String,System.Object,System.Object)
+  commentId: M:ES3Reader.SetPrivateProperty(System.String,System.Object,System.Object)
+  parent: ES3Reader
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_SetPrivateProperty_System_String_System_Object_System_Object_
+  name: SetPrivateProperty(string, object, object)
+  nameWithType: ES3Reader.SetPrivateProperty(string, object, object)
+  fullName: ES3Reader.SetPrivateProperty(string, object, object)
+  nameWithType.vb: ES3Reader.SetPrivateProperty(String, Object, Object)
+  fullName.vb: ES3Reader.SetPrivateProperty(String, Object, Object)
+  name.vb: SetPrivateProperty(String, Object, Object)
+  spec.csharp:
+  - uid: ES3Reader.SetPrivateProperty(System.String,System.Object,System.Object)
+    name: SetPrivateProperty
+    href: ES3Reader.html#ES3Reader_SetPrivateProperty_System_String_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.SetPrivateProperty(System.String,System.Object,System.Object)
+    name: SetPrivateProperty
+    href: ES3Reader.html#ES3Reader_SetPrivateProperty_System_String_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: ES3Reader.SetPrivateField(System.String,System.Object,System.Object)
+  commentId: M:ES3Reader.SetPrivateField(System.String,System.Object,System.Object)
+  parent: ES3Reader
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_SetPrivateField_System_String_System_Object_System_Object_
+  name: SetPrivateField(string, object, object)
+  nameWithType: ES3Reader.SetPrivateField(string, object, object)
+  fullName: ES3Reader.SetPrivateField(string, object, object)
+  nameWithType.vb: ES3Reader.SetPrivateField(String, Object, Object)
+  fullName.vb: ES3Reader.SetPrivateField(String, Object, Object)
+  name.vb: SetPrivateField(String, Object, Object)
+  spec.csharp:
+  - uid: ES3Reader.SetPrivateField(System.String,System.Object,System.Object)
+    name: SetPrivateField
+    href: ES3Reader.html#ES3Reader_SetPrivateField_System_String_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.SetPrivateField(System.String,System.Object,System.Object)
+    name: SetPrivateField
+    href: ES3Reader.html#ES3Reader_SetPrivateField_System_String_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: ES3Reader.Read``1(System.String)
+  commentId: M:ES3Reader.Read``1(System.String)
+  parent: ES3Reader
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_Read__1_System_String_
+  name: Read<T>(string)
+  nameWithType: ES3Reader.Read<T>(string)
+  fullName: ES3Reader.Read<T>(string)
+  nameWithType.vb: ES3Reader.Read(Of T)(String)
+  fullName.vb: ES3Reader.Read(Of T)(String)
+  name.vb: Read(Of T)(String)
+  spec.csharp:
+  - uid: ES3Reader.Read``1(System.String)
+    name: Read
+    href: ES3Reader.html#ES3Reader_Read__1_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Read``1(System.String)
+    name: Read
+    href: ES3Reader.html#ES3Reader_Read__1_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: ES3Reader.Read``1(System.String,{T})
+  commentId: M:ES3Reader.Read``1(System.String,``0)
+  parent: ES3Reader
+  definition: ES3Reader.Read``1(System.String,``0)
+  href: ES3Reader.html#ES3Reader_Read__1_System_String___0_
+  name: Read<T>(string, T)
+  nameWithType: ES3Reader.Read<T>(string, T)
+  fullName: ES3Reader.Read<T>(string, T)
+  nameWithType.vb: ES3Reader.Read(Of T)(String, T)
+  fullName.vb: ES3Reader.Read(Of T)(String, T)
+  name.vb: Read(Of T)(String, T)
+  spec.csharp:
+  - uid: ES3Reader.Read``1(System.String,``0)
+    name: Read
+    href: ES3Reader.html#ES3Reader_Read__1_System_String___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Read``1(System.String,``0)
+    name: Read
+    href: ES3Reader.html#ES3Reader_Read__1_System_String___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: ES3Reader.ReadInto``1(System.String,{T})
+  commentId: M:ES3Reader.ReadInto``1(System.String,``0)
+  parent: ES3Reader
+  definition: ES3Reader.ReadInto``1(System.String,``0)
+  href: ES3Reader.html#ES3Reader_ReadInto__1_System_String___0_
+  name: ReadInto<T>(string, T)
+  nameWithType: ES3Reader.ReadInto<T>(string, T)
+  fullName: ES3Reader.ReadInto<T>(string, T)
+  nameWithType.vb: ES3Reader.ReadInto(Of T)(String, T)
+  fullName.vb: ES3Reader.ReadInto(Of T)(String, T)
+  name.vb: ReadInto(Of T)(String, T)
+  spec.csharp:
+  - uid: ES3Reader.ReadInto``1(System.String,``0)
+    name: ReadInto
+    href: ES3Reader.html#ES3Reader_ReadInto__1_System_String___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.ReadInto``1(System.String,``0)
+    name: ReadInto
+    href: ES3Reader.html#ES3Reader_ReadInto__1_System_String___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: ES3Reader.ReadObject``1(System.Object,ES3Types.ES3Type)
+  commentId: M:ES3Reader.ReadObject``1(System.Object,ES3Types.ES3Type)
+  parent: ES3Reader
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_ReadObject__1_System_Object_ES3Types_ES3Type_
+  name: ReadObject<T>(object, ES3Type)
+  nameWithType: ES3Reader.ReadObject<T>(object, ES3Type)
+  fullName: ES3Reader.ReadObject<T>(object, ES3Types.ES3Type)
+  nameWithType.vb: ES3Reader.ReadObject(Of T)(Object, ES3Type)
+  fullName.vb: ES3Reader.ReadObject(Of T)(Object, ES3Types.ES3Type)
+  name.vb: ReadObject(Of T)(Object, ES3Type)
+  spec.csharp:
+  - uid: ES3Reader.ReadObject``1(System.Object,ES3Types.ES3Type)
+    name: ReadObject
+    href: ES3Reader.html#ES3Reader_ReadObject__1_System_Object_ES3Types_ES3Type_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: ES3Types.ES3Type
+    name: ES3Type
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.ReadObject``1(System.Object,ES3Types.ES3Type)
+    name: ReadObject
+    href: ES3Reader.html#ES3Reader_ReadObject__1_System_Object_ES3Types_ES3Type_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: ES3Types.ES3Type
+    name: ES3Type
+  - name: )
+- uid: ES3Reader.ReadObject``1(ES3Types.ES3Type)
+  commentId: M:ES3Reader.ReadObject``1(ES3Types.ES3Type)
+  parent: ES3Reader
+  href: ES3Reader.html#ES3Reader_ReadObject__1_ES3Types_ES3Type_
+  name: ReadObject<T>(ES3Type)
+  nameWithType: ES3Reader.ReadObject<T>(ES3Type)
+  fullName: ES3Reader.ReadObject<T>(ES3Types.ES3Type)
+  nameWithType.vb: ES3Reader.ReadObject(Of T)(ES3Type)
+  fullName.vb: ES3Reader.ReadObject(Of T)(ES3Types.ES3Type)
+  name.vb: ReadObject(Of T)(ES3Type)
+  spec.csharp:
+  - uid: ES3Reader.ReadObject``1(ES3Types.ES3Type)
+    name: ReadObject
+    href: ES3Reader.html#ES3Reader_ReadObject__1_ES3Types_ES3Type_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: ES3Types.ES3Type
+    name: ES3Type
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.ReadObject``1(ES3Types.ES3Type)
+    name: ReadObject
+    href: ES3Reader.html#ES3Reader_ReadObject__1_ES3Types_ES3Type_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: ES3Types.ES3Type
+    name: ES3Type
+  - name: )
+- uid: ES3Reader.Create
+  commentId: M:ES3Reader.Create
+  parent: ES3Reader
+  href: ES3Reader.html#ES3Reader_Create
+  name: Create()
+  nameWithType: ES3Reader.Create()
+  fullName: ES3Reader.Create()
+  spec.csharp:
+  - uid: ES3Reader.Create
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Create
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create
+  - name: (
+  - name: )
+- uid: ES3Reader.Create(System.String)
+  commentId: M:ES3Reader.Create(System.String)
+  parent: ES3Reader
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_Create_System_String_
+  name: Create(string)
+  nameWithType: ES3Reader.Create(string)
+  fullName: ES3Reader.Create(string)
+  nameWithType.vb: ES3Reader.Create(String)
+  fullName.vb: ES3Reader.Create(String)
+  name.vb: Create(String)
+  spec.csharp:
+  - uid: ES3Reader.Create(System.String)
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Create(System.String)
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: ES3Reader.Create(System.String,ES3Settings)
+  commentId: M:ES3Reader.Create(System.String,ES3Settings)
+  parent: ES3Reader
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_Create_System_String_ES3Settings_
+  name: Create(string, ES3Settings)
+  nameWithType: ES3Reader.Create(string, ES3Settings)
+  fullName: ES3Reader.Create(string, ES3Settings)
+  nameWithType.vb: ES3Reader.Create(String, ES3Settings)
+  fullName.vb: ES3Reader.Create(String, ES3Settings)
+  name.vb: Create(String, ES3Settings)
+  spec.csharp:
+  - uid: ES3Reader.Create(System.String,ES3Settings)
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create_System_String_ES3Settings_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: ES3Settings
+    name: ES3Settings
+    href: ES3Settings.html
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Create(System.String,ES3Settings)
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create_System_String_ES3Settings_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: ES3Settings
+    name: ES3Settings
+    href: ES3Settings.html
+  - name: )
+- uid: ES3Reader.Create(ES3Settings)
+  commentId: M:ES3Reader.Create(ES3Settings)
+  parent: ES3Reader
+  href: ES3Reader.html#ES3Reader_Create_ES3Settings_
+  name: Create(ES3Settings)
+  nameWithType: ES3Reader.Create(ES3Settings)
+  fullName: ES3Reader.Create(ES3Settings)
+  spec.csharp:
+  - uid: ES3Reader.Create(ES3Settings)
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create_ES3Settings_
+  - name: (
+  - uid: ES3Settings
+    name: ES3Settings
+    href: ES3Settings.html
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Create(ES3Settings)
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create_ES3Settings_
+  - name: (
+  - uid: ES3Settings
+    name: ES3Settings
+    href: ES3Settings.html
+  - name: )
+- uid: ES3Reader.Create(System.Byte[])
+  commentId: M:ES3Reader.Create(System.Byte[])
+  parent: ES3Reader
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_Create_System_Byte___
+  name: Create(byte[])
+  nameWithType: ES3Reader.Create(byte[])
+  fullName: ES3Reader.Create(byte[])
+  nameWithType.vb: ES3Reader.Create(Byte())
+  fullName.vb: ES3Reader.Create(Byte())
+  name.vb: Create(Byte())
+  spec.csharp:
+  - uid: ES3Reader.Create(System.Byte[])
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create_System_Byte___
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Create(System.Byte[])
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create_System_Byte___
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+- uid: ES3Reader.Create(System.Byte[],ES3Settings)
+  commentId: M:ES3Reader.Create(System.Byte[],ES3Settings)
+  parent: ES3Reader
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_Create_System_Byte___ES3Settings_
+  name: Create(byte[], ES3Settings)
+  nameWithType: ES3Reader.Create(byte[], ES3Settings)
+  fullName: ES3Reader.Create(byte[], ES3Settings)
+  nameWithType.vb: ES3Reader.Create(Byte(), ES3Settings)
+  fullName.vb: ES3Reader.Create(Byte(), ES3Settings)
+  name.vb: Create(Byte(), ES3Settings)
+  spec.csharp:
+  - uid: ES3Reader.Create(System.Byte[],ES3Settings)
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create_System_Byte___ES3Settings_
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: ES3Settings
+    name: ES3Settings
+    href: ES3Settings.html
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Create(System.Byte[],ES3Settings)
+    name: Create
+    href: ES3Reader.html#ES3Reader_Create_System_Byte___ES3Settings_
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: ES3Settings
+    name: ES3Settings
+    href: ES3Settings.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ES3Reader.Read``1(System.String,``0)
+  commentId: M:ES3Reader.Read``1(System.String,``0)
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_Read__1_System_String___0_
+  name: Read<T>(string, T)
+  nameWithType: ES3Reader.Read<T>(string, T)
+  fullName: ES3Reader.Read<T>(string, T)
+  nameWithType.vb: ES3Reader.Read(Of T)(String, T)
+  fullName.vb: ES3Reader.Read(Of T)(String, T)
+  name.vb: Read(Of T)(String, T)
+  spec.csharp:
+  - uid: ES3Reader.Read``1(System.String,``0)
+    name: Read
+    href: ES3Reader.html#ES3Reader_Read__1_System_String___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Read``1(System.String,``0)
+    name: Read
+    href: ES3Reader.html#ES3Reader_Read__1_System_String___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: ES3Reader.ReadInto``1(System.String,``0)
+  commentId: M:ES3Reader.ReadInto``1(System.String,``0)
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_ReadInto__1_System_String___0_
+  name: ReadInto<T>(string, T)
+  nameWithType: ES3Reader.ReadInto<T>(string, T)
+  fullName: ES3Reader.ReadInto<T>(string, T)
+  nameWithType.vb: ES3Reader.ReadInto(Of T)(String, T)
+  fullName.vb: ES3Reader.ReadInto(Of T)(String, T)
+  name.vb: ReadInto(Of T)(String, T)
+  spec.csharp:
+  - uid: ES3Reader.ReadInto``1(System.String,``0)
+    name: ReadInto
+    href: ES3Reader.html#ES3Reader_ReadInto__1_System_String___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.ReadInto``1(System.String,``0)
+    name: ReadInto
+    href: ES3Reader.html#ES3Reader_ReadInto__1_System_String___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IO.StreamReader
+  commentId: T:System.IO.StreamReader
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.streamreader
+  name: StreamReader
+  nameWithType: StreamReader
+  fullName: System.IO.StreamReader
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: ES3Reader.ReadPropertyName
+  commentId: M:ES3Reader.ReadPropertyName
+  parent: ES3Reader
+  name: ReadPropertyName()
+  nameWithType: ES3Reader.ReadPropertyName()
+  fullName: ES3Reader.ReadPropertyName()
+  spec.csharp:
+  - uid: ES3Reader.ReadPropertyName
+    name: ReadPropertyName
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.ReadPropertyName
+    name: ReadPropertyName
+  - name: (
+  - name: )
+- uid: ES3Internal.ES3JSONReader.ReadPropertyName*
+  commentId: Overload:ES3Internal.ES3JSONReader.ReadPropertyName
+  href: ES3Internal.ES3JSONReader.html#ES3Internal_ES3JSONReader_ReadPropertyName
+  name: ReadPropertyName
+  nameWithType: ES3JSONReader.ReadPropertyName
+  fullName: ES3Internal.ES3JSONReader.ReadPropertyName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ES3Reader.ReadKeyPrefix(System.Boolean)
+  commentId: M:ES3Reader.ReadKeyPrefix(System.Boolean)
+  parent: ES3Reader
+  isExternal: true
+  href: ES3Reader.html#ES3Reader_ReadKeyPrefix_System_Boolean_
+  name: ReadKeyPrefix(bool)
+  nameWithType: ES3Reader.ReadKeyPrefix(bool)
+  fullName: ES3Reader.ReadKeyPrefix(bool)
+  nameWithType.vb: ES3Reader.ReadKeyPrefix(Boolean)
+  fullName.vb: ES3Reader.ReadKeyPrefix(Boolean)
+  name.vb: ReadKeyPrefix(Boolean)
+  spec.csharp:
+  - uid: ES3Reader.ReadKeyPrefix(System.Boolean)
+    name: ReadKeyPrefix
+    href: ES3Reader.html#ES3Reader_ReadKeyPrefix_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.ReadKeyPrefix(System.Boolean)
+    name: ReadKeyPrefix
+    href: ES3Reader.html#ES3Reader_ReadKeyPrefix_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ES3Internal.ES3JSONReader.ReadKeyPrefix*
+  commentId: Overload:ES3Internal.ES3JSONReader.ReadKeyPrefix
+  href: ES3Internal.ES3JSONReader.html#ES3Internal_ES3JSONReader_ReadKeyPrefix_System_Boolean_
+  name: ReadKeyPrefix
+  nameWithType: ES3JSONReader.ReadKeyPrefix
+  fullName: ES3Internal.ES3JSONReader.ReadKeyPrefix
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: ES3Reader.ReadKeySuffix
+  commentId: M:ES3Reader.ReadKeySuffix
+  parent: ES3Reader
+  href: ES3Reader.html#ES3Reader_ReadKeySuffix
+  name: ReadKeySuffix()
+  nameWithType: ES3Reader.ReadKeySuffix()
+  fullName: ES3Reader.ReadKeySuffix()
+  spec.csharp:
+  - uid: ES3Reader.ReadKeySuffix
+    name: ReadKeySuffix
+    href: ES3Reader.html#ES3Reader_ReadKeySuffix
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.ReadKeySuffix
+    name: ReadKeySuffix
+    href: ES3Reader.html#ES3Reader_ReadKeySuffix
+  - name: (
+  - name: )
+- uid: ES3Internal.ES3JSONReader.ReadKeySuffix*
+  commentId: Overload:ES3Internal.ES3JSONReader.ReadKeySuffix
+  href: ES3Internal.ES3JSONReader.html#ES3Internal_ES3JSONReader_ReadKeySuffix
+  name: ReadKeySuffix
+  nameWithType: ES3JSONReader.ReadKeySuffix
+  fullName: ES3Internal.ES3JSONReader.ReadKeySuffix
+- uid: ES3Reader.Dispose
+  commentId: M:ES3Reader.Dispose
+  parent: ES3Reader
+  href: ES3Reader.html#ES3Reader_Dispose
+  name: Dispose()
+  nameWithType: ES3Reader.Dispose()
+  fullName: ES3Reader.Dispose()
+  spec.csharp:
+  - uid: ES3Reader.Dispose
+    name: Dispose
+    href: ES3Reader.html#ES3Reader_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ES3Reader.Dispose
+    name: Dispose
+    href: ES3Reader.html#ES3Reader_Dispose
+  - name: (
+  - name: )
+- uid: ES3Internal.ES3JSONReader.Dispose*
+  commentId: Overload:ES3Internal.ES3JSONReader.Dispose
+  href: ES3Internal.ES3JSONReader.html#ES3Internal_ES3JSONReader_Dispose
+  name: Dispose
+  nameWithType: ES3JSONReader.Dispose
+  fullName: ES3Internal.ES3JSONReader.Dispose

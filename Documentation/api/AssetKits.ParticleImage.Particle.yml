@@ -1,0 +1,884 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Particle
+  commentId: T:AssetKits.ParticleImage.Particle
+  id: Particle
+  parent: AssetKits.ParticleImage
+  children:
+  - AssetKits.ParticleImage.Particle.#ctor(AssetKits.ParticleImage.ParticleImage)
+  - AssetKits.ParticleImage.Particle.Color
+  - AssetKits.ParticleImage.Particle.GetSheetId
+  - AssetKits.ParticleImage.Particle.Initialize(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector3,UnityEngine.Color,UnityEngine.Vector3,System.Single,System.Single)
+  - AssetKits.ParticleImage.Particle.Lifetime
+  - AssetKits.ParticleImage.Particle.Position
+  - AssetKits.ParticleImage.Particle.Simulate(System.Single)
+  - AssetKits.ParticleImage.Particle.Size
+  - AssetKits.ParticleImage.Particle.TimeSinceBorn
+  - AssetKits.ParticleImage.Particle.Velocity
+  - AssetKits.ParticleImage.Particle.points
+  - AssetKits.ParticleImage.Particle.trailPoints
+  langs:
+  - csharp
+  - vb
+  name: Particle
+  nameWithType: Particle
+  fullName: AssetKits.ParticleImage.Particle
+  type: Class
+  source:
+    id: Particle
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 8
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public class Particle
+    content.vb: Public Class Particle
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AssetKits.ParticleImage.Particle.trailPoints
+  commentId: P:AssetKits.ParticleImage.Particle.trailPoints
+  id: trailPoints
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: trailPoints
+  nameWithType: Particle.trailPoints
+  fullName: AssetKits.ParticleImage.Particle.trailPoints
+  type: Property
+  source:
+    id: trailPoints
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 62
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public List<Particle.TrailPoint> trailPoints { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{AssetKits.ParticleImage.Particle.TrailPoint}
+    content.vb: Public ReadOnly Property trailPoints As List(Of Particle.TrailPoint)
+  overload: AssetKits.ParticleImage.Particle.trailPoints*
+- uid: AssetKits.ParticleImage.Particle.points
+  commentId: P:AssetKits.ParticleImage.Particle.points
+  id: points
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: points
+  nameWithType: Particle.points
+  fullName: AssetKits.ParticleImage.Particle.points
+  type: Property
+  source:
+    id: points
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 72
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public Vector2[] points { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2[]
+    content.vb: Public ReadOnly Property points As Vector2()
+  overload: AssetKits.ParticleImage.Particle.points*
+- uid: AssetKits.ParticleImage.Particle.#ctor(AssetKits.ParticleImage.ParticleImage)
+  commentId: M:AssetKits.ParticleImage.Particle.#ctor(AssetKits.ParticleImage.ParticleImage)
+  id: '#ctor(AssetKits.ParticleImage.ParticleImage)'
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: Particle(ParticleImage)
+  nameWithType: Particle.Particle(ParticleImage)
+  fullName: AssetKits.ParticleImage.Particle.Particle(AssetKits.ParticleImage.ParticleImage)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 89
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public Particle(ParticleImage source)
+    parameters:
+    - id: source
+      type: AssetKits.ParticleImage.ParticleImage
+    content.vb: Public Sub New(source As ParticleImage)
+  overload: AssetKits.ParticleImage.Particle.#ctor*
+  nameWithType.vb: Particle.New(ParticleImage)
+  fullName.vb: AssetKits.ParticleImage.Particle.New(AssetKits.ParticleImage.ParticleImage)
+  name.vb: New(ParticleImage)
+- uid: AssetKits.ParticleImage.Particle.Initialize(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector3,UnityEngine.Color,UnityEngine.Vector3,System.Single,System.Single)
+  commentId: M:AssetKits.ParticleImage.Particle.Initialize(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector3,UnityEngine.Color,UnityEngine.Vector3,System.Single,System.Single)
+  id: Initialize(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector3,UnityEngine.Color,UnityEngine.Vector3,System.Single,System.Single)
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Vector2, Vector2, Vector3, Color, Vector3, float, float)
+  nameWithType: Particle.Initialize(Vector2, Vector2, Vector3, Color, Vector3, float, float)
+  fullName: AssetKits.ParticleImage.Particle.Initialize(UnityEngine.Vector2, UnityEngine.Vector2, UnityEngine.Vector3, UnityEngine.Color, UnityEngine.Vector3, float, float)
+  type: Method
+  source:
+    id: Initialize
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 96
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public void Initialize(Vector2 startPosition, Vector2 startVelocity, Vector3 startRotation, Color startColor, Vector3 startSize, float lifetime, float startTime = 0)
+    parameters:
+    - id: startPosition
+      type: UnityEngine.Vector2
+    - id: startVelocity
+      type: UnityEngine.Vector2
+    - id: startRotation
+      type: UnityEngine.Vector3
+    - id: startColor
+      type: UnityEngine.Color
+    - id: startSize
+      type: UnityEngine.Vector3
+    - id: lifetime
+      type: System.Single
+    - id: startTime
+      type: System.Single
+    content.vb: Public Sub Initialize(startPosition As Vector2, startVelocity As Vector2, startRotation As Vector3, startColor As Color, startSize As Vector3, lifetime As Single, startTime As Single = 0)
+  overload: AssetKits.ParticleImage.Particle.Initialize*
+  nameWithType.vb: Particle.Initialize(Vector2, Vector2, Vector3, Color, Vector3, Single, Single)
+  fullName.vb: AssetKits.ParticleImage.Particle.Initialize(UnityEngine.Vector2, UnityEngine.Vector2, UnityEngine.Vector3, UnityEngine.Color, UnityEngine.Vector3, Single, Single)
+  name.vb: Initialize(Vector2, Vector2, Vector3, Color, Vector3, Single, Single)
+- uid: AssetKits.ParticleImage.Particle.Simulate(System.Single)
+  commentId: M:AssetKits.ParticleImage.Particle.Simulate(System.Single)
+  id: Simulate(System.Single)
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: Simulate(float)
+  nameWithType: Particle.Simulate(float)
+  fullName: AssetKits.ParticleImage.Particle.Simulate(float)
+  type: Method
+  source:
+    id: Simulate
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 155
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public void Simulate(float deltaTime)
+    parameters:
+    - id: deltaTime
+      type: System.Single
+    content.vb: Public Sub Simulate(deltaTime As Single)
+  overload: AssetKits.ParticleImage.Particle.Simulate*
+  nameWithType.vb: Particle.Simulate(Single)
+  fullName.vb: AssetKits.ParticleImage.Particle.Simulate(Single)
+  name.vb: Simulate(Single)
+- uid: AssetKits.ParticleImage.Particle.GetSheetId
+  commentId: P:AssetKits.ParticleImage.Particle.GetSheetId
+  id: GetSheetId
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: GetSheetId
+  nameWithType: Particle.GetSheetId
+  fullName: AssetKits.ParticleImage.Particle.GetSheetId
+  type: Property
+  source:
+    id: GetSheetId
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 537
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public int GetSheetId { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property GetSheetId As Integer
+  overload: AssetKits.ParticleImage.Particle.GetSheetId*
+- uid: AssetKits.ParticleImage.Particle.Position
+  commentId: P:AssetKits.ParticleImage.Particle.Position
+  id: Position
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: Particle.Position
+  fullName: AssetKits.ParticleImage.Particle.Position
+  type: Property
+  source:
+    id: Position
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 565
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public Vector2 Position { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public ReadOnly Property Position As Vector2
+  overload: AssetKits.ParticleImage.Particle.Position*
+- uid: AssetKits.ParticleImage.Particle.Velocity
+  commentId: P:AssetKits.ParticleImage.Particle.Velocity
+  id: Velocity
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: Velocity
+  nameWithType: Particle.Velocity
+  fullName: AssetKits.ParticleImage.Particle.Velocity
+  type: Property
+  source:
+    id: Velocity
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 566
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public Vector2 Velocity { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public ReadOnly Property Velocity As Vector2
+  overload: AssetKits.ParticleImage.Particle.Velocity*
+- uid: AssetKits.ParticleImage.Particle.Size
+  commentId: P:AssetKits.ParticleImage.Particle.Size
+  id: Size
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Particle.Size
+  fullName: AssetKits.ParticleImage.Particle.Size
+  type: Property
+  source:
+    id: Size
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 567
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public Vector2 Size { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public ReadOnly Property Size As Vector2
+  overload: AssetKits.ParticleImage.Particle.Size*
+- uid: AssetKits.ParticleImage.Particle.TimeSinceBorn
+  commentId: P:AssetKits.ParticleImage.Particle.TimeSinceBorn
+  id: TimeSinceBorn
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: TimeSinceBorn
+  nameWithType: Particle.TimeSinceBorn
+  fullName: AssetKits.ParticleImage.Particle.TimeSinceBorn
+  type: Property
+  source:
+    id: TimeSinceBorn
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 568
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public float TimeSinceBorn { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property TimeSinceBorn As Single
+  overload: AssetKits.ParticleImage.Particle.TimeSinceBorn*
+- uid: AssetKits.ParticleImage.Particle.Lifetime
+  commentId: P:AssetKits.ParticleImage.Particle.Lifetime
+  id: Lifetime
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: Lifetime
+  nameWithType: Particle.Lifetime
+  fullName: AssetKits.ParticleImage.Particle.Lifetime
+  type: Property
+  source:
+    id: Lifetime
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 569
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public float Lifetime { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Lifetime As Single
+  overload: AssetKits.ParticleImage.Particle.Lifetime*
+- uid: AssetKits.ParticleImage.Particle.Color
+  commentId: P:AssetKits.ParticleImage.Particle.Color
+  id: Color
+  parent: AssetKits.ParticleImage.Particle
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: Particle.Color
+  fullName: AssetKits.ParticleImage.Particle.Color
+  type: Property
+  source:
+    id: Color
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Particle.cs
+    startLine: 570
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public Color Color { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public ReadOnly Property Color As Color
+  overload: AssetKits.ParticleImage.Particle.Color*
+references:
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  href: AssetKits.html
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AssetKits.ParticleImage.Particle.trailPoints*
+  commentId: Overload:AssetKits.ParticleImage.Particle.trailPoints
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_trailPoints
+  name: trailPoints
+  nameWithType: Particle.trailPoints
+  fullName: AssetKits.ParticleImage.Particle.trailPoints
+- uid: System.Collections.Generic.List{AssetKits.ParticleImage.Particle.TrailPoint}
+  commentId: T:System.Collections.Generic.List{AssetKits.ParticleImage.Particle.TrailPoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Particle.TrailPoint>
+  nameWithType: List<Particle.TrailPoint>
+  fullName: System.Collections.Generic.List<AssetKits.ParticleImage.Particle.TrailPoint>
+  nameWithType.vb: List(Of Particle.TrailPoint)
+  fullName.vb: System.Collections.Generic.List(Of AssetKits.ParticleImage.Particle.TrailPoint)
+  name.vb: List(Of Particle.TrailPoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: AssetKits.ParticleImage.Particle
+    name: Particle
+    href: AssetKits.ParticleImage.Particle.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Particle.TrailPoint
+    name: TrailPoint
+    href: AssetKits.ParticleImage.Particle.TrailPoint.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AssetKits.ParticleImage.Particle
+    name: Particle
+    href: AssetKits.ParticleImage.Particle.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Particle.TrailPoint
+    name: TrailPoint
+    href: AssetKits.ParticleImage.Particle.TrailPoint.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AssetKits.ParticleImage.Particle.points*
+  commentId: Overload:AssetKits.ParticleImage.Particle.points
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_points
+  name: points
+  nameWithType: Particle.points
+  fullName: AssetKits.ParticleImage.Particle.points
+- uid: UnityEngine.Vector2[]
+  isExternal: true
+  name: Vector2[]
+  nameWithType: Vector2[]
+  fullName: UnityEngine.Vector2[]
+  nameWithType.vb: Vector2()
+  fullName.vb: UnityEngine.Vector2()
+  name.vb: Vector2()
+  spec.csharp:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: (
+  - name: )
+- uid: AssetKits.ParticleImage.Particle.#ctor*
+  commentId: Overload:AssetKits.ParticleImage.Particle.#ctor
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle__ctor_AssetKits_ParticleImage_ParticleImage_
+  name: Particle
+  nameWithType: Particle.Particle
+  fullName: AssetKits.ParticleImage.Particle.Particle
+  nameWithType.vb: Particle.New
+  fullName.vb: AssetKits.ParticleImage.Particle.New
+  name.vb: New
+- uid: AssetKits.ParticleImage.ParticleImage
+  commentId: T:AssetKits.ParticleImage.ParticleImage
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.ParticleImage.html
+  name: ParticleImage
+  nameWithType: ParticleImage
+  fullName: AssetKits.ParticleImage.ParticleImage
+- uid: AssetKits.ParticleImage.Particle.Initialize*
+  commentId: Overload:AssetKits.ParticleImage.Particle.Initialize
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_Initialize_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Vector3_UnityEngine_Color_UnityEngine_Vector3_System_Single_System_Single_
+  name: Initialize
+  nameWithType: Particle.Initialize
+  fullName: AssetKits.ParticleImage.Particle.Initialize
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: AssetKits.ParticleImage.Particle.Simulate*
+  commentId: Overload:AssetKits.ParticleImage.Particle.Simulate
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_Simulate_System_Single_
+  name: Simulate
+  nameWithType: Particle.Simulate
+  fullName: AssetKits.ParticleImage.Particle.Simulate
+- uid: AssetKits.ParticleImage.Particle.GetSheetId*
+  commentId: Overload:AssetKits.ParticleImage.Particle.GetSheetId
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_GetSheetId
+  name: GetSheetId
+  nameWithType: Particle.GetSheetId
+  fullName: AssetKits.ParticleImage.Particle.GetSheetId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AssetKits.ParticleImage.Particle.Position*
+  commentId: Overload:AssetKits.ParticleImage.Particle.Position
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_Position
+  name: Position
+  nameWithType: Particle.Position
+  fullName: AssetKits.ParticleImage.Particle.Position
+- uid: AssetKits.ParticleImage.Particle.Velocity*
+  commentId: Overload:AssetKits.ParticleImage.Particle.Velocity
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_Velocity
+  name: Velocity
+  nameWithType: Particle.Velocity
+  fullName: AssetKits.ParticleImage.Particle.Velocity
+- uid: AssetKits.ParticleImage.Particle.Size*
+  commentId: Overload:AssetKits.ParticleImage.Particle.Size
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_Size
+  name: Size
+  nameWithType: Particle.Size
+  fullName: AssetKits.ParticleImage.Particle.Size
+- uid: AssetKits.ParticleImage.Particle.TimeSinceBorn*
+  commentId: Overload:AssetKits.ParticleImage.Particle.TimeSinceBorn
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_TimeSinceBorn
+  name: TimeSinceBorn
+  nameWithType: Particle.TimeSinceBorn
+  fullName: AssetKits.ParticleImage.Particle.TimeSinceBorn
+- uid: AssetKits.ParticleImage.Particle.Lifetime*
+  commentId: Overload:AssetKits.ParticleImage.Particle.Lifetime
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_Lifetime
+  name: Lifetime
+  nameWithType: Particle.Lifetime
+  fullName: AssetKits.ParticleImage.Particle.Lifetime
+- uid: AssetKits.ParticleImage.Particle.Color*
+  commentId: Overload:AssetKits.ParticleImage.Particle.Color
+  href: AssetKits.ParticleImage.Particle.html#AssetKits_ParticleImage_Particle_Color
+  name: Color
+  nameWithType: Particle.Color
+  fullName: AssetKits.ParticleImage.Particle.Color

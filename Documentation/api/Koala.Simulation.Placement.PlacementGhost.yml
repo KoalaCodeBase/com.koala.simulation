@@ -1,0 +1,497 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Placement.PlacementGhost
+  commentId: T:Koala.Simulation.Placement.PlacementGhost
+  id: PlacementGhost
+  parent: Koala.Simulation.Placement
+  children:
+  - Koala.Simulation.Placement.PlacementGhost.#ctor(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Boolean)
+  - Koala.Simulation.Placement.PlacementGhost.Cancel
+  - Koala.Simulation.Placement.PlacementGhost.Confirm
+  - Koala.Simulation.Placement.PlacementGhost.GameObject
+  - Koala.Simulation.Placement.PlacementGhost.Placeable
+  - Koala.Simulation.Placement.PlacementGhost.Rotate(UnityEngine.Vector3,System.Single)
+  - Koala.Simulation.Placement.PlacementGhost.Start(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Boolean)
+  - Koala.Simulation.Placement.PlacementGhost.Transform
+  - Koala.Simulation.Placement.PlacementGhost.UpdateTransform(UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: PlacementGhost
+  nameWithType: PlacementGhost
+  fullName: Koala.Simulation.Placement.PlacementGhost
+  type: Class
+  source:
+    remote:
+      path: Runtime/Placement/PlacementGhost.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PlacementGhost
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementGhost.cs
+    startLine: 5
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  syntax:
+    content: public sealed class PlacementGhost
+    content.vb: Public NotInheritable Class PlacementGhost
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Placement.PlacementGhost.Placeable
+  commentId: P:Koala.Simulation.Placement.PlacementGhost.Placeable
+  id: Placeable
+  parent: Koala.Simulation.Placement.PlacementGhost
+  langs:
+  - csharp
+  - vb
+  name: Placeable
+  nameWithType: PlacementGhost.Placeable
+  fullName: Koala.Simulation.Placement.PlacementGhost.Placeable
+  type: Property
+  source:
+    remote:
+      path: Runtime/Placement/PlacementGhost.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Placeable
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementGhost.cs
+    startLine: 20
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  syntax:
+    content: public IPlaceable Placeable { get; }
+    parameters: []
+    return:
+      type: Koala.Simulation.Placement.IPlaceable
+    content.vb: Public Property Placeable As IPlaceable
+  overload: Koala.Simulation.Placement.PlacementGhost.Placeable*
+- uid: Koala.Simulation.Placement.PlacementGhost.#ctor(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Boolean)
+  commentId: M:Koala.Simulation.Placement.PlacementGhost.#ctor(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Boolean)
+  id: '#ctor(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Boolean)'
+  parent: Koala.Simulation.Placement.PlacementGhost
+  langs:
+  - csharp
+  - vb
+  name: PlacementGhost(GameObject, Material, Material, bool)
+  nameWithType: PlacementGhost.PlacementGhost(GameObject, Material, Material, bool)
+  fullName: Koala.Simulation.Placement.PlacementGhost.PlacementGhost(UnityEngine.GameObject, UnityEngine.Material, UnityEngine.Material, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Placement/PlacementGhost.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: .ctor
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementGhost.cs
+    startLine: 22
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  syntax:
+    content: public PlacementGhost(GameObject target, Material validMat, Material invalidMat, bool clone = true)
+    parameters:
+    - id: target
+      type: UnityEngine.GameObject
+    - id: validMat
+      type: UnityEngine.Material
+    - id: invalidMat
+      type: UnityEngine.Material
+    - id: clone
+      type: System.Boolean
+    content.vb: Public Sub New(target As GameObject, validMat As Material, invalidMat As Material, clone As Boolean = True)
+  overload: Koala.Simulation.Placement.PlacementGhost.#ctor*
+  nameWithType.vb: PlacementGhost.New(GameObject, Material, Material, Boolean)
+  fullName.vb: Koala.Simulation.Placement.PlacementGhost.New(UnityEngine.GameObject, UnityEngine.Material, UnityEngine.Material, Boolean)
+  name.vb: New(GameObject, Material, Material, Boolean)
+- uid: Koala.Simulation.Placement.PlacementGhost.Start(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Boolean)
+  commentId: M:Koala.Simulation.Placement.PlacementGhost.Start(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Boolean)
+  id: Start(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Boolean)
+  parent: Koala.Simulation.Placement.PlacementGhost
+  langs:
+  - csharp
+  - vb
+  name: Start(GameObject, Material, Material, bool)
+  nameWithType: PlacementGhost.Start(GameObject, Material, Material, bool)
+  fullName: Koala.Simulation.Placement.PlacementGhost.Start(UnityEngine.GameObject, UnityEngine.Material, UnityEngine.Material, bool)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementGhost.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Start
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementGhost.cs
+    startLine: 47
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  syntax:
+    content: public void Start(GameObject target, Material validMat, Material invalidMat, bool clone)
+    parameters:
+    - id: target
+      type: UnityEngine.GameObject
+    - id: validMat
+      type: UnityEngine.Material
+    - id: invalidMat
+      type: UnityEngine.Material
+    - id: clone
+      type: System.Boolean
+    content.vb: Public Sub Start(target As GameObject, validMat As Material, invalidMat As Material, clone As Boolean)
+  overload: Koala.Simulation.Placement.PlacementGhost.Start*
+  nameWithType.vb: PlacementGhost.Start(GameObject, Material, Material, Boolean)
+  fullName.vb: Koala.Simulation.Placement.PlacementGhost.Start(UnityEngine.GameObject, UnityEngine.Material, UnityEngine.Material, Boolean)
+  name.vb: Start(GameObject, Material, Material, Boolean)
+- uid: Koala.Simulation.Placement.PlacementGhost.UpdateTransform(UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)
+  commentId: M:Koala.Simulation.Placement.PlacementGhost.UpdateTransform(UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)
+  id: UpdateTransform(UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)
+  parent: Koala.Simulation.Placement.PlacementGhost
+  langs:
+  - csharp
+  - vb
+  name: UpdateTransform(Vector3, Quaternion, bool)
+  nameWithType: PlacementGhost.UpdateTransform(Vector3, Quaternion, bool)
+  fullName: Koala.Simulation.Placement.PlacementGhost.UpdateTransform(UnityEngine.Vector3, UnityEngine.Quaternion, bool)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementGhost.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: UpdateTransform
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementGhost.cs
+    startLine: 89
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  syntax:
+    content: public void UpdateTransform(Vector3 position, Quaternion rotation, bool valid)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+    - id: rotation
+      type: UnityEngine.Quaternion
+    - id: valid
+      type: System.Boolean
+    content.vb: Public Sub UpdateTransform(position As Vector3, rotation As Quaternion, valid As Boolean)
+  overload: Koala.Simulation.Placement.PlacementGhost.UpdateTransform*
+  nameWithType.vb: PlacementGhost.UpdateTransform(Vector3, Quaternion, Boolean)
+  fullName.vb: Koala.Simulation.Placement.PlacementGhost.UpdateTransform(UnityEngine.Vector3, UnityEngine.Quaternion, Boolean)
+  name.vb: UpdateTransform(Vector3, Quaternion, Boolean)
+- uid: Koala.Simulation.Placement.PlacementGhost.Rotate(UnityEngine.Vector3,System.Single)
+  commentId: M:Koala.Simulation.Placement.PlacementGhost.Rotate(UnityEngine.Vector3,System.Single)
+  id: Rotate(UnityEngine.Vector3,System.Single)
+  parent: Koala.Simulation.Placement.PlacementGhost
+  langs:
+  - csharp
+  - vb
+  name: Rotate(Vector3, float)
+  nameWithType: PlacementGhost.Rotate(Vector3, float)
+  fullName: Koala.Simulation.Placement.PlacementGhost.Rotate(UnityEngine.Vector3, float)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementGhost.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Rotate
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementGhost.cs
+    startLine: 100
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  syntax:
+    content: public void Rotate(Vector3 axis, float step)
+    parameters:
+    - id: axis
+      type: UnityEngine.Vector3
+    - id: step
+      type: System.Single
+    content.vb: Public Sub Rotate(axis As Vector3, [step] As Single)
+  overload: Koala.Simulation.Placement.PlacementGhost.Rotate*
+  nameWithType.vb: PlacementGhost.Rotate(Vector3, Single)
+  fullName.vb: Koala.Simulation.Placement.PlacementGhost.Rotate(UnityEngine.Vector3, Single)
+  name.vb: Rotate(Vector3, Single)
+- uid: Koala.Simulation.Placement.PlacementGhost.Confirm
+  commentId: M:Koala.Simulation.Placement.PlacementGhost.Confirm
+  id: Confirm
+  parent: Koala.Simulation.Placement.PlacementGhost
+  langs:
+  - csharp
+  - vb
+  name: Confirm()
+  nameWithType: PlacementGhost.Confirm()
+  fullName: Koala.Simulation.Placement.PlacementGhost.Confirm()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementGhost.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Confirm
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementGhost.cs
+    startLine: 106
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  syntax:
+    content: public void Confirm()
+    content.vb: Public Sub Confirm()
+  overload: Koala.Simulation.Placement.PlacementGhost.Confirm*
+- uid: Koala.Simulation.Placement.PlacementGhost.Cancel
+  commentId: M:Koala.Simulation.Placement.PlacementGhost.Cancel
+  id: Cancel
+  parent: Koala.Simulation.Placement.PlacementGhost
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: PlacementGhost.Cancel()
+  fullName: Koala.Simulation.Placement.PlacementGhost.Cancel()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementGhost.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Cancel
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementGhost.cs
+    startLine: 116
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  syntax:
+    content: public void Cancel()
+    content.vb: Public Sub Cancel()
+  overload: Koala.Simulation.Placement.PlacementGhost.Cancel*
+- uid: Koala.Simulation.Placement.PlacementGhost.Transform
+  commentId: P:Koala.Simulation.Placement.PlacementGhost.Transform
+  id: Transform
+  parent: Koala.Simulation.Placement.PlacementGhost
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: PlacementGhost.Transform
+  fullName: Koala.Simulation.Placement.PlacementGhost.Transform
+  type: Property
+  source:
+    remote:
+      path: Runtime/Placement/PlacementGhost.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Transform
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementGhost.cs
+    startLine: 143
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  syntax:
+    content: public Transform Transform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public ReadOnly Property Transform As Transform
+  overload: Koala.Simulation.Placement.PlacementGhost.Transform*
+- uid: Koala.Simulation.Placement.PlacementGhost.GameObject
+  commentId: P:Koala.Simulation.Placement.PlacementGhost.GameObject
+  id: GameObject
+  parent: Koala.Simulation.Placement.PlacementGhost
+  langs:
+  - csharp
+  - vb
+  name: GameObject
+  nameWithType: PlacementGhost.GameObject
+  fullName: Koala.Simulation.Placement.PlacementGhost.GameObject
+  type: Property
+  source:
+    remote:
+      path: Runtime/Placement/PlacementGhost.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: GameObject
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementGhost.cs
+    startLine: 144
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  syntax:
+    content: public GameObject GameObject { get; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public ReadOnly Property GameObject As GameObject
+  overload: Koala.Simulation.Placement.PlacementGhost.GameObject*
+references:
+- uid: Koala.Simulation.Placement
+  commentId: N:Koala.Simulation.Placement
+  href: Koala.html
+  name: Koala.Simulation.Placement
+  nameWithType: Koala.Simulation.Placement
+  fullName: Koala.Simulation.Placement
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Placement.PlacementGhost.Placeable*
+  commentId: Overload:Koala.Simulation.Placement.PlacementGhost.Placeable
+  href: Koala.Simulation.Placement.PlacementGhost.html#Koala_Simulation_Placement_PlacementGhost_Placeable
+  name: Placeable
+  nameWithType: PlacementGhost.Placeable
+  fullName: Koala.Simulation.Placement.PlacementGhost.Placeable
+- uid: Koala.Simulation.Placement.IPlaceable
+  commentId: T:Koala.Simulation.Placement.IPlaceable
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.IPlaceable.html
+  name: IPlaceable
+  nameWithType: IPlaceable
+  fullName: Koala.Simulation.Placement.IPlaceable
+- uid: Koala.Simulation.Placement.PlacementGhost.#ctor*
+  commentId: Overload:Koala.Simulation.Placement.PlacementGhost.#ctor
+  href: Koala.Simulation.Placement.PlacementGhost.html#Koala_Simulation_Placement_PlacementGhost__ctor_UnityEngine_GameObject_UnityEngine_Material_UnityEngine_Material_System_Boolean_
+  name: PlacementGhost
+  nameWithType: PlacementGhost.PlacementGhost
+  fullName: Koala.Simulation.Placement.PlacementGhost.PlacementGhost
+  nameWithType.vb: PlacementGhost.New
+  fullName.vb: Koala.Simulation.Placement.PlacementGhost.New
+  name.vb: New
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Placement.PlacementGhost.Start*
+  commentId: Overload:Koala.Simulation.Placement.PlacementGhost.Start
+  href: Koala.Simulation.Placement.PlacementGhost.html#Koala_Simulation_Placement_PlacementGhost_Start_UnityEngine_GameObject_UnityEngine_Material_UnityEngine_Material_System_Boolean_
+  name: Start
+  nameWithType: PlacementGhost.Start
+  fullName: Koala.Simulation.Placement.PlacementGhost.Start
+- uid: Koala.Simulation.Placement.PlacementGhost.UpdateTransform*
+  commentId: Overload:Koala.Simulation.Placement.PlacementGhost.UpdateTransform
+  href: Koala.Simulation.Placement.PlacementGhost.html#Koala_Simulation_Placement_PlacementGhost_UpdateTransform_UnityEngine_Vector3_UnityEngine_Quaternion_System_Boolean_
+  name: UpdateTransform
+  nameWithType: PlacementGhost.UpdateTransform
+  fullName: Koala.Simulation.Placement.PlacementGhost.UpdateTransform
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: Koala.Simulation.Placement.PlacementGhost.Rotate*
+  commentId: Overload:Koala.Simulation.Placement.PlacementGhost.Rotate
+  href: Koala.Simulation.Placement.PlacementGhost.html#Koala_Simulation_Placement_PlacementGhost_Rotate_UnityEngine_Vector3_System_Single_
+  name: Rotate
+  nameWithType: PlacementGhost.Rotate
+  fullName: Koala.Simulation.Placement.PlacementGhost.Rotate
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Koala.Simulation.Placement.PlacementGhost.Confirm*
+  commentId: Overload:Koala.Simulation.Placement.PlacementGhost.Confirm
+  href: Koala.Simulation.Placement.PlacementGhost.html#Koala_Simulation_Placement_PlacementGhost_Confirm
+  name: Confirm
+  nameWithType: PlacementGhost.Confirm
+  fullName: Koala.Simulation.Placement.PlacementGhost.Confirm
+- uid: Koala.Simulation.Placement.PlacementGhost.Cancel*
+  commentId: Overload:Koala.Simulation.Placement.PlacementGhost.Cancel
+  href: Koala.Simulation.Placement.PlacementGhost.html#Koala_Simulation_Placement_PlacementGhost_Cancel
+  name: Cancel
+  nameWithType: PlacementGhost.Cancel
+  fullName: Koala.Simulation.Placement.PlacementGhost.Cancel
+- uid: Koala.Simulation.Placement.PlacementGhost.Transform*
+  commentId: Overload:Koala.Simulation.Placement.PlacementGhost.Transform
+  href: Koala.Simulation.Placement.PlacementGhost.html#Koala_Simulation_Placement_PlacementGhost_Transform
+  name: Transform
+  nameWithType: PlacementGhost.Transform
+  fullName: Koala.Simulation.Placement.PlacementGhost.Transform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: Koala.Simulation.Placement.PlacementGhost.GameObject*
+  commentId: Overload:Koala.Simulation.Placement.PlacementGhost.GameObject
+  href: Koala.Simulation.Placement.PlacementGhost.html#Koala_Simulation_Placement_PlacementGhost_GameObject
+  name: GameObject
+  nameWithType: PlacementGhost.GameObject
+  fullName: Koala.Simulation.Placement.PlacementGhost.GameObject

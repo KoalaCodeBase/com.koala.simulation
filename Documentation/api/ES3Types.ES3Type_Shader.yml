@@ -1,0 +1,611 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Types.ES3Type_Shader
+  commentId: T:ES3Types.ES3Type_Shader
+  id: ES3Type_Shader
+  parent: ES3Types
+  children:
+  - ES3Types.ES3Type_Shader.#ctor
+  - ES3Types.ES3Type_Shader.Instance
+  - ES3Types.ES3Type_Shader.ReadInto``1(ES3Reader,System.Object)
+  - ES3Types.ES3Type_Shader.Read``1(ES3Reader)
+  - ES3Types.ES3Type_Shader.Write(System.Object,ES3Writer)
+  langs:
+  - csharp
+  - vb
+  name: ES3Type_Shader
+  nameWithType: ES3Type_Shader
+  fullName: ES3Types.ES3Type_Shader
+  type: Class
+  source:
+    id: ES3Type_Shader
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Shader.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Types
+  syntax:
+    content: >-
+      [Preserve]
+
+      [ES3Properties(new string[] { "name", "maximumLOD" })]
+
+      public class ES3Type_Shader : ES3Type
+    content.vb: >-
+      <Preserve>
+
+      <ES3Properties(New String() { "name", "maximumLOD" })>
+
+      Public Class ES3Type_Shader Inherits ES3Type
+  inheritance:
+  - System.Object
+  - ES3Types.ES3Type
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: UnityEngine.Scripting.PreserveAttribute
+    ctor: UnityEngine.Scripting.PreserveAttribute.#ctor
+    arguments: []
+- uid: ES3Types.ES3Type_Shader.Instance
+  commentId: F:ES3Types.ES3Type_Shader.Instance
+  id: Instance
+  parent: ES3Types.ES3Type_Shader
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: ES3Type_Shader.Instance
+  fullName: ES3Types.ES3Type_Shader.Instance
+  type: Field
+  source:
+    id: Instance
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Shader.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Types
+  syntax:
+    content: public static ES3Type Instance
+    return:
+      type: ES3Types.ES3Type
+    content.vb: Public Shared Instance As ES3Type
+- uid: ES3Types.ES3Type_Shader.#ctor
+  commentId: M:ES3Types.ES3Type_Shader.#ctor
+  id: '#ctor'
+  parent: ES3Types.ES3Type_Shader
+  langs:
+  - csharp
+  - vb
+  name: ES3Type_Shader()
+  nameWithType: ES3Type_Shader.ES3Type_Shader()
+  fullName: ES3Types.ES3Type_Shader.ES3Type_Shader()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Shader.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Types
+  syntax:
+    content: public ES3Type_Shader()
+    content.vb: Public Sub New()
+  overload: ES3Types.ES3Type_Shader.#ctor*
+  nameWithType.vb: ES3Type_Shader.New()
+  fullName.vb: ES3Types.ES3Type_Shader.New()
+  name.vb: New()
+- uid: ES3Types.ES3Type_Shader.Write(System.Object,ES3Writer)
+  commentId: M:ES3Types.ES3Type_Shader.Write(System.Object,ES3Writer)
+  id: Write(System.Object,ES3Writer)
+  parent: ES3Types.ES3Type_Shader
+  langs:
+  - csharp
+  - vb
+  name: Write(object, ES3Writer)
+  nameWithType: ES3Type_Shader.Write(object, ES3Writer)
+  fullName: ES3Types.ES3Type_Shader.Write(object, ES3Writer)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Shader.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Types
+  example: []
+  syntax:
+    content: public override void Write(object obj, ES3Writer writer)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: writer
+      type: ES3Writer
+    content.vb: Public Overrides Sub Write(obj As Object, writer As ES3Writer)
+  overridden: ES3Types.ES3Type.Write(System.Object,ES3Writer)
+  overload: ES3Types.ES3Type_Shader.Write*
+  nameWithType.vb: ES3Type_Shader.Write(Object, ES3Writer)
+  fullName.vb: ES3Types.ES3Type_Shader.Write(Object, ES3Writer)
+  name.vb: Write(Object, ES3Writer)
+- uid: ES3Types.ES3Type_Shader.Read``1(ES3Reader)
+  commentId: M:ES3Types.ES3Type_Shader.Read``1(ES3Reader)
+  id: Read``1(ES3Reader)
+  parent: ES3Types.ES3Type_Shader
+  langs:
+  - csharp
+  - vb
+  name: Read<T>(ES3Reader)
+  nameWithType: ES3Type_Shader.Read<T>(ES3Reader)
+  fullName: ES3Types.ES3Type_Shader.Read<T>(ES3Reader)
+  type: Method
+  source:
+    id: Read
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Shader.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Types
+  example: []
+  syntax:
+    content: public override object Read<T>(ES3Reader reader)
+    parameters:
+    - id: reader
+      type: ES3Reader
+    typeParameters:
+    - id: T
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function Read(Of T)(reader As ES3Reader) As Object
+  overridden: ES3Types.ES3Type.Read``1(ES3Reader)
+  overload: ES3Types.ES3Type_Shader.Read*
+  nameWithType.vb: ES3Type_Shader.Read(Of T)(ES3Reader)
+  fullName.vb: ES3Types.ES3Type_Shader.Read(Of T)(ES3Reader)
+  name.vb: Read(Of T)(ES3Reader)
+- uid: ES3Types.ES3Type_Shader.ReadInto``1(ES3Reader,System.Object)
+  commentId: M:ES3Types.ES3Type_Shader.ReadInto``1(ES3Reader,System.Object)
+  id: ReadInto``1(ES3Reader,System.Object)
+  parent: ES3Types.ES3Type_Shader
+  langs:
+  - csharp
+  - vb
+  name: ReadInto<T>(ES3Reader, object)
+  nameWithType: ES3Type_Shader.ReadInto<T>(ES3Reader, object)
+  fullName: ES3Types.ES3Type_Shader.ReadInto<T>(ES3Reader, object)
+  type: Method
+  source:
+    id: ReadInto
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Shader.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Types
+  example: []
+  syntax:
+    content: public override void ReadInto<T>(ES3Reader reader, object obj)
+    parameters:
+    - id: reader
+      type: ES3Reader
+    - id: obj
+      type: System.Object
+    typeParameters:
+    - id: T
+    content.vb: Public Overrides Sub ReadInto(Of T)(reader As ES3Reader, obj As Object)
+  overridden: ES3Types.ES3Type.ReadInto``1(ES3Reader,System.Object)
+  overload: ES3Types.ES3Type_Shader.ReadInto*
+  nameWithType.vb: ES3Type_Shader.ReadInto(Of T)(ES3Reader, Object)
+  fullName.vb: ES3Types.ES3Type_Shader.ReadInto(Of T)(ES3Reader, Object)
+  name.vb: ReadInto(Of T)(ES3Reader, Object)
+references:
+- uid: ES3Types
+  commentId: N:ES3Types
+  href: ES3Types.html
+  name: ES3Types
+  nameWithType: ES3Types
+  fullName: ES3Types
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ES3Types.ES3Type
+  commentId: T:ES3Types.ES3Type
+  parent: ES3Types
+  name: ES3Type
+  nameWithType: ES3Type
+  fullName: ES3Types.ES3Type
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ES3Types.ES3Type_Shader.#ctor*
+  commentId: Overload:ES3Types.ES3Type_Shader.#ctor
+  href: ES3Types.ES3Type_Shader.html#ES3Types_ES3Type_Shader__ctor
+  name: ES3Type_Shader
+  nameWithType: ES3Type_Shader.ES3Type_Shader
+  fullName: ES3Types.ES3Type_Shader.ES3Type_Shader
+  nameWithType.vb: ES3Type_Shader.New
+  fullName.vb: ES3Types.ES3Type_Shader.New
+  name.vb: New
+- uid: ES3Types.ES3Type.Write(System.Object,ES3Writer)
+  commentId: M:ES3Types.ES3Type.Write(System.Object,ES3Writer)
+  parent: ES3Types.ES3Type
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Write(object, ES3Writer)
+  nameWithType: ES3Type.Write(object, ES3Writer)
+  fullName: ES3Types.ES3Type.Write(object, ES3Writer)
+  nameWithType.vb: ES3Type.Write(Object, ES3Writer)
+  fullName.vb: ES3Types.ES3Type.Write(Object, ES3Writer)
+  name.vb: Write(Object, ES3Writer)
+  spec.csharp:
+  - uid: ES3Types.ES3Type.Write(System.Object,ES3Writer)
+    name: Write
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: ES3Writer
+    name: ES3Writer
+    href: ES3Writer.html
+  - name: )
+  spec.vb:
+  - uid: ES3Types.ES3Type.Write(System.Object,ES3Writer)
+    name: Write
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: ES3Writer
+    name: ES3Writer
+    href: ES3Writer.html
+  - name: )
+- uid: ES3Types.ES3Type_Shader.Write*
+  commentId: Overload:ES3Types.ES3Type_Shader.Write
+  href: ES3Types.ES3Type_Shader.html#ES3Types_ES3Type_Shader_Write_System_Object_ES3Writer_
+  name: Write
+  nameWithType: ES3Type_Shader.Write
+  fullName: ES3Types.ES3Type_Shader.Write
+- uid: ES3Writer
+  commentId: T:ES3Writer
+  href: ES3Writer.html
+  name: ES3Writer
+  nameWithType: ES3Writer
+  fullName: ES3Writer
+- uid: ES3Types.ES3Type.Read``1(ES3Reader)
+  commentId: M:ES3Types.ES3Type.Read``1(ES3Reader)
+  parent: ES3Types.ES3Type
+  href: ES3Reader.html
+  name: Read<T>(ES3Reader)
+  nameWithType: ES3Type.Read<T>(ES3Reader)
+  fullName: ES3Types.ES3Type.Read<T>(ES3Reader)
+  nameWithType.vb: ES3Type.Read(Of T)(ES3Reader)
+  fullName.vb: ES3Types.ES3Type.Read(Of T)(ES3Reader)
+  name.vb: Read(Of T)(ES3Reader)
+  spec.csharp:
+  - uid: ES3Types.ES3Type.Read``1(ES3Reader)
+    name: Read
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: ES3Reader
+    name: ES3Reader
+    href: ES3Reader.html
+  - name: )
+  spec.vb:
+  - uid: ES3Types.ES3Type.Read``1(ES3Reader)
+    name: Read
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: ES3Reader
+    name: ES3Reader
+    href: ES3Reader.html
+  - name: )
+- uid: ES3Types.ES3Type_Shader.Read*
+  commentId: Overload:ES3Types.ES3Type_Shader.Read
+  href: ES3Types.ES3Type_Shader.html#ES3Types_ES3Type_Shader_Read__1_ES3Reader_
+  name: Read
+  nameWithType: ES3Type_Shader.Read
+  fullName: ES3Types.ES3Type_Shader.Read
+- uid: ES3Reader
+  commentId: T:ES3Reader
+  href: ES3Reader.html
+  name: ES3Reader
+  nameWithType: ES3Reader
+  fullName: ES3Reader
+- uid: ES3Types.ES3Type.ReadInto``1(ES3Reader,System.Object)
+  commentId: M:ES3Types.ES3Type.ReadInto``1(ES3Reader,System.Object)
+  parent: ES3Types.ES3Type
+  isExternal: true
+  href: ES3Reader.html
+  name: ReadInto<T>(ES3Reader, object)
+  nameWithType: ES3Type.ReadInto<T>(ES3Reader, object)
+  fullName: ES3Types.ES3Type.ReadInto<T>(ES3Reader, object)
+  nameWithType.vb: ES3Type.ReadInto(Of T)(ES3Reader, Object)
+  fullName.vb: ES3Types.ES3Type.ReadInto(Of T)(ES3Reader, Object)
+  name.vb: ReadInto(Of T)(ES3Reader, Object)
+  spec.csharp:
+  - uid: ES3Types.ES3Type.ReadInto``1(ES3Reader,System.Object)
+    name: ReadInto
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: ES3Reader
+    name: ES3Reader
+    href: ES3Reader.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: ES3Types.ES3Type.ReadInto``1(ES3Reader,System.Object)
+    name: ReadInto
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: ES3Reader
+    name: ES3Reader
+    href: ES3Reader.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: ES3Types.ES3Type_Shader.ReadInto*
+  commentId: Overload:ES3Types.ES3Type_Shader.ReadInto
+  href: ES3Types.ES3Type_Shader.html#ES3Types_ES3Type_Shader_ReadInto__1_ES3Reader_System_Object_
+  name: ReadInto
+  nameWithType: ES3Type_Shader.ReadInto
+  fullName: ES3Types.ES3Type_Shader.ReadInto

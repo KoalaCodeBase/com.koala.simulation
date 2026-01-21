@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Save.PrefabDatabase
+  commentId: T:Koala.Simulation.Save.PrefabDatabase
+  id: PrefabDatabase
+  parent: Koala.Simulation.Save
+  children:
+  - Koala.Simulation.Save.PrefabDatabase.Prefabs
+  langs:
+  - csharp
+  - vb
+  name: PrefabDatabase
+  nameWithType: PrefabDatabase
+  fullName: Koala.Simulation.Save.PrefabDatabase
+  type: Class
+  source:
+    remote:
+      path: Runtime/Save/PrefabDatabase.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PrefabDatabase
+    path: ../Packages/com.koala.simulation/Runtime/Save/PrefabDatabase.cs
+    startLine: 7
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  summary: A collection of <xref uid="Koala.Simulation.Save.PrefabMap" altProperty="fullName" displayProperty="name"></xref> objects.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "PrefabDatabase", menuName = "Koala/SO/Prefab Database")]
+
+      public class PrefabDatabase : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="PrefabDatabase", menuName:="Koala/SO/Prefab Database")>
+
+      Public Class PrefabDatabase Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: PrefabDatabase
+    - name: menuName
+      type: System.String
+      value: Koala/SO/Prefab Database
+- uid: Koala.Simulation.Save.PrefabDatabase.Prefabs
+  commentId: P:Koala.Simulation.Save.PrefabDatabase.Prefabs
+  id: Prefabs
+  parent: Koala.Simulation.Save.PrefabDatabase
+  langs:
+  - csharp
+  - vb
+  name: Prefabs
+  nameWithType: PrefabDatabase.Prefabs
+  fullName: Koala.Simulation.Save.PrefabDatabase.Prefabs
+  type: Property
+  source:
+    remote:
+      path: Runtime/Save/PrefabDatabase.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Prefabs
+    path: ../Packages/com.koala.simulation/Runtime/Save/PrefabDatabase.cs
+    startLine: 11
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  syntax:
+    content: public PrefabMap[] Prefabs { get; }
+    parameters: []
+    return:
+      type: Koala.Simulation.Save.PrefabMap[]
+    content.vb: Public ReadOnly Property Prefabs As PrefabMap()
+  overload: Koala.Simulation.Save.PrefabDatabase.Prefabs*
+references:
+- uid: Koala.Simulation.Save
+  commentId: N:Koala.Simulation.Save
+  href: Koala.html
+  name: Koala.Simulation.Save
+  nameWithType: Koala.Simulation.Save
+  fullName: Koala.Simulation.Save
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Save.PrefabDatabase.Prefabs*
+  commentId: Overload:Koala.Simulation.Save.PrefabDatabase.Prefabs
+  href: Koala.Simulation.Save.PrefabDatabase.html#Koala_Simulation_Save_PrefabDatabase_Prefabs
+  name: Prefabs
+  nameWithType: PrefabDatabase.Prefabs
+  fullName: Koala.Simulation.Save.PrefabDatabase.Prefabs
+- uid: Koala.Simulation.Save.PrefabMap[]
+  isExternal: true
+  href: Koala.Simulation.Save.PrefabMap.html
+  name: PrefabMap[]
+  nameWithType: PrefabMap[]
+  fullName: Koala.Simulation.Save.PrefabMap[]
+  nameWithType.vb: PrefabMap()
+  fullName.vb: Koala.Simulation.Save.PrefabMap()
+  name.vb: PrefabMap()
+  spec.csharp:
+  - uid: Koala.Simulation.Save.PrefabMap
+    name: PrefabMap
+    href: Koala.Simulation.Save.PrefabMap.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Koala.Simulation.Save.PrefabMap
+    name: PrefabMap
+    href: Koala.Simulation.Save.PrefabMap.html
+  - name: (
+  - name: )

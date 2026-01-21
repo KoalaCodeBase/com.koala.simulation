@@ -1,0 +1,754 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.Item
+  commentId: T:Koala.Simulation.Inventory.Item
+  id: Item
+  parent: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.Item.AddProperty``1(System.String,``0)
+  - Koala.Simulation.Inventory.Item.InitializeNew
+  - Koala.Simulation.Inventory.Item.LoadFromDTO(ItemDTO)
+  - Koala.Simulation.Inventory.Item.OnLoaded
+  - Koala.Simulation.Inventory.Item.PerformTransferAnimation(UnityEngine.Transform)
+  - Koala.Simulation.Inventory.Item.PrefabId
+  - Koala.Simulation.Inventory.Item.Properties
+  - Koala.Simulation.Inventory.Item.RemoveProperty(System.String)
+  - Koala.Simulation.Inventory.Item.ToDTO
+  - Koala.Simulation.Inventory.Item.TryGetProperty``1(System.String,``0@)
+  - Koala.Simulation.Inventory.Item.UniqueId
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: Item
+  fullName: Koala.Simulation.Inventory.Item
+  type: Class
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Item
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 25
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: >-
+    Represents an item instance that can be stored in a container.
+
+
+    Each item has a unique ID, a prefab ID for recreation, and optional transfer animations
+
+    for visual movement between container slots.
+  example:
+  - >-
+    <pre><code class="lang-csharp">public void Test()
+
+    {
+        AddProperty("Durability", 95);
+        AddProperty("SkinId", "RedDragon");
+
+        if (TryGetProperty&lt;int&gt;("Durability", out var d))
+            Debug.Log($"Item durability: {d}");
+    }</code></pre>
+  syntax:
+    content: >-
+      [AddComponentMenu("Simulation/Inventory/Item")]
+
+      [Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")]
+
+      public class Item : MonoBehaviour
+    content.vb: >-
+      <AddComponentMenu("Simulation/Inventory/Item")>
+
+      <Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")>
+
+      Public Class Item Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Simulation/Inventory/Item
+  - type: UnityEngine.IconAttribute
+    ctor: UnityEngine.IconAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Packages/com.koala.simulation/Editor/Icons/koala.png
+- uid: Koala.Simulation.Inventory.Item.UniqueId
+  commentId: P:Koala.Simulation.Inventory.Item.UniqueId
+  id: UniqueId
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: UniqueId
+  nameWithType: Item.UniqueId
+  fullName: Koala.Simulation.Inventory.Item.UniqueId
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: UniqueId
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 36
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: The globally unique identifier of this item.
+  example: []
+  syntax:
+    content: public Guid UniqueId { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public ReadOnly Property UniqueId As Guid
+  overload: Koala.Simulation.Inventory.Item.UniqueId*
+- uid: Koala.Simulation.Inventory.Item.PrefabId
+  commentId: P:Koala.Simulation.Inventory.Item.PrefabId
+  id: PrefabId
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: PrefabId
+  nameWithType: Item.PrefabId
+  fullName: Koala.Simulation.Inventory.Item.PrefabId
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PrefabId
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 41
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: The prefab identifier used to recreate this item.
+  example: []
+  syntax:
+    content: public string PrefabId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PrefabId As String
+  overload: Koala.Simulation.Inventory.Item.PrefabId*
+- uid: Koala.Simulation.Inventory.Item.OnLoaded
+  commentId: E:Koala.Simulation.Inventory.Item.OnLoaded
+  id: OnLoaded
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: OnLoaded
+  nameWithType: Item.OnLoaded
+  fullName: Koala.Simulation.Inventory.Item.OnLoaded
+  type: Event
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnLoaded
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 46
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Triggered after the item is fully loaded from a DTO.
+  example: []
+  syntax:
+    content: public event Action OnLoaded
+    return:
+      type: System.Action
+    content.vb: Public Event OnLoaded As Action
+- uid: Koala.Simulation.Inventory.Item.Properties
+  commentId: P:Koala.Simulation.Inventory.Item.Properties
+  id: Properties
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: Item.Properties
+  fullName: Koala.Simulation.Inventory.Item.Properties
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Properties
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 51
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Properties of the item.
+  example: []
+  syntax:
+    content: public Dictionary<string, object> Properties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Public Property Properties As Dictionary(Of String, Object)
+  overload: Koala.Simulation.Inventory.Item.Properties*
+- uid: Koala.Simulation.Inventory.Item.InitializeNew
+  commentId: M:Koala.Simulation.Inventory.Item.InitializeNew
+  id: InitializeNew
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: InitializeNew()
+  nameWithType: Item.InitializeNew()
+  fullName: Koala.Simulation.Inventory.Item.InitializeNew()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InitializeNew
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 56
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Initializes the item as a new instance and assigns it a unique ID.
+  example: []
+  syntax:
+    content: public void InitializeNew()
+    content.vb: Public Sub InitializeNew()
+  overload: Koala.Simulation.Inventory.Item.InitializeNew*
+- uid: Koala.Simulation.Inventory.Item.LoadFromDTO(ItemDTO)
+  commentId: M:Koala.Simulation.Inventory.Item.LoadFromDTO(ItemDTO)
+  id: LoadFromDTO(ItemDTO)
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: LoadFromDTO(ItemDTO)
+  nameWithType: Item.LoadFromDTO(ItemDTO)
+  fullName: Koala.Simulation.Inventory.Item.LoadFromDTO(ItemDTO)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: LoadFromDTO
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 65
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Loads the item state from a DTO.
+  example: []
+  syntax:
+    content: public void LoadFromDTO(ItemDTO dto)
+    parameters:
+    - id: dto
+      type: ItemDTO
+      description: The DTO containing saved item data.
+    content.vb: Public Sub LoadFromDTO(dto As ItemDTO)
+  overload: Koala.Simulation.Inventory.Item.LoadFromDTO*
+- uid: Koala.Simulation.Inventory.Item.ToDTO
+  commentId: M:Koala.Simulation.Inventory.Item.ToDTO
+  id: ToDTO
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: ToDTO()
+  nameWithType: Item.ToDTO()
+  fullName: Koala.Simulation.Inventory.Item.ToDTO()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ToDTO
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 78
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Converts this item to a DTO for saving.
+  example: []
+  syntax:
+    content: public ItemDTO ToDTO()
+    return:
+      type: ItemDTO
+      description: An <xref href="ItemDTO" data-throw-if-not-resolved="false"></xref> containing the item's state.
+    content.vb: Public Function ToDTO() As ItemDTO
+  overload: Koala.Simulation.Inventory.Item.ToDTO*
+- uid: Koala.Simulation.Inventory.Item.PerformTransferAnimation(UnityEngine.Transform)
+  commentId: M:Koala.Simulation.Inventory.Item.PerformTransferAnimation(UnityEngine.Transform)
+  id: PerformTransferAnimation(UnityEngine.Transform)
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: PerformTransferAnimation(Transform)
+  nameWithType: Item.PerformTransferAnimation(Transform)
+  fullName: Koala.Simulation.Inventory.Item.PerformTransferAnimation(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PerformTransferAnimation
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 92
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Performs the configured transfer animation to move the item to a target slot.
+  example: []
+  syntax:
+    content: public void PerformTransferAnimation(Transform targetSlot)
+    parameters:
+    - id: targetSlot
+      type: UnityEngine.Transform
+      description: The target slot transform.
+    content.vb: Public Sub PerformTransferAnimation(targetSlot As Transform)
+  overload: Koala.Simulation.Inventory.Item.PerformTransferAnimation*
+- uid: Koala.Simulation.Inventory.Item.AddProperty``1(System.String,``0)
+  commentId: M:Koala.Simulation.Inventory.Item.AddProperty``1(System.String,``0)
+  id: AddProperty``1(System.String,``0)
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: AddProperty<T>(string, T)
+  nameWithType: Item.AddProperty<T>(string, T)
+  fullName: Koala.Simulation.Inventory.Item.AddProperty<T>(string, T)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: AddProperty
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 102
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Adds a property to the item.
+  example: []
+  syntax:
+    content: public void AddProperty<T>(string key, T value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the property.
+    - id: value
+      type: '{T}'
+      description: The value of the property.
+    typeParameters:
+    - id: T
+    content.vb: Public Sub AddProperty(Of T)(key As String, value As T)
+  overload: Koala.Simulation.Inventory.Item.AddProperty*
+  nameWithType.vb: Item.AddProperty(Of T)(String, T)
+  fullName.vb: Koala.Simulation.Inventory.Item.AddProperty(Of T)(String, T)
+  name.vb: AddProperty(Of T)(String, T)
+- uid: Koala.Simulation.Inventory.Item.TryGetProperty``1(System.String,``0@)
+  commentId: M:Koala.Simulation.Inventory.Item.TryGetProperty``1(System.String,``0@)
+  id: TryGetProperty``1(System.String,``0@)
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: TryGetProperty<T>(string, out T)
+  nameWithType: Item.TryGetProperty<T>(string, out T)
+  fullName: Koala.Simulation.Inventory.Item.TryGetProperty<T>(string, out T)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: TryGetProperty
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 110
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Tries to get a property from the item.
+  example: []
+  syntax:
+    content: public bool TryGetProperty<T>(string key, out T value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the property.
+    - id: value
+      type: '{T}'
+      description: The value of the property.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if the property was found, false otherwise.
+    content.vb: Public Function TryGetProperty(Of T)(key As String, value As T) As Boolean
+  overload: Koala.Simulation.Inventory.Item.TryGetProperty*
+  nameWithType.vb: Item.TryGetProperty(Of T)(String, T)
+  fullName.vb: Koala.Simulation.Inventory.Item.TryGetProperty(Of T)(String, T)
+  name.vb: TryGetProperty(Of T)(String, T)
+- uid: Koala.Simulation.Inventory.Item.RemoveProperty(System.String)
+  commentId: M:Koala.Simulation.Inventory.Item.RemoveProperty(System.String)
+  id: RemoveProperty(System.String)
+  parent: Koala.Simulation.Inventory.Item
+  langs:
+  - csharp
+  - vb
+  name: RemoveProperty(string)
+  nameWithType: Item.RemoveProperty(string)
+  fullName: Koala.Simulation.Inventory.Item.RemoveProperty(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Item.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: RemoveProperty
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Item.cs
+    startLine: 125
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Removes a property from the item.
+  example: []
+  syntax:
+    content: public void RemoveProperty(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the property.
+    content.vb: Public Sub RemoveProperty(key As String)
+  overload: Koala.Simulation.Inventory.Item.RemoveProperty*
+  nameWithType.vb: Item.RemoveProperty(String)
+  fullName.vb: Koala.Simulation.Inventory.Item.RemoveProperty(String)
+  name.vb: RemoveProperty(String)
+references:
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Inventory.Item.UniqueId*
+  commentId: Overload:Koala.Simulation.Inventory.Item.UniqueId
+  href: Koala.Simulation.Inventory.Item.html#Koala_Simulation_Inventory_Item_UniqueId
+  name: UniqueId
+  nameWithType: Item.UniqueId
+  fullName: Koala.Simulation.Inventory.Item.UniqueId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Koala.Simulation.Inventory.Item.PrefabId*
+  commentId: Overload:Koala.Simulation.Inventory.Item.PrefabId
+  href: Koala.Simulation.Inventory.Item.html#Koala_Simulation_Inventory_Item_PrefabId
+  name: PrefabId
+  nameWithType: Item.PrefabId
+  fullName: Koala.Simulation.Inventory.Item.PrefabId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Koala.Simulation.Inventory.Item.Properties*
+  commentId: Overload:Koala.Simulation.Inventory.Item.Properties
+  href: Koala.Simulation.Inventory.Item.html#Koala_Simulation_Inventory_Item_Properties
+  name: Properties
+  nameWithType: Item.Properties
+  fullName: Koala.Simulation.Inventory.Item.Properties
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<string, object>
+  nameWithType: Dictionary<string, object>
+  fullName: System.Collections.Generic.Dictionary<string, object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Koala.Simulation.Inventory.Item.InitializeNew*
+  commentId: Overload:Koala.Simulation.Inventory.Item.InitializeNew
+  href: Koala.Simulation.Inventory.Item.html#Koala_Simulation_Inventory_Item_InitializeNew
+  name: InitializeNew
+  nameWithType: Item.InitializeNew
+  fullName: Koala.Simulation.Inventory.Item.InitializeNew
+- uid: Koala.Simulation.Inventory.Item.LoadFromDTO*
+  commentId: Overload:Koala.Simulation.Inventory.Item.LoadFromDTO
+  href: Koala.Simulation.Inventory.Item.html#Koala_Simulation_Inventory_Item_LoadFromDTO_ItemDTO_
+  name: LoadFromDTO
+  nameWithType: Item.LoadFromDTO
+  fullName: Koala.Simulation.Inventory.Item.LoadFromDTO
+- uid: ItemDTO
+  commentId: T:ItemDTO
+  href: ItemDTO.html
+  name: ItemDTO
+  nameWithType: ItemDTO
+  fullName: ItemDTO
+- uid: Koala.Simulation.Inventory.Item.ToDTO*
+  commentId: Overload:Koala.Simulation.Inventory.Item.ToDTO
+  href: Koala.Simulation.Inventory.Item.html#Koala_Simulation_Inventory_Item_ToDTO
+  name: ToDTO
+  nameWithType: Item.ToDTO
+  fullName: Koala.Simulation.Inventory.Item.ToDTO
+- uid: Koala.Simulation.Inventory.Item.PerformTransferAnimation*
+  commentId: Overload:Koala.Simulation.Inventory.Item.PerformTransferAnimation
+  href: Koala.Simulation.Inventory.Item.html#Koala_Simulation_Inventory_Item_PerformTransferAnimation_UnityEngine_Transform_
+  name: PerformTransferAnimation
+  nameWithType: Item.PerformTransferAnimation
+  fullName: Koala.Simulation.Inventory.Item.PerformTransferAnimation
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: Koala.Simulation.Inventory.Item.AddProperty*
+  commentId: Overload:Koala.Simulation.Inventory.Item.AddProperty
+  href: Koala.Simulation.Inventory.Item.html#Koala_Simulation_Inventory_Item_AddProperty__1_System_String___0_
+  name: AddProperty
+  nameWithType: Item.AddProperty
+  fullName: Koala.Simulation.Inventory.Item.AddProperty
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Koala.Simulation.Inventory.Item.TryGetProperty*
+  commentId: Overload:Koala.Simulation.Inventory.Item.TryGetProperty
+  href: Koala.Simulation.Inventory.Item.html#Koala_Simulation_Inventory_Item_TryGetProperty__1_System_String___0__
+  name: TryGetProperty
+  nameWithType: Item.TryGetProperty
+  fullName: Koala.Simulation.Inventory.Item.TryGetProperty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koala.Simulation.Inventory.Item.RemoveProperty*
+  commentId: Overload:Koala.Simulation.Inventory.Item.RemoveProperty
+  href: Koala.Simulation.Inventory.Item.html#Koala_Simulation_Inventory_Item_RemoveProperty_System_String_
+  name: RemoveProperty
+  nameWithType: Item.RemoveProperty
+  fullName: Koala.Simulation.Inventory.Item.RemoveProperty

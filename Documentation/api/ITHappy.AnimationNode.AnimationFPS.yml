@@ -1,0 +1,169 @@
+### YamlMime:ManagedReference
+items:
+- uid: ITHappy.AnimationNode.AnimationFPS
+  commentId: T:ITHappy.AnimationNode.AnimationFPS
+  id: AnimationNode.AnimationFPS
+  parent: ITHappy
+  children:
+  - ITHappy.AnimationNode.AnimationFPS.FPS_100
+  - ITHappy.AnimationNode.AnimationFPS.FPS_27
+  - ITHappy.AnimationNode.AnimationFPS.FPS_30
+  - ITHappy.AnimationNode.AnimationFPS.FPS_60
+  - ITHappy.AnimationNode.AnimationFPS.FPS_80
+  langs:
+  - csharp
+  - vb
+  name: AnimationNode.AnimationFPS
+  nameWithType: AnimationNode.AnimationFPS
+  fullName: ITHappy.AnimationNode.AnimationFPS
+  type: Enum
+  source:
+    id: AnimationFPS
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Other_Scripts\Animation\AnimationNode.cs
+    startLine: 130
+  assemblies:
+  - Assembly-CSharp
+  namespace: ITHappy
+  syntax:
+    content: public enum AnimationNode.AnimationFPS
+    content.vb: Public Enum AnimationNode.AnimationFPS
+- uid: ITHappy.AnimationNode.AnimationFPS.FPS_27
+  commentId: F:ITHappy.AnimationNode.AnimationFPS.FPS_27
+  id: FPS_27
+  parent: ITHappy.AnimationNode.AnimationFPS
+  langs:
+  - csharp
+  - vb
+  name: FPS_27
+  nameWithType: AnimationNode.AnimationFPS.FPS_27
+  fullName: ITHappy.AnimationNode.AnimationFPS.FPS_27
+  type: Field
+  source:
+    id: FPS_27
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Other_Scripts\Animation\AnimationNode.cs
+    startLine: 131
+  assemblies:
+  - Assembly-CSharp
+  namespace: ITHappy
+  syntax:
+    content: FPS_27 = 27
+    return:
+      type: ITHappy.AnimationNode.AnimationFPS
+- uid: ITHappy.AnimationNode.AnimationFPS.FPS_30
+  commentId: F:ITHappy.AnimationNode.AnimationFPS.FPS_30
+  id: FPS_30
+  parent: ITHappy.AnimationNode.AnimationFPS
+  langs:
+  - csharp
+  - vb
+  name: FPS_30
+  nameWithType: AnimationNode.AnimationFPS.FPS_30
+  fullName: ITHappy.AnimationNode.AnimationFPS.FPS_30
+  type: Field
+  source:
+    id: FPS_30
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Other_Scripts\Animation\AnimationNode.cs
+    startLine: 132
+  assemblies:
+  - Assembly-CSharp
+  namespace: ITHappy
+  syntax:
+    content: FPS_30 = 30
+    return:
+      type: ITHappy.AnimationNode.AnimationFPS
+- uid: ITHappy.AnimationNode.AnimationFPS.FPS_60
+  commentId: F:ITHappy.AnimationNode.AnimationFPS.FPS_60
+  id: FPS_60
+  parent: ITHappy.AnimationNode.AnimationFPS
+  langs:
+  - csharp
+  - vb
+  name: FPS_60
+  nameWithType: AnimationNode.AnimationFPS.FPS_60
+  fullName: ITHappy.AnimationNode.AnimationFPS.FPS_60
+  type: Field
+  source:
+    id: FPS_60
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Other_Scripts\Animation\AnimationNode.cs
+    startLine: 133
+  assemblies:
+  - Assembly-CSharp
+  namespace: ITHappy
+  syntax:
+    content: FPS_60 = 60
+    return:
+      type: ITHappy.AnimationNode.AnimationFPS
+- uid: ITHappy.AnimationNode.AnimationFPS.FPS_80
+  commentId: F:ITHappy.AnimationNode.AnimationFPS.FPS_80
+  id: FPS_80
+  parent: ITHappy.AnimationNode.AnimationFPS
+  langs:
+  - csharp
+  - vb
+  name: FPS_80
+  nameWithType: AnimationNode.AnimationFPS.FPS_80
+  fullName: ITHappy.AnimationNode.AnimationFPS.FPS_80
+  type: Field
+  source:
+    id: FPS_80
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Other_Scripts\Animation\AnimationNode.cs
+    startLine: 134
+  assemblies:
+  - Assembly-CSharp
+  namespace: ITHappy
+  syntax:
+    content: FPS_80 = 80
+    return:
+      type: ITHappy.AnimationNode.AnimationFPS
+- uid: ITHappy.AnimationNode.AnimationFPS.FPS_100
+  commentId: F:ITHappy.AnimationNode.AnimationFPS.FPS_100
+  id: FPS_100
+  parent: ITHappy.AnimationNode.AnimationFPS
+  langs:
+  - csharp
+  - vb
+  name: FPS_100
+  nameWithType: AnimationNode.AnimationFPS.FPS_100
+  fullName: ITHappy.AnimationNode.AnimationFPS.FPS_100
+  type: Field
+  source:
+    id: FPS_100
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Other_Scripts\Animation\AnimationNode.cs
+    startLine: 135
+  assemblies:
+  - Assembly-CSharp
+  namespace: ITHappy
+  syntax:
+    content: FPS_100 = 100
+    return:
+      type: ITHappy.AnimationNode.AnimationFPS
+references:
+- uid: ITHappy
+  commentId: N:ITHappy
+  href: ITHappy.html
+  name: ITHappy
+  nameWithType: ITHappy
+  fullName: ITHappy
+- uid: ITHappy.AnimationNode.AnimationFPS
+  commentId: T:ITHappy.AnimationNode.AnimationFPS
+  parent: ITHappy
+  href: ITHappy.AnimationNode.html
+  name: AnimationNode.AnimationFPS
+  nameWithType: AnimationNode.AnimationFPS
+  fullName: ITHappy.AnimationNode.AnimationFPS
+  spec.csharp:
+  - uid: ITHappy.AnimationNode
+    name: AnimationNode
+    href: ITHappy.AnimationNode.html
+  - name: .
+  - uid: ITHappy.AnimationNode.AnimationFPS
+    name: AnimationFPS
+    href: ITHappy.AnimationNode.AnimationFPS.html
+  spec.vb:
+  - uid: ITHappy.AnimationNode
+    name: AnimationNode
+    href: ITHappy.AnimationNode.html
+  - name: .
+  - uid: ITHappy.AnimationNode.AnimationFPS
+    name: AnimationFPS
+    href: ITHappy.AnimationNode.AnimationFPS.html

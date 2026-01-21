@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.Components.Interactable
+  commentId: T:Koala.Simulation.Interaction.Components.Interactable
+  id: Interactable
+  parent: Koala.Simulation.Interaction.Components
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Interactable
+  nameWithType: Interactable
+  fullName: Koala.Simulation.Interaction.Components.Interactable
+  type: Class
+  source:
+    remote:
+      path: Runtime/Interaction/Components/Interactable.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Interactable
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Components/Interactable.cs
+    startLine: 5
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Components
+  syntax:
+    content: >-
+      [AddComponentMenu("Simulation/Interaction/Interactable")]
+
+      [DisallowMultipleComponent]
+
+      [Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")]
+
+      public class Interactable : InteractableObject
+    content.vb: >-
+      <AddComponentMenu("Simulation/Interaction/Interactable")>
+
+      <DisallowMultipleComponent>
+
+      <Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")>
+
+      Public Class Interactable Inherits InteractableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Koala.Simulation.Interaction.Core.InteractableObject
+  inheritedMembers:
+  - Koala.Simulation.Interaction.Core.InteractableObject.OnBehaviourInteraction
+  - Koala.Simulation.Interaction.Core.InteractableObject.OnAwake
+  - Koala.Simulation.Interaction.Core.InteractableObject.OnEnabled
+  - Koala.Simulation.Interaction.Core.InteractableObject.OnDisabled
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Simulation/Interaction/Interactable
+  - type: UnityEngine.DisallowMultipleComponent
+    ctor: UnityEngine.DisallowMultipleComponent.#ctor
+    arguments: []
+  - type: UnityEngine.IconAttribute
+    ctor: UnityEngine.IconAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Packages/com.koala.simulation/Editor/Icons/koala.png
+references:
+- uid: Koala.Simulation.Interaction.Components
+  commentId: N:Koala.Simulation.Interaction.Components
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Components
+  nameWithType: Koala.Simulation.Interaction.Components
+  fullName: Koala.Simulation.Interaction.Components
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Components
+    name: Components
+    href: Koala.Simulation.Interaction.Components.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Components
+    name: Components
+    href: Koala.Simulation.Interaction.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Koala.Simulation.Interaction.Core.InteractableObject
+  commentId: T:Koala.Simulation.Interaction.Core.InteractableObject
+  parent: Koala.Simulation.Interaction.Core
+  href: Koala.Simulation.Interaction.Core.InteractableObject.html
+  name: InteractableObject
+  nameWithType: InteractableObject
+  fullName: Koala.Simulation.Interaction.Core.InteractableObject
+- uid: Koala.Simulation.Interaction.Core.InteractableObject.OnBehaviourInteraction
+  commentId: E:Koala.Simulation.Interaction.Core.InteractableObject.OnBehaviourInteraction
+  parent: Koala.Simulation.Interaction.Core.InteractableObject
+  href: Koala.Simulation.Interaction.Core.InteractableObject.html#Koala_Simulation_Interaction_Core_InteractableObject_OnBehaviourInteraction
+  name: OnBehaviourInteraction
+  nameWithType: InteractableObject.OnBehaviourInteraction
+  fullName: Koala.Simulation.Interaction.Core.InteractableObject.OnBehaviourInteraction
+- uid: Koala.Simulation.Interaction.Core.InteractableObject.OnAwake
+  commentId: M:Koala.Simulation.Interaction.Core.InteractableObject.OnAwake
+  parent: Koala.Simulation.Interaction.Core.InteractableObject
+  href: Koala.Simulation.Interaction.Core.InteractableObject.html#Koala_Simulation_Interaction_Core_InteractableObject_OnAwake
+  name: OnAwake()
+  nameWithType: InteractableObject.OnAwake()
+  fullName: Koala.Simulation.Interaction.Core.InteractableObject.OnAwake()
+  spec.csharp:
+  - uid: Koala.Simulation.Interaction.Core.InteractableObject.OnAwake
+    name: OnAwake
+    href: Koala.Simulation.Interaction.Core.InteractableObject.html#Koala_Simulation_Interaction_Core_InteractableObject_OnAwake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Interaction.Core.InteractableObject.OnAwake
+    name: OnAwake
+    href: Koala.Simulation.Interaction.Core.InteractableObject.html#Koala_Simulation_Interaction_Core_InteractableObject_OnAwake
+  - name: (
+  - name: )
+- uid: Koala.Simulation.Interaction.Core.InteractableObject.OnEnabled
+  commentId: M:Koala.Simulation.Interaction.Core.InteractableObject.OnEnabled
+  parent: Koala.Simulation.Interaction.Core.InteractableObject
+  href: Koala.Simulation.Interaction.Core.InteractableObject.html#Koala_Simulation_Interaction_Core_InteractableObject_OnEnabled
+  name: OnEnabled()
+  nameWithType: InteractableObject.OnEnabled()
+  fullName: Koala.Simulation.Interaction.Core.InteractableObject.OnEnabled()
+  spec.csharp:
+  - uid: Koala.Simulation.Interaction.Core.InteractableObject.OnEnabled
+    name: OnEnabled
+    href: Koala.Simulation.Interaction.Core.InteractableObject.html#Koala_Simulation_Interaction_Core_InteractableObject_OnEnabled
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Interaction.Core.InteractableObject.OnEnabled
+    name: OnEnabled
+    href: Koala.Simulation.Interaction.Core.InteractableObject.html#Koala_Simulation_Interaction_Core_InteractableObject_OnEnabled
+  - name: (
+  - name: )
+- uid: Koala.Simulation.Interaction.Core.InteractableObject.OnDisabled
+  commentId: M:Koala.Simulation.Interaction.Core.InteractableObject.OnDisabled
+  parent: Koala.Simulation.Interaction.Core.InteractableObject
+  href: Koala.Simulation.Interaction.Core.InteractableObject.html#Koala_Simulation_Interaction_Core_InteractableObject_OnDisabled
+  name: OnDisabled()
+  nameWithType: InteractableObject.OnDisabled()
+  fullName: Koala.Simulation.Interaction.Core.InteractableObject.OnDisabled()
+  spec.csharp:
+  - uid: Koala.Simulation.Interaction.Core.InteractableObject.OnDisabled
+    name: OnDisabled
+    href: Koala.Simulation.Interaction.Core.InteractableObject.html#Koala_Simulation_Interaction_Core_InteractableObject_OnDisabled
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Interaction.Core.InteractableObject.OnDisabled
+    name: OnDisabled
+    href: Koala.Simulation.Interaction.Core.InteractableObject.html#Koala_Simulation_Interaction_Core_InteractableObject_OnDisabled
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Interaction.Core
+  commentId: N:Koala.Simulation.Interaction.Core
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Core
+  nameWithType: Koala.Simulation.Interaction.Core
+  fullName: Koala.Simulation.Interaction.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html

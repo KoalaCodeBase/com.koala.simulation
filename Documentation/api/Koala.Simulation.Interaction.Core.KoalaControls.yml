@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.Core.KoalaControls
+  commentId: T:Koala.Simulation.Interaction.Core.KoalaControls
+  id: KoalaControls
+  parent: Koala.Simulation.Interaction.Core
+  children:
+  - Koala.Simulation.Interaction.Core.KoalaControls.CreateInteractionDisplay(UnityEditor.MenuCommand)
+  langs:
+  - csharp
+  - vb
+  name: KoalaControls
+  nameWithType: KoalaControls
+  fullName: Koala.Simulation.Interaction.Core.KoalaControls
+  type: Class
+  source:
+    remote:
+      path: Runtime/Interaction/Core/KoalaControls.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: KoalaControls
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/KoalaControls.cs
+    startLine: 8
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Provides editor utilities for creating interaction display UI elements.
+  example: []
+  syntax:
+    content: public class KoalaControls
+    content.vb: Public Class KoalaControls
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Interaction.Core.KoalaControls.CreateInteractionDisplay(UnityEditor.MenuCommand)
+  commentId: M:Koala.Simulation.Interaction.Core.KoalaControls.CreateInteractionDisplay(UnityEditor.MenuCommand)
+  id: CreateInteractionDisplay(UnityEditor.MenuCommand)
+  parent: Koala.Simulation.Interaction.Core.KoalaControls
+  langs:
+  - csharp
+  - vb
+  name: CreateInteractionDisplay(MenuCommand)
+  nameWithType: KoalaControls.CreateInteractionDisplay(MenuCommand)
+  fullName: Koala.Simulation.Interaction.Core.KoalaControls.CreateInteractionDisplay(UnityEditor.MenuCommand)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interaction/Core/KoalaControls.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CreateInteractionDisplay
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/KoalaControls.cs
+    startLine: 14
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Creates a new interaction display UI element.
+  example: []
+  syntax:
+    content: >-
+      [MenuItem("GameObject/UI/Interaction Display", false, 10)]
+
+      public static void CreateInteractionDisplay(MenuCommand menuCommand)
+    parameters:
+    - id: menuCommand
+      type: UnityEditor.MenuCommand
+      description: The menu command used to create the interaction display.
+    content.vb: >-
+      <MenuItem("GameObject/UI/Interaction Display", False, 10)>
+
+      Public Shared Sub CreateInteractionDisplay(menuCommand As MenuCommand)
+  overload: Koala.Simulation.Interaction.Core.KoalaControls.CreateInteractionDisplay*
+  attributes:
+  - type: UnityEditor.MenuItem
+    ctor: UnityEditor.MenuItem.#ctor(System.String,System.Boolean,System.Int32)
+    arguments:
+    - type: System.String
+      value: GameObject/UI/Interaction Display
+    - type: System.Boolean
+      value: false
+    - type: System.Int32
+      value: 10
+references:
+- uid: Koala.Simulation.Interaction.Core
+  commentId: N:Koala.Simulation.Interaction.Core
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Core
+  nameWithType: Koala.Simulation.Interaction.Core
+  fullName: Koala.Simulation.Interaction.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Interaction.Core.KoalaControls.CreateInteractionDisplay*
+  commentId: Overload:Koala.Simulation.Interaction.Core.KoalaControls.CreateInteractionDisplay
+  href: Koala.Simulation.Interaction.Core.KoalaControls.html#Koala_Simulation_Interaction_Core_KoalaControls_CreateInteractionDisplay_UnityEditor_MenuCommand_
+  name: CreateInteractionDisplay
+  nameWithType: KoalaControls.CreateInteractionDisplay
+  fullName: Koala.Simulation.Interaction.Core.KoalaControls.CreateInteractionDisplay
+- uid: UnityEditor.MenuCommand
+  commentId: T:UnityEditor.MenuCommand
+  parent: UnityEditor
+  isExternal: true
+  name: MenuCommand
+  nameWithType: MenuCommand
+  fullName: UnityEditor.MenuCommand
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor

@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: AmplifyColor.Quality
+  commentId: T:AmplifyColor.Quality
+  id: Quality
+  parent: AmplifyColor
+  children:
+  - AmplifyColor.Quality.Mobile
+  - AmplifyColor.Quality.Standard
+  langs:
+  - csharp
+  - vb
+  name: Quality
+  nameWithType: Quality
+  fullName: AmplifyColor.Quality
+  type: Enum
+  source:
+    id: Quality
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\AmplifyColorEffect.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public enum Quality
+    content.vb: Public Enum Quality
+- uid: AmplifyColor.Quality.Mobile
+  commentId: F:AmplifyColor.Quality.Mobile
+  id: Mobile
+  parent: AmplifyColor.Quality
+  langs:
+  - csharp
+  - vb
+  name: Mobile
+  nameWithType: Quality.Mobile
+  fullName: AmplifyColor.Quality.Mobile
+  type: Field
+  source:
+    id: Mobile
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\AmplifyColorEffect.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: Mobile = 0
+    return:
+      type: AmplifyColor.Quality
+- uid: AmplifyColor.Quality.Standard
+  commentId: F:AmplifyColor.Quality.Standard
+  id: Standard
+  parent: AmplifyColor.Quality
+  langs:
+  - csharp
+  - vb
+  name: Standard
+  nameWithType: Quality.Standard
+  fullName: AmplifyColor.Quality.Standard
+  type: Field
+  source:
+    id: Standard
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\AmplifyColorEffect.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: Standard = 1
+    return:
+      type: AmplifyColor.Quality
+references:
+- uid: AmplifyColor
+  commentId: N:AmplifyColor
+  href: AmplifyColor.html
+  name: AmplifyColor
+  nameWithType: AmplifyColor
+  fullName: AmplifyColor
+- uid: AmplifyColor.Quality
+  commentId: T:AmplifyColor.Quality
+  parent: AmplifyColor
+  href: AmplifyColor.Quality.html
+  name: Quality
+  nameWithType: Quality
+  fullName: AmplifyColor.Quality

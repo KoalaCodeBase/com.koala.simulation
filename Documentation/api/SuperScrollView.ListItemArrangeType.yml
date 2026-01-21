@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.ListItemArrangeType
+  commentId: T:SuperScrollView.ListItemArrangeType
+  id: ListItemArrangeType
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.ListItemArrangeType.BottomToTop
+  - SuperScrollView.ListItemArrangeType.LeftToRight
+  - SuperScrollView.ListItemArrangeType.RightToLeft
+  - SuperScrollView.ListItemArrangeType.TopToBottom
+  langs:
+  - csharp
+  - vb
+  name: ListItemArrangeType
+  nameWithType: ListItemArrangeType
+  fullName: SuperScrollView.ListItemArrangeType
+  type: Enum
+  source:
+    id: ListItemArrangeType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public enum ListItemArrangeType
+    content.vb: Public Enum ListItemArrangeType
+- uid: SuperScrollView.ListItemArrangeType.TopToBottom
+  commentId: F:SuperScrollView.ListItemArrangeType.TopToBottom
+  id: TopToBottom
+  parent: SuperScrollView.ListItemArrangeType
+  langs:
+  - csharp
+  - vb
+  name: TopToBottom
+  nameWithType: ListItemArrangeType.TopToBottom
+  fullName: SuperScrollView.ListItemArrangeType.TopToBottom
+  type: Field
+  source:
+    id: TopToBottom
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: TopToBottom = 0
+    return:
+      type: SuperScrollView.ListItemArrangeType
+- uid: SuperScrollView.ListItemArrangeType.BottomToTop
+  commentId: F:SuperScrollView.ListItemArrangeType.BottomToTop
+  id: BottomToTop
+  parent: SuperScrollView.ListItemArrangeType
+  langs:
+  - csharp
+  - vb
+  name: BottomToTop
+  nameWithType: ListItemArrangeType.BottomToTop
+  fullName: SuperScrollView.ListItemArrangeType.BottomToTop
+  type: Field
+  source:
+    id: BottomToTop
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: BottomToTop = 1
+    return:
+      type: SuperScrollView.ListItemArrangeType
+- uid: SuperScrollView.ListItemArrangeType.LeftToRight
+  commentId: F:SuperScrollView.ListItemArrangeType.LeftToRight
+  id: LeftToRight
+  parent: SuperScrollView.ListItemArrangeType
+  langs:
+  - csharp
+  - vb
+  name: LeftToRight
+  nameWithType: ListItemArrangeType.LeftToRight
+  fullName: SuperScrollView.ListItemArrangeType.LeftToRight
+  type: Field
+  source:
+    id: LeftToRight
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: LeftToRight = 2
+    return:
+      type: SuperScrollView.ListItemArrangeType
+- uid: SuperScrollView.ListItemArrangeType.RightToLeft
+  commentId: F:SuperScrollView.ListItemArrangeType.RightToLeft
+  id: RightToLeft
+  parent: SuperScrollView.ListItemArrangeType
+  langs:
+  - csharp
+  - vb
+  name: RightToLeft
+  nameWithType: ListItemArrangeType.RightToLeft
+  fullName: SuperScrollView.ListItemArrangeType.RightToLeft
+  type: Field
+  source:
+    id: RightToLeft
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: RightToLeft = 3
+    return:
+      type: SuperScrollView.ListItemArrangeType
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: SuperScrollView.ListItemArrangeType
+  commentId: T:SuperScrollView.ListItemArrangeType
+  parent: SuperScrollView
+  href: SuperScrollView.ListItemArrangeType.html
+  name: ListItemArrangeType
+  nameWithType: ListItemArrangeType
+  fullName: SuperScrollView.ListItemArrangeType

@@ -1,0 +1,446 @@
+### YamlMime:ManagedReference
+items:
+- uid: AmplifyColor.LUTResult
+  commentId: T:AmplifyColor.LUTResult
+  id: LUTResult
+  parent: AmplifyColor
+  children:
+  - AmplifyColor.LUTResult.#ctor(UnityEngine.Color[0:,0:,0:])
+  - AmplifyColor.LUTResult.Data
+  - AmplifyColor.LUTResult.Release
+  - AmplifyColor.LUTResult.Texture
+  langs:
+  - csharp
+  - vb
+  name: LUTResult
+  nameWithType: LUTResult
+  fullName: AmplifyColor.LUTResult
+  type: Class
+  source:
+    id: LUTResult
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTResult.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public class LUTResult
+    content.vb: Public Class LUTResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AmplifyColor.LUTResult.#ctor(UnityEngine.Color[0:,0:,0:])
+  commentId: M:AmplifyColor.LUTResult.#ctor(UnityEngine.Color[0:,0:,0:])
+  id: '#ctor(UnityEngine.Color[0:,0:,0:])'
+  parent: AmplifyColor.LUTResult
+  langs:
+  - csharp
+  - vb
+  name: LUTResult(Color[,,])
+  nameWithType: LUTResult.LUTResult(Color[,,])
+  fullName: AmplifyColor.LUTResult.LUTResult(UnityEngine.Color[,,])
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTResult.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public LUTResult(Color[,,] data)
+    parameters:
+    - id: data
+      type: UnityEngine.Color[,,]
+    content.vb: Public Sub New(data As Color(,,))
+  overload: AmplifyColor.LUTResult.#ctor*
+  nameWithType.vb: LUTResult.New(Color(,,))
+  fullName.vb: AmplifyColor.LUTResult.New(UnityEngine.Color(,,))
+  name.vb: New(Color(,,))
+- uid: AmplifyColor.LUTResult.Release
+  commentId: M:AmplifyColor.LUTResult.Release
+  id: Release
+  parent: AmplifyColor.LUTResult
+  langs:
+  - csharp
+  - vb
+  name: Release()
+  nameWithType: LUTResult.Release()
+  fullName: AmplifyColor.LUTResult.Release()
+  type: Method
+  source:
+    id: Release
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTResult.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public void Release()
+    content.vb: Public Sub Release()
+  overload: AmplifyColor.LUTResult.Release*
+- uid: AmplifyColor.LUTResult.Texture
+  commentId: P:AmplifyColor.LUTResult.Texture
+  id: Texture
+  parent: AmplifyColor.LUTResult
+  langs:
+  - csharp
+  - vb
+  name: Texture
+  nameWithType: LUTResult.Texture
+  fullName: AmplifyColor.LUTResult.Texture
+  type: Property
+  source:
+    id: Texture
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTResult.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public Texture2D Texture { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public ReadOnly Property Texture As Texture2D
+  overload: AmplifyColor.LUTResult.Texture*
+- uid: AmplifyColor.LUTResult.Data
+  commentId: P:AmplifyColor.LUTResult.Data
+  id: Data
+  parent: AmplifyColor.LUTResult
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: LUTResult.Data
+  fullName: AmplifyColor.LUTResult.Data
+  type: Property
+  source:
+    id: Data
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTResult.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public Color[,,] Data { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color[,,]
+    content.vb: Public ReadOnly Property Data As Color(,,)
+  overload: AmplifyColor.LUTResult.Data*
+references:
+- uid: AmplifyColor
+  commentId: N:AmplifyColor
+  href: AmplifyColor.html
+  name: AmplifyColor
+  nameWithType: AmplifyColor
+  fullName: AmplifyColor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AmplifyColor.LUTResult.#ctor*
+  commentId: Overload:AmplifyColor.LUTResult.#ctor
+  href: AmplifyColor.LUTResult.html#AmplifyColor_LUTResult__ctor_UnityEngine_Color_0
+  name: LUTResult
+  nameWithType: LUTResult.LUTResult
+  fullName: AmplifyColor.LUTResult.LUTResult
+  nameWithType.vb: LUTResult.New
+  fullName.vb: AmplifyColor.LUTResult.New
+  name.vb: New
+- uid: UnityEngine.Color[,,]
+  isExternal: true
+  name: Color[,,]
+  nameWithType: Color[,,]
+  fullName: UnityEngine.Color[,,]
+  nameWithType.vb: Color(,,)
+  fullName.vb: UnityEngine.Color(,,)
+  name.vb: Color(,,)
+  spec.csharp:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '['
+  - name: ','
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: (
+  - name: ','
+  - name: ','
+  - name: )
+- uid: AmplifyColor.LUTResult.Release*
+  commentId: Overload:AmplifyColor.LUTResult.Release
+  href: AmplifyColor.LUTResult.html#AmplifyColor_LUTResult_Release
+  name: Release
+  nameWithType: LUTResult.Release
+  fullName: AmplifyColor.LUTResult.Release
+- uid: AmplifyColor.LUTResult.Texture*
+  commentId: Overload:AmplifyColor.LUTResult.Texture
+  href: AmplifyColor.LUTResult.html#AmplifyColor_LUTResult_Texture
+  name: Texture
+  nameWithType: LUTResult.Texture
+  fullName: AmplifyColor.LUTResult.Texture
+- uid: UnityEngine.Texture2D
+  commentId: T:UnityEngine.Texture2D
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: UnityEngine.Texture2D
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: AmplifyColor.LUTResult.Data*
+  commentId: Overload:AmplifyColor.LUTResult.Data
+  href: AmplifyColor.LUTResult.html#AmplifyColor_LUTResult_Data
+  name: Data
+  nameWithType: LUTResult.Data
+  fullName: AmplifyColor.LUTResult.Data

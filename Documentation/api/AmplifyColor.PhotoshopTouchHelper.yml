@@ -1,0 +1,421 @@
+### YamlMime:ManagedReference
+items:
+- uid: AmplifyColor.PhotoshopTouchHelper
+  commentId: T:AmplifyColor.PhotoshopTouchHelper
+  id: PhotoshopTouchHelper
+  parent: AmplifyColor
+  children:
+  - AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromImage(UnityEngine.Texture2D,AmplifyColor.ToolSettings,UnityEngine.Texture2D@)
+  - AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData(System.Byte[],AmplifyColor.LUTSettings,UnityEngine.Texture2D@)
+  langs:
+  - csharp
+  - vb
+  name: PhotoshopTouchHelper
+  nameWithType: PhotoshopTouchHelper
+  fullName: AmplifyColor.PhotoshopTouchHelper
+  type: Class
+  source:
+    id: PhotoshopTouchHelper
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\PhotoshopTouchHelper.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public static class PhotoshopTouchHelper
+    content.vb: Public Module PhotoshopTouchHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData(System.Byte[],AmplifyColor.LUTSettings,UnityEngine.Texture2D@)
+  commentId: M:AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData(System.Byte[],AmplifyColor.LUTSettings,UnityEngine.Texture2D@)
+  id: LoadTexture2DLutFromPhotoshopData(System.Byte[],AmplifyColor.LUTSettings,UnityEngine.Texture2D@)
+  parent: AmplifyColor.PhotoshopTouchHelper
+  langs:
+  - csharp
+  - vb
+  name: LoadTexture2DLutFromPhotoshopData(byte[], LUTSettings, ref Texture2D)
+  nameWithType: PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData(byte[], LUTSettings, ref Texture2D)
+  fullName: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData(byte[], AmplifyColor.LUTSettings, ref UnityEngine.Texture2D)
+  type: Method
+  source:
+    id: LoadTexture2DLutFromPhotoshopData
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\PhotoshopTouchHelper.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public static bool LoadTexture2DLutFromPhotoshopData(byte[] data, LUTSettings settings, ref Texture2D texture)
+    parameters:
+    - id: data
+      type: System.Byte[]
+    - id: settings
+      type: AmplifyColor.LUTSettings
+    - id: texture
+      type: UnityEngine.Texture2D
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function LoadTexture2DLutFromPhotoshopData(data As Byte(), settings As LUTSettings, texture As Texture2D) As Boolean
+  overload: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData*
+  nameWithType.vb: PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData(Byte(), LUTSettings, Texture2D)
+  fullName.vb: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData(Byte(), AmplifyColor.LUTSettings, UnityEngine.Texture2D)
+  name.vb: LoadTexture2DLutFromPhotoshopData(Byte(), LUTSettings, Texture2D)
+- uid: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromImage(UnityEngine.Texture2D,AmplifyColor.ToolSettings,UnityEngine.Texture2D@)
+  commentId: M:AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromImage(UnityEngine.Texture2D,AmplifyColor.ToolSettings,UnityEngine.Texture2D@)
+  id: LoadTexture2DLutFromImage(UnityEngine.Texture2D,AmplifyColor.ToolSettings,UnityEngine.Texture2D@)
+  parent: AmplifyColor.PhotoshopTouchHelper
+  langs:
+  - csharp
+  - vb
+  name: LoadTexture2DLutFromImage(Texture2D, ToolSettings, ref Texture2D)
+  nameWithType: PhotoshopTouchHelper.LoadTexture2DLutFromImage(Texture2D, ToolSettings, ref Texture2D)
+  fullName: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromImage(UnityEngine.Texture2D, AmplifyColor.ToolSettings, ref UnityEngine.Texture2D)
+  type: Method
+  source:
+    id: LoadTexture2DLutFromImage
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\PhotoshopTouchHelper.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public static bool LoadTexture2DLutFromImage(Texture2D texture, ToolSettings settings, ref Texture2D lutTexture)
+    parameters:
+    - id: texture
+      type: UnityEngine.Texture2D
+    - id: settings
+      type: AmplifyColor.ToolSettings
+    - id: lutTexture
+      type: UnityEngine.Texture2D
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function LoadTexture2DLutFromImage(texture As Texture2D, settings As ToolSettings, lutTexture As Texture2D) As Boolean
+  overload: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromImage*
+  nameWithType.vb: PhotoshopTouchHelper.LoadTexture2DLutFromImage(Texture2D, ToolSettings, Texture2D)
+  fullName.vb: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromImage(UnityEngine.Texture2D, AmplifyColor.ToolSettings, UnityEngine.Texture2D)
+  name.vb: LoadTexture2DLutFromImage(Texture2D, ToolSettings, Texture2D)
+references:
+- uid: AmplifyColor
+  commentId: N:AmplifyColor
+  href: AmplifyColor.html
+  name: AmplifyColor
+  nameWithType: AmplifyColor
+  fullName: AmplifyColor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData*
+  commentId: Overload:AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData
+  href: AmplifyColor.PhotoshopTouchHelper.html#AmplifyColor_PhotoshopTouchHelper_LoadTexture2DLutFromPhotoshopData_System_Byte___AmplifyColor_LUTSettings_UnityEngine_Texture2D__
+  name: LoadTexture2DLutFromPhotoshopData
+  nameWithType: PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData
+  fullName: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromPhotoshopData
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: AmplifyColor.LUTSettings
+  commentId: T:AmplifyColor.LUTSettings
+  parent: AmplifyColor
+  href: AmplifyColor.LUTSettings.html
+  name: LUTSettings
+  nameWithType: LUTSettings
+  fullName: AmplifyColor.LUTSettings
+- uid: UnityEngine.Texture2D
+  commentId: T:UnityEngine.Texture2D
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: UnityEngine.Texture2D
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromImage*
+  commentId: Overload:AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromImage
+  href: AmplifyColor.PhotoshopTouchHelper.html#AmplifyColor_PhotoshopTouchHelper_LoadTexture2DLutFromImage_UnityEngine_Texture2D_AmplifyColor_ToolSettings_UnityEngine_Texture2D__
+  name: LoadTexture2DLutFromImage
+  nameWithType: PhotoshopTouchHelper.LoadTexture2DLutFromImage
+  fullName: AmplifyColor.PhotoshopTouchHelper.LoadTexture2DLutFromImage
+- uid: AmplifyColor.ToolSettings
+  commentId: T:AmplifyColor.ToolSettings
+  parent: AmplifyColor
+  href: AmplifyColor.ToolSettings.html
+  name: ToolSettings
+  nameWithType: ToolSettings
+  fullName: AmplifyColor.ToolSettings

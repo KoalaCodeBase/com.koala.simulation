@@ -1,0 +1,342 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+  commentId: T:Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+  id: Sample_Placeable_Object
+  parent: Koala.Simulation.Placement.Samples
+  children:
+  - Koala.Simulation.Placement.Samples.Sample_Placeable_Object.DefaultRotationAxis
+  - Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementCollider
+  - Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementOffset
+  langs:
+  - csharp
+  - vb
+  name: Sample_Placeable_Object
+  nameWithType: Sample_Placeable_Object
+  fullName: Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+  type: Class
+  source:
+    remote:
+      path: Runtime/Placement/Samples/Sample_Placeable_Object.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Sample_Placeable_Object
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/Sample_Placeable_Object.cs
+    startLine: 27
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+
+    namespace Koala.Simulation.Placement.Samples
+
+    {
+        public sealed class Sample_Placeable_Object : MonoBehaviour, IPlaceable
+        {
+            private Collider _collider;
+
+            public Vector3 DefaultRotationAxis =&gt; Vector3.up;
+
+            public Vector3 PlacementOffset =&gt; Vector3.zero;
+
+            public Collider PlacementCollider =&gt; _collider;
+
+            private void Awake()
+            {
+                _collider = GetComponent&lt;BoxCollider&gt;();
+            }
+        }
+    }</code></pre>
+  syntax:
+    content: 'public sealed class Sample_Placeable_Object : MonoBehaviour, IPlaceable'
+    content.vb: Public NotInheritable Class Sample_Placeable_Object Inherits MonoBehaviour Implements IPlaceable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  implements:
+  - Koala.Simulation.Placement.IPlaceable
+- uid: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.DefaultRotationAxis
+  commentId: P:Koala.Simulation.Placement.Samples.Sample_Placeable_Object.DefaultRotationAxis
+  id: DefaultRotationAxis
+  parent: Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+  langs:
+  - csharp
+  - vb
+  name: DefaultRotationAxis
+  nameWithType: Sample_Placeable_Object.DefaultRotationAxis
+  fullName: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.DefaultRotationAxis
+  type: Property
+  source:
+    remote:
+      path: Runtime/Placement/Samples/Sample_Placeable_Object.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: DefaultRotationAxis
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/Sample_Placeable_Object.cs
+    startLine: 30
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  summary: The default axis used to rotate the object.
+  example: []
+  syntax:
+    content: public Vector3 DefaultRotationAxis { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public ReadOnly Property DefaultRotationAxis As Vector3
+  overload: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.DefaultRotationAxis*
+  implements:
+  - Koala.Simulation.Placement.IPlaceable.DefaultRotationAxis
+- uid: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementOffset
+  commentId: P:Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementOffset
+  id: PlacementOffset
+  parent: Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+  langs:
+  - csharp
+  - vb
+  name: PlacementOffset
+  nameWithType: Sample_Placeable_Object.PlacementOffset
+  fullName: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementOffset
+  type: Property
+  source:
+    remote:
+      path: Runtime/Placement/Samples/Sample_Placeable_Object.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PlacementOffset
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/Sample_Placeable_Object.cs
+    startLine: 31
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  summary: The positional offset applied when snapping the object to a surface.
+  example: []
+  syntax:
+    content: public Vector3 PlacementOffset { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public ReadOnly Property PlacementOffset As Vector3
+  overload: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementOffset*
+  implements:
+  - Koala.Simulation.Placement.IPlaceable.PlacementOffset
+- uid: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementCollider
+  commentId: P:Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementCollider
+  id: PlacementCollider
+  parent: Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+  langs:
+  - csharp
+  - vb
+  name: PlacementCollider
+  nameWithType: Sample_Placeable_Object.PlacementCollider
+  fullName: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementCollider
+  type: Property
+  source:
+    remote:
+      path: Runtime/Placement/Samples/Sample_Placeable_Object.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PlacementCollider
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/Sample_Placeable_Object.cs
+    startLine: 32
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  summary: The collider that defines the object's placement boundaries.
+  example: []
+  syntax:
+    content: public Collider PlacementCollider { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Collider
+    content.vb: Public ReadOnly Property PlacementCollider As Collider
+  overload: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementCollider*
+  implements:
+  - Koala.Simulation.Placement.IPlaceable.PlacementCollider
+references:
+- uid: Koala.Simulation.Placement.Samples
+  commentId: N:Koala.Simulation.Placement.Samples
+  href: Koala.html
+  name: Koala.Simulation.Placement.Samples
+  nameWithType: Koala.Simulation.Placement.Samples
+  fullName: Koala.Simulation.Placement.Samples
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  - name: .
+  - uid: Koala.Simulation.Placement.Samples
+    name: Samples
+    href: Koala.Simulation.Placement.Samples.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  - name: .
+  - uid: Koala.Simulation.Placement.Samples
+    name: Samples
+    href: Koala.Simulation.Placement.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Koala.Simulation.Placement.IPlaceable
+  commentId: T:Koala.Simulation.Placement.IPlaceable
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.IPlaceable.html
+  name: IPlaceable
+  nameWithType: IPlaceable
+  fullName: Koala.Simulation.Placement.IPlaceable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Placement
+  commentId: N:Koala.Simulation.Placement
+  href: Koala.html
+  name: Koala.Simulation.Placement
+  nameWithType: Koala.Simulation.Placement
+  fullName: Koala.Simulation.Placement
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+- uid: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.DefaultRotationAxis*
+  commentId: Overload:Koala.Simulation.Placement.Samples.Sample_Placeable_Object.DefaultRotationAxis
+  href: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.html#Koala_Simulation_Placement_Samples_Sample_Placeable_Object_DefaultRotationAxis
+  name: DefaultRotationAxis
+  nameWithType: Sample_Placeable_Object.DefaultRotationAxis
+  fullName: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.DefaultRotationAxis
+- uid: Koala.Simulation.Placement.IPlaceable.DefaultRotationAxis
+  commentId: P:Koala.Simulation.Placement.IPlaceable.DefaultRotationAxis
+  parent: Koala.Simulation.Placement.IPlaceable
+  href: Koala.Simulation.Placement.IPlaceable.html#Koala_Simulation_Placement_IPlaceable_DefaultRotationAxis
+  name: DefaultRotationAxis
+  nameWithType: IPlaceable.DefaultRotationAxis
+  fullName: Koala.Simulation.Placement.IPlaceable.DefaultRotationAxis
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementOffset*
+  commentId: Overload:Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementOffset
+  href: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.html#Koala_Simulation_Placement_Samples_Sample_Placeable_Object_PlacementOffset
+  name: PlacementOffset
+  nameWithType: Sample_Placeable_Object.PlacementOffset
+  fullName: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementOffset
+- uid: Koala.Simulation.Placement.IPlaceable.PlacementOffset
+  commentId: P:Koala.Simulation.Placement.IPlaceable.PlacementOffset
+  parent: Koala.Simulation.Placement.IPlaceable
+  href: Koala.Simulation.Placement.IPlaceable.html#Koala_Simulation_Placement_IPlaceable_PlacementOffset
+  name: PlacementOffset
+  nameWithType: IPlaceable.PlacementOffset
+  fullName: Koala.Simulation.Placement.IPlaceable.PlacementOffset
+- uid: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementCollider*
+  commentId: Overload:Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementCollider
+  href: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.html#Koala_Simulation_Placement_Samples_Sample_Placeable_Object_PlacementCollider
+  name: PlacementCollider
+  nameWithType: Sample_Placeable_Object.PlacementCollider
+  fullName: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.PlacementCollider
+- uid: Koala.Simulation.Placement.IPlaceable.PlacementCollider
+  commentId: P:Koala.Simulation.Placement.IPlaceable.PlacementCollider
+  parent: Koala.Simulation.Placement.IPlaceable
+  href: Koala.Simulation.Placement.IPlaceable.html#Koala_Simulation_Placement_IPlaceable_PlacementCollider
+  name: PlacementCollider
+  nameWithType: IPlaceable.PlacementCollider
+  fullName: Koala.Simulation.Placement.IPlaceable.PlacementCollider
+- uid: UnityEngine.Collider
+  commentId: T:UnityEngine.Collider
+  parent: UnityEngine
+  isExternal: true
+  name: Collider
+  nameWithType: Collider
+  fullName: UnityEngine.Collider

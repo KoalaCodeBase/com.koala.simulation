@@ -1,0 +1,576 @@
+### YamlMime:ManagedReference
+items:
+- uid: DG.Tweening.DOTweenAnimation.AnimationType
+  commentId: T:DG.Tweening.DOTweenAnimation.AnimationType
+  id: DOTweenAnimation.AnimationType
+  parent: DG.Tweening
+  children:
+  - DG.Tweening.DOTweenAnimation.AnimationType.CameraAspect
+  - DG.Tweening.DOTweenAnimation.AnimationType.CameraBackgroundColor
+  - DG.Tweening.DOTweenAnimation.AnimationType.CameraFieldOfView
+  - DG.Tweening.DOTweenAnimation.AnimationType.CameraOrthoSize
+  - DG.Tweening.DOTweenAnimation.AnimationType.CameraPixelRect
+  - DG.Tweening.DOTweenAnimation.AnimationType.CameraRect
+  - DG.Tweening.DOTweenAnimation.AnimationType.Color
+  - DG.Tweening.DOTweenAnimation.AnimationType.Fade
+  - DG.Tweening.DOTweenAnimation.AnimationType.LocalMove
+  - DG.Tweening.DOTweenAnimation.AnimationType.LocalRotate
+  - DG.Tweening.DOTweenAnimation.AnimationType.Move
+  - DG.Tweening.DOTweenAnimation.AnimationType.None
+  - DG.Tweening.DOTweenAnimation.AnimationType.PunchPosition
+  - DG.Tweening.DOTweenAnimation.AnimationType.PunchRotation
+  - DG.Tweening.DOTweenAnimation.AnimationType.PunchScale
+  - DG.Tweening.DOTweenAnimation.AnimationType.Rotate
+  - DG.Tweening.DOTweenAnimation.AnimationType.Scale
+  - DG.Tweening.DOTweenAnimation.AnimationType.ShakePosition
+  - DG.Tweening.DOTweenAnimation.AnimationType.ShakeRotation
+  - DG.Tweening.DOTweenAnimation.AnimationType.ShakeScale
+  - DG.Tweening.DOTweenAnimation.AnimationType.Text
+  - DG.Tweening.DOTweenAnimation.AnimationType.UIWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: DOTweenAnimation.AnimationType
+  nameWithType: DOTweenAnimation.AnimationType
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType
+  type: Enum
+  source:
+    id: AnimationType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: public enum DOTweenAnimation.AnimationType
+    content.vb: Public Enum DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.None
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.None
+  id: None
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: DOTweenAnimation.AnimationType.None
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.None
+  type: Field
+  source:
+    id: None
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: None = 0
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.Move
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.Move
+  id: Move
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: Move
+  nameWithType: DOTweenAnimation.AnimationType.Move
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.Move
+  type: Field
+  source:
+    id: Move
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Move = 1
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.LocalMove
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.LocalMove
+  id: LocalMove
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: LocalMove
+  nameWithType: DOTweenAnimation.AnimationType.LocalMove
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.LocalMove
+  type: Field
+  source:
+    id: LocalMove
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: LocalMove = 2
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.Rotate
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.Rotate
+  id: Rotate
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: Rotate
+  nameWithType: DOTweenAnimation.AnimationType.Rotate
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.Rotate
+  type: Field
+  source:
+    id: Rotate
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Rotate = 3
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.LocalRotate
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.LocalRotate
+  id: LocalRotate
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: LocalRotate
+  nameWithType: DOTweenAnimation.AnimationType.LocalRotate
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.LocalRotate
+  type: Field
+  source:
+    id: LocalRotate
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: LocalRotate = 4
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.Scale
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.Scale
+  id: Scale
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: DOTweenAnimation.AnimationType.Scale
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.Scale
+  type: Field
+  source:
+    id: Scale
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Scale = 5
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.Color
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.Color
+  id: Color
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: DOTweenAnimation.AnimationType.Color
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.Color
+  type: Field
+  source:
+    id: Color
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Color = 6
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.Fade
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.Fade
+  id: Fade
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: Fade
+  nameWithType: DOTweenAnimation.AnimationType.Fade
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.Fade
+  type: Field
+  source:
+    id: Fade
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Fade = 7
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.Text
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.Text
+  id: Text
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: DOTweenAnimation.AnimationType.Text
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.Text
+  type: Field
+  source:
+    id: Text
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Text = 8
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.PunchPosition
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.PunchPosition
+  id: PunchPosition
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: PunchPosition
+  nameWithType: DOTweenAnimation.AnimationType.PunchPosition
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.PunchPosition
+  type: Field
+  source:
+    id: PunchPosition
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: PunchPosition = 9
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.PunchRotation
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.PunchRotation
+  id: PunchRotation
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: PunchRotation
+  nameWithType: DOTweenAnimation.AnimationType.PunchRotation
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.PunchRotation
+  type: Field
+  source:
+    id: PunchRotation
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: PunchRotation = 10
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.PunchScale
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.PunchScale
+  id: PunchScale
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: PunchScale
+  nameWithType: DOTweenAnimation.AnimationType.PunchScale
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.PunchScale
+  type: Field
+  source:
+    id: PunchScale
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: PunchScale = 11
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.ShakePosition
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.ShakePosition
+  id: ShakePosition
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: ShakePosition
+  nameWithType: DOTweenAnimation.AnimationType.ShakePosition
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.ShakePosition
+  type: Field
+  source:
+    id: ShakePosition
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: ShakePosition = 12
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.ShakeRotation
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.ShakeRotation
+  id: ShakeRotation
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: ShakeRotation
+  nameWithType: DOTweenAnimation.AnimationType.ShakeRotation
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.ShakeRotation
+  type: Field
+  source:
+    id: ShakeRotation
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: ShakeRotation = 13
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.ShakeScale
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.ShakeScale
+  id: ShakeScale
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: ShakeScale
+  nameWithType: DOTweenAnimation.AnimationType.ShakeScale
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.ShakeScale
+  type: Field
+  source:
+    id: ShakeScale
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: ShakeScale = 14
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.CameraAspect
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.CameraAspect
+  id: CameraAspect
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: CameraAspect
+  nameWithType: DOTweenAnimation.AnimationType.CameraAspect
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.CameraAspect
+  type: Field
+  source:
+    id: CameraAspect
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: CameraAspect = 15
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.CameraBackgroundColor
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.CameraBackgroundColor
+  id: CameraBackgroundColor
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: CameraBackgroundColor
+  nameWithType: DOTweenAnimation.AnimationType.CameraBackgroundColor
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.CameraBackgroundColor
+  type: Field
+  source:
+    id: CameraBackgroundColor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: CameraBackgroundColor = 16
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.CameraFieldOfView
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.CameraFieldOfView
+  id: CameraFieldOfView
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: CameraFieldOfView
+  nameWithType: DOTweenAnimation.AnimationType.CameraFieldOfView
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.CameraFieldOfView
+  type: Field
+  source:
+    id: CameraFieldOfView
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: CameraFieldOfView = 17
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.CameraOrthoSize
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.CameraOrthoSize
+  id: CameraOrthoSize
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: CameraOrthoSize
+  nameWithType: DOTweenAnimation.AnimationType.CameraOrthoSize
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.CameraOrthoSize
+  type: Field
+  source:
+    id: CameraOrthoSize
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: CameraOrthoSize = 18
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.CameraPixelRect
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.CameraPixelRect
+  id: CameraPixelRect
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: CameraPixelRect
+  nameWithType: DOTweenAnimation.AnimationType.CameraPixelRect
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.CameraPixelRect
+  type: Field
+  source:
+    id: CameraPixelRect
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: CameraPixelRect = 19
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.CameraRect
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.CameraRect
+  id: CameraRect
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: CameraRect
+  nameWithType: DOTweenAnimation.AnimationType.CameraRect
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.CameraRect
+  type: Field
+  source:
+    id: CameraRect
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: CameraRect = 20
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+- uid: DG.Tweening.DOTweenAnimation.AnimationType.UIWidthHeight
+  commentId: F:DG.Tweening.DOTweenAnimation.AnimationType.UIWidthHeight
+  id: UIWidthHeight
+  parent: DG.Tweening.DOTweenAnimation.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: UIWidthHeight
+  nameWithType: DOTweenAnimation.AnimationType.UIWidthHeight
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType.UIWidthHeight
+  type: Field
+  source:
+    id: UIWidthHeight
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: UIWidthHeight = 21
+    return:
+      type: DG.Tweening.DOTweenAnimation.AnimationType
+references:
+- uid: DG.Tweening
+  commentId: N:DG.Tweening
+  href: DG.html
+  name: DG.Tweening
+  nameWithType: DG.Tweening
+  fullName: DG.Tweening
+  spec.csharp:
+  - uid: DG
+    name: DG
+    href: DG.html
+  - name: .
+  - uid: DG.Tweening
+    name: Tweening
+    href: DG.Tweening.html
+  spec.vb:
+  - uid: DG
+    name: DG
+    href: DG.html
+  - name: .
+  - uid: DG.Tweening
+    name: Tweening
+    href: DG.Tweening.html
+- uid: DG.Tweening.DOTweenAnimation.AnimationType
+  commentId: T:DG.Tweening.DOTweenAnimation.AnimationType
+  parent: DG.Tweening
+  href: DG.Tweening.DOTweenAnimation.html
+  name: DOTweenAnimation.AnimationType
+  nameWithType: DOTweenAnimation.AnimationType
+  fullName: DG.Tweening.DOTweenAnimation.AnimationType
+  spec.csharp:
+  - uid: DG.Tweening.DOTweenAnimation
+    name: DOTweenAnimation
+    href: DG.Tweening.DOTweenAnimation.html
+  - name: .
+  - uid: DG.Tweening.DOTweenAnimation.AnimationType
+    name: AnimationType
+    href: DG.Tweening.DOTweenAnimation.AnimationType.html
+  spec.vb:
+  - uid: DG.Tweening.DOTweenAnimation
+    name: DOTweenAnimation
+    href: DG.Tweening.DOTweenAnimation.html
+  - name: .
+  - uid: DG.Tweening.DOTweenAnimation.AnimationType
+    name: AnimationType
+    href: DG.Tweening.DOTweenAnimation.AnimationType.html

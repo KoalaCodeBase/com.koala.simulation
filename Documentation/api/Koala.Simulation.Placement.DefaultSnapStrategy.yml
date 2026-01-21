@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Placement.DefaultSnapStrategy
+  commentId: T:Koala.Simulation.Placement.DefaultSnapStrategy
+  id: DefaultSnapStrategy
+  parent: Koala.Simulation.Placement
+  children:
+  - Koala.Simulation.Placement.DefaultSnapStrategy.GetSnappedTransform(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  langs:
+  - csharp
+  - vb
+  name: DefaultSnapStrategy
+  nameWithType: DefaultSnapStrategy
+  fullName: Koala.Simulation.Placement.DefaultSnapStrategy
+  type: Class
+  source:
+    remote:
+      path: Runtime/Placement/ISnapStrategy.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: DefaultSnapStrategy
+    path: ../Packages/com.koala.simulation/Runtime/Placement/ISnapStrategy.cs
+    startLine: 37
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: Default snapping strategy that aligns a placeable object with the hit surface normal.
+  example:
+  - >-
+    <pre><code class="lang-csharp">public sealed class DefaultSnapStrategy : ISnapStrategy
+
+    {
+        public (Vector3, Quaternion) GetSnappedTransform(RaycastHit hit, IPlaceable placeable)
+        {
+            Vector3 pos = hit.point + placeable.PlacementOffset;
+            Quaternion rot = Quaternion.FromToRotation(Vector3.up, hit.normal);
+            return (pos, rot);
+        }
+    }</code></pre>
+  syntax:
+    content: 'public sealed class DefaultSnapStrategy : ISnapStrategy'
+    content.vb: Public NotInheritable Class DefaultSnapStrategy Implements ISnapStrategy
+  inheritance:
+  - System.Object
+  implements:
+  - Koala.Simulation.Placement.ISnapStrategy
+- uid: Koala.Simulation.Placement.DefaultSnapStrategy.GetSnappedTransform(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  commentId: M:Koala.Simulation.Placement.DefaultSnapStrategy.GetSnappedTransform(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  id: GetSnappedTransform(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  parent: Koala.Simulation.Placement.DefaultSnapStrategy
+  langs:
+  - csharp
+  - vb
+  name: GetSnappedTransform(RaycastHit, IPlaceable)
+  nameWithType: DefaultSnapStrategy.GetSnappedTransform(RaycastHit, IPlaceable)
+  fullName: Koala.Simulation.Placement.DefaultSnapStrategy.GetSnappedTransform(UnityEngine.RaycastHit, Koala.Simulation.Placement.IPlaceable)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/ISnapStrategy.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: GetSnappedTransform
+    path: ../Packages/com.koala.simulation/Runtime/Placement/ISnapStrategy.cs
+    startLine: 45
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: Gets the snapped position and rotation by offsetting the hit point and aligning with the surface normal.
+  example: []
+  syntax:
+    content: public (Vector3, Quaternion) GetSnappedTransform(RaycastHit hit, IPlaceable placeable)
+    parameters:
+    - id: hit
+      type: UnityEngine.RaycastHit
+      description: The raycast hit providing surface data.
+    - id: placeable
+      type: Koala.Simulation.Placement.IPlaceable
+      description: The object being placed.
+    return:
+      type: System.ValueTuple{UnityEngine.Vector3,UnityEngine.Quaternion}
+      description: A tuple containing the snapped position and rotation.
+    content.vb: Public Function GetSnappedTransform(hit As RaycastHit, placeable As IPlaceable) As (Vector3, Quaternion)
+  overload: Koala.Simulation.Placement.DefaultSnapStrategy.GetSnappedTransform*
+  implements:
+  - Koala.Simulation.Placement.ISnapStrategy.GetSnappedTransform(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+references:
+- uid: Koala.Simulation.Placement
+  commentId: N:Koala.Simulation.Placement
+  href: Koala.html
+  name: Koala.Simulation.Placement
+  nameWithType: Koala.Simulation.Placement
+  fullName: Koala.Simulation.Placement
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Koala.Simulation.Placement.ISnapStrategy
+  commentId: T:Koala.Simulation.Placement.ISnapStrategy
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.ISnapStrategy.html
+  name: ISnapStrategy
+  nameWithType: ISnapStrategy
+  fullName: Koala.Simulation.Placement.ISnapStrategy
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Placement.DefaultSnapStrategy.GetSnappedTransform*
+  commentId: Overload:Koala.Simulation.Placement.DefaultSnapStrategy.GetSnappedTransform
+  href: Koala.Simulation.Placement.DefaultSnapStrategy.html#Koala_Simulation_Placement_DefaultSnapStrategy_GetSnappedTransform_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  name: GetSnappedTransform
+  nameWithType: DefaultSnapStrategy.GetSnappedTransform
+  fullName: Koala.Simulation.Placement.DefaultSnapStrategy.GetSnappedTransform
+- uid: Koala.Simulation.Placement.ISnapStrategy.GetSnappedTransform(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  commentId: M:Koala.Simulation.Placement.ISnapStrategy.GetSnappedTransform(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  parent: Koala.Simulation.Placement.ISnapStrategy
+  isExternal: true
+  href: Koala.Simulation.Placement.ISnapStrategy.html#Koala_Simulation_Placement_ISnapStrategy_GetSnappedTransform_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  name: GetSnappedTransform(RaycastHit, IPlaceable)
+  nameWithType: ISnapStrategy.GetSnappedTransform(RaycastHit, IPlaceable)
+  fullName: Koala.Simulation.Placement.ISnapStrategy.GetSnappedTransform(UnityEngine.RaycastHit, Koala.Simulation.Placement.IPlaceable)
+  spec.csharp:
+  - uid: Koala.Simulation.Placement.ISnapStrategy.GetSnappedTransform(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+    name: GetSnappedTransform
+    href: Koala.Simulation.Placement.ISnapStrategy.html#Koala_Simulation_Placement_ISnapStrategy_GetSnappedTransform_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  - name: (
+  - uid: UnityEngine.RaycastHit
+    name: RaycastHit
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Koala.Simulation.Placement.IPlaceable
+    name: IPlaceable
+    href: Koala.Simulation.Placement.IPlaceable.html
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Placement.ISnapStrategy.GetSnappedTransform(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+    name: GetSnappedTransform
+    href: Koala.Simulation.Placement.ISnapStrategy.html#Koala_Simulation_Placement_ISnapStrategy_GetSnappedTransform_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  - name: (
+  - uid: UnityEngine.RaycastHit
+    name: RaycastHit
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Koala.Simulation.Placement.IPlaceable
+    name: IPlaceable
+    href: Koala.Simulation.Placement.IPlaceable.html
+  - name: )
+- uid: UnityEngine.RaycastHit
+  commentId: T:UnityEngine.RaycastHit
+  parent: UnityEngine
+  isExternal: true
+  name: RaycastHit
+  nameWithType: RaycastHit
+  fullName: UnityEngine.RaycastHit
+- uid: Koala.Simulation.Placement.IPlaceable
+  commentId: T:Koala.Simulation.Placement.IPlaceable
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.IPlaceable.html
+  name: IPlaceable
+  nameWithType: IPlaceable
+  fullName: Koala.Simulation.Placement.IPlaceable
+- uid: System.ValueTuple{UnityEngine.Vector3,UnityEngine.Quaternion}
+  commentId: T:System.ValueTuple{UnityEngine.Vector3,UnityEngine.Quaternion}
+  parent: System
+  definition: System.ValueTuple`2
+  name: (Vector3 position, Quaternion rotation)
+  nameWithType: (Vector3 position, Quaternion rotation)
+  fullName: (UnityEngine.Vector3 position, UnityEngine.Quaternion rotation)
+  nameWithType.vb: (position As Vector3, rotation As Quaternion)
+  fullName.vb: (position As UnityEngine.Vector3, rotation As UnityEngine.Quaternion)
+  name.vb: (position As Vector3, rotation As Quaternion)
+  spec.csharp:
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: " "
+  - uid: System.ValueTuple{UnityEngine.Vector3,UnityEngine.Quaternion}.position
+    name: position
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: " "
+  - uid: System.ValueTuple{UnityEngine.Vector3,UnityEngine.Quaternion}.rotation
+    name: rotation
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{UnityEngine.Vector3,UnityEngine.Quaternion}.position
+    name: position
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{UnityEngine.Vector3,UnityEngine.Quaternion}.rotation
+    name: rotation
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )

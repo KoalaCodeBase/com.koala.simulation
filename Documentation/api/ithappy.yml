@@ -1,0 +1,119 @@
+### YamlMime:ManagedReference
+items:
+- uid: ithappy
+  commentId: N:ithappy
+  id: ithappy
+  children:
+  - ithappy.BlendShapeAnimator
+  - ithappy.FreeCamera
+  - ithappy.OscillatePosition
+  - ithappy.OscillateRotation
+  - ithappy.OscillateRotation.CurveType
+  - ithappy.OscillateScale
+  - ithappy.Rnd_Animation
+  - ithappy.RotationScript
+  - ithappy.RotationScript.RotationAxis
+  langs:
+  - csharp
+  - vb
+  name: ithappy
+  nameWithType: ithappy
+  fullName: ithappy
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: ithappy.OscillateRotation
+  commentId: T:ithappy.OscillateRotation
+  href: ithappy.OscillateRotation.html
+  name: OscillateRotation
+  nameWithType: OscillateRotation
+  fullName: ithappy.OscillateRotation
+- uid: ithappy.OscillateRotation.CurveType
+  commentId: T:ithappy.OscillateRotation.CurveType
+  parent: ithappy
+  href: ithappy.OscillateRotation.html
+  name: OscillateRotation.CurveType
+  nameWithType: OscillateRotation.CurveType
+  fullName: ithappy.OscillateRotation.CurveType
+  spec.csharp:
+  - uid: ithappy.OscillateRotation
+    name: OscillateRotation
+    href: ithappy.OscillateRotation.html
+  - name: .
+  - uid: ithappy.OscillateRotation.CurveType
+    name: CurveType
+    href: ithappy.OscillateRotation.CurveType.html
+  spec.vb:
+  - uid: ithappy.OscillateRotation
+    name: OscillateRotation
+    href: ithappy.OscillateRotation.html
+  - name: .
+  - uid: ithappy.OscillateRotation.CurveType
+    name: CurveType
+    href: ithappy.OscillateRotation.CurveType.html
+- uid: ithappy.RotationScript
+  commentId: T:ithappy.RotationScript
+  href: ithappy.RotationScript.html
+  name: RotationScript
+  nameWithType: RotationScript
+  fullName: ithappy.RotationScript
+- uid: ithappy.RotationScript.RotationAxis
+  commentId: T:ithappy.RotationScript.RotationAxis
+  parent: ithappy
+  href: ithappy.RotationScript.html
+  name: RotationScript.RotationAxis
+  nameWithType: RotationScript.RotationAxis
+  fullName: ithappy.RotationScript.RotationAxis
+  spec.csharp:
+  - uid: ithappy.RotationScript
+    name: RotationScript
+    href: ithappy.RotationScript.html
+  - name: .
+  - uid: ithappy.RotationScript.RotationAxis
+    name: RotationAxis
+    href: ithappy.RotationScript.RotationAxis.html
+  spec.vb:
+  - uid: ithappy.RotationScript
+    name: RotationScript
+    href: ithappy.RotationScript.html
+  - name: .
+  - uid: ithappy.RotationScript.RotationAxis
+    name: RotationAxis
+    href: ithappy.RotationScript.RotationAxis.html
+- uid: ithappy.OscillateScale
+  commentId: T:ithappy.OscillateScale
+  href: ithappy.OscillateScale.html
+  name: OscillateScale
+  nameWithType: OscillateScale
+  fullName: ithappy.OscillateScale
+- uid: ithappy.BlendShapeAnimator
+  commentId: T:ithappy.BlendShapeAnimator
+  href: ithappy.BlendShapeAnimator.html
+  name: BlendShapeAnimator
+  nameWithType: BlendShapeAnimator
+  fullName: ithappy.BlendShapeAnimator
+- uid: ithappy.FreeCamera
+  commentId: T:ithappy.FreeCamera
+  href: ithappy.FreeCamera.html
+  name: FreeCamera
+  nameWithType: FreeCamera
+  fullName: ithappy.FreeCamera
+- uid: ithappy.OscillatePosition
+  commentId: T:ithappy.OscillatePosition
+  href: ithappy.OscillatePosition.html
+  name: OscillatePosition
+  nameWithType: OscillatePosition
+  fullName: ithappy.OscillatePosition
+- uid: ithappy.Rnd_Animation
+  commentId: T:ithappy.Rnd_Animation
+  href: ithappy.Rnd_Animation.html
+  name: Rnd_Animation
+  nameWithType: Rnd_Animation
+  fullName: ithappy.Rnd_Animation
+- uid: ithappy
+  commentId: N:ithappy
+  href: ithappy.html
+  name: ithappy
+  nameWithType: ithappy
+  fullName: ithappy

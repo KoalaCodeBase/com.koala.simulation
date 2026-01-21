@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Enumerations.SheetType
+  commentId: T:AssetKits.ParticleImage.Enumerations.SheetType
+  id: SheetType
+  parent: AssetKits.ParticleImage.Enumerations
+  children:
+  - AssetKits.ParticleImage.Enumerations.SheetType.FPS
+  - AssetKits.ParticleImage.Enumerations.SheetType.Lifetime
+  - AssetKits.ParticleImage.Enumerations.SheetType.Speed
+  langs:
+  - csharp
+  - vb
+  name: SheetType
+  nameWithType: SheetType
+  fullName: AssetKits.ParticleImage.Enumerations.SheetType
+  type: Enum
+  source:
+    id: SheetType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2947
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: public enum SheetType
+    content.vb: Public Enum SheetType
+- uid: AssetKits.ParticleImage.Enumerations.SheetType.Lifetime
+  commentId: F:AssetKits.ParticleImage.Enumerations.SheetType.Lifetime
+  id: Lifetime
+  parent: AssetKits.ParticleImage.Enumerations.SheetType
+  langs:
+  - csharp
+  - vb
+  name: Lifetime
+  nameWithType: SheetType.Lifetime
+  fullName: AssetKits.ParticleImage.Enumerations.SheetType.Lifetime
+  type: Field
+  source:
+    id: Lifetime
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2949
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Lifetime = 0
+    return:
+      type: AssetKits.ParticleImage.Enumerations.SheetType
+- uid: AssetKits.ParticleImage.Enumerations.SheetType.Speed
+  commentId: F:AssetKits.ParticleImage.Enumerations.SheetType.Speed
+  id: Speed
+  parent: AssetKits.ParticleImage.Enumerations.SheetType
+  langs:
+  - csharp
+  - vb
+  name: Speed
+  nameWithType: SheetType.Speed
+  fullName: AssetKits.ParticleImage.Enumerations.SheetType.Speed
+  type: Field
+  source:
+    id: Speed
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2949
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Speed = 1
+    return:
+      type: AssetKits.ParticleImage.Enumerations.SheetType
+- uid: AssetKits.ParticleImage.Enumerations.SheetType.FPS
+  commentId: F:AssetKits.ParticleImage.Enumerations.SheetType.FPS
+  id: FPS
+  parent: AssetKits.ParticleImage.Enumerations.SheetType
+  langs:
+  - csharp
+  - vb
+  name: FPS
+  nameWithType: SheetType.FPS
+  fullName: AssetKits.ParticleImage.Enumerations.SheetType.FPS
+  type: Field
+  source:
+    id: FPS
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2949
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: FPS = 2
+    return:
+      type: AssetKits.ParticleImage.Enumerations.SheetType
+references:
+- uid: AssetKits.ParticleImage.Enumerations
+  commentId: N:AssetKits.ParticleImage.Enumerations
+  href: AssetKits.html
+  name: AssetKits.ParticleImage.Enumerations
+  nameWithType: AssetKits.ParticleImage.Enumerations
+  fullName: AssetKits.ParticleImage.Enumerations
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+- uid: AssetKits.ParticleImage.Enumerations.SheetType
+  commentId: T:AssetKits.ParticleImage.Enumerations.SheetType
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.SheetType.html
+  name: SheetType
+  nameWithType: SheetType
+  fullName: AssetKits.ParticleImage.Enumerations.SheetType

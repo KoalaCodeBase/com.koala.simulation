@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Internal.ES3IO.ES3FileMode
+  commentId: T:ES3Internal.ES3IO.ES3FileMode
+  id: ES3IO.ES3FileMode
+  parent: ES3Internal
+  children:
+  - ES3Internal.ES3IO.ES3FileMode.Append
+  - ES3Internal.ES3IO.ES3FileMode.Read
+  - ES3Internal.ES3IO.ES3FileMode.Write
+  langs:
+  - csharp
+  - vb
+  name: ES3IO.ES3FileMode
+  nameWithType: ES3IO.ES3FileMode
+  fullName: ES3Internal.ES3IO.ES3FileMode
+  type: Enum
+  source:
+    id: ES3FileMode
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public enum ES3IO.ES3FileMode
+    content.vb: Public Enum ES3IO.ES3FileMode
+- uid: ES3Internal.ES3IO.ES3FileMode.Read
+  commentId: F:ES3Internal.ES3IO.ES3FileMode.Read
+  id: Read
+  parent: ES3Internal.ES3IO.ES3FileMode
+  langs:
+  - csharp
+  - vb
+  name: Read
+  nameWithType: ES3IO.ES3FileMode.Read
+  fullName: ES3Internal.ES3IO.ES3FileMode.Read
+  type: Field
+  source:
+    id: Read
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: Read = 0
+    return:
+      type: ES3Internal.ES3IO.ES3FileMode
+- uid: ES3Internal.ES3IO.ES3FileMode.Write
+  commentId: F:ES3Internal.ES3IO.ES3FileMode.Write
+  id: Write
+  parent: ES3Internal.ES3IO.ES3FileMode
+  langs:
+  - csharp
+  - vb
+  name: Write
+  nameWithType: ES3IO.ES3FileMode.Write
+  fullName: ES3Internal.ES3IO.ES3FileMode.Write
+  type: Field
+  source:
+    id: Write
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: Write = 1
+    return:
+      type: ES3Internal.ES3IO.ES3FileMode
+- uid: ES3Internal.ES3IO.ES3FileMode.Append
+  commentId: F:ES3Internal.ES3IO.ES3FileMode.Append
+  id: Append
+  parent: ES3Internal.ES3IO.ES3FileMode
+  langs:
+  - csharp
+  - vb
+  name: Append
+  nameWithType: ES3IO.ES3FileMode.Append
+  fullName: ES3Internal.ES3IO.ES3FileMode.Append
+  type: Field
+  source:
+    id: Append
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3IO.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: Append = 2
+    return:
+      type: ES3Internal.ES3IO.ES3FileMode
+references:
+- uid: ES3Internal
+  commentId: N:ES3Internal
+  href: ES3Internal.html
+  name: ES3Internal
+  nameWithType: ES3Internal
+  fullName: ES3Internal
+- uid: ES3Internal.ES3IO.ES3FileMode
+  commentId: T:ES3Internal.ES3IO.ES3FileMode
+  parent: ES3Internal
+  href: ES3Internal.ES3IO.html
+  name: ES3IO.ES3FileMode
+  nameWithType: ES3IO.ES3FileMode
+  fullName: ES3Internal.ES3IO.ES3FileMode
+  spec.csharp:
+  - uid: ES3Internal.ES3IO
+    name: ES3IO
+    href: ES3Internal.ES3IO.html
+  - name: .
+  - uid: ES3Internal.ES3IO.ES3FileMode
+    name: ES3FileMode
+    href: ES3Internal.ES3IO.ES3FileMode.html
+  spec.vb:
+  - uid: ES3Internal.ES3IO
+    name: ES3IO
+    href: ES3Internal.ES3IO.html
+  - name: .
+  - uid: ES3Internal.ES3IO.ES3FileMode
+    name: ES3FileMode
+    href: ES3Internal.ES3IO.ES3FileMode.html

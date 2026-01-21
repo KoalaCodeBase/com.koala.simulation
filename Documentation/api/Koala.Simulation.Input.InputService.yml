@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Input.InputService
+  commentId: T:Koala.Simulation.Input.InputService
+  id: InputService
+  parent: Koala.Simulation.Input
+  children:
+  - Koala.Simulation.Input.InputService.GetKeyByActionName(System.String)
+  - Koala.Simulation.Input.InputService.OnInputReceive
+  - Koala.Simulation.Input.InputService.TryGetSprite(System.String,UnityEngine.Sprite@)
+  langs:
+  - csharp
+  - vb
+  name: InputService
+  nameWithType: InputService
+  fullName: Koala.Simulation.Input.InputService
+  type: Class
+  source:
+    remote:
+      path: Runtime/Input/InputService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InputService
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputService.cs
+    startLine: 16
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Provides input handling and utility methods for retrieving key bindings and sprites.
+
+
+    <div class="WARNING"><h5>warning</h5><p>
+
+    This service is tightly coupled with <xref uid="Koala.Simulation.Input.Components.InputHandler" altProperty="fullName" displayProperty="name"></xref> and only works
+
+    when an InputHandler component is present in the scene.
+
+    </p></div>
+  example: []
+  syntax:
+    content: public sealed class InputService
+    content.vb: Public NotInheritable Class InputService
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Input.InputService.OnInputReceive
+  commentId: E:Koala.Simulation.Input.InputService.OnInputReceive
+  id: OnInputReceive
+  parent: Koala.Simulation.Input.InputService
+  langs:
+  - csharp
+  - vb
+  name: OnInputReceive
+  nameWithType: InputService.OnInputReceive
+  fullName: Koala.Simulation.Input.InputService.OnInputReceive
+  type: Event
+  source:
+    remote:
+      path: Runtime/Input/InputService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnInputReceive
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputService.cs
+    startLine: 21
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: Event invoked when any input action is triggered.
+  example: []
+  syntax:
+    content: public static event Action<InputAction.CallbackContext> OnInputReceive
+    return:
+      type: System.Action{UnityEngine.InputSystem.InputAction.CallbackContext}
+    content.vb: Public Shared Event OnInputReceive As Action(Of InputAction.CallbackContext)
+- uid: Koala.Simulation.Input.InputService.GetKeyByActionName(System.String)
+  commentId: M:Koala.Simulation.Input.InputService.GetKeyByActionName(System.String)
+  id: GetKeyByActionName(System.String)
+  parent: Koala.Simulation.Input.InputService
+  langs:
+  - csharp
+  - vb
+  name: GetKeyByActionName(string)
+  nameWithType: InputService.GetKeyByActionName(string)
+  fullName: Koala.Simulation.Input.InputService.GetKeyByActionName(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: GetKeyByActionName
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputService.cs
+    startLine: 67
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: Gets the display key for a given action name.
+  example: []
+  syntax:
+    content: public static string GetKeyByActionName(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+      description: The name of the input action.
+    return:
+      type: System.String
+      description: The display string for the key, or "N/A" if not found.
+    content.vb: Public Shared Function GetKeyByActionName(actionName As String) As String
+  overload: Koala.Simulation.Input.InputService.GetKeyByActionName*
+  nameWithType.vb: InputService.GetKeyByActionName(String)
+  fullName.vb: Koala.Simulation.Input.InputService.GetKeyByActionName(String)
+  name.vb: GetKeyByActionName(String)
+- uid: Koala.Simulation.Input.InputService.TryGetSprite(System.String,UnityEngine.Sprite@)
+  commentId: M:Koala.Simulation.Input.InputService.TryGetSprite(System.String,UnityEngine.Sprite@)
+  id: TryGetSprite(System.String,UnityEngine.Sprite@)
+  parent: Koala.Simulation.Input.InputService
+  langs:
+  - csharp
+  - vb
+  name: TryGetSprite(string, out Sprite)
+  nameWithType: InputService.TryGetSprite(string, out Sprite)
+  fullName: Koala.Simulation.Input.InputService.TryGetSprite(string, out UnityEngine.Sprite)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: TryGetSprite
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputService.cs
+    startLine: 78
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: Attempts to retrieve a sprite for a given action name.
+  example: []
+  syntax:
+    content: public static bool TryGetSprite(string actionName, out Sprite sprite)
+    parameters:
+    - id: actionName
+      type: System.String
+      description: The name of the input action.
+    - id: sprite
+      type: UnityEngine.Sprite
+      description: The corresponding sprite if found.
+    return:
+      type: System.Boolean
+      description: True if a sprite was found; otherwise, false.
+    content.vb: Public Shared Function TryGetSprite(actionName As String, sprite As Sprite) As Boolean
+  overload: Koala.Simulation.Input.InputService.TryGetSprite*
+  nameWithType.vb: InputService.TryGetSprite(String, Sprite)
+  fullName.vb: Koala.Simulation.Input.InputService.TryGetSprite(String, UnityEngine.Sprite)
+  name.vb: TryGetSprite(String, Sprite)
+references:
+- uid: Koala.Simulation.Input
+  commentId: N:Koala.Simulation.Input
+  href: Koala.html
+  name: Koala.Simulation.Input
+  nameWithType: Koala.Simulation.Input
+  fullName: Koala.Simulation.Input
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action{UnityEngine.InputSystem.InputAction.CallbackContext}
+  commentId: T:System.Action{UnityEngine.InputSystem.InputAction.CallbackContext}
+  parent: System
+  definition: System.Action`1
+  name: Action<InputAction.CallbackContext>
+  nameWithType: Action<InputAction.CallbackContext>
+  fullName: System.Action<UnityEngine.InputSystem.InputAction.CallbackContext>
+  nameWithType.vb: Action(Of InputAction.CallbackContext)
+  fullName.vb: System.Action(Of UnityEngine.InputSystem.InputAction.CallbackContext)
+  name.vb: Action(Of InputAction.CallbackContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Koala.Simulation.Input.InputService.GetKeyByActionName*
+  commentId: Overload:Koala.Simulation.Input.InputService.GetKeyByActionName
+  href: Koala.Simulation.Input.InputService.html#Koala_Simulation_Input_InputService_GetKeyByActionName_System_String_
+  name: GetKeyByActionName
+  nameWithType: InputService.GetKeyByActionName
+  fullName: Koala.Simulation.Input.InputService.GetKeyByActionName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Koala.Simulation.Input.InputService.TryGetSprite*
+  commentId: Overload:Koala.Simulation.Input.InputService.TryGetSprite
+  href: Koala.Simulation.Input.InputService.html#Koala_Simulation_Input_InputService_TryGetSprite_System_String_UnityEngine_Sprite__
+  name: TryGetSprite
+  nameWithType: InputService.TryGetSprite
+  fullName: Koala.Simulation.Input.InputService.TryGetSprite
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

@@ -1,0 +1,687 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.GridItemGroup
+  commentId: T:SuperScrollView.GridItemGroup
+  id: GridItemGroup
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.GridItemGroup.AddFirst(SuperScrollView.LoopGridViewItem)
+  - SuperScrollView.GridItemGroup.AddLast(SuperScrollView.LoopGridViewItem)
+  - SuperScrollView.GridItemGroup.Clear
+  - SuperScrollView.GridItemGroup.Count
+  - SuperScrollView.GridItemGroup.First
+  - SuperScrollView.GridItemGroup.GetItemByColumn(System.Int32)
+  - SuperScrollView.GridItemGroup.GetItemByRow(System.Int32)
+  - SuperScrollView.GridItemGroup.GroupIndex
+  - SuperScrollView.GridItemGroup.Last
+  - SuperScrollView.GridItemGroup.RemoveFirst
+  - SuperScrollView.GridItemGroup.RemoveLast
+  - SuperScrollView.GridItemGroup.ReplaceItem(SuperScrollView.LoopGridViewItem,SuperScrollView.LoopGridViewItem)
+  langs:
+  - csharp
+  - vb
+  name: GridItemGroup
+  nameWithType: GridItemGroup
+  fullName: SuperScrollView.GridItemGroup
+  type: Class
+  source:
+    id: GridItemGroup
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public class GridItemGroup
+    content.vb: Public Class GridItemGroup
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SuperScrollView.GridItemGroup.Count
+  commentId: P:SuperScrollView.GridItemGroup.Count
+  id: Count
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: GridItemGroup.Count
+  fullName: SuperScrollView.GridItemGroup.Count
+  type: Property
+  source:
+    id: Count
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: SuperScrollView.GridItemGroup.Count*
+- uid: SuperScrollView.GridItemGroup.First
+  commentId: P:SuperScrollView.GridItemGroup.First
+  id: First
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: First
+  nameWithType: GridItemGroup.First
+  fullName: SuperScrollView.GridItemGroup.First
+  type: Property
+  source:
+    id: First
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public LoopGridViewItem First { get; }
+    parameters: []
+    return:
+      type: SuperScrollView.LoopGridViewItem
+    content.vb: Public ReadOnly Property First As LoopGridViewItem
+  overload: SuperScrollView.GridItemGroup.First*
+- uid: SuperScrollView.GridItemGroup.Last
+  commentId: P:SuperScrollView.GridItemGroup.Last
+  id: Last
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: Last
+  nameWithType: GridItemGroup.Last
+  fullName: SuperScrollView.GridItemGroup.Last
+  type: Property
+  source:
+    id: Last
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public LoopGridViewItem Last { get; }
+    parameters: []
+    return:
+      type: SuperScrollView.LoopGridViewItem
+    content.vb: Public ReadOnly Property Last As LoopGridViewItem
+  overload: SuperScrollView.GridItemGroup.Last*
+- uid: SuperScrollView.GridItemGroup.GroupIndex
+  commentId: P:SuperScrollView.GridItemGroup.GroupIndex
+  id: GroupIndex
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: GroupIndex
+  nameWithType: GridItemGroup.GroupIndex
+  fullName: SuperScrollView.GridItemGroup.GroupIndex
+  type: Property
+  source:
+    id: GroupIndex
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int GroupIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property GroupIndex As Integer
+  overload: SuperScrollView.GridItemGroup.GroupIndex*
+- uid: SuperScrollView.GridItemGroup.GetItemByColumn(System.Int32)
+  commentId: M:SuperScrollView.GridItemGroup.GetItemByColumn(System.Int32)
+  id: GetItemByColumn(System.Int32)
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: GetItemByColumn(int)
+  nameWithType: GridItemGroup.GetItemByColumn(int)
+  fullName: SuperScrollView.GridItemGroup.GetItemByColumn(int)
+  type: Method
+  source:
+    id: GetItemByColumn
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public LoopGridViewItem GetItemByColumn(int column)
+    parameters:
+    - id: column
+      type: System.Int32
+    return:
+      type: SuperScrollView.LoopGridViewItem
+    content.vb: Public Function GetItemByColumn(column As Integer) As LoopGridViewItem
+  overload: SuperScrollView.GridItemGroup.GetItemByColumn*
+  nameWithType.vb: GridItemGroup.GetItemByColumn(Integer)
+  fullName.vb: SuperScrollView.GridItemGroup.GetItemByColumn(Integer)
+  name.vb: GetItemByColumn(Integer)
+- uid: SuperScrollView.GridItemGroup.GetItemByRow(System.Int32)
+  commentId: M:SuperScrollView.GridItemGroup.GetItemByRow(System.Int32)
+  id: GetItemByRow(System.Int32)
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: GetItemByRow(int)
+  nameWithType: GridItemGroup.GetItemByRow(int)
+  fullName: SuperScrollView.GridItemGroup.GetItemByRow(int)
+  type: Method
+  source:
+    id: GetItemByRow
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public LoopGridViewItem GetItemByRow(int row)
+    parameters:
+    - id: row
+      type: System.Int32
+    return:
+      type: SuperScrollView.LoopGridViewItem
+    content.vb: Public Function GetItemByRow(row As Integer) As LoopGridViewItem
+  overload: SuperScrollView.GridItemGroup.GetItemByRow*
+  nameWithType.vb: GridItemGroup.GetItemByRow(Integer)
+  fullName.vb: SuperScrollView.GridItemGroup.GetItemByRow(Integer)
+  name.vb: GetItemByRow(Integer)
+- uid: SuperScrollView.GridItemGroup.ReplaceItem(SuperScrollView.LoopGridViewItem,SuperScrollView.LoopGridViewItem)
+  commentId: M:SuperScrollView.GridItemGroup.ReplaceItem(SuperScrollView.LoopGridViewItem,SuperScrollView.LoopGridViewItem)
+  id: ReplaceItem(SuperScrollView.LoopGridViewItem,SuperScrollView.LoopGridViewItem)
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: ReplaceItem(LoopGridViewItem, LoopGridViewItem)
+  nameWithType: GridItemGroup.ReplaceItem(LoopGridViewItem, LoopGridViewItem)
+  fullName: SuperScrollView.GridItemGroup.ReplaceItem(SuperScrollView.LoopGridViewItem, SuperScrollView.LoopGridViewItem)
+  type: Method
+  source:
+    id: ReplaceItem
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void ReplaceItem(LoopGridViewItem curItem, LoopGridViewItem newItem)
+    parameters:
+    - id: curItem
+      type: SuperScrollView.LoopGridViewItem
+    - id: newItem
+      type: SuperScrollView.LoopGridViewItem
+    content.vb: Public Sub ReplaceItem(curItem As LoopGridViewItem, newItem As LoopGridViewItem)
+  overload: SuperScrollView.GridItemGroup.ReplaceItem*
+- uid: SuperScrollView.GridItemGroup.AddFirst(SuperScrollView.LoopGridViewItem)
+  commentId: M:SuperScrollView.GridItemGroup.AddFirst(SuperScrollView.LoopGridViewItem)
+  id: AddFirst(SuperScrollView.LoopGridViewItem)
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: AddFirst(LoopGridViewItem)
+  nameWithType: GridItemGroup.AddFirst(LoopGridViewItem)
+  fullName: SuperScrollView.GridItemGroup.AddFirst(SuperScrollView.LoopGridViewItem)
+  type: Method
+  source:
+    id: AddFirst
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void AddFirst(LoopGridViewItem newItem)
+    parameters:
+    - id: newItem
+      type: SuperScrollView.LoopGridViewItem
+    content.vb: Public Sub AddFirst(newItem As LoopGridViewItem)
+  overload: SuperScrollView.GridItemGroup.AddFirst*
+- uid: SuperScrollView.GridItemGroup.AddLast(SuperScrollView.LoopGridViewItem)
+  commentId: M:SuperScrollView.GridItemGroup.AddLast(SuperScrollView.LoopGridViewItem)
+  id: AddLast(SuperScrollView.LoopGridViewItem)
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: AddLast(LoopGridViewItem)
+  nameWithType: GridItemGroup.AddLast(LoopGridViewItem)
+  fullName: SuperScrollView.GridItemGroup.AddLast(SuperScrollView.LoopGridViewItem)
+  type: Method
+  source:
+    id: AddLast
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 109
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void AddLast(LoopGridViewItem newItem)
+    parameters:
+    - id: newItem
+      type: SuperScrollView.LoopGridViewItem
+    content.vb: Public Sub AddLast(newItem As LoopGridViewItem)
+  overload: SuperScrollView.GridItemGroup.AddLast*
+- uid: SuperScrollView.GridItemGroup.RemoveFirst
+  commentId: M:SuperScrollView.GridItemGroup.RemoveFirst
+  id: RemoveFirst
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: RemoveFirst()
+  nameWithType: GridItemGroup.RemoveFirst()
+  fullName: SuperScrollView.GridItemGroup.RemoveFirst()
+  type: Method
+  source:
+    id: RemoveFirst
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 131
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public LoopGridViewItem RemoveFirst()
+    return:
+      type: SuperScrollView.LoopGridViewItem
+    content.vb: Public Function RemoveFirst() As LoopGridViewItem
+  overload: SuperScrollView.GridItemGroup.RemoveFirst*
+- uid: SuperScrollView.GridItemGroup.RemoveLast
+  commentId: M:SuperScrollView.GridItemGroup.RemoveLast
+  id: RemoveLast
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: RemoveLast()
+  nameWithType: GridItemGroup.RemoveLast()
+  fullName: SuperScrollView.GridItemGroup.RemoveLast()
+  type: Method
+  source:
+    id: RemoveLast
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 150
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public LoopGridViewItem RemoveLast()
+    return:
+      type: SuperScrollView.LoopGridViewItem
+    content.vb: Public Function RemoveLast() As LoopGridViewItem
+  overload: SuperScrollView.GridItemGroup.RemoveLast*
+- uid: SuperScrollView.GridItemGroup.Clear
+  commentId: M:SuperScrollView.GridItemGroup.Clear
+  id: Clear
+  parent: SuperScrollView.GridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: GridItemGroup.Clear()
+  fullName: SuperScrollView.GridItemGroup.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\GridView\GridItemGroup.cs
+    startLine: 171
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: SuperScrollView.GridItemGroup.Clear*
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SuperScrollView.GridItemGroup.Count*
+  commentId: Overload:SuperScrollView.GridItemGroup.Count
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_Count
+  name: Count
+  nameWithType: GridItemGroup.Count
+  fullName: SuperScrollView.GridItemGroup.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SuperScrollView.GridItemGroup.First*
+  commentId: Overload:SuperScrollView.GridItemGroup.First
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_First
+  name: First
+  nameWithType: GridItemGroup.First
+  fullName: SuperScrollView.GridItemGroup.First
+- uid: SuperScrollView.LoopGridViewItem
+  commentId: T:SuperScrollView.LoopGridViewItem
+  parent: SuperScrollView
+  href: SuperScrollView.LoopGridViewItem.html
+  name: LoopGridViewItem
+  nameWithType: LoopGridViewItem
+  fullName: SuperScrollView.LoopGridViewItem
+- uid: SuperScrollView.GridItemGroup.Last*
+  commentId: Overload:SuperScrollView.GridItemGroup.Last
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_Last
+  name: Last
+  nameWithType: GridItemGroup.Last
+  fullName: SuperScrollView.GridItemGroup.Last
+- uid: SuperScrollView.GridItemGroup.GroupIndex*
+  commentId: Overload:SuperScrollView.GridItemGroup.GroupIndex
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_GroupIndex
+  name: GroupIndex
+  nameWithType: GridItemGroup.GroupIndex
+  fullName: SuperScrollView.GridItemGroup.GroupIndex
+- uid: SuperScrollView.GridItemGroup.GetItemByColumn*
+  commentId: Overload:SuperScrollView.GridItemGroup.GetItemByColumn
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_GetItemByColumn_System_Int32_
+  name: GetItemByColumn
+  nameWithType: GridItemGroup.GetItemByColumn
+  fullName: SuperScrollView.GridItemGroup.GetItemByColumn
+- uid: SuperScrollView.GridItemGroup.GetItemByRow*
+  commentId: Overload:SuperScrollView.GridItemGroup.GetItemByRow
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_GetItemByRow_System_Int32_
+  name: GetItemByRow
+  nameWithType: GridItemGroup.GetItemByRow
+  fullName: SuperScrollView.GridItemGroup.GetItemByRow
+- uid: SuperScrollView.GridItemGroup.ReplaceItem*
+  commentId: Overload:SuperScrollView.GridItemGroup.ReplaceItem
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_ReplaceItem_SuperScrollView_LoopGridViewItem_SuperScrollView_LoopGridViewItem_
+  name: ReplaceItem
+  nameWithType: GridItemGroup.ReplaceItem
+  fullName: SuperScrollView.GridItemGroup.ReplaceItem
+- uid: SuperScrollView.GridItemGroup.AddFirst*
+  commentId: Overload:SuperScrollView.GridItemGroup.AddFirst
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_AddFirst_SuperScrollView_LoopGridViewItem_
+  name: AddFirst
+  nameWithType: GridItemGroup.AddFirst
+  fullName: SuperScrollView.GridItemGroup.AddFirst
+- uid: SuperScrollView.GridItemGroup.AddLast*
+  commentId: Overload:SuperScrollView.GridItemGroup.AddLast
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_AddLast_SuperScrollView_LoopGridViewItem_
+  name: AddLast
+  nameWithType: GridItemGroup.AddLast
+  fullName: SuperScrollView.GridItemGroup.AddLast
+- uid: SuperScrollView.GridItemGroup.RemoveFirst*
+  commentId: Overload:SuperScrollView.GridItemGroup.RemoveFirst
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_RemoveFirst
+  name: RemoveFirst
+  nameWithType: GridItemGroup.RemoveFirst
+  fullName: SuperScrollView.GridItemGroup.RemoveFirst
+- uid: SuperScrollView.GridItemGroup.RemoveLast*
+  commentId: Overload:SuperScrollView.GridItemGroup.RemoveLast
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_RemoveLast
+  name: RemoveLast
+  nameWithType: GridItemGroup.RemoveLast
+  fullName: SuperScrollView.GridItemGroup.RemoveLast
+- uid: SuperScrollView.GridItemGroup.Clear*
+  commentId: Overload:SuperScrollView.GridItemGroup.Clear
+  href: SuperScrollView.GridItemGroup.html#SuperScrollView_GridItemGroup_Clear
+  name: Clear
+  nameWithType: GridItemGroup.Clear
+  fullName: SuperScrollView.GridItemGroup.Clear

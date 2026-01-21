@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.Core
+  commentId: N:Koala.Simulation.Interaction.Core
+  id: Koala.Simulation.Interaction.Core
+  children:
+  - Koala.Simulation.Interaction.Core.InteractableObject
+  - Koala.Simulation.Interaction.Core.InteractionBehaviour
+  - Koala.Simulation.Interaction.Core.InteractionSolver
+  - Koala.Simulation.Interaction.Core.Interactor
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Interaction.Core
+  nameWithType: Koala.Simulation.Interaction.Core
+  fullName: Koala.Simulation.Interaction.Core
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour
+  commentId: T:Koala.Simulation.Interaction.Core.InteractionBehaviour
+  href: Koala.Simulation.Interaction.Core.InteractionBehaviour.html
+  name: InteractionBehaviour
+  nameWithType: InteractionBehaviour
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour
+- uid: Koala.Simulation.Interaction.Core.Interactor
+  commentId: T:Koala.Simulation.Interaction.Core.Interactor
+  parent: Koala.Simulation.Interaction.Core
+  href: Koala.Simulation.Interaction.Core.Interactor.html
+  name: Interactor
+  nameWithType: Interactor
+  fullName: Koala.Simulation.Interaction.Core.Interactor
+- uid: Koala.Simulation.Interaction.Core.InteractableObject
+  commentId: T:Koala.Simulation.Interaction.Core.InteractableObject
+  parent: Koala.Simulation.Interaction.Core
+  href: Koala.Simulation.Interaction.Core.InteractableObject.html
+  name: InteractableObject
+  nameWithType: InteractableObject
+  fullName: Koala.Simulation.Interaction.Core.InteractableObject
+- uid: Koala.Simulation.Interaction.Core.InteractionSolver
+  commentId: T:Koala.Simulation.Interaction.Core.InteractionSolver
+  parent: Koala.Simulation.Interaction.Core
+  href: Koala.Simulation.Interaction.Core.InteractionSolver.html
+  name: InteractionSolver
+  nameWithType: InteractionSolver
+  fullName: Koala.Simulation.Interaction.Core.InteractionSolver
+- uid: Koala.Simulation.Interaction.Core
+  commentId: N:Koala.Simulation.Interaction.Core
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Core
+  nameWithType: Koala.Simulation.Interaction.Core
+  fullName: Koala.Simulation.Interaction.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html

@@ -1,0 +1,370 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour
+  commentId: T:Koala.Simulation.Interaction.Core.InteractionBehaviour
+  id: InteractionBehaviour
+  parent: Koala.Simulation.Interaction.Core
+  children:
+  - Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact
+  - Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact(Koala.Simulation.Interaction.Core.InteractionArgs)
+  - Koala.Simulation.Interaction.Core.InteractionBehaviour.IsInteractable
+  - Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract
+  - Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract(Koala.Simulation.Interaction.Core.Interactor,Koala.Simulation.Interaction.Core.InteractableObject)
+  - Koala.Simulation.Interaction.Core.InteractionBehaviour.OnIsInteractable
+  langs:
+  - csharp
+  - vb
+  name: InteractionBehaviour
+  nameWithType: InteractionBehaviour
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour
+  type: Class
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InteractionBehaviour
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionBehaviour.cs
+    startLine: 8
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Base behaviour that defines how an object can be interacted with.
+  example: []
+  syntax:
+    content: 'public abstract class InteractionBehaviour : MonoBehaviour'
+    content.vb: Public MustInherit Class InteractionBehaviour Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact(Koala.Simulation.Interaction.Core.InteractionArgs)
+  commentId: M:Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact(Koala.Simulation.Interaction.Core.InteractionArgs)
+  id: Interact(Koala.Simulation.Interaction.Core.InteractionArgs)
+  parent: Koala.Simulation.Interaction.Core.InteractionBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Interact(InteractionArgs)
+  nameWithType: InteractionBehaviour.Interact(InteractionArgs)
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact(Koala.Simulation.Interaction.Core.InteractionArgs)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Interact
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionBehaviour.cs
+    startLine: 21
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  syntax:
+    content: public void Interact(InteractionArgs args)
+    parameters:
+    - id: args
+      type: Koala.Simulation.Interaction.Core.InteractionArgs
+    content.vb: Public Sub Interact(args As InteractionArgs)
+  overload: Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact*
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact
+  commentId: M:Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact
+  id: Interact
+  parent: Koala.Simulation.Interaction.Core.InteractionBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Interact()
+  nameWithType: InteractionBehaviour.Interact()
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Interact
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionBehaviour.cs
+    startLine: 30
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  syntax:
+    content: public void Interact()
+    content.vb: Public Sub Interact()
+  overload: Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact*
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour.IsInteractable
+  commentId: M:Koala.Simulation.Interaction.Core.InteractionBehaviour.IsInteractable
+  id: IsInteractable
+  parent: Koala.Simulation.Interaction.Core.InteractionBehaviour
+  langs:
+  - csharp
+  - vb
+  name: IsInteractable()
+  nameWithType: InteractionBehaviour.IsInteractable()
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour.IsInteractable()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: IsInteractable
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionBehaviour.cs
+    startLine: 39
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  syntax:
+    content: public bool IsInteractable()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsInteractable() As Boolean
+  overload: Koala.Simulation.Interaction.Core.InteractionBehaviour.IsInteractable*
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnIsInteractable
+  commentId: M:Koala.Simulation.Interaction.Core.InteractionBehaviour.OnIsInteractable
+  id: OnIsInteractable
+  parent: Koala.Simulation.Interaction.Core.InteractionBehaviour
+  langs:
+  - csharp
+  - vb
+  name: OnIsInteractable()
+  nameWithType: InteractionBehaviour.OnIsInteractable()
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnIsInteractable()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnIsInteractable
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionBehaviour.cs
+    startLine: 49
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: >-
+    Checks if this interaction is currently available.
+
+    Override to define custom interactability logic.
+  example: []
+  syntax:
+    content: protected virtual bool OnIsInteractable()
+    return:
+      type: System.Boolean
+      description: <code>true</code> if interactable, otherwise <code>false</code>.
+    content.vb: Protected Overridable Function OnIsInteractable() As Boolean
+  overload: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnIsInteractable*
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract
+  commentId: M:Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract
+  id: OnInteract
+  parent: Koala.Simulation.Interaction.Core.InteractionBehaviour
+  langs:
+  - csharp
+  - vb
+  name: OnInteract()
+  nameWithType: InteractionBehaviour.OnInteract()
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnInteract
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionBehaviour.cs
+    startLine: 58
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: >-
+    Performs the interaction without arguments if allowed.
+
+    Override to define custom interaction logic.
+  example: []
+  syntax:
+    content: protected virtual void OnInteract()
+    content.vb: Protected Overridable Sub OnInteract()
+  overload: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract*
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract(Koala.Simulation.Interaction.Core.Interactor,Koala.Simulation.Interaction.Core.InteractableObject)
+  commentId: M:Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract(Koala.Simulation.Interaction.Core.Interactor,Koala.Simulation.Interaction.Core.InteractableObject)
+  id: OnInteract(Koala.Simulation.Interaction.Core.Interactor,Koala.Simulation.Interaction.Core.InteractableObject)
+  parent: Koala.Simulation.Interaction.Core.InteractionBehaviour
+  langs:
+  - csharp
+  - vb
+  name: OnInteract(Interactor, InteractableObject)
+  nameWithType: InteractionBehaviour.OnInteract(Interactor, InteractableObject)
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract(Koala.Simulation.Interaction.Core.Interactor, Koala.Simulation.Interaction.Core.InteractableObject)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnInteract
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionBehaviour.cs
+    startLine: 65
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: >-
+    Performs the interaction with the given arguments if allowed.
+
+    Override to define custom interaction logic.
+  example: []
+  syntax:
+    content: protected virtual void OnInteract(Interactor interactor, InteractableObject interactable)
+    parameters:
+    - id: interactor
+      type: Koala.Simulation.Interaction.Core.Interactor
+    - id: interactable
+      type: Koala.Simulation.Interaction.Core.InteractableObject
+    content.vb: Protected Overridable Sub OnInteract(interactor As Interactor, interactable As InteractableObject)
+  overload: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract*
+references:
+- uid: Koala.Simulation.Interaction.Core
+  commentId: N:Koala.Simulation.Interaction.Core
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Core
+  nameWithType: Koala.Simulation.Interaction.Core
+  fullName: Koala.Simulation.Interaction.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact*
+  commentId: Overload:Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact
+  href: Koala.Simulation.Interaction.Core.InteractionBehaviour.html#Koala_Simulation_Interaction_Core_InteractionBehaviour_Interact_Koala_Simulation_Interaction_Core_InteractionArgs_
+  name: Interact
+  nameWithType: InteractionBehaviour.Interact
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour.Interact
+- uid: Koala.Simulation.Interaction.Core.InteractionArgs
+  commentId: T:Koala.Simulation.Interaction.Core.InteractionArgs
+  parent: Koala.Simulation.Interaction.Core
+  name: InteractionArgs
+  nameWithType: InteractionArgs
+  fullName: Koala.Simulation.Interaction.Core.InteractionArgs
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour.IsInteractable*
+  commentId: Overload:Koala.Simulation.Interaction.Core.InteractionBehaviour.IsInteractable
+  href: Koala.Simulation.Interaction.Core.InteractionBehaviour.html#Koala_Simulation_Interaction_Core_InteractionBehaviour_IsInteractable
+  name: IsInteractable
+  nameWithType: InteractionBehaviour.IsInteractable
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour.IsInteractable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnIsInteractable*
+  commentId: Overload:Koala.Simulation.Interaction.Core.InteractionBehaviour.OnIsInteractable
+  href: Koala.Simulation.Interaction.Core.InteractionBehaviour.html#Koala_Simulation_Interaction_Core_InteractionBehaviour_OnIsInteractable
+  name: OnIsInteractable
+  nameWithType: InteractionBehaviour.OnIsInteractable
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnIsInteractable
+- uid: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract*
+  commentId: Overload:Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract
+  href: Koala.Simulation.Interaction.Core.InteractionBehaviour.html#Koala_Simulation_Interaction_Core_InteractionBehaviour_OnInteract
+  name: OnInteract
+  nameWithType: InteractionBehaviour.OnInteract
+  fullName: Koala.Simulation.Interaction.Core.InteractionBehaviour.OnInteract
+- uid: Koala.Simulation.Interaction.Core.Interactor
+  commentId: T:Koala.Simulation.Interaction.Core.Interactor
+  parent: Koala.Simulation.Interaction.Core
+  href: Koala.Simulation.Interaction.Core.Interactor.html
+  name: Interactor
+  nameWithType: Interactor
+  fullName: Koala.Simulation.Interaction.Core.Interactor
+- uid: Koala.Simulation.Interaction.Core.InteractableObject
+  commentId: T:Koala.Simulation.Interaction.Core.InteractableObject
+  parent: Koala.Simulation.Interaction.Core
+  href: Koala.Simulation.Interaction.Core.InteractableObject.html
+  name: InteractableObject
+  nameWithType: InteractableObject
+  fullName: Koala.Simulation.Interaction.Core.InteractableObject

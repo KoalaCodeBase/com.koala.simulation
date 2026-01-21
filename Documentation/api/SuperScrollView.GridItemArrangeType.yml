@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.GridItemArrangeType
+  commentId: T:SuperScrollView.GridItemArrangeType
+  id: GridItemArrangeType
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.GridItemArrangeType.BottomLeftToTopRight
+  - SuperScrollView.GridItemArrangeType.BottomRightToTopLeft
+  - SuperScrollView.GridItemArrangeType.TopLeftToBottomRight
+  - SuperScrollView.GridItemArrangeType.TopRightToBottomLeft
+  langs:
+  - csharp
+  - vb
+  name: GridItemArrangeType
+  nameWithType: GridItemArrangeType
+  fullName: SuperScrollView.GridItemArrangeType
+  type: Enum
+  source:
+    id: GridItemArrangeType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public enum GridItemArrangeType
+    content.vb: Public Enum GridItemArrangeType
+- uid: SuperScrollView.GridItemArrangeType.TopLeftToBottomRight
+  commentId: F:SuperScrollView.GridItemArrangeType.TopLeftToBottomRight
+  id: TopLeftToBottomRight
+  parent: SuperScrollView.GridItemArrangeType
+  langs:
+  - csharp
+  - vb
+  name: TopLeftToBottomRight
+  nameWithType: GridItemArrangeType.TopLeftToBottomRight
+  fullName: SuperScrollView.GridItemArrangeType.TopLeftToBottomRight
+  type: Field
+  source:
+    id: TopLeftToBottomRight
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: TopLeftToBottomRight = 0
+    return:
+      type: SuperScrollView.GridItemArrangeType
+- uid: SuperScrollView.GridItemArrangeType.BottomLeftToTopRight
+  commentId: F:SuperScrollView.GridItemArrangeType.BottomLeftToTopRight
+  id: BottomLeftToTopRight
+  parent: SuperScrollView.GridItemArrangeType
+  langs:
+  - csharp
+  - vb
+  name: BottomLeftToTopRight
+  nameWithType: GridItemArrangeType.BottomLeftToTopRight
+  fullName: SuperScrollView.GridItemArrangeType.BottomLeftToTopRight
+  type: Field
+  source:
+    id: BottomLeftToTopRight
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: BottomLeftToTopRight = 1
+    return:
+      type: SuperScrollView.GridItemArrangeType
+- uid: SuperScrollView.GridItemArrangeType.TopRightToBottomLeft
+  commentId: F:SuperScrollView.GridItemArrangeType.TopRightToBottomLeft
+  id: TopRightToBottomLeft
+  parent: SuperScrollView.GridItemArrangeType
+  langs:
+  - csharp
+  - vb
+  name: TopRightToBottomLeft
+  nameWithType: GridItemArrangeType.TopRightToBottomLeft
+  fullName: SuperScrollView.GridItemArrangeType.TopRightToBottomLeft
+  type: Field
+  source:
+    id: TopRightToBottomLeft
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: TopRightToBottomLeft = 2
+    return:
+      type: SuperScrollView.GridItemArrangeType
+- uid: SuperScrollView.GridItemArrangeType.BottomRightToTopLeft
+  commentId: F:SuperScrollView.GridItemArrangeType.BottomRightToTopLeft
+  id: BottomRightToTopLeft
+  parent: SuperScrollView.GridItemArrangeType
+  langs:
+  - csharp
+  - vb
+  name: BottomRightToTopLeft
+  nameWithType: GridItemArrangeType.BottomRightToTopLeft
+  fullName: SuperScrollView.GridItemArrangeType.BottomRightToTopLeft
+  type: Field
+  source:
+    id: BottomRightToTopLeft
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: BottomRightToTopLeft = 3
+    return:
+      type: SuperScrollView.GridItemArrangeType
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: SuperScrollView.GridItemArrangeType
+  commentId: T:SuperScrollView.GridItemArrangeType
+  parent: SuperScrollView
+  href: SuperScrollView.GridItemArrangeType.html
+  name: GridItemArrangeType
+  nameWithType: GridItemArrangeType
+  fullName: SuperScrollView.GridItemArrangeType

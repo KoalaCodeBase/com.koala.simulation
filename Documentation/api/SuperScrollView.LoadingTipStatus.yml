@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.LoadingTipStatus
+  commentId: T:SuperScrollView.LoadingTipStatus
+  id: LoadingTipStatus
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.LoadingTipStatus.Loaded
+  - SuperScrollView.LoadingTipStatus.None
+  - SuperScrollView.LoadingTipStatus.WaitContinureDrag
+  - SuperScrollView.LoadingTipStatus.WaitLoad
+  - SuperScrollView.LoadingTipStatus.WaitRelease
+  langs:
+  - csharp
+  - vb
+  name: LoadingTipStatus
+  nameWithType: LoadingTipStatus
+  fullName: SuperScrollView.LoadingTipStatus
+  type: Enum
+  source:
+    id: LoadingTipStatus
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\ViewDemo\ListView\ListViewPullDownRefreshDemoScript.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public enum LoadingTipStatus
+    content.vb: Public Enum LoadingTipStatus
+- uid: SuperScrollView.LoadingTipStatus.None
+  commentId: F:SuperScrollView.LoadingTipStatus.None
+  id: None
+  parent: SuperScrollView.LoadingTipStatus
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: LoadingTipStatus.None
+  fullName: SuperScrollView.LoadingTipStatus.None
+  type: Field
+  source:
+    id: None
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\ViewDemo\ListView\ListViewPullDownRefreshDemoScript.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: None = 0
+    return:
+      type: SuperScrollView.LoadingTipStatus
+- uid: SuperScrollView.LoadingTipStatus.WaitContinureDrag
+  commentId: F:SuperScrollView.LoadingTipStatus.WaitContinureDrag
+  id: WaitContinureDrag
+  parent: SuperScrollView.LoadingTipStatus
+  langs:
+  - csharp
+  - vb
+  name: WaitContinureDrag
+  nameWithType: LoadingTipStatus.WaitContinureDrag
+  fullName: SuperScrollView.LoadingTipStatus.WaitContinureDrag
+  type: Field
+  source:
+    id: WaitContinureDrag
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\ViewDemo\ListView\ListViewPullDownRefreshDemoScript.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: WaitContinureDrag = 1
+    return:
+      type: SuperScrollView.LoadingTipStatus
+- uid: SuperScrollView.LoadingTipStatus.WaitRelease
+  commentId: F:SuperScrollView.LoadingTipStatus.WaitRelease
+  id: WaitRelease
+  parent: SuperScrollView.LoadingTipStatus
+  langs:
+  - csharp
+  - vb
+  name: WaitRelease
+  nameWithType: LoadingTipStatus.WaitRelease
+  fullName: SuperScrollView.LoadingTipStatus.WaitRelease
+  type: Field
+  source:
+    id: WaitRelease
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\ViewDemo\ListView\ListViewPullDownRefreshDemoScript.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: WaitRelease = 2
+    return:
+      type: SuperScrollView.LoadingTipStatus
+- uid: SuperScrollView.LoadingTipStatus.WaitLoad
+  commentId: F:SuperScrollView.LoadingTipStatus.WaitLoad
+  id: WaitLoad
+  parent: SuperScrollView.LoadingTipStatus
+  langs:
+  - csharp
+  - vb
+  name: WaitLoad
+  nameWithType: LoadingTipStatus.WaitLoad
+  fullName: SuperScrollView.LoadingTipStatus.WaitLoad
+  type: Field
+  source:
+    id: WaitLoad
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\ViewDemo\ListView\ListViewPullDownRefreshDemoScript.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: WaitLoad = 3
+    return:
+      type: SuperScrollView.LoadingTipStatus
+- uid: SuperScrollView.LoadingTipStatus.Loaded
+  commentId: F:SuperScrollView.LoadingTipStatus.Loaded
+  id: Loaded
+  parent: SuperScrollView.LoadingTipStatus
+  langs:
+  - csharp
+  - vb
+  name: Loaded
+  nameWithType: LoadingTipStatus.Loaded
+  fullName: SuperScrollView.LoadingTipStatus.Loaded
+  type: Field
+  source:
+    id: Loaded
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\ViewDemo\ListView\ListViewPullDownRefreshDemoScript.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: Loaded = 4
+    return:
+      type: SuperScrollView.LoadingTipStatus
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: SuperScrollView.LoadingTipStatus
+  commentId: T:SuperScrollView.LoadingTipStatus
+  parent: SuperScrollView
+  href: SuperScrollView.LoadingTipStatus.html
+  name: LoadingTipStatus
+  nameWithType: LoadingTipStatus
+  fullName: SuperScrollView.LoadingTipStatus

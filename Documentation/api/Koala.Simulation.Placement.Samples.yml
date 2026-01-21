@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Placement.Samples
+  commentId: N:Koala.Simulation.Placement.Samples
+  id: Koala.Simulation.Placement.Samples
+  children:
+  - Koala.Simulation.Placement.Samples.LayerRule
+  - Koala.Simulation.Placement.Samples.NoOverlapRule
+  - Koala.Simulation.Placement.Samples.PlacementSample
+  - Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Placement.Samples
+  nameWithType: Koala.Simulation.Placement.Samples
+  fullName: Koala.Simulation.Placement.Samples
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Placement.Samples.NoOverlapRule
+  commentId: T:Koala.Simulation.Placement.Samples.NoOverlapRule
+  href: Koala.Simulation.Placement.Samples.NoOverlapRule.html
+  name: NoOverlapRule
+  nameWithType: NoOverlapRule
+  fullName: Koala.Simulation.Placement.Samples.NoOverlapRule
+- uid: Koala.Simulation.Placement.Samples.PlacementSample
+  commentId: T:Koala.Simulation.Placement.Samples.PlacementSample
+  href: Koala.Simulation.Placement.Samples.PlacementSample.html
+  name: PlacementSample
+  nameWithType: PlacementSample
+  fullName: Koala.Simulation.Placement.Samples.PlacementSample
+- uid: Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+  commentId: T:Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+  href: Koala.Simulation.Placement.Samples.Sample_Placeable_Object.html
+  name: Sample_Placeable_Object
+  nameWithType: Sample_Placeable_Object
+  fullName: Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+- uid: Koala.Simulation.Placement.Samples.LayerRule
+  commentId: T:Koala.Simulation.Placement.Samples.LayerRule
+  href: Koala.Simulation.Placement.Samples.LayerRule.html
+  name: LayerRule
+  nameWithType: LayerRule
+  fullName: Koala.Simulation.Placement.Samples.LayerRule

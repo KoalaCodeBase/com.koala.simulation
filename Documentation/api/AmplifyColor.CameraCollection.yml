@@ -1,0 +1,531 @@
+### YamlMime:ManagedReference
+items:
+- uid: AmplifyColor.CameraCollection
+  commentId: T:AmplifyColor.CameraCollection
+  id: CameraCollection
+  parent: AmplifyColor
+  children:
+  - AmplifyColor.CameraCollection.CameraNames
+  - AmplifyColor.CameraCollection.GenerateCameraList
+  - AmplifyColor.CameraCollection.GetCurrentEffectTexture
+  - AmplifyColor.CameraCollection.SelectedCamera
+  - AmplifyColor.CameraCollection.SelectedCameraName
+  - AmplifyColor.CameraCollection.SelectedIndex
+  langs:
+  - csharp
+  - vb
+  name: CameraCollection
+  nameWithType: CameraCollection
+  fullName: AmplifyColor.CameraCollection
+  type: Class
+  source:
+    id: CameraCollection
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\CameraCollection.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public class CameraCollection
+    content.vb: Public Class CameraCollection
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AmplifyColor.CameraCollection.SelectedCameraName
+  commentId: P:AmplifyColor.CameraCollection.SelectedCameraName
+  id: SelectedCameraName
+  parent: AmplifyColor.CameraCollection
+  langs:
+  - csharp
+  - vb
+  name: SelectedCameraName
+  nameWithType: CameraCollection.SelectedCameraName
+  fullName: AmplifyColor.CameraCollection.SelectedCameraName
+  type: Property
+  source:
+    id: SelectedCameraName
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\CameraCollection.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public string SelectedCameraName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SelectedCameraName As String
+  overload: AmplifyColor.CameraCollection.SelectedCameraName*
+- uid: AmplifyColor.CameraCollection.CameraNames
+  commentId: P:AmplifyColor.CameraCollection.CameraNames
+  id: CameraNames
+  parent: AmplifyColor.CameraCollection
+  langs:
+  - csharp
+  - vb
+  name: CameraNames
+  nameWithType: CameraCollection.CameraNames
+  fullName: AmplifyColor.CameraCollection.CameraNames
+  type: Property
+  source:
+    id: CameraNames
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\CameraCollection.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public string[] CameraNames { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly Property CameraNames As String()
+  overload: AmplifyColor.CameraCollection.CameraNames*
+- uid: AmplifyColor.CameraCollection.SelectedIndex
+  commentId: P:AmplifyColor.CameraCollection.SelectedIndex
+  id: SelectedIndex
+  parent: AmplifyColor.CameraCollection
+  langs:
+  - csharp
+  - vb
+  name: SelectedIndex
+  nameWithType: CameraCollection.SelectedIndex
+  fullName: AmplifyColor.CameraCollection.SelectedIndex
+  type: Property
+  source:
+    id: SelectedIndex
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\CameraCollection.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public int SelectedIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SelectedIndex As Integer
+  overload: AmplifyColor.CameraCollection.SelectedIndex*
+- uid: AmplifyColor.CameraCollection.SelectedCamera
+  commentId: P:AmplifyColor.CameraCollection.SelectedCamera
+  id: SelectedCamera
+  parent: AmplifyColor.CameraCollection
+  langs:
+  - csharp
+  - vb
+  name: SelectedCamera
+  nameWithType: CameraCollection.SelectedCamera
+  fullName: AmplifyColor.CameraCollection.SelectedCamera
+  type: Property
+  source:
+    id: SelectedCamera
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\CameraCollection.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public Camera SelectedCamera { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Camera
+    content.vb: Public ReadOnly Property SelectedCamera As Camera
+  overload: AmplifyColor.CameraCollection.SelectedCamera*
+- uid: AmplifyColor.CameraCollection.GenerateCameraList
+  commentId: M:AmplifyColor.CameraCollection.GenerateCameraList
+  id: GenerateCameraList
+  parent: AmplifyColor.CameraCollection
+  langs:
+  - csharp
+  - vb
+  name: GenerateCameraList()
+  nameWithType: CameraCollection.GenerateCameraList()
+  fullName: AmplifyColor.CameraCollection.GenerateCameraList()
+  type: Method
+  source:
+    id: GenerateCameraList
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\CameraCollection.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public void GenerateCameraList()
+    content.vb: Public Sub GenerateCameraList()
+  overload: AmplifyColor.CameraCollection.GenerateCameraList*
+- uid: AmplifyColor.CameraCollection.GetCurrentEffectTexture
+  commentId: M:AmplifyColor.CameraCollection.GetCurrentEffectTexture
+  id: GetCurrentEffectTexture
+  parent: AmplifyColor.CameraCollection
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentEffectTexture()
+  nameWithType: CameraCollection.GetCurrentEffectTexture()
+  fullName: AmplifyColor.CameraCollection.GetCurrentEffectTexture()
+  type: Method
+  source:
+    id: GetCurrentEffectTexture
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\CameraCollection.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public Texture2D GetCurrentEffectTexture()
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public Function GetCurrentEffectTexture() As Texture2D
+  overload: AmplifyColor.CameraCollection.GetCurrentEffectTexture*
+references:
+- uid: AmplifyColor
+  commentId: N:AmplifyColor
+  href: AmplifyColor.html
+  name: AmplifyColor
+  nameWithType: AmplifyColor
+  fullName: AmplifyColor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AmplifyColor.CameraCollection.SelectedCameraName*
+  commentId: Overload:AmplifyColor.CameraCollection.SelectedCameraName
+  href: AmplifyColor.CameraCollection.html#AmplifyColor_CameraCollection_SelectedCameraName
+  name: SelectedCameraName
+  nameWithType: CameraCollection.SelectedCameraName
+  fullName: AmplifyColor.CameraCollection.SelectedCameraName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AmplifyColor.CameraCollection.CameraNames*
+  commentId: Overload:AmplifyColor.CameraCollection.CameraNames
+  href: AmplifyColor.CameraCollection.html#AmplifyColor_CameraCollection_CameraNames
+  name: CameraNames
+  nameWithType: CameraCollection.CameraNames
+  fullName: AmplifyColor.CameraCollection.CameraNames
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: AmplifyColor.CameraCollection.SelectedIndex*
+  commentId: Overload:AmplifyColor.CameraCollection.SelectedIndex
+  href: AmplifyColor.CameraCollection.html#AmplifyColor_CameraCollection_SelectedIndex
+  name: SelectedIndex
+  nameWithType: CameraCollection.SelectedIndex
+  fullName: AmplifyColor.CameraCollection.SelectedIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AmplifyColor.CameraCollection.SelectedCamera*
+  commentId: Overload:AmplifyColor.CameraCollection.SelectedCamera
+  href: AmplifyColor.CameraCollection.html#AmplifyColor_CameraCollection_SelectedCamera
+  name: SelectedCamera
+  nameWithType: CameraCollection.SelectedCamera
+  fullName: AmplifyColor.CameraCollection.SelectedCamera
+- uid: UnityEngine.Camera
+  commentId: T:UnityEngine.Camera
+  parent: UnityEngine
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: UnityEngine.Camera
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: AmplifyColor.CameraCollection.GenerateCameraList*
+  commentId: Overload:AmplifyColor.CameraCollection.GenerateCameraList
+  href: AmplifyColor.CameraCollection.html#AmplifyColor_CameraCollection_GenerateCameraList
+  name: GenerateCameraList
+  nameWithType: CameraCollection.GenerateCameraList
+  fullName: AmplifyColor.CameraCollection.GenerateCameraList
+- uid: AmplifyColor.CameraCollection.GetCurrentEffectTexture*
+  commentId: Overload:AmplifyColor.CameraCollection.GetCurrentEffectTexture
+  href: AmplifyColor.CameraCollection.html#AmplifyColor_CameraCollection_GetCurrentEffectTexture
+  name: GetCurrentEffectTexture
+  nameWithType: CameraCollection.GetCurrentEffectTexture
+  fullName: AmplifyColor.CameraCollection.GetCurrentEffectTexture
+- uid: UnityEngine.Texture2D
+  commentId: T:UnityEngine.Texture2D
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: UnityEngine.Texture2D

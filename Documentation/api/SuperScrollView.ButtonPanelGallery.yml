@@ -1,0 +1,418 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.ButtonPanelGallery
+  commentId: T:SuperScrollView.ButtonPanelGallery
+  id: ButtonPanelGallery
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.ButtonPanelGallery.Start
+  - SuperScrollView.ButtonPanelGallery.mDataSourceMgr
+  - SuperScrollView.ButtonPanelGallery.mLoopListView
+  langs:
+  - csharp
+  - vb
+  name: ButtonPanelGallery
+  nameWithType: ButtonPanelGallery
+  fullName: SuperScrollView.ButtonPanelGallery
+  type: Class
+  source:
+    id: ButtonPanelGallery
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\ButtonPanel\ButtonPanelGallery.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public class ButtonPanelGallery
+    content.vb: Public Class ButtonPanelGallery
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SuperScrollView.ButtonPanelGallery.mLoopListView
+  commentId: F:SuperScrollView.ButtonPanelGallery.mLoopListView
+  id: mLoopListView
+  parent: SuperScrollView.ButtonPanelGallery
+  langs:
+  - csharp
+  - vb
+  name: mLoopListView
+  nameWithType: ButtonPanelGallery.mLoopListView
+  fullName: SuperScrollView.ButtonPanelGallery.mLoopListView
+  type: Field
+  source:
+    id: mLoopListView
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\ButtonPanel\ButtonPanelGallery.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public LoopListView2 mLoopListView
+    return:
+      type: SuperScrollView.LoopListView2
+    content.vb: Public mLoopListView As LoopListView2
+- uid: SuperScrollView.ButtonPanelGallery.mDataSourceMgr
+  commentId: F:SuperScrollView.ButtonPanelGallery.mDataSourceMgr
+  id: mDataSourceMgr
+  parent: SuperScrollView.ButtonPanelGallery
+  langs:
+  - csharp
+  - vb
+  name: mDataSourceMgr
+  nameWithType: ButtonPanelGallery.mDataSourceMgr
+  fullName: SuperScrollView.ButtonPanelGallery.mDataSourceMgr
+  type: Field
+  source:
+    id: mDataSourceMgr
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\ButtonPanel\ButtonPanelGallery.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public DataSourceMgr<ItemData> mDataSourceMgr
+    return:
+      type: SuperScrollView.DataSourceMgr{SuperScrollView.ItemData}
+    content.vb: Public mDataSourceMgr As DataSourceMgr(Of ItemData)
+- uid: SuperScrollView.ButtonPanelGallery.Start
+  commentId: M:SuperScrollView.ButtonPanelGallery.Start
+  id: Start
+  parent: SuperScrollView.ButtonPanelGallery
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ButtonPanelGallery.Start()
+  fullName: SuperScrollView.ButtonPanelGallery.Start()
+  type: Method
+  source:
+    id: Start
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\ButtonPanel\ButtonPanelGallery.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start()
+  overload: SuperScrollView.ButtonPanelGallery.Start*
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SuperScrollView.LoopListView2
+  commentId: T:SuperScrollView.LoopListView2
+  parent: SuperScrollView
+  href: SuperScrollView.LoopListView2.html
+  name: LoopListView2
+  nameWithType: LoopListView2
+  fullName: SuperScrollView.LoopListView2
+- uid: SuperScrollView.DataSourceMgr{SuperScrollView.ItemData}
+  commentId: T:SuperScrollView.DataSourceMgr{SuperScrollView.ItemData}
+  parent: SuperScrollView
+  definition: SuperScrollView.DataSourceMgr`1
+  href: SuperScrollView.DataSourceMgr-1.html
+  name: DataSourceMgr<ItemData>
+  nameWithType: DataSourceMgr<ItemData>
+  fullName: SuperScrollView.DataSourceMgr<SuperScrollView.ItemData>
+  nameWithType.vb: DataSourceMgr(Of ItemData)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of SuperScrollView.ItemData)
+  name.vb: DataSourceMgr(Of ItemData)
+  spec.csharp:
+  - uid: SuperScrollView.DataSourceMgr`1
+    name: DataSourceMgr
+    href: SuperScrollView.DataSourceMgr-1.html
+  - name: <
+  - uid: SuperScrollView.ItemData
+    name: ItemData
+    href: SuperScrollView.ItemData.html
+  - name: '>'
+  spec.vb:
+  - uid: SuperScrollView.DataSourceMgr`1
+    name: DataSourceMgr
+    href: SuperScrollView.DataSourceMgr-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SuperScrollView.ItemData
+    name: ItemData
+    href: SuperScrollView.ItemData.html
+  - name: )
+- uid: SuperScrollView.DataSourceMgr`1
+  commentId: T:SuperScrollView.DataSourceMgr`1
+  href: SuperScrollView.DataSourceMgr-1.html
+  name: DataSourceMgr<T>
+  nameWithType: DataSourceMgr<T>
+  fullName: SuperScrollView.DataSourceMgr<T>
+  nameWithType.vb: DataSourceMgr(Of T)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T)
+  name.vb: DataSourceMgr(Of T)
+  spec.csharp:
+  - uid: SuperScrollView.DataSourceMgr`1
+    name: DataSourceMgr
+    href: SuperScrollView.DataSourceMgr-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SuperScrollView.DataSourceMgr`1
+    name: DataSourceMgr
+    href: SuperScrollView.DataSourceMgr-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SuperScrollView.ButtonPanelGallery.Start*
+  commentId: Overload:SuperScrollView.ButtonPanelGallery.Start
+  href: SuperScrollView.ButtonPanelGallery.html#SuperScrollView_ButtonPanelGallery_Start
+  name: Start
+  nameWithType: ButtonPanelGallery.Start
+  fullName: SuperScrollView.ButtonPanelGallery.Start

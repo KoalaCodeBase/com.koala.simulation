@@ -1,0 +1,1030 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.Container
+  commentId: T:Koala.Simulation.Inventory.Container
+  id: Container
+  parent: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.Container.Add(Koala.Simulation.Inventory.Item)
+  - Koala.Simulation.Inventory.Container.AddFilter(Koala.Simulation.Inventory.IContainerFilter)
+  - Koala.Simulation.Inventory.Container.Capacity
+  - Koala.Simulation.Inventory.Container.Count
+  - Koala.Simulation.Inventory.Container.Initialize
+  - Koala.Simulation.Inventory.Container.IsEmpty
+  - Koala.Simulation.Inventory.Container.IsFull
+  - Koala.Simulation.Inventory.Container.OnItemAdded
+  - Koala.Simulation.Inventory.Container.OnItemRemoved
+  - Koala.Simulation.Inventory.Container.Peek
+  - Koala.Simulation.Inventory.Container.PrefabId
+  - Koala.Simulation.Inventory.Container.Register(Koala.Simulation.Inventory.ContainerDTO,System.Boolean)
+  - Koala.Simulation.Inventory.Container.Register(System.Boolean)
+  - Koala.Simulation.Inventory.Container.Remove(Koala.Simulation.Inventory.Item@)
+  - Koala.Simulation.Inventory.Container.RemoveFilter(Koala.Simulation.Inventory.IContainerFilter)
+  - Koala.Simulation.Inventory.Container.SnapshotTransform
+  - Koala.Simulation.Inventory.Container.ToDTO
+  - Koala.Simulation.Inventory.Container.TransferTo(Koala.Simulation.Inventory.Container)
+  - Koala.Simulation.Inventory.Container.UniqueId
+  langs:
+  - csharp
+  - vb
+  name: Container
+  nameWithType: Container
+  fullName: Koala.Simulation.Inventory.Container
+  type: Class
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Container
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 12
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: >-
+    Represents a container that stores and manages items using defined slots.
+
+
+    Containers can be nested, filtered, and serialized to DTOs for saving/loading.
+
+    They support adding, removing, and transferring items between containers.
+  example: []
+  syntax:
+    content: >-
+      [AddComponentMenu("Simulation/Inventory/Container")]
+
+      [Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")]
+
+      public class Container : MonoBehaviour
+    content.vb: >-
+      <AddComponentMenu("Simulation/Inventory/Container")>
+
+      <Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")>
+
+      Public Class Container Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Simulation/Inventory/Container
+  - type: UnityEngine.IconAttribute
+    ctor: UnityEngine.IconAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Packages/com.koala.simulation/Editor/Icons/koala.png
+- uid: Koala.Simulation.Inventory.Container.Capacity
+  commentId: P:Koala.Simulation.Inventory.Container.Capacity
+  id: Capacity
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  nameWithType: Container.Capacity
+  fullName: Koala.Simulation.Inventory.Container.Capacity
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Capacity
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 33
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Maximum number of items the container can hold.
+  example: []
+  syntax:
+    content: public int Capacity { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Capacity As Integer
+  overload: Koala.Simulation.Inventory.Container.Capacity*
+- uid: Koala.Simulation.Inventory.Container.Count
+  commentId: P:Koala.Simulation.Inventory.Container.Count
+  id: Count
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: Container.Count
+  fullName: Koala.Simulation.Inventory.Container.Count
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Count
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 38
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Current number of items stored in the container.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Koala.Simulation.Inventory.Container.Count*
+- uid: Koala.Simulation.Inventory.Container.IsFull
+  commentId: P:Koala.Simulation.Inventory.Container.IsFull
+  id: IsFull
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: IsFull
+  nameWithType: Container.IsFull
+  fullName: Koala.Simulation.Inventory.Container.IsFull
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: IsFull
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 43
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Whether the container is full.
+  example: []
+  syntax:
+    content: public bool IsFull { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFull As Boolean
+  overload: Koala.Simulation.Inventory.Container.IsFull*
+- uid: Koala.Simulation.Inventory.Container.IsEmpty
+  commentId: P:Koala.Simulation.Inventory.Container.IsEmpty
+  id: IsEmpty
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: Container.IsEmpty
+  fullName: Koala.Simulation.Inventory.Container.IsEmpty
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: IsEmpty
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 48
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Whether the container is empty.
+  example: []
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: Koala.Simulation.Inventory.Container.IsEmpty*
+- uid: Koala.Simulation.Inventory.Container.UniqueId
+  commentId: P:Koala.Simulation.Inventory.Container.UniqueId
+  id: UniqueId
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: UniqueId
+  nameWithType: Container.UniqueId
+  fullName: Koala.Simulation.Inventory.Container.UniqueId
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: UniqueId
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 53
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Unique identifier assigned to this container.
+  example: []
+  syntax:
+    content: public Guid UniqueId { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public ReadOnly Property UniqueId As Guid
+  overload: Koala.Simulation.Inventory.Container.UniqueId*
+- uid: Koala.Simulation.Inventory.Container.PrefabId
+  commentId: P:Koala.Simulation.Inventory.Container.PrefabId
+  id: PrefabId
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: PrefabId
+  nameWithType: Container.PrefabId
+  fullName: Koala.Simulation.Inventory.Container.PrefabId
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PrefabId
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 58
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Prefab identifier used to recreate this container.
+  example: []
+  syntax:
+    content: public string PrefabId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PrefabId As String
+  overload: Koala.Simulation.Inventory.Container.PrefabId*
+- uid: Koala.Simulation.Inventory.Container.OnItemAdded
+  commentId: E:Koala.Simulation.Inventory.Container.OnItemAdded
+  id: OnItemAdded
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: OnItemAdded
+  nameWithType: Container.OnItemAdded
+  fullName: Koala.Simulation.Inventory.Container.OnItemAdded
+  type: Event
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnItemAdded
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 63
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Triggered when an item is added to the container.
+  example: []
+  syntax:
+    content: public event Action<Item> OnItemAdded
+    return:
+      type: System.Action{Koala.Simulation.Inventory.Item}
+    content.vb: Public Event OnItemAdded As Action(Of Item)
+- uid: Koala.Simulation.Inventory.Container.OnItemRemoved
+  commentId: E:Koala.Simulation.Inventory.Container.OnItemRemoved
+  id: OnItemRemoved
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: OnItemRemoved
+  nameWithType: Container.OnItemRemoved
+  fullName: Koala.Simulation.Inventory.Container.OnItemRemoved
+  type: Event
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnItemRemoved
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 68
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Triggered when an item is removed from the container.
+  example: []
+  syntax:
+    content: public event Action<Item> OnItemRemoved
+    return:
+      type: System.Action{Koala.Simulation.Inventory.Item}
+    content.vb: Public Event OnItemRemoved As Action(Of Item)
+- uid: Koala.Simulation.Inventory.Container.Initialize
+  commentId: M:Koala.Simulation.Inventory.Container.Initialize
+  id: Initialize
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: Container.Initialize()
+  fullName: Koala.Simulation.Inventory.Container.Initialize()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Initialize
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 76
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: >-
+    Initializes the container so it can be used for item operations.
+
+
+    Must be called after instantiating a container before using methods like Add or Remove.
+
+    Also initializes all nested containers recursively.
+  example: []
+  syntax:
+    content: public void Initialize()
+    content.vb: Public Sub Initialize()
+  overload: Koala.Simulation.Inventory.Container.Initialize*
+- uid: Koala.Simulation.Inventory.Container.Register(System.Boolean)
+  commentId: M:Koala.Simulation.Inventory.Container.Register(System.Boolean)
+  id: Register(System.Boolean)
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: Register(bool)
+  nameWithType: Container.Register(bool)
+  fullName: Koala.Simulation.Inventory.Container.Register(bool)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Register
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 101
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: >-
+    Registers a newly created container into the world and assigns it a unique ID.
+
+
+    Call this after <xref href="Koala.Simulation.Inventory.Container.Initialize" data-throw-if-not-resolved="false"></xref> when creating a container that has never been saved before.
+
+    Also registers nested containers and fills slots with default items if set.
+
+
+    If this method is not called, the container will not be tracked or saved.
+  example: []
+  syntax:
+    content: public void Register(bool isNested = false)
+    parameters:
+    - id: isNested
+      type: System.Boolean
+      description: Whether this container is nested inside another container.
+    content.vb: Public Sub Register(isNested As Boolean = False)
+  overload: Koala.Simulation.Inventory.Container.Register*
+  nameWithType.vb: Container.Register(Boolean)
+  fullName.vb: Koala.Simulation.Inventory.Container.Register(Boolean)
+  name.vb: Register(Boolean)
+- uid: Koala.Simulation.Inventory.Container.Register(Koala.Simulation.Inventory.ContainerDTO,System.Boolean)
+  commentId: M:Koala.Simulation.Inventory.Container.Register(Koala.Simulation.Inventory.ContainerDTO,System.Boolean)
+  id: Register(Koala.Simulation.Inventory.ContainerDTO,System.Boolean)
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: Register(ContainerDTO, bool)
+  nameWithType: Container.Register(ContainerDTO, bool)
+  fullName: Koala.Simulation.Inventory.Container.Register(Koala.Simulation.Inventory.ContainerDTO, bool)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Register
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 139
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: >-
+    Restores a container from saved data and registers it into the world.
+
+
+    Call this after <xref href="Koala.Simulation.Inventory.Container.Initialize" data-throw-if-not-resolved="false"></xref> when loading a container from a save file.
+
+    Loads its unique ID, transform, stored items, and nested containers from the provided DTO.
+
+
+    If this method is not called, the container will not be tracked or saved.
+  example: []
+  syntax:
+    content: public void Register(ContainerDTO dto, bool isNested = false)
+    parameters:
+    - id: dto
+      type: Koala.Simulation.Inventory.ContainerDTO
+      description: The saved container data.
+    - id: isNested
+      type: System.Boolean
+      description: Whether this container is nested inside another container.
+    content.vb: Public Sub Register(dto As ContainerDTO, isNested As Boolean = False)
+  overload: Koala.Simulation.Inventory.Container.Register*
+  nameWithType.vb: Container.Register(ContainerDTO, Boolean)
+  fullName.vb: Koala.Simulation.Inventory.Container.Register(Koala.Simulation.Inventory.ContainerDTO, Boolean)
+  name.vb: Register(ContainerDTO, Boolean)
+- uid: Koala.Simulation.Inventory.Container.Add(Koala.Simulation.Inventory.Item)
+  commentId: M:Koala.Simulation.Inventory.Container.Add(Koala.Simulation.Inventory.Item)
+  id: Add(Koala.Simulation.Inventory.Item)
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: Add(Item)
+  nameWithType: Container.Add(Item)
+  fullName: Koala.Simulation.Inventory.Container.Add(Koala.Simulation.Inventory.Item)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Add
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 209
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Adds an item to the container.
+  example: []
+  syntax:
+    content: public bool Add(Item item)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.Item
+      description: The item to add.
+    return:
+      type: System.Boolean
+      description: True if the item was successfully added, false otherwise.
+    content.vb: Public Function Add(item As Item) As Boolean
+  overload: Koala.Simulation.Inventory.Container.Add*
+- uid: Koala.Simulation.Inventory.Container.TransferTo(Koala.Simulation.Inventory.Container)
+  commentId: M:Koala.Simulation.Inventory.Container.TransferTo(Koala.Simulation.Inventory.Container)
+  id: TransferTo(Koala.Simulation.Inventory.Container)
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: TransferTo(Container)
+  nameWithType: Container.TransferTo(Container)
+  fullName: Koala.Simulation.Inventory.Container.TransferTo(Koala.Simulation.Inventory.Container)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: TransferTo
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 238
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Transfers an item from this container to another container.
+  example: []
+  syntax:
+    content: public bool TransferTo(Container target)
+    parameters:
+    - id: target
+      type: Koala.Simulation.Inventory.Container
+      description: The target container to transfer to.
+    return:
+      type: System.Boolean
+      description: True if the transfer succeeded, false otherwise.
+    content.vb: Public Function TransferTo(target As Container) As Boolean
+  overload: Koala.Simulation.Inventory.Container.TransferTo*
+- uid: Koala.Simulation.Inventory.Container.Remove(Koala.Simulation.Inventory.Item@)
+  commentId: M:Koala.Simulation.Inventory.Container.Remove(Koala.Simulation.Inventory.Item@)
+  id: Remove(Koala.Simulation.Inventory.Item@)
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: Remove(out Item)
+  nameWithType: Container.Remove(out Item)
+  fullName: Koala.Simulation.Inventory.Container.Remove(out Koala.Simulation.Inventory.Item)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Remove
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 261
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Removes an item from the container.
+  example: []
+  syntax:
+    content: public bool Remove(out Item item)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.Item
+      description: The removed item.
+    return:
+      type: System.Boolean
+      description: If true, removed item is returned.
+    content.vb: Public Function Remove(item As Item) As Boolean
+  overload: Koala.Simulation.Inventory.Container.Remove*
+  nameWithType.vb: Container.Remove(Item)
+  fullName.vb: Koala.Simulation.Inventory.Container.Remove(Koala.Simulation.Inventory.Item)
+  name.vb: Remove(Item)
+- uid: Koala.Simulation.Inventory.Container.Peek
+  commentId: M:Koala.Simulation.Inventory.Container.Peek
+  id: Peek
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: Peek()
+  nameWithType: Container.Peek()
+  fullName: Koala.Simulation.Inventory.Container.Peek()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Peek
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 275
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Returns the last added item without removing it.
+  example: []
+  syntax:
+    content: public Item Peek()
+    return:
+      type: Koala.Simulation.Inventory.Item
+      description: The last added item.
+    content.vb: Public Function Peek() As Item
+  overload: Koala.Simulation.Inventory.Container.Peek*
+- uid: Koala.Simulation.Inventory.Container.SnapshotTransform
+  commentId: M:Koala.Simulation.Inventory.Container.SnapshotTransform
+  id: SnapshotTransform
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: SnapshotTransform()
+  nameWithType: Container.SnapshotTransform()
+  fullName: Koala.Simulation.Inventory.Container.SnapshotTransform()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: SnapshotTransform
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 280
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Saves the current world position and rotation of the container.
+  example: []
+  syntax:
+    content: public void SnapshotTransform()
+    content.vb: Public Sub SnapshotTransform()
+  overload: Koala.Simulation.Inventory.Container.SnapshotTransform*
+- uid: Koala.Simulation.Inventory.Container.AddFilter(Koala.Simulation.Inventory.IContainerFilter)
+  commentId: M:Koala.Simulation.Inventory.Container.AddFilter(Koala.Simulation.Inventory.IContainerFilter)
+  id: AddFilter(Koala.Simulation.Inventory.IContainerFilter)
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: AddFilter(IContainerFilter)
+  nameWithType: Container.AddFilter(IContainerFilter)
+  fullName: Koala.Simulation.Inventory.Container.AddFilter(Koala.Simulation.Inventory.IContainerFilter)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: AddFilter
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 292
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Adds a filter to restrict which items the container accepts.
+  example: []
+  syntax:
+    content: public void AddFilter(IContainerFilter filter)
+    parameters:
+    - id: filter
+      type: Koala.Simulation.Inventory.IContainerFilter
+      description: The filter to add.
+    content.vb: Public Sub AddFilter(filter As IContainerFilter)
+  overload: Koala.Simulation.Inventory.Container.AddFilter*
+- uid: Koala.Simulation.Inventory.Container.RemoveFilter(Koala.Simulation.Inventory.IContainerFilter)
+  commentId: M:Koala.Simulation.Inventory.Container.RemoveFilter(Koala.Simulation.Inventory.IContainerFilter)
+  id: RemoveFilter(Koala.Simulation.Inventory.IContainerFilter)
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: RemoveFilter(IContainerFilter)
+  nameWithType: Container.RemoveFilter(IContainerFilter)
+  fullName: Koala.Simulation.Inventory.Container.RemoveFilter(Koala.Simulation.Inventory.IContainerFilter)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: RemoveFilter
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 302
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Removes a filter from the container.
+  example: []
+  syntax:
+    content: public void RemoveFilter(IContainerFilter filter)
+    parameters:
+    - id: filter
+      type: Koala.Simulation.Inventory.IContainerFilter
+      description: The filter to remove.
+    content.vb: Public Sub RemoveFilter(filter As IContainerFilter)
+  overload: Koala.Simulation.Inventory.Container.RemoveFilter*
+- uid: Koala.Simulation.Inventory.Container.ToDTO
+  commentId: M:Koala.Simulation.Inventory.Container.ToDTO
+  id: ToDTO
+  parent: Koala.Simulation.Inventory.Container
+  langs:
+  - csharp
+  - vb
+  name: ToDTO()
+  nameWithType: Container.ToDTO()
+  fullName: Koala.Simulation.Inventory.Container.ToDTO()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Container.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ToDTO
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Container.cs
+    startLine: 311
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Creates a DTO representation of the container for saving.
+  example: []
+  syntax:
+    content: public ContainerDTO ToDTO()
+    return:
+      type: Koala.Simulation.Inventory.ContainerDTO
+      description: A container DTO with current state.
+    content.vb: Public Function ToDTO() As ContainerDTO
+  overload: Koala.Simulation.Inventory.Container.ToDTO*
+references:
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Inventory.Container.Capacity*
+  commentId: Overload:Koala.Simulation.Inventory.Container.Capacity
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_Capacity
+  name: Capacity
+  nameWithType: Container.Capacity
+  fullName: Koala.Simulation.Inventory.Container.Capacity
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koala.Simulation.Inventory.Container.Count*
+  commentId: Overload:Koala.Simulation.Inventory.Container.Count
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_Count
+  name: Count
+  nameWithType: Container.Count
+  fullName: Koala.Simulation.Inventory.Container.Count
+- uid: Koala.Simulation.Inventory.Container.IsFull*
+  commentId: Overload:Koala.Simulation.Inventory.Container.IsFull
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_IsFull
+  name: IsFull
+  nameWithType: Container.IsFull
+  fullName: Koala.Simulation.Inventory.Container.IsFull
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koala.Simulation.Inventory.Container.IsEmpty*
+  commentId: Overload:Koala.Simulation.Inventory.Container.IsEmpty
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_IsEmpty
+  name: IsEmpty
+  nameWithType: Container.IsEmpty
+  fullName: Koala.Simulation.Inventory.Container.IsEmpty
+- uid: Koala.Simulation.Inventory.Container.UniqueId*
+  commentId: Overload:Koala.Simulation.Inventory.Container.UniqueId
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_UniqueId
+  name: UniqueId
+  nameWithType: Container.UniqueId
+  fullName: Koala.Simulation.Inventory.Container.UniqueId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Koala.Simulation.Inventory.Container.PrefabId*
+  commentId: Overload:Koala.Simulation.Inventory.Container.PrefabId
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_PrefabId
+  name: PrefabId
+  nameWithType: Container.PrefabId
+  fullName: Koala.Simulation.Inventory.Container.PrefabId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Action{Koala.Simulation.Inventory.Item}
+  commentId: T:System.Action{Koala.Simulation.Inventory.Item}
+  parent: System
+  definition: System.Action`1
+  href: Koala.Simulation.Inventory.Item.html
+  name: Action<Item>
+  nameWithType: Action<Item>
+  fullName: System.Action<Koala.Simulation.Inventory.Item>
+  nameWithType.vb: Action(Of Item)
+  fullName.vb: System.Action(Of Koala.Simulation.Inventory.Item)
+  name.vb: Action(Of Item)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: Koala.Simulation.Inventory.Item
+    name: Item
+    href: Koala.Simulation.Inventory.Item.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koala.Simulation.Inventory.Item
+    name: Item
+    href: Koala.Simulation.Inventory.Item.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Koala.Simulation.Inventory.Container.Initialize*
+  commentId: Overload:Koala.Simulation.Inventory.Container.Initialize
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_Initialize
+  name: Initialize
+  nameWithType: Container.Initialize
+  fullName: Koala.Simulation.Inventory.Container.Initialize
+- uid: Koala.Simulation.Inventory.Container.Initialize
+  commentId: M:Koala.Simulation.Inventory.Container.Initialize
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_Initialize
+  name: Initialize()
+  nameWithType: Container.Initialize()
+  fullName: Koala.Simulation.Inventory.Container.Initialize()
+  spec.csharp:
+  - uid: Koala.Simulation.Inventory.Container.Initialize
+    name: Initialize
+    href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_Initialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Inventory.Container.Initialize
+    name: Initialize
+    href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_Initialize
+  - name: (
+  - name: )
+- uid: Koala.Simulation.Inventory.Container.Register*
+  commentId: Overload:Koala.Simulation.Inventory.Container.Register
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_Register_System_Boolean_
+  name: Register
+  nameWithType: Container.Register
+  fullName: Koala.Simulation.Inventory.Container.Register
+- uid: Koala.Simulation.Inventory.ContainerDTO
+  commentId: T:Koala.Simulation.Inventory.ContainerDTO
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.ContainerDTO.html
+  name: ContainerDTO
+  nameWithType: ContainerDTO
+  fullName: Koala.Simulation.Inventory.ContainerDTO
+- uid: Koala.Simulation.Inventory.Container.Add*
+  commentId: Overload:Koala.Simulation.Inventory.Container.Add
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_Add_Koala_Simulation_Inventory_Item_
+  name: Add
+  nameWithType: Container.Add
+  fullName: Koala.Simulation.Inventory.Container.Add
+- uid: Koala.Simulation.Inventory.Item
+  commentId: T:Koala.Simulation.Inventory.Item
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.Item.html
+  name: Item
+  nameWithType: Item
+  fullName: Koala.Simulation.Inventory.Item
+- uid: Koala.Simulation.Inventory.Container.TransferTo*
+  commentId: Overload:Koala.Simulation.Inventory.Container.TransferTo
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_TransferTo_Koala_Simulation_Inventory_Container_
+  name: TransferTo
+  nameWithType: Container.TransferTo
+  fullName: Koala.Simulation.Inventory.Container.TransferTo
+- uid: Koala.Simulation.Inventory.Container
+  commentId: T:Koala.Simulation.Inventory.Container
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.Container.html
+  name: Container
+  nameWithType: Container
+  fullName: Koala.Simulation.Inventory.Container
+- uid: Koala.Simulation.Inventory.Container.Remove*
+  commentId: Overload:Koala.Simulation.Inventory.Container.Remove
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_Remove_Koala_Simulation_Inventory_Item__
+  name: Remove
+  nameWithType: Container.Remove
+  fullName: Koala.Simulation.Inventory.Container.Remove
+- uid: Koala.Simulation.Inventory.Container.Peek*
+  commentId: Overload:Koala.Simulation.Inventory.Container.Peek
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_Peek
+  name: Peek
+  nameWithType: Container.Peek
+  fullName: Koala.Simulation.Inventory.Container.Peek
+- uid: Koala.Simulation.Inventory.Container.SnapshotTransform*
+  commentId: Overload:Koala.Simulation.Inventory.Container.SnapshotTransform
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_SnapshotTransform
+  name: SnapshotTransform
+  nameWithType: Container.SnapshotTransform
+  fullName: Koala.Simulation.Inventory.Container.SnapshotTransform
+- uid: Koala.Simulation.Inventory.Container.AddFilter*
+  commentId: Overload:Koala.Simulation.Inventory.Container.AddFilter
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_AddFilter_Koala_Simulation_Inventory_IContainerFilter_
+  name: AddFilter
+  nameWithType: Container.AddFilter
+  fullName: Koala.Simulation.Inventory.Container.AddFilter
+- uid: Koala.Simulation.Inventory.IContainerFilter
+  commentId: T:Koala.Simulation.Inventory.IContainerFilter
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.IContainerFilter.html
+  name: IContainerFilter
+  nameWithType: IContainerFilter
+  fullName: Koala.Simulation.Inventory.IContainerFilter
+- uid: Koala.Simulation.Inventory.Container.RemoveFilter*
+  commentId: Overload:Koala.Simulation.Inventory.Container.RemoveFilter
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_RemoveFilter_Koala_Simulation_Inventory_IContainerFilter_
+  name: RemoveFilter
+  nameWithType: Container.RemoveFilter
+  fullName: Koala.Simulation.Inventory.Container.RemoveFilter
+- uid: Koala.Simulation.Inventory.Container.ToDTO*
+  commentId: Overload:Koala.Simulation.Inventory.Container.ToDTO
+  href: Koala.Simulation.Inventory.Container.html#Koala_Simulation_Inventory_Container_ToDTO
+  name: ToDTO
+  nameWithType: Container.ToDTO
+  fullName: Koala.Simulation.Inventory.Container.ToDTO

@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.Core.InteractableRegistry
+  commentId: T:Koala.Simulation.Interaction.Core.InteractableRegistry
+  id: InteractableRegistry
+  parent: Koala.Simulation.Interaction.Core
+  children:
+  - Koala.Simulation.Interaction.Core.InteractableRegistry.Get(System.Int32)
+  - Koala.Simulation.Interaction.Core.InteractableRegistry.Register(Koala.Simulation.Interaction.Core.InteractableObject)
+  langs:
+  - csharp
+  - vb
+  name: InteractableRegistry
+  nameWithType: InteractableRegistry
+  fullName: Koala.Simulation.Interaction.Core.InteractableRegistry
+  type: Class
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractorRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InteractableRegistry
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractorRegistry.cs
+    startLine: 35
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Provides registration and lookup for interactable objects by ID.
+  example: []
+  syntax:
+    content: public static class InteractableRegistry
+    content.vb: Public Module InteractableRegistry
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Interaction.Core.InteractableRegistry.Register(Koala.Simulation.Interaction.Core.InteractableObject)
+  commentId: M:Koala.Simulation.Interaction.Core.InteractableRegistry.Register(Koala.Simulation.Interaction.Core.InteractableObject)
+  id: Register(Koala.Simulation.Interaction.Core.InteractableObject)
+  parent: Koala.Simulation.Interaction.Core.InteractableRegistry
+  langs:
+  - csharp
+  - vb
+  name: Register(InteractableObject)
+  nameWithType: InteractableRegistry.Register(InteractableObject)
+  fullName: Koala.Simulation.Interaction.Core.InteractableRegistry.Register(Koala.Simulation.Interaction.Core.InteractableObject)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractorRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Register
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractorRegistry.cs
+    startLine: 45
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Registers a new interactable object and assigns it a unique ID.
+  example: []
+  syntax:
+    content: public static int Register(InteractableObject interactableObject)
+    parameters:
+    - id: interactableObject
+      type: Koala.Simulation.Interaction.Core.InteractableObject
+      description: The interactable object to register.
+    return:
+      type: System.Int32
+      description: The assigned interactable ID.
+    content.vb: Public Shared Function Register(interactableObject As InteractableObject) As Integer
+  overload: Koala.Simulation.Interaction.Core.InteractableRegistry.Register*
+- uid: Koala.Simulation.Interaction.Core.InteractableRegistry.Get(System.Int32)
+  commentId: M:Koala.Simulation.Interaction.Core.InteractableRegistry.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Koala.Simulation.Interaction.Core.InteractableRegistry
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: InteractableRegistry.Get(int)
+  fullName: Koala.Simulation.Interaction.Core.InteractableRegistry.Get(int)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractorRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Get
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractorRegistry.cs
+    startLine: 57
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Retrieves an interactable object by its ID.
+  example: []
+  syntax:
+    content: public static InteractableObject Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: The interactable ID.
+    return:
+      type: Koala.Simulation.Interaction.Core.InteractableObject
+      description: The registered interactable object.
+    content.vb: Public Shared Function [Get](id As Integer) As InteractableObject
+  overload: Koala.Simulation.Interaction.Core.InteractableRegistry.Get*
+  nameWithType.vb: InteractableRegistry.Get(Integer)
+  fullName.vb: Koala.Simulation.Interaction.Core.InteractableRegistry.Get(Integer)
+  name.vb: Get(Integer)
+references:
+- uid: Koala.Simulation.Interaction.Core
+  commentId: N:Koala.Simulation.Interaction.Core
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Core
+  nameWithType: Koala.Simulation.Interaction.Core
+  fullName: Koala.Simulation.Interaction.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Interaction.Core.InteractableRegistry.Register*
+  commentId: Overload:Koala.Simulation.Interaction.Core.InteractableRegistry.Register
+  href: Koala.Simulation.Interaction.Core.InteractableRegistry.html#Koala_Simulation_Interaction_Core_InteractableRegistry_Register_Koala_Simulation_Interaction_Core_InteractableObject_
+  name: Register
+  nameWithType: InteractableRegistry.Register
+  fullName: Koala.Simulation.Interaction.Core.InteractableRegistry.Register
+- uid: Koala.Simulation.Interaction.Core.InteractableObject
+  commentId: T:Koala.Simulation.Interaction.Core.InteractableObject
+  parent: Koala.Simulation.Interaction.Core
+  href: Koala.Simulation.Interaction.Core.InteractableObject.html
+  name: InteractableObject
+  nameWithType: InteractableObject
+  fullName: Koala.Simulation.Interaction.Core.InteractableObject
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koala.Simulation.Interaction.Core.InteractableRegistry.Get*
+  commentId: Overload:Koala.Simulation.Interaction.Core.InteractableRegistry.Get
+  href: Koala.Simulation.Interaction.Core.InteractableRegistry.html#Koala_Simulation_Interaction_Core_InteractableRegistry_Get_System_Int32_
+  name: Get
+  nameWithType: InteractableRegistry.Get
+  fullName: Koala.Simulation.Interaction.Core.InteractableRegistry.Get

@@ -1,0 +1,834 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Internal.AESEncryptionAlgorithm
+  commentId: T:ES3Internal.AESEncryptionAlgorithm
+  id: AESEncryptionAlgorithm
+  parent: ES3Internal
+  children:
+  - ES3Internal.AESEncryptionAlgorithm.Decrypt(System.Byte[],System.String,System.Int32)
+  - ES3Internal.AESEncryptionAlgorithm.Decrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  - ES3Internal.AESEncryptionAlgorithm.Encrypt(System.Byte[],System.String,System.Int32)
+  - ES3Internal.AESEncryptionAlgorithm.Encrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: AESEncryptionAlgorithm
+  nameWithType: AESEncryptionAlgorithm
+  fullName: ES3Internal.AESEncryptionAlgorithm
+  type: Class
+  source:
+    id: AESEncryptionAlgorithm
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3Crypto.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: 'public class AESEncryptionAlgorithm : EncryptionAlgorithm'
+    content.vb: Public Class AESEncryptionAlgorithm Inherits EncryptionAlgorithm
+  inheritance:
+  - System.Object
+  - ES3Internal.EncryptionAlgorithm
+  inheritedMembers:
+  - ES3Internal.EncryptionAlgorithm.CopyStream(System.IO.Stream,System.IO.Stream,System.Int32)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ES3Internal.AESEncryptionAlgorithm.Encrypt(System.Byte[],System.String,System.Int32)
+  commentId: M:ES3Internal.AESEncryptionAlgorithm.Encrypt(System.Byte[],System.String,System.Int32)
+  id: Encrypt(System.Byte[],System.String,System.Int32)
+  parent: ES3Internal.AESEncryptionAlgorithm
+  langs:
+  - csharp
+  - vb
+  name: Encrypt(byte[], string, int)
+  nameWithType: AESEncryptionAlgorithm.Encrypt(byte[], string, int)
+  fullName: ES3Internal.AESEncryptionAlgorithm.Encrypt(byte[], string, int)
+  type: Method
+  source:
+    id: Encrypt
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3Crypto.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  example: []
+  syntax:
+    content: public override byte[] Encrypt(byte[] bytes, string password, int bufferSize)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    - id: password
+      type: System.String
+    - id: bufferSize
+      type: System.Int32
+    return:
+      type: System.Byte[]
+    content.vb: Public Overrides Function Encrypt(bytes As Byte(), password As String, bufferSize As Integer) As Byte()
+  overridden: ES3Internal.EncryptionAlgorithm.Encrypt(System.Byte[],System.String,System.Int32)
+  overload: ES3Internal.AESEncryptionAlgorithm.Encrypt*
+  nameWithType.vb: AESEncryptionAlgorithm.Encrypt(Byte(), String, Integer)
+  fullName.vb: ES3Internal.AESEncryptionAlgorithm.Encrypt(Byte(), String, Integer)
+  name.vb: Encrypt(Byte(), String, Integer)
+- uid: ES3Internal.AESEncryptionAlgorithm.Decrypt(System.Byte[],System.String,System.Int32)
+  commentId: M:ES3Internal.AESEncryptionAlgorithm.Decrypt(System.Byte[],System.String,System.Int32)
+  id: Decrypt(System.Byte[],System.String,System.Int32)
+  parent: ES3Internal.AESEncryptionAlgorithm
+  langs:
+  - csharp
+  - vb
+  name: Decrypt(byte[], string, int)
+  nameWithType: AESEncryptionAlgorithm.Decrypt(byte[], string, int)
+  fullName: ES3Internal.AESEncryptionAlgorithm.Decrypt(byte[], string, int)
+  type: Method
+  source:
+    id: Decrypt
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3Crypto.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  example: []
+  syntax:
+    content: public override byte[] Decrypt(byte[] bytes, string password, int bufferSize)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    - id: password
+      type: System.String
+    - id: bufferSize
+      type: System.Int32
+    return:
+      type: System.Byte[]
+    content.vb: Public Overrides Function Decrypt(bytes As Byte(), password As String, bufferSize As Integer) As Byte()
+  overridden: ES3Internal.EncryptionAlgorithm.Decrypt(System.Byte[],System.String,System.Int32)
+  overload: ES3Internal.AESEncryptionAlgorithm.Decrypt*
+  nameWithType.vb: AESEncryptionAlgorithm.Decrypt(Byte(), String, Integer)
+  fullName.vb: ES3Internal.AESEncryptionAlgorithm.Decrypt(Byte(), String, Integer)
+  name.vb: Decrypt(Byte(), String, Integer)
+- uid: ES3Internal.AESEncryptionAlgorithm.Encrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  commentId: M:ES3Internal.AESEncryptionAlgorithm.Encrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  id: Encrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  parent: ES3Internal.AESEncryptionAlgorithm
+  langs:
+  - csharp
+  - vb
+  name: Encrypt(Stream, Stream, string, int)
+  nameWithType: AESEncryptionAlgorithm.Encrypt(Stream, Stream, string, int)
+  fullName: ES3Internal.AESEncryptionAlgorithm.Encrypt(System.IO.Stream, System.IO.Stream, string, int)
+  type: Method
+  source:
+    id: Encrypt
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3Crypto.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  example: []
+  syntax:
+    content: public override void Encrypt(Stream input, Stream output, string password, int bufferSize)
+    parameters:
+    - id: input
+      type: System.IO.Stream
+    - id: output
+      type: System.IO.Stream
+    - id: password
+      type: System.String
+    - id: bufferSize
+      type: System.Int32
+    content.vb: Public Overrides Sub Encrypt(input As Stream, output As Stream, password As String, bufferSize As Integer)
+  overridden: ES3Internal.EncryptionAlgorithm.Encrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  overload: ES3Internal.AESEncryptionAlgorithm.Encrypt*
+  nameWithType.vb: AESEncryptionAlgorithm.Encrypt(Stream, Stream, String, Integer)
+  fullName.vb: ES3Internal.AESEncryptionAlgorithm.Encrypt(System.IO.Stream, System.IO.Stream, String, Integer)
+  name.vb: Encrypt(Stream, Stream, String, Integer)
+- uid: ES3Internal.AESEncryptionAlgorithm.Decrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  commentId: M:ES3Internal.AESEncryptionAlgorithm.Decrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  id: Decrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  parent: ES3Internal.AESEncryptionAlgorithm
+  langs:
+  - csharp
+  - vb
+  name: Decrypt(Stream, Stream, string, int)
+  nameWithType: AESEncryptionAlgorithm.Decrypt(Stream, Stream, string, int)
+  fullName: ES3Internal.AESEncryptionAlgorithm.Decrypt(System.IO.Stream, System.IO.Stream, string, int)
+  type: Method
+  source:
+    id: Decrypt
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3Crypto.cs
+    startLine: 123
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  example: []
+  syntax:
+    content: public override void Decrypt(Stream input, Stream output, string password, int bufferSize)
+    parameters:
+    - id: input
+      type: System.IO.Stream
+    - id: output
+      type: System.IO.Stream
+    - id: password
+      type: System.String
+    - id: bufferSize
+      type: System.Int32
+    content.vb: Public Overrides Sub Decrypt(input As Stream, output As Stream, password As String, bufferSize As Integer)
+  overridden: ES3Internal.EncryptionAlgorithm.Decrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  overload: ES3Internal.AESEncryptionAlgorithm.Decrypt*
+  nameWithType.vb: AESEncryptionAlgorithm.Decrypt(Stream, Stream, String, Integer)
+  fullName.vb: ES3Internal.AESEncryptionAlgorithm.Decrypt(System.IO.Stream, System.IO.Stream, String, Integer)
+  name.vb: Decrypt(Stream, Stream, String, Integer)
+references:
+- uid: ES3Internal
+  commentId: N:ES3Internal
+  href: ES3Internal.html
+  name: ES3Internal
+  nameWithType: ES3Internal
+  fullName: ES3Internal
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ES3Internal.EncryptionAlgorithm
+  commentId: T:ES3Internal.EncryptionAlgorithm
+  parent: ES3Internal
+  href: ES3Internal.EncryptionAlgorithm.html
+  name: EncryptionAlgorithm
+  nameWithType: EncryptionAlgorithm
+  fullName: ES3Internal.EncryptionAlgorithm
+- uid: ES3Internal.EncryptionAlgorithm.CopyStream(System.IO.Stream,System.IO.Stream,System.Int32)
+  commentId: M:ES3Internal.EncryptionAlgorithm.CopyStream(System.IO.Stream,System.IO.Stream,System.Int32)
+  parent: ES3Internal.EncryptionAlgorithm
+  isExternal: true
+  href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_CopyStream_System_IO_Stream_System_IO_Stream_System_Int32_
+  name: CopyStream(Stream, Stream, int)
+  nameWithType: EncryptionAlgorithm.CopyStream(Stream, Stream, int)
+  fullName: ES3Internal.EncryptionAlgorithm.CopyStream(System.IO.Stream, System.IO.Stream, int)
+  nameWithType.vb: EncryptionAlgorithm.CopyStream(Stream, Stream, Integer)
+  fullName.vb: ES3Internal.EncryptionAlgorithm.CopyStream(System.IO.Stream, System.IO.Stream, Integer)
+  name.vb: CopyStream(Stream, Stream, Integer)
+  spec.csharp:
+  - uid: ES3Internal.EncryptionAlgorithm.CopyStream(System.IO.Stream,System.IO.Stream,System.Int32)
+    name: CopyStream
+    href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_CopyStream_System_IO_Stream_System_IO_Stream_System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ES3Internal.EncryptionAlgorithm.CopyStream(System.IO.Stream,System.IO.Stream,System.Int32)
+    name: CopyStream
+    href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_CopyStream_System_IO_Stream_System_IO_Stream_System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ES3Internal.EncryptionAlgorithm.Encrypt(System.Byte[],System.String,System.Int32)
+  commentId: M:ES3Internal.EncryptionAlgorithm.Encrypt(System.Byte[],System.String,System.Int32)
+  parent: ES3Internal.EncryptionAlgorithm
+  isExternal: true
+  href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Encrypt_System_Byte___System_String_System_Int32_
+  name: Encrypt(byte[], string, int)
+  nameWithType: EncryptionAlgorithm.Encrypt(byte[], string, int)
+  fullName: ES3Internal.EncryptionAlgorithm.Encrypt(byte[], string, int)
+  nameWithType.vb: EncryptionAlgorithm.Encrypt(Byte(), String, Integer)
+  fullName.vb: ES3Internal.EncryptionAlgorithm.Encrypt(Byte(), String, Integer)
+  name.vb: Encrypt(Byte(), String, Integer)
+  spec.csharp:
+  - uid: ES3Internal.EncryptionAlgorithm.Encrypt(System.Byte[],System.String,System.Int32)
+    name: Encrypt
+    href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Encrypt_System_Byte___System_String_System_Int32_
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ES3Internal.EncryptionAlgorithm.Encrypt(System.Byte[],System.String,System.Int32)
+    name: Encrypt
+    href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Encrypt_System_Byte___System_String_System_Int32_
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ES3Internal.AESEncryptionAlgorithm.Encrypt*
+  commentId: Overload:ES3Internal.AESEncryptionAlgorithm.Encrypt
+  href: ES3Internal.AESEncryptionAlgorithm.html#ES3Internal_AESEncryptionAlgorithm_Encrypt_System_Byte___System_String_System_Int32_
+  name: Encrypt
+  nameWithType: AESEncryptionAlgorithm.Encrypt
+  fullName: ES3Internal.AESEncryptionAlgorithm.Encrypt
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ES3Internal.EncryptionAlgorithm.Decrypt(System.Byte[],System.String,System.Int32)
+  commentId: M:ES3Internal.EncryptionAlgorithm.Decrypt(System.Byte[],System.String,System.Int32)
+  parent: ES3Internal.EncryptionAlgorithm
+  isExternal: true
+  href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Decrypt_System_Byte___System_String_System_Int32_
+  name: Decrypt(byte[], string, int)
+  nameWithType: EncryptionAlgorithm.Decrypt(byte[], string, int)
+  fullName: ES3Internal.EncryptionAlgorithm.Decrypt(byte[], string, int)
+  nameWithType.vb: EncryptionAlgorithm.Decrypt(Byte(), String, Integer)
+  fullName.vb: ES3Internal.EncryptionAlgorithm.Decrypt(Byte(), String, Integer)
+  name.vb: Decrypt(Byte(), String, Integer)
+  spec.csharp:
+  - uid: ES3Internal.EncryptionAlgorithm.Decrypt(System.Byte[],System.String,System.Int32)
+    name: Decrypt
+    href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Decrypt_System_Byte___System_String_System_Int32_
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ES3Internal.EncryptionAlgorithm.Decrypt(System.Byte[],System.String,System.Int32)
+    name: Decrypt
+    href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Decrypt_System_Byte___System_String_System_Int32_
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ES3Internal.AESEncryptionAlgorithm.Decrypt*
+  commentId: Overload:ES3Internal.AESEncryptionAlgorithm.Decrypt
+  href: ES3Internal.AESEncryptionAlgorithm.html#ES3Internal_AESEncryptionAlgorithm_Decrypt_System_Byte___System_String_System_Int32_
+  name: Decrypt
+  nameWithType: AESEncryptionAlgorithm.Decrypt
+  fullName: ES3Internal.AESEncryptionAlgorithm.Decrypt
+- uid: ES3Internal.EncryptionAlgorithm.Encrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  commentId: M:ES3Internal.EncryptionAlgorithm.Encrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  parent: ES3Internal.EncryptionAlgorithm
+  isExternal: true
+  href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Encrypt_System_IO_Stream_System_IO_Stream_System_String_System_Int32_
+  name: Encrypt(Stream, Stream, string, int)
+  nameWithType: EncryptionAlgorithm.Encrypt(Stream, Stream, string, int)
+  fullName: ES3Internal.EncryptionAlgorithm.Encrypt(System.IO.Stream, System.IO.Stream, string, int)
+  nameWithType.vb: EncryptionAlgorithm.Encrypt(Stream, Stream, String, Integer)
+  fullName.vb: ES3Internal.EncryptionAlgorithm.Encrypt(System.IO.Stream, System.IO.Stream, String, Integer)
+  name.vb: Encrypt(Stream, Stream, String, Integer)
+  spec.csharp:
+  - uid: ES3Internal.EncryptionAlgorithm.Encrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+    name: Encrypt
+    href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Encrypt_System_IO_Stream_System_IO_Stream_System_String_System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ES3Internal.EncryptionAlgorithm.Encrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+    name: Encrypt
+    href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Encrypt_System_IO_Stream_System_IO_Stream_System_String_System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: ES3Internal.EncryptionAlgorithm.Decrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  commentId: M:ES3Internal.EncryptionAlgorithm.Decrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+  parent: ES3Internal.EncryptionAlgorithm
+  isExternal: true
+  href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Decrypt_System_IO_Stream_System_IO_Stream_System_String_System_Int32_
+  name: Decrypt(Stream, Stream, string, int)
+  nameWithType: EncryptionAlgorithm.Decrypt(Stream, Stream, string, int)
+  fullName: ES3Internal.EncryptionAlgorithm.Decrypt(System.IO.Stream, System.IO.Stream, string, int)
+  nameWithType.vb: EncryptionAlgorithm.Decrypt(Stream, Stream, String, Integer)
+  fullName.vb: ES3Internal.EncryptionAlgorithm.Decrypt(System.IO.Stream, System.IO.Stream, String, Integer)
+  name.vb: Decrypt(Stream, Stream, String, Integer)
+  spec.csharp:
+  - uid: ES3Internal.EncryptionAlgorithm.Decrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+    name: Decrypt
+    href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Decrypt_System_IO_Stream_System_IO_Stream_System_String_System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ES3Internal.EncryptionAlgorithm.Decrypt(System.IO.Stream,System.IO.Stream,System.String,System.Int32)
+    name: Decrypt
+    href: ES3Internal.EncryptionAlgorithm.html#ES3Internal_EncryptionAlgorithm_Decrypt_System_IO_Stream_System_IO_Stream_System_String_System_Int32_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )

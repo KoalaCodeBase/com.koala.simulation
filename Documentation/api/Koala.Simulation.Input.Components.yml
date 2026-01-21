@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Input.Components
+  commentId: N:Koala.Simulation.Input.Components
+  id: Koala.Simulation.Input.Components
+  children:
+  - Koala.Simulation.Input.Components.InputHandler
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Input.Components
+  nameWithType: Koala.Simulation.Input.Components
+  fullName: Koala.Simulation.Input.Components
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Input.Components.InputHandler
+  commentId: T:Koala.Simulation.Input.Components.InputHandler
+  href: Koala.Simulation.Input.Components.InputHandler.html
+  name: InputHandler
+  nameWithType: InputHandler
+  fullName: Koala.Simulation.Input.Components.InputHandler

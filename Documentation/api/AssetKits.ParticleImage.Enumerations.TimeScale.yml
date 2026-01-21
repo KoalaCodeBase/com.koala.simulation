@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Enumerations.TimeScale
+  commentId: T:AssetKits.ParticleImage.Enumerations.TimeScale
+  id: TimeScale
+  parent: AssetKits.ParticleImage.Enumerations
+  children:
+  - AssetKits.ParticleImage.Enumerations.TimeScale.Normal
+  - AssetKits.ParticleImage.Enumerations.TimeScale.Unscaled
+  langs:
+  - csharp
+  - vb
+  name: TimeScale
+  nameWithType: TimeScale
+  fullName: AssetKits.ParticleImage.Enumerations.TimeScale
+  type: Enum
+  source:
+    id: TimeScale
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2952
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: public enum TimeScale
+    content.vb: Public Enum TimeScale
+- uid: AssetKits.ParticleImage.Enumerations.TimeScale.Unscaled
+  commentId: F:AssetKits.ParticleImage.Enumerations.TimeScale.Unscaled
+  id: Unscaled
+  parent: AssetKits.ParticleImage.Enumerations.TimeScale
+  langs:
+  - csharp
+  - vb
+  name: Unscaled
+  nameWithType: TimeScale.Unscaled
+  fullName: AssetKits.ParticleImage.Enumerations.TimeScale.Unscaled
+  type: Field
+  source:
+    id: Unscaled
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2954
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Unscaled = 0
+    return:
+      type: AssetKits.ParticleImage.Enumerations.TimeScale
+- uid: AssetKits.ParticleImage.Enumerations.TimeScale.Normal
+  commentId: F:AssetKits.ParticleImage.Enumerations.TimeScale.Normal
+  id: Normal
+  parent: AssetKits.ParticleImage.Enumerations.TimeScale
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: TimeScale.Normal
+  fullName: AssetKits.ParticleImage.Enumerations.TimeScale.Normal
+  type: Field
+  source:
+    id: Normal
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2954
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Normal = 1
+    return:
+      type: AssetKits.ParticleImage.Enumerations.TimeScale
+references:
+- uid: AssetKits.ParticleImage.Enumerations
+  commentId: N:AssetKits.ParticleImage.Enumerations
+  href: AssetKits.html
+  name: AssetKits.ParticleImage.Enumerations
+  nameWithType: AssetKits.ParticleImage.Enumerations
+  fullName: AssetKits.ParticleImage.Enumerations
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+- uid: AssetKits.ParticleImage.Enumerations.TimeScale
+  commentId: T:AssetKits.ParticleImage.Enumerations.TimeScale
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.TimeScale.html
+  name: TimeScale
+  nameWithType: TimeScale
+  fullName: AssetKits.ParticleImage.Enumerations.TimeScale

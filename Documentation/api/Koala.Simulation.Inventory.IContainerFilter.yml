@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.IContainerFilter
+  commentId: T:Koala.Simulation.Inventory.IContainerFilter
+  id: IContainerFilter
+  parent: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.IContainerFilter.Allows(Koala.Simulation.Inventory.Item)
+  langs:
+  - csharp
+  - vb
+  name: IContainerFilter
+  nameWithType: IContainerFilter
+  fullName: Koala.Simulation.Inventory.IContainerFilter
+  type: Interface
+  source:
+    remote:
+      path: Runtime/Inventory/IContainerFilter.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: IContainerFilter
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/IContainerFilter.cs
+    startLine: 7
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Defines a filter that determines whether an item is allowed in a container.
+  example: []
+  syntax:
+    content: public interface IContainerFilter
+    content.vb: Public Interface IContainerFilter
+- uid: Koala.Simulation.Inventory.IContainerFilter.Allows(Koala.Simulation.Inventory.Item)
+  commentId: M:Koala.Simulation.Inventory.IContainerFilter.Allows(Koala.Simulation.Inventory.Item)
+  id: Allows(Koala.Simulation.Inventory.Item)
+  parent: Koala.Simulation.Inventory.IContainerFilter
+  langs:
+  - csharp
+  - vb
+  name: Allows(Item)
+  nameWithType: IContainerFilter.Allows(Item)
+  fullName: Koala.Simulation.Inventory.IContainerFilter.Allows(Koala.Simulation.Inventory.Item)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/IContainerFilter.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Allows
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/IContainerFilter.cs
+    startLine: 14
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Checks if the given item passes the filter.
+  example: []
+  syntax:
+    content: bool Allows(Item item)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.Item
+      description: The item to evaluate.
+    return:
+      type: System.Boolean
+      description: True if the item is allowed, false otherwise.
+    content.vb: Function Allows(item As Item) As Boolean
+  overload: Koala.Simulation.Inventory.IContainerFilter.Allows*
+references:
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+- uid: Koala.Simulation.Inventory.IContainerFilter.Allows*
+  commentId: Overload:Koala.Simulation.Inventory.IContainerFilter.Allows
+  href: Koala.Simulation.Inventory.IContainerFilter.html#Koala_Simulation_Inventory_IContainerFilter_Allows_Koala_Simulation_Inventory_Item_
+  name: Allows
+  nameWithType: IContainerFilter.Allows
+  fullName: Koala.Simulation.Inventory.IContainerFilter.Allows
+- uid: Koala.Simulation.Inventory.Item
+  commentId: T:Koala.Simulation.Inventory.Item
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.Item.html
+  name: Item
+  nameWithType: Item
+  fullName: Koala.Simulation.Inventory.Item
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

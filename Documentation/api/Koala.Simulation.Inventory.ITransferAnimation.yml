@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.ITransferAnimation
+  commentId: T:Koala.Simulation.Inventory.ITransferAnimation
+  id: ITransferAnimation
+  parent: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.ITransferAnimation.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+  langs:
+  - csharp
+  - vb
+  name: ITransferAnimation
+  nameWithType: ITransferAnimation
+  fullName: Koala.Simulation.Inventory.ITransferAnimation
+  type: Interface
+  source:
+    remote:
+      path: Runtime/Inventory/ITransferBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ITransferAnimation
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/ITransferBehaviour.cs
+    startLine: 9
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Defines a transfer animation for moving an item into a target slot.
+  example: []
+  syntax:
+    content: public interface ITransferAnimation
+    content.vb: Public Interface ITransferAnimation
+- uid: Koala.Simulation.Inventory.ITransferAnimation.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+  commentId: M:Koala.Simulation.Inventory.ITransferAnimation.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+  id: Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+  parent: Koala.Simulation.Inventory.ITransferAnimation
+  langs:
+  - csharp
+  - vb
+  name: Execute(Item, Transform)
+  nameWithType: ITransferAnimation.Execute(Item, Transform)
+  fullName: Koala.Simulation.Inventory.ITransferAnimation.Execute(Koala.Simulation.Inventory.Item, UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/ITransferBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Execute
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/ITransferBehaviour.cs
+    startLine: 16
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Executes the transfer animation.
+  example: []
+  syntax:
+    content: void Execute(Item item, Transform targetSlot)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.Item
+      description: The item being transferred.
+    - id: targetSlot
+      type: UnityEngine.Transform
+      description: The target slot transform.
+    content.vb: Sub Execute(item As Item, targetSlot As Transform)
+  overload: Koala.Simulation.Inventory.ITransferAnimation.Execute*
+references:
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+- uid: Koala.Simulation.Inventory.ITransferAnimation.Execute*
+  commentId: Overload:Koala.Simulation.Inventory.ITransferAnimation.Execute
+  href: Koala.Simulation.Inventory.ITransferAnimation.html#Koala_Simulation_Inventory_ITransferAnimation_Execute_Koala_Simulation_Inventory_Item_UnityEngine_Transform_
+  name: Execute
+  nameWithType: ITransferAnimation.Execute
+  fullName: Koala.Simulation.Inventory.ITransferAnimation.Execute
+- uid: Koala.Simulation.Inventory.Item
+  commentId: T:Koala.Simulation.Inventory.Item
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.Item.html
+  name: Item
+  nameWithType: Item
+  fullName: Koala.Simulation.Inventory.Item
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

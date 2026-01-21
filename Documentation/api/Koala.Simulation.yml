@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation
+  commentId: N:Koala.Simulation
+  id: Koala.Simulation
+  children:
+  - Koala.Simulation.SimulationManager
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation
+  nameWithType: Koala.Simulation
+  fullName: Koala.Simulation
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.SimulationManager
+  commentId: T:Koala.Simulation.SimulationManager
+  parent: Koala.Simulation
+  href: Koala.Simulation.SimulationManager.html
+  name: SimulationManager
+  nameWithType: SimulationManager
+  fullName: Koala.Simulation.SimulationManager
+- uid: Koala.Simulation
+  commentId: N:Koala.Simulation
+  href: Koala.html
+  name: Koala.Simulation
+  nameWithType: Koala.Simulation
+  fullName: Koala.Simulation
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html

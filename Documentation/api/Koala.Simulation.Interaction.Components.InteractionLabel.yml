@@ -1,0 +1,230 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.Components.InteractionLabel
+  commentId: T:Koala.Simulation.Interaction.Components.InteractionLabel
+  id: InteractionLabel
+  parent: Koala.Simulation.Interaction.Components
+  children:
+  - Koala.Simulation.Interaction.Components.InteractionLabel.Set(Koala.Simulation.Interaction.Core.InteractionContext)
+  langs:
+  - csharp
+  - vb
+  name: InteractionLabel
+  nameWithType: InteractionLabel
+  fullName: Koala.Simulation.Interaction.Components.InteractionLabel
+  type: Class
+  source:
+    remote:
+      path: Runtime/Interaction/Components/InteractionLabel.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InteractionLabel
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Components/InteractionLabel.cs
+    startLine: 11
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Components
+  summary: UI label that displays an interaction prompt with its corresponding input key.
+  example: []
+  syntax:
+    content: >-
+      [AddComponentMenu("Simulation/Interaction/Interaction Label")]
+
+      [Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")]
+
+      public sealed class InteractionLabel : MonoBehaviour
+    content.vb: >-
+      <AddComponentMenu("Simulation/Interaction/Interaction Label")>
+
+      <Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")>
+
+      Public NotInheritable Class InteractionLabel Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Simulation/Interaction/Interaction Label
+  - type: UnityEngine.IconAttribute
+    ctor: UnityEngine.IconAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Packages/com.koala.simulation/Editor/Icons/koala.png
+- uid: Koala.Simulation.Interaction.Components.InteractionLabel.Set(Koala.Simulation.Interaction.Core.InteractionContext)
+  commentId: M:Koala.Simulation.Interaction.Components.InteractionLabel.Set(Koala.Simulation.Interaction.Core.InteractionContext)
+  id: Set(Koala.Simulation.Interaction.Core.InteractionContext)
+  parent: Koala.Simulation.Interaction.Components.InteractionLabel
+  langs:
+  - csharp
+  - vb
+  name: Set(InteractionContext)
+  nameWithType: InteractionLabel.Set(InteractionContext)
+  fullName: Koala.Simulation.Interaction.Components.InteractionLabel.Set(Koala.Simulation.Interaction.Core.InteractionContext)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interaction/Components/InteractionLabel.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Set
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Components/InteractionLabel.cs
+    startLine: 39
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Components
+  summary: Updates the label with the given interaction context.
+  example: []
+  syntax:
+    content: public void Set(InteractionContext context)
+    parameters:
+    - id: context
+      type: Koala.Simulation.Interaction.Core.InteractionContext
+      description: The interaction context containing action name and prompt.
+    content.vb: Public Sub [Set](context As InteractionContext)
+  overload: Koala.Simulation.Interaction.Components.InteractionLabel.Set*
+references:
+- uid: Koala.Simulation.Interaction.Components
+  commentId: N:Koala.Simulation.Interaction.Components
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Components
+  nameWithType: Koala.Simulation.Interaction.Components
+  fullName: Koala.Simulation.Interaction.Components
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Components
+    name: Components
+    href: Koala.Simulation.Interaction.Components.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Components
+    name: Components
+    href: Koala.Simulation.Interaction.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Interaction.Components.InteractionLabel.Set*
+  commentId: Overload:Koala.Simulation.Interaction.Components.InteractionLabel.Set
+  href: Koala.Simulation.Interaction.Components.InteractionLabel.html#Koala_Simulation_Interaction_Components_InteractionLabel_Set_Koala_Simulation_Interaction_Core_InteractionContext_
+  name: Set
+  nameWithType: InteractionLabel.Set
+  fullName: Koala.Simulation.Interaction.Components.InteractionLabel.Set
+- uid: Koala.Simulation.Interaction.Core.InteractionContext
+  commentId: T:Koala.Simulation.Interaction.Core.InteractionContext
+  parent: Koala.Simulation.Interaction.Core
+  name: InteractionContext
+  nameWithType: InteractionContext
+  fullName: Koala.Simulation.Interaction.Core.InteractionContext
+- uid: Koala.Simulation.Interaction.Core
+  commentId: N:Koala.Simulation.Interaction.Core
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Core
+  nameWithType: Koala.Simulation.Interaction.Core
+  fullName: Koala.Simulation.Interaction.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html

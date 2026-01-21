@@ -1,0 +1,2192 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Internal.ES3SerializableDictionary`2
+  commentId: T:ES3Internal.ES3SerializableDictionary`2
+  id: ES3SerializableDictionary`2
+  parent: ES3Internal
+  children:
+  - ES3Internal.ES3SerializableDictionary`2.ChangeKey(`0,`0)
+  - ES3Internal.ES3SerializableDictionary`2.KeysAreEqual(`0,`0)
+  - ES3Internal.ES3SerializableDictionary`2.OnAfterDeserialize
+  - ES3Internal.ES3SerializableDictionary`2.OnBeforeSerialize
+  - ES3Internal.ES3SerializableDictionary`2.RemoveNullValues
+  - ES3Internal.ES3SerializableDictionary`2.ValuesAreEqual(`1,`1)
+  langs:
+  - csharp
+  - vb
+  name: ES3SerializableDictionary<TKey, TVal>
+  nameWithType: ES3SerializableDictionary<TKey, TVal>
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>
+  type: Class
+  source:
+    id: ES3SerializableDictionary
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3SerializableDictionary.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: >-
+      [Serializable]
+
+      public abstract class ES3SerializableDictionary<TKey, TVal> : Dictionary<TKey, TVal>, IDictionary<TKey, TVal>, ICollection<KeyValuePair<TKey, TVal>>, IReadOnlyDictionary<TKey, TVal>, IReadOnlyCollection<KeyValuePair<TKey, TVal>>, IEnumerable<KeyValuePair<TKey, TVal>>, IDictionary, ICollection, IEnumerable, IDeserializationCallback, ISerializable, ISerializationCallbackReceiver
+    typeParameters:
+    - id: TKey
+    - id: TVal
+    content.vb: >-
+      <Serializable>
+
+      Public MustInherit Class ES3SerializableDictionary(Of TKey, TVal) Inherits Dictionary(Of TKey, TVal) Implements IDictionary(Of TKey, TVal), ICollection(Of KeyValuePair(Of TKey, TVal)), IReadOnlyDictionary(Of TKey, TVal), IReadOnlyCollection(Of KeyValuePair(Of TKey, TVal)), IEnumerable(Of KeyValuePair(Of TKey, TVal)), IDictionary, ICollection, IEnumerable, IDeserializationCallback, ISerializable, ISerializationCallbackReceiver
+  inheritance:
+  - System.Object
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  derivedClasses:
+  - ES3Internal.ES3IdRefDictionary
+  implements:
+  - System.Collections.Generic.IDictionary{{TKey},{TVal}}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{{TKey},{TVal}}}
+  - System.Collections.Generic.IReadOnlyDictionary{{TKey},{TVal}}
+  - System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{{TKey},{TVal}}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{{TKey},{TVal}}}
+  - System.Collections.IDictionary
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  - System.Runtime.Serialization.IDeserializationCallback
+  - System.Runtime.Serialization.ISerializable
+  - UnityEngine.ISerializationCallbackReceiver
+  inheritedMembers:
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.Add({TKey},{TVal})
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.Clear
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.ContainsKey({TKey})
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.ContainsValue({TVal})
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.EnsureCapacity(System.Int32)
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.GetEnumerator
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.OnDeserialization(System.Object)
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.Remove({TKey})
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.Remove({TKey},{TVal}@)
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.TrimExcess
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.TrimExcess(System.Int32)
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.TryAdd({TKey},{TVal})
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.TryGetValue({TKey},{TVal}@)
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.Comparer
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.Count
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.Item({TKey})
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.Keys
+  - System.Collections.Generic.Dictionary{{TKey},{TVal}}.Values
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal)
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal)
+  name.vb: ES3SerializableDictionary(Of TKey, TVal)
+- uid: ES3Internal.ES3SerializableDictionary`2.KeysAreEqual(`0,`0)
+  commentId: M:ES3Internal.ES3SerializableDictionary`2.KeysAreEqual(`0,`0)
+  id: KeysAreEqual(`0,`0)
+  parent: ES3Internal.ES3SerializableDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: KeysAreEqual(TKey, TKey)
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.KeysAreEqual(TKey, TKey)
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.KeysAreEqual(TKey, TKey)
+  type: Method
+  source:
+    id: KeysAreEqual
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3SerializableDictionary.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected abstract bool KeysAreEqual(TKey a, TKey b)
+    parameters:
+    - id: a
+      type: '{TKey}'
+    - id: b
+      type: '{TKey}'
+    return:
+      type: System.Boolean
+    content.vb: Protected MustOverride Function KeysAreEqual(a As TKey, b As TKey) As Boolean
+  overload: ES3Internal.ES3SerializableDictionary`2.KeysAreEqual*
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).KeysAreEqual(TKey, TKey)
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).KeysAreEqual(TKey, TKey)
+- uid: ES3Internal.ES3SerializableDictionary`2.ValuesAreEqual(`1,`1)
+  commentId: M:ES3Internal.ES3SerializableDictionary`2.ValuesAreEqual(`1,`1)
+  id: ValuesAreEqual(`1,`1)
+  parent: ES3Internal.ES3SerializableDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: ValuesAreEqual(TVal, TVal)
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.ValuesAreEqual(TVal, TVal)
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.ValuesAreEqual(TVal, TVal)
+  type: Method
+  source:
+    id: ValuesAreEqual
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3SerializableDictionary.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected abstract bool ValuesAreEqual(TVal a, TVal b)
+    parameters:
+    - id: a
+      type: '{TVal}'
+    - id: b
+      type: '{TVal}'
+    return:
+      type: System.Boolean
+    content.vb: Protected MustOverride Function ValuesAreEqual(a As TVal, b As TVal) As Boolean
+  overload: ES3Internal.ES3SerializableDictionary`2.ValuesAreEqual*
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).ValuesAreEqual(TVal, TVal)
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).ValuesAreEqual(TVal, TVal)
+- uid: ES3Internal.ES3SerializableDictionary`2.OnBeforeSerialize
+  commentId: M:ES3Internal.ES3SerializableDictionary`2.OnBeforeSerialize
+  id: OnBeforeSerialize
+  parent: ES3Internal.ES3SerializableDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: OnBeforeSerialize()
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.OnBeforeSerialize()
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.OnBeforeSerialize()
+  type: Method
+  source:
+    id: OnBeforeSerialize
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3SerializableDictionary.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  summary: <p>Implement this callback to transform data into serializable data types immediately before an object is serialized.</p>
+  example: []
+  syntax:
+    content: public void OnBeforeSerialize()
+    content.vb: Public Sub OnBeforeSerialize()
+  overload: ES3Internal.ES3SerializableDictionary`2.OnBeforeSerialize*
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).OnBeforeSerialize()
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).OnBeforeSerialize()
+- uid: ES3Internal.ES3SerializableDictionary`2.OnAfterDeserialize
+  commentId: M:ES3Internal.ES3SerializableDictionary`2.OnAfterDeserialize
+  id: OnAfterDeserialize
+  parent: ES3Internal.ES3SerializableDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: OnAfterDeserialize()
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.OnAfterDeserialize()
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.OnAfterDeserialize()
+  type: Method
+  source:
+    id: OnAfterDeserialize
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3SerializableDictionary.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  summary: <p>Implement this callback to transform data back into runtime data types after an object is deserialized.</p>
+  example: []
+  syntax:
+    content: public void OnAfterDeserialize()
+    content.vb: Public Sub OnAfterDeserialize()
+  overload: ES3Internal.ES3SerializableDictionary`2.OnAfterDeserialize*
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).OnAfterDeserialize()
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).OnAfterDeserialize()
+- uid: ES3Internal.ES3SerializableDictionary`2.RemoveNullValues
+  commentId: M:ES3Internal.ES3SerializableDictionary`2.RemoveNullValues
+  id: RemoveNullValues
+  parent: ES3Internal.ES3SerializableDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: RemoveNullValues()
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.RemoveNullValues()
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.RemoveNullValues()
+  type: Method
+  source:
+    id: RemoveNullValues
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3SerializableDictionary.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public int RemoveNullValues()
+    return:
+      type: System.Int32
+    content.vb: Public Function RemoveNullValues() As Integer
+  overload: ES3Internal.ES3SerializableDictionary`2.RemoveNullValues*
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).RemoveNullValues()
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).RemoveNullValues()
+- uid: ES3Internal.ES3SerializableDictionary`2.ChangeKey(`0,`0)
+  commentId: M:ES3Internal.ES3SerializableDictionary`2.ChangeKey(`0,`0)
+  id: ChangeKey(`0,`0)
+  parent: ES3Internal.ES3SerializableDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: ChangeKey(TKey, TKey)
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.ChangeKey(TKey, TKey)
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.ChangeKey(TKey, TKey)
+  type: Method
+  source:
+    id: ChangeKey
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\ES3SerializableDictionary.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public bool ChangeKey(TKey oldKey, TKey newKey)
+    parameters:
+    - id: oldKey
+      type: '{TKey}'
+    - id: newKey
+      type: '{TKey}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function ChangeKey(oldKey As TKey, newKey As TKey) As Boolean
+  overload: ES3Internal.ES3SerializableDictionary`2.ChangeKey*
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).ChangeKey(TKey, TKey)
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).ChangeKey(TKey, TKey)
+references:
+- uid: ES3Internal
+  commentId: N:ES3Internal
+  href: ES3Internal.html
+  name: ES3Internal
+  nameWithType: ES3Internal
+  fullName: ES3Internal
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  commentId: T:System.Collections.Generic.Dictionary{`0,`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TVal>
+  nameWithType: Dictionary<TKey, TVal>
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>
+  nameWithType.vb: Dictionary(Of TKey, TVal)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal)
+  name.vb: Dictionary(Of TKey, TVal)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+- uid: System.Collections.Generic.IDictionary{{TKey},{TVal}}
+  commentId: T:System.Collections.Generic.IDictionary{`0,`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TVal>
+  nameWithType: IDictionary<TKey, TVal>
+  fullName: System.Collections.Generic.IDictionary<TKey, TVal>
+  nameWithType.vb: IDictionary(Of TKey, TVal)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TVal)
+  name.vb: IDictionary(Of TKey, TVal)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{{TKey},{TVal}}}
+  commentId: T:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{`0,`1}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<KeyValuePair<TKey, TVal>>
+  nameWithType: ICollection<KeyValuePair<TKey, TVal>>
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey, TVal>>
+  nameWithType.vb: ICollection(Of KeyValuePair(Of TKey, TVal))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of TKey, TVal))
+  name.vb: ICollection(Of KeyValuePair(Of TKey, TVal))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary{{TKey},{TVal}}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{`0,`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TVal>
+  nameWithType: IReadOnlyDictionary<TKey, TVal>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TVal>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TVal)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TVal)
+  name.vb: IReadOnlyDictionary(Of TKey, TVal)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{{TKey},{TVal}}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{`0,`1}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<KeyValuePair<TKey, TVal>>
+  nameWithType: IReadOnlyCollection<KeyValuePair<TKey, TVal>>
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<TKey, TVal>>
+  nameWithType.vb: IReadOnlyCollection(Of KeyValuePair(Of TKey, TVal))
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of System.Collections.Generic.KeyValuePair(Of TKey, TVal))
+  name.vb: IReadOnlyCollection(Of KeyValuePair(Of TKey, TVal))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{{TKey},{TVal}}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyValuePair<TKey, TVal>>
+  nameWithType: IEnumerable<KeyValuePair<TKey, TVal>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey, TVal>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of TKey, TVal))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TKey, TVal))
+  name.vb: IEnumerable(Of KeyValuePair(Of TKey, TVal))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+  - name: )
+- uid: System.Collections.IDictionary
+  commentId: T:System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Runtime.Serialization.IDeserializationCallback
+  commentId: T:System.Runtime.Serialization.IDeserializationCallback
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.ideserializationcallback
+  name: IDeserializationCallback
+  nameWithType: IDeserializationCallback
+  fullName: System.Runtime.Serialization.IDeserializationCallback
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: UnityEngine.ISerializationCallbackReceiver
+  commentId: T:UnityEngine.ISerializationCallbackReceiver
+  parent: UnityEngine
+  isExternal: true
+  name: ISerializationCallbackReceiver
+  nameWithType: ISerializationCallbackReceiver
+  fullName: UnityEngine.ISerializationCallbackReceiver
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.Add({TKey},{TVal})
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.Add(`0,`1)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.Add(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.add
+  name: Add(TKey, TVal)
+  nameWithType: Dictionary<TKey, TVal>.Add(TKey, TVal)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.Add(TKey, TVal)
+  nameWithType.vb: Dictionary(Of TKey, TVal).Add(TKey, TVal)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).Add(TKey, TVal)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.Add(`0,`1)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.Add(`0,`1)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.Clear
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.Clear
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.Clear
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.clear
+  name: Clear()
+  nameWithType: Dictionary<TKey, TVal>.Clear()
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.Clear()
+  nameWithType.vb: Dictionary(Of TKey, TVal).Clear()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.ContainsKey({TKey})
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.ContainsKey(`0)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.ContainsKey(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  name: ContainsKey(TKey)
+  nameWithType: Dictionary<TKey, TVal>.ContainsKey(TKey)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.ContainsKey(TKey)
+  nameWithType.vb: Dictionary(Of TKey, TVal).ContainsKey(TKey)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).ContainsKey(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.ContainsValue({TVal})
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.ContainsValue(`1)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.ContainsValue(`1)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  name: ContainsValue(TVal)
+  nameWithType: Dictionary<TKey, TVal>.ContainsValue(TVal)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.ContainsValue(TVal)
+  nameWithType.vb: Dictionary(Of TKey, TVal).ContainsValue(TVal)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).ContainsValue(TVal)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.ContainsValue(`1)
+    name: ContainsValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  - name: (
+  - name: TVal
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.ContainsValue(`1)
+    name: ContainsValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  - name: (
+  - name: TVal
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.EnsureCapacity(System.Int32)
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.EnsureCapacity(System.Int32)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  name: EnsureCapacity(int)
+  nameWithType: Dictionary<TKey, TVal>.EnsureCapacity(int)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.EnsureCapacity(int)
+  nameWithType.vb: Dictionary(Of TKey, TVal).EnsureCapacity(Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).EnsureCapacity(Integer)
+  name.vb: EnsureCapacity(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.EnsureCapacity(System.Int32)
+    name: EnsureCapacity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.EnsureCapacity(System.Int32)
+    name: EnsureCapacity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.GetEnumerator
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.GetEnumerator
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  name: GetEnumerator()
+  nameWithType: Dictionary<TKey, TVal>.GetEnumerator()
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.GetEnumerator()
+  nameWithType.vb: Dictionary(Of TKey, TVal).GetEnumerator()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Dictionary<TKey, TVal>.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType.vb: Dictionary(Of TKey, TVal).GetObjectData(SerializationInfo, StreamingContext)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.OnDeserialization(System.Object)
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.OnDeserialization(System.Object)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  name: OnDeserialization(object)
+  nameWithType: Dictionary<TKey, TVal>.OnDeserialization(object)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.OnDeserialization(object)
+  nameWithType.vb: Dictionary(Of TKey, TVal).OnDeserialization(Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).OnDeserialization(Object)
+  name.vb: OnDeserialization(Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.OnDeserialization(System.Object)
+    name: OnDeserialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.OnDeserialization(System.Object)
+    name: OnDeserialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.Remove({TKey})
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.Remove(`0)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0)
+  name: Remove(TKey)
+  nameWithType: Dictionary<TKey, TVal>.Remove(TKey)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.Remove(TKey)
+  nameWithType.vb: Dictionary(Of TKey, TVal).Remove(TKey)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).Remove(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0)
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0)
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.Remove({TKey},{TVal}@)
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.Remove(`0,`1@)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.Remove(`0,`1@)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  name: Remove(TKey, out TVal)
+  nameWithType: Dictionary<TKey, TVal>.Remove(TKey, out TVal)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.Remove(TKey, out TVal)
+  nameWithType.vb: Dictionary(Of TKey, TVal).Remove(TKey, TVal)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).Remove(TKey, TVal)
+  name.vb: Remove(TKey, TVal)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.Remove(`0,`1@)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TVal
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.Remove(`0,`1@)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.TrimExcess
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.TrimExcess
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.TrimExcess
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  name: TrimExcess()
+  nameWithType: Dictionary<TKey, TVal>.TrimExcess()
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.TrimExcess()
+  nameWithType.vb: Dictionary(Of TKey, TVal).TrimExcess()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).TrimExcess()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.TrimExcess
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.TrimExcess
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.TrimExcess(System.Int32)
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.TrimExcess(System.Int32)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  name: TrimExcess(int)
+  nameWithType: Dictionary<TKey, TVal>.TrimExcess(int)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.TrimExcess(int)
+  nameWithType.vb: Dictionary(Of TKey, TVal).TrimExcess(Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).TrimExcess(Integer)
+  name.vb: TrimExcess(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.TrimExcess(System.Int32)
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.TrimExcess(System.Int32)
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.TryAdd({TKey},{TVal})
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.TryAdd(`0,`1)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.TryAdd(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.tryadd
+  name: TryAdd(TKey, TVal)
+  nameWithType: Dictionary<TKey, TVal>.TryAdd(TKey, TVal)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.TryAdd(TKey, TVal)
+  nameWithType.vb: Dictionary(Of TKey, TVal).TryAdd(TKey, TVal)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).TryAdd(TKey, TVal)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.TryAdd(`0,`1)
+    name: TryAdd
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.tryadd
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.TryAdd(`0,`1)
+    name: TryAdd
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.tryadd
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.TryGetValue({TKey},{TVal}@)
+  commentId: M:System.Collections.Generic.Dictionary{`0,`1}.TryGetValue(`0,`1@)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  name: TryGetValue(TKey, out TVal)
+  nameWithType: Dictionary<TKey, TVal>.TryGetValue(TKey, out TVal)
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.TryGetValue(TKey, out TVal)
+  nameWithType.vb: Dictionary(Of TKey, TVal).TryGetValue(TKey, TVal)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).TryGetValue(TKey, TVal)
+  name.vb: TryGetValue(TKey, TVal)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TVal
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.Comparer
+  commentId: P:System.Collections.Generic.Dictionary{`0,`1}.Comparer
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.Comparer
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.comparer
+  name: Comparer
+  nameWithType: Dictionary<TKey, TVal>.Comparer
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.Comparer
+  nameWithType.vb: Dictionary(Of TKey, TVal).Comparer
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).Comparer
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.Count
+  commentId: P:System.Collections.Generic.Dictionary{`0,`1}.Count
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.count
+  name: Count
+  nameWithType: Dictionary<TKey, TVal>.Count
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.Count
+  nameWithType.vb: Dictionary(Of TKey, TVal).Count
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).Count
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.Item({TKey})
+  commentId: P:System.Collections.Generic.Dictionary{`0,`1}.Item(`0)
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.Item(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.item
+  name: this[TKey]
+  nameWithType: Dictionary<TKey, TVal>.this[TKey]
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.this[TKey]
+  nameWithType.vb: Dictionary(Of TKey, TVal).this[](TKey)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).this[](TKey)
+  name.vb: this[](TKey)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - name: TKey
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{`0,`1}.Item(`0)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.item
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.Keys
+  commentId: P:System.Collections.Generic.Dictionary{`0,`1}.Keys
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.Keys
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.keys
+  name: Keys
+  nameWithType: Dictionary<TKey, TVal>.Keys
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.Keys
+  nameWithType.vb: Dictionary(Of TKey, TVal).Keys
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).Keys
+- uid: System.Collections.Generic.Dictionary{{TKey},{TVal}}.Values
+  commentId: P:System.Collections.Generic.Dictionary{`0,`1}.Values
+  parent: System.Collections.Generic.Dictionary{{TKey},{TVal}}
+  definition: System.Collections.Generic.Dictionary`2.Values
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.values
+  name: Values
+  nameWithType: Dictionary<TKey, TVal>.Values
+  fullName: System.Collections.Generic.Dictionary<TKey, TVal>.Values
+  nameWithType.vb: Dictionary(Of TKey, TVal).Values
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TVal).Values
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Collections.Generic.Dictionary`2.Add(`0,`1)
+  commentId: M:System.Collections.Generic.Dictionary`2.Add(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.add
+  name: Add(TKey, TValue)
+  nameWithType: Dictionary<TKey, TValue>.Add(TKey, TValue)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: Dictionary(Of TKey, TValue).Add(TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Add(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.Add(`0,`1)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.Add(`0,`1)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.Clear
+  commentId: M:System.Collections.Generic.Dictionary`2.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.clear
+  name: Clear()
+  nameWithType: Dictionary<TKey, TValue>.Clear()
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Clear()
+  nameWithType.vb: Dictionary(Of TKey, TValue).Clear()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.ContainsKey(`0)
+  commentId: M:System.Collections.Generic.Dictionary`2.ContainsKey(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  name: ContainsKey(TKey)
+  nameWithType: Dictionary<TKey, TValue>.ContainsKey(TKey)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: Dictionary(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.ContainsValue(`1)
+  commentId: M:System.Collections.Generic.Dictionary`2.ContainsValue(`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  name: ContainsValue(TValue)
+  nameWithType: Dictionary<TKey, TValue>.ContainsValue(TValue)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.ContainsValue(TValue)
+  nameWithType.vb: Dictionary(Of TKey, TValue).ContainsValue(TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).ContainsValue(TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.ContainsValue(`1)
+    name: ContainsValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  - name: (
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.ContainsValue(`1)
+    name: ContainsValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  - name: (
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)
+  commentId: M:System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  name: EnsureCapacity(int)
+  nameWithType: Dictionary<TKey, TValue>.EnsureCapacity(int)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.EnsureCapacity(int)
+  nameWithType.vb: Dictionary(Of TKey, TValue).EnsureCapacity(Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).EnsureCapacity(Integer)
+  name.vb: EnsureCapacity(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)
+    name: EnsureCapacity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)
+    name: EnsureCapacity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.GetEnumerator
+  commentId: M:System.Collections.Generic.Dictionary`2.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  name: GetEnumerator()
+  nameWithType: Dictionary<TKey, TValue>.GetEnumerator()
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.GetEnumerator()
+  nameWithType.vb: Dictionary(Of TKey, TValue).GetEnumerator()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Dictionary<TKey, TValue>.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType.vb: Dictionary(Of TKey, TValue).GetObjectData(SerializationInfo, StreamingContext)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)
+  commentId: M:System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  name: OnDeserialization(object)
+  nameWithType: Dictionary<TKey, TValue>.OnDeserialization(object)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.OnDeserialization(object)
+  nameWithType.vb: Dictionary(Of TKey, TValue).OnDeserialization(Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).OnDeserialization(Object)
+  name.vb: OnDeserialization(Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)
+    name: OnDeserialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)
+    name: OnDeserialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.Remove(`0)
+  commentId: M:System.Collections.Generic.Dictionary`2.Remove(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0)
+  name: Remove(TKey)
+  nameWithType: Dictionary<TKey, TValue>.Remove(TKey)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Remove(TKey)
+  nameWithType.vb: Dictionary(Of TKey, TValue).Remove(TKey)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Remove(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0)
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0)
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.Remove(`0,`1@)
+  commentId: M:System.Collections.Generic.Dictionary`2.Remove(`0,`1@)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  name: Remove(TKey, out TValue)
+  nameWithType: Dictionary<TKey, TValue>.Remove(TKey, out TValue)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Remove(TKey, out TValue)
+  nameWithType.vb: Dictionary(Of TKey, TValue).Remove(TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Remove(TKey, TValue)
+  name.vb: Remove(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.Remove(`0,`1@)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.Remove(`0,`1@)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.TrimExcess
+  commentId: M:System.Collections.Generic.Dictionary`2.TrimExcess
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  name: TrimExcess()
+  nameWithType: Dictionary<TKey, TValue>.TrimExcess()
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.TrimExcess()
+  nameWithType.vb: Dictionary(Of TKey, TValue).TrimExcess()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).TrimExcess()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.TrimExcess
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.TrimExcess
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)
+  commentId: M:System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  name: TrimExcess(int)
+  nameWithType: Dictionary<TKey, TValue>.TrimExcess(int)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.TrimExcess(int)
+  nameWithType.vb: Dictionary(Of TKey, TValue).TrimExcess(Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).TrimExcess(Integer)
+  name.vb: TrimExcess(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.TryAdd(`0,`1)
+  commentId: M:System.Collections.Generic.Dictionary`2.TryAdd(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.tryadd
+  name: TryAdd(TKey, TValue)
+  nameWithType: Dictionary<TKey, TValue>.TryAdd(TKey, TValue)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.TryAdd(TKey, TValue)
+  nameWithType.vb: Dictionary(Of TKey, TValue).TryAdd(TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).TryAdd(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.TryAdd(`0,`1)
+    name: TryAdd
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.tryadd
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.TryAdd(`0,`1)
+    name: TryAdd
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.tryadd
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)
+  commentId: M:System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  name: TryGetValue(TKey, out TValue)
+  nameWithType: Dictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: Dictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  name.vb: TryGetValue(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.Comparer
+  commentId: P:System.Collections.Generic.Dictionary`2.Comparer
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.comparer
+  name: Comparer
+  nameWithType: Dictionary<TKey, TValue>.Comparer
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Comparer
+  nameWithType.vb: Dictionary(Of TKey, TValue).Comparer
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Comparer
+- uid: System.Collections.Generic.Dictionary`2.Count
+  commentId: P:System.Collections.Generic.Dictionary`2.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.count
+  name: Count
+  nameWithType: Dictionary<TKey, TValue>.Count
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Count
+  nameWithType.vb: Dictionary(Of TKey, TValue).Count
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Count
+- uid: System.Collections.Generic.Dictionary`2.Item(`0)
+  commentId: P:System.Collections.Generic.Dictionary`2.Item(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.item
+  name: this[TKey]
+  nameWithType: Dictionary<TKey, TValue>.this[TKey]
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.this[TKey]
+  nameWithType.vb: Dictionary(Of TKey, TValue).this[](TKey)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).this[](TKey)
+  name.vb: this[](TKey)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - name: TKey
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.Item(`0)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.item
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.Keys
+  commentId: P:System.Collections.Generic.Dictionary`2.Keys
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.keys
+  name: Keys
+  nameWithType: Dictionary<TKey, TValue>.Keys
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Keys
+  nameWithType.vb: Dictionary(Of TKey, TValue).Keys
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Keys
+- uid: System.Collections.Generic.Dictionary`2.Values
+  commentId: P:System.Collections.Generic.Dictionary`2.Values
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.values
+  name: Values
+  nameWithType: Dictionary<TKey, TValue>.Values
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Values
+  nameWithType.vb: Dictionary(Of TKey, TValue).Values
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Values
+- uid: ES3Internal.ES3SerializableDictionary`2.KeysAreEqual*
+  commentId: Overload:ES3Internal.ES3SerializableDictionary`2.KeysAreEqual
+  href: ES3Internal.ES3SerializableDictionary-2.html#ES3Internal_ES3SerializableDictionary_2_KeysAreEqual__0__0_
+  name: KeysAreEqual
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.KeysAreEqual
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.KeysAreEqual
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).KeysAreEqual
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).KeysAreEqual
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: ES3Internal.ES3SerializableDictionary`2.ValuesAreEqual*
+  commentId: Overload:ES3Internal.ES3SerializableDictionary`2.ValuesAreEqual
+  href: ES3Internal.ES3SerializableDictionary-2.html#ES3Internal_ES3SerializableDictionary_2_ValuesAreEqual__1__1_
+  name: ValuesAreEqual
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.ValuesAreEqual
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.ValuesAreEqual
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).ValuesAreEqual
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).ValuesAreEqual
+- uid: '{TVal}'
+  commentId: '!:TVal'
+  definition: TVal
+  name: TVal
+  nameWithType: TVal
+  fullName: TVal
+- uid: TVal
+  name: TVal
+  nameWithType: TVal
+  fullName: TVal
+- uid: ES3Internal.ES3SerializableDictionary`2.OnBeforeSerialize*
+  commentId: Overload:ES3Internal.ES3SerializableDictionary`2.OnBeforeSerialize
+  href: ES3Internal.ES3SerializableDictionary-2.html#ES3Internal_ES3SerializableDictionary_2_OnBeforeSerialize
+  name: OnBeforeSerialize
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.OnBeforeSerialize
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.OnBeforeSerialize
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).OnBeforeSerialize
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).OnBeforeSerialize
+- uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+  commentId: M:UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+  parent: UnityEngine.ISerializationCallbackReceiver
+  isExternal: true
+  name: OnBeforeSerialize()
+  nameWithType: ISerializationCallbackReceiver.OnBeforeSerialize()
+  fullName: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()
+  spec.csharp:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+    name: OnBeforeSerialize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+    name: OnBeforeSerialize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ES3Internal.ES3SerializableDictionary`2.OnAfterDeserialize*
+  commentId: Overload:ES3Internal.ES3SerializableDictionary`2.OnAfterDeserialize
+  href: ES3Internal.ES3SerializableDictionary-2.html#ES3Internal_ES3SerializableDictionary_2_OnAfterDeserialize
+  name: OnAfterDeserialize
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.OnAfterDeserialize
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.OnAfterDeserialize
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).OnAfterDeserialize
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).OnAfterDeserialize
+- uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+  commentId: M:UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+  parent: UnityEngine.ISerializationCallbackReceiver
+  isExternal: true
+  name: OnAfterDeserialize()
+  nameWithType: ISerializationCallbackReceiver.OnAfterDeserialize()
+  fullName: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()
+  spec.csharp:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+    name: OnAfterDeserialize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+    name: OnAfterDeserialize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ES3Internal.ES3SerializableDictionary`2.RemoveNullValues*
+  commentId: Overload:ES3Internal.ES3SerializableDictionary`2.RemoveNullValues
+  href: ES3Internal.ES3SerializableDictionary-2.html#ES3Internal_ES3SerializableDictionary_2_RemoveNullValues
+  name: RemoveNullValues
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.RemoveNullValues
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.RemoveNullValues
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).RemoveNullValues
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).RemoveNullValues
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ES3Internal.ES3SerializableDictionary`2.ChangeKey*
+  commentId: Overload:ES3Internal.ES3SerializableDictionary`2.ChangeKey
+  href: ES3Internal.ES3SerializableDictionary-2.html#ES3Internal_ES3SerializableDictionary_2_ChangeKey__0__0_
+  name: ChangeKey
+  nameWithType: ES3SerializableDictionary<TKey, TVal>.ChangeKey
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>.ChangeKey
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal).ChangeKey
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal).ChangeKey

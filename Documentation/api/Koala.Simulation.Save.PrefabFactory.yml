@@ -1,0 +1,236 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Save.PrefabFactory
+  commentId: T:Koala.Simulation.Save.PrefabFactory
+  id: PrefabFactory
+  parent: Koala.Simulation.Save
+  children:
+  - Koala.Simulation.Save.PrefabFactory.SpawnContainer(System.String,System.String,System.Int32)
+  - Koala.Simulation.Save.PrefabFactory.SpawnItem(System.String)
+  langs:
+  - csharp
+  - vb
+  name: PrefabFactory
+  nameWithType: PrefabFactory
+  fullName: Koala.Simulation.Save.PrefabFactory
+  type: Class
+  source:
+    remote:
+      path: Runtime/Save/PrefabFactory.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PrefabFactory
+    path: ../Packages/com.koala.simulation/Runtime/Save/PrefabFactory.cs
+    startLine: 4
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  syntax:
+    content: public static class PrefabFactory
+    content.vb: Public Module PrefabFactory
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Save.PrefabFactory.SpawnContainer(System.String,System.String,System.Int32)
+  commentId: M:Koala.Simulation.Save.PrefabFactory.SpawnContainer(System.String,System.String,System.Int32)
+  id: SpawnContainer(System.String,System.String,System.Int32)
+  parent: Koala.Simulation.Save.PrefabFactory
+  langs:
+  - csharp
+  - vb
+  name: SpawnContainer(string, string, int)
+  nameWithType: PrefabFactory.SpawnContainer(string, string, int)
+  fullName: Koala.Simulation.Save.PrefabFactory.SpawnContainer(string, string, int)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Save/PrefabFactory.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: SpawnContainer
+    path: ../Packages/com.koala.simulation/Runtime/Save/PrefabFactory.cs
+    startLine: 6
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  syntax:
+    content: public static IContainer SpawnContainer(string prefabId, string uniqueId, int capacity)
+    parameters:
+    - id: prefabId
+      type: System.String
+    - id: uniqueId
+      type: System.String
+    - id: capacity
+      type: System.Int32
+    return:
+      type: Koala.Simulation.Inventory.Core.IContainer
+    content.vb: Public Shared Function SpawnContainer(prefabId As String, uniqueId As String, capacity As Integer) As IContainer
+  overload: Koala.Simulation.Save.PrefabFactory.SpawnContainer*
+  nameWithType.vb: PrefabFactory.SpawnContainer(String, String, Integer)
+  fullName.vb: Koala.Simulation.Save.PrefabFactory.SpawnContainer(String, String, Integer)
+  name.vb: SpawnContainer(String, String, Integer)
+- uid: Koala.Simulation.Save.PrefabFactory.SpawnItem(System.String)
+  commentId: M:Koala.Simulation.Save.PrefabFactory.SpawnItem(System.String)
+  id: SpawnItem(System.String)
+  parent: Koala.Simulation.Save.PrefabFactory
+  langs:
+  - csharp
+  - vb
+  name: SpawnItem(string)
+  nameWithType: PrefabFactory.SpawnItem(string)
+  fullName: Koala.Simulation.Save.PrefabFactory.SpawnItem(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Save/PrefabFactory.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: SpawnItem
+    path: ../Packages/com.koala.simulation/Runtime/Save/PrefabFactory.cs
+    startLine: 13
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  syntax:
+    content: public static IItem SpawnItem(string prefabId)
+    parameters:
+    - id: prefabId
+      type: System.String
+    return:
+      type: Koala.Simulation.Inventory.Core.IItem
+    content.vb: Public Shared Function SpawnItem(prefabId As String) As IItem
+  overload: Koala.Simulation.Save.PrefabFactory.SpawnItem*
+  nameWithType.vb: PrefabFactory.SpawnItem(String)
+  fullName.vb: Koala.Simulation.Save.PrefabFactory.SpawnItem(String)
+  name.vb: SpawnItem(String)
+references:
+- uid: Koala.Simulation.Save
+  commentId: N:Koala.Simulation.Save
+  href: Koala.html
+  name: Koala.Simulation.Save
+  nameWithType: Koala.Simulation.Save
+  fullName: Koala.Simulation.Save
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Save.PrefabFactory.SpawnContainer*
+  commentId: Overload:Koala.Simulation.Save.PrefabFactory.SpawnContainer
+  href: Koala.Simulation.Save.PrefabFactory.html#Koala_Simulation_Save_PrefabFactory_SpawnContainer_System_String_System_String_System_Int32_
+  name: SpawnContainer
+  nameWithType: PrefabFactory.SpawnContainer
+  fullName: Koala.Simulation.Save.PrefabFactory.SpawnContainer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koala.Simulation.Inventory.Core.IContainer
+  commentId: T:Koala.Simulation.Inventory.Core.IContainer
+  parent: Koala.Simulation.Inventory.Core
+  href: Koala.Simulation.Inventory.Core.IContainer.html
+  name: IContainer
+  nameWithType: IContainer
+  fullName: Koala.Simulation.Inventory.Core.IContainer
+- uid: Koala.Simulation.Inventory.Core
+  commentId: N:Koala.Simulation.Inventory.Core
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Core
+  nameWithType: Koala.Simulation.Inventory.Core
+  fullName: Koala.Simulation.Inventory.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+- uid: Koala.Simulation.Save.PrefabFactory.SpawnItem*
+  commentId: Overload:Koala.Simulation.Save.PrefabFactory.SpawnItem
+  href: Koala.Simulation.Save.PrefabFactory.html#Koala_Simulation_Save_PrefabFactory_SpawnItem_System_String_
+  name: SpawnItem
+  nameWithType: PrefabFactory.SpawnItem
+  fullName: Koala.Simulation.Save.PrefabFactory.SpawnItem
+- uid: Koala.Simulation.Inventory.Core.IItem
+  commentId: T:Koala.Simulation.Inventory.Core.IItem
+  parent: Koala.Simulation.Inventory.Core
+  href: Koala.Simulation.Inventory.Core.IItem.html
+  name: IItem
+  nameWithType: IItem
+  fullName: Koala.Simulation.Inventory.Core.IItem

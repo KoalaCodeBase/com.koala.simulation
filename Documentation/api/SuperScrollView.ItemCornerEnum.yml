@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.ItemCornerEnum
+  commentId: T:SuperScrollView.ItemCornerEnum
+  id: ItemCornerEnum
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.ItemCornerEnum.LeftBottom
+  - SuperScrollView.ItemCornerEnum.LeftTop
+  - SuperScrollView.ItemCornerEnum.RightBottom
+  - SuperScrollView.ItemCornerEnum.RightTop
+  langs:
+  - csharp
+  - vb
+  name: ItemCornerEnum
+  nameWithType: ItemCornerEnum
+  fullName: SuperScrollView.ItemCornerEnum
+  type: Enum
+  source:
+    id: ItemCornerEnum
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public enum ItemCornerEnum
+    content.vb: Public Enum ItemCornerEnum
+- uid: SuperScrollView.ItemCornerEnum.LeftBottom
+  commentId: F:SuperScrollView.ItemCornerEnum.LeftBottom
+  id: LeftBottom
+  parent: SuperScrollView.ItemCornerEnum
+  langs:
+  - csharp
+  - vb
+  name: LeftBottom
+  nameWithType: ItemCornerEnum.LeftBottom
+  fullName: SuperScrollView.ItemCornerEnum.LeftBottom
+  type: Field
+  source:
+    id: LeftBottom
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: LeftBottom = 0
+    return:
+      type: SuperScrollView.ItemCornerEnum
+- uid: SuperScrollView.ItemCornerEnum.LeftTop
+  commentId: F:SuperScrollView.ItemCornerEnum.LeftTop
+  id: LeftTop
+  parent: SuperScrollView.ItemCornerEnum
+  langs:
+  - csharp
+  - vb
+  name: LeftTop
+  nameWithType: ItemCornerEnum.LeftTop
+  fullName: SuperScrollView.ItemCornerEnum.LeftTop
+  type: Field
+  source:
+    id: LeftTop
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: LeftTop = 1
+    return:
+      type: SuperScrollView.ItemCornerEnum
+- uid: SuperScrollView.ItemCornerEnum.RightTop
+  commentId: F:SuperScrollView.ItemCornerEnum.RightTop
+  id: RightTop
+  parent: SuperScrollView.ItemCornerEnum
+  langs:
+  - csharp
+  - vb
+  name: RightTop
+  nameWithType: ItemCornerEnum.RightTop
+  fullName: SuperScrollView.ItemCornerEnum.RightTop
+  type: Field
+  source:
+    id: RightTop
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: RightTop = 2
+    return:
+      type: SuperScrollView.ItemCornerEnum
+- uid: SuperScrollView.ItemCornerEnum.RightBottom
+  commentId: F:SuperScrollView.ItemCornerEnum.RightBottom
+  id: RightBottom
+  parent: SuperScrollView.ItemCornerEnum
+  langs:
+  - csharp
+  - vb
+  name: RightBottom
+  nameWithType: ItemCornerEnum.RightBottom
+  fullName: SuperScrollView.ItemCornerEnum.RightBottom
+  type: Field
+  source:
+    id: RightBottom
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: RightBottom = 3
+    return:
+      type: SuperScrollView.ItemCornerEnum
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: SuperScrollView.ItemCornerEnum
+  commentId: T:SuperScrollView.ItemCornerEnum
+  parent: SuperScrollView
+  href: SuperScrollView.ItemCornerEnum.html
+  name: ItemCornerEnum
+  nameWithType: ItemCornerEnum
+  fullName: SuperScrollView.ItemCornerEnum

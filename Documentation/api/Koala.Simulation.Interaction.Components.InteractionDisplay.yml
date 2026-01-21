@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.Components.InteractionDisplay
+  commentId: T:Koala.Simulation.Interaction.Components.InteractionDisplay
+  id: InteractionDisplay
+  parent: Koala.Simulation.Interaction.Components
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: InteractionDisplay
+  nameWithType: InteractionDisplay
+  fullName: Koala.Simulation.Interaction.Components.InteractionDisplay
+  type: Class
+  source:
+    remote:
+      path: Runtime/Interaction/Components/InteractionDisplay.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InteractionDisplay
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Components/InteractionDisplay.cs
+    startLine: 14
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Components
+  summary: >-
+    Displays active interaction prompts in the UI using a fixed pool of 12 labels.
+
+    <div class="TIP"><h5>tip</h5><p>
+
+    It is strongly recommended to place this component on its own dedicated Canvas,
+
+    as frequent updates may otherwise cause unnecessary layout rebuilds
+
+    in other UI elements.
+
+    </p></div>
+  example: []
+  syntax:
+    content: >-
+      [AddComponentMenu("Simulation/Interaction/Interaction Display")]
+
+      [Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")]
+
+      [DefaultExecutionOrder(1)]
+
+      public sealed class InteractionDisplay : MonoBehaviour
+    content.vb: >-
+      <AddComponentMenu("Simulation/Interaction/Interaction Display")>
+
+      <Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")>
+
+      <DefaultExecutionOrder(1)>
+
+      Public NotInheritable Class InteractionDisplay Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Simulation/Interaction/Interaction Display
+  - type: UnityEngine.IconAttribute
+    ctor: UnityEngine.IconAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Packages/com.koala.simulation/Editor/Icons/koala.png
+  - type: UnityEngine.DefaultExecutionOrder
+    ctor: UnityEngine.DefaultExecutionOrder.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+references:
+- uid: Koala.Simulation.Interaction.Components
+  commentId: N:Koala.Simulation.Interaction.Components
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Components
+  nameWithType: Koala.Simulation.Interaction.Components
+  fullName: Koala.Simulation.Interaction.Components
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Components
+    name: Components
+    href: Koala.Simulation.Interaction.Components.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Components
+    name: Components
+    href: Koala.Simulation.Interaction.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

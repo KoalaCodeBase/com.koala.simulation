@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Editor
+  commentId: N:ES3Editor
+  id: ES3Editor
+  children:
+  - ES3Editor.AddES3Prefab
+  - ES3Editor.AutoSaveWindow
+  - ES3Editor.AutoSaveWindow.HierarchyItem
+  - ES3Editor.ES3SettingsEditor
+  - ES3Editor.ES3Window
+  - ES3Editor.EditorStyle
+  - ES3Editor.HomeWindow
+  - ES3Editor.ReferencesWindow
+  - ES3Editor.SettingsWindow
+  - ES3Editor.SubWindow
+  - ES3Editor.ToolsWindow
+  - ES3Editor.TypesWindow
+  - ES3Editor.TypesWindow.TypeListItem
+  langs:
+  - csharp
+  - vb
+  name: ES3Editor
+  nameWithType: ES3Editor
+  fullName: ES3Editor
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp-Editor
+references:
+- uid: ES3Editor.SettingsWindow
+  commentId: T:ES3Editor.SettingsWindow
+  href: ES3Editor.SettingsWindow.html
+  name: SettingsWindow
+  nameWithType: SettingsWindow
+  fullName: ES3Editor.SettingsWindow
+- uid: ES3Editor.TypesWindow
+  commentId: T:ES3Editor.TypesWindow
+  href: ES3Editor.TypesWindow.html
+  name: TypesWindow
+  nameWithType: TypesWindow
+  fullName: ES3Editor.TypesWindow
+- uid: ES3Editor.TypesWindow.TypeListItem
+  commentId: T:ES3Editor.TypesWindow.TypeListItem
+  href: ES3Editor.TypesWindow.html
+  name: TypesWindow.TypeListItem
+  nameWithType: TypesWindow.TypeListItem
+  fullName: ES3Editor.TypesWindow.TypeListItem
+  spec.csharp:
+  - uid: ES3Editor.TypesWindow
+    name: TypesWindow
+    href: ES3Editor.TypesWindow.html
+  - name: .
+  - uid: ES3Editor.TypesWindow.TypeListItem
+    name: TypeListItem
+    href: ES3Editor.TypesWindow.TypeListItem.html
+  spec.vb:
+  - uid: ES3Editor.TypesWindow
+    name: TypesWindow
+    href: ES3Editor.TypesWindow.html
+  - name: .
+  - uid: ES3Editor.TypesWindow.TypeListItem
+    name: TypeListItem
+    href: ES3Editor.TypesWindow.TypeListItem.html
+- uid: ES3Editor.EditorStyle
+  commentId: T:ES3Editor.EditorStyle
+  parent: ES3Editor
+  href: ES3Editor.EditorStyle.html
+  name: EditorStyle
+  nameWithType: EditorStyle
+  fullName: ES3Editor.EditorStyle
+- uid: ES3Editor.AddES3Prefab
+  commentId: T:ES3Editor.AddES3Prefab
+  href: ES3Editor.AddES3Prefab.html
+  name: AddES3Prefab
+  nameWithType: AddES3Prefab
+  fullName: ES3Editor.AddES3Prefab
+- uid: ES3Editor.ToolsWindow
+  commentId: T:ES3Editor.ToolsWindow
+  href: ES3Editor.ToolsWindow.html
+  name: ToolsWindow
+  nameWithType: ToolsWindow
+  fullName: ES3Editor.ToolsWindow
+- uid: ES3Editor.ReferencesWindow
+  commentId: T:ES3Editor.ReferencesWindow
+  href: ES3Editor.ReferencesWindow.html
+  name: ReferencesWindow
+  nameWithType: ReferencesWindow
+  fullName: ES3Editor.ReferencesWindow
+- uid: ES3Editor.HomeWindow
+  commentId: T:ES3Editor.HomeWindow
+  href: ES3Editor.HomeWindow.html
+  name: HomeWindow
+  nameWithType: HomeWindow
+  fullName: ES3Editor.HomeWindow
+- uid: ES3Editor.AutoSaveWindow
+  commentId: T:ES3Editor.AutoSaveWindow
+  parent: ES3Editor
+  href: ES3Editor.AutoSaveWindow.html
+  name: AutoSaveWindow
+  nameWithType: AutoSaveWindow
+  fullName: ES3Editor.AutoSaveWindow
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem
+  commentId: T:ES3Editor.AutoSaveWindow.HierarchyItem
+  parent: ES3Editor
+  href: ES3Editor.AutoSaveWindow.html
+  name: AutoSaveWindow.HierarchyItem
+  nameWithType: AutoSaveWindow.HierarchyItem
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem
+  spec.csharp:
+  - uid: ES3Editor.AutoSaveWindow
+    name: AutoSaveWindow
+    href: ES3Editor.AutoSaveWindow.html
+  - name: .
+  - uid: ES3Editor.AutoSaveWindow.HierarchyItem
+    name: HierarchyItem
+    href: ES3Editor.AutoSaveWindow.HierarchyItem.html
+  spec.vb:
+  - uid: ES3Editor.AutoSaveWindow
+    name: AutoSaveWindow
+    href: ES3Editor.AutoSaveWindow.html
+  - name: .
+  - uid: ES3Editor.AutoSaveWindow.HierarchyItem
+    name: HierarchyItem
+    href: ES3Editor.AutoSaveWindow.HierarchyItem.html
+- uid: ES3Editor.ES3Window
+  commentId: T:ES3Editor.ES3Window
+  href: ES3Editor.ES3Window.html
+  name: ES3Window
+  nameWithType: ES3Window
+  fullName: ES3Editor.ES3Window
+- uid: ES3Editor.SubWindow
+  commentId: T:ES3Editor.SubWindow
+  parent: ES3Editor
+  href: ES3Editor.SubWindow.html
+  name: SubWindow
+  nameWithType: SubWindow
+  fullName: ES3Editor.SubWindow
+- uid: ES3Editor.ES3SettingsEditor
+  commentId: T:ES3Editor.ES3SettingsEditor
+  href: ES3Editor.ES3SettingsEditor.html
+  name: ES3SettingsEditor
+  nameWithType: ES3SettingsEditor
+  fullName: ES3Editor.ES3SettingsEditor
+- uid: ES3Editor
+  commentId: N:ES3Editor
+  href: ES3Editor.html
+  name: ES3Editor
+  nameWithType: ES3Editor
+  fullName: ES3Editor

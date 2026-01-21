@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.Samples
+  commentId: N:Koala.Simulation.Inventory.Samples
+  id: Koala.Simulation.Inventory.Samples
+  children:
+  - Koala.Simulation.Inventory.Samples.ItemComponent_Sample
+  - Koala.Simulation.Inventory.Samples.ShelfComponent_Sample
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Inventory.Samples
+  nameWithType: Koala.Simulation.Inventory.Samples
+  fullName: Koala.Simulation.Inventory.Samples
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Inventory.Samples.ItemComponent_Sample
+  commentId: T:Koala.Simulation.Inventory.Samples.ItemComponent_Sample
+  href: Koala.Simulation.Inventory.Samples.ItemComponent_Sample.html
+  name: ItemComponent_Sample
+  nameWithType: ItemComponent_Sample
+  fullName: Koala.Simulation.Inventory.Samples.ItemComponent_Sample
+- uid: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample
+  commentId: T:Koala.Simulation.Inventory.Samples.ShelfComponent_Sample
+  href: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample.html
+  name: ShelfComponent_Sample
+  nameWithType: ShelfComponent_Sample
+  fullName: Koala.Simulation.Inventory.Samples.ShelfComponent_Sample

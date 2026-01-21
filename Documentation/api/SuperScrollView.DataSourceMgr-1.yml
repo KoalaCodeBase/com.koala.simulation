@@ -1,0 +1,963 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.DataSourceMgr`1
+  commentId: T:SuperScrollView.DataSourceMgr`1
+  id: DataSourceMgr`1
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.DataSourceMgr`1.#ctor(System.Int32)
+  - SuperScrollView.DataSourceMgr`1.AppendData(System.Int32)
+  - SuperScrollView.DataSourceMgr`1.AppendData(`0)
+  - SuperScrollView.DataSourceMgr`1.ExchangeData(System.Int32,System.Int32)
+  - SuperScrollView.DataSourceMgr`1.GetFilteredItemList(System.String)
+  - SuperScrollView.DataSourceMgr`1.GetItemDataByIndex(System.Int32)
+  - SuperScrollView.DataSourceMgr`1.InsertData(System.Int32)
+  - SuperScrollView.DataSourceMgr`1.InsertData(System.Int32,`0)
+  - SuperScrollView.DataSourceMgr`1.ItemDataList
+  - SuperScrollView.DataSourceMgr`1.RemoveData(System.Int32)
+  - SuperScrollView.DataSourceMgr`1.RequestLoadMoreDataList(System.Int32,System.Action)
+  - SuperScrollView.DataSourceMgr`1.RequestRefreshDataList(System.Action)
+  - SuperScrollView.DataSourceMgr`1.SetDataTotalCount(System.Int32)
+  - SuperScrollView.DataSourceMgr`1.TotalItemCount
+  - SuperScrollView.DataSourceMgr`1.Update
+  langs:
+  - csharp
+  - vb
+  name: DataSourceMgr<T>
+  nameWithType: DataSourceMgr<T>
+  fullName: SuperScrollView.DataSourceMgr<T>
+  type: Class
+  source:
+    id: DataSourceMgr
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: 'public class DataSourceMgr<T> where T : ItemDataBase, new()'
+    typeParameters:
+    - id: T
+    content.vb: Public Class DataSourceMgr(Of T As {ItemDataBase, New})
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: DataSourceMgr(Of T)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T)
+  name.vb: DataSourceMgr(Of T)
+- uid: SuperScrollView.DataSourceMgr`1.#ctor(System.Int32)
+  commentId: M:SuperScrollView.DataSourceMgr`1.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: DataSourceMgr(int)
+  nameWithType: DataSourceMgr<T>.DataSourceMgr(int)
+  fullName: SuperScrollView.DataSourceMgr<T>.DataSourceMgr(int)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public DataSourceMgr(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+    content.vb: Public Sub New(count As Integer)
+  overload: SuperScrollView.DataSourceMgr`1.#ctor*
+  nameWithType.vb: DataSourceMgr(Of T).New(Integer)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).New(Integer)
+  name.vb: New(Integer)
+- uid: SuperScrollView.DataSourceMgr`1.GetItemDataByIndex(System.Int32)
+  commentId: M:SuperScrollView.DataSourceMgr`1.GetItemDataByIndex(System.Int32)
+  id: GetItemDataByIndex(System.Int32)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: GetItemDataByIndex(int)
+  nameWithType: DataSourceMgr<T>.GetItemDataByIndex(int)
+  fullName: SuperScrollView.DataSourceMgr<T>.GetItemDataByIndex(int)
+  type: Method
+  source:
+    id: GetItemDataByIndex
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public T GetItemDataByIndex(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: '{T}'
+    content.vb: Public Function GetItemDataByIndex(index As Integer) As T
+  overload: SuperScrollView.DataSourceMgr`1.GetItemDataByIndex*
+  nameWithType.vb: DataSourceMgr(Of T).GetItemDataByIndex(Integer)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).GetItemDataByIndex(Integer)
+  name.vb: GetItemDataByIndex(Integer)
+- uid: SuperScrollView.DataSourceMgr`1.TotalItemCount
+  commentId: P:SuperScrollView.DataSourceMgr`1.TotalItemCount
+  id: TotalItemCount
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: TotalItemCount
+  nameWithType: DataSourceMgr<T>.TotalItemCount
+  fullName: SuperScrollView.DataSourceMgr<T>.TotalItemCount
+  type: Property
+  source:
+    id: TotalItemCount
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int TotalItemCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TotalItemCount As Integer
+  overload: SuperScrollView.DataSourceMgr`1.TotalItemCount*
+  nameWithType.vb: DataSourceMgr(Of T).TotalItemCount
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).TotalItemCount
+- uid: SuperScrollView.DataSourceMgr`1.ItemDataList
+  commentId: P:SuperScrollView.DataSourceMgr`1.ItemDataList
+  id: ItemDataList
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: ItemDataList
+  nameWithType: DataSourceMgr<T>.ItemDataList
+  fullName: SuperScrollView.DataSourceMgr<T>.ItemDataList
+  type: Property
+  source:
+    id: ItemDataList
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public List<T> ItemDataList { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public ReadOnly Property ItemDataList As List(Of T)
+  overload: SuperScrollView.DataSourceMgr`1.ItemDataList*
+  nameWithType.vb: DataSourceMgr(Of T).ItemDataList
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).ItemDataList
+- uid: SuperScrollView.DataSourceMgr`1.RequestRefreshDataList(System.Action)
+  commentId: M:SuperScrollView.DataSourceMgr`1.RequestRefreshDataList(System.Action)
+  id: RequestRefreshDataList(System.Action)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: RequestRefreshDataList(Action)
+  nameWithType: DataSourceMgr<T>.RequestRefreshDataList(Action)
+  fullName: SuperScrollView.DataSourceMgr<T>.RequestRefreshDataList(System.Action)
+  type: Method
+  source:
+    id: RequestRefreshDataList
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void RequestRefreshDataList(Action onReflushFinished)
+    parameters:
+    - id: onReflushFinished
+      type: System.Action
+    content.vb: Public Sub RequestRefreshDataList(onReflushFinished As Action)
+  overload: SuperScrollView.DataSourceMgr`1.RequestRefreshDataList*
+  nameWithType.vb: DataSourceMgr(Of T).RequestRefreshDataList(Action)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).RequestRefreshDataList(System.Action)
+- uid: SuperScrollView.DataSourceMgr`1.RequestLoadMoreDataList(System.Int32,System.Action)
+  commentId: M:SuperScrollView.DataSourceMgr`1.RequestLoadMoreDataList(System.Int32,System.Action)
+  id: RequestLoadMoreDataList(System.Int32,System.Action)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: RequestLoadMoreDataList(int, Action)
+  nameWithType: DataSourceMgr<T>.RequestLoadMoreDataList(int, Action)
+  fullName: SuperScrollView.DataSourceMgr<T>.RequestLoadMoreDataList(int, System.Action)
+  type: Method
+  source:
+    id: RequestLoadMoreDataList
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void RequestLoadMoreDataList(int loadCount, Action onLoadMoreFinished)
+    parameters:
+    - id: loadCount
+      type: System.Int32
+    - id: onLoadMoreFinished
+      type: System.Action
+    content.vb: Public Sub RequestLoadMoreDataList(loadCount As Integer, onLoadMoreFinished As Action)
+  overload: SuperScrollView.DataSourceMgr`1.RequestLoadMoreDataList*
+  nameWithType.vb: DataSourceMgr(Of T).RequestLoadMoreDataList(Integer, Action)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).RequestLoadMoreDataList(Integer, System.Action)
+  name.vb: RequestLoadMoreDataList(Integer, Action)
+- uid: SuperScrollView.DataSourceMgr`1.Update
+  commentId: M:SuperScrollView.DataSourceMgr`1.Update
+  id: Update
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: DataSourceMgr<T>.Update()
+  fullName: SuperScrollView.DataSourceMgr<T>.Update()
+  type: Method
+  source:
+    id: Update
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update()
+  overload: SuperScrollView.DataSourceMgr`1.Update*
+  nameWithType.vb: DataSourceMgr(Of T).Update()
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).Update()
+- uid: SuperScrollView.DataSourceMgr`1.SetDataTotalCount(System.Int32)
+  commentId: M:SuperScrollView.DataSourceMgr`1.SetDataTotalCount(System.Int32)
+  id: SetDataTotalCount(System.Int32)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: SetDataTotalCount(int)
+  nameWithType: DataSourceMgr<T>.SetDataTotalCount(int)
+  fullName: SuperScrollView.DataSourceMgr<T>.SetDataTotalCount(int)
+  type: Method
+  source:
+    id: SetDataTotalCount
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 92
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void SetDataTotalCount(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+    content.vb: Public Sub SetDataTotalCount(count As Integer)
+  overload: SuperScrollView.DataSourceMgr`1.SetDataTotalCount*
+  nameWithType.vb: DataSourceMgr(Of T).SetDataTotalCount(Integer)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).SetDataTotalCount(Integer)
+  name.vb: SetDataTotalCount(Integer)
+- uid: SuperScrollView.DataSourceMgr`1.ExchangeData(System.Int32,System.Int32)
+  commentId: M:SuperScrollView.DataSourceMgr`1.ExchangeData(System.Int32,System.Int32)
+  id: ExchangeData(System.Int32,System.Int32)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: ExchangeData(int, int)
+  nameWithType: DataSourceMgr<T>.ExchangeData(int, int)
+  fullName: SuperScrollView.DataSourceMgr<T>.ExchangeData(int, int)
+  type: Method
+  source:
+    id: ExchangeData
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 109
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void ExchangeData(int index1, int index2)
+    parameters:
+    - id: index1
+      type: System.Int32
+    - id: index2
+      type: System.Int32
+    content.vb: Public Sub ExchangeData(index1 As Integer, index2 As Integer)
+  overload: SuperScrollView.DataSourceMgr`1.ExchangeData*
+  nameWithType.vb: DataSourceMgr(Of T).ExchangeData(Integer, Integer)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).ExchangeData(Integer, Integer)
+  name.vb: ExchangeData(Integer, Integer)
+- uid: SuperScrollView.DataSourceMgr`1.RemoveData(System.Int32)
+  commentId: M:SuperScrollView.DataSourceMgr`1.RemoveData(System.Int32)
+  id: RemoveData(System.Int32)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveData(int)
+  nameWithType: DataSourceMgr<T>.RemoveData(int)
+  fullName: SuperScrollView.DataSourceMgr<T>.RemoveData(int)
+  type: Method
+  source:
+    id: RemoveData
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void RemoveData(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub RemoveData(index As Integer)
+  overload: SuperScrollView.DataSourceMgr`1.RemoveData*
+  nameWithType.vb: DataSourceMgr(Of T).RemoveData(Integer)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).RemoveData(Integer)
+  name.vb: RemoveData(Integer)
+- uid: SuperScrollView.DataSourceMgr`1.InsertData(System.Int32)
+  commentId: M:SuperScrollView.DataSourceMgr`1.InsertData(System.Int32)
+  id: InsertData(System.Int32)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: InsertData(int)
+  nameWithType: DataSourceMgr<T>.InsertData(int)
+  fullName: SuperScrollView.DataSourceMgr<T>.InsertData(int)
+  type: Method
+  source:
+    id: InsertData
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 122
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public T InsertData(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: '{T}'
+    content.vb: Public Function InsertData(index As Integer) As T
+  overload: SuperScrollView.DataSourceMgr`1.InsertData*
+  nameWithType.vb: DataSourceMgr(Of T).InsertData(Integer)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).InsertData(Integer)
+  name.vb: InsertData(Integer)
+- uid: SuperScrollView.DataSourceMgr`1.InsertData(System.Int32,`0)
+  commentId: M:SuperScrollView.DataSourceMgr`1.InsertData(System.Int32,`0)
+  id: InsertData(System.Int32,`0)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: InsertData(int, T)
+  nameWithType: DataSourceMgr<T>.InsertData(int, T)
+  fullName: SuperScrollView.DataSourceMgr<T>.InsertData(int, T)
+  type: Method
+  source:
+    id: InsertData
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 134
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public T InsertData(int index, T newData)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: newData
+      type: '{T}'
+    return:
+      type: '{T}'
+    content.vb: Public Function InsertData(index As Integer, newData As T) As T
+  overload: SuperScrollView.DataSourceMgr`1.InsertData*
+  nameWithType.vb: DataSourceMgr(Of T).InsertData(Integer, T)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).InsertData(Integer, T)
+  name.vb: InsertData(Integer, T)
+- uid: SuperScrollView.DataSourceMgr`1.AppendData(System.Int32)
+  commentId: M:SuperScrollView.DataSourceMgr`1.AppendData(System.Int32)
+  id: AppendData(System.Int32)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: AppendData(int)
+  nameWithType: DataSourceMgr<T>.AppendData(int)
+  fullName: SuperScrollView.DataSourceMgr<T>.AppendData(int)
+  type: Method
+  source:
+    id: AppendData
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 155
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void AppendData(int addCount)
+    parameters:
+    - id: addCount
+      type: System.Int32
+    content.vb: Public Sub AppendData(addCount As Integer)
+  overload: SuperScrollView.DataSourceMgr`1.AppendData*
+  nameWithType.vb: DataSourceMgr(Of T).AppendData(Integer)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).AppendData(Integer)
+  name.vb: AppendData(Integer)
+- uid: SuperScrollView.DataSourceMgr`1.AppendData(`0)
+  commentId: M:SuperScrollView.DataSourceMgr`1.AppendData(`0)
+  id: AppendData(`0)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: AppendData(T)
+  nameWithType: DataSourceMgr<T>.AppendData(T)
+  fullName: SuperScrollView.DataSourceMgr<T>.AppendData(T)
+  type: Method
+  source:
+    id: AppendData
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 167
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void AppendData(T itemData)
+    parameters:
+    - id: itemData
+      type: '{T}'
+    content.vb: Public Sub AppendData(itemData As T)
+  overload: SuperScrollView.DataSourceMgr`1.AppendData*
+  nameWithType.vb: DataSourceMgr(Of T).AppendData(T)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).AppendData(T)
+- uid: SuperScrollView.DataSourceMgr`1.GetFilteredItemList(System.String)
+  commentId: M:SuperScrollView.DataSourceMgr`1.GetFilteredItemList(System.String)
+  id: GetFilteredItemList(System.String)
+  parent: SuperScrollView.DataSourceMgr`1
+  langs:
+  - csharp
+  - vb
+  name: GetFilteredItemList(string)
+  nameWithType: DataSourceMgr<T>.GetFilteredItemList(string)
+  fullName: SuperScrollView.DataSourceMgr<T>.GetFilteredItemList(string)
+  type: Method
+  source:
+    id: GetFilteredItemList
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\DataSourceMgr.cs
+    startLine: 172
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public List<T> GetFilteredItemList(string filterStr)
+    parameters:
+    - id: filterStr
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public Function GetFilteredItemList(filterStr As String) As List(Of T)
+  overload: SuperScrollView.DataSourceMgr`1.GetFilteredItemList*
+  nameWithType.vb: DataSourceMgr(Of T).GetFilteredItemList(String)
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).GetFilteredItemList(String)
+  name.vb: GetFilteredItemList(String)
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SuperScrollView.DataSourceMgr`1.#ctor*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.#ctor
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1__ctor_System_Int32_
+  name: DataSourceMgr
+  nameWithType: DataSourceMgr<T>.DataSourceMgr
+  fullName: SuperScrollView.DataSourceMgr<T>.DataSourceMgr
+  nameWithType.vb: DataSourceMgr(Of T).New
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SuperScrollView.DataSourceMgr`1.GetItemDataByIndex*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.GetItemDataByIndex
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_GetItemDataByIndex_System_Int32_
+  name: GetItemDataByIndex
+  nameWithType: DataSourceMgr<T>.GetItemDataByIndex
+  fullName: SuperScrollView.DataSourceMgr<T>.GetItemDataByIndex
+  nameWithType.vb: DataSourceMgr(Of T).GetItemDataByIndex
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).GetItemDataByIndex
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SuperScrollView.DataSourceMgr`1.TotalItemCount*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.TotalItemCount
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_TotalItemCount
+  name: TotalItemCount
+  nameWithType: DataSourceMgr<T>.TotalItemCount
+  fullName: SuperScrollView.DataSourceMgr<T>.TotalItemCount
+  nameWithType.vb: DataSourceMgr(Of T).TotalItemCount
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).TotalItemCount
+- uid: SuperScrollView.DataSourceMgr`1.ItemDataList*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.ItemDataList
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_ItemDataList
+  name: ItemDataList
+  nameWithType: DataSourceMgr<T>.ItemDataList
+  fullName: SuperScrollView.DataSourceMgr<T>.ItemDataList
+  nameWithType.vb: DataSourceMgr(Of T).ItemDataList
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).ItemDataList
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SuperScrollView.DataSourceMgr`1.RequestRefreshDataList*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.RequestRefreshDataList
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_RequestRefreshDataList_System_Action_
+  name: RequestRefreshDataList
+  nameWithType: DataSourceMgr<T>.RequestRefreshDataList
+  fullName: SuperScrollView.DataSourceMgr<T>.RequestRefreshDataList
+  nameWithType.vb: DataSourceMgr(Of T).RequestRefreshDataList
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).RequestRefreshDataList
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: SuperScrollView.DataSourceMgr`1.RequestLoadMoreDataList*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.RequestLoadMoreDataList
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_RequestLoadMoreDataList_System_Int32_System_Action_
+  name: RequestLoadMoreDataList
+  nameWithType: DataSourceMgr<T>.RequestLoadMoreDataList
+  fullName: SuperScrollView.DataSourceMgr<T>.RequestLoadMoreDataList
+  nameWithType.vb: DataSourceMgr(Of T).RequestLoadMoreDataList
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).RequestLoadMoreDataList
+- uid: SuperScrollView.DataSourceMgr`1.Update*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.Update
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_Update
+  name: Update
+  nameWithType: DataSourceMgr<T>.Update
+  fullName: SuperScrollView.DataSourceMgr<T>.Update
+  nameWithType.vb: DataSourceMgr(Of T).Update
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).Update
+- uid: SuperScrollView.DataSourceMgr`1.SetDataTotalCount*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.SetDataTotalCount
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_SetDataTotalCount_System_Int32_
+  name: SetDataTotalCount
+  nameWithType: DataSourceMgr<T>.SetDataTotalCount
+  fullName: SuperScrollView.DataSourceMgr<T>.SetDataTotalCount
+  nameWithType.vb: DataSourceMgr(Of T).SetDataTotalCount
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).SetDataTotalCount
+- uid: SuperScrollView.DataSourceMgr`1.ExchangeData*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.ExchangeData
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_ExchangeData_System_Int32_System_Int32_
+  name: ExchangeData
+  nameWithType: DataSourceMgr<T>.ExchangeData
+  fullName: SuperScrollView.DataSourceMgr<T>.ExchangeData
+  nameWithType.vb: DataSourceMgr(Of T).ExchangeData
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).ExchangeData
+- uid: SuperScrollView.DataSourceMgr`1.RemoveData*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.RemoveData
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_RemoveData_System_Int32_
+  name: RemoveData
+  nameWithType: DataSourceMgr<T>.RemoveData
+  fullName: SuperScrollView.DataSourceMgr<T>.RemoveData
+  nameWithType.vb: DataSourceMgr(Of T).RemoveData
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).RemoveData
+- uid: SuperScrollView.DataSourceMgr`1.InsertData*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.InsertData
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_InsertData_System_Int32_
+  name: InsertData
+  nameWithType: DataSourceMgr<T>.InsertData
+  fullName: SuperScrollView.DataSourceMgr<T>.InsertData
+  nameWithType.vb: DataSourceMgr(Of T).InsertData
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).InsertData
+- uid: SuperScrollView.DataSourceMgr`1.AppendData*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.AppendData
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_AppendData_System_Int32_
+  name: AppendData
+  nameWithType: DataSourceMgr<T>.AppendData
+  fullName: SuperScrollView.DataSourceMgr<T>.AppendData
+  nameWithType.vb: DataSourceMgr(Of T).AppendData
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).AppendData
+- uid: SuperScrollView.DataSourceMgr`1.GetFilteredItemList*
+  commentId: Overload:SuperScrollView.DataSourceMgr`1.GetFilteredItemList
+  href: SuperScrollView.DataSourceMgr-1.html#SuperScrollView_DataSourceMgr_1_GetFilteredItemList_System_String_
+  name: GetFilteredItemList
+  nameWithType: DataSourceMgr<T>.GetFilteredItemList
+  fullName: SuperScrollView.DataSourceMgr<T>.GetFilteredItemList
+  nameWithType.vb: DataSourceMgr(Of T).GetFilteredItemList
+  fullName.vb: SuperScrollView.DataSourceMgr(Of T).GetFilteredItemList
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

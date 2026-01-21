@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Common.DocfxIgnoreAttribute
+  commentId: T:Koala.Simulation.Common.DocfxIgnoreAttribute
+  id: DocfxIgnoreAttribute
+  parent: Koala.Simulation.Common
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: DocfxIgnoreAttribute
+  nameWithType: DocfxIgnoreAttribute
+  fullName: Koala.Simulation.Common.DocfxIgnoreAttribute
+  type: Class
+  source:
+    remote:
+      path: Runtime/Common/DocfxIgnoreAttribute.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: DocfxIgnoreAttribute
+    path: ../Packages/com.koala.simulation/Runtime/Common/DocfxIgnoreAttribute.cs
+    startLine: 2
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Common
+  syntax:
+    content: >-
+      [AttributeUsage(AttributeTargets.All, Inherited = false)]
+
+      public sealed class DocfxIgnoreAttribute : Attribute
+    content.vb: >-
+      <AttributeUsage(AttributeTargets.All, Inherited:=False)>
+
+      Public NotInheritable Class DocfxIgnoreAttribute Inherits Attribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  attributes:
+  - type: System.AttributeUsageAttribute
+    ctor: System.AttributeUsageAttribute.#ctor(System.AttributeTargets)
+    arguments:
+    - type: System.AttributeTargets
+      value: 32767
+    namedArguments:
+    - name: Inherited
+      type: System.Boolean
+      value: false
+references:
+- uid: Koala.Simulation.Common
+  commentId: N:Koala.Simulation.Common
+  href: Koala.html
+  name: Koala.Simulation.Common
+  nameWithType: Koala.Simulation.Common
+  fullName: Koala.Simulation.Common
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Common
+    name: Common
+    href: Koala.Simulation.Common.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Common
+    name: Common
+    href: Koala.Simulation.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

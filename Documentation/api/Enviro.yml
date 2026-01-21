@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: Enviro
+  commentId: N:Enviro
+  id: Enviro
+  children:
+  - Enviro.EnviroMicrosplatIntegration
+  - Enviro.EnviroMirrorPlayer
+  - Enviro.EnviroMirrorServer
+  - Enviro.EnviroPhotonIntegration
+  - Enviro.EventTest
+  - Enviro.UISample
+  langs:
+  - csharp
+  - vb
+  name: Enviro
+  nameWithType: Enviro
+  fullName: Enviro
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Enviro.UISample
+  commentId: T:Enviro.UISample
+  href: Enviro.UISample.html
+  name: UISample
+  nameWithType: UISample
+  fullName: Enviro.UISample
+- uid: Enviro.EnviroMicrosplatIntegration
+  commentId: T:Enviro.EnviroMicrosplatIntegration
+  href: Enviro.EnviroMicrosplatIntegration.html
+  name: EnviroMicrosplatIntegration
+  nameWithType: EnviroMicrosplatIntegration
+  fullName: Enviro.EnviroMicrosplatIntegration
+- uid: Enviro.EventTest
+  commentId: T:Enviro.EventTest
+  href: Enviro.EventTest.html
+  name: EventTest
+  nameWithType: EventTest
+  fullName: Enviro.EventTest
+- uid: Enviro.EnviroMirrorServer
+  commentId: T:Enviro.EnviroMirrorServer
+  href: Enviro.EnviroMirrorServer.html
+  name: EnviroMirrorServer
+  nameWithType: EnviroMirrorServer
+  fullName: Enviro.EnviroMirrorServer
+- uid: Enviro.EnviroPhotonIntegration
+  commentId: T:Enviro.EnviroPhotonIntegration
+  href: Enviro.EnviroPhotonIntegration.html
+  name: EnviroPhotonIntegration
+  nameWithType: EnviroPhotonIntegration
+  fullName: Enviro.EnviroPhotonIntegration
+- uid: Enviro.EnviroMirrorPlayer
+  commentId: T:Enviro.EnviroMirrorPlayer
+  href: Enviro.EnviroMirrorPlayer.html
+  name: EnviroMirrorPlayer
+  nameWithType: EnviroMirrorPlayer
+  fullName: Enviro.EnviroMirrorPlayer

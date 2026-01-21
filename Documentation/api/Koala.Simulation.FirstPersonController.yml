@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.FirstPersonController
+  commentId: N:Koala.Simulation.FirstPersonController
+  id: Koala.Simulation.FirstPersonController
+  children:
+  - Koala.Simulation.FirstPersonController.BasicRigidBodyPush
+  - Koala.Simulation.FirstPersonController.FirstPersonController
+  - Koala.Simulation.FirstPersonController.PlayerInputState
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.FirstPersonController
+  nameWithType: Koala.Simulation.FirstPersonController
+  fullName: Koala.Simulation.FirstPersonController
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.FirstPersonController.FirstPersonController
+  commentId: T:Koala.Simulation.FirstPersonController.FirstPersonController
+  href: Koala.Simulation.FirstPersonController.FirstPersonController.html
+  name: FirstPersonController
+  nameWithType: FirstPersonController
+  fullName: Koala.Simulation.FirstPersonController.FirstPersonController
+- uid: Koala.Simulation.FirstPersonController.PlayerInputState
+  commentId: T:Koala.Simulation.FirstPersonController.PlayerInputState
+  href: Koala.Simulation.FirstPersonController.PlayerInputState.html
+  name: PlayerInputState
+  nameWithType: PlayerInputState
+  fullName: Koala.Simulation.FirstPersonController.PlayerInputState
+- uid: Koala.Simulation.FirstPersonController.BasicRigidBodyPush
+  commentId: T:Koala.Simulation.FirstPersonController.BasicRigidBodyPush
+  href: Koala.Simulation.FirstPersonController.BasicRigidBodyPush.html
+  name: BasicRigidBodyPush
+  nameWithType: BasicRigidBodyPush
+  fullName: Koala.Simulation.FirstPersonController.BasicRigidBodyPush

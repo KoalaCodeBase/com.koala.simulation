@@ -1,0 +1,583 @@
+### YamlMime:ManagedReference
+items:
+- uid: AmplifyColor.LUTSettings
+  commentId: T:AmplifyColor.LUTSettings
+  id: LUTSettings
+  parent: AmplifyColor
+  children:
+  - AmplifyColor.LUTSettings.#ctor
+  - AmplifyColor.LUTSettings.#ctor(System.Int32)
+  - AmplifyColor.LUTSettings.#ctor(System.Int32,System.Int32)
+  - AmplifyColor.LUTSettings.Columns
+  - AmplifyColor.LUTSettings.Height
+  - AmplifyColor.LUTSettings.Rows
+  - AmplifyColor.LUTSettings.Size
+  - AmplifyColor.LUTSettings.Update(System.Int32,System.Int32,System.Int32)
+  - AmplifyColor.LUTSettings.Width
+  langs:
+  - csharp
+  - vb
+  name: LUTSettings
+  nameWithType: LUTSettings
+  fullName: AmplifyColor.LUTSettings
+  type: Class
+  source:
+    id: LUTSettings
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public class LUTSettings
+    content.vb: Public Class LUTSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AmplifyColor.LUTSettings.#ctor
+  commentId: M:AmplifyColor.LUTSettings.#ctor
+  id: '#ctor'
+  parent: AmplifyColor.LUTSettings
+  langs:
+  - csharp
+  - vb
+  name: LUTSettings()
+  nameWithType: LUTSettings.LUTSettings()
+  fullName: AmplifyColor.LUTSettings.LUTSettings()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public LUTSettings()
+    content.vb: Public Sub New()
+  overload: AmplifyColor.LUTSettings.#ctor*
+  nameWithType.vb: LUTSettings.New()
+  fullName.vb: AmplifyColor.LUTSettings.New()
+  name.vb: New()
+- uid: AmplifyColor.LUTSettings.#ctor(System.Int32)
+  commentId: M:AmplifyColor.LUTSettings.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: AmplifyColor.LUTSettings
+  langs:
+  - csharp
+  - vb
+  name: LUTSettings(int)
+  nameWithType: LUTSettings.LUTSettings(int)
+  fullName: AmplifyColor.LUTSettings.LUTSettings(int)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public LUTSettings(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+    content.vb: Public Sub New(size As Integer)
+  overload: AmplifyColor.LUTSettings.#ctor*
+  nameWithType.vb: LUTSettings.New(Integer)
+  fullName.vb: AmplifyColor.LUTSettings.New(Integer)
+  name.vb: New(Integer)
+- uid: AmplifyColor.LUTSettings.#ctor(System.Int32,System.Int32)
+  commentId: M:AmplifyColor.LUTSettings.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: AmplifyColor.LUTSettings
+  langs:
+  - csharp
+  - vb
+  name: LUTSettings(int, int)
+  nameWithType: LUTSettings.LUTSettings(int, int)
+  fullName: AmplifyColor.LUTSettings.LUTSettings(int, int)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public LUTSettings(int columns, int rows)
+    parameters:
+    - id: columns
+      type: System.Int32
+    - id: rows
+      type: System.Int32
+    content.vb: Public Sub New(columns As Integer, rows As Integer)
+  overload: AmplifyColor.LUTSettings.#ctor*
+  nameWithType.vb: LUTSettings.New(Integer, Integer)
+  fullName.vb: AmplifyColor.LUTSettings.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: AmplifyColor.LUTSettings.Size
+  commentId: P:AmplifyColor.LUTSettings.Size
+  id: Size
+  parent: AmplifyColor.LUTSettings
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: LUTSettings.Size
+  fullName: AmplifyColor.LUTSettings.Size
+  type: Property
+  source:
+    id: Size
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public int Size { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Size As Integer
+  overload: AmplifyColor.LUTSettings.Size*
+- uid: AmplifyColor.LUTSettings.Columns
+  commentId: P:AmplifyColor.LUTSettings.Columns
+  id: Columns
+  parent: AmplifyColor.LUTSettings
+  langs:
+  - csharp
+  - vb
+  name: Columns
+  nameWithType: LUTSettings.Columns
+  fullName: AmplifyColor.LUTSettings.Columns
+  type: Property
+  source:
+    id: Columns
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public int Columns { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Columns As Integer
+  overload: AmplifyColor.LUTSettings.Columns*
+- uid: AmplifyColor.LUTSettings.Rows
+  commentId: P:AmplifyColor.LUTSettings.Rows
+  id: Rows
+  parent: AmplifyColor.LUTSettings
+  langs:
+  - csharp
+  - vb
+  name: Rows
+  nameWithType: LUTSettings.Rows
+  fullName: AmplifyColor.LUTSettings.Rows
+  type: Property
+  source:
+    id: Rows
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public int Rows { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Rows As Integer
+  overload: AmplifyColor.LUTSettings.Rows*
+- uid: AmplifyColor.LUTSettings.Height
+  commentId: P:AmplifyColor.LUTSettings.Height
+  id: Height
+  parent: AmplifyColor.LUTSettings
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: LUTSettings.Height
+  fullName: AmplifyColor.LUTSettings.Height
+  type: Property
+  source:
+    id: Height
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public int Height { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Height As Integer
+  overload: AmplifyColor.LUTSettings.Height*
+- uid: AmplifyColor.LUTSettings.Width
+  commentId: P:AmplifyColor.LUTSettings.Width
+  id: Width
+  parent: AmplifyColor.LUTSettings
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: LUTSettings.Width
+  fullName: AmplifyColor.LUTSettings.Width
+  type: Property
+  source:
+    id: Width
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public int Width { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Width As Integer
+  overload: AmplifyColor.LUTSettings.Width*
+- uid: AmplifyColor.LUTSettings.Update(System.Int32,System.Int32,System.Int32)
+  commentId: M:AmplifyColor.LUTSettings.Update(System.Int32,System.Int32,System.Int32)
+  id: Update(System.Int32,System.Int32,System.Int32)
+  parent: AmplifyColor.LUTSettings
+  langs:
+  - csharp
+  - vb
+  name: Update(int, int, int)
+  nameWithType: LUTSettings.Update(int, int, int)
+  fullName: AmplifyColor.LUTSettings.Update(int, int, int)
+  type: Method
+  source:
+    id: Update
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public void Update(int size, int columns, int rows)
+    parameters:
+    - id: size
+      type: System.Int32
+    - id: columns
+      type: System.Int32
+    - id: rows
+      type: System.Int32
+    content.vb: Public Sub Update(size As Integer, columns As Integer, rows As Integer)
+  overload: AmplifyColor.LUTSettings.Update*
+  nameWithType.vb: LUTSettings.Update(Integer, Integer, Integer)
+  fullName.vb: AmplifyColor.LUTSettings.Update(Integer, Integer, Integer)
+  name.vb: Update(Integer, Integer, Integer)
+references:
+- uid: AmplifyColor
+  commentId: N:AmplifyColor
+  href: AmplifyColor.html
+  name: AmplifyColor
+  nameWithType: AmplifyColor
+  fullName: AmplifyColor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AmplifyColor.LUTSettings.#ctor*
+  commentId: Overload:AmplifyColor.LUTSettings.#ctor
+  href: AmplifyColor.LUTSettings.html#AmplifyColor_LUTSettings__ctor
+  name: LUTSettings
+  nameWithType: LUTSettings.LUTSettings
+  fullName: AmplifyColor.LUTSettings.LUTSettings
+  nameWithType.vb: LUTSettings.New
+  fullName.vb: AmplifyColor.LUTSettings.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AmplifyColor.LUTSettings.Size*
+  commentId: Overload:AmplifyColor.LUTSettings.Size
+  href: AmplifyColor.LUTSettings.html#AmplifyColor_LUTSettings_Size
+  name: Size
+  nameWithType: LUTSettings.Size
+  fullName: AmplifyColor.LUTSettings.Size
+- uid: AmplifyColor.LUTSettings.Columns*
+  commentId: Overload:AmplifyColor.LUTSettings.Columns
+  href: AmplifyColor.LUTSettings.html#AmplifyColor_LUTSettings_Columns
+  name: Columns
+  nameWithType: LUTSettings.Columns
+  fullName: AmplifyColor.LUTSettings.Columns
+- uid: AmplifyColor.LUTSettings.Rows*
+  commentId: Overload:AmplifyColor.LUTSettings.Rows
+  href: AmplifyColor.LUTSettings.html#AmplifyColor_LUTSettings_Rows
+  name: Rows
+  nameWithType: LUTSettings.Rows
+  fullName: AmplifyColor.LUTSettings.Rows
+- uid: AmplifyColor.LUTSettings.Height*
+  commentId: Overload:AmplifyColor.LUTSettings.Height
+  href: AmplifyColor.LUTSettings.html#AmplifyColor_LUTSettings_Height
+  name: Height
+  nameWithType: LUTSettings.Height
+  fullName: AmplifyColor.LUTSettings.Height
+- uid: AmplifyColor.LUTSettings.Width*
+  commentId: Overload:AmplifyColor.LUTSettings.Width
+  href: AmplifyColor.LUTSettings.html#AmplifyColor_LUTSettings_Width
+  name: Width
+  nameWithType: LUTSettings.Width
+  fullName: AmplifyColor.LUTSettings.Width
+- uid: AmplifyColor.LUTSettings.Update*
+  commentId: Overload:AmplifyColor.LUTSettings.Update
+  href: AmplifyColor.LUTSettings.html#AmplifyColor_LUTSettings_Update_System_Int32_System_Int32_System_Int32_
+  name: Update
+  nameWithType: LUTSettings.Update
+  fullName: AmplifyColor.LUTSettings.Update

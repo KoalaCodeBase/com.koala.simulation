@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Common
+  commentId: N:Koala.Simulation.Common
+  id: Koala.Simulation.Common
+  children:
+  - Koala.Simulation.Common.DocfxIgnoreAttribute
+  - Koala.Simulation.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Common
+  nameWithType: Koala.Simulation.Common
+  fullName: Koala.Simulation.Common
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Common.Extensions
+  commentId: T:Koala.Simulation.Common.Extensions
+  href: Koala.Simulation.Common.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Koala.Simulation.Common.Extensions
+- uid: Koala.Simulation.Common.DocfxIgnoreAttribute
+  commentId: T:Koala.Simulation.Common.DocfxIgnoreAttribute
+  href: Koala.Simulation.Common.DocfxIgnoreAttribute.html
+  name: DocfxIgnoreAttribute
+  nameWithType: DocfxIgnoreAttribute
+  fullName: Koala.Simulation.Common.DocfxIgnoreAttribute

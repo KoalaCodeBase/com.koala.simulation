@@ -1,0 +1,517 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem
+  commentId: T:ES3Editor.AutoSaveWindow.HierarchyItem
+  id: AutoSaveWindow.HierarchyItem
+  parent: ES3Editor
+  children:
+  - ES3Editor.AutoSaveWindow.HierarchyItem.#ctor(UnityEngine.Transform,ES3Editor.AutoSaveWindow.HierarchyItem,ES3Editor.AutoSaveWindow)
+  - ES3Editor.AutoSaveWindow.HierarchyItem.DrawComponents
+  - ES3Editor.AutoSaveWindow.HierarchyItem.DrawHierarchy(System.String)
+  - ES3Editor.AutoSaveWindow.HierarchyItem.HasSelectedComponents
+  - ES3Editor.AutoSaveWindow.HierarchyItem.MergeDown(ES3AutoSave)
+  langs:
+  - csharp
+  - vb
+  name: AutoSaveWindow.HierarchyItem
+  nameWithType: AutoSaveWindow.HierarchyItem
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem
+  type: Class
+  source:
+    id: HierarchyItem
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\AutoSaveWindow.cs
+    startLine: 144
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public class AutoSaveWindow.HierarchyItem
+    content.vb: Public Class AutoSaveWindow.HierarchyItem
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem.#ctor(UnityEngine.Transform,ES3Editor.AutoSaveWindow.HierarchyItem,ES3Editor.AutoSaveWindow)
+  commentId: M:ES3Editor.AutoSaveWindow.HierarchyItem.#ctor(UnityEngine.Transform,ES3Editor.AutoSaveWindow.HierarchyItem,ES3Editor.AutoSaveWindow)
+  id: '#ctor(UnityEngine.Transform,ES3Editor.AutoSaveWindow.HierarchyItem,ES3Editor.AutoSaveWindow)'
+  parent: ES3Editor.AutoSaveWindow.HierarchyItem
+  langs:
+  - csharp
+  - vb
+  name: HierarchyItem(Transform, HierarchyItem, AutoSaveWindow)
+  nameWithType: AutoSaveWindow.HierarchyItem.HierarchyItem(Transform, AutoSaveWindow.HierarchyItem, AutoSaveWindow)
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem.HierarchyItem(UnityEngine.Transform, ES3Editor.AutoSaveWindow.HierarchyItem, ES3Editor.AutoSaveWindow)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\AutoSaveWindow.cs
+    startLine: 154
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public HierarchyItem(Transform t, AutoSaveWindow.HierarchyItem parent, AutoSaveWindow window)
+    parameters:
+    - id: t
+      type: UnityEngine.Transform
+    - id: parent
+      type: ES3Editor.AutoSaveWindow.HierarchyItem
+    - id: window
+      type: ES3Editor.AutoSaveWindow
+    content.vb: Public Sub New(t As Transform, parent As AutoSaveWindow.HierarchyItem, window As AutoSaveWindow)
+  overload: ES3Editor.AutoSaveWindow.HierarchyItem.#ctor*
+  nameWithType.vb: AutoSaveWindow.HierarchyItem.New(Transform, AutoSaveWindow.HierarchyItem, AutoSaveWindow)
+  fullName.vb: ES3Editor.AutoSaveWindow.HierarchyItem.New(UnityEngine.Transform, ES3Editor.AutoSaveWindow.HierarchyItem, ES3Editor.AutoSaveWindow)
+  name.vb: New(Transform, HierarchyItem, AutoSaveWindow)
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem.MergeDown(ES3AutoSave)
+  commentId: M:ES3Editor.AutoSaveWindow.HierarchyItem.MergeDown(ES3AutoSave)
+  id: MergeDown(ES3AutoSave)
+  parent: ES3Editor.AutoSaveWindow.HierarchyItem
+  langs:
+  - csharp
+  - vb
+  name: MergeDown(ES3AutoSave)
+  nameWithType: AutoSaveWindow.HierarchyItem.MergeDown(ES3AutoSave)
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem.MergeDown(ES3AutoSave)
+  type: Method
+  source:
+    id: MergeDown
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\AutoSaveWindow.cs
+    startLine: 167
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public void MergeDown(ES3AutoSave autoSave)
+    parameters:
+    - id: autoSave
+      type: ES3AutoSave
+    content.vb: Public Sub MergeDown(autoSave As ES3AutoSave)
+  overload: ES3Editor.AutoSaveWindow.HierarchyItem.MergeDown*
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem.DrawHierarchy(System.String)
+  commentId: M:ES3Editor.AutoSaveWindow.HierarchyItem.DrawHierarchy(System.String)
+  id: DrawHierarchy(System.String)
+  parent: ES3Editor.AutoSaveWindow.HierarchyItem
+  langs:
+  - csharp
+  - vb
+  name: DrawHierarchy(string)
+  nameWithType: AutoSaveWindow.HierarchyItem.DrawHierarchy(string)
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem.DrawHierarchy(string)
+  type: Method
+  source:
+    id: DrawHierarchy
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\AutoSaveWindow.cs
+    startLine: 183
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public void DrawHierarchy(string searchTerm)
+    parameters:
+    - id: searchTerm
+      type: System.String
+    content.vb: Public Sub DrawHierarchy(searchTerm As String)
+  overload: ES3Editor.AutoSaveWindow.HierarchyItem.DrawHierarchy*
+  nameWithType.vb: AutoSaveWindow.HierarchyItem.DrawHierarchy(String)
+  fullName.vb: ES3Editor.AutoSaveWindow.HierarchyItem.DrawHierarchy(String)
+  name.vb: DrawHierarchy(String)
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem.DrawComponents
+  commentId: M:ES3Editor.AutoSaveWindow.HierarchyItem.DrawComponents
+  id: DrawComponents
+  parent: ES3Editor.AutoSaveWindow.HierarchyItem
+  langs:
+  - csharp
+  - vb
+  name: DrawComponents()
+  nameWithType: AutoSaveWindow.HierarchyItem.DrawComponents()
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem.DrawComponents()
+  type: Method
+  source:
+    id: DrawComponents
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\AutoSaveWindow.cs
+    startLine: 229
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public void DrawComponents()
+    content.vb: Public Sub DrawComponents()
+  overload: ES3Editor.AutoSaveWindow.HierarchyItem.DrawComponents*
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem.HasSelectedComponents
+  commentId: M:ES3Editor.AutoSaveWindow.HierarchyItem.HasSelectedComponents
+  id: HasSelectedComponents
+  parent: ES3Editor.AutoSaveWindow.HierarchyItem
+  langs:
+  - csharp
+  - vb
+  name: HasSelectedComponents()
+  nameWithType: AutoSaveWindow.HierarchyItem.HasSelectedComponents()
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem.HasSelectedComponents()
+  type: Method
+  source:
+    id: HasSelectedComponents
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\AutoSaveWindow.cs
+    startLine: 296
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public bool HasSelectedComponents()
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasSelectedComponents() As Boolean
+  overload: ES3Editor.AutoSaveWindow.HierarchyItem.HasSelectedComponents*
+references:
+- uid: ES3Editor
+  commentId: N:ES3Editor
+  href: ES3Editor.html
+  name: ES3Editor
+  nameWithType: ES3Editor
+  fullName: ES3Editor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem.#ctor*
+  commentId: Overload:ES3Editor.AutoSaveWindow.HierarchyItem.#ctor
+  href: ES3Editor.AutoSaveWindow.HierarchyItem.html#ES3Editor_AutoSaveWindow_HierarchyItem__ctor_UnityEngine_Transform_ES3Editor_AutoSaveWindow_HierarchyItem_ES3Editor_AutoSaveWindow_
+  name: HierarchyItem
+  nameWithType: AutoSaveWindow.HierarchyItem.HierarchyItem
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem.HierarchyItem
+  nameWithType.vb: AutoSaveWindow.HierarchyItem.New
+  fullName.vb: ES3Editor.AutoSaveWindow.HierarchyItem.New
+  name.vb: New
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem
+  commentId: T:ES3Editor.AutoSaveWindow.HierarchyItem
+  parent: ES3Editor
+  href: ES3Editor.AutoSaveWindow.html
+  name: AutoSaveWindow.HierarchyItem
+  nameWithType: AutoSaveWindow.HierarchyItem
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem
+  spec.csharp:
+  - uid: ES3Editor.AutoSaveWindow
+    name: AutoSaveWindow
+    href: ES3Editor.AutoSaveWindow.html
+  - name: .
+  - uid: ES3Editor.AutoSaveWindow.HierarchyItem
+    name: HierarchyItem
+    href: ES3Editor.AutoSaveWindow.HierarchyItem.html
+  spec.vb:
+  - uid: ES3Editor.AutoSaveWindow
+    name: AutoSaveWindow
+    href: ES3Editor.AutoSaveWindow.html
+  - name: .
+  - uid: ES3Editor.AutoSaveWindow.HierarchyItem
+    name: HierarchyItem
+    href: ES3Editor.AutoSaveWindow.HierarchyItem.html
+- uid: ES3Editor.AutoSaveWindow
+  commentId: T:ES3Editor.AutoSaveWindow
+  parent: ES3Editor
+  href: ES3Editor.AutoSaveWindow.html
+  name: AutoSaveWindow
+  nameWithType: AutoSaveWindow
+  fullName: ES3Editor.AutoSaveWindow
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem.MergeDown*
+  commentId: Overload:ES3Editor.AutoSaveWindow.HierarchyItem.MergeDown
+  href: ES3Editor.AutoSaveWindow.HierarchyItem.html#ES3Editor_AutoSaveWindow_HierarchyItem_MergeDown_ES3AutoSave_
+  name: MergeDown
+  nameWithType: AutoSaveWindow.HierarchyItem.MergeDown
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem.MergeDown
+- uid: ES3AutoSave
+  commentId: T:ES3AutoSave
+  name: ES3AutoSave
+  nameWithType: ES3AutoSave
+  fullName: ES3AutoSave
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem.DrawHierarchy*
+  commentId: Overload:ES3Editor.AutoSaveWindow.HierarchyItem.DrawHierarchy
+  href: ES3Editor.AutoSaveWindow.HierarchyItem.html#ES3Editor_AutoSaveWindow_HierarchyItem_DrawHierarchy_System_String_
+  name: DrawHierarchy
+  nameWithType: AutoSaveWindow.HierarchyItem.DrawHierarchy
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem.DrawHierarchy
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem.DrawComponents*
+  commentId: Overload:ES3Editor.AutoSaveWindow.HierarchyItem.DrawComponents
+  href: ES3Editor.AutoSaveWindow.HierarchyItem.html#ES3Editor_AutoSaveWindow_HierarchyItem_DrawComponents
+  name: DrawComponents
+  nameWithType: AutoSaveWindow.HierarchyItem.DrawComponents
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem.DrawComponents
+- uid: ES3Editor.AutoSaveWindow.HierarchyItem.HasSelectedComponents*
+  commentId: Overload:ES3Editor.AutoSaveWindow.HierarchyItem.HasSelectedComponents
+  href: ES3Editor.AutoSaveWindow.HierarchyItem.html#ES3Editor_AutoSaveWindow_HierarchyItem_HasSelectedComponents
+  name: HasSelectedComponents
+  nameWithType: AutoSaveWindow.HierarchyItem.HasSelectedComponents
+  fullName: ES3Editor.AutoSaveWindow.HierarchyItem.HasSelectedComponents
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

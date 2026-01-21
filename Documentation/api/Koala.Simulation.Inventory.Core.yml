@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.Core
+  commentId: N:Koala.Simulation.Inventory.Core
+  id: Koala.Simulation.Inventory.Core
+  children:
+  - Koala.Simulation.Inventory.Core.Container
+  - Koala.Simulation.Inventory.Core.IItemFilter
+  - Koala.Simulation.Inventory.Core.Item
+  - Koala.Simulation.Inventory.Core.ItemTransferService
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Inventory.Core
+  nameWithType: Koala.Simulation.Inventory.Core
+  fullName: Koala.Simulation.Inventory.Core
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Inventory.Core.Item
+  commentId: T:Koala.Simulation.Inventory.Core.Item
+  parent: Koala.Simulation.Inventory.Core
+  href: Koala.Simulation.Inventory.Core.Item.html
+  name: Item
+  nameWithType: Item
+  fullName: Koala.Simulation.Inventory.Core.Item
+- uid: Koala.Simulation.Inventory.Core.ItemTransferService
+  commentId: T:Koala.Simulation.Inventory.Core.ItemTransferService
+  href: Koala.Simulation.Inventory.Core.ItemTransferService.html
+  name: ItemTransferService
+  nameWithType: ItemTransferService
+  fullName: Koala.Simulation.Inventory.Core.ItemTransferService
+- uid: Koala.Simulation.Inventory.Core.Container
+  commentId: T:Koala.Simulation.Inventory.Core.Container
+  parent: Koala.Simulation.Inventory.Core
+  href: Koala.Simulation.Inventory.Core.Container.html
+  name: Container
+  nameWithType: Container
+  fullName: Koala.Simulation.Inventory.Core.Container
+- uid: Koala.Simulation.Inventory.Core.IItemFilter
+  commentId: T:Koala.Simulation.Inventory.Core.IItemFilter
+  parent: Koala.Simulation.Inventory.Core
+  href: Koala.Simulation.Inventory.Core.IItemFilter.html
+  name: IItemFilter
+  nameWithType: IItemFilter
+  fullName: Koala.Simulation.Inventory.Core.IItemFilter
+- uid: Koala.Simulation.Inventory.Core
+  commentId: N:Koala.Simulation.Inventory.Core
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Core
+  nameWithType: Koala.Simulation.Inventory.Core
+  fullName: Koala.Simulation.Inventory.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html

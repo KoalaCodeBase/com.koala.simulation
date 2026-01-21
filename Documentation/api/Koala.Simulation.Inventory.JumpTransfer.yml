@@ -1,0 +1,199 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.JumpTransfer
+  commentId: T:Koala.Simulation.Inventory.JumpTransfer
+  id: JumpTransfer
+  parent: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.JumpTransfer.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+  langs:
+  - csharp
+  - vb
+  name: JumpTransfer
+  nameWithType: JumpTransfer
+  fullName: Koala.Simulation.Inventory.JumpTransfer
+  type: Class
+  source:
+    remote:
+      path: Runtime/Inventory/ITransferBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: JumpTransfer
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/ITransferBehaviour.cs
+    startLine: 39
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: A transfer animation that makes the item jump into the target slot using DOTween.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class JumpTransfer : ITransferAnimation
+    content.vb: >-
+      <Serializable>
+
+      Public Class JumpTransfer Implements ITransferAnimation
+  inheritance:
+  - System.Object
+  implements:
+  - Koala.Simulation.Inventory.ITransferAnimation
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Koala.Simulation.Inventory.JumpTransfer.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+  commentId: M:Koala.Simulation.Inventory.JumpTransfer.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+  id: Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+  parent: Koala.Simulation.Inventory.JumpTransfer
+  langs:
+  - csharp
+  - vb
+  name: Execute(Item, Transform)
+  nameWithType: JumpTransfer.Execute(Item, Transform)
+  fullName: Koala.Simulation.Inventory.JumpTransfer.Execute(Koala.Simulation.Inventory.Item, UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/ITransferBehaviour.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Execute
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/ITransferBehaviour.cs
+    startLine: 50
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Animates the item with a jump movement into the target slot.
+  example: []
+  syntax:
+    content: public void Execute(Item item, Transform targetSlot)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.Item
+      description: The item being transferred.
+    - id: targetSlot
+      type: UnityEngine.Transform
+      description: The target slot transform.
+    content.vb: Public Sub Execute(item As Item, targetSlot As Transform)
+  overload: Koala.Simulation.Inventory.JumpTransfer.Execute*
+  implements:
+  - Koala.Simulation.Inventory.ITransferAnimation.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+references:
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Koala.Simulation.Inventory.ITransferAnimation
+  commentId: T:Koala.Simulation.Inventory.ITransferAnimation
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.ITransferAnimation.html
+  name: ITransferAnimation
+  nameWithType: ITransferAnimation
+  fullName: Koala.Simulation.Inventory.ITransferAnimation
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Inventory.JumpTransfer.Execute*
+  commentId: Overload:Koala.Simulation.Inventory.JumpTransfer.Execute
+  href: Koala.Simulation.Inventory.JumpTransfer.html#Koala_Simulation_Inventory_JumpTransfer_Execute_Koala_Simulation_Inventory_Item_UnityEngine_Transform_
+  name: Execute
+  nameWithType: JumpTransfer.Execute
+  fullName: Koala.Simulation.Inventory.JumpTransfer.Execute
+- uid: Koala.Simulation.Inventory.ITransferAnimation.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+  commentId: M:Koala.Simulation.Inventory.ITransferAnimation.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+  parent: Koala.Simulation.Inventory.ITransferAnimation
+  isExternal: true
+  href: Koala.Simulation.Inventory.ITransferAnimation.html#Koala_Simulation_Inventory_ITransferAnimation_Execute_Koala_Simulation_Inventory_Item_UnityEngine_Transform_
+  name: Execute(Item, Transform)
+  nameWithType: ITransferAnimation.Execute(Item, Transform)
+  fullName: Koala.Simulation.Inventory.ITransferAnimation.Execute(Koala.Simulation.Inventory.Item, UnityEngine.Transform)
+  spec.csharp:
+  - uid: Koala.Simulation.Inventory.ITransferAnimation.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+    name: Execute
+    href: Koala.Simulation.Inventory.ITransferAnimation.html#Koala_Simulation_Inventory_ITransferAnimation_Execute_Koala_Simulation_Inventory_Item_UnityEngine_Transform_
+  - name: (
+  - uid: Koala.Simulation.Inventory.Item
+    name: Item
+    href: Koala.Simulation.Inventory.Item.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Inventory.ITransferAnimation.Execute(Koala.Simulation.Inventory.Item,UnityEngine.Transform)
+    name: Execute
+    href: Koala.Simulation.Inventory.ITransferAnimation.html#Koala_Simulation_Inventory_ITransferAnimation_Execute_Koala_Simulation_Inventory_Item_UnityEngine_Transform_
+  - name: (
+  - uid: Koala.Simulation.Inventory.Item
+    name: Item
+    href: Koala.Simulation.Inventory.Item.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: Koala.Simulation.Inventory.Item
+  commentId: T:Koala.Simulation.Inventory.Item
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.Item.html
+  name: Item
+  nameWithType: Item
+  fullName: Koala.Simulation.Inventory.Item
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

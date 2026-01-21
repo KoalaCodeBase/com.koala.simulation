@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Save.ContainerRegistry
+  commentId: T:Koala.Simulation.Save.ContainerRegistry
+  id: ContainerRegistry
+  parent: Koala.Simulation.Save
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ContainerRegistry
+  nameWithType: ContainerRegistry
+  fullName: Koala.Simulation.Save.ContainerRegistry
+  type: Class
+  source:
+    remote:
+      path: Runtime/Save/ContainerRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ContainerRegistry
+    path: ../Packages/com.koala.simulation/Runtime/Save/ContainerRegistry.cs
+    startLine: 5
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  syntax:
+    content: public static class ContainerRegistry
+    content.vb: Public Module ContainerRegistry
+  inheritance:
+  - System.Object
+references:
+- uid: Koala.Simulation.Save
+  commentId: N:Koala.Simulation.Save
+  href: Koala.html
+  name: Koala.Simulation.Save
+  nameWithType: Koala.Simulation.Save
+  fullName: Koala.Simulation.Save
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

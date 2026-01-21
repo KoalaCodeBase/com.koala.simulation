@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Enumerations.PlayMode
+  commentId: T:AssetKits.ParticleImage.Enumerations.PlayMode
+  id: PlayMode
+  parent: AssetKits.ParticleImage.Enumerations
+  children:
+  - AssetKits.ParticleImage.Enumerations.PlayMode.None
+  - AssetKits.ParticleImage.Enumerations.PlayMode.OnAwake
+  - AssetKits.ParticleImage.Enumerations.PlayMode.OnEnable
+  langs:
+  - csharp
+  - vb
+  name: PlayMode
+  nameWithType: PlayMode
+  fullName: AssetKits.ParticleImage.Enumerations.PlayMode
+  type: Enum
+  source:
+    id: PlayMode
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2942
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: public enum PlayMode
+    content.vb: Public Enum PlayMode
+- uid: AssetKits.ParticleImage.Enumerations.PlayMode.None
+  commentId: F:AssetKits.ParticleImage.Enumerations.PlayMode.None
+  id: None
+  parent: AssetKits.ParticleImage.Enumerations.PlayMode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PlayMode.None
+  fullName: AssetKits.ParticleImage.Enumerations.PlayMode.None
+  type: Field
+  source:
+    id: None
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2944
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: None = 0
+    return:
+      type: AssetKits.ParticleImage.Enumerations.PlayMode
+- uid: AssetKits.ParticleImage.Enumerations.PlayMode.OnEnable
+  commentId: F:AssetKits.ParticleImage.Enumerations.PlayMode.OnEnable
+  id: OnEnable
+  parent: AssetKits.ParticleImage.Enumerations.PlayMode
+  langs:
+  - csharp
+  - vb
+  name: OnEnable
+  nameWithType: PlayMode.OnEnable
+  fullName: AssetKits.ParticleImage.Enumerations.PlayMode.OnEnable
+  type: Field
+  source:
+    id: OnEnable
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2944
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: OnEnable = 1
+    return:
+      type: AssetKits.ParticleImage.Enumerations.PlayMode
+- uid: AssetKits.ParticleImage.Enumerations.PlayMode.OnAwake
+  commentId: F:AssetKits.ParticleImage.Enumerations.PlayMode.OnAwake
+  id: OnAwake
+  parent: AssetKits.ParticleImage.Enumerations.PlayMode
+  langs:
+  - csharp
+  - vb
+  name: OnAwake
+  nameWithType: PlayMode.OnAwake
+  fullName: AssetKits.ParticleImage.Enumerations.PlayMode.OnAwake
+  type: Field
+  source:
+    id: OnAwake
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2944
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: OnAwake = 2
+    return:
+      type: AssetKits.ParticleImage.Enumerations.PlayMode
+references:
+- uid: AssetKits.ParticleImage.Enumerations
+  commentId: N:AssetKits.ParticleImage.Enumerations
+  href: AssetKits.html
+  name: AssetKits.ParticleImage.Enumerations
+  nameWithType: AssetKits.ParticleImage.Enumerations
+  fullName: AssetKits.ParticleImage.Enumerations
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+- uid: AssetKits.ParticleImage.Enumerations.PlayMode
+  commentId: T:AssetKits.ParticleImage.Enumerations.PlayMode
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.PlayMode.html
+  name: PlayMode
+  nameWithType: PlayMode
+  fullName: AssetKits.ParticleImage.Enumerations.PlayMode

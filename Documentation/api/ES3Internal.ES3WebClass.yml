@@ -1,0 +1,1082 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Internal.ES3WebClass
+  commentId: T:ES3Internal.ES3WebClass
+  id: ES3WebClass
+  parent: ES3Internal
+  children:
+  - ES3Internal.ES3WebClass.#ctor(System.String,System.String)
+  - ES3Internal.ES3WebClass.AddPOSTField(System.String,System.String)
+  - ES3Internal.ES3WebClass.CreateWWWForm
+  - ES3Internal.ES3WebClass.GetUser(System.String,System.String)
+  - ES3Internal.ES3WebClass.HandleError(UnityEngine.Networking.UnityWebRequest,System.Boolean)
+  - ES3Internal.ES3WebClass.IsNetworkError(UnityEngine.Networking.UnityWebRequest)
+  - ES3Internal.ES3WebClass.Reset
+  - ES3Internal.ES3WebClass.SendWebRequest(UnityEngine.Networking.UnityWebRequest)
+  - ES3Internal.ES3WebClass._webRequest
+  - ES3Internal.ES3WebClass.apiKey
+  - ES3Internal.ES3WebClass.downloadProgress
+  - ES3Internal.ES3WebClass.error
+  - ES3Internal.ES3WebClass.errorCode
+  - ES3Internal.ES3WebClass.formData
+  - ES3Internal.ES3WebClass.isDone
+  - ES3Internal.ES3WebClass.isError
+  - ES3Internal.ES3WebClass.uploadProgress
+  - ES3Internal.ES3WebClass.url
+  langs:
+  - csharp
+  - vb
+  name: ES3WebClass
+  nameWithType: ES3WebClass
+  fullName: ES3Internal.ES3WebClass
+  type: Class
+  source:
+    id: ES3WebClass
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public class ES3WebClass
+    content.vb: Public Class ES3WebClass
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ES3Internal.ES3WebClass.url
+  commentId: F:ES3Internal.ES3WebClass.url
+  id: url
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: url
+  nameWithType: ES3WebClass.url
+  fullName: ES3Internal.ES3WebClass.url
+  type: Field
+  source:
+    id: url
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected string url
+    return:
+      type: System.String
+    content.vb: Protected url As String
+- uid: ES3Internal.ES3WebClass.apiKey
+  commentId: F:ES3Internal.ES3WebClass.apiKey
+  id: apiKey
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: apiKey
+  nameWithType: ES3WebClass.apiKey
+  fullName: ES3Internal.ES3WebClass.apiKey
+  type: Field
+  source:
+    id: apiKey
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected string apiKey
+    return:
+      type: System.String
+    content.vb: Protected apiKey As String
+- uid: ES3Internal.ES3WebClass.formData
+  commentId: F:ES3Internal.ES3WebClass.formData
+  id: formData
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: formData
+  nameWithType: ES3WebClass.formData
+  fullName: ES3Internal.ES3WebClass.formData
+  type: Field
+  source:
+    id: formData
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected List<KeyValuePair<string, string>> formData
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+    content.vb: Protected formData As List(Of KeyValuePair(Of String, String))
+- uid: ES3Internal.ES3WebClass._webRequest
+  commentId: F:ES3Internal.ES3WebClass._webRequest
+  id: _webRequest
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: _webRequest
+  nameWithType: ES3WebClass._webRequest
+  fullName: ES3Internal.ES3WebClass._webRequest
+  type: Field
+  source:
+    id: _webRequest
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected UnityWebRequest _webRequest
+    return:
+      type: UnityEngine.Networking.UnityWebRequest
+    content.vb: Protected _webRequest As UnityWebRequest
+- uid: ES3Internal.ES3WebClass.isDone
+  commentId: F:ES3Internal.ES3WebClass.isDone
+  id: isDone
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: isDone
+  nameWithType: ES3WebClass.isDone
+  fullName: ES3Internal.ES3WebClass.isDone
+  type: Field
+  source:
+    id: isDone
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public bool isDone
+    return:
+      type: System.Boolean
+    content.vb: Public isDone As Boolean
+- uid: ES3Internal.ES3WebClass.uploadProgress
+  commentId: P:ES3Internal.ES3WebClass.uploadProgress
+  id: uploadProgress
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: uploadProgress
+  nameWithType: ES3WebClass.uploadProgress
+  fullName: ES3Internal.ES3WebClass.uploadProgress
+  type: Property
+  source:
+    id: uploadProgress
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public float uploadProgress { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property uploadProgress As Single
+  overload: ES3Internal.ES3WebClass.uploadProgress*
+- uid: ES3Internal.ES3WebClass.downloadProgress
+  commentId: P:ES3Internal.ES3WebClass.downloadProgress
+  id: downloadProgress
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: downloadProgress
+  nameWithType: ES3WebClass.downloadProgress
+  fullName: ES3Internal.ES3WebClass.downloadProgress
+  type: Property
+  source:
+    id: downloadProgress
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public float downloadProgress { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property downloadProgress As Single
+  overload: ES3Internal.ES3WebClass.downloadProgress*
+- uid: ES3Internal.ES3WebClass.error
+  commentId: F:ES3Internal.ES3WebClass.error
+  id: error
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: error
+  nameWithType: ES3WebClass.error
+  fullName: ES3Internal.ES3WebClass.error
+  type: Field
+  source:
+    id: error
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  summary: An error message, if an error occurred.
+  example: []
+  syntax:
+    content: public string error
+    return:
+      type: System.String
+    content.vb: Public [error] As String
+- uid: ES3Internal.ES3WebClass.isError
+  commentId: P:ES3Internal.ES3WebClass.isError
+  id: isError
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: isError
+  nameWithType: ES3WebClass.isError
+  fullName: ES3Internal.ES3WebClass.isError
+  type: Property
+  source:
+    id: isError
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  summary: This is set to true if an error occurred while performing an operation.
+  example: []
+  syntax:
+    content: public bool isError { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property isError As Boolean
+  overload: ES3Internal.ES3WebClass.isError*
+- uid: ES3Internal.ES3WebClass.errorCode
+  commentId: F:ES3Internal.ES3WebClass.errorCode
+  id: errorCode
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: errorCode
+  nameWithType: ES3WebClass.errorCode
+  fullName: ES3Internal.ES3WebClass.errorCode
+  type: Field
+  source:
+    id: errorCode
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  summary: The error code relating to the error, if one occurred. If it's a server error, this will return the HTTP error code.
+  example: []
+  syntax:
+    content: public long errorCode
+    return:
+      type: System.Int64
+    content.vb: Public errorCode As Long
+- uid: ES3Internal.ES3WebClass.IsNetworkError(UnityEngine.Networking.UnityWebRequest)
+  commentId: M:ES3Internal.ES3WebClass.IsNetworkError(UnityEngine.Networking.UnityWebRequest)
+  id: IsNetworkError(UnityEngine.Networking.UnityWebRequest)
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: IsNetworkError(UnityWebRequest)
+  nameWithType: ES3WebClass.IsNetworkError(UnityWebRequest)
+  fullName: ES3Internal.ES3WebClass.IsNetworkError(UnityEngine.Networking.UnityWebRequest)
+  type: Method
+  source:
+    id: IsNetworkError
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: public static bool IsNetworkError(UnityWebRequest www)
+    parameters:
+    - id: www
+      type: UnityEngine.Networking.UnityWebRequest
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsNetworkError(www As UnityWebRequest) As Boolean
+  overload: ES3Internal.ES3WebClass.IsNetworkError*
+- uid: ES3Internal.ES3WebClass.#ctor(System.String,System.String)
+  commentId: M:ES3Internal.ES3WebClass.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: ES3WebClass(string, string)
+  nameWithType: ES3WebClass.ES3WebClass(string, string)
+  fullName: ES3Internal.ES3WebClass.ES3WebClass(string, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected ES3WebClass(string url, string apiKey)
+    parameters:
+    - id: url
+      type: System.String
+    - id: apiKey
+      type: System.String
+    content.vb: Protected Sub New(url As String, apiKey As String)
+  overload: ES3Internal.ES3WebClass.#ctor*
+  nameWithType.vb: ES3WebClass.New(String, String)
+  fullName.vb: ES3Internal.ES3WebClass.New(String, String)
+  name.vb: New(String, String)
+- uid: ES3Internal.ES3WebClass.AddPOSTField(System.String,System.String)
+  commentId: M:ES3Internal.ES3WebClass.AddPOSTField(System.String,System.String)
+  id: AddPOSTField(System.String,System.String)
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: AddPOSTField(string, string)
+  nameWithType: ES3WebClass.AddPOSTField(string, string)
+  fullName: ES3Internal.ES3WebClass.AddPOSTField(string, string)
+  type: Method
+  source:
+    id: AddPOSTField
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  summary: Adds POST data to any requests sent by this ES3Cloud object. Use this if you are sending data to a custom script on your server.
+  example: []
+  syntax:
+    content: public void AddPOSTField(string fieldName, string value)
+    parameters:
+    - id: fieldName
+      type: System.String
+      description: The name of the POST field we want to add.
+    - id: value
+      type: System.String
+      description: The string value of the POST field we want to add.
+    content.vb: Public Sub AddPOSTField(fieldName As String, value As String)
+  overload: ES3Internal.ES3WebClass.AddPOSTField*
+  nameWithType.vb: ES3WebClass.AddPOSTField(String, String)
+  fullName.vb: ES3Internal.ES3WebClass.AddPOSTField(String, String)
+  name.vb: AddPOSTField(String, String)
+- uid: ES3Internal.ES3WebClass.GetUser(System.String,System.String)
+  commentId: M:ES3Internal.ES3WebClass.GetUser(System.String,System.String)
+  id: GetUser(System.String,System.String)
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: GetUser(string, string)
+  nameWithType: ES3WebClass.GetUser(string, string)
+  fullName: ES3Internal.ES3WebClass.GetUser(string, string)
+  type: Method
+  source:
+    id: GetUser
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected string GetUser(string user, string password)
+    parameters:
+    - id: user
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Protected Function GetUser(user As String, password As String) As String
+  overload: ES3Internal.ES3WebClass.GetUser*
+  nameWithType.vb: ES3WebClass.GetUser(String, String)
+  fullName.vb: ES3Internal.ES3WebClass.GetUser(String, String)
+  name.vb: GetUser(String, String)
+- uid: ES3Internal.ES3WebClass.CreateWWWForm
+  commentId: M:ES3Internal.ES3WebClass.CreateWWWForm
+  id: CreateWWWForm
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: CreateWWWForm()
+  nameWithType: ES3WebClass.CreateWWWForm()
+  fullName: ES3Internal.ES3WebClass.CreateWWWForm()
+  type: Method
+  source:
+    id: CreateWWWForm
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 93
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected WWWForm CreateWWWForm()
+    return:
+      type: UnityEngine.WWWForm
+    content.vb: Protected Function CreateWWWForm() As WWWForm
+  overload: ES3Internal.ES3WebClass.CreateWWWForm*
+- uid: ES3Internal.ES3WebClass.HandleError(UnityEngine.Networking.UnityWebRequest,System.Boolean)
+  commentId: M:ES3Internal.ES3WebClass.HandleError(UnityEngine.Networking.UnityWebRequest,System.Boolean)
+  id: HandleError(UnityEngine.Networking.UnityWebRequest,System.Boolean)
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: HandleError(UnityWebRequest, bool)
+  nameWithType: ES3WebClass.HandleError(UnityWebRequest, bool)
+  fullName: ES3Internal.ES3WebClass.HandleError(UnityEngine.Networking.UnityWebRequest, bool)
+  type: Method
+  source:
+    id: HandleError
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 102
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected bool HandleError(UnityWebRequest webRequest, bool errorIfDataIsDownloaded)
+    parameters:
+    - id: webRequest
+      type: UnityEngine.Networking.UnityWebRequest
+    - id: errorIfDataIsDownloaded
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Protected Function HandleError(webRequest As UnityWebRequest, errorIfDataIsDownloaded As Boolean) As Boolean
+  overload: ES3Internal.ES3WebClass.HandleError*
+  nameWithType.vb: ES3WebClass.HandleError(UnityWebRequest, Boolean)
+  fullName.vb: ES3Internal.ES3WebClass.HandleError(UnityEngine.Networking.UnityWebRequest, Boolean)
+  name.vb: HandleError(UnityWebRequest, Boolean)
+- uid: ES3Internal.ES3WebClass.SendWebRequest(UnityEngine.Networking.UnityWebRequest)
+  commentId: M:ES3Internal.ES3WebClass.SendWebRequest(UnityEngine.Networking.UnityWebRequest)
+  id: SendWebRequest(UnityEngine.Networking.UnityWebRequest)
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: SendWebRequest(UnityWebRequest)
+  nameWithType: ES3WebClass.SendWebRequest(UnityWebRequest)
+  fullName: ES3Internal.ES3WebClass.SendWebRequest(UnityEngine.Networking.UnityWebRequest)
+  type: Method
+  source:
+    id: SendWebRequest
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 127
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected IEnumerator SendWebRequest(UnityWebRequest webRequest)
+    parameters:
+    - id: webRequest
+      type: UnityEngine.Networking.UnityWebRequest
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Protected Function SendWebRequest(webRequest As UnityWebRequest) As IEnumerator
+  overload: ES3Internal.ES3WebClass.SendWebRequest*
+- uid: ES3Internal.ES3WebClass.Reset
+  commentId: M:ES3Internal.ES3WebClass.Reset
+  id: Reset
+  parent: ES3Internal.ES3WebClass
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: ES3WebClass.Reset()
+  fullName: ES3Internal.ES3WebClass.Reset()
+  type: Method
+  source:
+    id: Reset
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs
+    startLine: 137
+  assemblies:
+  - Assembly-CSharp
+  namespace: ES3Internal
+  syntax:
+    content: protected virtual void Reset()
+    content.vb: Protected Overridable Sub Reset()
+  overload: ES3Internal.ES3WebClass.Reset*
+references:
+- uid: ES3Internal
+  commentId: N:ES3Internal
+  href: ES3Internal.html
+  name: ES3Internal
+  nameWithType: ES3Internal
+  fullName: ES3Internal
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<KeyValuePair<string, string>>
+  nameWithType: List<KeyValuePair<string, string>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string, string>>
+  nameWithType.vb: List(Of KeyValuePair(Of String, String))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.KeyValuePair(Of String, String))
+  name.vb: List(Of KeyValuePair(Of String, String))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UnityEngine.Networking.UnityWebRequest
+  commentId: T:UnityEngine.Networking.UnityWebRequest
+  parent: UnityEngine.Networking
+  isExternal: true
+  name: UnityWebRequest
+  nameWithType: UnityWebRequest
+  fullName: UnityEngine.Networking.UnityWebRequest
+- uid: UnityEngine.Networking
+  commentId: N:UnityEngine.Networking
+  isExternal: true
+  name: UnityEngine.Networking
+  nameWithType: UnityEngine.Networking
+  fullName: UnityEngine.Networking
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Networking
+    name: Networking
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Networking
+    name: Networking
+    isExternal: true
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ES3Internal.ES3WebClass.uploadProgress*
+  commentId: Overload:ES3Internal.ES3WebClass.uploadProgress
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass_uploadProgress
+  name: uploadProgress
+  nameWithType: ES3WebClass.uploadProgress
+  fullName: ES3Internal.ES3WebClass.uploadProgress
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: ES3Internal.ES3WebClass.downloadProgress*
+  commentId: Overload:ES3Internal.ES3WebClass.downloadProgress
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass_downloadProgress
+  name: downloadProgress
+  nameWithType: ES3WebClass.downloadProgress
+  fullName: ES3Internal.ES3WebClass.downloadProgress
+- uid: ES3Internal.ES3WebClass.isError*
+  commentId: Overload:ES3Internal.ES3WebClass.isError
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass_isError
+  name: isError
+  nameWithType: ES3WebClass.isError
+  fullName: ES3Internal.ES3WebClass.isError
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ES3Internal.ES3WebClass.IsNetworkError*
+  commentId: Overload:ES3Internal.ES3WebClass.IsNetworkError
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass_IsNetworkError_UnityEngine_Networking_UnityWebRequest_
+  name: IsNetworkError
+  nameWithType: ES3WebClass.IsNetworkError
+  fullName: ES3Internal.ES3WebClass.IsNetworkError
+- uid: ES3Internal.ES3WebClass.#ctor*
+  commentId: Overload:ES3Internal.ES3WebClass.#ctor
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass__ctor_System_String_System_String_
+  name: ES3WebClass
+  nameWithType: ES3WebClass.ES3WebClass
+  fullName: ES3Internal.ES3WebClass.ES3WebClass
+  nameWithType.vb: ES3WebClass.New
+  fullName.vb: ES3Internal.ES3WebClass.New
+  name.vb: New
+- uid: ES3Internal.ES3WebClass.AddPOSTField*
+  commentId: Overload:ES3Internal.ES3WebClass.AddPOSTField
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass_AddPOSTField_System_String_System_String_
+  name: AddPOSTField
+  nameWithType: ES3WebClass.AddPOSTField
+  fullName: ES3Internal.ES3WebClass.AddPOSTField
+- uid: ES3Internal.ES3WebClass.GetUser*
+  commentId: Overload:ES3Internal.ES3WebClass.GetUser
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass_GetUser_System_String_System_String_
+  name: GetUser
+  nameWithType: ES3WebClass.GetUser
+  fullName: ES3Internal.ES3WebClass.GetUser
+- uid: ES3Internal.ES3WebClass.CreateWWWForm*
+  commentId: Overload:ES3Internal.ES3WebClass.CreateWWWForm
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass_CreateWWWForm
+  name: CreateWWWForm
+  nameWithType: ES3WebClass.CreateWWWForm
+  fullName: ES3Internal.ES3WebClass.CreateWWWForm
+- uid: UnityEngine.WWWForm
+  commentId: T:UnityEngine.WWWForm
+  parent: UnityEngine
+  isExternal: true
+  name: WWWForm
+  nameWithType: WWWForm
+  fullName: UnityEngine.WWWForm
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: ES3Internal.ES3WebClass.HandleError*
+  commentId: Overload:ES3Internal.ES3WebClass.HandleError
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass_HandleError_UnityEngine_Networking_UnityWebRequest_System_Boolean_
+  name: HandleError
+  nameWithType: ES3WebClass.HandleError
+  fullName: ES3Internal.ES3WebClass.HandleError
+- uid: ES3Internal.ES3WebClass.SendWebRequest*
+  commentId: Overload:ES3Internal.ES3WebClass.SendWebRequest
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass_SendWebRequest_UnityEngine_Networking_UnityWebRequest_
+  name: SendWebRequest
+  nameWithType: ES3WebClass.SendWebRequest
+  fullName: ES3Internal.ES3WebClass.SendWebRequest
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: ES3Internal.ES3WebClass.Reset*
+  commentId: Overload:ES3Internal.ES3WebClass.Reset
+  href: ES3Internal.ES3WebClass.html#ES3Internal_ES3WebClass_Reset
+  name: Reset
+  nameWithType: ES3WebClass.Reset
+  fullName: ES3Internal.ES3WebClass.Reset

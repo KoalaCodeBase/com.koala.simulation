@@ -1,0 +1,1649 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.StaggeredGridItemGroup
+  commentId: T:SuperScrollView.StaggeredGridItemGroup
+  id: StaggeredGridItemGroup
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.StaggeredGridItemGroup.CheckIfNeedUpdateItemPos
+  - SuperScrollView.StaggeredGridItemGroup.ClearAllTmpRecycledItem
+  - SuperScrollView.StaggeredGridItemGroup.GetContentPanelSize
+  - SuperScrollView.StaggeredGridItemGroup.GetIndexInShownItemList(SuperScrollView.LoopStaggeredGridViewItem)
+  - SuperScrollView.StaggeredGridItemGroup.GetItemCornerPosInViewPort(SuperScrollView.LoopStaggeredGridViewItem,SuperScrollView.ItemCornerEnum)
+  - SuperScrollView.StaggeredGridItemGroup.GetItemPos(System.Int32)
+  - SuperScrollView.StaggeredGridItemGroup.GetShownItemByIndexInGroup(System.Int32)
+  - SuperScrollView.StaggeredGridItemGroup.GetShownItemByItemIndex(System.Int32)
+  - SuperScrollView.StaggeredGridItemGroup.GetShownItemPosMaxValue
+  - SuperScrollView.StaggeredGridItemGroup.HadCreatedItemCount
+  - SuperScrollView.StaggeredGridItemGroup.Init(SuperScrollView.LoopStaggeredGridView,System.Int32,System.Int32,System.Func{System.Int32,System.Int32,SuperScrollView.LoopStaggeredGridViewItem})
+  - SuperScrollView.StaggeredGridItemGroup.ItemIndexMap
+  - SuperScrollView.StaggeredGridItemGroup.OnItemSizeChanged(System.Int32)
+  - SuperScrollView.StaggeredGridItemGroup.RecycleAllItem
+  - SuperScrollView.StaggeredGridItemGroup.RecycleItemTmp(SuperScrollView.LoopStaggeredGridViewItem)
+  - SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItem
+  - SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos(System.Int32,UnityEngine.Vector3)
+  - SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup(System.Int32)
+  - SuperScrollView.StaggeredGridItemGroup.RefreshItemByIndexInGroup(System.Int32)
+  - SuperScrollView.StaggeredGridItemGroup.ResetListView
+  - SuperScrollView.StaggeredGridItemGroup.SetListItemCount(System.Int32)
+  - SuperScrollView.StaggeredGridItemGroup.UpdateAllShownItemsPos
+  - SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart1(System.Single,System.Single,System.Single,System.Single)
+  - SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart2(System.Single,System.Single,System.Single,System.Single)
+  - SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart1(System.Single,System.Single,System.Single,System.Single)
+  - SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart2(System.Single,System.Single,System.Single,System.Single)
+  - SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart1(System.Single,System.Single,System.Single,System.Single)
+  - SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart2(System.Single,System.Single,System.Single,System.Single)
+  - SuperScrollView.StaggeredGridItemGroup.ViewPortHeight
+  - SuperScrollView.StaggeredGridItemGroup.ViewPortSize
+  - SuperScrollView.StaggeredGridItemGroup.ViewPortWidth
+  - SuperScrollView.StaggeredGridItemGroup.mGroupIndex
+  langs:
+  - csharp
+  - vb
+  name: StaggeredGridItemGroup
+  nameWithType: StaggeredGridItemGroup
+  fullName: SuperScrollView.StaggeredGridItemGroup
+  type: Class
+  source:
+    id: StaggeredGridItemGroup
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public class StaggeredGridItemGroup
+    content.vb: Public Class StaggeredGridItemGroup
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SuperScrollView.StaggeredGridItemGroup.mGroupIndex
+  commentId: F:SuperScrollView.StaggeredGridItemGroup.mGroupIndex
+  id: mGroupIndex
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: mGroupIndex
+  nameWithType: StaggeredGridItemGroup.mGroupIndex
+  fullName: SuperScrollView.StaggeredGridItemGroup.mGroupIndex
+  type: Field
+  source:
+    id: mGroupIndex
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int mGroupIndex
+    return:
+      type: System.Int32
+    content.vb: Public mGroupIndex As Integer
+- uid: SuperScrollView.StaggeredGridItemGroup.Init(SuperScrollView.LoopStaggeredGridView,System.Int32,System.Int32,System.Func{System.Int32,System.Int32,SuperScrollView.LoopStaggeredGridViewItem})
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.Init(SuperScrollView.LoopStaggeredGridView,System.Int32,System.Int32,System.Func{System.Int32,System.Int32,SuperScrollView.LoopStaggeredGridViewItem})
+  id: Init(SuperScrollView.LoopStaggeredGridView,System.Int32,System.Int32,System.Func{System.Int32,System.Int32,SuperScrollView.LoopStaggeredGridViewItem})
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: Init(LoopStaggeredGridView, int, int, Func<int, int, LoopStaggeredGridViewItem>)
+  nameWithType: StaggeredGridItemGroup.Init(LoopStaggeredGridView, int, int, Func<int, int, LoopStaggeredGridViewItem>)
+  fullName: SuperScrollView.StaggeredGridItemGroup.Init(SuperScrollView.LoopStaggeredGridView, int, int, System.Func<int, int, SuperScrollView.LoopStaggeredGridViewItem>)
+  type: Method
+  source:
+    id: Init
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void Init(LoopStaggeredGridView parent, int itemTotalCount, int groupIndex, Func<int, int, LoopStaggeredGridViewItem> onGetItemByIndex)
+    parameters:
+    - id: parent
+      type: SuperScrollView.LoopStaggeredGridView
+    - id: itemTotalCount
+      type: System.Int32
+    - id: groupIndex
+      type: System.Int32
+    - id: onGetItemByIndex
+      type: System.Func{System.Int32,System.Int32,SuperScrollView.LoopStaggeredGridViewItem}
+    content.vb: Public Sub Init(parent As LoopStaggeredGridView, itemTotalCount As Integer, groupIndex As Integer, onGetItemByIndex As Func(Of Integer, Integer, LoopStaggeredGridViewItem))
+  overload: SuperScrollView.StaggeredGridItemGroup.Init*
+  nameWithType.vb: StaggeredGridItemGroup.Init(LoopStaggeredGridView, Integer, Integer, Func(Of Integer, Integer, LoopStaggeredGridViewItem))
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.Init(SuperScrollView.LoopStaggeredGridView, Integer, Integer, System.Func(Of Integer, Integer, SuperScrollView.LoopStaggeredGridViewItem))
+  name.vb: Init(LoopStaggeredGridView, Integer, Integer, Func(Of Integer, Integer, LoopStaggeredGridViewItem))
+- uid: SuperScrollView.StaggeredGridItemGroup.ItemIndexMap
+  commentId: P:SuperScrollView.StaggeredGridItemGroup.ItemIndexMap
+  id: ItemIndexMap
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: ItemIndexMap
+  nameWithType: StaggeredGridItemGroup.ItemIndexMap
+  fullName: SuperScrollView.StaggeredGridItemGroup.ItemIndexMap
+  type: Property
+  source:
+    id: ItemIndexMap
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public List<int> ItemIndexMap { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public ReadOnly Property ItemIndexMap As List(Of Integer)
+  overload: SuperScrollView.StaggeredGridItemGroup.ItemIndexMap*
+- uid: SuperScrollView.StaggeredGridItemGroup.ResetListView
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.ResetListView
+  id: ResetListView
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: ResetListView()
+  nameWithType: StaggeredGridItemGroup.ResetListView()
+  fullName: SuperScrollView.StaggeredGridItemGroup.ResetListView()
+  type: Method
+  source:
+    id: ResetListView
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void ResetListView()
+    content.vb: Public Sub ResetListView()
+  overload: SuperScrollView.StaggeredGridItemGroup.ResetListView*
+- uid: SuperScrollView.StaggeredGridItemGroup.GetShownItemByItemIndex(System.Int32)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.GetShownItemByItemIndex(System.Int32)
+  id: GetShownItemByItemIndex(System.Int32)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: GetShownItemByItemIndex(int)
+  nameWithType: StaggeredGridItemGroup.GetShownItemByItemIndex(int)
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetShownItemByItemIndex(int)
+  type: Method
+  source:
+    id: GetShownItemByItemIndex
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 89
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public LoopStaggeredGridViewItem GetShownItemByItemIndex(int itemIndex)
+    parameters:
+    - id: itemIndex
+      type: System.Int32
+    return:
+      type: SuperScrollView.LoopStaggeredGridViewItem
+    content.vb: Public Function GetShownItemByItemIndex(itemIndex As Integer) As LoopStaggeredGridViewItem
+  overload: SuperScrollView.StaggeredGridItemGroup.GetShownItemByItemIndex*
+  nameWithType.vb: StaggeredGridItemGroup.GetShownItemByItemIndex(Integer)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.GetShownItemByItemIndex(Integer)
+  name.vb: GetShownItemByItemIndex(Integer)
+- uid: SuperScrollView.StaggeredGridItemGroup.ViewPortSize
+  commentId: P:SuperScrollView.StaggeredGridItemGroup.ViewPortSize
+  id: ViewPortSize
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: ViewPortSize
+  nameWithType: StaggeredGridItemGroup.ViewPortSize
+  fullName: SuperScrollView.StaggeredGridItemGroup.ViewPortSize
+  type: Property
+  source:
+    id: ViewPortSize
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public float ViewPortSize { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property ViewPortSize As Single
+  overload: SuperScrollView.StaggeredGridItemGroup.ViewPortSize*
+- uid: SuperScrollView.StaggeredGridItemGroup.ViewPortWidth
+  commentId: P:SuperScrollView.StaggeredGridItemGroup.ViewPortWidth
+  id: ViewPortWidth
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: ViewPortWidth
+  nameWithType: StaggeredGridItemGroup.ViewPortWidth
+  fullName: SuperScrollView.StaggeredGridItemGroup.ViewPortWidth
+  type: Property
+  source:
+    id: ViewPortWidth
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 126
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public float ViewPortWidth { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property ViewPortWidth As Single
+  overload: SuperScrollView.StaggeredGridItemGroup.ViewPortWidth*
+- uid: SuperScrollView.StaggeredGridItemGroup.ViewPortHeight
+  commentId: P:SuperScrollView.StaggeredGridItemGroup.ViewPortHeight
+  id: ViewPortHeight
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: ViewPortHeight
+  nameWithType: StaggeredGridItemGroup.ViewPortHeight
+  fullName: SuperScrollView.StaggeredGridItemGroup.ViewPortHeight
+  type: Property
+  source:
+    id: ViewPortHeight
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 130
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public float ViewPortHeight { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property ViewPortHeight As Single
+  overload: SuperScrollView.StaggeredGridItemGroup.ViewPortHeight*
+- uid: SuperScrollView.StaggeredGridItemGroup.GetShownItemByIndexInGroup(System.Int32)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.GetShownItemByIndexInGroup(System.Int32)
+  id: GetShownItemByIndexInGroup(System.Int32)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: GetShownItemByIndexInGroup(int)
+  nameWithType: StaggeredGridItemGroup.GetShownItemByIndexInGroup(int)
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetShownItemByIndexInGroup(int)
+  type: Method
+  source:
+    id: GetShownItemByIndexInGroup
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 144
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public LoopStaggeredGridViewItem GetShownItemByIndexInGroup(int indexInGroup)
+    parameters:
+    - id: indexInGroup
+      type: System.Int32
+    return:
+      type: SuperScrollView.LoopStaggeredGridViewItem
+    content.vb: Public Function GetShownItemByIndexInGroup(indexInGroup As Integer) As LoopStaggeredGridViewItem
+  overload: SuperScrollView.StaggeredGridItemGroup.GetShownItemByIndexInGroup*
+  nameWithType.vb: StaggeredGridItemGroup.GetShownItemByIndexInGroup(Integer)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.GetShownItemByIndexInGroup(Integer)
+  name.vb: GetShownItemByIndexInGroup(Integer)
+- uid: SuperScrollView.StaggeredGridItemGroup.GetIndexInShownItemList(SuperScrollView.LoopStaggeredGridViewItem)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.GetIndexInShownItemList(SuperScrollView.LoopStaggeredGridViewItem)
+  id: GetIndexInShownItemList(SuperScrollView.LoopStaggeredGridViewItem)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: GetIndexInShownItemList(LoopStaggeredGridViewItem)
+  nameWithType: StaggeredGridItemGroup.GetIndexInShownItemList(LoopStaggeredGridViewItem)
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetIndexInShownItemList(SuperScrollView.LoopStaggeredGridViewItem)
+  type: Method
+  source:
+    id: GetIndexInShownItemList
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 159
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int GetIndexInShownItemList(LoopStaggeredGridViewItem item)
+    parameters:
+    - id: item
+      type: SuperScrollView.LoopStaggeredGridViewItem
+    return:
+      type: System.Int32
+    content.vb: Public Function GetIndexInShownItemList(item As LoopStaggeredGridViewItem) As Integer
+  overload: SuperScrollView.StaggeredGridItemGroup.GetIndexInShownItemList*
+- uid: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItem
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItem
+  id: RefreshAllShownItem
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: RefreshAllShownItem()
+  nameWithType: StaggeredGridItemGroup.RefreshAllShownItem()
+  fullName: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItem()
+  type: Method
+  source:
+    id: RefreshAllShownItem
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 182
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void RefreshAllShownItem()
+    content.vb: Public Sub RefreshAllShownItem()
+  overload: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItem*
+- uid: SuperScrollView.StaggeredGridItemGroup.OnItemSizeChanged(System.Int32)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.OnItemSizeChanged(System.Int32)
+  id: OnItemSizeChanged(System.Int32)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: OnItemSizeChanged(int)
+  nameWithType: StaggeredGridItemGroup.OnItemSizeChanged(int)
+  fullName: SuperScrollView.StaggeredGridItemGroup.OnItemSizeChanged(int)
+  type: Method
+  source:
+    id: OnItemSizeChanged
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 197
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void OnItemSizeChanged(int indexInGroup)
+    parameters:
+    - id: indexInGroup
+      type: System.Int32
+    content.vb: Public Sub OnItemSizeChanged(indexInGroup As Integer)
+  overload: SuperScrollView.StaggeredGridItemGroup.OnItemSizeChanged*
+  nameWithType.vb: StaggeredGridItemGroup.OnItemSizeChanged(Integer)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.OnItemSizeChanged(Integer)
+  name.vb: OnItemSizeChanged(Integer)
+- uid: SuperScrollView.StaggeredGridItemGroup.RefreshItemByIndexInGroup(System.Int32)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.RefreshItemByIndexInGroup(System.Int32)
+  id: RefreshItemByIndexInGroup(System.Int32)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: RefreshItemByIndexInGroup(int)
+  nameWithType: StaggeredGridItemGroup.RefreshItemByIndexInGroup(int)
+  fullName: SuperScrollView.StaggeredGridItemGroup.RefreshItemByIndexInGroup(int)
+  type: Method
+  source:
+    id: RefreshItemByIndexInGroup
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 223
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void RefreshItemByIndexInGroup(int indexInGroup)
+    parameters:
+    - id: indexInGroup
+      type: System.Int32
+    content.vb: Public Sub RefreshItemByIndexInGroup(indexInGroup As Integer)
+  overload: SuperScrollView.StaggeredGridItemGroup.RefreshItemByIndexInGroup*
+  nameWithType.vb: StaggeredGridItemGroup.RefreshItemByIndexInGroup(Integer)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.RefreshItemByIndexInGroup(Integer)
+  name.vb: RefreshItemByIndexInGroup(Integer)
+- uid: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup(System.Int32)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup(System.Int32)
+  id: RefreshAllShownItemWithFirstIndexInGroup(System.Int32)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: RefreshAllShownItemWithFirstIndexInGroup(int)
+  nameWithType: StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup(int)
+  fullName: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup(int)
+  type: Method
+  source:
+    id: RefreshAllShownItemWithFirstIndexInGroup
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 260
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void RefreshAllShownItemWithFirstIndexInGroup(int firstItemIndexInGroup)
+    parameters:
+    - id: firstItemIndexInGroup
+      type: System.Int32
+    content.vb: Public Sub RefreshAllShownItemWithFirstIndexInGroup(firstItemIndexInGroup As Integer)
+  overload: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup*
+  nameWithType.vb: StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup(Integer)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup(Integer)
+  name.vb: RefreshAllShownItemWithFirstIndexInGroup(Integer)
+- uid: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos(System.Int32,UnityEngine.Vector3)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos(System.Int32,UnityEngine.Vector3)
+  id: RefreshAllShownItemWithFirstIndexAndPos(System.Int32,UnityEngine.Vector3)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: RefreshAllShownItemWithFirstIndexAndPos(int, Vector3)
+  nameWithType: StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos(int, Vector3)
+  fullName: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos(int, UnityEngine.Vector3)
+  type: Method
+  source:
+    id: RefreshAllShownItemWithFirstIndexAndPos
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 306
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void RefreshAllShownItemWithFirstIndexAndPos(int firstItemIndexInGroup, Vector3 pos)
+    parameters:
+    - id: firstItemIndexInGroup
+      type: System.Int32
+    - id: pos
+      type: UnityEngine.Vector3
+    content.vb: Public Sub RefreshAllShownItemWithFirstIndexAndPos(firstItemIndexInGroup As Integer, pos As Vector3)
+  overload: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos*
+  nameWithType.vb: StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos(Integer, Vector3)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos(Integer, UnityEngine.Vector3)
+  name.vb: RefreshAllShownItemWithFirstIndexAndPos(Integer, Vector3)
+- uid: SuperScrollView.StaggeredGridItemGroup.GetItemPos(System.Int32)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.GetItemPos(System.Int32)
+  id: GetItemPos(System.Int32)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: GetItemPos(int)
+  nameWithType: StaggeredGridItemGroup.GetItemPos(int)
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetItemPos(int)
+  type: Method
+  source:
+    id: GetItemPos
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 360
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public float GetItemPos(int itemIndex)
+    parameters:
+    - id: itemIndex
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Function GetItemPos(itemIndex As Integer) As Single
+  overload: SuperScrollView.StaggeredGridItemGroup.GetItemPos*
+  nameWithType.vb: StaggeredGridItemGroup.GetItemPos(Integer)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.GetItemPos(Integer)
+  name.vb: GetItemPos(Integer)
+- uid: SuperScrollView.StaggeredGridItemGroup.GetItemCornerPosInViewPort(SuperScrollView.LoopStaggeredGridViewItem,SuperScrollView.ItemCornerEnum)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.GetItemCornerPosInViewPort(SuperScrollView.LoopStaggeredGridViewItem,SuperScrollView.ItemCornerEnum)
+  id: GetItemCornerPosInViewPort(SuperScrollView.LoopStaggeredGridViewItem,SuperScrollView.ItemCornerEnum)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: GetItemCornerPosInViewPort(LoopStaggeredGridViewItem, ItemCornerEnum)
+  nameWithType: StaggeredGridItemGroup.GetItemCornerPosInViewPort(LoopStaggeredGridViewItem, ItemCornerEnum)
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetItemCornerPosInViewPort(SuperScrollView.LoopStaggeredGridViewItem, SuperScrollView.ItemCornerEnum)
+  type: Method
+  source:
+    id: GetItemCornerPosInViewPort
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 366
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public Vector3 GetItemCornerPosInViewPort(LoopStaggeredGridViewItem item, ItemCornerEnum corner = ItemCornerEnum.LeftBottom)
+    parameters:
+    - id: item
+      type: SuperScrollView.LoopStaggeredGridViewItem
+    - id: corner
+      type: SuperScrollView.ItemCornerEnum
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function GetItemCornerPosInViewPort(item As LoopStaggeredGridViewItem, corner As ItemCornerEnum = ItemCornerEnum.LeftBottom) As Vector3
+  overload: SuperScrollView.StaggeredGridItemGroup.GetItemCornerPosInViewPort*
+- uid: SuperScrollView.StaggeredGridItemGroup.RecycleItemTmp(SuperScrollView.LoopStaggeredGridViewItem)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.RecycleItemTmp(SuperScrollView.LoopStaggeredGridViewItem)
+  id: RecycleItemTmp(SuperScrollView.LoopStaggeredGridViewItem)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: RecycleItemTmp(LoopStaggeredGridViewItem)
+  nameWithType: StaggeredGridItemGroup.RecycleItemTmp(LoopStaggeredGridViewItem)
+  fullName: SuperScrollView.StaggeredGridItemGroup.RecycleItemTmp(SuperScrollView.LoopStaggeredGridViewItem)
+  type: Method
+  source:
+    id: RecycleItemTmp
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 373
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void RecycleItemTmp(LoopStaggeredGridViewItem item)
+    parameters:
+    - id: item
+      type: SuperScrollView.LoopStaggeredGridViewItem
+    content.vb: Public Sub RecycleItemTmp(item As LoopStaggeredGridViewItem)
+  overload: SuperScrollView.StaggeredGridItemGroup.RecycleItemTmp*
+- uid: SuperScrollView.StaggeredGridItemGroup.RecycleAllItem
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.RecycleAllItem
+  id: RecycleAllItem
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: RecycleAllItem()
+  nameWithType: StaggeredGridItemGroup.RecycleAllItem()
+  fullName: SuperScrollView.StaggeredGridItemGroup.RecycleAllItem()
+  type: Method
+  source:
+    id: RecycleAllItem
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 379
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void RecycleAllItem()
+    content.vb: Public Sub RecycleAllItem()
+  overload: SuperScrollView.StaggeredGridItemGroup.RecycleAllItem*
+- uid: SuperScrollView.StaggeredGridItemGroup.ClearAllTmpRecycledItem
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.ClearAllTmpRecycledItem
+  id: ClearAllTmpRecycledItem
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: ClearAllTmpRecycledItem()
+  nameWithType: StaggeredGridItemGroup.ClearAllTmpRecycledItem()
+  fullName: SuperScrollView.StaggeredGridItemGroup.ClearAllTmpRecycledItem()
+  type: Method
+  source:
+    id: ClearAllTmpRecycledItem
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 388
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void ClearAllTmpRecycledItem()
+    content.vb: Public Sub ClearAllTmpRecycledItem()
+  overload: SuperScrollView.StaggeredGridItemGroup.ClearAllTmpRecycledItem*
+- uid: SuperScrollView.StaggeredGridItemGroup.HadCreatedItemCount
+  commentId: P:SuperScrollView.StaggeredGridItemGroup.HadCreatedItemCount
+  id: HadCreatedItemCount
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: HadCreatedItemCount
+  nameWithType: StaggeredGridItemGroup.HadCreatedItemCount
+  fullName: SuperScrollView.StaggeredGridItemGroup.HadCreatedItemCount
+  type: Property
+  source:
+    id: HadCreatedItemCount
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 399
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int HadCreatedItemCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property HadCreatedItemCount As Integer
+  overload: SuperScrollView.StaggeredGridItemGroup.HadCreatedItemCount*
+- uid: SuperScrollView.StaggeredGridItemGroup.SetListItemCount(System.Int32)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.SetListItemCount(System.Int32)
+  id: SetListItemCount(System.Int32)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: SetListItemCount(int)
+  nameWithType: StaggeredGridItemGroup.SetListItemCount(int)
+  fullName: SuperScrollView.StaggeredGridItemGroup.SetListItemCount(int)
+  type: Method
+  source:
+    id: SetListItemCount
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 408
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void SetListItemCount(int itemCount)
+    parameters:
+    - id: itemCount
+      type: System.Int32
+    content.vb: Public Sub SetListItemCount(itemCount As Integer)
+  overload: SuperScrollView.StaggeredGridItemGroup.SetListItemCount*
+  nameWithType.vb: StaggeredGridItemGroup.SetListItemCount(Integer)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.SetListItemCount(Integer)
+  name.vb: SetListItemCount(Integer)
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart1(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart1(System.Single,System.Single,System.Single,System.Single)
+  id: UpdateListViewPart1(System.Single,System.Single,System.Single,System.Single)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: UpdateListViewPart1(float, float, float, float)
+  nameWithType: StaggeredGridItemGroup.UpdateListViewPart1(float, float, float, float)
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart1(float, float, float, float)
+  type: Method
+  source:
+    id: UpdateListViewPart1
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 501
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void UpdateListViewPart1(float distanceForRecycle0, float distanceForRecycle1, float distanceForNew0, float distanceForNew1)
+    parameters:
+    - id: distanceForRecycle0
+      type: System.Single
+    - id: distanceForRecycle1
+      type: System.Single
+    - id: distanceForNew0
+      type: System.Single
+    - id: distanceForNew1
+      type: System.Single
+    content.vb: Public Sub UpdateListViewPart1(distanceForRecycle0 As Single, distanceForRecycle1 As Single, distanceForNew0 As Single, distanceForNew1 As Single)
+  overload: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart1*
+  nameWithType.vb: StaggeredGridItemGroup.UpdateListViewPart1(Single, Single, Single, Single)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart1(Single, Single, Single, Single)
+  name.vb: UpdateListViewPart1(Single, Single, Single, Single)
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart2(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart2(System.Single,System.Single,System.Single,System.Single)
+  id: UpdateListViewPart2(System.Single,System.Single,System.Single,System.Single)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: UpdateListViewPart2(float, float, float, float)
+  nameWithType: StaggeredGridItemGroup.UpdateListViewPart2(float, float, float, float)
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart2(float, float, float, float)
+  type: Method
+  source:
+    id: UpdateListViewPart2
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 532
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public bool UpdateListViewPart2(float distanceForRecycle0, float distanceForRecycle1, float distanceForNew0, float distanceForNew1)
+    parameters:
+    - id: distanceForRecycle0
+      type: System.Single
+    - id: distanceForRecycle1
+      type: System.Single
+    - id: distanceForNew0
+      type: System.Single
+    - id: distanceForNew1
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function UpdateListViewPart2(distanceForRecycle0 As Single, distanceForRecycle1 As Single, distanceForNew0 As Single, distanceForNew1 As Single) As Boolean
+  overload: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart2*
+  nameWithType.vb: StaggeredGridItemGroup.UpdateListViewPart2(Single, Single, Single, Single)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart2(Single, Single, Single, Single)
+  name.vb: UpdateListViewPart2(Single, Single, Single, Single)
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart1(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart1(System.Single,System.Single,System.Single,System.Single)
+  id: UpdateForVertListPart1(System.Single,System.Single,System.Single,System.Single)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: UpdateForVertListPart1(float, float, float, float)
+  nameWithType: StaggeredGridItemGroup.UpdateForVertListPart1(float, float, float, float)
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart1(float, float, float, float)
+  type: Method
+  source:
+    id: UpdateForVertListPart1
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 545
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public bool UpdateForVertListPart1(float distanceForRecycle0, float distanceForRecycle1, float distanceForNew0, float distanceForNew1)
+    parameters:
+    - id: distanceForRecycle0
+      type: System.Single
+    - id: distanceForRecycle1
+      type: System.Single
+    - id: distanceForNew0
+      type: System.Single
+    - id: distanceForNew1
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function UpdateForVertListPart1(distanceForRecycle0 As Single, distanceForRecycle1 As Single, distanceForNew0 As Single, distanceForNew1 As Single) As Boolean
+  overload: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart1*
+  nameWithType.vb: StaggeredGridItemGroup.UpdateForVertListPart1(Single, Single, Single, Single)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart1(Single, Single, Single, Single)
+  name.vb: UpdateForVertListPart1(Single, Single, Single, Single)
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart2(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart2(System.Single,System.Single,System.Single,System.Single)
+  id: UpdateForVertListPart2(System.Single,System.Single,System.Single,System.Single)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: UpdateForVertListPart2(float, float, float, float)
+  nameWithType: StaggeredGridItemGroup.UpdateForVertListPart2(float, float, float, float)
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart2(float, float, float, float)
+  type: Method
+  source:
+    id: UpdateForVertListPart2
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 859
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public bool UpdateForVertListPart2(float distanceForRecycle0, float distanceForRecycle1, float distanceForNew0, float distanceForNew1)
+    parameters:
+    - id: distanceForRecycle0
+      type: System.Single
+    - id: distanceForRecycle1
+      type: System.Single
+    - id: distanceForNew0
+      type: System.Single
+    - id: distanceForNew1
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function UpdateForVertListPart2(distanceForRecycle0 As Single, distanceForRecycle1 As Single, distanceForNew0 As Single, distanceForNew1 As Single) As Boolean
+  overload: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart2*
+  nameWithType.vb: StaggeredGridItemGroup.UpdateForVertListPart2(Single, Single, Single, Single)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart2(Single, Single, Single, Single)
+  name.vb: UpdateForVertListPart2(Single, Single, Single, Single)
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart1(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart1(System.Single,System.Single,System.Single,System.Single)
+  id: UpdateForHorizontalListPart1(System.Single,System.Single,System.Single,System.Single)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: UpdateForHorizontalListPart1(float, float, float, float)
+  nameWithType: StaggeredGridItemGroup.UpdateForHorizontalListPart1(float, float, float, float)
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart1(float, float, float, float)
+  type: Method
+  source:
+    id: UpdateForHorizontalListPart1
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 1035
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public bool UpdateForHorizontalListPart1(float distanceForRecycle0, float distanceForRecycle1, float distanceForNew0, float distanceForNew1)
+    parameters:
+    - id: distanceForRecycle0
+      type: System.Single
+    - id: distanceForRecycle1
+      type: System.Single
+    - id: distanceForNew0
+      type: System.Single
+    - id: distanceForNew1
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function UpdateForHorizontalListPart1(distanceForRecycle0 As Single, distanceForRecycle1 As Single, distanceForNew0 As Single, distanceForNew1 As Single) As Boolean
+  overload: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart1*
+  nameWithType.vb: StaggeredGridItemGroup.UpdateForHorizontalListPart1(Single, Single, Single, Single)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart1(Single, Single, Single, Single)
+  name.vb: UpdateForHorizontalListPart1(Single, Single, Single, Single)
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart2(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart2(System.Single,System.Single,System.Single,System.Single)
+  id: UpdateForHorizontalListPart2(System.Single,System.Single,System.Single,System.Single)
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: UpdateForHorizontalListPart2(float, float, float, float)
+  nameWithType: StaggeredGridItemGroup.UpdateForHorizontalListPart2(float, float, float, float)
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart2(float, float, float, float)
+  type: Method
+  source:
+    id: UpdateForHorizontalListPart2
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 1354
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public bool UpdateForHorizontalListPart2(float distanceForRecycle0, float distanceForRecycle1, float distanceForNew0, float distanceForNew1)
+    parameters:
+    - id: distanceForRecycle0
+      type: System.Single
+    - id: distanceForRecycle1
+      type: System.Single
+    - id: distanceForNew0
+      type: System.Single
+    - id: distanceForNew1
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function UpdateForHorizontalListPart2(distanceForRecycle0 As Single, distanceForRecycle1 As Single, distanceForNew0 As Single, distanceForNew1 As Single) As Boolean
+  overload: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart2*
+  nameWithType.vb: StaggeredGridItemGroup.UpdateForHorizontalListPart2(Single, Single, Single, Single)
+  fullName.vb: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart2(Single, Single, Single, Single)
+  name.vb: UpdateForHorizontalListPart2(Single, Single, Single, Single)
+- uid: SuperScrollView.StaggeredGridItemGroup.GetContentPanelSize
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.GetContentPanelSize
+  id: GetContentPanelSize
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: GetContentPanelSize()
+  nameWithType: StaggeredGridItemGroup.GetContentPanelSize()
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetContentPanelSize()
+  type: Method
+  source:
+    id: GetContentPanelSize
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 1529
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public float GetContentPanelSize()
+    return:
+      type: System.Single
+    content.vb: Public Function GetContentPanelSize() As Single
+  overload: SuperScrollView.StaggeredGridItemGroup.GetContentPanelSize*
+- uid: SuperScrollView.StaggeredGridItemGroup.GetShownItemPosMaxValue
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.GetShownItemPosMaxValue
+  id: GetShownItemPosMaxValue
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: GetShownItemPosMaxValue()
+  nameWithType: StaggeredGridItemGroup.GetShownItemPosMaxValue()
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetShownItemPosMaxValue()
+  type: Method
+  source:
+    id: GetShownItemPosMaxValue
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 1540
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public float GetShownItemPosMaxValue()
+    return:
+      type: System.Single
+    content.vb: Public Function GetShownItemPosMaxValue() As Single
+  overload: SuperScrollView.StaggeredGridItemGroup.GetShownItemPosMaxValue*
+- uid: SuperScrollView.StaggeredGridItemGroup.CheckIfNeedUpdateItemPos
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.CheckIfNeedUpdateItemPos
+  id: CheckIfNeedUpdateItemPos
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: CheckIfNeedUpdateItemPos()
+  nameWithType: StaggeredGridItemGroup.CheckIfNeedUpdateItemPos()
+  fullName: SuperScrollView.StaggeredGridItemGroup.CheckIfNeedUpdateItemPos()
+  type: Method
+  source:
+    id: CheckIfNeedUpdateItemPos
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 1567
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void CheckIfNeedUpdateItemPos()
+    content.vb: Public Sub CheckIfNeedUpdateItemPos()
+  overload: SuperScrollView.StaggeredGridItemGroup.CheckIfNeedUpdateItemPos*
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateAllShownItemsPos
+  commentId: M:SuperScrollView.StaggeredGridItemGroup.UpdateAllShownItemsPos
+  id: UpdateAllShownItemsPos
+  parent: SuperScrollView.StaggeredGridItemGroup
+  langs:
+  - csharp
+  - vb
+  name: UpdateAllShownItemsPos()
+  nameWithType: StaggeredGridItemGroup.UpdateAllShownItemsPos()
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateAllShownItemsPos()
+  type: Method
+  source:
+    id: UpdateAllShownItemsPos
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\StaggeredGridView\StaggeredGridItemGroup.cs
+    startLine: 1642
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public void UpdateAllShownItemsPos()
+    content.vb: Public Sub UpdateAllShownItemsPos()
+  overload: SuperScrollView.StaggeredGridItemGroup.UpdateAllShownItemsPos*
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SuperScrollView.StaggeredGridItemGroup.Init*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.Init
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_Init_SuperScrollView_LoopStaggeredGridView_System_Int32_System_Int32_System_Func_System_Int32_System_Int32_SuperScrollView_LoopStaggeredGridViewItem__
+  name: Init
+  nameWithType: StaggeredGridItemGroup.Init
+  fullName: SuperScrollView.StaggeredGridItemGroup.Init
+- uid: SuperScrollView.LoopStaggeredGridView
+  commentId: T:SuperScrollView.LoopStaggeredGridView
+  parent: SuperScrollView
+  href: SuperScrollView.LoopStaggeredGridView.html
+  name: LoopStaggeredGridView
+  nameWithType: LoopStaggeredGridView
+  fullName: SuperScrollView.LoopStaggeredGridView
+- uid: System.Func{System.Int32,System.Int32,SuperScrollView.LoopStaggeredGridViewItem}
+  commentId: T:System.Func{System.Int32,System.Int32,SuperScrollView.LoopStaggeredGridViewItem}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<int, int, LoopStaggeredGridViewItem>
+  nameWithType: Func<int, int, LoopStaggeredGridViewItem>
+  fullName: System.Func<int, int, SuperScrollView.LoopStaggeredGridViewItem>
+  nameWithType.vb: Func(Of Integer, Integer, LoopStaggeredGridViewItem)
+  fullName.vb: System.Func(Of Integer, Integer, SuperScrollView.LoopStaggeredGridViewItem)
+  name.vb: Func(Of Integer, Integer, LoopStaggeredGridViewItem)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: SuperScrollView.LoopStaggeredGridViewItem
+    name: LoopStaggeredGridViewItem
+    href: SuperScrollView.LoopStaggeredGridViewItem.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: SuperScrollView.LoopStaggeredGridViewItem
+    name: LoopStaggeredGridViewItem
+    href: SuperScrollView.LoopStaggeredGridViewItem.html
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: SuperScrollView.StaggeredGridItemGroup.ItemIndexMap*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.ItemIndexMap
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_ItemIndexMap
+  name: ItemIndexMap
+  nameWithType: StaggeredGridItemGroup.ItemIndexMap
+  fullName: SuperScrollView.StaggeredGridItemGroup.ItemIndexMap
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SuperScrollView.StaggeredGridItemGroup.ResetListView*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.ResetListView
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_ResetListView
+  name: ResetListView
+  nameWithType: StaggeredGridItemGroup.ResetListView
+  fullName: SuperScrollView.StaggeredGridItemGroup.ResetListView
+- uid: SuperScrollView.StaggeredGridItemGroup.GetShownItemByItemIndex*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.GetShownItemByItemIndex
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_GetShownItemByItemIndex_System_Int32_
+  name: GetShownItemByItemIndex
+  nameWithType: StaggeredGridItemGroup.GetShownItemByItemIndex
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetShownItemByItemIndex
+- uid: SuperScrollView.LoopStaggeredGridViewItem
+  commentId: T:SuperScrollView.LoopStaggeredGridViewItem
+  parent: SuperScrollView
+  href: SuperScrollView.LoopStaggeredGridViewItem.html
+  name: LoopStaggeredGridViewItem
+  nameWithType: LoopStaggeredGridViewItem
+  fullName: SuperScrollView.LoopStaggeredGridViewItem
+- uid: SuperScrollView.StaggeredGridItemGroup.ViewPortSize*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.ViewPortSize
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_ViewPortSize
+  name: ViewPortSize
+  nameWithType: StaggeredGridItemGroup.ViewPortSize
+  fullName: SuperScrollView.StaggeredGridItemGroup.ViewPortSize
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SuperScrollView.StaggeredGridItemGroup.ViewPortWidth*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.ViewPortWidth
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_ViewPortWidth
+  name: ViewPortWidth
+  nameWithType: StaggeredGridItemGroup.ViewPortWidth
+  fullName: SuperScrollView.StaggeredGridItemGroup.ViewPortWidth
+- uid: SuperScrollView.StaggeredGridItemGroup.ViewPortHeight*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.ViewPortHeight
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_ViewPortHeight
+  name: ViewPortHeight
+  nameWithType: StaggeredGridItemGroup.ViewPortHeight
+  fullName: SuperScrollView.StaggeredGridItemGroup.ViewPortHeight
+- uid: SuperScrollView.StaggeredGridItemGroup.GetShownItemByIndexInGroup*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.GetShownItemByIndexInGroup
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_GetShownItemByIndexInGroup_System_Int32_
+  name: GetShownItemByIndexInGroup
+  nameWithType: StaggeredGridItemGroup.GetShownItemByIndexInGroup
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetShownItemByIndexInGroup
+- uid: SuperScrollView.StaggeredGridItemGroup.GetIndexInShownItemList*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.GetIndexInShownItemList
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_GetIndexInShownItemList_SuperScrollView_LoopStaggeredGridViewItem_
+  name: GetIndexInShownItemList
+  nameWithType: StaggeredGridItemGroup.GetIndexInShownItemList
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetIndexInShownItemList
+- uid: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItem*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItem
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_RefreshAllShownItem
+  name: RefreshAllShownItem
+  nameWithType: StaggeredGridItemGroup.RefreshAllShownItem
+  fullName: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItem
+- uid: SuperScrollView.StaggeredGridItemGroup.OnItemSizeChanged*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.OnItemSizeChanged
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_OnItemSizeChanged_System_Int32_
+  name: OnItemSizeChanged
+  nameWithType: StaggeredGridItemGroup.OnItemSizeChanged
+  fullName: SuperScrollView.StaggeredGridItemGroup.OnItemSizeChanged
+- uid: SuperScrollView.StaggeredGridItemGroup.RefreshItemByIndexInGroup*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.RefreshItemByIndexInGroup
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_RefreshItemByIndexInGroup_System_Int32_
+  name: RefreshItemByIndexInGroup
+  nameWithType: StaggeredGridItemGroup.RefreshItemByIndexInGroup
+  fullName: SuperScrollView.StaggeredGridItemGroup.RefreshItemByIndexInGroup
+- uid: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_RefreshAllShownItemWithFirstIndexInGroup_System_Int32_
+  name: RefreshAllShownItemWithFirstIndexInGroup
+  nameWithType: StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup
+  fullName: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexInGroup
+- uid: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_RefreshAllShownItemWithFirstIndexAndPos_System_Int32_UnityEngine_Vector3_
+  name: RefreshAllShownItemWithFirstIndexAndPos
+  nameWithType: StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos
+  fullName: SuperScrollView.StaggeredGridItemGroup.RefreshAllShownItemWithFirstIndexAndPos
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SuperScrollView.StaggeredGridItemGroup.GetItemPos*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.GetItemPos
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_GetItemPos_System_Int32_
+  name: GetItemPos
+  nameWithType: StaggeredGridItemGroup.GetItemPos
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetItemPos
+- uid: SuperScrollView.StaggeredGridItemGroup.GetItemCornerPosInViewPort*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.GetItemCornerPosInViewPort
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_GetItemCornerPosInViewPort_SuperScrollView_LoopStaggeredGridViewItem_SuperScrollView_ItemCornerEnum_
+  name: GetItemCornerPosInViewPort
+  nameWithType: StaggeredGridItemGroup.GetItemCornerPosInViewPort
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetItemCornerPosInViewPort
+- uid: SuperScrollView.ItemCornerEnum
+  commentId: T:SuperScrollView.ItemCornerEnum
+  parent: SuperScrollView
+  href: SuperScrollView.ItemCornerEnum.html
+  name: ItemCornerEnum
+  nameWithType: ItemCornerEnum
+  fullName: SuperScrollView.ItemCornerEnum
+- uid: SuperScrollView.StaggeredGridItemGroup.RecycleItemTmp*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.RecycleItemTmp
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_RecycleItemTmp_SuperScrollView_LoopStaggeredGridViewItem_
+  name: RecycleItemTmp
+  nameWithType: StaggeredGridItemGroup.RecycleItemTmp
+  fullName: SuperScrollView.StaggeredGridItemGroup.RecycleItemTmp
+- uid: SuperScrollView.StaggeredGridItemGroup.RecycleAllItem*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.RecycleAllItem
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_RecycleAllItem
+  name: RecycleAllItem
+  nameWithType: StaggeredGridItemGroup.RecycleAllItem
+  fullName: SuperScrollView.StaggeredGridItemGroup.RecycleAllItem
+- uid: SuperScrollView.StaggeredGridItemGroup.ClearAllTmpRecycledItem*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.ClearAllTmpRecycledItem
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_ClearAllTmpRecycledItem
+  name: ClearAllTmpRecycledItem
+  nameWithType: StaggeredGridItemGroup.ClearAllTmpRecycledItem
+  fullName: SuperScrollView.StaggeredGridItemGroup.ClearAllTmpRecycledItem
+- uid: SuperScrollView.StaggeredGridItemGroup.HadCreatedItemCount*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.HadCreatedItemCount
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_HadCreatedItemCount
+  name: HadCreatedItemCount
+  nameWithType: StaggeredGridItemGroup.HadCreatedItemCount
+  fullName: SuperScrollView.StaggeredGridItemGroup.HadCreatedItemCount
+- uid: SuperScrollView.StaggeredGridItemGroup.SetListItemCount*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.SetListItemCount
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_SetListItemCount_System_Int32_
+  name: SetListItemCount
+  nameWithType: StaggeredGridItemGroup.SetListItemCount
+  fullName: SuperScrollView.StaggeredGridItemGroup.SetListItemCount
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart1*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart1
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_UpdateListViewPart1_System_Single_System_Single_System_Single_System_Single_
+  name: UpdateListViewPart1
+  nameWithType: StaggeredGridItemGroup.UpdateListViewPart1
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart1
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart2*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart2
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_UpdateListViewPart2_System_Single_System_Single_System_Single_System_Single_
+  name: UpdateListViewPart2
+  nameWithType: StaggeredGridItemGroup.UpdateListViewPart2
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateListViewPart2
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart1*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart1
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_UpdateForVertListPart1_System_Single_System_Single_System_Single_System_Single_
+  name: UpdateForVertListPart1
+  nameWithType: StaggeredGridItemGroup.UpdateForVertListPart1
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart1
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart2*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart2
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_UpdateForVertListPart2_System_Single_System_Single_System_Single_System_Single_
+  name: UpdateForVertListPart2
+  nameWithType: StaggeredGridItemGroup.UpdateForVertListPart2
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateForVertListPart2
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart1*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart1
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_UpdateForHorizontalListPart1_System_Single_System_Single_System_Single_System_Single_
+  name: UpdateForHorizontalListPart1
+  nameWithType: StaggeredGridItemGroup.UpdateForHorizontalListPart1
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart1
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart2*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart2
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_UpdateForHorizontalListPart2_System_Single_System_Single_System_Single_System_Single_
+  name: UpdateForHorizontalListPart2
+  nameWithType: StaggeredGridItemGroup.UpdateForHorizontalListPart2
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateForHorizontalListPart2
+- uid: SuperScrollView.StaggeredGridItemGroup.GetContentPanelSize*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.GetContentPanelSize
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_GetContentPanelSize
+  name: GetContentPanelSize
+  nameWithType: StaggeredGridItemGroup.GetContentPanelSize
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetContentPanelSize
+- uid: SuperScrollView.StaggeredGridItemGroup.GetShownItemPosMaxValue*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.GetShownItemPosMaxValue
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_GetShownItemPosMaxValue
+  name: GetShownItemPosMaxValue
+  nameWithType: StaggeredGridItemGroup.GetShownItemPosMaxValue
+  fullName: SuperScrollView.StaggeredGridItemGroup.GetShownItemPosMaxValue
+- uid: SuperScrollView.StaggeredGridItemGroup.CheckIfNeedUpdateItemPos*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.CheckIfNeedUpdateItemPos
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_CheckIfNeedUpdateItemPos
+  name: CheckIfNeedUpdateItemPos
+  nameWithType: StaggeredGridItemGroup.CheckIfNeedUpdateItemPos
+  fullName: SuperScrollView.StaggeredGridItemGroup.CheckIfNeedUpdateItemPos
+- uid: SuperScrollView.StaggeredGridItemGroup.UpdateAllShownItemsPos*
+  commentId: Overload:SuperScrollView.StaggeredGridItemGroup.UpdateAllShownItemsPos
+  href: SuperScrollView.StaggeredGridItemGroup.html#SuperScrollView_StaggeredGridItemGroup_UpdateAllShownItemsPos
+  name: UpdateAllShownItemsPos
+  nameWithType: StaggeredGridItemGroup.UpdateAllShownItemsPos
+  fullName: SuperScrollView.StaggeredGridItemGroup.UpdateAllShownItemsPos

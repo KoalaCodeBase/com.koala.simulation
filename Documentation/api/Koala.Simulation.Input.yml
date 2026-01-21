@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Input
+  commentId: N:Koala.Simulation.Input
+  id: Koala.Simulation.Input
+  children:
+  - Koala.Simulation.Input.InputManager
+  - Koala.Simulation.Input.InputRebindService
+  - Koala.Simulation.Input.InputSettingsService
+  - Koala.Simulation.Input.InputSpriteAsset
+  - Koala.Simulation.Input.SpriteEntry
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Input
+  nameWithType: Koala.Simulation.Input
+  fullName: Koala.Simulation.Input
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Input.InputSettingsService
+  commentId: T:Koala.Simulation.Input.InputSettingsService
+  href: Koala.Simulation.Input.InputSettingsService.html
+  name: InputSettingsService
+  nameWithType: InputSettingsService
+  fullName: Koala.Simulation.Input.InputSettingsService
+- uid: Koala.Simulation.Input.InputManager
+  commentId: T:Koala.Simulation.Input.InputManager
+  href: Koala.Simulation.Input.InputManager.html
+  name: InputManager
+  nameWithType: InputManager
+  fullName: Koala.Simulation.Input.InputManager
+- uid: Koala.Simulation.Input.InputRebindService
+  commentId: T:Koala.Simulation.Input.InputRebindService
+  href: Koala.Simulation.Input.InputRebindService.html
+  name: InputRebindService
+  nameWithType: InputRebindService
+  fullName: Koala.Simulation.Input.InputRebindService
+- uid: Koala.Simulation.Input.InputSpriteAsset
+  commentId: T:Koala.Simulation.Input.InputSpriteAsset
+  parent: Koala.Simulation.Input
+  href: Koala.Simulation.Input.InputSpriteAsset.html
+  name: InputSpriteAsset
+  nameWithType: InputSpriteAsset
+  fullName: Koala.Simulation.Input.InputSpriteAsset
+- uid: Koala.Simulation.Input.SpriteEntry
+  commentId: T:Koala.Simulation.Input.SpriteEntry
+  href: Koala.Simulation.Input.SpriteEntry.html
+  name: SpriteEntry
+  nameWithType: SpriteEntry
+  fullName: Koala.Simulation.Input.SpriteEntry
+- uid: Koala.Simulation.Input
+  commentId: N:Koala.Simulation.Input
+  href: Koala.html
+  name: Koala.Simulation.Input
+  nameWithType: Koala.Simulation.Input
+  fullName: Koala.Simulation.Input
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html

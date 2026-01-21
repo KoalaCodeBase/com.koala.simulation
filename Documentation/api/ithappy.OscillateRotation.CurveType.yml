@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: ithappy.OscillateRotation.CurveType
+  commentId: T:ithappy.OscillateRotation.CurveType
+  id: OscillateRotation.CurveType
+  parent: ithappy
+  children:
+  - ithappy.OscillateRotation.CurveType.EaseIn
+  - ithappy.OscillateRotation.CurveType.EaseInOut
+  - ithappy.OscillateRotation.CurveType.EaseOut
+  - ithappy.OscillateRotation.CurveType.Linear
+  langs:
+  - csharp
+  - vb
+  name: OscillateRotation.CurveType
+  nameWithType: OscillateRotation.CurveType
+  fullName: ithappy.OscillateRotation.CurveType
+  type: Enum
+  source:
+    id: CurveType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Animation_Scripts\OscillateRotation.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: ithappy
+  syntax:
+    content: public enum OscillateRotation.CurveType
+    content.vb: Public Enum OscillateRotation.CurveType
+- uid: ithappy.OscillateRotation.CurveType.Linear
+  commentId: F:ithappy.OscillateRotation.CurveType.Linear
+  id: Linear
+  parent: ithappy.OscillateRotation.CurveType
+  langs:
+  - csharp
+  - vb
+  name: Linear
+  nameWithType: OscillateRotation.CurveType.Linear
+  fullName: ithappy.OscillateRotation.CurveType.Linear
+  type: Field
+  source:
+    id: Linear
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Animation_Scripts\OscillateRotation.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: ithappy
+  syntax:
+    content: Linear = 0
+    return:
+      type: ithappy.OscillateRotation.CurveType
+- uid: ithappy.OscillateRotation.CurveType.EaseIn
+  commentId: F:ithappy.OscillateRotation.CurveType.EaseIn
+  id: EaseIn
+  parent: ithappy.OscillateRotation.CurveType
+  langs:
+  - csharp
+  - vb
+  name: EaseIn
+  nameWithType: OscillateRotation.CurveType.EaseIn
+  fullName: ithappy.OscillateRotation.CurveType.EaseIn
+  type: Field
+  source:
+    id: EaseIn
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Animation_Scripts\OscillateRotation.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: ithappy
+  syntax:
+    content: EaseIn = 1
+    return:
+      type: ithappy.OscillateRotation.CurveType
+- uid: ithappy.OscillateRotation.CurveType.EaseOut
+  commentId: F:ithappy.OscillateRotation.CurveType.EaseOut
+  id: EaseOut
+  parent: ithappy.OscillateRotation.CurveType
+  langs:
+  - csharp
+  - vb
+  name: EaseOut
+  nameWithType: OscillateRotation.CurveType.EaseOut
+  fullName: ithappy.OscillateRotation.CurveType.EaseOut
+  type: Field
+  source:
+    id: EaseOut
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Animation_Scripts\OscillateRotation.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: ithappy
+  syntax:
+    content: EaseOut = 2
+    return:
+      type: ithappy.OscillateRotation.CurveType
+- uid: ithappy.OscillateRotation.CurveType.EaseInOut
+  commentId: F:ithappy.OscillateRotation.CurveType.EaseInOut
+  id: EaseInOut
+  parent: ithappy.OscillateRotation.CurveType
+  langs:
+  - csharp
+  - vb
+  name: EaseInOut
+  nameWithType: OscillateRotation.CurveType.EaseInOut
+  fullName: ithappy.OscillateRotation.CurveType.EaseInOut
+  type: Field
+  source:
+    id: EaseInOut
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Animation_Scripts\OscillateRotation.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: ithappy
+  syntax:
+    content: EaseInOut = 3
+    return:
+      type: ithappy.OscillateRotation.CurveType
+references:
+- uid: ithappy
+  commentId: N:ithappy
+  href: ithappy.html
+  name: ithappy
+  nameWithType: ithappy
+  fullName: ithappy
+- uid: ithappy.OscillateRotation.CurveType
+  commentId: T:ithappy.OscillateRotation.CurveType
+  parent: ithappy
+  href: ithappy.OscillateRotation.html
+  name: OscillateRotation.CurveType
+  nameWithType: OscillateRotation.CurveType
+  fullName: ithappy.OscillateRotation.CurveType
+  spec.csharp:
+  - uid: ithappy.OscillateRotation
+    name: OscillateRotation
+    href: ithappy.OscillateRotation.html
+  - name: .
+  - uid: ithappy.OscillateRotation.CurveType
+    name: CurveType
+    href: ithappy.OscillateRotation.CurveType.html
+  spec.vb:
+  - uid: ithappy.OscillateRotation
+    name: OscillateRotation
+    href: ithappy.OscillateRotation.html
+  - name: .
+  - uid: ithappy.OscillateRotation.CurveType
+    name: CurveType
+    href: ithappy.OscillateRotation.CurveType.html

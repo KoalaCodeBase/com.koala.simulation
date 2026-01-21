@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Save.ContainerSaveExtensions
+  commentId: T:Koala.Simulation.Save.ContainerSaveExtensions
+  id: ContainerSaveExtensions
+  parent: Koala.Simulation.Save
+  children:
+  - Koala.Simulation.Save.ContainerSaveExtensions.FromSaveData(Koala.Simulation.Save.ContainerSaveData)
+  - Koala.Simulation.Save.ContainerSaveExtensions.ToSaveData(Koala.Simulation.Inventory.Core.IContainer,System.Single[],System.Single[])
+  langs:
+  - csharp
+  - vb
+  name: ContainerSaveExtensions
+  nameWithType: ContainerSaveExtensions
+  fullName: Koala.Simulation.Save.ContainerSaveExtensions
+  type: Class
+  source:
+    remote:
+      path: Runtime/Save/ContainerSaveExtensions.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ContainerSaveExtensions
+    path: ../Packages/com.koala.simulation/Runtime/Save/ContainerSaveExtensions.cs
+    startLine: 5
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  syntax:
+    content: public static class ContainerSaveExtensions
+    content.vb: Public Module ContainerSaveExtensions
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Save.ContainerSaveExtensions.ToSaveData(Koala.Simulation.Inventory.Core.IContainer,System.Single[],System.Single[])
+  commentId: M:Koala.Simulation.Save.ContainerSaveExtensions.ToSaveData(Koala.Simulation.Inventory.Core.IContainer,System.Single[],System.Single[])
+  id: ToSaveData(Koala.Simulation.Inventory.Core.IContainer,System.Single[],System.Single[])
+  isExtensionMethod: true
+  parent: Koala.Simulation.Save.ContainerSaveExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToSaveData(IContainer, float[], float[])
+  nameWithType: ContainerSaveExtensions.ToSaveData(IContainer, float[], float[])
+  fullName: Koala.Simulation.Save.ContainerSaveExtensions.ToSaveData(Koala.Simulation.Inventory.Core.IContainer, float[], float[])
+  type: Method
+  source:
+    remote:
+      path: Runtime/Save/ContainerSaveExtensions.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ToSaveData
+    path: ../Packages/com.koala.simulation/Runtime/Save/ContainerSaveExtensions.cs
+    startLine: 7
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  syntax:
+    content: public static ContainerSaveData ToSaveData(this IContainer container, float[] position = null, float[] rotation = null)
+    parameters:
+    - id: container
+      type: Koala.Simulation.Inventory.Core.IContainer
+    - id: position
+      type: System.Single[]
+    - id: rotation
+      type: System.Single[]
+    return:
+      type: Koala.Simulation.Save.ContainerSaveData
+    content.vb: Public Shared Function ToSaveData(container As IContainer, position As Single() = Nothing, rotation As Single() = Nothing) As ContainerSaveData
+  overload: Koala.Simulation.Save.ContainerSaveExtensions.ToSaveData*
+  nameWithType.vb: ContainerSaveExtensions.ToSaveData(IContainer, Single(), Single())
+  fullName.vb: Koala.Simulation.Save.ContainerSaveExtensions.ToSaveData(Koala.Simulation.Inventory.Core.IContainer, Single(), Single())
+  name.vb: ToSaveData(IContainer, Single(), Single())
+- uid: Koala.Simulation.Save.ContainerSaveExtensions.FromSaveData(Koala.Simulation.Save.ContainerSaveData)
+  commentId: M:Koala.Simulation.Save.ContainerSaveExtensions.FromSaveData(Koala.Simulation.Save.ContainerSaveData)
+  id: FromSaveData(Koala.Simulation.Save.ContainerSaveData)
+  parent: Koala.Simulation.Save.ContainerSaveExtensions
+  langs:
+  - csharp
+  - vb
+  name: FromSaveData(ContainerSaveData)
+  nameWithType: ContainerSaveExtensions.FromSaveData(ContainerSaveData)
+  fullName: Koala.Simulation.Save.ContainerSaveExtensions.FromSaveData(Koala.Simulation.Save.ContainerSaveData)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Save/ContainerSaveExtensions.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: FromSaveData
+    path: ../Packages/com.koala.simulation/Runtime/Save/ContainerSaveExtensions.cs
+    startLine: 21
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  syntax:
+    content: public static IContainer FromSaveData(ContainerSaveData data)
+    parameters:
+    - id: data
+      type: Koala.Simulation.Save.ContainerSaveData
+    return:
+      type: Koala.Simulation.Inventory.Core.IContainer
+    content.vb: Public Shared Function FromSaveData(data As ContainerSaveData) As IContainer
+  overload: Koala.Simulation.Save.ContainerSaveExtensions.FromSaveData*
+references:
+- uid: Koala.Simulation.Save
+  commentId: N:Koala.Simulation.Save
+  href: Koala.html
+  name: Koala.Simulation.Save
+  nameWithType: Koala.Simulation.Save
+  fullName: Koala.Simulation.Save
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Save.ContainerSaveExtensions.ToSaveData*
+  commentId: Overload:Koala.Simulation.Save.ContainerSaveExtensions.ToSaveData
+  href: Koala.Simulation.Save.ContainerSaveExtensions.html#Koala_Simulation_Save_ContainerSaveExtensions_ToSaveData_Koala_Simulation_Inventory_Core_IContainer_System_Single___System_Single___
+  name: ToSaveData
+  nameWithType: ContainerSaveExtensions.ToSaveData
+  fullName: Koala.Simulation.Save.ContainerSaveExtensions.ToSaveData
+- uid: Koala.Simulation.Inventory.Core.IContainer
+  commentId: T:Koala.Simulation.Inventory.Core.IContainer
+  parent: Koala.Simulation.Inventory.Core
+  name: IContainer
+  nameWithType: IContainer
+  fullName: Koala.Simulation.Inventory.Core.IContainer
+- uid: System.Single[]
+  isExternal: true
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Koala.Simulation.Save.ContainerSaveData
+  commentId: T:Koala.Simulation.Save.ContainerSaveData
+  parent: Koala.Simulation.Save
+  href: Koala.Simulation.Save.ContainerSaveData.html
+  name: ContainerSaveData
+  nameWithType: ContainerSaveData
+  fullName: Koala.Simulation.Save.ContainerSaveData
+- uid: Koala.Simulation.Inventory.Core
+  commentId: N:Koala.Simulation.Inventory.Core
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Core
+  nameWithType: Koala.Simulation.Inventory.Core
+  fullName: Koala.Simulation.Inventory.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+- uid: Koala.Simulation.Save.ContainerSaveExtensions.FromSaveData*
+  commentId: Overload:Koala.Simulation.Save.ContainerSaveExtensions.FromSaveData
+  href: Koala.Simulation.Save.ContainerSaveExtensions.html#Koala_Simulation_Save_ContainerSaveExtensions_FromSaveData_Koala_Simulation_Save_ContainerSaveData_
+  name: FromSaveData
+  nameWithType: ContainerSaveExtensions.FromSaveData
+  fullName: Koala.Simulation.Save.ContainerSaveExtensions.FromSaveData

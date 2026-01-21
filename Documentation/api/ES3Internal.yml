@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Internal
+  commentId: N:ES3Internal
+  id: ES3Internal
+  children:
+  - ES3Internal.AESEncryptionAlgorithm
+  - ES3Internal.ES3Data
+  - ES3Internal.ES3DefaultSettings
+  - ES3Internal.ES3FileMode
+  - ES3Internal.ES3FileStream
+  - ES3Internal.ES3GlobalReferences
+  - ES3Internal.ES3Hash
+  - ES3Internal.ES3IO
+  - ES3Internal.ES3IO.ES3FileMode
+  - ES3Internal.ES3IdRefDictionary
+  - ES3Internal.ES3JSONReader
+  - ES3Internal.ES3Member
+  - ES3Internal.ES3Prefab
+  - ES3Internal.ES3ReferenceMgrBase
+  - ES3Internal.ES3Reflection
+  - ES3Internal.ES3Reflection.ES3ReflectedMember
+  - ES3Internal.ES3Reflection.ES3ReflectedMethod
+  - ES3Internal.ES3SerializableDictionary`2
+  - ES3Internal.ES3Stream
+  - ES3Internal.ES3TypeMgr
+  - ES3Internal.ES3WebClass
+  - ES3Internal.EncryptionAlgorithm
+  - ES3Internal.UnbufferedCryptoStream
+  langs:
+  - csharp
+  - vb
+  name: ES3Internal
+  nameWithType: ES3Internal
+  fullName: ES3Internal
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: ES3Internal.ES3TypeMgr
+  commentId: T:ES3Internal.ES3TypeMgr
+  href: ES3Internal.ES3TypeMgr.html
+  name: ES3TypeMgr
+  nameWithType: ES3TypeMgr
+  fullName: ES3Internal.ES3TypeMgr
+- uid: ES3Internal.ES3Member
+  commentId: T:ES3Internal.ES3Member
+  href: ES3Internal.ES3Member.html
+  name: ES3Member
+  nameWithType: ES3Member
+  fullName: ES3Internal.ES3Member
+- uid: ES3Internal.ES3Prefab
+  commentId: T:ES3Internal.ES3Prefab
+  parent: ES3Internal
+  href: ES3Internal.ES3Prefab.html
+  name: ES3Prefab
+  nameWithType: ES3Prefab
+  fullName: ES3Internal.ES3Prefab
+- uid: ES3Internal.ES3IO
+  commentId: T:ES3Internal.ES3IO
+  href: ES3Internal.ES3IO.html
+  name: ES3IO
+  nameWithType: ES3IO
+  fullName: ES3Internal.ES3IO
+- uid: ES3Internal.ES3IO.ES3FileMode
+  commentId: T:ES3Internal.ES3IO.ES3FileMode
+  parent: ES3Internal
+  href: ES3Internal.ES3IO.html
+  name: ES3IO.ES3FileMode
+  nameWithType: ES3IO.ES3FileMode
+  fullName: ES3Internal.ES3IO.ES3FileMode
+  spec.csharp:
+  - uid: ES3Internal.ES3IO
+    name: ES3IO
+    href: ES3Internal.ES3IO.html
+  - name: .
+  - uid: ES3Internal.ES3IO.ES3FileMode
+    name: ES3FileMode
+    href: ES3Internal.ES3IO.ES3FileMode.html
+  spec.vb:
+  - uid: ES3Internal.ES3IO
+    name: ES3IO
+    href: ES3Internal.ES3IO.html
+  - name: .
+  - uid: ES3Internal.ES3IO.ES3FileMode
+    name: ES3FileMode
+    href: ES3Internal.ES3IO.ES3FileMode.html
+- uid: ES3Internal.ES3GlobalReferences
+  commentId: T:ES3Internal.ES3GlobalReferences
+  parent: ES3Internal
+  href: ES3Internal.ES3GlobalReferences.html
+  name: ES3GlobalReferences
+  nameWithType: ES3GlobalReferences
+  fullName: ES3Internal.ES3GlobalReferences
+- uid: ES3Internal.ES3Reflection
+  commentId: T:ES3Internal.ES3Reflection
+  href: ES3Internal.ES3Reflection.html
+  name: ES3Reflection
+  nameWithType: ES3Reflection
+  fullName: ES3Internal.ES3Reflection
+- uid: ES3Internal.ES3Reflection.ES3ReflectedMember
+  commentId: T:ES3Internal.ES3Reflection.ES3ReflectedMember
+  parent: ES3Internal
+  href: ES3Internal.ES3Reflection.html
+  name: ES3Reflection.ES3ReflectedMember
+  nameWithType: ES3Reflection.ES3ReflectedMember
+  fullName: ES3Internal.ES3Reflection.ES3ReflectedMember
+  spec.csharp:
+  - uid: ES3Internal.ES3Reflection
+    name: ES3Reflection
+    href: ES3Internal.ES3Reflection.html
+  - name: .
+  - uid: ES3Internal.ES3Reflection.ES3ReflectedMember
+    name: ES3ReflectedMember
+    href: ES3Internal.ES3Reflection.ES3ReflectedMember.html
+  spec.vb:
+  - uid: ES3Internal.ES3Reflection
+    name: ES3Reflection
+    href: ES3Internal.ES3Reflection.html
+  - name: .
+  - uid: ES3Internal.ES3Reflection.ES3ReflectedMember
+    name: ES3ReflectedMember
+    href: ES3Internal.ES3Reflection.ES3ReflectedMember.html
+- uid: ES3Internal.ES3Reflection.ES3ReflectedMethod
+  commentId: T:ES3Internal.ES3Reflection.ES3ReflectedMethod
+  parent: ES3Internal
+  href: ES3Internal.ES3Reflection.html
+  name: ES3Reflection.ES3ReflectedMethod
+  nameWithType: ES3Reflection.ES3ReflectedMethod
+  fullName: ES3Internal.ES3Reflection.ES3ReflectedMethod
+  spec.csharp:
+  - uid: ES3Internal.ES3Reflection
+    name: ES3Reflection
+    href: ES3Internal.ES3Reflection.html
+  - name: .
+  - uid: ES3Internal.ES3Reflection.ES3ReflectedMethod
+    name: ES3ReflectedMethod
+    href: ES3Internal.ES3Reflection.ES3ReflectedMethod.html
+  spec.vb:
+  - uid: ES3Internal.ES3Reflection
+    name: ES3Reflection
+    href: ES3Internal.ES3Reflection.html
+  - name: .
+  - uid: ES3Internal.ES3Reflection.ES3ReflectedMethod
+    name: ES3ReflectedMethod
+    href: ES3Internal.ES3Reflection.ES3ReflectedMethod.html
+- uid: ES3Internal.ES3JSONReader
+  commentId: T:ES3Internal.ES3JSONReader
+  href: ES3Internal.ES3JSONReader.html
+  name: ES3JSONReader
+  nameWithType: ES3JSONReader
+  fullName: ES3Internal.ES3JSONReader
+- uid: ES3Internal.ES3Hash
+  commentId: T:ES3Internal.ES3Hash
+  href: ES3Internal.ES3Hash.html
+  name: ES3Hash
+  nameWithType: ES3Hash
+  fullName: ES3Internal.ES3Hash
+- uid: ES3Internal.EncryptionAlgorithm
+  commentId: T:ES3Internal.EncryptionAlgorithm
+  parent: ES3Internal
+  href: ES3Internal.EncryptionAlgorithm.html
+  name: EncryptionAlgorithm
+  nameWithType: EncryptionAlgorithm
+  fullName: ES3Internal.EncryptionAlgorithm
+- uid: ES3Internal.AESEncryptionAlgorithm
+  commentId: T:ES3Internal.AESEncryptionAlgorithm
+  href: ES3Internal.AESEncryptionAlgorithm.html
+  name: AESEncryptionAlgorithm
+  nameWithType: AESEncryptionAlgorithm
+  fullName: ES3Internal.AESEncryptionAlgorithm
+- uid: ES3Internal.UnbufferedCryptoStream
+  commentId: T:ES3Internal.UnbufferedCryptoStream
+  href: ES3Internal.UnbufferedCryptoStream.html
+  name: UnbufferedCryptoStream
+  nameWithType: UnbufferedCryptoStream
+  fullName: ES3Internal.UnbufferedCryptoStream
+- uid: ES3Internal.ES3ReferenceMgrBase
+  commentId: T:ES3Internal.ES3ReferenceMgrBase
+  parent: ES3Internal
+  href: ES3Internal.ES3ReferenceMgrBase.html
+  name: ES3ReferenceMgrBase
+  nameWithType: ES3ReferenceMgrBase
+  fullName: ES3Internal.ES3ReferenceMgrBase
+- uid: ES3Internal.ES3IdRefDictionary
+  commentId: T:ES3Internal.ES3IdRefDictionary
+  parent: ES3Internal
+  href: ES3Internal.ES3IdRefDictionary.html
+  name: ES3IdRefDictionary
+  nameWithType: ES3IdRefDictionary
+  fullName: ES3Internal.ES3IdRefDictionary
+- uid: ES3Internal.ES3DefaultSettings
+  commentId: T:ES3Internal.ES3DefaultSettings
+  href: ES3Internal.ES3DefaultSettings.html
+  name: ES3DefaultSettings
+  nameWithType: ES3DefaultSettings
+  fullName: ES3Internal.ES3DefaultSettings
+- uid: ES3Internal.ES3SerializableDictionary`2
+  commentId: T:ES3Internal.ES3SerializableDictionary`2
+  href: ES3Internal.ES3SerializableDictionary-2.html
+  name: ES3SerializableDictionary<TKey, TVal>
+  nameWithType: ES3SerializableDictionary<TKey, TVal>
+  fullName: ES3Internal.ES3SerializableDictionary<TKey, TVal>
+  nameWithType.vb: ES3SerializableDictionary(Of TKey, TVal)
+  fullName.vb: ES3Internal.ES3SerializableDictionary(Of TKey, TVal)
+  name.vb: ES3SerializableDictionary(Of TKey, TVal)
+  spec.csharp:
+  - uid: ES3Internal.ES3SerializableDictionary`2
+    name: ES3SerializableDictionary
+    href: ES3Internal.ES3SerializableDictionary-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: '>'
+  spec.vb:
+  - uid: ES3Internal.ES3SerializableDictionary`2
+    name: ES3SerializableDictionary
+    href: ES3Internal.ES3SerializableDictionary-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TVal
+  - name: )
+- uid: ES3Internal.ES3FileMode
+  commentId: T:ES3Internal.ES3FileMode
+  parent: ES3Internal
+  href: ES3Internal.ES3FileMode.html
+  name: ES3FileMode
+  nameWithType: ES3FileMode
+  fullName: ES3Internal.ES3FileMode
+- uid: ES3Internal.ES3FileStream
+  commentId: T:ES3Internal.ES3FileStream
+  href: ES3Internal.ES3FileStream.html
+  name: ES3FileStream
+  nameWithType: ES3FileStream
+  fullName: ES3Internal.ES3FileStream
+- uid: ES3Internal.ES3Stream
+  commentId: T:ES3Internal.ES3Stream
+  href: ES3Internal.ES3Stream.html
+  name: ES3Stream
+  nameWithType: ES3Stream
+  fullName: ES3Internal.ES3Stream
+- uid: ES3Internal.ES3WebClass
+  commentId: T:ES3Internal.ES3WebClass
+  href: ES3Internal.ES3WebClass.html
+  name: ES3WebClass
+  nameWithType: ES3WebClass
+  fullName: ES3Internal.ES3WebClass
+- uid: ES3Internal.ES3Data
+  commentId: T:ES3Internal.ES3Data
+  href: ES3Internal.ES3Data.html
+  name: ES3Data
+  nameWithType: ES3Data
+  fullName: ES3Internal.ES3Data
+- uid: ES3Internal
+  commentId: N:ES3Internal
+  href: ES3Internal.html
+  name: ES3Internal
+  nameWithType: ES3Internal
+  fullName: ES3Internal

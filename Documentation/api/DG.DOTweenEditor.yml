@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: DG.DOTweenEditor
+  commentId: N:DG.DOTweenEditor
+  id: DG.DOTweenEditor
+  children:
+  - DG.DOTweenEditor.DOTweenAnimationInspector
+  - DG.DOTweenEditor.DOTweenPreviewManager
+  langs:
+  - csharp
+  - vb
+  name: DG.DOTweenEditor
+  nameWithType: DG.DOTweenEditor
+  fullName: DG.DOTweenEditor
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp-Editor
+references:
+- uid: DG.DOTweenEditor.DOTweenAnimationInspector
+  commentId: T:DG.DOTweenEditor.DOTweenAnimationInspector
+  href: DG.DOTweenEditor.DOTweenAnimationInspector.html
+  name: DOTweenAnimationInspector
+  nameWithType: DOTweenAnimationInspector
+  fullName: DG.DOTweenEditor.DOTweenAnimationInspector
+- uid: DG.DOTweenEditor.DOTweenPreviewManager
+  commentId: T:DG.DOTweenEditor.DOTweenPreviewManager
+  href: DG.DOTweenEditor.DOTweenPreviewManager.html
+  name: DOTweenPreviewManager
+  nameWithType: DOTweenPreviewManager
+  fullName: DG.DOTweenEditor.DOTweenPreviewManager

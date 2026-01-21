@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.Core.InteractionArgs
+  commentId: T:Koala.Simulation.Interaction.Core.InteractionArgs
+  id: InteractionArgs
+  parent: Koala.Simulation.Interaction.Core
+  children:
+  - Koala.Simulation.Interaction.Core.InteractionArgs.#ctor(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: InteractionArgs
+  nameWithType: InteractionArgs
+  fullName: Koala.Simulation.Interaction.Core.InteractionArgs
+  type: Struct
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionArgs.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InteractionArgs
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionArgs.cs
+    startLine: 5
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Holds identifiers for the interactor and interactable involved in an interaction.
+  example: []
+  syntax:
+    content: public struct InteractionArgs
+    content.vb: Public Structure InteractionArgs
+- uid: Koala.Simulation.Interaction.Core.InteractionArgs.#ctor(System.Int32,System.Int32)
+  commentId: M:Koala.Simulation.Interaction.Core.InteractionArgs.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: Koala.Simulation.Interaction.Core.InteractionArgs
+  langs:
+  - csharp
+  - vb
+  name: InteractionArgs(int, int)
+  nameWithType: InteractionArgs.InteractionArgs(int, int)
+  fullName: Koala.Simulation.Interaction.Core.InteractionArgs.InteractionArgs(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Interaction/Core/InteractionArgs.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: .ctor
+    path: ../Packages/com.koala.simulation/Runtime/Interaction/Core/InteractionArgs.cs
+    startLine: 22
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction.Core
+  summary: Creates a new set of interaction arguments with interactor and interactable IDs.
+  example: []
+  syntax:
+    content: public InteractionArgs(int interactorId, int interactableId)
+    parameters:
+    - id: interactorId
+      type: System.Int32
+      description: The ID of the interactor.
+    - id: interactableId
+      type: System.Int32
+      description: The ID of the interactable.
+    content.vb: Public Sub New(interactorId As Integer, interactableId As Integer)
+  overload: Koala.Simulation.Interaction.Core.InteractionArgs.#ctor*
+  nameWithType.vb: InteractionArgs.New(Integer, Integer)
+  fullName.vb: Koala.Simulation.Interaction.Core.InteractionArgs.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+references:
+- uid: Koala.Simulation.Interaction.Core
+  commentId: N:Koala.Simulation.Interaction.Core
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Core
+  nameWithType: Koala.Simulation.Interaction.Core
+  fullName: Koala.Simulation.Interaction.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+- uid: Koala.Simulation.Interaction.Core.InteractionArgs.#ctor*
+  commentId: Overload:Koala.Simulation.Interaction.Core.InteractionArgs.#ctor
+  href: Koala.Simulation.Interaction.Core.InteractionArgs.html#Koala_Simulation_Interaction_Core_InteractionArgs__ctor_System_Int32_System_Int32_
+  name: InteractionArgs
+  nameWithType: InteractionArgs.InteractionArgs
+  fullName: Koala.Simulation.Interaction.Core.InteractionArgs.InteractionArgs
+  nameWithType.vb: InteractionArgs.New
+  fullName.vb: Koala.Simulation.Interaction.Core.InteractionArgs.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

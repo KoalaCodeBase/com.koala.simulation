@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Enumerations.SpreadType
+  commentId: T:AssetKits.ParticleImage.Enumerations.SpreadType
+  id: SpreadType
+  parent: AssetKits.ParticleImage.Enumerations
+  children:
+  - AssetKits.ParticleImage.Enumerations.SpreadType.Random
+  - AssetKits.ParticleImage.Enumerations.SpreadType.Uniform
+  langs:
+  - csharp
+  - vb
+  name: SpreadType
+  nameWithType: SpreadType
+  fullName: AssetKits.ParticleImage.Enumerations.SpreadType
+  type: Enum
+  source:
+    id: SpreadType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2927
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: public enum SpreadType
+    content.vb: Public Enum SpreadType
+- uid: AssetKits.ParticleImage.Enumerations.SpreadType.Random
+  commentId: F:AssetKits.ParticleImage.Enumerations.SpreadType.Random
+  id: Random
+  parent: AssetKits.ParticleImage.Enumerations.SpreadType
+  langs:
+  - csharp
+  - vb
+  name: Random
+  nameWithType: SpreadType.Random
+  fullName: AssetKits.ParticleImage.Enumerations.SpreadType.Random
+  type: Field
+  source:
+    id: Random
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2929
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Random = 0
+    return:
+      type: AssetKits.ParticleImage.Enumerations.SpreadType
+- uid: AssetKits.ParticleImage.Enumerations.SpreadType.Uniform
+  commentId: F:AssetKits.ParticleImage.Enumerations.SpreadType.Uniform
+  id: Uniform
+  parent: AssetKits.ParticleImage.Enumerations.SpreadType
+  langs:
+  - csharp
+  - vb
+  name: Uniform
+  nameWithType: SpreadType.Uniform
+  fullName: AssetKits.ParticleImage.Enumerations.SpreadType.Uniform
+  type: Field
+  source:
+    id: Uniform
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2929
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Uniform = 1
+    return:
+      type: AssetKits.ParticleImage.Enumerations.SpreadType
+references:
+- uid: AssetKits.ParticleImage.Enumerations
+  commentId: N:AssetKits.ParticleImage.Enumerations
+  href: AssetKits.html
+  name: AssetKits.ParticleImage.Enumerations
+  nameWithType: AssetKits.ParticleImage.Enumerations
+  fullName: AssetKits.ParticleImage.Enumerations
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+- uid: AssetKits.ParticleImage.Enumerations.SpreadType
+  commentId: T:AssetKits.ParticleImage.Enumerations.SpreadType
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.SpreadType.html
+  name: SpreadType
+  nameWithType: SpreadType
+  fullName: AssetKits.ParticleImage.Enumerations.SpreadType

@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Save.ContainerSaveData
+  commentId: T:Koala.Simulation.Save.ContainerSaveData
+  id: ContainerSaveData
+  parent: Koala.Simulation.Save
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ContainerSaveData
+  nameWithType: ContainerSaveData
+  fullName: Koala.Simulation.Save.ContainerSaveData
+  type: Class
+  source:
+    remote:
+      path: Runtime/Save/ContainerSaveData.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ContainerSaveData
+    path: ../Packages/com.koala.simulation/Runtime/Save/ContainerSaveData.cs
+    startLine: 4
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class ContainerSaveData
+    content.vb: >-
+      <Serializable>
+
+      Public Class ContainerSaveData
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+references:
+- uid: Koala.Simulation.Save
+  commentId: N:Koala.Simulation.Save
+  href: Koala.html
+  name: Koala.Simulation.Save
+  nameWithType: Koala.Simulation.Save
+  fullName: Koala.Simulation.Save
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.SnapStatus
+  commentId: T:SuperScrollView.SnapStatus
+  id: SnapStatus
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.SnapStatus.NoTargetSet
+  - SuperScrollView.SnapStatus.SnapMoveFinish
+  - SuperScrollView.SnapStatus.SnapMoving
+  - SuperScrollView.SnapStatus.TargetHasSet
+  langs:
+  - csharp
+  - vb
+  name: SnapStatus
+  nameWithType: SnapStatus
+  fullName: SuperScrollView.SnapStatus
+  type: Enum
+  source:
+    id: SnapStatus
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public enum SnapStatus
+    content.vb: Public Enum SnapStatus
+- uid: SuperScrollView.SnapStatus.NoTargetSet
+  commentId: F:SuperScrollView.SnapStatus.NoTargetSet
+  id: NoTargetSet
+  parent: SuperScrollView.SnapStatus
+  langs:
+  - csharp
+  - vb
+  name: NoTargetSet
+  nameWithType: SnapStatus.NoTargetSet
+  fullName: SuperScrollView.SnapStatus.NoTargetSet
+  type: Field
+  source:
+    id: NoTargetSet
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: NoTargetSet = 0
+    return:
+      type: SuperScrollView.SnapStatus
+- uid: SuperScrollView.SnapStatus.TargetHasSet
+  commentId: F:SuperScrollView.SnapStatus.TargetHasSet
+  id: TargetHasSet
+  parent: SuperScrollView.SnapStatus
+  langs:
+  - csharp
+  - vb
+  name: TargetHasSet
+  nameWithType: SnapStatus.TargetHasSet
+  fullName: SuperScrollView.SnapStatus.TargetHasSet
+  type: Field
+  source:
+    id: TargetHasSet
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: TargetHasSet = 1
+    return:
+      type: SuperScrollView.SnapStatus
+- uid: SuperScrollView.SnapStatus.SnapMoving
+  commentId: F:SuperScrollView.SnapStatus.SnapMoving
+  id: SnapMoving
+  parent: SuperScrollView.SnapStatus
+  langs:
+  - csharp
+  - vb
+  name: SnapMoving
+  nameWithType: SnapStatus.SnapMoving
+  fullName: SuperScrollView.SnapStatus.SnapMoving
+  type: Field
+  source:
+    id: SnapMoving
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: SnapMoving = 2
+    return:
+      type: SuperScrollView.SnapStatus
+- uid: SuperScrollView.SnapStatus.SnapMoveFinish
+  commentId: F:SuperScrollView.SnapStatus.SnapMoveFinish
+  id: SnapMoveFinish
+  parent: SuperScrollView.SnapStatus
+  langs:
+  - csharp
+  - vb
+  name: SnapMoveFinish
+  nameWithType: SnapStatus.SnapMoveFinish
+  fullName: SuperScrollView.SnapStatus.SnapMoveFinish
+  type: Field
+  source:
+    id: SnapMoveFinish
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: SnapMoveFinish = 3
+    return:
+      type: SuperScrollView.SnapStatus
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: SuperScrollView.SnapStatus
+  commentId: T:SuperScrollView.SnapStatus
+  parent: SuperScrollView
+  href: SuperScrollView.SnapStatus.html
+  name: SnapStatus
+  nameWithType: SnapStatus
+  fullName: SuperScrollView.SnapStatus

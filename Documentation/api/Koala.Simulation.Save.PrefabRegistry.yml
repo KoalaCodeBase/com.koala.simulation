@@ -1,0 +1,312 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Save.PrefabRegistry
+  commentId: T:Koala.Simulation.Save.PrefabRegistry
+  id: PrefabRegistry
+  parent: Koala.Simulation.Save
+  children:
+  - Koala.Simulation.Save.PrefabRegistry.GetPrefab(System.String)
+  - Koala.Simulation.Save.PrefabRegistry.Spawn(Koala.Simulation.Inventory.Core.IContainer,UnityEngine.Transform)
+  - Koala.Simulation.Save.PrefabRegistry.Spawn(System.String,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  langs:
+  - csharp
+  - vb
+  name: PrefabRegistry
+  nameWithType: PrefabRegistry
+  fullName: Koala.Simulation.Save.PrefabRegistry
+  type: Class
+  source:
+    remote:
+      path: Runtime/Save/PrefabRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PrefabRegistry
+    path: ../Packages/com.koala.simulation/Runtime/Save/PrefabRegistry.cs
+    startLine: 13
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  summary: >-
+    Provides a central registry for managing and spawning prefabs by ID.
+
+
+    Prefabs can be registered with a unique string identifier and later instantiated
+
+    at specific positions and rotations. Useful for restoring saved game objects.
+  example: []
+  syntax:
+    content: public static class PrefabRegistry
+    content.vb: Public Module PrefabRegistry
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Save.PrefabRegistry.Spawn(System.String,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:Koala.Simulation.Save.PrefabRegistry.Spawn(System.String,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  id: Spawn(System.String,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  parent: Koala.Simulation.Save.PrefabRegistry
+  langs:
+  - csharp
+  - vb
+  name: Spawn(string, Vector3, Quaternion, Transform)
+  nameWithType: PrefabRegistry.Spawn(string, Vector3, Quaternion, Transform)
+  fullName: Koala.Simulation.Save.PrefabRegistry.Spawn(string, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Save/PrefabRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Spawn
+    path: ../Packages/com.koala.simulation/Runtime/Save/PrefabRegistry.cs
+    startLine: 36
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  summary: Spawns a prefab instance by ID at a given position and rotation.
+  example: []
+  syntax:
+    content: public static GameObject Spawn(string prefabId, Vector3 pos, Quaternion rot, Transform parent = null)
+    parameters:
+    - id: prefabId
+      type: System.String
+      description: The unique ID of the prefab.
+    - id: pos
+      type: UnityEngine.Vector3
+      description: The world position where the prefab will be spawned.
+    - id: rot
+      type: UnityEngine.Quaternion
+      description: The world rotation to apply to the prefab.
+    - id: parent
+      type: UnityEngine.Transform
+      description: Optional parent transform for the spawned object.
+    return:
+      type: UnityEngine.GameObject
+      description: The instantiated prefab, or null if not registered.
+    content.vb: Public Shared Function Spawn(prefabId As String, pos As Vector3, rot As Quaternion, parent As Transform = Nothing) As GameObject
+  overload: Koala.Simulation.Save.PrefabRegistry.Spawn*
+  nameWithType.vb: PrefabRegistry.Spawn(String, Vector3, Quaternion, Transform)
+  fullName.vb: Koala.Simulation.Save.PrefabRegistry.Spawn(String, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  name.vb: Spawn(String, Vector3, Quaternion, Transform)
+- uid: Koala.Simulation.Save.PrefabRegistry.Spawn(Koala.Simulation.Inventory.Core.IContainer,UnityEngine.Transform)
+  commentId: M:Koala.Simulation.Save.PrefabRegistry.Spawn(Koala.Simulation.Inventory.Core.IContainer,UnityEngine.Transform)
+  id: Spawn(Koala.Simulation.Inventory.Core.IContainer,UnityEngine.Transform)
+  parent: Koala.Simulation.Save.PrefabRegistry
+  langs:
+  - csharp
+  - vb
+  name: Spawn(IContainer, Transform)
+  nameWithType: PrefabRegistry.Spawn(IContainer, Transform)
+  fullName: Koala.Simulation.Save.PrefabRegistry.Spawn(Koala.Simulation.Inventory.Core.IContainer, UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Save/PrefabRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Spawn
+    path: ../Packages/com.koala.simulation/Runtime/Save/PrefabRegistry.cs
+    startLine: 53
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  summary: Spawns a prefab instance from a saved container's data.
+  example: []
+  syntax:
+    content: public static GameObject Spawn(IContainer loaded, Transform parent = null)
+    parameters:
+    - id: loaded
+      type: Koala.Simulation.Inventory.Core.IContainer
+      description: The saved container data with prefab ID, position, and rotation.
+    - id: parent
+      type: UnityEngine.Transform
+      description: Optional parent transform for the spawned object.
+    return:
+      type: UnityEngine.GameObject
+      description: The instantiated prefab, or null if not registered.
+    content.vb: Public Shared Function Spawn(loaded As IContainer, parent As Transform = Nothing) As GameObject
+  overload: Koala.Simulation.Save.PrefabRegistry.Spawn*
+- uid: Koala.Simulation.Save.PrefabRegistry.GetPrefab(System.String)
+  commentId: M:Koala.Simulation.Save.PrefabRegistry.GetPrefab(System.String)
+  id: GetPrefab(System.String)
+  parent: Koala.Simulation.Save.PrefabRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetPrefab(string)
+  nameWithType: PrefabRegistry.GetPrefab(string)
+  fullName: Koala.Simulation.Save.PrefabRegistry.GetPrefab(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Save/PrefabRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: GetPrefab
+    path: ../Packages/com.koala.simulation/Runtime/Save/PrefabRegistry.cs
+    startLine: 69
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Save
+  summary: Gets a registered prefab by ID without instantiating it.
+  example: []
+  syntax:
+    content: public static GameObject GetPrefab(string prefabId)
+    parameters:
+    - id: prefabId
+      type: System.String
+      description: The unique ID of the prefab.
+    return:
+      type: UnityEngine.GameObject
+      description: The prefab GameObject, or null if not registered.
+    content.vb: Public Shared Function GetPrefab(prefabId As String) As GameObject
+  overload: Koala.Simulation.Save.PrefabRegistry.GetPrefab*
+  nameWithType.vb: PrefabRegistry.GetPrefab(String)
+  fullName.vb: Koala.Simulation.Save.PrefabRegistry.GetPrefab(String)
+  name.vb: GetPrefab(String)
+references:
+- uid: Koala.Simulation.Save
+  commentId: N:Koala.Simulation.Save
+  href: Koala.html
+  name: Koala.Simulation.Save
+  nameWithType: Koala.Simulation.Save
+  fullName: Koala.Simulation.Save
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Save
+    name: Save
+    href: Koala.Simulation.Save.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Save.PrefabRegistry.Spawn*
+  commentId: Overload:Koala.Simulation.Save.PrefabRegistry.Spawn
+  href: Koala.Simulation.Save.PrefabRegistry.html#Koala_Simulation_Save_PrefabRegistry_Spawn_System_String_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_
+  name: Spawn
+  nameWithType: PrefabRegistry.Spawn
+  fullName: Koala.Simulation.Save.PrefabRegistry.Spawn
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Inventory.Core.IContainer
+  commentId: T:Koala.Simulation.Inventory.Core.IContainer
+  parent: Koala.Simulation.Inventory.Core
+  name: IContainer
+  nameWithType: IContainer
+  fullName: Koala.Simulation.Inventory.Core.IContainer
+- uid: Koala.Simulation.Inventory.Core
+  commentId: N:Koala.Simulation.Inventory.Core
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Core
+  nameWithType: Koala.Simulation.Inventory.Core
+  fullName: Koala.Simulation.Inventory.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+- uid: Koala.Simulation.Save.PrefabRegistry.GetPrefab*
+  commentId: Overload:Koala.Simulation.Save.PrefabRegistry.GetPrefab
+  href: Koala.Simulation.Save.PrefabRegistry.html#Koala_Simulation_Save_PrefabRegistry_GetPrefab_System_String_
+  name: GetPrefab
+  nameWithType: PrefabRegistry.GetPrefab
+  fullName: Koala.Simulation.Save.PrefabRegistry.GetPrefab

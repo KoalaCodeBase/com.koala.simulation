@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Placement.Samples.PlacementSample
+  commentId: T:Koala.Simulation.Placement.Samples.PlacementSample
+  id: PlacementSample
+  parent: Koala.Simulation.Placement.Samples
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: PlacementSample
+  nameWithType: PlacementSample
+  fullName: Koala.Simulation.Placement.Samples.PlacementSample
+  type: Class
+  source:
+    remote:
+      path: Runtime/Placement/Samples/PlacementSample.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PlacementSample
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/PlacementSample.cs
+    startLine: 87
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  summary: Demonstrates how to use the placement system with input controls.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Koala.Simulation.Placement;
+
+    using Koala.Simulation.Placement.Samples;
+
+    using UnityEngine;
+
+    using UnityEngine.InputSystem;
+
+
+    namespace Koala.Simulation.Samples
+
+    {
+        public class PlacementSample : MonoBehaviour
+        {
+            [SerializeField]
+            private GameObject _prefab;
+
+            private void Start()
+            {
+                PlacementManager.Instance.AddRule(
+                    new NoOverlapRule(LayerMask.GetMask("Default"))
+                );
+                PlacementManager.Instance.AddRule(
+                    new LayerRule(LayerMask.GetMask("Default"))
+                );
+            }
+
+            private void Update()
+            {
+                // Start Placement (F)
+                if (Keyboard.current.fKey.wasPressedThisFrame)
+                {
+                    PlacementManager.Instance.Start(_prefab);
+                }
+
+                // Rotate Clockwise (E)
+                if (Keyboard.current.eKey.wasPressedThisFrame)
+                {
+                    PlacementManager.Instance.Rotate(true);
+                }
+
+                // Rotate Counterclockwise (Q)
+                if (Keyboard.current.qKey.wasPressedThisFrame)
+                {
+                    PlacementManager.Instance.Rotate(false);
+                }
+
+                // Confirm Placement (LMB)
+                if (Mouse.current.leftButton.wasPressedThisFrame)
+                {
+                    PlacementManager.Instance.Confirm();
+                }
+
+                // Cancel Placement (RMB)
+                if (Mouse.current.rightButton.wasPressedThisFrame)
+                {
+                    PlacementManager.Instance.Cancel();
+                }
+
+                // Reposition Placement (R)
+                if (Keyboard.current.rKey.wasPressedThisFrame)
+                {
+                    var ray = Camera.main.ScreenPointToRay(
+                        Mouse.current.position.ReadValue()
+                    );
+                    if (Physics.Raycast(ray, out var hit))
+                    {
+                        var placeable = hit.collider
+                            .GetComponentInParent&lt;IPlaceable&gt;();
+
+                        if (placeable != null)
+                            PlacementManager.Instance.Reposition(
+                                hit.collider.gameObject
+                            );
+                    }
+                }
+            }
+        }
+    }</code></pre>
+  syntax:
+    content: 'public class PlacementSample : MonoBehaviour'
+    content.vb: Public Class PlacementSample Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+references:
+- uid: Koala.Simulation.Placement.Samples
+  commentId: N:Koala.Simulation.Placement.Samples
+  href: Koala.html
+  name: Koala.Simulation.Placement.Samples
+  nameWithType: Koala.Simulation.Placement.Samples
+  fullName: Koala.Simulation.Placement.Samples
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  - name: .
+  - uid: Koala.Simulation.Placement.Samples
+    name: Samples
+    href: Koala.Simulation.Placement.Samples.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  - name: .
+  - uid: Koala.Simulation.Placement.Samples
+    name: Samples
+    href: Koala.Simulation.Placement.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

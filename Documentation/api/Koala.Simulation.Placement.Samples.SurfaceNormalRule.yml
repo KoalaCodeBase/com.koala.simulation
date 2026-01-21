@@ -1,0 +1,299 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Placement.Samples.SurfaceNormalRule
+  commentId: T:Koala.Simulation.Placement.Samples.SurfaceNormalRule
+  id: SurfaceNormalRule
+  parent: Koala.Simulation.Placement.Samples
+  children:
+  - Koala.Simulation.Placement.Samples.SurfaceNormalRule.#ctor(UnityEngine.Vector3,System.Single)
+  - Koala.Simulation.Placement.Samples.SurfaceNormalRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  langs:
+  - csharp
+  - vb
+  name: SurfaceNormalRule
+  nameWithType: SurfaceNormalRule
+  fullName: Koala.Simulation.Placement.Samples.SurfaceNormalRule
+  type: Class
+  source:
+    remote:
+      path: Runtime/Placement/Samples/SurfaceNormalRule.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: SurfaceNormalRule
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/SurfaceNormalRule.cs
+    startLine: 4
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  syntax:
+    content: 'public sealed class SurfaceNormalRule : IPlacementRule'
+    content.vb: Public NotInheritable Class SurfaceNormalRule Implements IPlacementRule
+  inheritance:
+  - System.Object
+  implements:
+  - Koala.Simulation.Placement.IPlacementRule
+- uid: Koala.Simulation.Placement.Samples.SurfaceNormalRule.#ctor(UnityEngine.Vector3,System.Single)
+  commentId: M:Koala.Simulation.Placement.Samples.SurfaceNormalRule.#ctor(UnityEngine.Vector3,System.Single)
+  id: '#ctor(UnityEngine.Vector3,System.Single)'
+  parent: Koala.Simulation.Placement.Samples.SurfaceNormalRule
+  langs:
+  - csharp
+  - vb
+  name: SurfaceNormalRule(Vector3, float)
+  nameWithType: SurfaceNormalRule.SurfaceNormalRule(Vector3, float)
+  fullName: Koala.Simulation.Placement.Samples.SurfaceNormalRule.SurfaceNormalRule(UnityEngine.Vector3, float)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Placement/Samples/SurfaceNormalRule.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: .ctor
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/SurfaceNormalRule.cs
+    startLine: 9
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  syntax:
+    content: public SurfaceNormalRule(Vector3 allowedNormal, float tolerance = 0.1)
+    parameters:
+    - id: allowedNormal
+      type: UnityEngine.Vector3
+    - id: tolerance
+      type: System.Single
+    content.vb: Public Sub New(allowedNormal As Vector3, tolerance As Single = 0.1)
+  overload: Koala.Simulation.Placement.Samples.SurfaceNormalRule.#ctor*
+  nameWithType.vb: SurfaceNormalRule.New(Vector3, Single)
+  fullName.vb: Koala.Simulation.Placement.Samples.SurfaceNormalRule.New(UnityEngine.Vector3, Single)
+  name.vb: New(Vector3, Single)
+- uid: Koala.Simulation.Placement.Samples.SurfaceNormalRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  commentId: M:Koala.Simulation.Placement.Samples.SurfaceNormalRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  id: Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  parent: Koala.Simulation.Placement.Samples.SurfaceNormalRule
+  langs:
+  - csharp
+  - vb
+  name: Validate(RaycastHit, IPlaceable)
+  nameWithType: SurfaceNormalRule.Validate(RaycastHit, IPlaceable)
+  fullName: Koala.Simulation.Placement.Samples.SurfaceNormalRule.Validate(UnityEngine.RaycastHit, Koala.Simulation.Placement.IPlaceable)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/Samples/SurfaceNormalRule.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Validate
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/SurfaceNormalRule.cs
+    startLine: 15
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  summary: Validates whether a placeable object can be placed at the raycast hit location.
+  example: []
+  syntax:
+    content: public bool Validate(RaycastHit hit, IPlaceable placeable)
+    parameters:
+    - id: hit
+      type: UnityEngine.RaycastHit
+      description: The raycast hit providing surface data.
+    - id: placeable
+      type: Koala.Simulation.Placement.IPlaceable
+      description: The object being placed.
+    return:
+      type: System.Boolean
+      description: True if placement is valid, false otherwise.
+    content.vb: Public Function Validate(hit As RaycastHit, placeable As IPlaceable) As Boolean
+  overload: Koala.Simulation.Placement.Samples.SurfaceNormalRule.Validate*
+  implements:
+  - Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+references:
+- uid: Koala.Simulation.Placement.Samples
+  commentId: N:Koala.Simulation.Placement.Samples
+  href: Koala.html
+  name: Koala.Simulation.Placement.Samples
+  nameWithType: Koala.Simulation.Placement.Samples
+  fullName: Koala.Simulation.Placement.Samples
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  - name: .
+  - uid: Koala.Simulation.Placement.Samples
+    name: Samples
+    href: Koala.Simulation.Placement.Samples.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  - name: .
+  - uid: Koala.Simulation.Placement.Samples
+    name: Samples
+    href: Koala.Simulation.Placement.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Koala.Simulation.Placement.IPlacementRule
+  commentId: T:Koala.Simulation.Placement.IPlacementRule
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.IPlacementRule.html
+  name: IPlacementRule
+  nameWithType: IPlacementRule
+  fullName: Koala.Simulation.Placement.IPlacementRule
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Placement
+  commentId: N:Koala.Simulation.Placement
+  href: Koala.html
+  name: Koala.Simulation.Placement
+  nameWithType: Koala.Simulation.Placement
+  fullName: Koala.Simulation.Placement
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+- uid: Koala.Simulation.Placement.Samples.SurfaceNormalRule.#ctor*
+  commentId: Overload:Koala.Simulation.Placement.Samples.SurfaceNormalRule.#ctor
+  href: Koala.Simulation.Placement.Samples.SurfaceNormalRule.html#Koala_Simulation_Placement_Samples_SurfaceNormalRule__ctor_UnityEngine_Vector3_System_Single_
+  name: SurfaceNormalRule
+  nameWithType: SurfaceNormalRule.SurfaceNormalRule
+  fullName: Koala.Simulation.Placement.Samples.SurfaceNormalRule.SurfaceNormalRule
+  nameWithType.vb: SurfaceNormalRule.New
+  fullName.vb: Koala.Simulation.Placement.Samples.SurfaceNormalRule.New
+  name.vb: New
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Placement.Samples.SurfaceNormalRule.Validate*
+  commentId: Overload:Koala.Simulation.Placement.Samples.SurfaceNormalRule.Validate
+  href: Koala.Simulation.Placement.Samples.SurfaceNormalRule.html#Koala_Simulation_Placement_Samples_SurfaceNormalRule_Validate_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  name: Validate
+  nameWithType: SurfaceNormalRule.Validate
+  fullName: Koala.Simulation.Placement.Samples.SurfaceNormalRule.Validate
+- uid: Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  commentId: M:Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  parent: Koala.Simulation.Placement.IPlacementRule
+  isExternal: true
+  href: Koala.Simulation.Placement.IPlacementRule.html#Koala_Simulation_Placement_IPlacementRule_Validate_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  name: Validate(RaycastHit, IPlaceable)
+  nameWithType: IPlacementRule.Validate(RaycastHit, IPlaceable)
+  fullName: Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit, Koala.Simulation.Placement.IPlaceable)
+  spec.csharp:
+  - uid: Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+    name: Validate
+    href: Koala.Simulation.Placement.IPlacementRule.html#Koala_Simulation_Placement_IPlacementRule_Validate_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  - name: (
+  - uid: UnityEngine.RaycastHit
+    name: RaycastHit
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Koala.Simulation.Placement.IPlaceable
+    name: IPlaceable
+    href: Koala.Simulation.Placement.IPlaceable.html
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+    name: Validate
+    href: Koala.Simulation.Placement.IPlacementRule.html#Koala_Simulation_Placement_IPlacementRule_Validate_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  - name: (
+  - uid: UnityEngine.RaycastHit
+    name: RaycastHit
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Koala.Simulation.Placement.IPlaceable
+    name: IPlaceable
+    href: Koala.Simulation.Placement.IPlaceable.html
+  - name: )
+- uid: UnityEngine.RaycastHit
+  commentId: T:UnityEngine.RaycastHit
+  parent: UnityEngine
+  isExternal: true
+  name: RaycastHit
+  nameWithType: RaycastHit
+  fullName: UnityEngine.RaycastHit
+- uid: Koala.Simulation.Placement.IPlaceable
+  commentId: T:Koala.Simulation.Placement.IPlaceable
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.IPlaceable.html
+  name: IPlaceable
+  nameWithType: IPlaceable
+  fullName: Koala.Simulation.Placement.IPlaceable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

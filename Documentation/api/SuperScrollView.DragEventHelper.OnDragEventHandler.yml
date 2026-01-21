@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.DragEventHelper.OnDragEventHandler
+  commentId: T:SuperScrollView.DragEventHelper.OnDragEventHandler
+  id: DragEventHelper.OnDragEventHandler
+  parent: SuperScrollView
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: DragEventHelper.OnDragEventHandler
+  nameWithType: DragEventHelper.OnDragEventHandler
+  fullName: SuperScrollView.DragEventHelper.OnDragEventHandler
+  type: Delegate
+  source:
+    id: OnDragEventHandler
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\Base\DragEventHelper.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public delegate void DragEventHelper.OnDragEventHandler(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Delegate Sub DragEventHelper.OnDragEventHandler(eventData As PointerEventData)
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true

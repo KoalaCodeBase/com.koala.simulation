@@ -1,0 +1,310 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction.InteractionRaycaster
+  commentId: T:Koala.Simulation.Interaction.InteractionRaycaster
+  id: InteractionRaycaster
+  parent: Koala.Simulation.Interaction
+  children:
+  - Koala.Simulation.Interaction.InteractionRaycaster.OnAwake
+  langs:
+  - csharp
+  - vb
+  name: InteractionRaycaster
+  nameWithType: InteractionRaycaster
+  fullName: Koala.Simulation.Interaction.InteractionRaycaster
+  type: Class
+  source:
+    id: InteractionRaycaster
+    path: C:\UnityProjects\Figure Shop Simulator\Packages\com.koala.simulation\Runtime\Interaction\Components\InteractionRaycaster.cs
+    startLine: 7
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction
+  syntax:
+    content: >-
+      [AddComponentMenu("Koala/Simulation/Interaction Raycaster")]
+
+      [Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")]
+
+      public class InteractionRaycaster : Interactor
+    content.vb: >-
+      <AddComponentMenu("Koala/Simulation/Interaction Raycaster")>
+
+      <Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")>
+
+      Public Class InteractionRaycaster Inherits Interactor
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Koala.Simulation.Interaction.Core.Interactor
+  inheritedMembers:
+  - Koala.Simulation.Interaction.Core.Interactor.Id
+  - Koala.Simulation.Interaction.Core.Interactor.Solver
+  - Koala.Simulation.Interaction.Core.Interactor.Awake
+  - Koala.Simulation.Interaction.Core.Interactor.OnDestroy
+  - Koala.Simulation.Interaction.Core.Interactor.OnDestroyed
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Koala/Simulation/Interaction Raycaster
+  - type: UnityEngine.IconAttribute
+    ctor: UnityEngine.IconAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Packages/com.koala.simulation/Editor/Icons/koala.png
+- uid: Koala.Simulation.Interaction.InteractionRaycaster.OnAwake
+  commentId: M:Koala.Simulation.Interaction.InteractionRaycaster.OnAwake
+  id: OnAwake
+  parent: Koala.Simulation.Interaction.InteractionRaycaster
+  langs:
+  - csharp
+  - vb
+  name: OnAwake()
+  nameWithType: InteractionRaycaster.OnAwake()
+  fullName: Koala.Simulation.Interaction.InteractionRaycaster.OnAwake()
+  type: Method
+  source:
+    id: OnAwake
+    path: C:\UnityProjects\Figure Shop Simulator\Packages\com.koala.simulation\Runtime\Interaction\Components\InteractionRaycaster.cs
+    startLine: 22
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Interaction
+  summary: >-
+    Called when the interactor is initialized and registered.
+
+    Override to add custom setup logic.
+  example: []
+  syntax:
+    content: protected override void OnAwake()
+    content.vb: Protected Overrides Sub OnAwake()
+  overridden: Koala.Simulation.Interaction.Core.Interactor.OnAwake
+  overload: Koala.Simulation.Interaction.InteractionRaycaster.OnAwake*
+references:
+- uid: Koala.Simulation.Interaction
+  commentId: N:Koala.Simulation.Interaction
+  href: Koala.html
+  name: Koala.Simulation.Interaction
+  nameWithType: Koala.Simulation.Interaction
+  fullName: Koala.Simulation.Interaction
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Koala.Simulation.Interaction.Core.Interactor
+  commentId: T:Koala.Simulation.Interaction.Core.Interactor
+  parent: Koala.Simulation.Interaction.Core
+  href: Koala.Simulation.Interaction.Core.Interactor.html
+  name: Interactor
+  nameWithType: Interactor
+  fullName: Koala.Simulation.Interaction.Core.Interactor
+- uid: Koala.Simulation.Interaction.Core.Interactor.Id
+  commentId: P:Koala.Simulation.Interaction.Core.Interactor.Id
+  parent: Koala.Simulation.Interaction.Core.Interactor
+  href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_Id
+  name: Id
+  nameWithType: Interactor.Id
+  fullName: Koala.Simulation.Interaction.Core.Interactor.Id
+- uid: Koala.Simulation.Interaction.Core.Interactor.Solver
+  commentId: P:Koala.Simulation.Interaction.Core.Interactor.Solver
+  parent: Koala.Simulation.Interaction.Core.Interactor
+  href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_Solver
+  name: Solver
+  nameWithType: Interactor.Solver
+  fullName: Koala.Simulation.Interaction.Core.Interactor.Solver
+- uid: Koala.Simulation.Interaction.Core.Interactor.Awake
+  commentId: M:Koala.Simulation.Interaction.Core.Interactor.Awake
+  parent: Koala.Simulation.Interaction.Core.Interactor
+  href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_Awake
+  name: Awake()
+  nameWithType: Interactor.Awake()
+  fullName: Koala.Simulation.Interaction.Core.Interactor.Awake()
+  spec.csharp:
+  - uid: Koala.Simulation.Interaction.Core.Interactor.Awake
+    name: Awake
+    href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Interaction.Core.Interactor.Awake
+    name: Awake
+    href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_Awake
+  - name: (
+  - name: )
+- uid: Koala.Simulation.Interaction.Core.Interactor.OnDestroy
+  commentId: M:Koala.Simulation.Interaction.Core.Interactor.OnDestroy
+  parent: Koala.Simulation.Interaction.Core.Interactor
+  href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_OnDestroy
+  name: OnDestroy()
+  nameWithType: Interactor.OnDestroy()
+  fullName: Koala.Simulation.Interaction.Core.Interactor.OnDestroy()
+  spec.csharp:
+  - uid: Koala.Simulation.Interaction.Core.Interactor.OnDestroy
+    name: OnDestroy
+    href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Interaction.Core.Interactor.OnDestroy
+    name: OnDestroy
+    href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_OnDestroy
+  - name: (
+  - name: )
+- uid: Koala.Simulation.Interaction.Core.Interactor.OnDestroyed
+  commentId: M:Koala.Simulation.Interaction.Core.Interactor.OnDestroyed
+  parent: Koala.Simulation.Interaction.Core.Interactor
+  href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_OnDestroyed
+  name: OnDestroyed()
+  nameWithType: Interactor.OnDestroyed()
+  fullName: Koala.Simulation.Interaction.Core.Interactor.OnDestroyed()
+  spec.csharp:
+  - uid: Koala.Simulation.Interaction.Core.Interactor.OnDestroyed
+    name: OnDestroyed
+    href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_OnDestroyed
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Interaction.Core.Interactor.OnDestroyed
+    name: OnDestroyed
+    href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_OnDestroyed
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Interaction.Core
+  commentId: N:Koala.Simulation.Interaction.Core
+  href: Koala.html
+  name: Koala.Simulation.Interaction.Core
+  nameWithType: Koala.Simulation.Interaction.Core
+  fullName: Koala.Simulation.Interaction.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Interaction
+    name: Interaction
+    href: Koala.Simulation.Interaction.html
+  - name: .
+  - uid: Koala.Simulation.Interaction.Core
+    name: Core
+    href: Koala.Simulation.Interaction.Core.html
+- uid: Koala.Simulation.Interaction.Core.Interactor.OnAwake
+  commentId: M:Koala.Simulation.Interaction.Core.Interactor.OnAwake
+  parent: Koala.Simulation.Interaction.Core.Interactor
+  href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_OnAwake
+  name: OnAwake()
+  nameWithType: Interactor.OnAwake()
+  fullName: Koala.Simulation.Interaction.Core.Interactor.OnAwake()
+  spec.csharp:
+  - uid: Koala.Simulation.Interaction.Core.Interactor.OnAwake
+    name: OnAwake
+    href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_OnAwake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Interaction.Core.Interactor.OnAwake
+    name: OnAwake
+    href: Koala.Simulation.Interaction.Core.Interactor.html#Koala_Simulation_Interaction_Core_Interactor_OnAwake
+  - name: (
+  - name: )
+- uid: Koala.Simulation.Interaction.InteractionRaycaster.OnAwake*
+  commentId: Overload:Koala.Simulation.Interaction.InteractionRaycaster.OnAwake
+  href: Koala.Simulation.Interaction.InteractionRaycaster.html#Koala_Simulation_Interaction_InteractionRaycaster_OnAwake
+  name: OnAwake
+  nameWithType: InteractionRaycaster.OnAwake
+  fullName: Koala.Simulation.Interaction.InteractionRaycaster.OnAwake

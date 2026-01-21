@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Interaction
+  commentId: N:Koala.Simulation.Interaction
+  id: Koala.Simulation.Interaction
+  children:
+  - Koala.Simulation.Interaction.InteractionRaycaster
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Interaction
+  nameWithType: Koala.Simulation.Interaction
+  fullName: Koala.Simulation.Interaction
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Interaction.InteractionRaycaster
+  commentId: T:Koala.Simulation.Interaction.InteractionRaycaster
+  href: Koala.Simulation.Interaction.InteractionRaycaster.html
+  name: InteractionRaycaster
+  nameWithType: InteractionRaycaster
+  fullName: Koala.Simulation.Interaction.InteractionRaycaster

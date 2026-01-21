@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Enumerations.Simulation
+  commentId: T:AssetKits.ParticleImage.Enumerations.Simulation
+  id: Simulation
+  parent: AssetKits.ParticleImage.Enumerations
+  children:
+  - AssetKits.ParticleImage.Enumerations.Simulation.Local
+  - AssetKits.ParticleImage.Enumerations.Simulation.World
+  langs:
+  - csharp
+  - vb
+  name: Simulation
+  nameWithType: Simulation
+  fullName: AssetKits.ParticleImage.Enumerations.Simulation
+  type: Enum
+  source:
+    id: Simulation
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2932
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: public enum Simulation
+    content.vb: Public Enum Simulation
+- uid: AssetKits.ParticleImage.Enumerations.Simulation.Local
+  commentId: F:AssetKits.ParticleImage.Enumerations.Simulation.Local
+  id: Local
+  parent: AssetKits.ParticleImage.Enumerations.Simulation
+  langs:
+  - csharp
+  - vb
+  name: Local
+  nameWithType: Simulation.Local
+  fullName: AssetKits.ParticleImage.Enumerations.Simulation.Local
+  type: Field
+  source:
+    id: Local
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2934
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Local = 0
+    return:
+      type: AssetKits.ParticleImage.Enumerations.Simulation
+- uid: AssetKits.ParticleImage.Enumerations.Simulation.World
+  commentId: F:AssetKits.ParticleImage.Enumerations.Simulation.World
+  id: World
+  parent: AssetKits.ParticleImage.Enumerations.Simulation
+  langs:
+  - csharp
+  - vb
+  name: World
+  nameWithType: Simulation.World
+  fullName: AssetKits.ParticleImage.Enumerations.Simulation.World
+  type: Field
+  source:
+    id: World
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2934
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: World = 1
+    return:
+      type: AssetKits.ParticleImage.Enumerations.Simulation
+references:
+- uid: AssetKits.ParticleImage.Enumerations
+  commentId: N:AssetKits.ParticleImage.Enumerations
+  href: AssetKits.html
+  name: AssetKits.ParticleImage.Enumerations
+  nameWithType: AssetKits.ParticleImage.Enumerations
+  fullName: AssetKits.ParticleImage.Enumerations
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+- uid: AssetKits.ParticleImage.Enumerations.Simulation
+  commentId: T:AssetKits.ParticleImage.Enumerations.Simulation
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.Simulation.html
+  name: Simulation
+  nameWithType: Simulation
+  fullName: AssetKits.ParticleImage.Enumerations.Simulation

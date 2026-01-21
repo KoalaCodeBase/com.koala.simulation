@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Noise.NoiseType
+  commentId: T:AssetKits.ParticleImage.Noise.NoiseType
+  id: Noise.NoiseType
+  parent: AssetKits.ParticleImage
+  children:
+  - AssetKits.ParticleImage.Noise.NoiseType.Cellular
+  - AssetKits.ParticleImage.Noise.NoiseType.OpenSimplex2
+  - AssetKits.ParticleImage.Noise.NoiseType.OpenSimplex2S
+  - AssetKits.ParticleImage.Noise.NoiseType.Perlin
+  - AssetKits.ParticleImage.Noise.NoiseType.Value
+  - AssetKits.ParticleImage.Noise.NoiseType.ValueCubic
+  langs:
+  - csharp
+  - vb
+  name: Noise.NoiseType
+  nameWithType: Noise.NoiseType
+  fullName: AssetKits.ParticleImage.Noise.NoiseType
+  type: Enum
+  source:
+    id: NoiseType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 40
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public enum Noise.NoiseType
+    content.vb: Public Enum Noise.NoiseType
+- uid: AssetKits.ParticleImage.Noise.NoiseType.OpenSimplex2
+  commentId: F:AssetKits.ParticleImage.Noise.NoiseType.OpenSimplex2
+  id: OpenSimplex2
+  parent: AssetKits.ParticleImage.Noise.NoiseType
+  langs:
+  - csharp
+  - vb
+  name: OpenSimplex2
+  nameWithType: Noise.NoiseType.OpenSimplex2
+  fullName: AssetKits.ParticleImage.Noise.NoiseType.OpenSimplex2
+  type: Field
+  source:
+    id: OpenSimplex2
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 42
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: OpenSimplex2 = 0
+    return:
+      type: AssetKits.ParticleImage.Noise.NoiseType
+- uid: AssetKits.ParticleImage.Noise.NoiseType.OpenSimplex2S
+  commentId: F:AssetKits.ParticleImage.Noise.NoiseType.OpenSimplex2S
+  id: OpenSimplex2S
+  parent: AssetKits.ParticleImage.Noise.NoiseType
+  langs:
+  - csharp
+  - vb
+  name: OpenSimplex2S
+  nameWithType: Noise.NoiseType.OpenSimplex2S
+  fullName: AssetKits.ParticleImage.Noise.NoiseType.OpenSimplex2S
+  type: Field
+  source:
+    id: OpenSimplex2S
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 43
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: OpenSimplex2S = 1
+    return:
+      type: AssetKits.ParticleImage.Noise.NoiseType
+- uid: AssetKits.ParticleImage.Noise.NoiseType.Cellular
+  commentId: F:AssetKits.ParticleImage.Noise.NoiseType.Cellular
+  id: Cellular
+  parent: AssetKits.ParticleImage.Noise.NoiseType
+  langs:
+  - csharp
+  - vb
+  name: Cellular
+  nameWithType: Noise.NoiseType.Cellular
+  fullName: AssetKits.ParticleImage.Noise.NoiseType.Cellular
+  type: Field
+  source:
+    id: Cellular
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 44
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Cellular = 2
+    return:
+      type: AssetKits.ParticleImage.Noise.NoiseType
+- uid: AssetKits.ParticleImage.Noise.NoiseType.Perlin
+  commentId: F:AssetKits.ParticleImage.Noise.NoiseType.Perlin
+  id: Perlin
+  parent: AssetKits.ParticleImage.Noise.NoiseType
+  langs:
+  - csharp
+  - vb
+  name: Perlin
+  nameWithType: Noise.NoiseType.Perlin
+  fullName: AssetKits.ParticleImage.Noise.NoiseType.Perlin
+  type: Field
+  source:
+    id: Perlin
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 45
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Perlin = 3
+    return:
+      type: AssetKits.ParticleImage.Noise.NoiseType
+- uid: AssetKits.ParticleImage.Noise.NoiseType.ValueCubic
+  commentId: F:AssetKits.ParticleImage.Noise.NoiseType.ValueCubic
+  id: ValueCubic
+  parent: AssetKits.ParticleImage.Noise.NoiseType
+  langs:
+  - csharp
+  - vb
+  name: ValueCubic
+  nameWithType: Noise.NoiseType.ValueCubic
+  fullName: AssetKits.ParticleImage.Noise.NoiseType.ValueCubic
+  type: Field
+  source:
+    id: ValueCubic
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 46
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: ValueCubic = 4
+    return:
+      type: AssetKits.ParticleImage.Noise.NoiseType
+- uid: AssetKits.ParticleImage.Noise.NoiseType.Value
+  commentId: F:AssetKits.ParticleImage.Noise.NoiseType.Value
+  id: Value
+  parent: AssetKits.ParticleImage.Noise.NoiseType
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Noise.NoiseType.Value
+  fullName: AssetKits.ParticleImage.Noise.NoiseType.Value
+  type: Field
+  source:
+    id: Value
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 47
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Value = 5
+    return:
+      type: AssetKits.ParticleImage.Noise.NoiseType
+references:
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  href: AssetKits.html
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+- uid: AssetKits.ParticleImage.Noise.NoiseType
+  commentId: T:AssetKits.ParticleImage.Noise.NoiseType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.NoiseType
+  nameWithType: Noise.NoiseType
+  fullName: AssetKits.ParticleImage.Noise.NoiseType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.NoiseType
+    name: NoiseType
+    href: AssetKits.ParticleImage.Noise.NoiseType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.NoiseType
+    name: NoiseType
+    href: AssetKits.ParticleImage.Noise.NoiseType.html

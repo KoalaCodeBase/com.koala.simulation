@@ -1,0 +1,185 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.ItemPrefabFilter
+  commentId: T:Koala.Simulation.Inventory.ItemPrefabFilter
+  id: ItemPrefabFilter
+  parent: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.ItemPrefabFilter.Allows(Koala.Simulation.Inventory.Item)
+  langs:
+  - csharp
+  - vb
+  name: ItemPrefabFilter
+  nameWithType: ItemPrefabFilter
+  fullName: Koala.Simulation.Inventory.ItemPrefabFilter
+  type: Class
+  source:
+    remote:
+      path: Runtime/Inventory/IContainerFilter.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ItemPrefabFilter
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/IContainerFilter.cs
+    startLine: 18
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: A filter that only allows items matching a specific prefab ID.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class ItemPrefabFilter : IContainerFilter
+    content.vb: >-
+      <Serializable>
+
+      Public Class ItemPrefabFilter Implements IContainerFilter
+  inheritance:
+  - System.Object
+  implements:
+  - Koala.Simulation.Inventory.IContainerFilter
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Koala.Simulation.Inventory.ItemPrefabFilter.Allows(Koala.Simulation.Inventory.Item)
+  commentId: M:Koala.Simulation.Inventory.ItemPrefabFilter.Allows(Koala.Simulation.Inventory.Item)
+  id: Allows(Koala.Simulation.Inventory.Item)
+  parent: Koala.Simulation.Inventory.ItemPrefabFilter
+  langs:
+  - csharp
+  - vb
+  name: Allows(Item)
+  nameWithType: ItemPrefabFilter.Allows(Item)
+  fullName: Koala.Simulation.Inventory.ItemPrefabFilter.Allows(Koala.Simulation.Inventory.Item)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/IContainerFilter.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Allows
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/IContainerFilter.cs
+    startLine: 31
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Checks if the item's prefab ID matches the filter's ID.
+  example: []
+  syntax:
+    content: public bool Allows(Item item)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.Item
+      description: The item to evaluate.
+    return:
+      type: System.Boolean
+      description: True if the item matches the prefab ID, false otherwise.
+    content.vb: Public Function Allows(item As Item) As Boolean
+  overload: Koala.Simulation.Inventory.ItemPrefabFilter.Allows*
+  implements:
+  - Koala.Simulation.Inventory.IContainerFilter.Allows(Koala.Simulation.Inventory.Item)
+references:
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Koala.Simulation.Inventory.IContainerFilter
+  commentId: T:Koala.Simulation.Inventory.IContainerFilter
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.IContainerFilter.html
+  name: IContainerFilter
+  nameWithType: IContainerFilter
+  fullName: Koala.Simulation.Inventory.IContainerFilter
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Inventory.ItemPrefabFilter.Allows*
+  commentId: Overload:Koala.Simulation.Inventory.ItemPrefabFilter.Allows
+  href: Koala.Simulation.Inventory.ItemPrefabFilter.html#Koala_Simulation_Inventory_ItemPrefabFilter_Allows_Koala_Simulation_Inventory_Item_
+  name: Allows
+  nameWithType: ItemPrefabFilter.Allows
+  fullName: Koala.Simulation.Inventory.ItemPrefabFilter.Allows
+- uid: Koala.Simulation.Inventory.IContainerFilter.Allows(Koala.Simulation.Inventory.Item)
+  commentId: M:Koala.Simulation.Inventory.IContainerFilter.Allows(Koala.Simulation.Inventory.Item)
+  parent: Koala.Simulation.Inventory.IContainerFilter
+  href: Koala.Simulation.Inventory.IContainerFilter.html#Koala_Simulation_Inventory_IContainerFilter_Allows_Koala_Simulation_Inventory_Item_
+  name: Allows(Item)
+  nameWithType: IContainerFilter.Allows(Item)
+  fullName: Koala.Simulation.Inventory.IContainerFilter.Allows(Koala.Simulation.Inventory.Item)
+  spec.csharp:
+  - uid: Koala.Simulation.Inventory.IContainerFilter.Allows(Koala.Simulation.Inventory.Item)
+    name: Allows
+    href: Koala.Simulation.Inventory.IContainerFilter.html#Koala_Simulation_Inventory_IContainerFilter_Allows_Koala_Simulation_Inventory_Item_
+  - name: (
+  - uid: Koala.Simulation.Inventory.Item
+    name: Item
+    href: Koala.Simulation.Inventory.Item.html
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Inventory.IContainerFilter.Allows(Koala.Simulation.Inventory.Item)
+    name: Allows
+    href: Koala.Simulation.Inventory.IContainerFilter.html#Koala_Simulation_Inventory_IContainerFilter_Allows_Koala_Simulation_Inventory_Item_
+  - name: (
+  - uid: Koala.Simulation.Inventory.Item
+    name: Item
+    href: Koala.Simulation.Inventory.Item.html
+  - name: )
+- uid: Koala.Simulation.Inventory.Item
+  commentId: T:Koala.Simulation.Inventory.Item
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.Item.html
+  name: Item
+  nameWithType: Item
+  fullName: Koala.Simulation.Inventory.Item
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

@@ -1,0 +1,119 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Input.InputSpriteAsset
+  commentId: T:Koala.Simulation.Input.InputSpriteAsset
+  id: InputSpriteAsset
+  parent: Koala.Simulation.Input
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: InputSpriteAsset
+  nameWithType: InputSpriteAsset
+  fullName: Koala.Simulation.Input.InputSpriteAsset
+  type: Class
+  source:
+    remote:
+      path: Runtime/Input/Input_SpriteAsset.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InputSpriteAsset
+    path: ../Packages/com.koala.simulation/Runtime/Input/Input_SpriteAsset.cs
+    startLine: 10
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: A collection of <xref uid="Koala.Simulation.Input.SpriteEntry" altProperty="fullName" displayProperty="name"></xref> objects.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "InputSpriteAsset", menuName = "Koala/SO/Input Sprite Asset")]
+
+      public class InputSpriteAsset : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="InputSpriteAsset", menuName:="Koala/SO/Input Sprite Asset")>
+
+      Public Class InputSpriteAsset Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: InputSpriteAsset
+    - name: menuName
+      type: System.String
+      value: Koala/SO/Input Sprite Asset
+references:
+- uid: Koala.Simulation.Input
+  commentId: N:Koala.Simulation.Input
+  href: Koala.html
+  name: Koala.Simulation.Input
+  nameWithType: Koala.Simulation.Input
+  fullName: Koala.Simulation.Input
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

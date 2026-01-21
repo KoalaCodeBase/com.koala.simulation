@@ -1,0 +1,1431 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Chronos.SimulationTime
+  commentId: T:Koala.Simulation.Chronos.SimulationTime
+  id: SimulationTime
+  parent: Koala.Simulation.Chronos
+  children:
+  - Koala.Simulation.Chronos.SimulationTime.#ctor(System.Int32,System.Int32,System.Int32)
+  - Koala.Simulation.Chronos.SimulationTime.CancelAllScheduledEvents
+  - Koala.Simulation.Chronos.SimulationTime.CancelScheduledEvent(Koala.Simulation.Chronos.EventHandle)
+  - Koala.Simulation.Chronos.SimulationTime.Current
+  - Koala.Simulation.Chronos.SimulationTime.CurrentAmPm
+  - Koala.Simulation.Chronos.SimulationTime.CurrentDay
+  - Koala.Simulation.Chronos.SimulationTime.CurrentHour
+  - Koala.Simulation.Chronos.SimulationTime.CurrentHour12h
+  - Koala.Simulation.Chronos.SimulationTime.CurrentMinute
+  - Koala.Simulation.Chronos.SimulationTime.CurrentMonth
+  - Koala.Simulation.Chronos.SimulationTime.CurrentSecond
+  - Koala.Simulation.Chronos.SimulationTime.CurrentTime12h
+  - Koala.Simulation.Chronos.SimulationTime.CurrentTime24h
+  - Koala.Simulation.Chronos.SimulationTime.CurrentTimeMinute12h
+  - Koala.Simulation.Chronos.SimulationTime.CurrentYear
+  - Koala.Simulation.Chronos.SimulationTime.DayNightSwitch
+  - Koala.Simulation.Chronos.SimulationTime.DayProgress
+  - Koala.Simulation.Chronos.SimulationTime.Instance
+  - Koala.Simulation.Chronos.SimulationTime.IsDay
+  - Koala.Simulation.Chronos.SimulationTime.IsNight
+  - Koala.Simulation.Chronos.SimulationTime.NightProgress
+  - Koala.Simulation.Chronos.SimulationTime.NormalizedTimeOfDay
+  - Koala.Simulation.Chronos.SimulationTime.OnDayPassed
+  - Koala.Simulation.Chronos.SimulationTime.OnHourPassed
+  - Koala.Simulation.Chronos.SimulationTime.OnMinutePassed
+  - Koala.Simulation.Chronos.SimulationTime.OnSecondPassed
+  - Koala.Simulation.Chronos.SimulationTime.Pause
+  - Koala.Simulation.Chronos.SimulationTime.Resume
+  - Koala.Simulation.Chronos.SimulationTime.ScheduleOnce(System.Action,Koala.Simulation.Chronos.GameTime)
+  - Koala.Simulation.Chronos.SimulationTime.ScheduleRecurring(System.Action,System.Int32,System.Int32,System.Int32)
+  - Koala.Simulation.Chronos.SimulationTime.ScheduleRelative(System.Action,System.TimeSpan)
+  - Koala.Simulation.Chronos.SimulationTime.StartNextDay
+  - Koala.Simulation.Chronos.SimulationTime.Update(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: SimulationTime
+  nameWithType: SimulationTime
+  fullName: Koala.Simulation.Chronos.SimulationTime
+  type: Class
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: SimulationTime
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 48
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: >-
+    Centralized time manager for simulation.
+
+
+    - Tracks game date and time (year, month, day, hour, minute, second).
+
+    - Provides day/night cycle information.
+
+    - Supports scheduled events (once, relative, recurring).
+
+    - Exposes hooks (OnSecondPassed, OnMinutePassed, OnHourPassed, OnDayPassed).
+
+    - Supports save/load integration (with Easy Save).
+
+
+    Singleton: Access via <code>SimulationTime.Instance</code>.
+
+    Requires <code>SimulationManager</code> to be present in the scene.
+
+    Only one instance of <code>SimulationManager</code> should exist.
+  example:
+  - >-
+    <pre><code class="lang-csharp">// Access current time
+
+    var now = SimulationTime.Instance.Current;
+
+    Debug.Log(now); // "0001-01-01 06:00:00"
+
+
+    // Check day/night
+
+    if (SimulationTime.Instance.IsDay)
+        Debug.Log("It's daytime!");
+
+    // Subscribe to hooks
+
+    SimulationTime.Instance.OnHourPassed += () =&gt;
+        Debug.Log("Another hour has passed.");
+
+    // Schedule a recurring event at 23:00
+
+    var handle = SimulationTime.Instance.ScheduleRecurring(
+        () =&gt; SimulationTime.Instance.Pause(), 23);
+
+    // Cancel scheduled event later
+
+    SimulationTime.Instance.CancelScheduledEvent(handle);
+
+
+    // Skip directly to next day
+
+    SimulationTime.Instance.StartNextDay();
+
+
+    // Save and load
+
+    SimulationTime.Instance.Save();
+
+    SimulationTime.Instance.Load(dateOnly: true);</code></pre>
+  syntax:
+    content: public sealed class SimulationTime
+    content.vb: Public NotInheritable Class SimulationTime
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Chronos.SimulationTime.Instance
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.Instance
+  id: Instance
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: SimulationTime.Instance
+  fullName: Koala.Simulation.Chronos.SimulationTime.Instance
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Instance
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 79
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public static SimulationTime Instance { get; }
+    parameters: []
+    return:
+      type: Koala.Simulation.Chronos.SimulationTime
+    content.vb: Public Shared Property Instance As SimulationTime
+  overload: Koala.Simulation.Chronos.SimulationTime.Instance*
+- uid: Koala.Simulation.Chronos.SimulationTime.Current
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.Current
+  id: Current
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: SimulationTime.Current
+  fullName: Koala.Simulation.Chronos.SimulationTime.Current
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Current
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 114
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public GameTime Current { get; }
+    parameters: []
+    return:
+      type: Koala.Simulation.Chronos.GameTime
+    content.vb: Public ReadOnly Property Current As GameTime
+  overload: Koala.Simulation.Chronos.SimulationTime.Current*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentYear
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentYear
+  id: CurrentYear
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentYear
+  nameWithType: SimulationTime.CurrentYear
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentYear
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentYear
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 116
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public int CurrentYear { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentYear As Integer
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentYear*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentMonth
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentMonth
+  id: CurrentMonth
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentMonth
+  nameWithType: SimulationTime.CurrentMonth
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentMonth
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentMonth
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 117
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public int CurrentMonth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentMonth As Integer
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentMonth*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentDay
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentDay
+  id: CurrentDay
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentDay
+  nameWithType: SimulationTime.CurrentDay
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentDay
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentDay
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 118
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public int CurrentDay { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentDay As Integer
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentDay*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentHour
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentHour
+  id: CurrentHour
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentHour
+  nameWithType: SimulationTime.CurrentHour
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentHour
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentHour
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 119
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public int CurrentHour { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentHour As Integer
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentHour*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentMinute
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentMinute
+  id: CurrentMinute
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentMinute
+  nameWithType: SimulationTime.CurrentMinute
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentMinute
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentMinute
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 120
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public int CurrentMinute { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentMinute As Integer
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentMinute*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentSecond
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentSecond
+  id: CurrentSecond
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentSecond
+  nameWithType: SimulationTime.CurrentSecond
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentSecond
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentSecond
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 121
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public int CurrentSecond { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentSecond As Integer
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentSecond*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentHour12h
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentHour12h
+  id: CurrentHour12h
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentHour12h
+  nameWithType: SimulationTime.CurrentHour12h
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentHour12h
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentHour12h
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 126
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Current hour in 12-hour format (1–12).
+  example: []
+  syntax:
+    content: public int CurrentHour12h { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentHour12h As Integer
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentHour12h*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentAmPm
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentAmPm
+  id: CurrentAmPm
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentAmPm
+  nameWithType: SimulationTime.CurrentAmPm
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentAmPm
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentAmPm
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 138
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: AM or PM suffix depending on the current hour.
+  example: []
+  syntax:
+    content: public string CurrentAmPm { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CurrentAmPm As String
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentAmPm*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentTime24h
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentTime24h
+  id: CurrentTime24h
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentTime24h
+  nameWithType: SimulationTime.CurrentTime24h
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentTime24h
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentTime24h
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 144
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: >-
+    Current time as "HH:mm" in 24-hour format.  
+
+    Example: "23:45"
+  example: []
+  syntax:
+    content: public string CurrentTime24h { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CurrentTime24h As String
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentTime24h*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentTime12h
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentTime12h
+  id: CurrentTime12h
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentTime12h
+  nameWithType: SimulationTime.CurrentTime12h
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentTime12h
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentTime12h
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 150
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: >-
+    Current time as "h:mm AM/PM" in 12-hour format.  
+
+    Example: "11:05 AM"
+  example: []
+  syntax:
+    content: public string CurrentTime12h { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CurrentTime12h As String
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentTime12h*
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentTimeMinute12h
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.CurrentTimeMinute12h
+  id: CurrentTimeMinute12h
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CurrentTimeMinute12h
+  nameWithType: SimulationTime.CurrentTimeMinute12h
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentTimeMinute12h
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentTimeMinute12h
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 157
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: >-
+    Current time as "h:mm:ss AM/PM" in 12-hour format.  
+
+    Example: "11:05:42 PM"
+  example: []
+  syntax:
+    content: public string CurrentTimeMinute12h { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CurrentTimeMinute12h As String
+  overload: Koala.Simulation.Chronos.SimulationTime.CurrentTimeMinute12h*
+- uid: Koala.Simulation.Chronos.SimulationTime.IsDay
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.IsDay
+  id: IsDay
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: IsDay
+  nameWithType: SimulationTime.IsDay
+  fullName: Koala.Simulation.Chronos.SimulationTime.IsDay
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: IsDay
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 161
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public bool IsDay { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDay As Boolean
+  overload: Koala.Simulation.Chronos.SimulationTime.IsDay*
+- uid: Koala.Simulation.Chronos.SimulationTime.IsNight
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.IsNight
+  id: IsNight
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: IsNight
+  nameWithType: SimulationTime.IsNight
+  fullName: Koala.Simulation.Chronos.SimulationTime.IsNight
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: IsNight
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 162
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public bool IsNight { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsNight As Boolean
+  overload: Koala.Simulation.Chronos.SimulationTime.IsNight*
+- uid: Koala.Simulation.Chronos.SimulationTime.DayProgress
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.DayProgress
+  id: DayProgress
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: DayProgress
+  nameWithType: SimulationTime.DayProgress
+  fullName: Koala.Simulation.Chronos.SimulationTime.DayProgress
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: DayProgress
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 163
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public float DayProgress { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property DayProgress As Single
+  overload: Koala.Simulation.Chronos.SimulationTime.DayProgress*
+- uid: Koala.Simulation.Chronos.SimulationTime.NightProgress
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.NightProgress
+  id: NightProgress
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: NightProgress
+  nameWithType: SimulationTime.NightProgress
+  fullName: Koala.Simulation.Chronos.SimulationTime.NightProgress
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: NightProgress
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 164
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public float NightProgress { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property NightProgress As Single
+  overload: Koala.Simulation.Chronos.SimulationTime.NightProgress*
+- uid: Koala.Simulation.Chronos.SimulationTime.NormalizedTimeOfDay
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.NormalizedTimeOfDay
+  id: NormalizedTimeOfDay
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: NormalizedTimeOfDay
+  nameWithType: SimulationTime.NormalizedTimeOfDay
+  fullName: Koala.Simulation.Chronos.SimulationTime.NormalizedTimeOfDay
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: NormalizedTimeOfDay
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 167
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Normalized 0-1 time of day (0=midnight, 0.5=noon).
+  example: []
+  syntax:
+    content: public float NormalizedTimeOfDay { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property NormalizedTimeOfDay As Single
+  overload: Koala.Simulation.Chronos.SimulationTime.NormalizedTimeOfDay*
+- uid: Koala.Simulation.Chronos.SimulationTime.DayNightSwitch
+  commentId: P:Koala.Simulation.Chronos.SimulationTime.DayNightSwitch
+  id: DayNightSwitch
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: DayNightSwitch
+  nameWithType: SimulationTime.DayNightSwitch
+  fullName: Koala.Simulation.Chronos.SimulationTime.DayNightSwitch
+  type: Property
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: DayNightSwitch
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 171
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Blend factor (0=night, 1=day).
+  example: []
+  syntax:
+    content: public float DayNightSwitch { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property DayNightSwitch As Single
+  overload: Koala.Simulation.Chronos.SimulationTime.DayNightSwitch*
+- uid: Koala.Simulation.Chronos.SimulationTime.OnSecondPassed
+  commentId: E:Koala.Simulation.Chronos.SimulationTime.OnSecondPassed
+  id: OnSecondPassed
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: OnSecondPassed
+  nameWithType: SimulationTime.OnSecondPassed
+  fullName: Koala.Simulation.Chronos.SimulationTime.OnSecondPassed
+  type: Event
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnSecondPassed
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 179
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Called every in-game second.
+  example: []
+  syntax:
+    content: public event Action OnSecondPassed
+    return:
+      type: System.Action
+    content.vb: Public Event OnSecondPassed As Action
+- uid: Koala.Simulation.Chronos.SimulationTime.OnMinutePassed
+  commentId: E:Koala.Simulation.Chronos.SimulationTime.OnMinutePassed
+  id: OnMinutePassed
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: OnMinutePassed
+  nameWithType: SimulationTime.OnMinutePassed
+  fullName: Koala.Simulation.Chronos.SimulationTime.OnMinutePassed
+  type: Event
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnMinutePassed
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 182
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Called every in-game minute.
+  example: []
+  syntax:
+    content: public event Action OnMinutePassed
+    return:
+      type: System.Action
+    content.vb: Public Event OnMinutePassed As Action
+- uid: Koala.Simulation.Chronos.SimulationTime.OnHourPassed
+  commentId: E:Koala.Simulation.Chronos.SimulationTime.OnHourPassed
+  id: OnHourPassed
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: OnHourPassed
+  nameWithType: SimulationTime.OnHourPassed
+  fullName: Koala.Simulation.Chronos.SimulationTime.OnHourPassed
+  type: Event
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnHourPassed
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 185
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Called every in-game hour.
+  example: []
+  syntax:
+    content: public event Action OnHourPassed
+    return:
+      type: System.Action
+    content.vb: Public Event OnHourPassed As Action
+- uid: Koala.Simulation.Chronos.SimulationTime.OnDayPassed
+  commentId: E:Koala.Simulation.Chronos.SimulationTime.OnDayPassed
+  id: OnDayPassed
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: OnDayPassed
+  nameWithType: SimulationTime.OnDayPassed
+  fullName: Koala.Simulation.Chronos.SimulationTime.OnDayPassed
+  type: Event
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnDayPassed
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 188
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Called every in-game day.
+  example: []
+  syntax:
+    content: public event Action OnDayPassed
+    return:
+      type: System.Action
+    content.vb: Public Event OnDayPassed As Action
+- uid: Koala.Simulation.Chronos.SimulationTime.#ctor(System.Int32,System.Int32,System.Int32)
+  commentId: M:Koala.Simulation.Chronos.SimulationTime.#ctor(System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32)'
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: SimulationTime(int, int, int)
+  nameWithType: SimulationTime.SimulationTime(int, int, int)
+  fullName: Koala.Simulation.Chronos.SimulationTime.SimulationTime(int, int, int)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: .ctor
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 194
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public SimulationTime(int cycleLengthInMinutes, int dayStartHour = 6, int nightStartHour = 18)
+    parameters:
+    - id: cycleLengthInMinutes
+      type: System.Int32
+    - id: dayStartHour
+      type: System.Int32
+    - id: nightStartHour
+      type: System.Int32
+    content.vb: Public Sub New(cycleLengthInMinutes As Integer, dayStartHour As Integer = 6, nightStartHour As Integer = 18)
+  overload: Koala.Simulation.Chronos.SimulationTime.#ctor*
+  nameWithType.vb: SimulationTime.New(Integer, Integer, Integer)
+  fullName.vb: Koala.Simulation.Chronos.SimulationTime.New(Integer, Integer, Integer)
+  name.vb: New(Integer, Integer, Integer)
+- uid: Koala.Simulation.Chronos.SimulationTime.Pause
+  commentId: M:Koala.Simulation.Chronos.SimulationTime.Pause
+  id: Pause
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: SimulationTime.Pause()
+  fullName: Koala.Simulation.Chronos.SimulationTime.Pause()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Pause
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 215
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause()
+  overload: Koala.Simulation.Chronos.SimulationTime.Pause*
+- uid: Koala.Simulation.Chronos.SimulationTime.Resume
+  commentId: M:Koala.Simulation.Chronos.SimulationTime.Resume
+  id: Resume
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: SimulationTime.Resume()
+  fullName: Koala.Simulation.Chronos.SimulationTime.Resume()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Resume
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 216
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public void Resume()
+    content.vb: Public Sub [Resume]()
+  overload: Koala.Simulation.Chronos.SimulationTime.Resume*
+- uid: Koala.Simulation.Chronos.SimulationTime.StartNextDay
+  commentId: M:Koala.Simulation.Chronos.SimulationTime.StartNextDay
+  id: StartNextDay
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: StartNextDay()
+  nameWithType: SimulationTime.StartNextDay()
+  fullName: Koala.Simulation.Chronos.SimulationTime.StartNextDay()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: StartNextDay
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 221
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Instantly skip to the next day at DayStartHour.
+  example: []
+  syntax:
+    content: public void StartNextDay()
+    content.vb: Public Sub StartNextDay()
+  overload: Koala.Simulation.Chronos.SimulationTime.StartNextDay*
+- uid: Koala.Simulation.Chronos.SimulationTime.Update(System.Single)
+  commentId: M:Koala.Simulation.Chronos.SimulationTime.Update(System.Single)
+  id: Update(System.Single)
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: Update(float)
+  nameWithType: SimulationTime.Update(float)
+  fullName: Koala.Simulation.Chronos.SimulationTime.Update(float)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Update
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 246
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  syntax:
+    content: public void Update(float deltaTime)
+    parameters:
+    - id: deltaTime
+      type: System.Single
+    content.vb: Public Sub Update(deltaTime As Single)
+  overload: Koala.Simulation.Chronos.SimulationTime.Update*
+  nameWithType.vb: SimulationTime.Update(Single)
+  fullName.vb: Koala.Simulation.Chronos.SimulationTime.Update(Single)
+  name.vb: Update(Single)
+- uid: Koala.Simulation.Chronos.SimulationTime.ScheduleOnce(System.Action,Koala.Simulation.Chronos.GameTime)
+  commentId: M:Koala.Simulation.Chronos.SimulationTime.ScheduleOnce(System.Action,Koala.Simulation.Chronos.GameTime)
+  id: ScheduleOnce(System.Action,Koala.Simulation.Chronos.GameTime)
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: ScheduleOnce(Action, GameTime)
+  nameWithType: SimulationTime.ScheduleOnce(Action, GameTime)
+  fullName: Koala.Simulation.Chronos.SimulationTime.ScheduleOnce(System.Action, Koala.Simulation.Chronos.GameTime)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ScheduleOnce
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 309
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Run once at exact target time.
+  example: []
+  syntax:
+    content: public EventHandle ScheduleOnce(Action action, GameTime target)
+    parameters:
+    - id: action
+      type: System.Action
+    - id: target
+      type: Koala.Simulation.Chronos.GameTime
+    return:
+      type: Koala.Simulation.Chronos.EventHandle
+    content.vb: Public Function ScheduleOnce(action As Action, target As GameTime) As EventHandle
+  overload: Koala.Simulation.Chronos.SimulationTime.ScheduleOnce*
+- uid: Koala.Simulation.Chronos.SimulationTime.ScheduleRelative(System.Action,System.TimeSpan)
+  commentId: M:Koala.Simulation.Chronos.SimulationTime.ScheduleRelative(System.Action,System.TimeSpan)
+  id: ScheduleRelative(System.Action,System.TimeSpan)
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: ScheduleRelative(Action, TimeSpan)
+  nameWithType: SimulationTime.ScheduleRelative(Action, TimeSpan)
+  fullName: Koala.Simulation.Chronos.SimulationTime.ScheduleRelative(System.Action, System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ScheduleRelative
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 317
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Run once after offset from now.
+  example: []
+  syntax:
+    content: public EventHandle ScheduleRelative(Action action, TimeSpan offset)
+    parameters:
+    - id: action
+      type: System.Action
+    - id: offset
+      type: System.TimeSpan
+    return:
+      type: Koala.Simulation.Chronos.EventHandle
+    content.vb: Public Function ScheduleRelative(action As Action, offset As TimeSpan) As EventHandle
+  overload: Koala.Simulation.Chronos.SimulationTime.ScheduleRelative*
+- uid: Koala.Simulation.Chronos.SimulationTime.ScheduleRecurring(System.Action,System.Int32,System.Int32,System.Int32)
+  commentId: M:Koala.Simulation.Chronos.SimulationTime.ScheduleRecurring(System.Action,System.Int32,System.Int32,System.Int32)
+  id: ScheduleRecurring(System.Action,System.Int32,System.Int32,System.Int32)
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: ScheduleRecurring(Action, int, int, int)
+  nameWithType: SimulationTime.ScheduleRecurring(Action, int, int, int)
+  fullName: Koala.Simulation.Chronos.SimulationTime.ScheduleRecurring(System.Action, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ScheduleRecurring
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 329
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Run every day at the given hour/minute/second.
+  example: []
+  syntax:
+    content: public EventHandle ScheduleRecurring(Action action, int hour, int minute = 0, int second = 0)
+    parameters:
+    - id: action
+      type: System.Action
+    - id: hour
+      type: System.Int32
+    - id: minute
+      type: System.Int32
+    - id: second
+      type: System.Int32
+    return:
+      type: Koala.Simulation.Chronos.EventHandle
+    content.vb: Public Function ScheduleRecurring(action As Action, hour As Integer, minute As Integer = 0, second As Integer = 0) As EventHandle
+  overload: Koala.Simulation.Chronos.SimulationTime.ScheduleRecurring*
+  nameWithType.vb: SimulationTime.ScheduleRecurring(Action, Integer, Integer, Integer)
+  fullName.vb: Koala.Simulation.Chronos.SimulationTime.ScheduleRecurring(System.Action, Integer, Integer, Integer)
+  name.vb: ScheduleRecurring(Action, Integer, Integer, Integer)
+- uid: Koala.Simulation.Chronos.SimulationTime.CancelScheduledEvent(Koala.Simulation.Chronos.EventHandle)
+  commentId: M:Koala.Simulation.Chronos.SimulationTime.CancelScheduledEvent(Koala.Simulation.Chronos.EventHandle)
+  id: CancelScheduledEvent(Koala.Simulation.Chronos.EventHandle)
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CancelScheduledEvent(EventHandle)
+  nameWithType: SimulationTime.CancelScheduledEvent(EventHandle)
+  fullName: Koala.Simulation.Chronos.SimulationTime.CancelScheduledEvent(Koala.Simulation.Chronos.EventHandle)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CancelScheduledEvent
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 338
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Cancel a specific scheduled event.
+  example: []
+  syntax:
+    content: public void CancelScheduledEvent(EventHandle handle)
+    parameters:
+    - id: handle
+      type: Koala.Simulation.Chronos.EventHandle
+    content.vb: Public Sub CancelScheduledEvent(handle As EventHandle)
+  overload: Koala.Simulation.Chronos.SimulationTime.CancelScheduledEvent*
+- uid: Koala.Simulation.Chronos.SimulationTime.CancelAllScheduledEvents
+  commentId: M:Koala.Simulation.Chronos.SimulationTime.CancelAllScheduledEvents
+  id: CancelAllScheduledEvents
+  parent: Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: CancelAllScheduledEvents()
+  nameWithType: SimulationTime.CancelAllScheduledEvents()
+  fullName: Koala.Simulation.Chronos.SimulationTime.CancelAllScheduledEvents()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Time/SimulationTime.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CancelAllScheduledEvents
+    path: ../Packages/com.koala.simulation/Runtime/Time/SimulationTime.cs
+    startLine: 345
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Chronos
+  summary: Cancel all scheduled events.
+  example: []
+  syntax:
+    content: public void CancelAllScheduledEvents()
+    content.vb: Public Sub CancelAllScheduledEvents()
+  overload: Koala.Simulation.Chronos.SimulationTime.CancelAllScheduledEvents*
+references:
+- uid: Koala.Simulation.Chronos
+  commentId: N:Koala.Simulation.Chronos
+  href: Koala.html
+  name: Koala.Simulation.Chronos
+  nameWithType: Koala.Simulation.Chronos
+  fullName: Koala.Simulation.Chronos
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Chronos
+    name: Chronos
+    href: Koala.Simulation.Chronos.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Chronos
+    name: Chronos
+    href: Koala.Simulation.Chronos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Chronos.SimulationTime.Instance*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.Instance
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_Instance
+  name: Instance
+  nameWithType: SimulationTime.Instance
+  fullName: Koala.Simulation.Chronos.SimulationTime.Instance
+- uid: Koala.Simulation.Chronos.SimulationTime
+  commentId: T:Koala.Simulation.Chronos.SimulationTime
+  parent: Koala.Simulation.Chronos
+  href: Koala.Simulation.Chronos.SimulationTime.html
+  name: SimulationTime
+  nameWithType: SimulationTime
+  fullName: Koala.Simulation.Chronos.SimulationTime
+- uid: Koala.Simulation.Chronos.SimulationTime.Current*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.Current
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_Current
+  name: Current
+  nameWithType: SimulationTime.Current
+  fullName: Koala.Simulation.Chronos.SimulationTime.Current
+- uid: Koala.Simulation.Chronos.GameTime
+  commentId: T:Koala.Simulation.Chronos.GameTime
+  parent: Koala.Simulation.Chronos
+  href: Koala.Simulation.Chronos.GameTime.html
+  name: GameTime
+  nameWithType: GameTime
+  fullName: Koala.Simulation.Chronos.GameTime
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentYear*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentYear
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentYear
+  name: CurrentYear
+  nameWithType: SimulationTime.CurrentYear
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentYear
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentMonth*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentMonth
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentMonth
+  name: CurrentMonth
+  nameWithType: SimulationTime.CurrentMonth
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentMonth
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentDay*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentDay
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentDay
+  name: CurrentDay
+  nameWithType: SimulationTime.CurrentDay
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentDay
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentHour*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentHour
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentHour
+  name: CurrentHour
+  nameWithType: SimulationTime.CurrentHour
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentHour
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentMinute*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentMinute
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentMinute
+  name: CurrentMinute
+  nameWithType: SimulationTime.CurrentMinute
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentMinute
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentSecond*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentSecond
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentSecond
+  name: CurrentSecond
+  nameWithType: SimulationTime.CurrentSecond
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentSecond
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentHour12h*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentHour12h
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentHour12h
+  name: CurrentHour12h
+  nameWithType: SimulationTime.CurrentHour12h
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentHour12h
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentAmPm*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentAmPm
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentAmPm
+  name: CurrentAmPm
+  nameWithType: SimulationTime.CurrentAmPm
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentAmPm
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentTime24h*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentTime24h
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentTime24h
+  name: CurrentTime24h
+  nameWithType: SimulationTime.CurrentTime24h
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentTime24h
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentTime12h*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentTime12h
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentTime12h
+  name: CurrentTime12h
+  nameWithType: SimulationTime.CurrentTime12h
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentTime12h
+- uid: Koala.Simulation.Chronos.SimulationTime.CurrentTimeMinute12h*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CurrentTimeMinute12h
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CurrentTimeMinute12h
+  name: CurrentTimeMinute12h
+  nameWithType: SimulationTime.CurrentTimeMinute12h
+  fullName: Koala.Simulation.Chronos.SimulationTime.CurrentTimeMinute12h
+- uid: Koala.Simulation.Chronos.SimulationTime.IsDay*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.IsDay
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_IsDay
+  name: IsDay
+  nameWithType: SimulationTime.IsDay
+  fullName: Koala.Simulation.Chronos.SimulationTime.IsDay
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koala.Simulation.Chronos.SimulationTime.IsNight*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.IsNight
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_IsNight
+  name: IsNight
+  nameWithType: SimulationTime.IsNight
+  fullName: Koala.Simulation.Chronos.SimulationTime.IsNight
+- uid: Koala.Simulation.Chronos.SimulationTime.DayProgress*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.DayProgress
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_DayProgress
+  name: DayProgress
+  nameWithType: SimulationTime.DayProgress
+  fullName: Koala.Simulation.Chronos.SimulationTime.DayProgress
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Koala.Simulation.Chronos.SimulationTime.NightProgress*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.NightProgress
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_NightProgress
+  name: NightProgress
+  nameWithType: SimulationTime.NightProgress
+  fullName: Koala.Simulation.Chronos.SimulationTime.NightProgress
+- uid: Koala.Simulation.Chronos.SimulationTime.NormalizedTimeOfDay*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.NormalizedTimeOfDay
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_NormalizedTimeOfDay
+  name: NormalizedTimeOfDay
+  nameWithType: SimulationTime.NormalizedTimeOfDay
+  fullName: Koala.Simulation.Chronos.SimulationTime.NormalizedTimeOfDay
+- uid: Koala.Simulation.Chronos.SimulationTime.DayNightSwitch*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.DayNightSwitch
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_DayNightSwitch
+  name: DayNightSwitch
+  nameWithType: SimulationTime.DayNightSwitch
+  fullName: Koala.Simulation.Chronos.SimulationTime.DayNightSwitch
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Koala.Simulation.Chronos.SimulationTime.#ctor*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.#ctor
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime__ctor_System_Int32_System_Int32_System_Int32_
+  name: SimulationTime
+  nameWithType: SimulationTime.SimulationTime
+  fullName: Koala.Simulation.Chronos.SimulationTime.SimulationTime
+  nameWithType.vb: SimulationTime.New
+  fullName.vb: Koala.Simulation.Chronos.SimulationTime.New
+  name.vb: New
+- uid: Koala.Simulation.Chronos.SimulationTime.Pause*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.Pause
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_Pause
+  name: Pause
+  nameWithType: SimulationTime.Pause
+  fullName: Koala.Simulation.Chronos.SimulationTime.Pause
+- uid: Koala.Simulation.Chronos.SimulationTime.Resume*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.Resume
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_Resume
+  name: Resume
+  nameWithType: SimulationTime.Resume
+  fullName: Koala.Simulation.Chronos.SimulationTime.Resume
+- uid: Koala.Simulation.Chronos.SimulationTime.StartNextDay*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.StartNextDay
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_StartNextDay
+  name: StartNextDay
+  nameWithType: SimulationTime.StartNextDay
+  fullName: Koala.Simulation.Chronos.SimulationTime.StartNextDay
+- uid: Koala.Simulation.Chronos.SimulationTime.Update*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.Update
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_Update_System_Single_
+  name: Update
+  nameWithType: SimulationTime.Update
+  fullName: Koala.Simulation.Chronos.SimulationTime.Update
+- uid: Koala.Simulation.Chronos.SimulationTime.ScheduleOnce*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.ScheduleOnce
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_ScheduleOnce_System_Action_Koala_Simulation_Chronos_GameTime_
+  name: ScheduleOnce
+  nameWithType: SimulationTime.ScheduleOnce
+  fullName: Koala.Simulation.Chronos.SimulationTime.ScheduleOnce
+- uid: Koala.Simulation.Chronos.EventHandle
+  commentId: T:Koala.Simulation.Chronos.EventHandle
+  parent: Koala.Simulation.Chronos
+  href: Koala.Simulation.Chronos.EventHandle.html
+  name: EventHandle
+  nameWithType: EventHandle
+  fullName: Koala.Simulation.Chronos.EventHandle
+- uid: Koala.Simulation.Chronos.SimulationTime.ScheduleRelative*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.ScheduleRelative
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_ScheduleRelative_System_Action_System_TimeSpan_
+  name: ScheduleRelative
+  nameWithType: SimulationTime.ScheduleRelative
+  fullName: Koala.Simulation.Chronos.SimulationTime.ScheduleRelative
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Koala.Simulation.Chronos.SimulationTime.ScheduleRecurring*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.ScheduleRecurring
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_ScheduleRecurring_System_Action_System_Int32_System_Int32_System_Int32_
+  name: ScheduleRecurring
+  nameWithType: SimulationTime.ScheduleRecurring
+  fullName: Koala.Simulation.Chronos.SimulationTime.ScheduleRecurring
+- uid: Koala.Simulation.Chronos.SimulationTime.CancelScheduledEvent*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CancelScheduledEvent
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CancelScheduledEvent_Koala_Simulation_Chronos_EventHandle_
+  name: CancelScheduledEvent
+  nameWithType: SimulationTime.CancelScheduledEvent
+  fullName: Koala.Simulation.Chronos.SimulationTime.CancelScheduledEvent
+- uid: Koala.Simulation.Chronos.SimulationTime.CancelAllScheduledEvents*
+  commentId: Overload:Koala.Simulation.Chronos.SimulationTime.CancelAllScheduledEvents
+  href: Koala.Simulation.Chronos.SimulationTime.html#Koala_Simulation_Chronos_SimulationTime_CancelAllScheduledEvents
+  name: CancelAllScheduledEvents
+  nameWithType: SimulationTime.CancelAllScheduledEvents
+  fullName: Koala.Simulation.Chronos.SimulationTime.CancelAllScheduledEvents

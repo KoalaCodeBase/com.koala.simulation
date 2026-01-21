@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.Components
+  commentId: N:Koala.Simulation.Inventory.Components
+  id: Koala.Simulation.Inventory.Components
+  children:
+  - Koala.Simulation.Inventory.Components.ShelfComponent
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Inventory.Components
+  nameWithType: Koala.Simulation.Inventory.Components
+  fullName: Koala.Simulation.Inventory.Components
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Inventory.Components.ShelfComponent
+  commentId: T:Koala.Simulation.Inventory.Components.ShelfComponent
+  href: Koala.Simulation.Inventory.Components.ShelfComponent.html
+  name: ShelfComponent
+  nameWithType: ShelfComponent
+  fullName: Koala.Simulation.Inventory.Components.ShelfComponent

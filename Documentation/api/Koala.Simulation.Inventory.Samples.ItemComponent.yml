@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.Samples.ItemComponent
+  commentId: T:Koala.Simulation.Inventory.Samples.ItemComponent
+  id: ItemComponent
+  parent: Koala.Simulation.Inventory.Samples
+  children:
+  - Koala.Simulation.Inventory.Samples.ItemComponent.Item
+  langs:
+  - csharp
+  - vb
+  name: ItemComponent
+  nameWithType: ItemComponent
+  fullName: Koala.Simulation.Inventory.Samples.ItemComponent
+  type: Class
+  source:
+    remote:
+      path: Runtime/Inventory/Samples/ItemComponent.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ItemComponent
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Samples/ItemComponent.cs
+    startLine: 31
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory.Samples
+  summary: 'Example usage of <xref href="Koala.Simulation.Inventory.Samples.ItemComponent.Item" data-throw-if-not-resolved="false"></xref>:'
+  remarks: >-
+    Example usage with parameter 'properties':
+
+    <pre><code class="lang-csharp">var apple = new Item(
+        prefabId: "apple",
+        stackCount: 5,
+        maxStack: 20,
+        tags: new [] { "Food", "Fruit" },
+        properties: new Dictionary&lt;string, object&gt;
+        {
+            { "Price", 5 },
+            { "ExpirationDays", 3 },
+            { "Rarity", "Common" }
+        }
+    );</code></pre>
+
+
+    Accessing properties:
+
+    <pre><code class="lang-csharp">int price = (int)apple.Properties["Price"];
+
+    string rarity = (string)apple.Properties["Rarity"];</code></pre>
+  example: []
+  syntax:
+    content: 'public class ItemComponent : MonoBehaviour'
+    content.vb: Public Class ItemComponent Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Koala.Simulation.Inventory.Samples.ItemComponent.Item
+  commentId: P:Koala.Simulation.Inventory.Samples.ItemComponent.Item
+  id: Item
+  parent: Koala.Simulation.Inventory.Samples.ItemComponent
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: ItemComponent.Item
+  fullName: Koala.Simulation.Inventory.Samples.ItemComponent.Item
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Samples/ItemComponent.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Item
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Samples/ItemComponent.cs
+    startLine: 58
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory.Samples
+  summary: The created item instance associated with this component.
+  example: []
+  syntax:
+    content: public Item Item { get; }
+    parameters: []
+    return:
+      type: Koala.Simulation.Inventory.Core.Item
+    content.vb: Public ReadOnly Property Item As Item
+  overload: Koala.Simulation.Inventory.Samples.ItemComponent.Item*
+references:
+- uid: Koala.Simulation.Inventory.Samples.ItemComponent.Item
+  commentId: P:Koala.Simulation.Inventory.Samples.ItemComponent.Item
+  isExternal: true
+- uid: Koala.Simulation.Inventory.Samples
+  commentId: N:Koala.Simulation.Inventory.Samples
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Samples
+  nameWithType: Koala.Simulation.Inventory.Samples
+  fullName: Koala.Simulation.Inventory.Samples
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Samples
+    name: Samples
+    href: Koala.Simulation.Inventory.Samples.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Samples
+    name: Samples
+    href: Koala.Simulation.Inventory.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Inventory.Samples.ItemComponent.Item*
+  commentId: Overload:Koala.Simulation.Inventory.Samples.ItemComponent.Item
+  href: Koala.Simulation.Inventory.Samples.ItemComponent.html#Koala_Simulation_Inventory_Samples_ItemComponent_Item
+  name: Item
+  nameWithType: ItemComponent.Item
+  fullName: Koala.Simulation.Inventory.Samples.ItemComponent.Item
+- uid: Koala.Simulation.Inventory.Core.Item
+  commentId: T:Koala.Simulation.Inventory.Core.Item
+  parent: Koala.Simulation.Inventory.Core
+  href: Koala.Simulation.Inventory.Core.Item.html
+  name: Item
+  nameWithType: Item
+  fullName: Koala.Simulation.Inventory.Core.Item
+- uid: Koala.Simulation.Inventory.Core
+  commentId: N:Koala.Simulation.Inventory.Core
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Core
+  nameWithType: Koala.Simulation.Inventory.Core
+  fullName: Koala.Simulation.Inventory.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html

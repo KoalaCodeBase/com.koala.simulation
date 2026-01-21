@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": [
+            "Koala.Simulation.csproj"
+          ]
+        }
+      ],
+      "dest": "api",
+      "filter": "filterConfig.yml"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "**/*.png"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern",
+      "templates/custom"
+    ],
+    "globalMetadata": {
+      "_appName": "Koala Simulation",
+      "_appTitle": "Koala Simulation",
+      "_appLogoPath": "koala.png",
+      "_enableSearch": true,
+      "_baseUrl": "/com.koala.simulation/",
+      "pdf": false
+    },
+    "markdownEngineName": "markdig",
+    "markdownEngineProperties": {}
+  }
+}

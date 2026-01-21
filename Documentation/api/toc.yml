@@ -1,0 +1,160 @@
+### YamlMime:TableOfContent
+items:
+- uid: Koala.Simulation
+  name: Koala.Simulation
+  type: Namespace
+  items:
+  - uid: Koala.Simulation.SimulationManager
+    name: SimulationManager
+    type: Class
+- uid: Koala.Simulation.Chronos
+  name: Koala.Simulation.Chronos
+  type: Namespace
+  items:
+  - uid: Koala.Simulation.Chronos.EventHandle
+    name: EventHandle
+    type: Class
+  - uid: Koala.Simulation.Chronos.GameTime
+    name: GameTime
+    type: Struct
+  - uid: Koala.Simulation.Chronos.SimulationTime
+    name: SimulationTime
+    type: Class
+- uid: Koala.Simulation.Common
+  name: Koala.Simulation.Common
+  type: Namespace
+  items:
+  - uid: Koala.Simulation.Common.DocfxIgnoreAttribute
+    name: DocfxIgnoreAttribute
+    type: Class
+  - uid: Koala.Simulation.Common.Extensions
+    name: Extensions
+    type: Class
+- uid: Koala.Simulation.FirstPersonController
+  name: Koala.Simulation.FirstPersonController
+  type: Namespace
+  items:
+  - uid: Koala.Simulation.FirstPersonController.BasicRigidBodyPush
+    name: BasicRigidBodyPush
+    type: Class
+  - uid: Koala.Simulation.FirstPersonController.FirstPersonController
+    name: FirstPersonController
+    type: Class
+  - uid: Koala.Simulation.FirstPersonController.PlayerInputState
+    name: PlayerInputState
+    type: Class
+- uid: Koala.Simulation.Input
+  name: Koala.Simulation.Input
+  type: Namespace
+  items:
+  - uid: Koala.Simulation.Input.InputManager
+    name: InputManager
+    type: Class
+  - uid: Koala.Simulation.Input.InputRebindService
+    name: InputRebindService
+    type: Class
+  - uid: Koala.Simulation.Input.InputSettingsService
+    name: InputSettingsService
+    type: Class
+  - uid: Koala.Simulation.Input.InputSpriteAsset
+    name: InputSpriteAsset
+    type: Class
+  - uid: Koala.Simulation.Input.SpriteEntry
+    name: SpriteEntry
+    type: Struct
+- uid: Koala.Simulation.Interaction.Components
+  name: Koala.Simulation.Interaction.Components
+  type: Namespace
+  items:
+  - uid: Koala.Simulation.Interaction.Components.Interactable
+    name: Interactable
+    type: Class
+  - uid: Koala.Simulation.Interaction.Components.InteractionDisplay
+    name: InteractionDisplay
+    type: Class
+  - uid: Koala.Simulation.Interaction.Components.InteractionLabel
+    name: InteractionLabel
+    type: Class
+  - uid: Koala.Simulation.Interaction.Components.InteractionRaycaster
+    name: InteractionRaycaster
+    type: Class
+- uid: Koala.Simulation.Interaction.Core
+  name: Koala.Simulation.Interaction.Core
+  type: Namespace
+  items:
+  - uid: Koala.Simulation.Interaction.Core.InteractableObject
+    name: InteractableObject
+    type: Class
+  - uid: Koala.Simulation.Interaction.Core.InteractionBehaviour
+    name: InteractionBehaviour
+    type: Class
+  - uid: Koala.Simulation.Interaction.Core.InteractionSolver
+    name: InteractionSolver
+    type: Class
+  - uid: Koala.Simulation.Interaction.Core.Interactor
+    name: Interactor
+    type: Class
+- uid: Koala.Simulation.Inventory
+  name: Koala.Simulation.Inventory
+  type: Namespace
+  items:
+  - uid: Koala.Simulation.Inventory.Container
+    name: Container
+    type: Class
+  - uid: Koala.Simulation.Inventory.ContainerDTO
+    name: ContainerDTO
+    type: Class
+  - uid: Koala.Simulation.Inventory.IContainerFilter
+    name: IContainerFilter
+    type: Interface
+  - uid: Koala.Simulation.Inventory.ITransferAnimation
+    name: ITransferAnimation
+    type: Interface
+  - uid: Koala.Simulation.Inventory.InventoryFactory
+    name: InventoryFactory
+    type: Class
+  - uid: Koala.Simulation.Inventory.InventorySaver
+    name: InventorySaver
+    type: Class
+  - uid: Koala.Simulation.Inventory.Item
+    name: Item
+    type: Class
+  - uid: Koala.Simulation.Inventory.PrefabRegistry
+    name: PrefabRegistry
+    type: Class
+- uid: Koala.Simulation.Placement
+  name: Koala.Simulation.Placement
+  type: Namespace
+  items:
+  - uid: Koala.Simulation.Placement.DefaultSnapStrategy
+    name: DefaultSnapStrategy
+    type: Class
+  - uid: Koala.Simulation.Placement.IPlaceable
+    name: IPlaceable
+    type: Interface
+  - uid: Koala.Simulation.Placement.IPlacementRule
+    name: IPlacementRule
+    type: Interface
+  - uid: Koala.Simulation.Placement.ISnapStrategy
+    name: ISnapStrategy
+    type: Interface
+  - uid: Koala.Simulation.Placement.PlacementManager
+    name: PlacementManager
+    type: Class
+- uid: Koala.Simulation.Placement.Samples
+  name: Koala.Simulation.Placement.Samples
+  type: Namespace
+  items:
+  - uid: Koala.Simulation.Placement.Samples.LayerRule
+    name: LayerRule
+    type: Class
+  - uid: Koala.Simulation.Placement.Samples.NoOverlapRule
+    name: NoOverlapRule
+    type: Class
+  - uid: Koala.Simulation.Placement.Samples.PlacementSample
+    name: PlacementSample
+    type: Class
+  - uid: Koala.Simulation.Placement.Samples.Sample_Placeable_Object
+    name: Sample_Placeable_Object
+    type: Class
+memberLayout: SamePage

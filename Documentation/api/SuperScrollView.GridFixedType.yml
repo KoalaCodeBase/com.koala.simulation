@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.GridFixedType
+  commentId: T:SuperScrollView.GridFixedType
+  id: GridFixedType
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.GridFixedType.ColumnCountFixed
+  - SuperScrollView.GridFixedType.RowCountFixed
+  langs:
+  - csharp
+  - vb
+  name: GridFixedType
+  nameWithType: GridFixedType
+  fullName: SuperScrollView.GridFixedType
+  type: Enum
+  source:
+    id: GridFixedType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public enum GridFixedType
+    content.vb: Public Enum GridFixedType
+- uid: SuperScrollView.GridFixedType.ColumnCountFixed
+  commentId: F:SuperScrollView.GridFixedType.ColumnCountFixed
+  id: ColumnCountFixed
+  parent: SuperScrollView.GridFixedType
+  langs:
+  - csharp
+  - vb
+  name: ColumnCountFixed
+  nameWithType: GridFixedType.ColumnCountFixed
+  fullName: SuperScrollView.GridFixedType.ColumnCountFixed
+  type: Field
+  source:
+    id: ColumnCountFixed
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: ColumnCountFixed = 0
+    return:
+      type: SuperScrollView.GridFixedType
+- uid: SuperScrollView.GridFixedType.RowCountFixed
+  commentId: F:SuperScrollView.GridFixedType.RowCountFixed
+  id: RowCountFixed
+  parent: SuperScrollView.GridFixedType
+  langs:
+  - csharp
+  - vb
+  name: RowCountFixed
+  nameWithType: GridFixedType.RowCountFixed
+  fullName: SuperScrollView.GridFixedType.RowCountFixed
+  type: Field
+  source:
+    id: RowCountFixed
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Scripts\Common\CommonDefine.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: RowCountFixed = 1
+    return:
+      type: SuperScrollView.GridFixedType
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: SuperScrollView.GridFixedType
+  commentId: T:SuperScrollView.GridFixedType
+  parent: SuperScrollView
+  href: SuperScrollView.GridFixedType.html
+  name: GridFixedType
+  nameWithType: GridFixedType
+  fullName: SuperScrollView.GridFixedType

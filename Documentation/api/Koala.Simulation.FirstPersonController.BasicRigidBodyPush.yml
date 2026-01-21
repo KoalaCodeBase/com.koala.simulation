@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.FirstPersonController.BasicRigidBodyPush
+  commentId: T:Koala.Simulation.FirstPersonController.BasicRigidBodyPush
+  id: BasicRigidBodyPush
+  parent: Koala.Simulation.FirstPersonController
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: BasicRigidBodyPush
+  nameWithType: BasicRigidBodyPush
+  fullName: Koala.Simulation.FirstPersonController.BasicRigidBodyPush
+  type: Class
+  source:
+    remote:
+      path: Runtime/FirstPersonController/BasicRigidbodyPush.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: BasicRigidBodyPush
+    path: ../Packages/com.koala.simulation/Runtime/FirstPersonController/BasicRigidbodyPush.cs
+    startLine: 4
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.FirstPersonController
+  syntax:
+    content: 'public class BasicRigidBodyPush : MonoBehaviour'
+    content.vb: Public Class BasicRigidBodyPush Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+references:
+- uid: Koala.Simulation.FirstPersonController
+  commentId: N:Koala.Simulation.FirstPersonController
+  href: Koala.html
+  name: Koala.Simulation.FirstPersonController
+  nameWithType: Koala.Simulation.FirstPersonController
+  fullName: Koala.Simulation.FirstPersonController
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.FirstPersonController
+    name: FirstPersonController
+    href: Koala.Simulation.FirstPersonController.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.FirstPersonController
+    name: FirstPersonController
+    href: Koala.Simulation.FirstPersonController.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

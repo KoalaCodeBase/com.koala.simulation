@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: StarterAssets
+  commentId: N:StarterAssets
+  id: StarterAssets
+  children:
+  - StarterAssets.FirstPersonController
+  - StarterAssets.StarterAssetsInputs
+  - StarterAssets.UICanvasControllerInput
+  langs:
+  - csharp
+  - vb
+  name: StarterAssets
+  nameWithType: StarterAssets
+  fullName: StarterAssets
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: StarterAssets.FirstPersonController
+  commentId: T:StarterAssets.FirstPersonController
+  href: StarterAssets.FirstPersonController.html
+  name: FirstPersonController
+  nameWithType: FirstPersonController
+  fullName: StarterAssets.FirstPersonController
+- uid: StarterAssets.UICanvasControllerInput
+  commentId: T:StarterAssets.UICanvasControllerInput
+  href: StarterAssets.UICanvasControllerInput.html
+  name: UICanvasControllerInput
+  nameWithType: UICanvasControllerInput
+  fullName: StarterAssets.UICanvasControllerInput
+- uid: StarterAssets.StarterAssetsInputs
+  commentId: T:StarterAssets.StarterAssetsInputs
+  parent: StarterAssets
+  href: StarterAssets.StarterAssetsInputs.html
+  name: StarterAssetsInputs
+  nameWithType: StarterAssetsInputs
+  fullName: StarterAssets.StarterAssetsInputs
+- uid: StarterAssets
+  commentId: N:StarterAssets
+  href: StarterAssets.html
+  name: StarterAssets
+  nameWithType: StarterAssets
+  fullName: StarterAssets

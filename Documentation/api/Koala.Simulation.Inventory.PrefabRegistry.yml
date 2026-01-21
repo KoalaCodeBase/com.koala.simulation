@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.PrefabRegistry
+  commentId: T:Koala.Simulation.Inventory.PrefabRegistry
+  id: PrefabRegistry
+  parent: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.PrefabRegistry.GetContainerPrefab(System.String)
+  - Koala.Simulation.Inventory.PrefabRegistry.GetItemPrefab(System.String)
+  langs:
+  - csharp
+  - vb
+  name: PrefabRegistry
+  nameWithType: PrefabRegistry
+  fullName: Koala.Simulation.Inventory.PrefabRegistry
+  type: Class
+  source:
+    remote:
+      path: Runtime/Inventory/PrefabRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PrefabRegistry
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/PrefabRegistry.cs
+    startLine: 5
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "PrefabRegistry", menuName = "Koala/SO/PrefabRegistry")]
+
+      public class PrefabRegistry : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="PrefabRegistry", menuName:="Koala/SO/PrefabRegistry")>
+
+      Public Class PrefabRegistry Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: PrefabRegistry
+    - name: menuName
+      type: System.String
+      value: Koala/SO/PrefabRegistry
+- uid: Koala.Simulation.Inventory.PrefabRegistry.GetContainerPrefab(System.String)
+  commentId: M:Koala.Simulation.Inventory.PrefabRegistry.GetContainerPrefab(System.String)
+  id: GetContainerPrefab(System.String)
+  parent: Koala.Simulation.Inventory.PrefabRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetContainerPrefab(string)
+  nameWithType: PrefabRegistry.GetContainerPrefab(string)
+  fullName: Koala.Simulation.Inventory.PrefabRegistry.GetContainerPrefab(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/PrefabRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: GetContainerPrefab
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/PrefabRegistry.cs
+    startLine: 59
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  syntax:
+    content: public GameObject GetContainerPrefab(string prefabId)
+    parameters:
+    - id: prefabId
+      type: System.String
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Function GetContainerPrefab(prefabId As String) As GameObject
+  overload: Koala.Simulation.Inventory.PrefabRegistry.GetContainerPrefab*
+  nameWithType.vb: PrefabRegistry.GetContainerPrefab(String)
+  fullName.vb: Koala.Simulation.Inventory.PrefabRegistry.GetContainerPrefab(String)
+  name.vb: GetContainerPrefab(String)
+- uid: Koala.Simulation.Inventory.PrefabRegistry.GetItemPrefab(System.String)
+  commentId: M:Koala.Simulation.Inventory.PrefabRegistry.GetItemPrefab(System.String)
+  id: GetItemPrefab(System.String)
+  parent: Koala.Simulation.Inventory.PrefabRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetItemPrefab(string)
+  nameWithType: PrefabRegistry.GetItemPrefab(string)
+  fullName: Koala.Simulation.Inventory.PrefabRegistry.GetItemPrefab(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/PrefabRegistry.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: GetItemPrefab
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/PrefabRegistry.cs
+    startLine: 65
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  syntax:
+    content: public GameObject GetItemPrefab(string prefabId)
+    parameters:
+    - id: prefabId
+      type: System.String
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Function GetItemPrefab(prefabId As String) As GameObject
+  overload: Koala.Simulation.Inventory.PrefabRegistry.GetItemPrefab*
+  nameWithType.vb: PrefabRegistry.GetItemPrefab(String)
+  fullName.vb: Koala.Simulation.Inventory.PrefabRegistry.GetItemPrefab(String)
+  name.vb: GetItemPrefab(String)
+references:
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Inventory.PrefabRegistry.GetContainerPrefab*
+  commentId: Overload:Koala.Simulation.Inventory.PrefabRegistry.GetContainerPrefab
+  href: Koala.Simulation.Inventory.PrefabRegistry.html#Koala_Simulation_Inventory_PrefabRegistry_GetContainerPrefab_System_String_
+  name: GetContainerPrefab
+  nameWithType: PrefabRegistry.GetContainerPrefab
+  fullName: Koala.Simulation.Inventory.PrefabRegistry.GetContainerPrefab
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Koala.Simulation.Inventory.PrefabRegistry.GetItemPrefab*
+  commentId: Overload:Koala.Simulation.Inventory.PrefabRegistry.GetItemPrefab
+  href: Koala.Simulation.Inventory.PrefabRegistry.html#Koala_Simulation_Inventory_PrefabRegistry_GetItemPrefab_System_String_
+  name: GetItemPrefab
+  nameWithType: PrefabRegistry.GetItemPrefab
+  fullName: Koala.Simulation.Inventory.PrefabRegistry.GetItemPrefab

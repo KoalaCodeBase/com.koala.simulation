@@ -1,0 +1,1001 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Input.InputManager
+  commentId: T:Koala.Simulation.Input.InputManager
+  id: InputManager
+  parent: Koala.Simulation.Input
+  children:
+  - Koala.Simulation.Input.InputManager.#ctor(UnityEngine.InputSystem.InputActionAsset,System.String,Koala.Simulation.Input.InputSpriteAsset)
+  - Koala.Simulation.Input.InputManager.CurrentActionMap
+  - Koala.Simulation.Input.InputManager.FindAction(System.String)
+  - Koala.Simulation.Input.InputManager.GetKeyDisplayName(System.String,System.Int32)
+  - Koala.Simulation.Input.InputManager.OnActionMapChanged
+  - Koala.Simulation.Input.InputManager.OnAnyActionPhase
+  - Koala.Simulation.Input.InputManager.OnAnyActionStarted
+  - Koala.Simulation.Input.InputManager.PopActionMap
+  - Koala.Simulation.Input.InputManager.PushActionMap(System.String)
+  - Koala.Simulation.Input.InputManager.SetActionMap(System.String)
+  - Koala.Simulation.Input.InputManager.Subscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext})
+  - Koala.Simulation.Input.InputManager.Subscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext},UnityEngine.InputSystem.InputActionPhase)
+  - Koala.Simulation.Input.InputManager.TryGetSprite(System.String,UnityEngine.Sprite@)
+  - Koala.Simulation.Input.InputManager.Unsubscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext})
+  langs:
+  - csharp
+  - vb
+  name: InputManager
+  nameWithType: InputManager
+  fullName: Koala.Simulation.Input.InputManager
+  type: Class
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InputManager
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 78
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Centralized input system built on Unity's new Input System.
+
+
+    Provides event-based access to all input actions, automatic handling of 
+
+    action maps, and support for runtime map switching with stack semantics.
+
+
+    Key features:
+
+    - Subscribe/unsubscribe to any action by name
+
+    - Global <xref href="Koala.Simulation.Input.InputManager.OnAnyActionStarted" data-throw-if-not-resolved="false"></xref> event for catching all input started phase
+
+    - Global <xref href="Koala.Simulation.Input.InputManager.OnAnyActionPhase" data-throw-if-not-resolved="false"></xref> event for catching all input phase (started, performed, canceled)
+
+    - Switch, push, and pop between multiple action maps
+
+    - Notifies when the active action map changes
+
+    - Integrates with <code>InputSettingsService</code> for binding overrides
+
+
+    Access this class directly via <code>InputManager</code>.
+
+    Requires <code>SimulationManager</code> to be present in the scene.
+
+    Only one instance of <code>SimulationManager</code> should exist.
+  example:
+  - >-
+    Example: Subscribing to the "Jump" action
+
+    <pre><code class="lang-csharp">private void OnEnable()
+
+    {
+        InputManager.Subscribe("Jump", OnJump);
+    }
+
+
+    private void OnDisable()
+
+    {
+        InputManager.Unsubscribe("Jump", OnJump);
+    }
+
+
+    private void OnJump(InputAction.CallbackContext ctx)
+
+    {
+        if (ctx.performed)
+            Debug.Log("Jump pressed!");
+    }</code></pre>
+  - >-
+    Example: Listening to all actions
+
+    <pre><code class="lang-csharp">private void OnEnable()
+
+    {
+        InputManager.OnAnyAction += OnAny;
+    }
+
+
+    private void OnDisable()
+
+    {
+        InputManager.OnAnyAction -= OnAny;
+    }
+
+
+    private void OnAny(InputAction.CallbackContext ctx)
+
+    {
+        Debug.Log($"Action fired: {ctx.action.name}");
+    }</code></pre>
+  - >-
+    Example: Switching action maps
+
+    <pre><code class="lang-csharp">// Set UI as the active map (stack cleared)
+
+    InputManager.SetActionMap("UI");
+
+
+    // Push Pause menu map (UI stays underneath)
+
+    InputManager.PushActionMap("Pause");
+
+
+    // Pop Pause -&gt; returns to UI
+
+    InputManager.PopActionMap();</code></pre>
+  syntax:
+    content: public sealed class InputManager
+    content.vb: Public NotInheritable Class InputManager
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Input.InputManager.OnAnyActionStarted
+  commentId: E:Koala.Simulation.Input.InputManager.OnAnyActionStarted
+  id: OnAnyActionStarted
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: OnAnyActionStarted
+  nameWithType: InputManager.OnAnyActionStarted
+  fullName: Koala.Simulation.Input.InputManager.OnAnyActionStarted
+  type: Event
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnAnyActionStarted
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 96
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Raised when any input action enters the Started phase.
+
+    Provides the <xref href="UnityEngine.InputSystem.InputAction.CallbackContext" data-throw-if-not-resolved="false"></xref> for the event.
+  example: []
+  syntax:
+    content: public static event Action<InputAction.CallbackContext> OnAnyActionStarted
+    return:
+      type: System.Action{UnityEngine.InputSystem.InputAction.CallbackContext}
+    content.vb: Public Shared Event OnAnyActionStarted As Action(Of InputAction.CallbackContext)
+- uid: Koala.Simulation.Input.InputManager.OnAnyActionPhase
+  commentId: E:Koala.Simulation.Input.InputManager.OnAnyActionPhase
+  id: OnAnyActionPhase
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: OnAnyActionPhase
+  nameWithType: InputManager.OnAnyActionPhase
+  fullName: Koala.Simulation.Input.InputManager.OnAnyActionPhase
+  type: Event
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnAnyActionPhase
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 101
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Raised for every input action, regardless of phase.
+
+    Provides the <xref href="UnityEngine.InputSystem.InputAction.CallbackContext" data-throw-if-not-resolved="false"></xref> for the event.
+  example: []
+  syntax:
+    content: public static event Action<InputAction.CallbackContext> OnAnyActionPhase
+    return:
+      type: System.Action{UnityEngine.InputSystem.InputAction.CallbackContext}
+    content.vb: Public Shared Event OnAnyActionPhase As Action(Of InputAction.CallbackContext)
+- uid: Koala.Simulation.Input.InputManager.OnActionMapChanged
+  commentId: E:Koala.Simulation.Input.InputManager.OnActionMapChanged
+  id: OnActionMapChanged
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: OnActionMapChanged
+  nameWithType: InputManager.OnActionMapChanged
+  fullName: Koala.Simulation.Input.InputManager.OnActionMapChanged
+  type: Event
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: OnActionMapChanged
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 106
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Raised whenever the active action map changes.
+
+    Provides the new action map's name.
+  example: []
+  syntax:
+    content: public static event Action<string> OnActionMapChanged
+    return:
+      type: System.Action{System.String}
+    content.vb: Public Shared Event OnActionMapChanged As Action(Of String)
+- uid: Koala.Simulation.Input.InputManager.#ctor(UnityEngine.InputSystem.InputActionAsset,System.String,Koala.Simulation.Input.InputSpriteAsset)
+  commentId: M:Koala.Simulation.Input.InputManager.#ctor(UnityEngine.InputSystem.InputActionAsset,System.String,Koala.Simulation.Input.InputSpriteAsset)
+  id: '#ctor(UnityEngine.InputSystem.InputActionAsset,System.String,Koala.Simulation.Input.InputSpriteAsset)'
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: InputManager(InputActionAsset, string, InputSpriteAsset)
+  nameWithType: InputManager.InputManager(InputActionAsset, string, InputSpriteAsset)
+  fullName: Koala.Simulation.Input.InputManager.InputManager(UnityEngine.InputSystem.InputActionAsset, string, Koala.Simulation.Input.InputSpriteAsset)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: .ctor
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 108
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  syntax:
+    content: public InputManager(InputActionAsset actionAsset, string defaultActionMap, InputSpriteAsset inputSpriteAsset)
+    parameters:
+    - id: actionAsset
+      type: UnityEngine.InputSystem.InputActionAsset
+    - id: defaultActionMap
+      type: System.String
+    - id: inputSpriteAsset
+      type: Koala.Simulation.Input.InputSpriteAsset
+    content.vb: Public Sub New(actionAsset As InputActionAsset, defaultActionMap As String, inputSpriteAsset As InputSpriteAsset)
+  overload: Koala.Simulation.Input.InputManager.#ctor*
+  nameWithType.vb: InputManager.New(InputActionAsset, String, InputSpriteAsset)
+  fullName.vb: Koala.Simulation.Input.InputManager.New(UnityEngine.InputSystem.InputActionAsset, String, Koala.Simulation.Input.InputSpriteAsset)
+  name.vb: New(InputActionAsset, String, InputSpriteAsset)
+- uid: Koala.Simulation.Input.InputManager.Subscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext})
+  commentId: M:Koala.Simulation.Input.InputManager.Subscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext})
+  id: Subscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext})
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(string, Action<CallbackContext>)
+  nameWithType: InputManager.Subscribe(string, Action<InputAction.CallbackContext>)
+  fullName: Koala.Simulation.Input.InputManager.Subscribe(string, System.Action<UnityEngine.InputSystem.InputAction.CallbackContext>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Subscribe
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 168
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Subscribes a callback to the specified action by name. The callback is invoked for **all phases** of the action (Started, Performed, and Canceled).
+
+    Use this when you need the full <xref href="UnityEngine.InputSystem.InputAction.CallbackContext" data-throw-if-not-resolved="false"></xref>.
+
+    <p> Example: <code>InputManager.Subscribe("Jump", OnJump)</code>.</p>
+  example: []
+  syntax:
+    content: public static void Subscribe(string actionName, Action<InputAction.CallbackContext> callback)
+    parameters:
+    - id: actionName
+      type: System.String
+    - id: callback
+      type: System.Action{UnityEngine.InputSystem.InputAction.CallbackContext}
+    content.vb: Public Shared Sub Subscribe(actionName As String, callback As Action(Of InputAction.CallbackContext))
+  overload: Koala.Simulation.Input.InputManager.Subscribe*
+  nameWithType.vb: InputManager.Subscribe(String, Action(Of InputAction.CallbackContext))
+  fullName.vb: Koala.Simulation.Input.InputManager.Subscribe(String, System.Action(Of UnityEngine.InputSystem.InputAction.CallbackContext))
+  name.vb: Subscribe(String, Action(Of CallbackContext))
+- uid: Koala.Simulation.Input.InputManager.Subscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext},UnityEngine.InputSystem.InputActionPhase)
+  commentId: M:Koala.Simulation.Input.InputManager.Subscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext},UnityEngine.InputSystem.InputActionPhase)
+  id: Subscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext},UnityEngine.InputSystem.InputActionPhase)
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(string, Action<CallbackContext>, InputActionPhase)
+  nameWithType: InputManager.Subscribe(string, Action<InputAction.CallbackContext>, InputActionPhase)
+  fullName: Koala.Simulation.Input.InputManager.Subscribe(string, System.Action<UnityEngine.InputSystem.InputAction.CallbackContext>, UnityEngine.InputSystem.InputActionPhase)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Subscribe
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 192
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Subscribes a callback to the specified action by name, filtered by phase.
+
+
+    The callback is only invoked when the action enters the given phase 
+
+    (Started, Performed, or Canceled).
+
+    Defaults to <xref href="UnityEngine.InputSystem.InputActionPhase.Started" data-throw-if-not-resolved="false"></xref> for 
+
+    button-like behavior.
+
+    <p> Example:
+
+    Called only once when "Jump" starts
+
+    <code>InputManager.Subscribe("Jump", OnJump, InputActionPhase.Started);</code>
+
+
+    Called every frame while "Move" is performed
+
+    <code>InputManager.Subscribe("Move", OnMove, InputActionPhase.Performed);</code>
+
+    </p>
+  example: []
+  syntax:
+    content: public static void Subscribe(string actionName, Action<InputAction.CallbackContext> callback, InputActionPhase phase = InputActionPhase.Started)
+    parameters:
+    - id: actionName
+      type: System.String
+    - id: callback
+      type: System.Action{UnityEngine.InputSystem.InputAction.CallbackContext}
+    - id: phase
+      type: UnityEngine.InputSystem.InputActionPhase
+    content.vb: Public Shared Sub Subscribe(actionName As String, callback As Action(Of InputAction.CallbackContext), phase As InputActionPhase = InputActionPhase.Started)
+  overload: Koala.Simulation.Input.InputManager.Subscribe*
+  nameWithType.vb: InputManager.Subscribe(String, Action(Of InputAction.CallbackContext), InputActionPhase)
+  fullName.vb: Koala.Simulation.Input.InputManager.Subscribe(String, System.Action(Of UnityEngine.InputSystem.InputAction.CallbackContext), UnityEngine.InputSystem.InputActionPhase)
+  name.vb: Subscribe(String, Action(Of CallbackContext), InputActionPhase)
+- uid: Koala.Simulation.Input.InputManager.Unsubscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext})
+  commentId: M:Koala.Simulation.Input.InputManager.Unsubscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext})
+  id: Unsubscribe(System.String,System.Action{UnityEngine.InputSystem.InputAction.CallbackContext})
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe(string, Action<CallbackContext>)
+  nameWithType: InputManager.Unsubscribe(string, Action<InputAction.CallbackContext>)
+  fullName: Koala.Simulation.Input.InputManager.Unsubscribe(string, System.Action<UnityEngine.InputSystem.InputAction.CallbackContext>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Unsubscribe
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 208
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: Unsubscribe from a previously subscribed action.
+  example: []
+  syntax:
+    content: public static void Unsubscribe(string actionName, Action<InputAction.CallbackContext> callback)
+    parameters:
+    - id: actionName
+      type: System.String
+    - id: callback
+      type: System.Action{UnityEngine.InputSystem.InputAction.CallbackContext}
+    content.vb: Public Shared Sub Unsubscribe(actionName As String, callback As Action(Of InputAction.CallbackContext))
+  overload: Koala.Simulation.Input.InputManager.Unsubscribe*
+  nameWithType.vb: InputManager.Unsubscribe(String, Action(Of InputAction.CallbackContext))
+  fullName.vb: Koala.Simulation.Input.InputManager.Unsubscribe(String, System.Action(Of UnityEngine.InputSystem.InputAction.CallbackContext))
+  name.vb: Unsubscribe(String, Action(Of CallbackContext))
+- uid: Koala.Simulation.Input.InputManager.FindAction(System.String)
+  commentId: M:Koala.Simulation.Input.InputManager.FindAction(System.String)
+  id: FindAction(System.String)
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: FindAction(string)
+  nameWithType: InputManager.FindAction(string)
+  fullName: Koala.Simulation.Input.InputManager.FindAction(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: FindAction
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 219
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Find an action by name in the currently active action map.
+
+    Returns <code>null</code> if not found.
+  example: []
+  syntax:
+    content: public static InputAction FindAction(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public Shared Function FindAction(actionName As String) As InputAction
+  overload: Koala.Simulation.Input.InputManager.FindAction*
+  nameWithType.vb: InputManager.FindAction(String)
+  fullName.vb: Koala.Simulation.Input.InputManager.FindAction(String)
+  name.vb: FindAction(String)
+- uid: Koala.Simulation.Input.InputManager.SetActionMap(System.String)
+  commentId: M:Koala.Simulation.Input.InputManager.SetActionMap(System.String)
+  id: SetActionMap(System.String)
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: SetActionMap(string)
+  nameWithType: InputManager.SetActionMap(string)
+  fullName: Koala.Simulation.Input.InputManager.SetActionMap(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: SetActionMap
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 228
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Sets the active action map directly.
+
+    Clears the internal stack and replaces it with the given map.
+  example: []
+  syntax:
+    content: public static void SetActionMap(string mapName)
+    parameters:
+    - id: mapName
+      type: System.String
+    content.vb: Public Shared Sub SetActionMap(mapName As String)
+  overload: Koala.Simulation.Input.InputManager.SetActionMap*
+  nameWithType.vb: InputManager.SetActionMap(String)
+  fullName.vb: Koala.Simulation.Input.InputManager.SetActionMap(String)
+  name.vb: SetActionMap(String)
+- uid: Koala.Simulation.Input.InputManager.PushActionMap(System.String)
+  commentId: M:Koala.Simulation.Input.InputManager.PushActionMap(System.String)
+  id: PushActionMap(System.String)
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: PushActionMap(string)
+  nameWithType: InputManager.PushActionMap(string)
+  fullName: Koala.Simulation.Input.InputManager.PushActionMap(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PushActionMap
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 240
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Pushes a new action map onto the stack and activates it.
+
+    When popped, the previous map will be restored.
+  example: []
+  syntax:
+    content: public static void PushActionMap(string mapName)
+    parameters:
+    - id: mapName
+      type: System.String
+    content.vb: Public Shared Sub PushActionMap(mapName As String)
+  overload: Koala.Simulation.Input.InputManager.PushActionMap*
+  nameWithType.vb: InputManager.PushActionMap(String)
+  fullName.vb: Koala.Simulation.Input.InputManager.PushActionMap(String)
+  name.vb: PushActionMap(String)
+- uid: Koala.Simulation.Input.InputManager.PopActionMap
+  commentId: M:Koala.Simulation.Input.InputManager.PopActionMap
+  id: PopActionMap
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: PopActionMap()
+  nameWithType: InputManager.PopActionMap()
+  fullName: Koala.Simulation.Input.InputManager.PopActionMap()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PopActionMap
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 251
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Pops the current action map from the stack and restores the previous one.
+
+    Does nothing if there is only one map left.
+  example: []
+  syntax:
+    content: public static void PopActionMap()
+    content.vb: Public Shared Sub PopActionMap()
+  overload: Koala.Simulation.Input.InputManager.PopActionMap*
+- uid: Koala.Simulation.Input.InputManager.GetKeyDisplayName(System.String,System.Int32)
+  commentId: M:Koala.Simulation.Input.InputManager.GetKeyDisplayName(System.String,System.Int32)
+  id: GetKeyDisplayName(System.String,System.Int32)
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: GetKeyDisplayName(string, int)
+  nameWithType: InputManager.GetKeyDisplayName(string, int)
+  fullName: Koala.Simulation.Input.InputManager.GetKeyDisplayName(string, int)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: GetKeyDisplayName
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 292
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Gets the display name of the binding for a given action.
+
+    Uses caching for fast repeated access. 
+
+    Call <xref href="Koala.Simulation.Input.InputManager.InvalidateCache" data-throw-if-not-resolved="false"></xref> after rebinding.
+  example: []
+  syntax:
+    content: public static string GetKeyDisplayName(string actionName, int bindingIndex = 0)
+    parameters:
+    - id: actionName
+      type: System.String
+    - id: bindingIndex
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetKeyDisplayName(actionName As String, bindingIndex As Integer = 0) As String
+  overload: Koala.Simulation.Input.InputManager.GetKeyDisplayName*
+  nameWithType.vb: InputManager.GetKeyDisplayName(String, Integer)
+  fullName.vb: Koala.Simulation.Input.InputManager.GetKeyDisplayName(String, Integer)
+  name.vb: GetKeyDisplayName(String, Integer)
+- uid: Koala.Simulation.Input.InputManager.TryGetSprite(System.String,UnityEngine.Sprite@)
+  commentId: M:Koala.Simulation.Input.InputManager.TryGetSprite(System.String,UnityEngine.Sprite@)
+  id: TryGetSprite(System.String,UnityEngine.Sprite@)
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: TryGetSprite(string, out Sprite)
+  nameWithType: InputManager.TryGetSprite(string, out Sprite)
+  fullName: Koala.Simulation.Input.InputManager.TryGetSprite(string, out UnityEngine.Sprite)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: TryGetSprite
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 325
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: Gets a sprite for a given action name if it exists. e.g LMB, RMB
+  example: []
+  syntax:
+    content: public static bool TryGetSprite(string actionName, out Sprite sprite)
+    parameters:
+    - id: actionName
+      type: System.String
+      description: The name of the input action.
+    - id: sprite
+      type: UnityEngine.Sprite
+      description: The corresponding sprite if found.
+    return:
+      type: System.Boolean
+      description: True if a sprite was found; otherwise, false.
+    content.vb: Public Shared Function TryGetSprite(actionName As String, sprite As Sprite) As Boolean
+  overload: Koala.Simulation.Input.InputManager.TryGetSprite*
+  nameWithType.vb: InputManager.TryGetSprite(String, Sprite)
+  fullName.vb: Koala.Simulation.Input.InputManager.TryGetSprite(String, UnityEngine.Sprite)
+  name.vb: TryGetSprite(String, Sprite)
+- uid: Koala.Simulation.Input.InputManager.CurrentActionMap
+  commentId: P:Koala.Simulation.Input.InputManager.CurrentActionMap
+  id: CurrentActionMap
+  parent: Koala.Simulation.Input.InputManager
+  langs:
+  - csharp
+  - vb
+  name: CurrentActionMap
+  nameWithType: InputManager.CurrentActionMap
+  fullName: Koala.Simulation.Input.InputManager.CurrentActionMap
+  type: Property
+  source:
+    remote:
+      path: Runtime/Input/InputManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CurrentActionMap
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputManager.cs
+    startLine: 333
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Gets the name of the currently active action map.
+
+    Returns <code>null</code> if no map is active.
+  example: []
+  syntax:
+    content: public static string CurrentActionMap { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property CurrentActionMap As String
+  overload: Koala.Simulation.Input.InputManager.CurrentActionMap*
+references:
+- uid: Koala.Simulation.Input.InputManager.OnAnyActionStarted
+  commentId: E:Koala.Simulation.Input.InputManager.OnAnyActionStarted
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_OnAnyActionStarted
+  name: OnAnyActionStarted
+  nameWithType: InputManager.OnAnyActionStarted
+  fullName: Koala.Simulation.Input.InputManager.OnAnyActionStarted
+- uid: Koala.Simulation.Input.InputManager.OnAnyActionPhase
+  commentId: E:Koala.Simulation.Input.InputManager.OnAnyActionPhase
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_OnAnyActionPhase
+  name: OnAnyActionPhase
+  nameWithType: InputManager.OnAnyActionPhase
+  fullName: Koala.Simulation.Input.InputManager.OnAnyActionPhase
+- uid: Koala.Simulation.Input
+  commentId: N:Koala.Simulation.Input
+  href: Koala.html
+  name: Koala.Simulation.Input
+  nameWithType: Koala.Simulation.Input
+  fullName: Koala.Simulation.Input
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.InputSystem.InputAction.CallbackContext
+  commentId: T:UnityEngine.InputSystem.InputAction.CallbackContext
+  name: InputAction.CallbackContext
+  nameWithType: InputAction.CallbackContext
+  fullName: UnityEngine.InputSystem.InputAction.CallbackContext
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+- uid: System.Action{UnityEngine.InputSystem.InputAction.CallbackContext}
+  commentId: T:System.Action{UnityEngine.InputSystem.InputAction.CallbackContext}
+  parent: System
+  definition: System.Action`1
+  name: Action<InputAction.CallbackContext>
+  nameWithType: Action<InputAction.CallbackContext>
+  fullName: System.Action<UnityEngine.InputSystem.InputAction.CallbackContext>
+  nameWithType.vb: Action(Of InputAction.CallbackContext)
+  fullName.vb: System.Action(Of UnityEngine.InputSystem.InputAction.CallbackContext)
+  name.vb: Action(Of InputAction.CallbackContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  name: Action<string>
+  nameWithType: Action<string>
+  fullName: System.Action<string>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Koala.Simulation.Input.InputManager.#ctor*
+  commentId: Overload:Koala.Simulation.Input.InputManager.#ctor
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager__ctor_UnityEngine_InputSystem_InputActionAsset_System_String_Koala_Simulation_Input_InputSpriteAsset_
+  name: InputManager
+  nameWithType: InputManager.InputManager
+  fullName: Koala.Simulation.Input.InputManager.InputManager
+  nameWithType.vb: InputManager.New
+  fullName.vb: Koala.Simulation.Input.InputManager.New
+  name.vb: New
+- uid: UnityEngine.InputSystem.InputActionAsset
+  commentId: T:UnityEngine.InputSystem.InputActionAsset
+  parent: UnityEngine.InputSystem
+  name: InputActionAsset
+  nameWithType: InputActionAsset
+  fullName: UnityEngine.InputSystem.InputActionAsset
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Koala.Simulation.Input.InputSpriteAsset
+  commentId: T:Koala.Simulation.Input.InputSpriteAsset
+  parent: Koala.Simulation.Input
+  href: Koala.Simulation.Input.InputSpriteAsset.html
+  name: InputSpriteAsset
+  nameWithType: InputSpriteAsset
+  fullName: Koala.Simulation.Input.InputSpriteAsset
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+- uid: Koala.Simulation.Input.InputManager.Subscribe*
+  commentId: Overload:Koala.Simulation.Input.InputManager.Subscribe
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_Subscribe_System_String_System_Action_UnityEngine_InputSystem_InputAction_CallbackContext__
+  name: Subscribe
+  nameWithType: InputManager.Subscribe
+  fullName: Koala.Simulation.Input.InputManager.Subscribe
+- uid: UnityEngine.InputSystem.InputActionPhase.Started
+  commentId: F:UnityEngine.InputSystem.InputActionPhase.Started
+  name: Started
+  nameWithType: InputActionPhase.Started
+  fullName: UnityEngine.InputSystem.InputActionPhase.Started
+- uid: UnityEngine.InputSystem.InputActionPhase
+  commentId: T:UnityEngine.InputSystem.InputActionPhase
+  parent: UnityEngine.InputSystem
+  name: InputActionPhase
+  nameWithType: InputActionPhase
+  fullName: UnityEngine.InputSystem.InputActionPhase
+- uid: Koala.Simulation.Input.InputManager.Unsubscribe*
+  commentId: Overload:Koala.Simulation.Input.InputManager.Unsubscribe
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_Unsubscribe_System_String_System_Action_UnityEngine_InputSystem_InputAction_CallbackContext__
+  name: Unsubscribe
+  nameWithType: InputManager.Unsubscribe
+  fullName: Koala.Simulation.Input.InputManager.Unsubscribe
+- uid: Koala.Simulation.Input.InputManager.FindAction*
+  commentId: Overload:Koala.Simulation.Input.InputManager.FindAction
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_FindAction_System_String_
+  name: FindAction
+  nameWithType: InputManager.FindAction
+  fullName: Koala.Simulation.Input.InputManager.FindAction
+- uid: UnityEngine.InputSystem.InputAction
+  commentId: T:UnityEngine.InputSystem.InputAction
+  parent: UnityEngine.InputSystem
+  name: InputAction
+  nameWithType: InputAction
+  fullName: UnityEngine.InputSystem.InputAction
+- uid: Koala.Simulation.Input.InputManager.SetActionMap*
+  commentId: Overload:Koala.Simulation.Input.InputManager.SetActionMap
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_SetActionMap_System_String_
+  name: SetActionMap
+  nameWithType: InputManager.SetActionMap
+  fullName: Koala.Simulation.Input.InputManager.SetActionMap
+- uid: Koala.Simulation.Input.InputManager.PushActionMap*
+  commentId: Overload:Koala.Simulation.Input.InputManager.PushActionMap
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_PushActionMap_System_String_
+  name: PushActionMap
+  nameWithType: InputManager.PushActionMap
+  fullName: Koala.Simulation.Input.InputManager.PushActionMap
+- uid: Koala.Simulation.Input.InputManager.PopActionMap*
+  commentId: Overload:Koala.Simulation.Input.InputManager.PopActionMap
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_PopActionMap
+  name: PopActionMap
+  nameWithType: InputManager.PopActionMap
+  fullName: Koala.Simulation.Input.InputManager.PopActionMap
+- uid: Koala.Simulation.Input.InputManager.InvalidateCache
+  commentId: M:Koala.Simulation.Input.InputManager.InvalidateCache
+  name: InvalidateCache()
+  nameWithType: InputManager.InvalidateCache()
+  fullName: Koala.Simulation.Input.InputManager.InvalidateCache()
+  spec.csharp:
+  - uid: Koala.Simulation.Input.InputManager.InvalidateCache
+    name: InvalidateCache
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Input.InputManager.InvalidateCache
+    name: InvalidateCache
+  - name: (
+  - name: )
+- uid: Koala.Simulation.Input.InputManager.GetKeyDisplayName*
+  commentId: Overload:Koala.Simulation.Input.InputManager.GetKeyDisplayName
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_GetKeyDisplayName_System_String_System_Int32_
+  name: GetKeyDisplayName
+  nameWithType: InputManager.GetKeyDisplayName
+  fullName: Koala.Simulation.Input.InputManager.GetKeyDisplayName
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koala.Simulation.Input.InputManager.TryGetSprite*
+  commentId: Overload:Koala.Simulation.Input.InputManager.TryGetSprite
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_TryGetSprite_System_String_UnityEngine_Sprite__
+  name: TryGetSprite
+  nameWithType: InputManager.TryGetSprite
+  fullName: Koala.Simulation.Input.InputManager.TryGetSprite
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Input.InputManager.CurrentActionMap*
+  commentId: Overload:Koala.Simulation.Input.InputManager.CurrentActionMap
+  href: Koala.Simulation.Input.InputManager.html#Koala_Simulation_Input_InputManager_CurrentActionMap
+  name: CurrentActionMap
+  nameWithType: InputManager.CurrentActionMap
+  fullName: Koala.Simulation.Input.InputManager.CurrentActionMap

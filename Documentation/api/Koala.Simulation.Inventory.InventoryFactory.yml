@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.InventoryFactory
+  commentId: T:Koala.Simulation.Inventory.InventoryFactory
+  id: InventoryFactory
+  parent: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.InventoryFactory.CreateItem``1(System.String)
+  - Koala.Simulation.Inventory.InventoryFactory.Create``1(System.String)
+  langs:
+  - csharp
+  - vb
+  name: InventoryFactory
+  nameWithType: InventoryFactory
+  fullName: Koala.Simulation.Inventory.InventoryFactory
+  type: Class
+  source:
+    remote:
+      path: Runtime/Inventory/InventoryFactory.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InventoryFactory
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/InventoryFactory.cs
+    startLine: 11
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: >-
+    Factory class for creating container and item instances from registered prefabs.
+
+
+    Uses a <xref href="Koala.Simulation.Inventory.PrefabRegistry" data-throw-if-not-resolved="false"></xref> to look up prefabs by ID and instantiate them at runtime.
+  example: []
+  syntax:
+    content: public class InventoryFactory
+    content.vb: Public Class InventoryFactory
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Inventory.InventoryFactory.Create``1(System.String)
+  commentId: M:Koala.Simulation.Inventory.InventoryFactory.Create``1(System.String)
+  id: Create``1(System.String)
+  parent: Koala.Simulation.Inventory.InventoryFactory
+  langs:
+  - csharp
+  - vb
+  name: Create<T>(string)
+  nameWithType: InventoryFactory.Create<T>(string)
+  fullName: Koala.Simulation.Inventory.InventoryFactory.Create<T>(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/InventoryFactory.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Create
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/InventoryFactory.cs
+    startLine: 26
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Creates a new container instance from the registered prefab with the given ID.
+  example: []
+  syntax:
+    content: 'public static T Create<T>(string prefabId) where T : Container'
+    parameters:
+    - id: prefabId
+      type: System.String
+      description: The ID of the container prefab.
+    typeParameters:
+    - id: T
+      description: The container type to create.
+    return:
+      type: '{T}'
+      description: The created container, or null if not found.
+    content.vb: Public Shared Function Create(Of T As Container)(prefabId As String) As T
+  overload: Koala.Simulation.Inventory.InventoryFactory.Create*
+  nameWithType.vb: InventoryFactory.Create(Of T)(String)
+  fullName.vb: Koala.Simulation.Inventory.InventoryFactory.Create(Of T)(String)
+  name.vb: Create(Of T)(String)
+- uid: Koala.Simulation.Inventory.InventoryFactory.CreateItem``1(System.String)
+  commentId: M:Koala.Simulation.Inventory.InventoryFactory.CreateItem``1(System.String)
+  id: CreateItem``1(System.String)
+  parent: Koala.Simulation.Inventory.InventoryFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateItem<T>(string)
+  nameWithType: InventoryFactory.CreateItem<T>(string)
+  fullName: Koala.Simulation.Inventory.InventoryFactory.CreateItem<T>(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/InventoryFactory.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CreateItem
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/InventoryFactory.cs
+    startLine: 48
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Creates a new item instance from the registered prefab with the given ID.
+  example: []
+  syntax:
+    content: 'public static T CreateItem<T>(string prefabId) where T : Item'
+    parameters:
+    - id: prefabId
+      type: System.String
+      description: The ID of the item prefab.
+    typeParameters:
+    - id: T
+      description: The item type to create.
+    return:
+      type: '{T}'
+      description: The created item, or null if not found.
+    content.vb: Public Shared Function CreateItem(Of T As Item)(prefabId As String) As T
+  overload: Koala.Simulation.Inventory.InventoryFactory.CreateItem*
+  nameWithType.vb: InventoryFactory.CreateItem(Of T)(String)
+  fullName.vb: Koala.Simulation.Inventory.InventoryFactory.CreateItem(Of T)(String)
+  name.vb: CreateItem(Of T)(String)
+references:
+- uid: Koala.Simulation.Inventory.PrefabRegistry
+  commentId: T:Koala.Simulation.Inventory.PrefabRegistry
+  href: Koala.Simulation.Inventory.PrefabRegistry.html
+  name: PrefabRegistry
+  nameWithType: PrefabRegistry
+  fullName: Koala.Simulation.Inventory.PrefabRegistry
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Inventory.InventoryFactory.Create*
+  commentId: Overload:Koala.Simulation.Inventory.InventoryFactory.Create
+  href: Koala.Simulation.Inventory.InventoryFactory.html#Koala_Simulation_Inventory_InventoryFactory_Create__1_System_String_
+  name: Create
+  nameWithType: InventoryFactory.Create
+  fullName: Koala.Simulation.Inventory.InventoryFactory.Create
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Koala.Simulation.Inventory.InventoryFactory.CreateItem*
+  commentId: Overload:Koala.Simulation.Inventory.InventoryFactory.CreateItem
+  href: Koala.Simulation.Inventory.InventoryFactory.html#Koala_Simulation_Inventory_InventoryFactory_CreateItem__1_System_String_
+  name: CreateItem
+  nameWithType: InventoryFactory.CreateItem
+  fullName: Koala.Simulation.Inventory.InventoryFactory.CreateItem

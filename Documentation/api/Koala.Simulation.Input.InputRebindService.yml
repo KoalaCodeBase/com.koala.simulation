@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Input.InputRebindService
+  commentId: T:Koala.Simulation.Input.InputRebindService
+  id: InputRebindService
+  parent: Koala.Simulation.Input
+  children:
+  - Koala.Simulation.Input.InputRebindService.GetBindingDisplayName(System.String,System.Int32)
+  - Koala.Simulation.Input.InputRebindService.StartRebind(System.String,System.Int32,System.Action,System.Action)
+  langs:
+  - csharp
+  - vb
+  name: InputRebindService
+  nameWithType: InputRebindService
+  fullName: Koala.Simulation.Input.InputRebindService
+  type: Class
+  source:
+    remote:
+      path: Runtime/Input/InputRebindService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InputRebindService
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputRebindService.cs
+    startLine: 34
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Provides utility methods for rebinding input actions at runtime.
+
+
+    Wraps Unity's <code>InputAction.PerformInteractiveRebinding</code> API 
+
+    and integrates with <xref uid="Koala.Simulation.Input.InputSettingsService" altProperty="fullName" displayProperty="name"></xref> to automatically save 
+
+    binding overrides into the simulation's save system.
+
+
+    Key features:
+
+    - Start an interactive rebind for any action and binding index
+
+    - Automatically saves and restores overrides
+
+    - Provides display strings for showing current bindings in UI
+
+
+    Commonly used from UI buttons or settings menus to allow players 
+
+    to customize their controls.
+  example:
+  - >-
+    Example: Rebinding the "Jump" action
+
+    <pre><code class="lang-csharp">public void OnClick_RebindJump()
+
+    {
+        InputRebindService.StartRebind("Jump", 0,
+            onComplete: () =&gt;
+            {
+                string display = InputRebindService.GetBindingDisplayName("Jump", 0);
+                Debug.Log($"Jump rebound → {display}");
+            });
+    }</code></pre>
+  syntax:
+    content: public static class InputRebindService
+    content.vb: Public Module InputRebindService
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Input.InputRebindService.StartRebind(System.String,System.Int32,System.Action,System.Action)
+  commentId: M:Koala.Simulation.Input.InputRebindService.StartRebind(System.String,System.Int32,System.Action,System.Action)
+  id: StartRebind(System.String,System.Int32,System.Action,System.Action)
+  parent: Koala.Simulation.Input.InputRebindService
+  langs:
+  - csharp
+  - vb
+  name: StartRebind(string, int, Action, Action)
+  nameWithType: InputRebindService.StartRebind(string, int, Action, Action)
+  fullName: Koala.Simulation.Input.InputRebindService.StartRebind(string, int, System.Action, System.Action)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputRebindService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: StartRebind
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputRebindService.cs
+    startLine: 53
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Starts an interactive rebind for the given action and binding index.
+
+
+    Opens a "waiting for input" state. The next key/button pressed by the player 
+
+    will be assigned to the binding. Automatically saves overrides on completion.
+  example:
+  - >-
+    <pre><code class="lang-csharp">InputRebindService.StartRebind("Attack", 0,
+        onComplete: () =&gt; Debug.Log("Attack rebound!"),
+        onCancel: () =&gt; Debug.Log("Rebind canceled."));</code></pre>
+  syntax:
+    content: public static void StartRebind(string actionName, int bindingIndex, Action onComplete = null, Action onCancel = null)
+    parameters:
+    - id: actionName
+      type: System.String
+      description: The name of the input action to rebind.
+    - id: bindingIndex
+      type: System.Int32
+      description: The binding index to rebind (usually 0).
+    - id: onComplete
+      type: System.Action
+      description: Optional callback when rebind succeeds.
+    - id: onCancel
+      type: System.Action
+      description: Optional callback when rebind is canceled.
+    content.vb: Public Shared Sub StartRebind(actionName As String, bindingIndex As Integer, onComplete As Action = Nothing, onCancel As Action = Nothing)
+  overload: Koala.Simulation.Input.InputRebindService.StartRebind*
+  nameWithType.vb: InputRebindService.StartRebind(String, Integer, Action, Action)
+  fullName.vb: Koala.Simulation.Input.InputRebindService.StartRebind(String, Integer, System.Action, System.Action)
+  name.vb: StartRebind(String, Integer, Action, Action)
+- uid: Koala.Simulation.Input.InputRebindService.GetBindingDisplayName(System.String,System.Int32)
+  commentId: M:Koala.Simulation.Input.InputRebindService.GetBindingDisplayName(System.String,System.Int32)
+  id: GetBindingDisplayName(System.String,System.Int32)
+  parent: Koala.Simulation.Input.InputRebindService
+  langs:
+  - csharp
+  - vb
+  name: GetBindingDisplayName(string, int)
+  nameWithType: InputRebindService.GetBindingDisplayName(string, int)
+  fullName: Koala.Simulation.Input.InputRebindService.GetBindingDisplayName(string, int)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputRebindService.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: GetBindingDisplayName
+    path: ../Packages/com.koala.simulation/Runtime/Input/InputRebindService.cs
+    startLine: 95
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input
+  summary: >-
+    Gets the human-readable display name of a binding.
+
+    Example: "Space", "Left Mouse Button", "Gamepad Button South".
+  example:
+  - >-
+    <pre><code class="lang-csharp">string display = InputRebindService.GetBindingDisplayName("Jump", 0);
+
+    Debug.Log($"Jump is bound to: {display}");</code></pre>
+  syntax:
+    content: public static string GetBindingDisplayName(string actionName, int bindingIndex)
+    parameters:
+    - id: actionName
+      type: System.String
+      description: The name of the input action.
+    - id: bindingIndex
+      type: System.Int32
+      description: The binding index (default is 0).
+    return:
+      type: System.String
+      description: A display string for the binding, or empty if not found.
+    content.vb: Public Shared Function GetBindingDisplayName(actionName As String, bindingIndex As Integer) As String
+  overload: Koala.Simulation.Input.InputRebindService.GetBindingDisplayName*
+  nameWithType.vb: InputRebindService.GetBindingDisplayName(String, Integer)
+  fullName.vb: Koala.Simulation.Input.InputRebindService.GetBindingDisplayName(String, Integer)
+  name.vb: GetBindingDisplayName(String, Integer)
+references:
+- uid: Koala.Simulation.Input
+  commentId: N:Koala.Simulation.Input
+  href: Koala.html
+  name: Koala.Simulation.Input
+  nameWithType: Koala.Simulation.Input
+  fullName: Koala.Simulation.Input
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Input.InputRebindService.StartRebind*
+  commentId: Overload:Koala.Simulation.Input.InputRebindService.StartRebind
+  href: Koala.Simulation.Input.InputRebindService.html#Koala_Simulation_Input_InputRebindService_StartRebind_System_String_System_Int32_System_Action_System_Action_
+  name: StartRebind
+  nameWithType: InputRebindService.StartRebind
+  fullName: Koala.Simulation.Input.InputRebindService.StartRebind
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Koala.Simulation.Input.InputRebindService.GetBindingDisplayName*
+  commentId: Overload:Koala.Simulation.Input.InputRebindService.GetBindingDisplayName
+  href: Koala.Simulation.Input.InputRebindService.html#Koala_Simulation_Input_InputRebindService_GetBindingDisplayName_System_String_System_Int32_
+  name: GetBindingDisplayName
+  nameWithType: InputRebindService.GetBindingDisplayName
+  fullName: Koala.Simulation.Input.InputRebindService.GetBindingDisplayName

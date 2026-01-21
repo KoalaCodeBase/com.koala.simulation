@@ -1,0 +1,451 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.IItem
+  commentId: T:Koala.Simulation.Inventory.IItem
+  id: IItem
+  parent: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.IItem.MaxStack
+  - Koala.Simulation.Inventory.IItem.PrefabId
+  - Koala.Simulation.Inventory.IItem.Properties
+  - Koala.Simulation.Inventory.IItem.StackCount
+  - Koala.Simulation.Inventory.IItem.Tags
+  langs:
+  - csharp
+  - vb
+  name: IItem
+  nameWithType: IItem
+  fullName: Koala.Simulation.Inventory.IItem
+  type: Interface
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IItem.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: IItem
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IItem.cs
+    startLine: 7
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Represents an item that can be stored in a container or used in the simulation.
+  example: []
+  syntax:
+    content: public interface IItem
+    content.vb: Public Interface IItem
+- uid: Koala.Simulation.Inventory.IItem.PrefabId
+  commentId: P:Koala.Simulation.Inventory.IItem.PrefabId
+  id: PrefabId
+  parent: Koala.Simulation.Inventory.IItem
+  langs:
+  - csharp
+  - vb
+  name: PrefabId
+  nameWithType: IItem.PrefabId
+  fullName: Koala.Simulation.Inventory.IItem.PrefabId
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IItem.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PrefabId
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IItem.cs
+    startLine: 12
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: The identifier of the prefab this item is based on.
+  example: []
+  syntax:
+    content: string PrefabId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property PrefabId As String
+  overload: Koala.Simulation.Inventory.IItem.PrefabId*
+- uid: Koala.Simulation.Inventory.IItem.StackCount
+  commentId: P:Koala.Simulation.Inventory.IItem.StackCount
+  id: StackCount
+  parent: Koala.Simulation.Inventory.IItem
+  langs:
+  - csharp
+  - vb
+  name: StackCount
+  nameWithType: IItem.StackCount
+  fullName: Koala.Simulation.Inventory.IItem.StackCount
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IItem.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: StackCount
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IItem.cs
+    startLine: 17
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: The current number of items in the stack.
+  example: []
+  syntax:
+    content: int StackCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property StackCount As Integer
+  overload: Koala.Simulation.Inventory.IItem.StackCount*
+- uid: Koala.Simulation.Inventory.IItem.MaxStack
+  commentId: P:Koala.Simulation.Inventory.IItem.MaxStack
+  id: MaxStack
+  parent: Koala.Simulation.Inventory.IItem
+  langs:
+  - csharp
+  - vb
+  name: MaxStack
+  nameWithType: IItem.MaxStack
+  fullName: Koala.Simulation.Inventory.IItem.MaxStack
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IItem.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: MaxStack
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IItem.cs
+    startLine: 22
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: The maximum number of items that can be stacked together.
+  example: []
+  syntax:
+    content: int MaxStack { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaxStack As Integer
+  overload: Koala.Simulation.Inventory.IItem.MaxStack*
+- uid: Koala.Simulation.Inventory.IItem.Tags
+  commentId: P:Koala.Simulation.Inventory.IItem.Tags
+  id: Tags
+  parent: Koala.Simulation.Inventory.IItem
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: IItem.Tags
+  fullName: Koala.Simulation.Inventory.IItem.Tags
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IItem.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Tags
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IItem.cs
+    startLine: 28
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: >-
+    Filter that describes this item.  
+
+    Use <xref href="Koala.Simulation.Inventory.IItemFilter" data-throw-if-not-resolved="false"></xref> to perform tag-based filtering.
+  example: []
+  syntax:
+    content: IReadOnlyCollection<string> Tags { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.String}
+    content.vb: ReadOnly Property Tags As IReadOnlyCollection(Of String)
+  overload: Koala.Simulation.Inventory.IItem.Tags*
+- uid: Koala.Simulation.Inventory.IItem.Properties
+  commentId: P:Koala.Simulation.Inventory.IItem.Properties
+  id: Properties
+  parent: Koala.Simulation.Inventory.IItem
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: IItem.Properties
+  fullName: Koala.Simulation.Inventory.IItem.Properties
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IItem.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Properties
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IItem.cs
+    startLine: 33
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: The dictionary of properties that define extra attributes of this item.
+  example: []
+  syntax:
+    content: IReadOnlyDictionary<string, object> Properties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object}
+    content.vb: ReadOnly Property Properties As IReadOnlyDictionary(Of String, Object)
+  overload: Koala.Simulation.Inventory.IItem.Properties*
+references:
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+- uid: Koala.Simulation.Inventory.IItem.PrefabId*
+  commentId: Overload:Koala.Simulation.Inventory.IItem.PrefabId
+  href: Koala.Simulation.Inventory.IItem.html#Koala_Simulation_Inventory_IItem_PrefabId
+  name: PrefabId
+  nameWithType: IItem.PrefabId
+  fullName: Koala.Simulation.Inventory.IItem.PrefabId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Inventory.IItem.StackCount*
+  commentId: Overload:Koala.Simulation.Inventory.IItem.StackCount
+  href: Koala.Simulation.Inventory.IItem.html#Koala_Simulation_Inventory_IItem_StackCount
+  name: StackCount
+  nameWithType: IItem.StackCount
+  fullName: Koala.Simulation.Inventory.IItem.StackCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koala.Simulation.Inventory.IItem.MaxStack*
+  commentId: Overload:Koala.Simulation.Inventory.IItem.MaxStack
+  href: Koala.Simulation.Inventory.IItem.html#Koala_Simulation_Inventory_IItem_MaxStack
+  name: MaxStack
+  nameWithType: IItem.MaxStack
+  fullName: Koala.Simulation.Inventory.IItem.MaxStack
+- uid: Koala.Simulation.Inventory.IItemFilter
+  commentId: T:Koala.Simulation.Inventory.IItemFilter
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.IItemFilter.html
+  name: IItemFilter
+  nameWithType: IItemFilter
+  fullName: Koala.Simulation.Inventory.IItemFilter
+- uid: Koala.Simulation.Inventory.IItem.Tags*
+  commentId: Overload:Koala.Simulation.Inventory.IItem.Tags
+  href: Koala.Simulation.Inventory.IItem.html#Koala_Simulation_Inventory_IItem_Tags
+  name: Tags
+  nameWithType: IItem.Tags
+  fullName: Koala.Simulation.Inventory.IItem.Tags
+- uid: System.Collections.Generic.IReadOnlyCollection{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  name: IReadOnlyCollection<string>
+  nameWithType: IReadOnlyCollection<string>
+  fullName: System.Collections.Generic.IReadOnlyCollection<string>
+  nameWithType.vb: IReadOnlyCollection(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of String)
+  name.vb: IReadOnlyCollection(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Koala.Simulation.Inventory.IItem.Properties*
+  commentId: Overload:Koala.Simulation.Inventory.IItem.Properties
+  href: Koala.Simulation.Inventory.IItem.html#Koala_Simulation_Inventory_IItem_Properties
+  name: Properties
+  nameWithType: IItem.Properties
+  fullName: Koala.Simulation.Inventory.IItem.Properties
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  name: IReadOnlyDictionary<string, object>
+  nameWithType: IReadOnlyDictionary<string, object>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, object>
+  nameWithType.vb: IReadOnlyDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, Object)
+  name.vb: IReadOnlyDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )

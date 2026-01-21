@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: ithappy.RotationScript.RotationAxis
+  commentId: T:ithappy.RotationScript.RotationAxis
+  id: RotationScript.RotationAxis
+  parent: ithappy
+  children:
+  - ithappy.RotationScript.RotationAxis.X
+  - ithappy.RotationScript.RotationAxis.Y
+  - ithappy.RotationScript.RotationAxis.Z
+  langs:
+  - csharp
+  - vb
+  name: RotationScript.RotationAxis
+  nameWithType: RotationScript.RotationAxis
+  fullName: ithappy.RotationScript.RotationAxis
+  type: Enum
+  source:
+    id: RotationAxis
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Animation_Scripts\RotationScript.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: ithappy
+  syntax:
+    content: public enum RotationScript.RotationAxis
+    content.vb: Public Enum RotationScript.RotationAxis
+- uid: ithappy.RotationScript.RotationAxis.X
+  commentId: F:ithappy.RotationScript.RotationAxis.X
+  id: X
+  parent: ithappy.RotationScript.RotationAxis
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: RotationScript.RotationAxis.X
+  fullName: ithappy.RotationScript.RotationAxis.X
+  type: Field
+  source:
+    id: X
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Animation_Scripts\RotationScript.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: ithappy
+  syntax:
+    content: X = 0
+    return:
+      type: ithappy.RotationScript.RotationAxis
+- uid: ithappy.RotationScript.RotationAxis.Y
+  commentId: F:ithappy.RotationScript.RotationAxis.Y
+  id: Y
+  parent: ithappy.RotationScript.RotationAxis
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: RotationScript.RotationAxis.Y
+  fullName: ithappy.RotationScript.RotationAxis.Y
+  type: Field
+  source:
+    id: Y
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Animation_Scripts\RotationScript.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: ithappy
+  syntax:
+    content: Y = 1
+    return:
+      type: ithappy.RotationScript.RotationAxis
+- uid: ithappy.RotationScript.RotationAxis.Z
+  commentId: F:ithappy.RotationScript.RotationAxis.Z
+  id: Z
+  parent: ithappy.RotationScript.RotationAxis
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: RotationScript.RotationAxis.Z
+  fullName: ithappy.RotationScript.RotationAxis.Z
+  type: Field
+  source:
+    id: Z
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\ithappy\Battle_Stadium\Scripts\Animation_Scripts\RotationScript.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: ithappy
+  syntax:
+    content: Z = 2
+    return:
+      type: ithappy.RotationScript.RotationAxis
+references:
+- uid: ithappy
+  commentId: N:ithappy
+  href: ithappy.html
+  name: ithappy
+  nameWithType: ithappy
+  fullName: ithappy
+- uid: ithappy.RotationScript.RotationAxis
+  commentId: T:ithappy.RotationScript.RotationAxis
+  parent: ithappy
+  href: ithappy.RotationScript.html
+  name: RotationScript.RotationAxis
+  nameWithType: RotationScript.RotationAxis
+  fullName: ithappy.RotationScript.RotationAxis
+  spec.csharp:
+  - uid: ithappy.RotationScript
+    name: RotationScript
+    href: ithappy.RotationScript.html
+  - name: .
+  - uid: ithappy.RotationScript.RotationAxis
+    name: RotationAxis
+    href: ithappy.RotationScript.RotationAxis.html
+  spec.vb:
+  - uid: ithappy.RotationScript
+    name: RotationScript
+    href: ithappy.RotationScript.html
+  - name: .
+  - uid: ithappy.RotationScript.RotationAxis
+    name: RotationAxis
+    href: ithappy.RotationScript.RotationAxis.html

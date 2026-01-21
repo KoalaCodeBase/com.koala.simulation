@@ -1,0 +1,177 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Enumerations.EmitterShape
+  commentId: T:AssetKits.ParticleImage.Enumerations.EmitterShape
+  id: EmitterShape
+  parent: AssetKits.ParticleImage.Enumerations
+  children:
+  - AssetKits.ParticleImage.Enumerations.EmitterShape.Circle
+  - AssetKits.ParticleImage.Enumerations.EmitterShape.Directional
+  - AssetKits.ParticleImage.Enumerations.EmitterShape.Line
+  - AssetKits.ParticleImage.Enumerations.EmitterShape.Point
+  - AssetKits.ParticleImage.Enumerations.EmitterShape.Rectangle
+  langs:
+  - csharp
+  - vb
+  name: EmitterShape
+  nameWithType: EmitterShape
+  fullName: AssetKits.ParticleImage.Enumerations.EmitterShape
+  type: Enum
+  source:
+    id: EmitterShape
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2922
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: public enum EmitterShape
+    content.vb: Public Enum EmitterShape
+- uid: AssetKits.ParticleImage.Enumerations.EmitterShape.Point
+  commentId: F:AssetKits.ParticleImage.Enumerations.EmitterShape.Point
+  id: Point
+  parent: AssetKits.ParticleImage.Enumerations.EmitterShape
+  langs:
+  - csharp
+  - vb
+  name: Point
+  nameWithType: EmitterShape.Point
+  fullName: AssetKits.ParticleImage.Enumerations.EmitterShape.Point
+  type: Field
+  source:
+    id: Point
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2924
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Point = 0
+    return:
+      type: AssetKits.ParticleImage.Enumerations.EmitterShape
+- uid: AssetKits.ParticleImage.Enumerations.EmitterShape.Circle
+  commentId: F:AssetKits.ParticleImage.Enumerations.EmitterShape.Circle
+  id: Circle
+  parent: AssetKits.ParticleImage.Enumerations.EmitterShape
+  langs:
+  - csharp
+  - vb
+  name: Circle
+  nameWithType: EmitterShape.Circle
+  fullName: AssetKits.ParticleImage.Enumerations.EmitterShape.Circle
+  type: Field
+  source:
+    id: Circle
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2924
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Circle = 1
+    return:
+      type: AssetKits.ParticleImage.Enumerations.EmitterShape
+- uid: AssetKits.ParticleImage.Enumerations.EmitterShape.Rectangle
+  commentId: F:AssetKits.ParticleImage.Enumerations.EmitterShape.Rectangle
+  id: Rectangle
+  parent: AssetKits.ParticleImage.Enumerations.EmitterShape
+  langs:
+  - csharp
+  - vb
+  name: Rectangle
+  nameWithType: EmitterShape.Rectangle
+  fullName: AssetKits.ParticleImage.Enumerations.EmitterShape.Rectangle
+  type: Field
+  source:
+    id: Rectangle
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2924
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Rectangle = 2
+    return:
+      type: AssetKits.ParticleImage.Enumerations.EmitterShape
+- uid: AssetKits.ParticleImage.Enumerations.EmitterShape.Line
+  commentId: F:AssetKits.ParticleImage.Enumerations.EmitterShape.Line
+  id: Line
+  parent: AssetKits.ParticleImage.Enumerations.EmitterShape
+  langs:
+  - csharp
+  - vb
+  name: Line
+  nameWithType: EmitterShape.Line
+  fullName: AssetKits.ParticleImage.Enumerations.EmitterShape.Line
+  type: Field
+  source:
+    id: Line
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2924
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Line = 3
+    return:
+      type: AssetKits.ParticleImage.Enumerations.EmitterShape
+- uid: AssetKits.ParticleImage.Enumerations.EmitterShape.Directional
+  commentId: F:AssetKits.ParticleImage.Enumerations.EmitterShape.Directional
+  id: Directional
+  parent: AssetKits.ParticleImage.Enumerations.EmitterShape
+  langs:
+  - csharp
+  - vb
+  name: Directional
+  nameWithType: EmitterShape.Directional
+  fullName: AssetKits.ParticleImage.Enumerations.EmitterShape.Directional
+  type: Field
+  source:
+    id: Directional
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2924
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Directional = 4
+    return:
+      type: AssetKits.ParticleImage.Enumerations.EmitterShape
+references:
+- uid: AssetKits.ParticleImage.Enumerations
+  commentId: N:AssetKits.ParticleImage.Enumerations
+  href: AssetKits.html
+  name: AssetKits.ParticleImage.Enumerations
+  nameWithType: AssetKits.ParticleImage.Enumerations
+  fullName: AssetKits.ParticleImage.Enumerations
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+- uid: AssetKits.ParticleImage.Enumerations.EmitterShape
+  commentId: T:AssetKits.ParticleImage.Enumerations.EmitterShape
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.EmitterShape.html
+  name: EmitterShape
+  nameWithType: EmitterShape
+  fullName: AssetKits.ParticleImage.Enumerations.EmitterShape

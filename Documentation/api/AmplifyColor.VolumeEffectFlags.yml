@@ -1,0 +1,757 @@
+### YamlMime:ManagedReference
+items:
+- uid: AmplifyColor.VolumeEffectFlags
+  commentId: T:AmplifyColor.VolumeEffectFlags
+  id: VolumeEffectFlags
+  parent: AmplifyColor
+  children:
+  - AmplifyColor.VolumeEffectFlags.#ctor
+  - AmplifyColor.VolumeEffectFlags.AddComponent(UnityEngine.Component)
+  - AmplifyColor.VolumeEffectFlags.FindComponentFlags(System.String)
+  - AmplifyColor.VolumeEffectFlags.GenerateEffectData(AmplifyColorEffect)
+  - AmplifyColor.VolumeEffectFlags.GetComponentNames
+  - AmplifyColor.VolumeEffectFlags.UpdateCamFlags(AmplifyColorEffect[],AmplifyColorVolumeBase[])
+  - AmplifyColor.VolumeEffectFlags.UpdateFlags(AmplifyColor.VolumeEffect)
+  - AmplifyColor.VolumeEffectFlags.components
+  langs:
+  - csharp
+  - vb
+  name: VolumeEffectFlags
+  nameWithType: VolumeEffectFlags
+  fullName: AmplifyColor.VolumeEffectFlags
+  type: Class
+  source:
+    id: VolumeEffectFlags
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs
+    startLine: 102
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class VolumeEffectFlags
+    content.vb: >-
+      <Serializable>
+
+      Public Class VolumeEffectFlags
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: AmplifyColor.VolumeEffectFlags.components
+  commentId: F:AmplifyColor.VolumeEffectFlags.components
+  id: components
+  parent: AmplifyColor.VolumeEffectFlags
+  langs:
+  - csharp
+  - vb
+  name: components
+  nameWithType: VolumeEffectFlags.components
+  fullName: AmplifyColor.VolumeEffectFlags.components
+  type: Field
+  source:
+    id: components
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs
+    startLine: 105
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public List<VolumeEffectComponentFlags> components
+    return:
+      type: System.Collections.Generic.List{AmplifyColor.VolumeEffectComponentFlags}
+    content.vb: Public components As List(Of VolumeEffectComponentFlags)
+- uid: AmplifyColor.VolumeEffectFlags.#ctor
+  commentId: M:AmplifyColor.VolumeEffectFlags.#ctor
+  id: '#ctor'
+  parent: AmplifyColor.VolumeEffectFlags
+  langs:
+  - csharp
+  - vb
+  name: VolumeEffectFlags()
+  nameWithType: VolumeEffectFlags.VolumeEffectFlags()
+  fullName: AmplifyColor.VolumeEffectFlags.VolumeEffectFlags()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public VolumeEffectFlags()
+    content.vb: Public Sub New()
+  overload: AmplifyColor.VolumeEffectFlags.#ctor*
+  nameWithType.vb: VolumeEffectFlags.New()
+  fullName.vb: AmplifyColor.VolumeEffectFlags.New()
+  name.vb: New()
+- uid: AmplifyColor.VolumeEffectFlags.AddComponent(UnityEngine.Component)
+  commentId: M:AmplifyColor.VolumeEffectFlags.AddComponent(UnityEngine.Component)
+  id: AddComponent(UnityEngine.Component)
+  parent: AmplifyColor.VolumeEffectFlags
+  langs:
+  - csharp
+  - vb
+  name: AddComponent(Component)
+  nameWithType: VolumeEffectFlags.AddComponent(Component)
+  fullName: AmplifyColor.VolumeEffectFlags.AddComponent(UnityEngine.Component)
+  type: Method
+  source:
+    id: AddComponent
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public void AddComponent(Component c)
+    parameters:
+    - id: c
+      type: UnityEngine.Component
+    content.vb: Public Sub AddComponent(c As Component)
+  overload: AmplifyColor.VolumeEffectFlags.AddComponent*
+- uid: AmplifyColor.VolumeEffectFlags.UpdateFlags(AmplifyColor.VolumeEffect)
+  commentId: M:AmplifyColor.VolumeEffectFlags.UpdateFlags(AmplifyColor.VolumeEffect)
+  id: UpdateFlags(AmplifyColor.VolumeEffect)
+  parent: AmplifyColor.VolumeEffectFlags
+  langs:
+  - csharp
+  - vb
+  name: UpdateFlags(VolumeEffect)
+  nameWithType: VolumeEffectFlags.UpdateFlags(VolumeEffect)
+  fullName: AmplifyColor.VolumeEffectFlags.UpdateFlags(AmplifyColor.VolumeEffect)
+  type: Method
+  source:
+    id: UpdateFlags
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs
+    startLine: 121
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public void UpdateFlags(VolumeEffect effectVol)
+    parameters:
+    - id: effectVol
+      type: AmplifyColor.VolumeEffect
+    content.vb: Public Sub UpdateFlags(effectVol As VolumeEffect)
+  overload: AmplifyColor.VolumeEffectFlags.UpdateFlags*
+- uid: AmplifyColor.VolumeEffectFlags.UpdateCamFlags(AmplifyColorEffect[],AmplifyColorVolumeBase[])
+  commentId: M:AmplifyColor.VolumeEffectFlags.UpdateCamFlags(AmplifyColorEffect[],AmplifyColorVolumeBase[])
+  id: UpdateCamFlags(AmplifyColorEffect[],AmplifyColorVolumeBase[])
+  parent: AmplifyColor.VolumeEffectFlags
+  langs:
+  - csharp
+  - vb
+  name: UpdateCamFlags(AmplifyColorEffect[], AmplifyColorVolumeBase[])
+  nameWithType: VolumeEffectFlags.UpdateCamFlags(AmplifyColorEffect[], AmplifyColorVolumeBase[])
+  fullName: AmplifyColor.VolumeEffectFlags.UpdateCamFlags(AmplifyColorEffect[], AmplifyColorVolumeBase[])
+  type: Method
+  source:
+    id: UpdateCamFlags
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs
+    startLine: 133
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public static void UpdateCamFlags(AmplifyColorEffect[] effects, AmplifyColorVolumeBase[] volumes)
+    parameters:
+    - id: effects
+      type: AmplifyColorEffect[]
+    - id: volumes
+      type: AmplifyColorVolumeBase[]
+    content.vb: Public Shared Sub UpdateCamFlags(effects As AmplifyColorEffect(), volumes As AmplifyColorVolumeBase())
+  overload: AmplifyColor.VolumeEffectFlags.UpdateCamFlags*
+  nameWithType.vb: VolumeEffectFlags.UpdateCamFlags(AmplifyColorEffect(), AmplifyColorVolumeBase())
+  fullName.vb: AmplifyColor.VolumeEffectFlags.UpdateCamFlags(AmplifyColorEffect(), AmplifyColorVolumeBase())
+  name.vb: UpdateCamFlags(AmplifyColorEffect(), AmplifyColorVolumeBase())
+- uid: AmplifyColor.VolumeEffectFlags.GenerateEffectData(AmplifyColorEffect)
+  commentId: M:AmplifyColor.VolumeEffectFlags.GenerateEffectData(AmplifyColorEffect)
+  id: GenerateEffectData(AmplifyColorEffect)
+  parent: AmplifyColor.VolumeEffectFlags
+  langs:
+  - csharp
+  - vb
+  name: GenerateEffectData(AmplifyColorEffect)
+  nameWithType: VolumeEffectFlags.GenerateEffectData(AmplifyColorEffect)
+  fullName: AmplifyColor.VolumeEffectFlags.GenerateEffectData(AmplifyColorEffect)
+  type: Method
+  source:
+    id: GenerateEffectData
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs
+    startLine: 147
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public VolumeEffect GenerateEffectData(AmplifyColorEffect go)
+    parameters:
+    - id: go
+      type: AmplifyColorEffect
+    return:
+      type: AmplifyColor.VolumeEffect
+    content.vb: Public Function GenerateEffectData(go As AmplifyColorEffect) As VolumeEffect
+  overload: AmplifyColor.VolumeEffectFlags.GenerateEffectData*
+- uid: AmplifyColor.VolumeEffectFlags.FindComponentFlags(System.String)
+  commentId: M:AmplifyColor.VolumeEffectFlags.FindComponentFlags(System.String)
+  id: FindComponentFlags(System.String)
+  parent: AmplifyColor.VolumeEffectFlags
+  langs:
+  - csharp
+  - vb
+  name: FindComponentFlags(string)
+  nameWithType: VolumeEffectFlags.FindComponentFlags(string)
+  fullName: AmplifyColor.VolumeEffectFlags.FindComponentFlags(string)
+  type: Method
+  source:
+    id: FindComponentFlags
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs
+    startLine: 162
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public VolumeEffectComponentFlags FindComponentFlags(string compName)
+    parameters:
+    - id: compName
+      type: System.String
+    return:
+      type: AmplifyColor.VolumeEffectComponentFlags
+    content.vb: Public Function FindComponentFlags(compName As String) As VolumeEffectComponentFlags
+  overload: AmplifyColor.VolumeEffectFlags.FindComponentFlags*
+  nameWithType.vb: VolumeEffectFlags.FindComponentFlags(String)
+  fullName.vb: AmplifyColor.VolumeEffectFlags.FindComponentFlags(String)
+  name.vb: FindComponentFlags(String)
+- uid: AmplifyColor.VolumeEffectFlags.GetComponentNames
+  commentId: M:AmplifyColor.VolumeEffectFlags.GetComponentNames
+  id: GetComponentNames
+  parent: AmplifyColor.VolumeEffectFlags
+  langs:
+  - csharp
+  - vb
+  name: GetComponentNames()
+  nameWithType: VolumeEffectFlags.GetComponentNames()
+  fullName: AmplifyColor.VolumeEffectFlags.GetComponentNames()
+  type: Method
+  source:
+    id: GetComponentNames
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs
+    startLine: 172
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public string[] GetComponentNames()
+    return:
+      type: System.String[]
+    content.vb: Public Function GetComponentNames() As String()
+  overload: AmplifyColor.VolumeEffectFlags.GetComponentNames*
+references:
+- uid: AmplifyColor
+  commentId: N:AmplifyColor
+  href: AmplifyColor.html
+  name: AmplifyColor
+  nameWithType: AmplifyColor
+  fullName: AmplifyColor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{AmplifyColor.VolumeEffectComponentFlags}
+  commentId: T:System.Collections.Generic.List{AmplifyColor.VolumeEffectComponentFlags}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<VolumeEffectComponentFlags>
+  nameWithType: List<VolumeEffectComponentFlags>
+  fullName: System.Collections.Generic.List<AmplifyColor.VolumeEffectComponentFlags>
+  nameWithType.vb: List(Of VolumeEffectComponentFlags)
+  fullName.vb: System.Collections.Generic.List(Of AmplifyColor.VolumeEffectComponentFlags)
+  name.vb: List(Of VolumeEffectComponentFlags)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: AmplifyColor.VolumeEffectComponentFlags
+    name: VolumeEffectComponentFlags
+    href: AmplifyColor.VolumeEffectComponentFlags.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AmplifyColor.VolumeEffectComponentFlags
+    name: VolumeEffectComponentFlags
+    href: AmplifyColor.VolumeEffectComponentFlags.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AmplifyColor.VolumeEffectFlags.#ctor*
+  commentId: Overload:AmplifyColor.VolumeEffectFlags.#ctor
+  href: AmplifyColor.VolumeEffectFlags.html#AmplifyColor_VolumeEffectFlags__ctor
+  name: VolumeEffectFlags
+  nameWithType: VolumeEffectFlags.VolumeEffectFlags
+  fullName: AmplifyColor.VolumeEffectFlags.VolumeEffectFlags
+  nameWithType.vb: VolumeEffectFlags.New
+  fullName.vb: AmplifyColor.VolumeEffectFlags.New
+  name.vb: New
+- uid: AmplifyColor.VolumeEffectFlags.AddComponent*
+  commentId: Overload:AmplifyColor.VolumeEffectFlags.AddComponent
+  href: AmplifyColor.VolumeEffectFlags.html#AmplifyColor_VolumeEffectFlags_AddComponent_UnityEngine_Component_
+  name: AddComponent
+  nameWithType: VolumeEffectFlags.AddComponent
+  fullName: AmplifyColor.VolumeEffectFlags.AddComponent
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: AmplifyColor.VolumeEffectFlags.UpdateFlags*
+  commentId: Overload:AmplifyColor.VolumeEffectFlags.UpdateFlags
+  href: AmplifyColor.VolumeEffectFlags.html#AmplifyColor_VolumeEffectFlags_UpdateFlags_AmplifyColor_VolumeEffect_
+  name: UpdateFlags
+  nameWithType: VolumeEffectFlags.UpdateFlags
+  fullName: AmplifyColor.VolumeEffectFlags.UpdateFlags
+- uid: AmplifyColor.VolumeEffect
+  commentId: T:AmplifyColor.VolumeEffect
+  parent: AmplifyColor
+  href: AmplifyColor.VolumeEffect.html
+  name: VolumeEffect
+  nameWithType: VolumeEffect
+  fullName: AmplifyColor.VolumeEffect
+- uid: AmplifyColor.VolumeEffectFlags.UpdateCamFlags*
+  commentId: Overload:AmplifyColor.VolumeEffectFlags.UpdateCamFlags
+  href: AmplifyColor.VolumeEffectFlags.html#AmplifyColor_VolumeEffectFlags_UpdateCamFlags_AmplifyColorEffect___AmplifyColorVolumeBase___
+  name: UpdateCamFlags
+  nameWithType: VolumeEffectFlags.UpdateCamFlags
+  fullName: AmplifyColor.VolumeEffectFlags.UpdateCamFlags
+- uid: AmplifyColorEffect[]
+  isExternal: true
+  href: AmplifyColorEffect.html
+  name: AmplifyColorEffect[]
+  nameWithType: AmplifyColorEffect[]
+  fullName: AmplifyColorEffect[]
+  nameWithType.vb: AmplifyColorEffect()
+  fullName.vb: AmplifyColorEffect()
+  name.vb: AmplifyColorEffect()
+  spec.csharp:
+  - uid: AmplifyColorEffect
+    name: AmplifyColorEffect
+    href: AmplifyColorEffect.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AmplifyColorEffect
+    name: AmplifyColorEffect
+    href: AmplifyColorEffect.html
+  - name: (
+  - name: )
+- uid: AmplifyColorVolumeBase[]
+  isExternal: true
+  href: AmplifyColorVolumeBase.html
+  name: AmplifyColorVolumeBase[]
+  nameWithType: AmplifyColorVolumeBase[]
+  fullName: AmplifyColorVolumeBase[]
+  nameWithType.vb: AmplifyColorVolumeBase()
+  fullName.vb: AmplifyColorVolumeBase()
+  name.vb: AmplifyColorVolumeBase()
+  spec.csharp:
+  - uid: AmplifyColorVolumeBase
+    name: AmplifyColorVolumeBase
+    href: AmplifyColorVolumeBase.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AmplifyColorVolumeBase
+    name: AmplifyColorVolumeBase
+    href: AmplifyColorVolumeBase.html
+  - name: (
+  - name: )
+- uid: AmplifyColor.VolumeEffectFlags.GenerateEffectData*
+  commentId: Overload:AmplifyColor.VolumeEffectFlags.GenerateEffectData
+  href: AmplifyColor.VolumeEffectFlags.html#AmplifyColor_VolumeEffectFlags_GenerateEffectData_AmplifyColorEffect_
+  name: GenerateEffectData
+  nameWithType: VolumeEffectFlags.GenerateEffectData
+  fullName: AmplifyColor.VolumeEffectFlags.GenerateEffectData
+- uid: AmplifyColorEffect
+  commentId: T:AmplifyColorEffect
+  href: AmplifyColorEffect.html
+  name: AmplifyColorEffect
+  nameWithType: AmplifyColorEffect
+  fullName: AmplifyColorEffect
+- uid: AmplifyColor.VolumeEffectFlags.FindComponentFlags*
+  commentId: Overload:AmplifyColor.VolumeEffectFlags.FindComponentFlags
+  href: AmplifyColor.VolumeEffectFlags.html#AmplifyColor_VolumeEffectFlags_FindComponentFlags_System_String_
+  name: FindComponentFlags
+  nameWithType: VolumeEffectFlags.FindComponentFlags
+  fullName: AmplifyColor.VolumeEffectFlags.FindComponentFlags
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AmplifyColor.VolumeEffectComponentFlags
+  commentId: T:AmplifyColor.VolumeEffectComponentFlags
+  parent: AmplifyColor
+  href: AmplifyColor.VolumeEffectComponentFlags.html
+  name: VolumeEffectComponentFlags
+  nameWithType: VolumeEffectComponentFlags
+  fullName: AmplifyColor.VolumeEffectComponentFlags
+- uid: AmplifyColor.VolumeEffectFlags.GetComponentNames*
+  commentId: Overload:AmplifyColor.VolumeEffectFlags.GetComponentNames
+  href: AmplifyColor.VolumeEffectFlags.html#AmplifyColor_VolumeEffectFlags_GetComponentNames
+  name: GetComponentNames
+  nameWithType: VolumeEffectFlags.GetComponentNames
+  fullName: AmplifyColor.VolumeEffectFlags.GetComponentNames
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )

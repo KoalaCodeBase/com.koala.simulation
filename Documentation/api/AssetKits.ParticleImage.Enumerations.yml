@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Enumerations
+  commentId: N:AssetKits.ParticleImage.Enumerations
+  id: AssetKits.ParticleImage.Enumerations
+  children:
+  - AssetKits.ParticleImage.Enumerations.AttractorType
+  - AssetKits.ParticleImage.Enumerations.EmitterShape
+  - AssetKits.ParticleImage.Enumerations.PlayMode
+  - AssetKits.ParticleImage.Enumerations.SheetType
+  - AssetKits.ParticleImage.Enumerations.Simulation
+  - AssetKits.ParticleImage.Enumerations.SpreadType
+  - AssetKits.ParticleImage.Enumerations.TimeScale
+  langs:
+  - csharp
+  - vb
+  name: AssetKits.ParticleImage.Enumerations
+  nameWithType: AssetKits.ParticleImage.Enumerations
+  fullName: AssetKits.ParticleImage.Enumerations
+  type: Namespace
+  assemblies:
+  - ParticleImage
+references:
+- uid: AssetKits.ParticleImage.Enumerations.EmitterShape
+  commentId: T:AssetKits.ParticleImage.Enumerations.EmitterShape
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.EmitterShape.html
+  name: EmitterShape
+  nameWithType: EmitterShape
+  fullName: AssetKits.ParticleImage.Enumerations.EmitterShape
+- uid: AssetKits.ParticleImage.Enumerations.SpreadType
+  commentId: T:AssetKits.ParticleImage.Enumerations.SpreadType
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.SpreadType.html
+  name: SpreadType
+  nameWithType: SpreadType
+  fullName: AssetKits.ParticleImage.Enumerations.SpreadType
+- uid: AssetKits.ParticleImage.Enumerations.Simulation
+  commentId: T:AssetKits.ParticleImage.Enumerations.Simulation
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.Simulation.html
+  name: Simulation
+  nameWithType: Simulation
+  fullName: AssetKits.ParticleImage.Enumerations.Simulation
+- uid: AssetKits.ParticleImage.Enumerations.AttractorType
+  commentId: T:AssetKits.ParticleImage.Enumerations.AttractorType
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.AttractorType.html
+  name: AttractorType
+  nameWithType: AttractorType
+  fullName: AssetKits.ParticleImage.Enumerations.AttractorType
+- uid: AssetKits.ParticleImage.Enumerations.PlayMode
+  commentId: T:AssetKits.ParticleImage.Enumerations.PlayMode
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.PlayMode.html
+  name: PlayMode
+  nameWithType: PlayMode
+  fullName: AssetKits.ParticleImage.Enumerations.PlayMode
+- uid: AssetKits.ParticleImage.Enumerations.SheetType
+  commentId: T:AssetKits.ParticleImage.Enumerations.SheetType
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.SheetType.html
+  name: SheetType
+  nameWithType: SheetType
+  fullName: AssetKits.ParticleImage.Enumerations.SheetType
+- uid: AssetKits.ParticleImage.Enumerations.TimeScale
+  commentId: T:AssetKits.ParticleImage.Enumerations.TimeScale
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.TimeScale.html
+  name: TimeScale
+  nameWithType: TimeScale
+  fullName: AssetKits.ParticleImage.Enumerations.TimeScale
+- uid: AssetKits.ParticleImage.Enumerations
+  commentId: N:AssetKits.ParticleImage.Enumerations
+  href: AssetKits.html
+  name: AssetKits.ParticleImage.Enumerations
+  nameWithType: AssetKits.ParticleImage.Enumerations
+  fullName: AssetKits.ParticleImage.Enumerations
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html

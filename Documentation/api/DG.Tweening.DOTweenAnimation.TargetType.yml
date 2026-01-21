@@ -1,0 +1,438 @@
+### YamlMime:ManagedReference
+items:
+- uid: DG.Tweening.DOTweenAnimation.TargetType
+  commentId: T:DG.Tweening.DOTweenAnimation.TargetType
+  id: DOTweenAnimation.TargetType
+  parent: DG.Tweening
+  children:
+  - DG.Tweening.DOTweenAnimation.TargetType.Camera
+  - DG.Tweening.DOTweenAnimation.TargetType.CanvasGroup
+  - DG.Tweening.DOTweenAnimation.TargetType.Image
+  - DG.Tweening.DOTweenAnimation.TargetType.Light
+  - DG.Tweening.DOTweenAnimation.TargetType.RectTransform
+  - DG.Tweening.DOTweenAnimation.TargetType.Renderer
+  - DG.Tweening.DOTweenAnimation.TargetType.Rigidbody
+  - DG.Tweening.DOTweenAnimation.TargetType.Rigidbody2D
+  - DG.Tweening.DOTweenAnimation.TargetType.SpriteRenderer
+  - DG.Tweening.DOTweenAnimation.TargetType.Text
+  - DG.Tweening.DOTweenAnimation.TargetType.TextMeshPro
+  - DG.Tweening.DOTweenAnimation.TargetType.TextMeshProUGUI
+  - DG.Tweening.DOTweenAnimation.TargetType.Transform
+  - DG.Tweening.DOTweenAnimation.TargetType.Unset
+  - DG.Tweening.DOTweenAnimation.TargetType.tk2dBaseSprite
+  - DG.Tweening.DOTweenAnimation.TargetType.tk2dTextMesh
+  langs:
+  - csharp
+  - vb
+  name: DOTweenAnimation.TargetType
+  nameWithType: DOTweenAnimation.TargetType
+  fullName: DG.Tweening.DOTweenAnimation.TargetType
+  type: Enum
+  source:
+    id: TargetType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: public enum DOTweenAnimation.TargetType
+    content.vb: Public Enum DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.Unset
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.Unset
+  id: Unset
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Unset
+  nameWithType: DOTweenAnimation.TargetType.Unset
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.Unset
+  type: Field
+  source:
+    id: Unset
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Unset = 0
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.Camera
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.Camera
+  id: Camera
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Camera
+  nameWithType: DOTweenAnimation.TargetType.Camera
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.Camera
+  type: Field
+  source:
+    id: Camera
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Camera = 1
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.CanvasGroup
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.CanvasGroup
+  id: CanvasGroup
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: CanvasGroup
+  nameWithType: DOTweenAnimation.TargetType.CanvasGroup
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.CanvasGroup
+  type: Field
+  source:
+    id: CanvasGroup
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: CanvasGroup = 2
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.Image
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.Image
+  id: Image
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: DOTweenAnimation.TargetType.Image
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.Image
+  type: Field
+  source:
+    id: Image
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Image = 3
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.Light
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.Light
+  id: Light
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Light
+  nameWithType: DOTweenAnimation.TargetType.Light
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.Light
+  type: Field
+  source:
+    id: Light
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Light = 4
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.RectTransform
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.RectTransform
+  id: RectTransform
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: RectTransform
+  nameWithType: DOTweenAnimation.TargetType.RectTransform
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.RectTransform
+  type: Field
+  source:
+    id: RectTransform
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: RectTransform = 5
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.Renderer
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.Renderer
+  id: Renderer
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Renderer
+  nameWithType: DOTweenAnimation.TargetType.Renderer
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.Renderer
+  type: Field
+  source:
+    id: Renderer
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Renderer = 6
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.SpriteRenderer
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.SpriteRenderer
+  id: SpriteRenderer
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: SpriteRenderer
+  nameWithType: DOTweenAnimation.TargetType.SpriteRenderer
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.SpriteRenderer
+  type: Field
+  source:
+    id: SpriteRenderer
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: SpriteRenderer = 7
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.Rigidbody
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.Rigidbody
+  id: Rigidbody
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Rigidbody
+  nameWithType: DOTweenAnimation.TargetType.Rigidbody
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.Rigidbody
+  type: Field
+  source:
+    id: Rigidbody
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Rigidbody = 8
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.Rigidbody2D
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.Rigidbody2D
+  id: Rigidbody2D
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Rigidbody2D
+  nameWithType: DOTweenAnimation.TargetType.Rigidbody2D
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.Rigidbody2D
+  type: Field
+  source:
+    id: Rigidbody2D
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Rigidbody2D = 9
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.Text
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.Text
+  id: Text
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: DOTweenAnimation.TargetType.Text
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.Text
+  type: Field
+  source:
+    id: Text
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Text = 10
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.Transform
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.Transform
+  id: Transform
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: DOTweenAnimation.TargetType.Transform
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.Transform
+  type: Field
+  source:
+    id: Transform
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: Transform = 11
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.tk2dBaseSprite
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.tk2dBaseSprite
+  id: tk2dBaseSprite
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: tk2dBaseSprite
+  nameWithType: DOTweenAnimation.TargetType.tk2dBaseSprite
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.tk2dBaseSprite
+  type: Field
+  source:
+    id: tk2dBaseSprite
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: tk2dBaseSprite = 12
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.tk2dTextMesh
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.tk2dTextMesh
+  id: tk2dTextMesh
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: tk2dTextMesh
+  nameWithType: DOTweenAnimation.TargetType.tk2dTextMesh
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.tk2dTextMesh
+  type: Field
+  source:
+    id: tk2dTextMesh
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: tk2dTextMesh = 13
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.TextMeshPro
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.TextMeshPro
+  id: TextMeshPro
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: TextMeshPro
+  nameWithType: DOTweenAnimation.TargetType.TextMeshPro
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.TextMeshPro
+  type: Field
+  source:
+    id: TextMeshPro
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: TextMeshPro = 14
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+- uid: DG.Tweening.DOTweenAnimation.TargetType.TextMeshProUGUI
+  commentId: F:DG.Tweening.DOTweenAnimation.TargetType.TextMeshProUGUI
+  id: TextMeshProUGUI
+  parent: DG.Tweening.DOTweenAnimation.TargetType
+  langs:
+  - csharp
+  - vb
+  name: TextMeshProUGUI
+  nameWithType: DOTweenAnimation.TargetType.TextMeshProUGUI
+  fullName: DG.Tweening.DOTweenAnimation.TargetType.TextMeshProUGUI
+  type: Field
+  source:
+    id: TextMeshProUGUI
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: DG.Tweening
+  syntax:
+    content: TextMeshProUGUI = 15
+    return:
+      type: DG.Tweening.DOTweenAnimation.TargetType
+references:
+- uid: DG.Tweening
+  commentId: N:DG.Tweening
+  href: DG.html
+  name: DG.Tweening
+  nameWithType: DG.Tweening
+  fullName: DG.Tweening
+  spec.csharp:
+  - uid: DG
+    name: DG
+    href: DG.html
+  - name: .
+  - uid: DG.Tweening
+    name: Tweening
+    href: DG.Tweening.html
+  spec.vb:
+  - uid: DG
+    name: DG
+    href: DG.html
+  - name: .
+  - uid: DG.Tweening
+    name: Tweening
+    href: DG.Tweening.html
+- uid: DG.Tweening.DOTweenAnimation.TargetType
+  commentId: T:DG.Tweening.DOTweenAnimation.TargetType
+  parent: DG.Tweening
+  href: DG.Tweening.DOTweenAnimation.html
+  name: DOTweenAnimation.TargetType
+  nameWithType: DOTweenAnimation.TargetType
+  fullName: DG.Tweening.DOTweenAnimation.TargetType
+  spec.csharp:
+  - uid: DG.Tweening.DOTweenAnimation
+    name: DOTweenAnimation
+    href: DG.Tweening.DOTweenAnimation.html
+  - name: .
+  - uid: DG.Tweening.DOTweenAnimation.TargetType
+    name: TargetType
+    href: DG.Tweening.DOTweenAnimation.TargetType.html
+  spec.vb:
+  - uid: DG.Tweening.DOTweenAnimation
+    name: DOTweenAnimation
+    href: DG.Tweening.DOTweenAnimation.html
+  - name: .
+  - uid: DG.Tweening.DOTweenAnimation.TargetType
+    name: TargetType
+    href: DG.Tweening.DOTweenAnimation.TargetType.html

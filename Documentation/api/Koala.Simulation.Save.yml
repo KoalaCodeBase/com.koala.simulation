@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Save
+  commentId: N:Koala.Simulation.Save
+  id: Koala.Simulation.Save
+  children:
+  - Koala.Simulation.Save.PrefabDatabase
+  - Koala.Simulation.Save.PrefabMap
+  - Koala.Simulation.Save.PrefabRegistry
+  - Koala.Simulation.Save.SaveSystem
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Save
+  nameWithType: Koala.Simulation.Save
+  fullName: Koala.Simulation.Save
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Save.PrefabRegistry
+  commentId: T:Koala.Simulation.Save.PrefabRegistry
+  href: Koala.Simulation.Save.PrefabRegistry.html
+  name: PrefabRegistry
+  nameWithType: PrefabRegistry
+  fullName: Koala.Simulation.Save.PrefabRegistry
+- uid: Koala.Simulation.Save.SaveSystem
+  commentId: T:Koala.Simulation.Save.SaveSystem
+  href: Koala.Simulation.Save.SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: Koala.Simulation.Save.SaveSystem
+- uid: Koala.Simulation.Save.PrefabDatabase
+  commentId: T:Koala.Simulation.Save.PrefabDatabase
+  href: Koala.Simulation.Save.PrefabDatabase.html
+  name: PrefabDatabase
+  nameWithType: PrefabDatabase
+  fullName: Koala.Simulation.Save.PrefabDatabase
+- uid: Koala.Simulation.Save.PrefabMap
+  commentId: T:Koala.Simulation.Save.PrefabMap
+  href: Koala.Simulation.Save.PrefabMap.html
+  name: PrefabMap
+  nameWithType: PrefabMap
+  fullName: Koala.Simulation.Save.PrefabMap

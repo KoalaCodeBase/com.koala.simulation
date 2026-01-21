@@ -1,0 +1,231 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType
+  commentId: T:AssetKits.ParticleImage.Noise.CellularReturnType
+  id: Noise.CellularReturnType
+  parent: AssetKits.ParticleImage
+  children:
+  - AssetKits.ParticleImage.Noise.CellularReturnType.CellValue
+  - AssetKits.ParticleImage.Noise.CellularReturnType.Distance
+  - AssetKits.ParticleImage.Noise.CellularReturnType.Distance2
+  - AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Add
+  - AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Div
+  - AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Mul
+  - AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Sub
+  langs:
+  - csharp
+  - vb
+  name: Noise.CellularReturnType
+  nameWithType: Noise.CellularReturnType
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType
+  type: Enum
+  source:
+    id: CellularReturnType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 75
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public enum Noise.CellularReturnType
+    content.vb: Public Enum Noise.CellularReturnType
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType.CellValue
+  commentId: F:AssetKits.ParticleImage.Noise.CellularReturnType.CellValue
+  id: CellValue
+  parent: AssetKits.ParticleImage.Noise.CellularReturnType
+  langs:
+  - csharp
+  - vb
+  name: CellValue
+  nameWithType: Noise.CellularReturnType.CellValue
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType.CellValue
+  type: Field
+  source:
+    id: CellValue
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 77
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: CellValue = 0
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularReturnType
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType.Distance
+  commentId: F:AssetKits.ParticleImage.Noise.CellularReturnType.Distance
+  id: Distance
+  parent: AssetKits.ParticleImage.Noise.CellularReturnType
+  langs:
+  - csharp
+  - vb
+  name: Distance
+  nameWithType: Noise.CellularReturnType.Distance
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType.Distance
+  type: Field
+  source:
+    id: Distance
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 78
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Distance = 1
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularReturnType
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType.Distance2
+  commentId: F:AssetKits.ParticleImage.Noise.CellularReturnType.Distance2
+  id: Distance2
+  parent: AssetKits.ParticleImage.Noise.CellularReturnType
+  langs:
+  - csharp
+  - vb
+  name: Distance2
+  nameWithType: Noise.CellularReturnType.Distance2
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType.Distance2
+  type: Field
+  source:
+    id: Distance2
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 79
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Distance2 = 2
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularReturnType
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Add
+  commentId: F:AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Add
+  id: Distance2Add
+  parent: AssetKits.ParticleImage.Noise.CellularReturnType
+  langs:
+  - csharp
+  - vb
+  name: Distance2Add
+  nameWithType: Noise.CellularReturnType.Distance2Add
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Add
+  type: Field
+  source:
+    id: Distance2Add
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 80
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Distance2Add = 3
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularReturnType
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Sub
+  commentId: F:AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Sub
+  id: Distance2Sub
+  parent: AssetKits.ParticleImage.Noise.CellularReturnType
+  langs:
+  - csharp
+  - vb
+  name: Distance2Sub
+  nameWithType: Noise.CellularReturnType.Distance2Sub
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Sub
+  type: Field
+  source:
+    id: Distance2Sub
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 81
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Distance2Sub = 4
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularReturnType
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Mul
+  commentId: F:AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Mul
+  id: Distance2Mul
+  parent: AssetKits.ParticleImage.Noise.CellularReturnType
+  langs:
+  - csharp
+  - vb
+  name: Distance2Mul
+  nameWithType: Noise.CellularReturnType.Distance2Mul
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Mul
+  type: Field
+  source:
+    id: Distance2Mul
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 82
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Distance2Mul = 5
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularReturnType
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Div
+  commentId: F:AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Div
+  id: Distance2Div
+  parent: AssetKits.ParticleImage.Noise.CellularReturnType
+  langs:
+  - csharp
+  - vb
+  name: Distance2Div
+  nameWithType: Noise.CellularReturnType.Distance2Div
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType.Distance2Div
+  type: Field
+  source:
+    id: Distance2Div
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 83
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Distance2Div = 6
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularReturnType
+references:
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  href: AssetKits.html
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType
+  commentId: T:AssetKits.ParticleImage.Noise.CellularReturnType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.CellularReturnType
+  nameWithType: Noise.CellularReturnType
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularReturnType
+    name: CellularReturnType
+    href: AssetKits.ParticleImage.Noise.CellularReturnType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularReturnType
+    name: CellularReturnType
+    href: AssetKits.ParticleImage.Noise.CellularReturnType.html

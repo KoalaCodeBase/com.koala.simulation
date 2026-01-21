@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Chronos
+  commentId: N:Koala.Simulation.Chronos
+  id: Koala.Simulation.Chronos
+  children:
+  - Koala.Simulation.Chronos.EventHandle
+  - Koala.Simulation.Chronos.GameTime
+  - Koala.Simulation.Chronos.SimulationTime
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Chronos
+  nameWithType: Koala.Simulation.Chronos
+  fullName: Koala.Simulation.Chronos
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Chronos.EventHandle
+  commentId: T:Koala.Simulation.Chronos.EventHandle
+  parent: Koala.Simulation.Chronos
+  href: Koala.Simulation.Chronos.EventHandle.html
+  name: EventHandle
+  nameWithType: EventHandle
+  fullName: Koala.Simulation.Chronos.EventHandle
+- uid: Koala.Simulation.Chronos.GameTime
+  commentId: T:Koala.Simulation.Chronos.GameTime
+  parent: Koala.Simulation.Chronos
+  href: Koala.Simulation.Chronos.GameTime.html
+  name: GameTime
+  nameWithType: GameTime
+  fullName: Koala.Simulation.Chronos.GameTime
+- uid: Koala.Simulation.Chronos.SimulationTime
+  commentId: T:Koala.Simulation.Chronos.SimulationTime
+  parent: Koala.Simulation.Chronos
+  href: Koala.Simulation.Chronos.SimulationTime.html
+  name: SimulationTime
+  nameWithType: SimulationTime
+  fullName: Koala.Simulation.Chronos.SimulationTime
+- uid: Koala.Simulation.Chronos
+  commentId: N:Koala.Simulation.Chronos
+  href: Koala.html
+  name: Koala.Simulation.Chronos
+  nameWithType: Koala.Simulation.Chronos
+  fullName: Koala.Simulation.Chronos
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Chronos
+    name: Chronos
+    href: Koala.Simulation.Chronos.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Chronos
+    name: Chronos
+    href: Koala.Simulation.Chronos.html

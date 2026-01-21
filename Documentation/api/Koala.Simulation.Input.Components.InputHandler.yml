@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Input.Components.InputHandler
+  commentId: T:Koala.Simulation.Input.Components.InputHandler
+  id: InputHandler
+  parent: Koala.Simulation.Input.Components
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: InputHandler
+  nameWithType: InputHandler
+  fullName: Koala.Simulation.Input.Components.InputHandler
+  type: Class
+  source:
+    remote:
+      path: Runtime/Input/Components/InputHandler.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: InputHandler
+    path: ../Packages/com.koala.simulation/Runtime/Input/Components/InputHandler.cs
+    startLine: 5
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Input.Components
+  syntax:
+    content: >-
+      [RequireComponent(typeof(PlayerInput))]
+
+      [AddComponentMenu("Koala/Simulation/Input Handler")]
+
+      [Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")]
+
+      public sealed class InputHandler : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(PlayerInput))>
+
+      <AddComponentMenu("Koala/Simulation/Input Handler")>
+
+      <Icon("Packages/com.koala.simulation/Editor/Icons/koala.png")>
+
+      Public NotInheritable Class InputHandler Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Koala/Simulation/Input Handler
+  - type: UnityEngine.IconAttribute
+    ctor: UnityEngine.IconAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Packages/com.koala.simulation/Editor/Icons/koala.png
+references:
+- uid: Koala.Simulation.Input.Components
+  commentId: N:Koala.Simulation.Input.Components
+  href: Koala.html
+  name: Koala.Simulation.Input.Components
+  nameWithType: Koala.Simulation.Input.Components
+  fullName: Koala.Simulation.Input.Components
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+  - name: .
+  - uid: Koala.Simulation.Input.Components
+    name: Components
+    href: Koala.Simulation.Input.Components.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Input
+    name: Input
+    href: Koala.Simulation.Input.html
+  - name: .
+  - uid: Koala.Simulation.Input.Components
+    name: Components
+    href: Koala.Simulation.Input.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

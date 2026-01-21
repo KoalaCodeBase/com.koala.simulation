@@ -1,0 +1,289 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  id: AssetKits.ParticleImage
+  children:
+  - AssetKits.ParticleImage.Burst
+  - AssetKits.ParticleImage.Extensions
+  - AssetKits.ParticleImage.Module
+  - AssetKits.ParticleImage.Noise
+  - AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  - AssetKits.ParticleImage.Noise.CellularReturnType
+  - AssetKits.ParticleImage.Noise.DomainWarpType
+  - AssetKits.ParticleImage.Noise.FractalType
+  - AssetKits.ParticleImage.Noise.NoiseType
+  - AssetKits.ParticleImage.Noise.RotationType3D
+  - AssetKits.ParticleImage.Particle
+  - AssetKits.ParticleImage.Particle.TrailPoint
+  - AssetKits.ParticleImage.ParticleImage
+  - AssetKits.ParticleImage.ParticlePool
+  - AssetKits.ParticleImage.ParticleTrailRenderer
+  - AssetKits.ParticleImage.SeparatedMinMaxCurve
+  - AssetKits.ParticleImage.SpeedRange
+  - AssetKits.ParticleImage.SpriteSheet
+  langs:
+  - csharp
+  - vb
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  type: Namespace
+  assemblies:
+  - ParticleImage
+references:
+- uid: AssetKits.ParticleImage.ParticleTrailRenderer
+  commentId: T:AssetKits.ParticleImage.ParticleTrailRenderer
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.ParticleTrailRenderer.html
+  name: ParticleTrailRenderer
+  nameWithType: ParticleTrailRenderer
+  fullName: AssetKits.ParticleImage.ParticleTrailRenderer
+- uid: AssetKits.ParticleImage.Particle
+  commentId: T:AssetKits.ParticleImage.Particle
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Particle.html
+  name: Particle
+  nameWithType: Particle
+  fullName: AssetKits.ParticleImage.Particle
+- uid: AssetKits.ParticleImage.Particle.TrailPoint
+  commentId: T:AssetKits.ParticleImage.Particle.TrailPoint
+  href: AssetKits.ParticleImage.Particle.html
+  name: Particle.TrailPoint
+  nameWithType: Particle.TrailPoint
+  fullName: AssetKits.ParticleImage.Particle.TrailPoint
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Particle
+    name: Particle
+    href: AssetKits.ParticleImage.Particle.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Particle.TrailPoint
+    name: TrailPoint
+    href: AssetKits.ParticleImage.Particle.TrailPoint.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Particle
+    name: Particle
+    href: AssetKits.ParticleImage.Particle.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Particle.TrailPoint
+    name: TrailPoint
+    href: AssetKits.ParticleImage.Particle.TrailPoint.html
+- uid: AssetKits.ParticleImage.SpriteSheet
+  commentId: T:AssetKits.ParticleImage.SpriteSheet
+  href: AssetKits.ParticleImage.SpriteSheet.html
+  name: SpriteSheet
+  nameWithType: SpriteSheet
+  fullName: AssetKits.ParticleImage.SpriteSheet
+- uid: AssetKits.ParticleImage.ParticleImage
+  commentId: T:AssetKits.ParticleImage.ParticleImage
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.ParticleImage.html
+  name: ParticleImage
+  nameWithType: ParticleImage
+  fullName: AssetKits.ParticleImage.ParticleImage
+- uid: AssetKits.ParticleImage.Burst
+  commentId: T:AssetKits.ParticleImage.Burst
+  href: AssetKits.ParticleImage.Burst.html
+  name: Burst
+  nameWithType: Burst
+  fullName: AssetKits.ParticleImage.Burst
+- uid: AssetKits.ParticleImage.SpeedRange
+  commentId: T:AssetKits.ParticleImage.SpeedRange
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.SpeedRange.html
+  name: SpeedRange
+  nameWithType: SpeedRange
+  fullName: AssetKits.ParticleImage.SpeedRange
+- uid: AssetKits.ParticleImage.Module
+  commentId: T:AssetKits.ParticleImage.Module
+  href: AssetKits.ParticleImage.Module.html
+  name: Module
+  nameWithType: Module
+  fullName: AssetKits.ParticleImage.Module
+- uid: AssetKits.ParticleImage.SeparatedMinMaxCurve
+  commentId: T:AssetKits.ParticleImage.SeparatedMinMaxCurve
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.SeparatedMinMaxCurve.html
+  name: SeparatedMinMaxCurve
+  nameWithType: SeparatedMinMaxCurve
+  fullName: AssetKits.ParticleImage.SeparatedMinMaxCurve
+- uid: AssetKits.ParticleImage.Extensions
+  commentId: T:AssetKits.ParticleImage.Extensions
+  href: AssetKits.ParticleImage.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: AssetKits.ParticleImage.Extensions
+- uid: AssetKits.ParticleImage.Noise
+  commentId: T:AssetKits.ParticleImage.Noise
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise
+  nameWithType: Noise
+  fullName: AssetKits.ParticleImage.Noise
+- uid: AssetKits.ParticleImage.Noise.NoiseType
+  commentId: T:AssetKits.ParticleImage.Noise.NoiseType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.NoiseType
+  nameWithType: Noise.NoiseType
+  fullName: AssetKits.ParticleImage.Noise.NoiseType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.NoiseType
+    name: NoiseType
+    href: AssetKits.ParticleImage.Noise.NoiseType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.NoiseType
+    name: NoiseType
+    href: AssetKits.ParticleImage.Noise.NoiseType.html
+- uid: AssetKits.ParticleImage.Noise.RotationType3D
+  commentId: T:AssetKits.ParticleImage.Noise.RotationType3D
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.RotationType3D
+  nameWithType: Noise.RotationType3D
+  fullName: AssetKits.ParticleImage.Noise.RotationType3D
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.RotationType3D
+    name: RotationType3D
+    href: AssetKits.ParticleImage.Noise.RotationType3D.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.RotationType3D
+    name: RotationType3D
+    href: AssetKits.ParticleImage.Noise.RotationType3D.html
+- uid: AssetKits.ParticleImage.Noise.FractalType
+  commentId: T:AssetKits.ParticleImage.Noise.FractalType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.FractalType
+  nameWithType: Noise.FractalType
+  fullName: AssetKits.ParticleImage.Noise.FractalType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.FractalType
+    name: FractalType
+    href: AssetKits.ParticleImage.Noise.FractalType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.FractalType
+    name: FractalType
+    href: AssetKits.ParticleImage.Noise.FractalType.html
+- uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  commentId: T:AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.CellularDistanceFunction
+  nameWithType: Noise.CellularDistanceFunction
+  fullName: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+    name: CellularDistanceFunction
+    href: AssetKits.ParticleImage.Noise.CellularDistanceFunction.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+    name: CellularDistanceFunction
+    href: AssetKits.ParticleImage.Noise.CellularDistanceFunction.html
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType
+  commentId: T:AssetKits.ParticleImage.Noise.CellularReturnType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.CellularReturnType
+  nameWithType: Noise.CellularReturnType
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularReturnType
+    name: CellularReturnType
+    href: AssetKits.ParticleImage.Noise.CellularReturnType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularReturnType
+    name: CellularReturnType
+    href: AssetKits.ParticleImage.Noise.CellularReturnType.html
+- uid: AssetKits.ParticleImage.Noise.DomainWarpType
+  commentId: T:AssetKits.ParticleImage.Noise.DomainWarpType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.DomainWarpType
+  nameWithType: Noise.DomainWarpType
+  fullName: AssetKits.ParticleImage.Noise.DomainWarpType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.DomainWarpType
+    name: DomainWarpType
+    href: AssetKits.ParticleImage.Noise.DomainWarpType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.DomainWarpType
+    name: DomainWarpType
+    href: AssetKits.ParticleImage.Noise.DomainWarpType.html
+- uid: AssetKits.ParticleImage.ParticlePool
+  commentId: T:AssetKits.ParticleImage.ParticlePool
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.ParticlePool.html
+  name: ParticlePool
+  nameWithType: ParticlePool
+  fullName: AssetKits.ParticleImage.ParticlePool
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  href: AssetKits.html
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html

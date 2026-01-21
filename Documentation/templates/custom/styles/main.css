@@ -1,0 +1,22 @@
+#constructors,
+#methods,
+#properties,
+#fields,
+#events {
+    font-weight: 700;
+    /* daha kalın */
+    font-size: 1.6em;
+    /* biraz daha büyük */
+    border-bottom: 1px solid #ddd;
+    /* alt çizgi eklensin */
+    padding-bottom: 4px;
+    margin-top: 2em;
+}
+
+/* Genel h2.section ayarı */
+h2.section {
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #222;
+    /* koyu renk */
+}

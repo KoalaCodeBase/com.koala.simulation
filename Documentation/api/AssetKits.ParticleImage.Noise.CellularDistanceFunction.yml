@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  commentId: T:AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  id: Noise.CellularDistanceFunction
+  parent: AssetKits.ParticleImage
+  children:
+  - AssetKits.ParticleImage.Noise.CellularDistanceFunction.Euclidean
+  - AssetKits.ParticleImage.Noise.CellularDistanceFunction.EuclideanSq
+  - AssetKits.ParticleImage.Noise.CellularDistanceFunction.Hybrid
+  - AssetKits.ParticleImage.Noise.CellularDistanceFunction.Manhattan
+  langs:
+  - csharp
+  - vb
+  name: Noise.CellularDistanceFunction
+  nameWithType: Noise.CellularDistanceFunction
+  fullName: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  type: Enum
+  source:
+    id: CellularDistanceFunction
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 67
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public enum Noise.CellularDistanceFunction
+    content.vb: Public Enum Noise.CellularDistanceFunction
+- uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction.Euclidean
+  commentId: F:AssetKits.ParticleImage.Noise.CellularDistanceFunction.Euclidean
+  id: Euclidean
+  parent: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  langs:
+  - csharp
+  - vb
+  name: Euclidean
+  nameWithType: Noise.CellularDistanceFunction.Euclidean
+  fullName: AssetKits.ParticleImage.Noise.CellularDistanceFunction.Euclidean
+  type: Field
+  source:
+    id: Euclidean
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 69
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Euclidean = 0
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+- uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction.EuclideanSq
+  commentId: F:AssetKits.ParticleImage.Noise.CellularDistanceFunction.EuclideanSq
+  id: EuclideanSq
+  parent: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  langs:
+  - csharp
+  - vb
+  name: EuclideanSq
+  nameWithType: Noise.CellularDistanceFunction.EuclideanSq
+  fullName: AssetKits.ParticleImage.Noise.CellularDistanceFunction.EuclideanSq
+  type: Field
+  source:
+    id: EuclideanSq
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 70
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: EuclideanSq = 1
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+- uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction.Manhattan
+  commentId: F:AssetKits.ParticleImage.Noise.CellularDistanceFunction.Manhattan
+  id: Manhattan
+  parent: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  langs:
+  - csharp
+  - vb
+  name: Manhattan
+  nameWithType: Noise.CellularDistanceFunction.Manhattan
+  fullName: AssetKits.ParticleImage.Noise.CellularDistanceFunction.Manhattan
+  type: Field
+  source:
+    id: Manhattan
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 71
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Manhattan = 2
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+- uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction.Hybrid
+  commentId: F:AssetKits.ParticleImage.Noise.CellularDistanceFunction.Hybrid
+  id: Hybrid
+  parent: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  langs:
+  - csharp
+  - vb
+  name: Hybrid
+  nameWithType: Noise.CellularDistanceFunction.Hybrid
+  fullName: AssetKits.ParticleImage.Noise.CellularDistanceFunction.Hybrid
+  type: Field
+  source:
+    id: Hybrid
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 72
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: Hybrid = 3
+    return:
+      type: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+references:
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  href: AssetKits.html
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+- uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  commentId: T:AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.CellularDistanceFunction
+  nameWithType: Noise.CellularDistanceFunction
+  fullName: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+    name: CellularDistanceFunction
+    href: AssetKits.ParticleImage.Noise.CellularDistanceFunction.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+    name: CellularDistanceFunction
+    href: AssetKits.ParticleImage.Noise.CellularDistanceFunction.html

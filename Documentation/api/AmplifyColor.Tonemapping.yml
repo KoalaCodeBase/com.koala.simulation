@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: AmplifyColor.Tonemapping
+  commentId: T:AmplifyColor.Tonemapping
+  id: Tonemapping
+  parent: AmplifyColor
+  children:
+  - AmplifyColor.Tonemapping.Disabled
+  - AmplifyColor.Tonemapping.FilmicACES
+  - AmplifyColor.Tonemapping.FilmicHable
+  - AmplifyColor.Tonemapping.Photographic
+  langs:
+  - csharp
+  - vb
+  name: Tonemapping
+  nameWithType: Tonemapping
+  fullName: AmplifyColor.Tonemapping
+  type: Enum
+  source:
+    id: Tonemapping
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\AmplifyColorEffect.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public enum Tonemapping
+    content.vb: Public Enum Tonemapping
+- uid: AmplifyColor.Tonemapping.Disabled
+  commentId: F:AmplifyColor.Tonemapping.Disabled
+  id: Disabled
+  parent: AmplifyColor.Tonemapping
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: Tonemapping.Disabled
+  fullName: AmplifyColor.Tonemapping.Disabled
+  type: Field
+  source:
+    id: Disabled
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\AmplifyColorEffect.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: Disabled = 0
+    return:
+      type: AmplifyColor.Tonemapping
+- uid: AmplifyColor.Tonemapping.Photographic
+  commentId: F:AmplifyColor.Tonemapping.Photographic
+  id: Photographic
+  parent: AmplifyColor.Tonemapping
+  langs:
+  - csharp
+  - vb
+  name: Photographic
+  nameWithType: Tonemapping.Photographic
+  fullName: AmplifyColor.Tonemapping.Photographic
+  type: Field
+  source:
+    id: Photographic
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\AmplifyColorEffect.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: Photographic = 1
+    return:
+      type: AmplifyColor.Tonemapping
+- uid: AmplifyColor.Tonemapping.FilmicHable
+  commentId: F:AmplifyColor.Tonemapping.FilmicHable
+  id: FilmicHable
+  parent: AmplifyColor.Tonemapping
+  langs:
+  - csharp
+  - vb
+  name: FilmicHable
+  nameWithType: Tonemapping.FilmicHable
+  fullName: AmplifyColor.Tonemapping.FilmicHable
+  type: Field
+  source:
+    id: FilmicHable
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\AmplifyColorEffect.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: FilmicHable = 2
+    return:
+      type: AmplifyColor.Tonemapping
+- uid: AmplifyColor.Tonemapping.FilmicACES
+  commentId: F:AmplifyColor.Tonemapping.FilmicACES
+  id: FilmicACES
+  parent: AmplifyColor.Tonemapping
+  langs:
+  - csharp
+  - vb
+  name: FilmicACES
+  nameWithType: Tonemapping.FilmicACES
+  fullName: AmplifyColor.Tonemapping.FilmicACES
+  type: Field
+  source:
+    id: FilmicACES
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\AmplifyColorEffect.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: FilmicACES = 3
+    return:
+      type: AmplifyColor.Tonemapping
+references:
+- uid: AmplifyColor
+  commentId: N:AmplifyColor
+  href: AmplifyColor.html
+  name: AmplifyColor
+  nameWithType: AmplifyColor
+  fullName: AmplifyColor
+- uid: AmplifyColor.Tonemapping
+  commentId: T:AmplifyColor.Tonemapping
+  parent: AmplifyColor
+  href: AmplifyColor.Tonemapping.html
+  name: Tonemapping
+  nameWithType: Tonemapping
+  fullName: AmplifyColor.Tonemapping

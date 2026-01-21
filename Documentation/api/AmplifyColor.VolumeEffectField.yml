@@ -1,0 +1,732 @@
+### YamlMime:ManagedReference
+items:
+- uid: AmplifyColor.VolumeEffectField
+  commentId: T:AmplifyColor.VolumeEffectField
+  id: VolumeEffectField
+  parent: AmplifyColor
+  children:
+  - AmplifyColor.VolumeEffectField.#ctor(System.Reflection.FieldInfo,UnityEngine.Component)
+  - AmplifyColor.VolumeEffectField.#ctor(System.String,System.String)
+  - AmplifyColor.VolumeEffectField.IsValidType(System.String)
+  - AmplifyColor.VolumeEffectField.UpdateValue(System.Object)
+  - AmplifyColor.VolumeEffectField.fieldName
+  - AmplifyColor.VolumeEffectField.fieldType
+  - AmplifyColor.VolumeEffectField.valueBoolean
+  - AmplifyColor.VolumeEffectField.valueColor
+  - AmplifyColor.VolumeEffectField.valueSingle
+  - AmplifyColor.VolumeEffectField.valueVector2
+  - AmplifyColor.VolumeEffectField.valueVector3
+  - AmplifyColor.VolumeEffectField.valueVector4
+  langs:
+  - csharp
+  - vb
+  name: VolumeEffectField
+  nameWithType: VolumeEffectField
+  fullName: AmplifyColor.VolumeEffectField
+  type: Class
+  source:
+    id: VolumeEffectField
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class VolumeEffectField
+    content.vb: >-
+      <Serializable>
+
+      Public Class VolumeEffectField
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: AmplifyColor.VolumeEffectField.fieldName
+  commentId: F:AmplifyColor.VolumeEffectField.fieldName
+  id: fieldName
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: fieldName
+  nameWithType: VolumeEffectField.fieldName
+  fullName: AmplifyColor.VolumeEffectField.fieldName
+  type: Field
+  source:
+    id: fieldName
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public string fieldName
+    return:
+      type: System.String
+    content.vb: Public fieldName As String
+- uid: AmplifyColor.VolumeEffectField.fieldType
+  commentId: F:AmplifyColor.VolumeEffectField.fieldType
+  id: fieldType
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: fieldType
+  nameWithType: VolumeEffectField.fieldType
+  fullName: AmplifyColor.VolumeEffectField.fieldType
+  type: Field
+  source:
+    id: fieldType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public string fieldType
+    return:
+      type: System.String
+    content.vb: Public fieldType As String
+- uid: AmplifyColor.VolumeEffectField.valueSingle
+  commentId: F:AmplifyColor.VolumeEffectField.valueSingle
+  id: valueSingle
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: valueSingle
+  nameWithType: VolumeEffectField.valueSingle
+  fullName: AmplifyColor.VolumeEffectField.valueSingle
+  type: Field
+  source:
+    id: valueSingle
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public float valueSingle
+    return:
+      type: System.Single
+    content.vb: Public valueSingle As Single
+- uid: AmplifyColor.VolumeEffectField.valueColor
+  commentId: F:AmplifyColor.VolumeEffectField.valueColor
+  id: valueColor
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: valueColor
+  nameWithType: VolumeEffectField.valueColor
+  fullName: AmplifyColor.VolumeEffectField.valueColor
+  type: Field
+  source:
+    id: valueColor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public Color valueColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public valueColor As Color
+- uid: AmplifyColor.VolumeEffectField.valueBoolean
+  commentId: F:AmplifyColor.VolumeEffectField.valueBoolean
+  id: valueBoolean
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: valueBoolean
+  nameWithType: VolumeEffectField.valueBoolean
+  fullName: AmplifyColor.VolumeEffectField.valueBoolean
+  type: Field
+  source:
+    id: valueBoolean
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public bool valueBoolean
+    return:
+      type: System.Boolean
+    content.vb: Public valueBoolean As Boolean
+- uid: AmplifyColor.VolumeEffectField.valueVector2
+  commentId: F:AmplifyColor.VolumeEffectField.valueVector2
+  id: valueVector2
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: valueVector2
+  nameWithType: VolumeEffectField.valueVector2
+  fullName: AmplifyColor.VolumeEffectField.valueVector2
+  type: Field
+  source:
+    id: valueVector2
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public Vector2 valueVector2
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public valueVector2 As Vector2
+- uid: AmplifyColor.VolumeEffectField.valueVector3
+  commentId: F:AmplifyColor.VolumeEffectField.valueVector3
+  id: valueVector3
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: valueVector3
+  nameWithType: VolumeEffectField.valueVector3
+  fullName: AmplifyColor.VolumeEffectField.valueVector3
+  type: Field
+  source:
+    id: valueVector3
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public Vector3 valueVector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public valueVector3 As Vector3
+- uid: AmplifyColor.VolumeEffectField.valueVector4
+  commentId: F:AmplifyColor.VolumeEffectField.valueVector4
+  id: valueVector4
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: valueVector4
+  nameWithType: VolumeEffectField.valueVector4
+  fullName: AmplifyColor.VolumeEffectField.valueVector4
+  type: Field
+  source:
+    id: valueVector4
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public Vector4 valueVector4
+    return:
+      type: UnityEngine.Vector4
+    content.vb: Public valueVector4 As Vector4
+- uid: AmplifyColor.VolumeEffectField.#ctor(System.String,System.String)
+  commentId: M:AmplifyColor.VolumeEffectField.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: VolumeEffectField(string, string)
+  nameWithType: VolumeEffectField.VolumeEffectField(string, string)
+  fullName: AmplifyColor.VolumeEffectField.VolumeEffectField(string, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public VolumeEffectField(string fieldName, string fieldType)
+    parameters:
+    - id: fieldName
+      type: System.String
+    - id: fieldType
+      type: System.String
+    content.vb: Public Sub New(fieldName As String, fieldType As String)
+  overload: AmplifyColor.VolumeEffectField.#ctor*
+  nameWithType.vb: VolumeEffectField.New(String, String)
+  fullName.vb: AmplifyColor.VolumeEffectField.New(String, String)
+  name.vb: New(String, String)
+- uid: AmplifyColor.VolumeEffectField.#ctor(System.Reflection.FieldInfo,UnityEngine.Component)
+  commentId: M:AmplifyColor.VolumeEffectField.#ctor(System.Reflection.FieldInfo,UnityEngine.Component)
+  id: '#ctor(System.Reflection.FieldInfo,UnityEngine.Component)'
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: VolumeEffectField(FieldInfo, Component)
+  nameWithType: VolumeEffectField.VolumeEffectField(FieldInfo, Component)
+  fullName: AmplifyColor.VolumeEffectField.VolumeEffectField(System.Reflection.FieldInfo, UnityEngine.Component)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public VolumeEffectField(FieldInfo pi, Component c)
+    parameters:
+    - id: pi
+      type: System.Reflection.FieldInfo
+    - id: c
+      type: UnityEngine.Component
+    content.vb: Public Sub New(pi As FieldInfo, c As Component)
+  overload: AmplifyColor.VolumeEffectField.#ctor*
+  nameWithType.vb: VolumeEffectField.New(FieldInfo, Component)
+  fullName.vb: AmplifyColor.VolumeEffectField.New(System.Reflection.FieldInfo, UnityEngine.Component)
+  name.vb: New(FieldInfo, Component)
+- uid: AmplifyColor.VolumeEffectField.IsValidType(System.String)
+  commentId: M:AmplifyColor.VolumeEffectField.IsValidType(System.String)
+  id: IsValidType(System.String)
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: IsValidType(string)
+  nameWithType: VolumeEffectField.IsValidType(string)
+  fullName: AmplifyColor.VolumeEffectField.IsValidType(string)
+  type: Method
+  source:
+    id: IsValidType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public static bool IsValidType(string type)
+    parameters:
+    - id: type
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsValidType(type As String) As Boolean
+  overload: AmplifyColor.VolumeEffectField.IsValidType*
+  nameWithType.vb: VolumeEffectField.IsValidType(String)
+  fullName.vb: AmplifyColor.VolumeEffectField.IsValidType(String)
+  name.vb: IsValidType(String)
+- uid: AmplifyColor.VolumeEffectField.UpdateValue(System.Object)
+  commentId: M:AmplifyColor.VolumeEffectField.UpdateValue(System.Object)
+  id: UpdateValue(System.Object)
+  parent: AmplifyColor.VolumeEffectField
+  langs:
+  - csharp
+  - vb
+  name: UpdateValue(object)
+  nameWithType: VolumeEffectField.UpdateValue(object)
+  fullName: AmplifyColor.VolumeEffectField.UpdateValue(object)
+  type: Method
+  source:
+    id: UpdateValue
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: AmplifyColor
+  syntax:
+    content: public void UpdateValue(object val)
+    parameters:
+    - id: val
+      type: System.Object
+    content.vb: Public Sub UpdateValue(val As Object)
+  overload: AmplifyColor.VolumeEffectField.UpdateValue*
+  nameWithType.vb: VolumeEffectField.UpdateValue(Object)
+  fullName.vb: AmplifyColor.VolumeEffectField.UpdateValue(Object)
+  name.vb: UpdateValue(Object)
+references:
+- uid: AmplifyColor
+  commentId: N:AmplifyColor
+  href: AmplifyColor.html
+  name: AmplifyColor
+  nameWithType: AmplifyColor
+  fullName: AmplifyColor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Vector4
+  commentId: T:UnityEngine.Vector4
+  parent: UnityEngine
+  isExternal: true
+  name: Vector4
+  nameWithType: Vector4
+  fullName: UnityEngine.Vector4
+- uid: AmplifyColor.VolumeEffectField.#ctor*
+  commentId: Overload:AmplifyColor.VolumeEffectField.#ctor
+  href: AmplifyColor.VolumeEffectField.html#AmplifyColor_VolumeEffectField__ctor_System_String_System_String_
+  name: VolumeEffectField
+  nameWithType: VolumeEffectField.VolumeEffectField
+  fullName: AmplifyColor.VolumeEffectField.VolumeEffectField
+  nameWithType.vb: VolumeEffectField.New
+  fullName.vb: AmplifyColor.VolumeEffectField.New
+  name.vb: New
+- uid: System.Reflection.FieldInfo
+  commentId: T:System.Reflection.FieldInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  name: FieldInfo
+  nameWithType: FieldInfo
+  fullName: System.Reflection.FieldInfo
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: AmplifyColor.VolumeEffectField.IsValidType*
+  commentId: Overload:AmplifyColor.VolumeEffectField.IsValidType
+  href: AmplifyColor.VolumeEffectField.html#AmplifyColor_VolumeEffectField_IsValidType_System_String_
+  name: IsValidType
+  nameWithType: VolumeEffectField.IsValidType
+  fullName: AmplifyColor.VolumeEffectField.IsValidType
+- uid: AmplifyColor.VolumeEffectField.UpdateValue*
+  commentId: Overload:AmplifyColor.VolumeEffectField.UpdateValue
+  href: AmplifyColor.VolumeEffectField.html#AmplifyColor_VolumeEffectField_UpdateValue_System_Object_
+  name: UpdateValue
+  nameWithType: VolumeEffectField.UpdateValue
+  fullName: AmplifyColor.VolumeEffectField.UpdateValue

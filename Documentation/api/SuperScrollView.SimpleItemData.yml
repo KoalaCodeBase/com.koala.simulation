@@ -1,0 +1,749 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperScrollView.SimpleItemData
+  commentId: T:SuperScrollView.SimpleItemData
+  id: SimpleItemData
+  parent: SuperScrollView
+  children:
+  - SuperScrollView.SimpleItemData.Init(System.Int32)
+  - SuperScrollView.SimpleItemData.Init(System.Int32,System.Int32)
+  - SuperScrollView.SimpleItemData.IsFilterMatched(System.String)
+  - SuperScrollView.SimpleItemData.OnIndexChanged(System.Int32)
+  - SuperScrollView.SimpleItemData.OnIndexChanged(System.Int32,System.Int32)
+  - SuperScrollView.SimpleItemData.mIndex
+  - SuperScrollView.SimpleItemData.mName
+  - SuperScrollView.SimpleItemData.mParentIndex
+  langs:
+  - csharp
+  - vb
+  name: SimpleItemData
+  nameWithType: SimpleItemData
+  fullName: SuperScrollView.SimpleItemData
+  type: Class
+  source:
+    id: SimpleItemData
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ItemDataMgr.cs
+    startLine: 133
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: 'public class SimpleItemData : ItemDataBase'
+    content.vb: Public Class SimpleItemData Inherits ItemDataBase
+  inheritance:
+  - System.Object
+  - SuperScrollView.ItemDataBase
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SuperScrollView.SimpleItemData.mIndex
+  commentId: F:SuperScrollView.SimpleItemData.mIndex
+  id: mIndex
+  parent: SuperScrollView.SimpleItemData
+  langs:
+  - csharp
+  - vb
+  name: mIndex
+  nameWithType: SimpleItemData.mIndex
+  fullName: SuperScrollView.SimpleItemData.mIndex
+  type: Field
+  source:
+    id: mIndex
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ItemDataMgr.cs
+    startLine: 135
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int mIndex
+    return:
+      type: System.Int32
+    content.vb: Public mIndex As Integer
+- uid: SuperScrollView.SimpleItemData.mParentIndex
+  commentId: F:SuperScrollView.SimpleItemData.mParentIndex
+  id: mParentIndex
+  parent: SuperScrollView.SimpleItemData
+  langs:
+  - csharp
+  - vb
+  name: mParentIndex
+  nameWithType: SimpleItemData.mParentIndex
+  fullName: SuperScrollView.SimpleItemData.mParentIndex
+  type: Field
+  source:
+    id: mParentIndex
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ItemDataMgr.cs
+    startLine: 136
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public int mParentIndex
+    return:
+      type: System.Int32
+    content.vb: Public mParentIndex As Integer
+- uid: SuperScrollView.SimpleItemData.mName
+  commentId: F:SuperScrollView.SimpleItemData.mName
+  id: mName
+  parent: SuperScrollView.SimpleItemData
+  langs:
+  - csharp
+  - vb
+  name: mName
+  nameWithType: SimpleItemData.mName
+  fullName: SuperScrollView.SimpleItemData.mName
+  type: Field
+  source:
+    id: mName
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ItemDataMgr.cs
+    startLine: 137
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  syntax:
+    content: public string mName
+    return:
+      type: System.String
+    content.vb: Public mName As String
+- uid: SuperScrollView.SimpleItemData.Init(System.Int32)
+  commentId: M:SuperScrollView.SimpleItemData.Init(System.Int32)
+  id: Init(System.Int32)
+  parent: SuperScrollView.SimpleItemData
+  langs:
+  - csharp
+  - vb
+  name: Init(int)
+  nameWithType: SimpleItemData.Init(int)
+  fullName: SuperScrollView.SimpleItemData.Init(int)
+  type: Method
+  source:
+    id: Init
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ItemDataMgr.cs
+    startLine: 139
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  example: []
+  syntax:
+    content: public override void Init(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Overrides Sub Init(index As Integer)
+  overridden: SuperScrollView.ItemDataBase.Init(System.Int32)
+  overload: SuperScrollView.SimpleItemData.Init*
+  nameWithType.vb: SimpleItemData.Init(Integer)
+  fullName.vb: SuperScrollView.SimpleItemData.Init(Integer)
+  name.vb: Init(Integer)
+- uid: SuperScrollView.SimpleItemData.Init(System.Int32,System.Int32)
+  commentId: M:SuperScrollView.SimpleItemData.Init(System.Int32,System.Int32)
+  id: Init(System.Int32,System.Int32)
+  parent: SuperScrollView.SimpleItemData
+  langs:
+  - csharp
+  - vb
+  name: Init(int, int)
+  nameWithType: SimpleItemData.Init(int, int)
+  fullName: SuperScrollView.SimpleItemData.Init(int, int)
+  type: Method
+  source:
+    id: Init
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ItemDataMgr.cs
+    startLine: 145
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  example: []
+  syntax:
+    content: public override void Init(int index, int parentIndex = -1)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: parentIndex
+      type: System.Int32
+    content.vb: Public Overrides Sub Init(index As Integer, parentIndex As Integer = -1)
+  overridden: SuperScrollView.ItemDataBase.Init(System.Int32,System.Int32)
+  overload: SuperScrollView.SimpleItemData.Init*
+  nameWithType.vb: SimpleItemData.Init(Integer, Integer)
+  fullName.vb: SuperScrollView.SimpleItemData.Init(Integer, Integer)
+  name.vb: Init(Integer, Integer)
+- uid: SuperScrollView.SimpleItemData.OnIndexChanged(System.Int32)
+  commentId: M:SuperScrollView.SimpleItemData.OnIndexChanged(System.Int32)
+  id: OnIndexChanged(System.Int32)
+  parent: SuperScrollView.SimpleItemData
+  langs:
+  - csharp
+  - vb
+  name: OnIndexChanged(int)
+  nameWithType: SimpleItemData.OnIndexChanged(int)
+  fullName: SuperScrollView.SimpleItemData.OnIndexChanged(int)
+  type: Method
+  source:
+    id: OnIndexChanged
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ItemDataMgr.cs
+    startLine: 159
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  example: []
+  syntax:
+    content: public override void OnIndexChanged(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Overrides Sub OnIndexChanged(index As Integer)
+  overridden: SuperScrollView.ItemDataBase.OnIndexChanged(System.Int32)
+  overload: SuperScrollView.SimpleItemData.OnIndexChanged*
+  nameWithType.vb: SimpleItemData.OnIndexChanged(Integer)
+  fullName.vb: SuperScrollView.SimpleItemData.OnIndexChanged(Integer)
+  name.vb: OnIndexChanged(Integer)
+- uid: SuperScrollView.SimpleItemData.OnIndexChanged(System.Int32,System.Int32)
+  commentId: M:SuperScrollView.SimpleItemData.OnIndexChanged(System.Int32,System.Int32)
+  id: OnIndexChanged(System.Int32,System.Int32)
+  parent: SuperScrollView.SimpleItemData
+  langs:
+  - csharp
+  - vb
+  name: OnIndexChanged(int, int)
+  nameWithType: SimpleItemData.OnIndexChanged(int, int)
+  fullName: SuperScrollView.SimpleItemData.OnIndexChanged(int, int)
+  type: Method
+  source:
+    id: OnIndexChanged
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ItemDataMgr.cs
+    startLine: 165
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  example: []
+  syntax:
+    content: public override void OnIndexChanged(int index, int parentIndex = -1)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: parentIndex
+      type: System.Int32
+    content.vb: Public Overrides Sub OnIndexChanged(index As Integer, parentIndex As Integer = -1)
+  overridden: SuperScrollView.ItemDataBase.OnIndexChanged(System.Int32,System.Int32)
+  overload: SuperScrollView.SimpleItemData.OnIndexChanged*
+  nameWithType.vb: SimpleItemData.OnIndexChanged(Integer, Integer)
+  fullName.vb: SuperScrollView.SimpleItemData.OnIndexChanged(Integer, Integer)
+  name.vb: OnIndexChanged(Integer, Integer)
+- uid: SuperScrollView.SimpleItemData.IsFilterMatched(System.String)
+  commentId: M:SuperScrollView.SimpleItemData.IsFilterMatched(System.String)
+  id: IsFilterMatched(System.String)
+  parent: SuperScrollView.SimpleItemData
+  langs:
+  - csharp
+  - vb
+  name: IsFilterMatched(string)
+  nameWithType: SimpleItemData.IsFilterMatched(string)
+  fullName: SuperScrollView.SimpleItemData.IsFilterMatched(string)
+  type: Method
+  source:
+    id: IsFilterMatched
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\SuperScrollView\Demo\Scripts\DataSource\ItemDataMgr.cs
+    startLine: 178
+  assemblies:
+  - Assembly-CSharp
+  namespace: SuperScrollView
+  example: []
+  syntax:
+    content: public override bool IsFilterMatched(string filterStr)
+    parameters:
+    - id: filterStr
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsFilterMatched(filterStr As String) As Boolean
+  overridden: SuperScrollView.ItemDataBase.IsFilterMatched(System.String)
+  overload: SuperScrollView.SimpleItemData.IsFilterMatched*
+  nameWithType.vb: SimpleItemData.IsFilterMatched(String)
+  fullName.vb: SuperScrollView.SimpleItemData.IsFilterMatched(String)
+  name.vb: IsFilterMatched(String)
+references:
+- uid: SuperScrollView
+  commentId: N:SuperScrollView
+  href: SuperScrollView.html
+  name: SuperScrollView
+  nameWithType: SuperScrollView
+  fullName: SuperScrollView
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SuperScrollView.ItemDataBase
+  commentId: T:SuperScrollView.ItemDataBase
+  parent: SuperScrollView
+  href: SuperScrollView.ItemDataBase.html
+  name: ItemDataBase
+  nameWithType: ItemDataBase
+  fullName: SuperScrollView.ItemDataBase
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SuperScrollView.ItemDataBase.Init(System.Int32)
+  commentId: M:SuperScrollView.ItemDataBase.Init(System.Int32)
+  parent: SuperScrollView.ItemDataBase
+  isExternal: true
+  href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_Init_System_Int32_
+  name: Init(int)
+  nameWithType: ItemDataBase.Init(int)
+  fullName: SuperScrollView.ItemDataBase.Init(int)
+  nameWithType.vb: ItemDataBase.Init(Integer)
+  fullName.vb: SuperScrollView.ItemDataBase.Init(Integer)
+  name.vb: Init(Integer)
+  spec.csharp:
+  - uid: SuperScrollView.ItemDataBase.Init(System.Int32)
+    name: Init
+    href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_Init_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SuperScrollView.ItemDataBase.Init(System.Int32)
+    name: Init
+    href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_Init_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SuperScrollView.SimpleItemData.Init*
+  commentId: Overload:SuperScrollView.SimpleItemData.Init
+  href: SuperScrollView.SimpleItemData.html#SuperScrollView_SimpleItemData_Init_System_Int32_
+  name: Init
+  nameWithType: SimpleItemData.Init
+  fullName: SuperScrollView.SimpleItemData.Init
+- uid: SuperScrollView.ItemDataBase.Init(System.Int32,System.Int32)
+  commentId: M:SuperScrollView.ItemDataBase.Init(System.Int32,System.Int32)
+  parent: SuperScrollView.ItemDataBase
+  isExternal: true
+  href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_Init_System_Int32_System_Int32_
+  name: Init(int, int)
+  nameWithType: ItemDataBase.Init(int, int)
+  fullName: SuperScrollView.ItemDataBase.Init(int, int)
+  nameWithType.vb: ItemDataBase.Init(Integer, Integer)
+  fullName.vb: SuperScrollView.ItemDataBase.Init(Integer, Integer)
+  name.vb: Init(Integer, Integer)
+  spec.csharp:
+  - uid: SuperScrollView.ItemDataBase.Init(System.Int32,System.Int32)
+    name: Init
+    href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_Init_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SuperScrollView.ItemDataBase.Init(System.Int32,System.Int32)
+    name: Init
+    href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_Init_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SuperScrollView.ItemDataBase.OnIndexChanged(System.Int32)
+  commentId: M:SuperScrollView.ItemDataBase.OnIndexChanged(System.Int32)
+  parent: SuperScrollView.ItemDataBase
+  isExternal: true
+  href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_OnIndexChanged_System_Int32_
+  name: OnIndexChanged(int)
+  nameWithType: ItemDataBase.OnIndexChanged(int)
+  fullName: SuperScrollView.ItemDataBase.OnIndexChanged(int)
+  nameWithType.vb: ItemDataBase.OnIndexChanged(Integer)
+  fullName.vb: SuperScrollView.ItemDataBase.OnIndexChanged(Integer)
+  name.vb: OnIndexChanged(Integer)
+  spec.csharp:
+  - uid: SuperScrollView.ItemDataBase.OnIndexChanged(System.Int32)
+    name: OnIndexChanged
+    href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_OnIndexChanged_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SuperScrollView.ItemDataBase.OnIndexChanged(System.Int32)
+    name: OnIndexChanged
+    href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_OnIndexChanged_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SuperScrollView.SimpleItemData.OnIndexChanged*
+  commentId: Overload:SuperScrollView.SimpleItemData.OnIndexChanged
+  href: SuperScrollView.SimpleItemData.html#SuperScrollView_SimpleItemData_OnIndexChanged_System_Int32_
+  name: OnIndexChanged
+  nameWithType: SimpleItemData.OnIndexChanged
+  fullName: SuperScrollView.SimpleItemData.OnIndexChanged
+- uid: SuperScrollView.ItemDataBase.OnIndexChanged(System.Int32,System.Int32)
+  commentId: M:SuperScrollView.ItemDataBase.OnIndexChanged(System.Int32,System.Int32)
+  parent: SuperScrollView.ItemDataBase
+  isExternal: true
+  href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_OnIndexChanged_System_Int32_System_Int32_
+  name: OnIndexChanged(int, int)
+  nameWithType: ItemDataBase.OnIndexChanged(int, int)
+  fullName: SuperScrollView.ItemDataBase.OnIndexChanged(int, int)
+  nameWithType.vb: ItemDataBase.OnIndexChanged(Integer, Integer)
+  fullName.vb: SuperScrollView.ItemDataBase.OnIndexChanged(Integer, Integer)
+  name.vb: OnIndexChanged(Integer, Integer)
+  spec.csharp:
+  - uid: SuperScrollView.ItemDataBase.OnIndexChanged(System.Int32,System.Int32)
+    name: OnIndexChanged
+    href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_OnIndexChanged_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SuperScrollView.ItemDataBase.OnIndexChanged(System.Int32,System.Int32)
+    name: OnIndexChanged
+    href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_OnIndexChanged_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SuperScrollView.ItemDataBase.IsFilterMatched(System.String)
+  commentId: M:SuperScrollView.ItemDataBase.IsFilterMatched(System.String)
+  parent: SuperScrollView.ItemDataBase
+  isExternal: true
+  href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_IsFilterMatched_System_String_
+  name: IsFilterMatched(string)
+  nameWithType: ItemDataBase.IsFilterMatched(string)
+  fullName: SuperScrollView.ItemDataBase.IsFilterMatched(string)
+  nameWithType.vb: ItemDataBase.IsFilterMatched(String)
+  fullName.vb: SuperScrollView.ItemDataBase.IsFilterMatched(String)
+  name.vb: IsFilterMatched(String)
+  spec.csharp:
+  - uid: SuperScrollView.ItemDataBase.IsFilterMatched(System.String)
+    name: IsFilterMatched
+    href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_IsFilterMatched_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SuperScrollView.ItemDataBase.IsFilterMatched(System.String)
+    name: IsFilterMatched
+    href: SuperScrollView.ItemDataBase.html#SuperScrollView_ItemDataBase_IsFilterMatched_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SuperScrollView.SimpleItemData.IsFilterMatched*
+  commentId: Overload:SuperScrollView.SimpleItemData.IsFilterMatched
+  href: SuperScrollView.SimpleItemData.html#SuperScrollView_SimpleItemData_IsFilterMatched_System_String_
+  name: IsFilterMatched
+  nameWithType: SimpleItemData.IsFilterMatched
+  fullName: SuperScrollView.SimpleItemData.IsFilterMatched
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

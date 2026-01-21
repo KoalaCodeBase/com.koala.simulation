@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.Core.IItemFilter
+  commentId: T:Koala.Simulation.Inventory.Core.IItemFilter
+  id: IItemFilter
+  parent: Koala.Simulation.Inventory.Core
+  children:
+  - Koala.Simulation.Inventory.Core.IItemFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  langs:
+  - csharp
+  - vb
+  name: IItemFilter
+  nameWithType: IItemFilter
+  fullName: Koala.Simulation.Inventory.Core.IItemFilter
+  type: Interface
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IItemFilter.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: IItemFilter
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IItemFilter.cs
+    startLine: 44
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory.Core
+  summary: >-
+    Defines a filter used to determine whether an item is accepted.
+
+
+    Implement this interface to create custom filtering rules,
+
+    such as filtering by tags, properties, or specific prefab IDs.
+  example:
+  - >-
+    <pre><code class="lang-csharp">public sealed class TagFilter : IItemFilter
+
+    {
+        private readonly HashSet&lt;string&gt; _tags;
+
+        public TagFilter(IEnumerable&lt;string&gt; tags)
+        {
+            _tags = new HashSet&lt;string&gt;(tags);
+        }
+
+        public bool Accepts(IItem item)
+        {
+            return item.Tags.Any(t =&gt; _tags.Contains(t));
+        }
+    }</code></pre>
+  - >-
+    <pre><code class="lang-csharp">public sealed class PrefabFilter : IItemFilter
+
+    {
+        private readonly HashSet&lt;string&gt; _allowedIds;
+
+        public PrefabFilter(IEnumerable&lt;string&gt; ids)
+        {
+            _allowedIds = new HashSet&lt;string&gt;(ids);
+        }
+
+        public bool Accepts(IItem item)
+        {
+            return _allowedIds.Contains(item.PrefabId);
+        }
+    }</code></pre>
+  syntax:
+    content: public interface IItemFilter
+    content.vb: Public Interface IItemFilter
+- uid: Koala.Simulation.Inventory.Core.IItemFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  commentId: M:Koala.Simulation.Inventory.Core.IItemFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  id: Accepts(Koala.Simulation.Inventory.Core.IItem)
+  parent: Koala.Simulation.Inventory.Core.IItemFilter
+  langs:
+  - csharp
+  - vb
+  name: Accepts(IItem)
+  nameWithType: IItemFilter.Accepts(IItem)
+  fullName: Koala.Simulation.Inventory.Core.IItemFilter.Accepts(Koala.Simulation.Inventory.Core.IItem)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IItemFilter.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Accepts
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IItemFilter.cs
+    startLine: 51
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory.Core
+  summary: Determines whether the given item is allowed by the filter.
+  example: []
+  syntax:
+    content: bool Accepts(IItem item)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.Core.IItem
+      description: The item to evaluate.
+    return:
+      type: System.Boolean
+      description: True if the item is accepted; otherwise false.
+    content.vb: Function Accepts(item As IItem) As Boolean
+  overload: Koala.Simulation.Inventory.Core.IItemFilter.Accepts*
+references:
+- uid: Koala.Simulation.Inventory.Core
+  commentId: N:Koala.Simulation.Inventory.Core
+  href: Koala.html
+  name: Koala.Simulation.Inventory.Core
+  nameWithType: Koala.Simulation.Inventory.Core
+  fullName: Koala.Simulation.Inventory.Core
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  - name: .
+  - uid: Koala.Simulation.Inventory.Core
+    name: Core
+    href: Koala.Simulation.Inventory.Core.html
+- uid: Koala.Simulation.Inventory.Core.IItemFilter.Accepts*
+  commentId: Overload:Koala.Simulation.Inventory.Core.IItemFilter.Accepts
+  href: Koala.Simulation.Inventory.Core.IItemFilter.html#Koala_Simulation_Inventory_Core_IItemFilter_Accepts_Koala_Simulation_Inventory_Core_IItem_
+  name: Accepts
+  nameWithType: IItemFilter.Accepts
+  fullName: Koala.Simulation.Inventory.Core.IItemFilter.Accepts
+- uid: Koala.Simulation.Inventory.Core.IItem
+  commentId: T:Koala.Simulation.Inventory.Core.IItem
+  parent: Koala.Simulation.Inventory.Core
+  name: IItem
+  nameWithType: IItem
+  fullName: Koala.Simulation.Inventory.Core.IItem
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

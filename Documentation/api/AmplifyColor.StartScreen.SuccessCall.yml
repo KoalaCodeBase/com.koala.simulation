@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: AmplifyColor.StartScreen.SuccessCall
+  commentId: T:AmplifyColor.StartScreen.SuccessCall
+  id: StartScreen.SuccessCall
+  parent: AmplifyColor
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: StartScreen.SuccessCall
+  nameWithType: StartScreen.SuccessCall
+  fullName: AmplifyColor.StartScreen.SuccessCall
+  type: Delegate
+  source:
+    id: SuccessCall
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\AmplifyColor\Plugins\Editor\StartScreen.cs
+    startLine: 353
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: AmplifyColor
+  syntax:
+    content: public delegate void StartScreen.SuccessCall(UnityWebRequest www)
+    parameters:
+    - id: www
+      type: UnityEngine.Networking.UnityWebRequest
+    content.vb: Public Delegate Sub StartScreen.SuccessCall(www As UnityWebRequest)
+references:
+- uid: AmplifyColor
+  commentId: N:AmplifyColor
+  href: AmplifyColor.html
+  name: AmplifyColor
+  nameWithType: AmplifyColor
+  fullName: AmplifyColor
+- uid: UnityEngine.Networking.UnityWebRequest
+  commentId: T:UnityEngine.Networking.UnityWebRequest
+  parent: UnityEngine.Networking
+  isExternal: true
+  name: UnityWebRequest
+  nameWithType: UnityWebRequest
+  fullName: UnityEngine.Networking.UnityWebRequest
+- uid: UnityEngine.Networking
+  commentId: N:UnityEngine.Networking
+  isExternal: true
+  name: UnityEngine.Networking
+  nameWithType: UnityEngine.Networking
+  fullName: UnityEngine.Networking
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Networking
+    name: Networking
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Networking
+    name: Networking
+    isExternal: true

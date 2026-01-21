@@ -1,0 +1,683 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Placement.PlacementManager
+  commentId: T:Koala.Simulation.Placement.PlacementManager
+  id: PlacementManager
+  parent: Koala.Simulation.Placement
+  children:
+  - Koala.Simulation.Placement.PlacementManager.AddRule(Koala.Simulation.Placement.IPlacementRule)
+  - Koala.Simulation.Placement.PlacementManager.Cancel
+  - Koala.Simulation.Placement.PlacementManager.ClearRules
+  - Koala.Simulation.Placement.PlacementManager.Confirm
+  - Koala.Simulation.Placement.PlacementManager.Dispose
+  - Koala.Simulation.Placement.PlacementManager.Instance
+  - Koala.Simulation.Placement.PlacementManager.Reposition(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Action{UnityEngine.GameObject})
+  - Koala.Simulation.Placement.PlacementManager.Rotate(System.Boolean)
+  - Koala.Simulation.Placement.PlacementManager.SetSnapStrategy(Koala.Simulation.Placement.ISnapStrategy)
+  - Koala.Simulation.Placement.PlacementManager.Start(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Action{UnityEngine.GameObject})
+  langs:
+  - csharp
+  - vb
+  name: PlacementManager
+  nameWithType: PlacementManager
+  fullName: Koala.Simulation.Placement.PlacementManager
+  type: Class
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: PlacementManager
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 53
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: >-
+    Centralized object placement system with snapping, rules, and ghost previews.
+
+
+    - Place prefabs into the world with live "ghost" preview.
+
+    - Supports validation rules (e.g. overlap checks, layer restrictions).
+
+    - Supports snapping strategies (surface alignment, custom logic).
+
+    - Handles both initial placement and repositioning of existing objects.
+
+    - Exposes utility methods for rotation, confirmation, and cancellation.
+
+
+    Singleton: Access via <code>PlacementManager.Instance</code>.
+
+    Requires <code>SimulationManager</code> to be present in the scene.
+
+    Only one instance of <code>SimulationManager</code> should exist.
+  example:
+  - >-
+    <pre><code class="lang-csharp">// --- Basic placement ---
+
+    // Start placing a shelf prefab. 
+
+    // Player confirms with LMB, cancels with RMB, rotates with E/Q.
+
+    PlacementManager.Instance.Start(shelfPrefab, onSuccess: placedObj =&gt;
+
+    {
+        Debug.Log($"Placed: {placedObj.name}");
+    });
+
+
+    // --- Reposition existing object ---
+
+    PlacementManager.Instance.Reposition(existingShelf, onSuccess: updatedObj =&gt;
+
+    {
+        Debug.Log($"Repositioned: {updatedObj.name}");
+    });
+
+
+    // --- Add placement rules ---
+
+    PlacementManager.Instance.AddRule(new NoOverlapRule(LayerMask.GetMask("Default")));
+
+    PlacementManager.Instance.AddRule(new LayerRule(LayerMask.GetMask("Ground")));
+
+
+    // --- Set snapping strategy ---
+
+    PlacementManager.Instance.SetSnapStrategy(new DefaultSnapStrategy());
+
+
+    // --- Rotate preview manually ---
+
+    PlacementManager.Instance.Rotate(clockwise: true);
+
+
+    // --- Confirm or cancel manually ---
+
+    PlacementManager.Instance.Confirm(); // finalize placement
+
+    PlacementManager.Instance.Cancel();  // abort placement
+
+
+    // --- Cleanup rules ---
+
+    PlacementManager.Instance.ClearRules();</code></pre>
+  syntax:
+    content: public sealed class PlacementManager
+    content.vb: Public NotInheritable Class PlacementManager
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Placement.PlacementManager.Instance
+  commentId: P:Koala.Simulation.Placement.PlacementManager.Instance
+  id: Instance
+  parent: Koala.Simulation.Placement.PlacementManager
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: PlacementManager.Instance
+  fullName: Koala.Simulation.Placement.PlacementManager.Instance
+  type: Property
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Instance
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 58
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: The active placement manager instance.
+  example: []
+  syntax:
+    content: public static PlacementManager Instance { get; }
+    parameters: []
+    return:
+      type: Koala.Simulation.Placement.PlacementManager
+    content.vb: Public Shared ReadOnly Property Instance As PlacementManager
+  overload: Koala.Simulation.Placement.PlacementManager.Instance*
+- uid: Koala.Simulation.Placement.PlacementManager.AddRule(Koala.Simulation.Placement.IPlacementRule)
+  commentId: M:Koala.Simulation.Placement.PlacementManager.AddRule(Koala.Simulation.Placement.IPlacementRule)
+  id: AddRule(Koala.Simulation.Placement.IPlacementRule)
+  parent: Koala.Simulation.Placement.PlacementManager
+  langs:
+  - csharp
+  - vb
+  name: AddRule(IPlacementRule)
+  nameWithType: PlacementManager.AddRule(IPlacementRule)
+  fullName: Koala.Simulation.Placement.PlacementManager.AddRule(Koala.Simulation.Placement.IPlacementRule)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: AddRule
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 110
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: Adds a placement validation rule. See <xref href="Koala.Simulation.Placement.Samples.NoOverlapRule" data-throw-if-not-resolved="false"></xref> and <xref href="Koala.Simulation.Placement.Samples.LayerRule" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void AddRule(IPlacementRule rule)
+    parameters:
+    - id: rule
+      type: Koala.Simulation.Placement.IPlacementRule
+      description: The rule to add.
+    content.vb: Public Sub AddRule(rule As IPlacementRule)
+  overload: Koala.Simulation.Placement.PlacementManager.AddRule*
+- uid: Koala.Simulation.Placement.PlacementManager.SetSnapStrategy(Koala.Simulation.Placement.ISnapStrategy)
+  commentId: M:Koala.Simulation.Placement.PlacementManager.SetSnapStrategy(Koala.Simulation.Placement.ISnapStrategy)
+  id: SetSnapStrategy(Koala.Simulation.Placement.ISnapStrategy)
+  parent: Koala.Simulation.Placement.PlacementManager
+  langs:
+  - csharp
+  - vb
+  name: SetSnapStrategy(ISnapStrategy)
+  nameWithType: PlacementManager.SetSnapStrategy(ISnapStrategy)
+  fullName: Koala.Simulation.Placement.PlacementManager.SetSnapStrategy(Koala.Simulation.Placement.ISnapStrategy)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: SetSnapStrategy
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 116
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: Sets the snapping strategy for placements. See <xref href="Koala.Simulation.Placement.DefaultSnapStrategy" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void SetSnapStrategy(ISnapStrategy strategy)
+    parameters:
+    - id: strategy
+      type: Koala.Simulation.Placement.ISnapStrategy
+      description: The snapping strategy to use.
+    content.vb: Public Sub SetSnapStrategy(strategy As ISnapStrategy)
+  overload: Koala.Simulation.Placement.PlacementManager.SetSnapStrategy*
+- uid: Koala.Simulation.Placement.PlacementManager.Start(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Action{UnityEngine.GameObject})
+  commentId: M:Koala.Simulation.Placement.PlacementManager.Start(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Action{UnityEngine.GameObject})
+  id: Start(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Action{UnityEngine.GameObject})
+  parent: Koala.Simulation.Placement.PlacementManager
+  langs:
+  - csharp
+  - vb
+  name: Start(GameObject, Material, Material, Action<GameObject>)
+  nameWithType: PlacementManager.Start(GameObject, Material, Material, Action<GameObject>)
+  fullName: Koala.Simulation.Placement.PlacementManager.Start(UnityEngine.GameObject, UnityEngine.Material, UnityEngine.Material, System.Action<UnityEngine.GameObject>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Start
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 126
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: >-
+    Starts placing a prefab with a ghost preview. Do not use for repositioning.
+
+    Prefab must implement <xref href="Koala.Simulation.Placement.IPlaceable" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Start(GameObject prefab, Material validMat = null, Material invalidMat = null, Action<GameObject> onSuccess = null)
+    parameters:
+    - id: prefab
+      type: UnityEngine.GameObject
+      description: The prefab to place.
+    - id: validMat
+      type: UnityEngine.Material
+      description: Optional material for valid placement preview.
+    - id: invalidMat
+      type: UnityEngine.Material
+      description: Optional material for invalid placement preview.
+    - id: onSuccess
+      type: System.Action{UnityEngine.GameObject}
+      description: Callback when placement is confirmed.
+    content.vb: Public Sub Start(prefab As GameObject, validMat As Material = Nothing, invalidMat As Material = Nothing, onSuccess As Action(Of GameObject) = Nothing)
+  overload: Koala.Simulation.Placement.PlacementManager.Start*
+  nameWithType.vb: PlacementManager.Start(GameObject, Material, Material, Action(Of GameObject))
+  fullName.vb: Koala.Simulation.Placement.PlacementManager.Start(UnityEngine.GameObject, UnityEngine.Material, UnityEngine.Material, System.Action(Of UnityEngine.GameObject))
+  name.vb: Start(GameObject, Material, Material, Action(Of GameObject))
+- uid: Koala.Simulation.Placement.PlacementManager.Reposition(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Action{UnityEngine.GameObject})
+  commentId: M:Koala.Simulation.Placement.PlacementManager.Reposition(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Action{UnityEngine.GameObject})
+  id: Reposition(UnityEngine.GameObject,UnityEngine.Material,UnityEngine.Material,System.Action{UnityEngine.GameObject})
+  parent: Koala.Simulation.Placement.PlacementManager
+  langs:
+  - csharp
+  - vb
+  name: Reposition(GameObject, Material, Material, Action<GameObject>)
+  nameWithType: PlacementManager.Reposition(GameObject, Material, Material, Action<GameObject>)
+  fullName: Koala.Simulation.Placement.PlacementManager.Reposition(UnityEngine.GameObject, UnityEngine.Material, UnityEngine.Material, System.Action<UnityEngine.GameObject>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Reposition
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 157
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: Starts repositioning an existing object with a ghost preview.
+  example: []
+  syntax:
+    content: public void Reposition(GameObject target, Material validMat = null, Material invalidMat = null, Action<GameObject> onSuccess = null)
+    parameters:
+    - id: target
+      type: UnityEngine.GameObject
+      description: The object to reposition.
+    - id: validMat
+      type: UnityEngine.Material
+      description: Optional material for valid placement preview.
+    - id: invalidMat
+      type: UnityEngine.Material
+      description: Optional material for invalid placement preview.
+    - id: onSuccess
+      type: System.Action{UnityEngine.GameObject}
+      description: Callback when repositioning is confirmed.
+    content.vb: Public Sub Reposition(target As GameObject, validMat As Material = Nothing, invalidMat As Material = Nothing, onSuccess As Action(Of GameObject) = Nothing)
+  overload: Koala.Simulation.Placement.PlacementManager.Reposition*
+  nameWithType.vb: PlacementManager.Reposition(GameObject, Material, Material, Action(Of GameObject))
+  fullName.vb: Koala.Simulation.Placement.PlacementManager.Reposition(UnityEngine.GameObject, UnityEngine.Material, UnityEngine.Material, System.Action(Of UnityEngine.GameObject))
+  name.vb: Reposition(GameObject, Material, Material, Action(Of GameObject))
+- uid: Koala.Simulation.Placement.PlacementManager.Rotate(System.Boolean)
+  commentId: M:Koala.Simulation.Placement.PlacementManager.Rotate(System.Boolean)
+  id: Rotate(System.Boolean)
+  parent: Koala.Simulation.Placement.PlacementManager
+  langs:
+  - csharp
+  - vb
+  name: Rotate(bool)
+  nameWithType: PlacementManager.Rotate(bool)
+  fullName: Koala.Simulation.Placement.PlacementManager.Rotate(bool)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Rotate
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 183
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: Rotates the placement preview.
+  example: []
+  syntax:
+    content: public void Rotate(bool clockwise = true)
+    parameters:
+    - id: clockwise
+      type: System.Boolean
+      description: Whether to rotate clockwise (default true).
+    content.vb: Public Sub Rotate(clockwise As Boolean = True)
+  overload: Koala.Simulation.Placement.PlacementManager.Rotate*
+  nameWithType.vb: PlacementManager.Rotate(Boolean)
+  fullName.vb: Koala.Simulation.Placement.PlacementManager.Rotate(Boolean)
+  name.vb: Rotate(Boolean)
+- uid: Koala.Simulation.Placement.PlacementManager.Confirm
+  commentId: M:Koala.Simulation.Placement.PlacementManager.Confirm
+  id: Confirm
+  parent: Koala.Simulation.Placement.PlacementManager
+  langs:
+  - csharp
+  - vb
+  name: Confirm()
+  nameWithType: PlacementManager.Confirm()
+  fullName: Koala.Simulation.Placement.PlacementManager.Confirm()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Confirm
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 243
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: Confirms the current placement or reposition. If it is invalid, it will not be placed.
+  example: []
+  syntax:
+    content: public void Confirm()
+    content.vb: Public Sub Confirm()
+  overload: Koala.Simulation.Placement.PlacementManager.Confirm*
+- uid: Koala.Simulation.Placement.PlacementManager.Cancel
+  commentId: M:Koala.Simulation.Placement.PlacementManager.Cancel
+  id: Cancel
+  parent: Koala.Simulation.Placement.PlacementManager
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: PlacementManager.Cancel()
+  fullName: Koala.Simulation.Placement.PlacementManager.Cancel()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Cancel
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 273
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: Cancels the current placement or reposition.
+  example: []
+  syntax:
+    content: public void Cancel()
+    content.vb: Public Sub Cancel()
+  overload: Koala.Simulation.Placement.PlacementManager.Cancel*
+- uid: Koala.Simulation.Placement.PlacementManager.ClearRules
+  commentId: M:Koala.Simulation.Placement.PlacementManager.ClearRules
+  id: ClearRules
+  parent: Koala.Simulation.Placement.PlacementManager
+  langs:
+  - csharp
+  - vb
+  name: ClearRules()
+  nameWithType: PlacementManager.ClearRules()
+  fullName: Koala.Simulation.Placement.PlacementManager.ClearRules()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ClearRules
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 294
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: Removes all active placement rules.
+  example: []
+  syntax:
+    content: public void ClearRules()
+    content.vb: Public Sub ClearRules()
+  overload: Koala.Simulation.Placement.PlacementManager.ClearRules*
+- uid: Koala.Simulation.Placement.PlacementManager.Dispose
+  commentId: M:Koala.Simulation.Placement.PlacementManager.Dispose
+  id: Dispose
+  parent: Koala.Simulation.Placement.PlacementManager
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: PlacementManager.Dispose()
+  fullName: Koala.Simulation.Placement.PlacementManager.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/PlacementManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Dispose
+    path: ../Packages/com.koala.simulation/Runtime/Placement/PlacementManager.cs
+    startLine: 299
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement
+  summary: For internal use. Calling this incorrectly may lead to unexpected behavior.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Koala.Simulation.Placement.PlacementManager.Dispose*
+references:
+- uid: Koala.Simulation.Placement
+  commentId: N:Koala.Simulation.Placement
+  href: Koala.html
+  name: Koala.Simulation.Placement
+  nameWithType: Koala.Simulation.Placement
+  fullName: Koala.Simulation.Placement
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Placement.PlacementManager.Instance*
+  commentId: Overload:Koala.Simulation.Placement.PlacementManager.Instance
+  href: Koala.Simulation.Placement.PlacementManager.html#Koala_Simulation_Placement_PlacementManager_Instance
+  name: Instance
+  nameWithType: PlacementManager.Instance
+  fullName: Koala.Simulation.Placement.PlacementManager.Instance
+- uid: Koala.Simulation.Placement.PlacementManager
+  commentId: T:Koala.Simulation.Placement.PlacementManager
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.PlacementManager.html
+  name: PlacementManager
+  nameWithType: PlacementManager
+  fullName: Koala.Simulation.Placement.PlacementManager
+- uid: Koala.Simulation.Placement.Samples.NoOverlapRule
+  commentId: T:Koala.Simulation.Placement.Samples.NoOverlapRule
+  href: Koala.Simulation.Placement.Samples.NoOverlapRule.html
+  name: NoOverlapRule
+  nameWithType: NoOverlapRule
+  fullName: Koala.Simulation.Placement.Samples.NoOverlapRule
+- uid: Koala.Simulation.Placement.Samples.LayerRule
+  commentId: T:Koala.Simulation.Placement.Samples.LayerRule
+  href: Koala.Simulation.Placement.Samples.LayerRule.html
+  name: LayerRule
+  nameWithType: LayerRule
+  fullName: Koala.Simulation.Placement.Samples.LayerRule
+- uid: Koala.Simulation.Placement.PlacementManager.AddRule*
+  commentId: Overload:Koala.Simulation.Placement.PlacementManager.AddRule
+  href: Koala.Simulation.Placement.PlacementManager.html#Koala_Simulation_Placement_PlacementManager_AddRule_Koala_Simulation_Placement_IPlacementRule_
+  name: AddRule
+  nameWithType: PlacementManager.AddRule
+  fullName: Koala.Simulation.Placement.PlacementManager.AddRule
+- uid: Koala.Simulation.Placement.IPlacementRule
+  commentId: T:Koala.Simulation.Placement.IPlacementRule
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.IPlacementRule.html
+  name: IPlacementRule
+  nameWithType: IPlacementRule
+  fullName: Koala.Simulation.Placement.IPlacementRule
+- uid: Koala.Simulation.Placement.DefaultSnapStrategy
+  commentId: T:Koala.Simulation.Placement.DefaultSnapStrategy
+  href: Koala.Simulation.Placement.DefaultSnapStrategy.html
+  name: DefaultSnapStrategy
+  nameWithType: DefaultSnapStrategy
+  fullName: Koala.Simulation.Placement.DefaultSnapStrategy
+- uid: Koala.Simulation.Placement.PlacementManager.SetSnapStrategy*
+  commentId: Overload:Koala.Simulation.Placement.PlacementManager.SetSnapStrategy
+  href: Koala.Simulation.Placement.PlacementManager.html#Koala_Simulation_Placement_PlacementManager_SetSnapStrategy_Koala_Simulation_Placement_ISnapStrategy_
+  name: SetSnapStrategy
+  nameWithType: PlacementManager.SetSnapStrategy
+  fullName: Koala.Simulation.Placement.PlacementManager.SetSnapStrategy
+- uid: Koala.Simulation.Placement.ISnapStrategy
+  commentId: T:Koala.Simulation.Placement.ISnapStrategy
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.ISnapStrategy.html
+  name: ISnapStrategy
+  nameWithType: ISnapStrategy
+  fullName: Koala.Simulation.Placement.ISnapStrategy
+- uid: Koala.Simulation.Placement.IPlaceable
+  commentId: T:Koala.Simulation.Placement.IPlaceable
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.IPlaceable.html
+  name: IPlaceable
+  nameWithType: IPlaceable
+  fullName: Koala.Simulation.Placement.IPlaceable
+- uid: Koala.Simulation.Placement.PlacementManager.Start*
+  commentId: Overload:Koala.Simulation.Placement.PlacementManager.Start
+  href: Koala.Simulation.Placement.PlacementManager.html#Koala_Simulation_Placement_PlacementManager_Start_UnityEngine_GameObject_UnityEngine_Material_UnityEngine_Material_System_Action_UnityEngine_GameObject__
+  name: Start
+  nameWithType: PlacementManager.Start
+  fullName: Koala.Simulation.Placement.PlacementManager.Start
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: System.Action{UnityEngine.GameObject}
+  commentId: T:System.Action{UnityEngine.GameObject}
+  parent: System
+  definition: System.Action`1
+  name: Action<GameObject>
+  nameWithType: Action<GameObject>
+  fullName: System.Action<UnityEngine.GameObject>
+  nameWithType.vb: Action(Of GameObject)
+  fullName.vb: System.Action(Of UnityEngine.GameObject)
+  name.vb: Action(Of GameObject)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Koala.Simulation.Placement.PlacementManager.Reposition*
+  commentId: Overload:Koala.Simulation.Placement.PlacementManager.Reposition
+  href: Koala.Simulation.Placement.PlacementManager.html#Koala_Simulation_Placement_PlacementManager_Reposition_UnityEngine_GameObject_UnityEngine_Material_UnityEngine_Material_System_Action_UnityEngine_GameObject__
+  name: Reposition
+  nameWithType: PlacementManager.Reposition
+  fullName: Koala.Simulation.Placement.PlacementManager.Reposition
+- uid: Koala.Simulation.Placement.PlacementManager.Rotate*
+  commentId: Overload:Koala.Simulation.Placement.PlacementManager.Rotate
+  href: Koala.Simulation.Placement.PlacementManager.html#Koala_Simulation_Placement_PlacementManager_Rotate_System_Boolean_
+  name: Rotate
+  nameWithType: PlacementManager.Rotate
+  fullName: Koala.Simulation.Placement.PlacementManager.Rotate
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koala.Simulation.Placement.PlacementManager.Confirm*
+  commentId: Overload:Koala.Simulation.Placement.PlacementManager.Confirm
+  href: Koala.Simulation.Placement.PlacementManager.html#Koala_Simulation_Placement_PlacementManager_Confirm
+  name: Confirm
+  nameWithType: PlacementManager.Confirm
+  fullName: Koala.Simulation.Placement.PlacementManager.Confirm
+- uid: Koala.Simulation.Placement.PlacementManager.Cancel*
+  commentId: Overload:Koala.Simulation.Placement.PlacementManager.Cancel
+  href: Koala.Simulation.Placement.PlacementManager.html#Koala_Simulation_Placement_PlacementManager_Cancel
+  name: Cancel
+  nameWithType: PlacementManager.Cancel
+  fullName: Koala.Simulation.Placement.PlacementManager.Cancel
+- uid: Koala.Simulation.Placement.PlacementManager.ClearRules*
+  commentId: Overload:Koala.Simulation.Placement.PlacementManager.ClearRules
+  href: Koala.Simulation.Placement.PlacementManager.html#Koala_Simulation_Placement_PlacementManager_ClearRules
+  name: ClearRules
+  nameWithType: PlacementManager.ClearRules
+  fullName: Koala.Simulation.Placement.PlacementManager.ClearRules
+- uid: Koala.Simulation.Placement.PlacementManager.Dispose*
+  commentId: Overload:Koala.Simulation.Placement.PlacementManager.Dispose
+  href: Koala.Simulation.Placement.PlacementManager.html#Koala_Simulation_Placement_PlacementManager_Dispose
+  name: Dispose
+  nameWithType: PlacementManager.Dispose
+  fullName: Koala.Simulation.Placement.PlacementManager.Dispose

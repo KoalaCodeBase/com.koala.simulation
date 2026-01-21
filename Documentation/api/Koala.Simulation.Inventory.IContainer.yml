@@ -1,0 +1,448 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory.IContainer
+  commentId: T:Koala.Simulation.Inventory.IContainer
+  id: IContainer
+  parent: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.IContainer.CanAccept(Koala.Simulation.Inventory.IItem)
+  - Koala.Simulation.Inventory.IContainer.Capacity
+  - Koala.Simulation.Inventory.IContainer.ContainerId
+  - Koala.Simulation.Inventory.IContainer.GetItems
+  - Koala.Simulation.Inventory.IContainer.TryAdd(Koala.Simulation.Inventory.IItem)
+  - Koala.Simulation.Inventory.IContainer.TryRemove(Koala.Simulation.Inventory.IItem)
+  langs:
+  - csharp
+  - vb
+  name: IContainer
+  nameWithType: IContainer
+  fullName: Koala.Simulation.Inventory.IContainer
+  type: Interface
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IContainer.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: IContainer
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IContainer.cs
+    startLine: 8
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: >-
+    Represents a container that stores items with a limited capacity.  
+
+    For better understanding and usage, see <xref href="Koala.Simulation.Inventory.BaseContainer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface IContainer
+    content.vb: Public Interface IContainer
+- uid: Koala.Simulation.Inventory.IContainer.ContainerId
+  commentId: P:Koala.Simulation.Inventory.IContainer.ContainerId
+  id: ContainerId
+  parent: Koala.Simulation.Inventory.IContainer
+  langs:
+  - csharp
+  - vb
+  name: ContainerId
+  nameWithType: IContainer.ContainerId
+  fullName: Koala.Simulation.Inventory.IContainer.ContainerId
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IContainer.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ContainerId
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IContainer.cs
+    startLine: 13
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: The unique identifier of the container.
+  example: []
+  syntax:
+    content: string ContainerId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ContainerId As String
+  overload: Koala.Simulation.Inventory.IContainer.ContainerId*
+- uid: Koala.Simulation.Inventory.IContainer.Capacity
+  commentId: P:Koala.Simulation.Inventory.IContainer.Capacity
+  id: Capacity
+  parent: Koala.Simulation.Inventory.IContainer
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  nameWithType: IContainer.Capacity
+  fullName: Koala.Simulation.Inventory.IContainer.Capacity
+  type: Property
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IContainer.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Capacity
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IContainer.cs
+    startLine: 18
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: The maximum number of items the container can hold.
+  example: []
+  syntax:
+    content: int Capacity { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Capacity As Integer
+  overload: Koala.Simulation.Inventory.IContainer.Capacity*
+- uid: Koala.Simulation.Inventory.IContainer.CanAccept(Koala.Simulation.Inventory.IItem)
+  commentId: M:Koala.Simulation.Inventory.IContainer.CanAccept(Koala.Simulation.Inventory.IItem)
+  id: CanAccept(Koala.Simulation.Inventory.IItem)
+  parent: Koala.Simulation.Inventory.IContainer
+  langs:
+  - csharp
+  - vb
+  name: CanAccept(IItem)
+  nameWithType: IContainer.CanAccept(IItem)
+  fullName: Koala.Simulation.Inventory.IContainer.CanAccept(Koala.Simulation.Inventory.IItem)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IContainer.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: CanAccept
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IContainer.cs
+    startLine: 25
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Checks if the container can accept the specified item.
+  example: []
+  syntax:
+    content: bool CanAccept(IItem item)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.IItem
+      description: The item to evaluate.
+    return:
+      type: System.Boolean
+      description: True if the item can be accepted; otherwise false.
+    content.vb: Function CanAccept(item As IItem) As Boolean
+  overload: Koala.Simulation.Inventory.IContainer.CanAccept*
+- uid: Koala.Simulation.Inventory.IContainer.TryAdd(Koala.Simulation.Inventory.IItem)
+  commentId: M:Koala.Simulation.Inventory.IContainer.TryAdd(Koala.Simulation.Inventory.IItem)
+  id: TryAdd(Koala.Simulation.Inventory.IItem)
+  parent: Koala.Simulation.Inventory.IContainer
+  langs:
+  - csharp
+  - vb
+  name: TryAdd(IItem)
+  nameWithType: IContainer.TryAdd(IItem)
+  fullName: Koala.Simulation.Inventory.IContainer.TryAdd(Koala.Simulation.Inventory.IItem)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IContainer.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: TryAdd
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IContainer.cs
+    startLine: 32
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Attempts to add an item to the container.
+  example: []
+  syntax:
+    content: bool TryAdd(IItem item)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.IItem
+      description: The item to add.
+    return:
+      type: System.Boolean
+      description: True if the item was successfully added; otherwise false.
+    content.vb: Function TryAdd(item As IItem) As Boolean
+  overload: Koala.Simulation.Inventory.IContainer.TryAdd*
+- uid: Koala.Simulation.Inventory.IContainer.TryRemove(Koala.Simulation.Inventory.IItem)
+  commentId: M:Koala.Simulation.Inventory.IContainer.TryRemove(Koala.Simulation.Inventory.IItem)
+  id: TryRemove(Koala.Simulation.Inventory.IItem)
+  parent: Koala.Simulation.Inventory.IContainer
+  langs:
+  - csharp
+  - vb
+  name: TryRemove(IItem)
+  nameWithType: IContainer.TryRemove(IItem)
+  fullName: Koala.Simulation.Inventory.IContainer.TryRemove(Koala.Simulation.Inventory.IItem)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IContainer.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: TryRemove
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IContainer.cs
+    startLine: 39
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Attempts to remove an item from the container.
+  example: []
+  syntax:
+    content: bool TryRemove(IItem item)
+    parameters:
+    - id: item
+      type: Koala.Simulation.Inventory.IItem
+      description: The item to remove.
+    return:
+      type: System.Boolean
+      description: True if the item was successfully removed; otherwise false.
+    content.vb: Function TryRemove(item As IItem) As Boolean
+  overload: Koala.Simulation.Inventory.IContainer.TryRemove*
+- uid: Koala.Simulation.Inventory.IContainer.GetItems
+  commentId: M:Koala.Simulation.Inventory.IContainer.GetItems
+  id: GetItems
+  parent: Koala.Simulation.Inventory.IContainer
+  langs:
+  - csharp
+  - vb
+  name: GetItems()
+  nameWithType: IContainer.GetItems()
+  fullName: Koala.Simulation.Inventory.IContainer.GetItems()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Inventory/Core/IContainer.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: GetItems
+    path: ../Packages/com.koala.simulation/Runtime/Inventory/Core/IContainer.cs
+    startLine: 45
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Inventory
+  summary: Gets the current list of items stored in the container.
+  example: []
+  syntax:
+    content: IReadOnlyList<IItem> GetItems()
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Koala.Simulation.Inventory.IItem}
+      description: A read-only list of items.
+    content.vb: Function GetItems() As IReadOnlyList(Of IItem)
+  overload: Koala.Simulation.Inventory.IContainer.GetItems*
+references:
+- uid: Koala.Simulation.Inventory.BaseContainer
+  commentId: T:Koala.Simulation.Inventory.BaseContainer
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.BaseContainer.html
+  name: BaseContainer
+  nameWithType: BaseContainer
+  fullName: Koala.Simulation.Inventory.BaseContainer
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+- uid: Koala.Simulation.Inventory.IContainer.ContainerId*
+  commentId: Overload:Koala.Simulation.Inventory.IContainer.ContainerId
+  href: Koala.Simulation.Inventory.IContainer.html#Koala_Simulation_Inventory_IContainer_ContainerId
+  name: ContainerId
+  nameWithType: IContainer.ContainerId
+  fullName: Koala.Simulation.Inventory.IContainer.ContainerId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Inventory.IContainer.Capacity*
+  commentId: Overload:Koala.Simulation.Inventory.IContainer.Capacity
+  href: Koala.Simulation.Inventory.IContainer.html#Koala_Simulation_Inventory_IContainer_Capacity
+  name: Capacity
+  nameWithType: IContainer.Capacity
+  fullName: Koala.Simulation.Inventory.IContainer.Capacity
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koala.Simulation.Inventory.IContainer.CanAccept*
+  commentId: Overload:Koala.Simulation.Inventory.IContainer.CanAccept
+  href: Koala.Simulation.Inventory.IContainer.html#Koala_Simulation_Inventory_IContainer_CanAccept_Koala_Simulation_Inventory_IItem_
+  name: CanAccept
+  nameWithType: IContainer.CanAccept
+  fullName: Koala.Simulation.Inventory.IContainer.CanAccept
+- uid: Koala.Simulation.Inventory.IItem
+  commentId: T:Koala.Simulation.Inventory.IItem
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.IItem.html
+  name: IItem
+  nameWithType: IItem
+  fullName: Koala.Simulation.Inventory.IItem
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koala.Simulation.Inventory.IContainer.TryAdd*
+  commentId: Overload:Koala.Simulation.Inventory.IContainer.TryAdd
+  href: Koala.Simulation.Inventory.IContainer.html#Koala_Simulation_Inventory_IContainer_TryAdd_Koala_Simulation_Inventory_IItem_
+  name: TryAdd
+  nameWithType: IContainer.TryAdd
+  fullName: Koala.Simulation.Inventory.IContainer.TryAdd
+- uid: Koala.Simulation.Inventory.IContainer.TryRemove*
+  commentId: Overload:Koala.Simulation.Inventory.IContainer.TryRemove
+  href: Koala.Simulation.Inventory.IContainer.html#Koala_Simulation_Inventory_IContainer_TryRemove_Koala_Simulation_Inventory_IItem_
+  name: TryRemove
+  nameWithType: IContainer.TryRemove
+  fullName: Koala.Simulation.Inventory.IContainer.TryRemove
+- uid: Koala.Simulation.Inventory.IContainer.GetItems*
+  commentId: Overload:Koala.Simulation.Inventory.IContainer.GetItems
+  href: Koala.Simulation.Inventory.IContainer.html#Koala_Simulation_Inventory_IContainer_GetItems
+  name: GetItems
+  nameWithType: IContainer.GetItems
+  fullName: Koala.Simulation.Inventory.IContainer.GetItems
+- uid: System.Collections.Generic.IReadOnlyList{Koala.Simulation.Inventory.IItem}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Koala.Simulation.Inventory.IItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: Koala.Simulation.Inventory.IItem.html
+  name: IReadOnlyList<IItem>
+  nameWithType: IReadOnlyList<IItem>
+  fullName: System.Collections.Generic.IReadOnlyList<Koala.Simulation.Inventory.IItem>
+  nameWithType.vb: IReadOnlyList(Of IItem)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Koala.Simulation.Inventory.IItem)
+  name.vb: IReadOnlyList(Of IItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: <
+  - uid: Koala.Simulation.Inventory.IItem
+    name: IItem
+    href: Koala.Simulation.Inventory.IItem.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koala.Simulation.Inventory.IItem
+    name: IItem
+    href: Koala.Simulation.Inventory.IItem.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

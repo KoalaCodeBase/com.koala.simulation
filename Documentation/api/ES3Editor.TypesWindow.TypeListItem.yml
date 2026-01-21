@@ -1,0 +1,498 @@
+### YamlMime:ManagedReference
+items:
+- uid: ES3Editor.TypesWindow.TypeListItem
+  commentId: T:ES3Editor.TypesWindow.TypeListItem
+  id: TypesWindow.TypeListItem
+  parent: ES3Editor
+  children:
+  - ES3Editor.TypesWindow.TypeListItem.#ctor(System.String,System.String,System.Type,System.Boolean,System.Boolean)
+  - ES3Editor.TypesWindow.TypeListItem.hasExplicitES3Type
+  - ES3Editor.TypesWindow.TypeListItem.lowercaseName
+  - ES3Editor.TypesWindow.TypeListItem.name
+  - ES3Editor.TypesWindow.TypeListItem.namespaceName
+  - ES3Editor.TypesWindow.TypeListItem.showInList
+  - ES3Editor.TypesWindow.TypeListItem.type
+  langs:
+  - csharp
+  - vb
+  name: TypesWindow.TypeListItem
+  nameWithType: TypesWindow.TypeListItem
+  fullName: ES3Editor.TypesWindow.TypeListItem
+  type: Class
+  source:
+    id: TypeListItem
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\TypesWindow.cs
+    startLine: 702
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public class TypesWindow.TypeListItem
+    content.vb: Public Class TypesWindow.TypeListItem
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ES3Editor.TypesWindow.TypeListItem.name
+  commentId: F:ES3Editor.TypesWindow.TypeListItem.name
+  id: name
+  parent: ES3Editor.TypesWindow.TypeListItem
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: TypesWindow.TypeListItem.name
+  fullName: ES3Editor.TypesWindow.TypeListItem.name
+  type: Field
+  source:
+    id: name
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\TypesWindow.cs
+    startLine: 704
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public string name
+    return:
+      type: System.String
+    content.vb: Public name As String
+- uid: ES3Editor.TypesWindow.TypeListItem.lowercaseName
+  commentId: F:ES3Editor.TypesWindow.TypeListItem.lowercaseName
+  id: lowercaseName
+  parent: ES3Editor.TypesWindow.TypeListItem
+  langs:
+  - csharp
+  - vb
+  name: lowercaseName
+  nameWithType: TypesWindow.TypeListItem.lowercaseName
+  fullName: ES3Editor.TypesWindow.TypeListItem.lowercaseName
+  type: Field
+  source:
+    id: lowercaseName
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\TypesWindow.cs
+    startLine: 705
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public string lowercaseName
+    return:
+      type: System.String
+    content.vb: Public lowercaseName As String
+- uid: ES3Editor.TypesWindow.TypeListItem.namespaceName
+  commentId: F:ES3Editor.TypesWindow.TypeListItem.namespaceName
+  id: namespaceName
+  parent: ES3Editor.TypesWindow.TypeListItem
+  langs:
+  - csharp
+  - vb
+  name: namespaceName
+  nameWithType: TypesWindow.TypeListItem.namespaceName
+  fullName: ES3Editor.TypesWindow.TypeListItem.namespaceName
+  type: Field
+  source:
+    id: namespaceName
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\TypesWindow.cs
+    startLine: 706
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public string namespaceName
+    return:
+      type: System.String
+    content.vb: Public namespaceName As String
+- uid: ES3Editor.TypesWindow.TypeListItem.type
+  commentId: F:ES3Editor.TypesWindow.TypeListItem.type
+  id: type
+  parent: ES3Editor.TypesWindow.TypeListItem
+  langs:
+  - csharp
+  - vb
+  name: type
+  nameWithType: TypesWindow.TypeListItem.type
+  fullName: ES3Editor.TypesWindow.TypeListItem.type
+  type: Field
+  source:
+    id: type
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\TypesWindow.cs
+    startLine: 707
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public Type type
+    return:
+      type: System.Type
+    content.vb: Public type As Type
+- uid: ES3Editor.TypesWindow.TypeListItem.showInList
+  commentId: F:ES3Editor.TypesWindow.TypeListItem.showInList
+  id: showInList
+  parent: ES3Editor.TypesWindow.TypeListItem
+  langs:
+  - csharp
+  - vb
+  name: showInList
+  nameWithType: TypesWindow.TypeListItem.showInList
+  fullName: ES3Editor.TypesWindow.TypeListItem.showInList
+  type: Field
+  source:
+    id: showInList
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\TypesWindow.cs
+    startLine: 708
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public bool showInList
+    return:
+      type: System.Boolean
+    content.vb: Public showInList As Boolean
+- uid: ES3Editor.TypesWindow.TypeListItem.hasExplicitES3Type
+  commentId: F:ES3Editor.TypesWindow.TypeListItem.hasExplicitES3Type
+  id: hasExplicitES3Type
+  parent: ES3Editor.TypesWindow.TypeListItem
+  langs:
+  - csharp
+  - vb
+  name: hasExplicitES3Type
+  nameWithType: TypesWindow.TypeListItem.hasExplicitES3Type
+  fullName: ES3Editor.TypesWindow.TypeListItem.hasExplicitES3Type
+  type: Field
+  source:
+    id: hasExplicitES3Type
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\TypesWindow.cs
+    startLine: 709
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public bool hasExplicitES3Type
+    return:
+      type: System.Boolean
+    content.vb: Public hasExplicitES3Type As Boolean
+- uid: ES3Editor.TypesWindow.TypeListItem.#ctor(System.String,System.String,System.Type,System.Boolean,System.Boolean)
+  commentId: M:ES3Editor.TypesWindow.TypeListItem.#ctor(System.String,System.String,System.Type,System.Boolean,System.Boolean)
+  id: '#ctor(System.String,System.String,System.Type,System.Boolean,System.Boolean)'
+  parent: ES3Editor.TypesWindow.TypeListItem
+  langs:
+  - csharp
+  - vb
+  name: TypeListItem(string, string, Type, bool, bool)
+  nameWithType: TypesWindow.TypeListItem.TypeListItem(string, string, Type, bool, bool)
+  fullName: ES3Editor.TypesWindow.TypeListItem.TypeListItem(string, string, System.Type, bool, bool)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\Easy Save 3\Editor\TypesWindow.cs
+    startLine: 711
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: ES3Editor
+  syntax:
+    content: public TypeListItem(string name, string namespaceName, Type type, bool showInList, bool hasExplicitES3Type)
+    parameters:
+    - id: name
+      type: System.String
+    - id: namespaceName
+      type: System.String
+    - id: type
+      type: System.Type
+    - id: showInList
+      type: System.Boolean
+    - id: hasExplicitES3Type
+      type: System.Boolean
+    content.vb: Public Sub New(name As String, namespaceName As String, type As Type, showInList As Boolean, hasExplicitES3Type As Boolean)
+  overload: ES3Editor.TypesWindow.TypeListItem.#ctor*
+  nameWithType.vb: TypesWindow.TypeListItem.New(String, String, Type, Boolean, Boolean)
+  fullName.vb: ES3Editor.TypesWindow.TypeListItem.New(String, String, System.Type, Boolean, Boolean)
+  name.vb: New(String, String, Type, Boolean, Boolean)
+references:
+- uid: ES3Editor
+  commentId: N:ES3Editor
+  href: ES3Editor.html
+  name: ES3Editor
+  nameWithType: ES3Editor
+  fullName: ES3Editor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ES3Editor.TypesWindow.TypeListItem.#ctor*
+  commentId: Overload:ES3Editor.TypesWindow.TypeListItem.#ctor
+  href: ES3Editor.TypesWindow.TypeListItem.html#ES3Editor_TypesWindow_TypeListItem__ctor_System_String_System_String_System_Type_System_Boolean_System_Boolean_
+  name: TypeListItem
+  nameWithType: TypesWindow.TypeListItem.TypeListItem
+  fullName: ES3Editor.TypesWindow.TypeListItem.TypeListItem
+  nameWithType.vb: TypesWindow.TypeListItem.New
+  fullName.vb: ES3Editor.TypesWindow.TypeListItem.New
+  name.vb: New

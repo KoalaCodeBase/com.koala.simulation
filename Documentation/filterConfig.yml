@@ -1,0 +1,14 @@
+### YamlMime:ManagedReference
+apiRules:
+  - exclude:
+      uidRegex: ^UnityEngine\.
+  - exclude:
+      uidRegex: ^System\.
+  - exclude:
+      uidRegex: ^object$
+  - exclude:
+      hasAttribute:
+        uid: Koala.Simulation.Common.DocfxIgnoreAttribute
+  - exclude:
+      type: Field
+      accessibility: private

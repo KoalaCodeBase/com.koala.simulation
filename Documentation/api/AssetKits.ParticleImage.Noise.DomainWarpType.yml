@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Noise.DomainWarpType
+  commentId: T:AssetKits.ParticleImage.Noise.DomainWarpType
+  id: Noise.DomainWarpType
+  parent: AssetKits.ParticleImage
+  children:
+  - AssetKits.ParticleImage.Noise.DomainWarpType.BasicGrid
+  - AssetKits.ParticleImage.Noise.DomainWarpType.OpenSimplex2
+  - AssetKits.ParticleImage.Noise.DomainWarpType.OpenSimplex2Reduced
+  langs:
+  - csharp
+  - vb
+  name: Noise.DomainWarpType
+  nameWithType: Noise.DomainWarpType
+  fullName: AssetKits.ParticleImage.Noise.DomainWarpType
+  type: Enum
+  source:
+    id: DomainWarpType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 86
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public enum Noise.DomainWarpType
+    content.vb: Public Enum Noise.DomainWarpType
+- uid: AssetKits.ParticleImage.Noise.DomainWarpType.OpenSimplex2
+  commentId: F:AssetKits.ParticleImage.Noise.DomainWarpType.OpenSimplex2
+  id: OpenSimplex2
+  parent: AssetKits.ParticleImage.Noise.DomainWarpType
+  langs:
+  - csharp
+  - vb
+  name: OpenSimplex2
+  nameWithType: Noise.DomainWarpType.OpenSimplex2
+  fullName: AssetKits.ParticleImage.Noise.DomainWarpType.OpenSimplex2
+  type: Field
+  source:
+    id: OpenSimplex2
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 88
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: OpenSimplex2 = 0
+    return:
+      type: AssetKits.ParticleImage.Noise.DomainWarpType
+- uid: AssetKits.ParticleImage.Noise.DomainWarpType.OpenSimplex2Reduced
+  commentId: F:AssetKits.ParticleImage.Noise.DomainWarpType.OpenSimplex2Reduced
+  id: OpenSimplex2Reduced
+  parent: AssetKits.ParticleImage.Noise.DomainWarpType
+  langs:
+  - csharp
+  - vb
+  name: OpenSimplex2Reduced
+  nameWithType: Noise.DomainWarpType.OpenSimplex2Reduced
+  fullName: AssetKits.ParticleImage.Noise.DomainWarpType.OpenSimplex2Reduced
+  type: Field
+  source:
+    id: OpenSimplex2Reduced
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 89
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: OpenSimplex2Reduced = 1
+    return:
+      type: AssetKits.ParticleImage.Noise.DomainWarpType
+- uid: AssetKits.ParticleImage.Noise.DomainWarpType.BasicGrid
+  commentId: F:AssetKits.ParticleImage.Noise.DomainWarpType.BasicGrid
+  id: BasicGrid
+  parent: AssetKits.ParticleImage.Noise.DomainWarpType
+  langs:
+  - csharp
+  - vb
+  name: BasicGrid
+  nameWithType: Noise.DomainWarpType.BasicGrid
+  fullName: AssetKits.ParticleImage.Noise.DomainWarpType.BasicGrid
+  type: Field
+  source:
+    id: BasicGrid
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 90
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: BasicGrid = 2
+    return:
+      type: AssetKits.ParticleImage.Noise.DomainWarpType
+references:
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  href: AssetKits.html
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+- uid: AssetKits.ParticleImage.Noise.DomainWarpType
+  commentId: T:AssetKits.ParticleImage.Noise.DomainWarpType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.DomainWarpType
+  nameWithType: Noise.DomainWarpType
+  fullName: AssetKits.ParticleImage.Noise.DomainWarpType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.DomainWarpType
+    name: DomainWarpType
+    href: AssetKits.ParticleImage.Noise.DomainWarpType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.DomainWarpType
+    name: DomainWarpType
+    href: AssetKits.ParticleImage.Noise.DomainWarpType.html

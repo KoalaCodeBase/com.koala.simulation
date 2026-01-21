@@ -1,0 +1,1222 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Noise
+  commentId: T:AssetKits.ParticleImage.Noise
+  id: Noise
+  parent: AssetKits.ParticleImage
+  children:
+  - AssetKits.ParticleImage.Noise.#ctor(System.Int32)
+  - AssetKits.ParticleImage.Noise.DomainWarp(System.Single@,System.Single@)
+  - AssetKits.ParticleImage.Noise.DomainWarp(System.Single@,System.Single@,System.Single@)
+  - AssetKits.ParticleImage.Noise.GetNoise(System.Single,System.Single)
+  - AssetKits.ParticleImage.Noise.GetNoise(System.Single,System.Single,System.Single)
+  - AssetKits.ParticleImage.Noise.SetCellularDistanceFunction(AssetKits.ParticleImage.Noise.CellularDistanceFunction)
+  - AssetKits.ParticleImage.Noise.SetCellularJitter(System.Single)
+  - AssetKits.ParticleImage.Noise.SetCellularReturnType(AssetKits.ParticleImage.Noise.CellularReturnType)
+  - AssetKits.ParticleImage.Noise.SetDomainWarpAmp(System.Single)
+  - AssetKits.ParticleImage.Noise.SetDomainWarpType(AssetKits.ParticleImage.Noise.DomainWarpType)
+  - AssetKits.ParticleImage.Noise.SetFractalGain(System.Single)
+  - AssetKits.ParticleImage.Noise.SetFractalLacunarity(System.Single)
+  - AssetKits.ParticleImage.Noise.SetFractalOctaves(System.Int32)
+  - AssetKits.ParticleImage.Noise.SetFractalPingPongStrength(System.Single)
+  - AssetKits.ParticleImage.Noise.SetFractalType(AssetKits.ParticleImage.Noise.FractalType)
+  - AssetKits.ParticleImage.Noise.SetFractalWeightedStrength(System.Single)
+  - AssetKits.ParticleImage.Noise.SetFrequency(System.Single)
+  - AssetKits.ParticleImage.Noise.SetNoiseType(AssetKits.ParticleImage.Noise.NoiseType)
+  - AssetKits.ParticleImage.Noise.SetRotationType3D(AssetKits.ParticleImage.Noise.RotationType3D)
+  - AssetKits.ParticleImage.Noise.SetSeed(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Noise
+  nameWithType: Noise
+  fullName: AssetKits.ParticleImage.Noise
+  type: Class
+  source:
+    id: Noise
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 35
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  syntax:
+    content: public class Noise
+    content.vb: Public Class Noise
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AssetKits.ParticleImage.Noise.#ctor(System.Int32)
+  commentId: M:AssetKits.ParticleImage.Noise.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: Noise(int)
+  nameWithType: Noise.Noise(int)
+  fullName: AssetKits.ParticleImage.Noise.Noise(int)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 127
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Create new FastNoise object with optional seed
+  example: []
+  syntax:
+    content: public Noise(int seed = 1337)
+    parameters:
+    - id: seed
+      type: System.Int32
+    content.vb: Public Sub New(seed As Integer = 1337)
+  overload: AssetKits.ParticleImage.Noise.#ctor*
+  nameWithType.vb: Noise.New(Integer)
+  fullName.vb: AssetKits.ParticleImage.Noise.New(Integer)
+  name.vb: New(Integer)
+- uid: AssetKits.ParticleImage.Noise.SetSeed(System.Int32)
+  commentId: M:AssetKits.ParticleImage.Noise.SetSeed(System.Int32)
+  id: SetSeed(System.Int32)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetSeed(int)
+  nameWithType: Noise.SetSeed(int)
+  fullName: AssetKits.ParticleImage.Noise.SetSeed(int)
+  type: Method
+  source:
+    id: SetSeed
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 138
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets seed used for all noise types
+  remarks: 'Default: 1337'
+  example: []
+  syntax:
+    content: public void SetSeed(int seed)
+    parameters:
+    - id: seed
+      type: System.Int32
+    content.vb: Public Sub SetSeed(seed As Integer)
+  overload: AssetKits.ParticleImage.Noise.SetSeed*
+  nameWithType.vb: Noise.SetSeed(Integer)
+  fullName.vb: AssetKits.ParticleImage.Noise.SetSeed(Integer)
+  name.vb: SetSeed(Integer)
+- uid: AssetKits.ParticleImage.Noise.SetFrequency(System.Single)
+  commentId: M:AssetKits.ParticleImage.Noise.SetFrequency(System.Single)
+  id: SetFrequency(System.Single)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetFrequency(float)
+  nameWithType: Noise.SetFrequency(float)
+  fullName: AssetKits.ParticleImage.Noise.SetFrequency(float)
+  type: Method
+  source:
+    id: SetFrequency
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 146
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets frequency for all noise types
+  remarks: 'Default: 0.01'
+  example: []
+  syntax:
+    content: public void SetFrequency(float frequency)
+    parameters:
+    - id: frequency
+      type: System.Single
+    content.vb: Public Sub SetFrequency(frequency As Single)
+  overload: AssetKits.ParticleImage.Noise.SetFrequency*
+  nameWithType.vb: Noise.SetFrequency(Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.SetFrequency(Single)
+  name.vb: SetFrequency(Single)
+- uid: AssetKits.ParticleImage.Noise.SetNoiseType(AssetKits.ParticleImage.Noise.NoiseType)
+  commentId: M:AssetKits.ParticleImage.Noise.SetNoiseType(AssetKits.ParticleImage.Noise.NoiseType)
+  id: SetNoiseType(AssetKits.ParticleImage.Noise.NoiseType)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetNoiseType(NoiseType)
+  nameWithType: Noise.SetNoiseType(Noise.NoiseType)
+  fullName: AssetKits.ParticleImage.Noise.SetNoiseType(AssetKits.ParticleImage.Noise.NoiseType)
+  type: Method
+  source:
+    id: SetNoiseType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 154
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets noise algorithm used for GetNoise(...)
+  remarks: 'Default: OpenSimplex2'
+  example: []
+  syntax:
+    content: public void SetNoiseType(Noise.NoiseType noiseType)
+    parameters:
+    - id: noiseType
+      type: AssetKits.ParticleImage.Noise.NoiseType
+    content.vb: Public Sub SetNoiseType(noiseType As Noise.NoiseType)
+  overload: AssetKits.ParticleImage.Noise.SetNoiseType*
+- uid: AssetKits.ParticleImage.Noise.SetRotationType3D(AssetKits.ParticleImage.Noise.RotationType3D)
+  commentId: M:AssetKits.ParticleImage.Noise.SetRotationType3D(AssetKits.ParticleImage.Noise.RotationType3D)
+  id: SetRotationType3D(AssetKits.ParticleImage.Noise.RotationType3D)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetRotationType3D(RotationType3D)
+  nameWithType: Noise.SetRotationType3D(Noise.RotationType3D)
+  fullName: AssetKits.ParticleImage.Noise.SetRotationType3D(AssetKits.ParticleImage.Noise.RotationType3D)
+  type: Method
+  source:
+    id: SetRotationType3D
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 167
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: >-
+    Sets domain rotation type for 3D Noise and 3D DomainWarp.
+
+    Can aid in reducing directional artifacts when sampling a 2D plane in 3D
+  remarks: 'Default: None'
+  example: []
+  syntax:
+    content: public void SetRotationType3D(Noise.RotationType3D rotationType3D)
+    parameters:
+    - id: rotationType3D
+      type: AssetKits.ParticleImage.Noise.RotationType3D
+    content.vb: Public Sub SetRotationType3D(rotationType3D As Noise.RotationType3D)
+  overload: AssetKits.ParticleImage.Noise.SetRotationType3D*
+- uid: AssetKits.ParticleImage.Noise.SetFractalType(AssetKits.ParticleImage.Noise.FractalType)
+  commentId: M:AssetKits.ParticleImage.Noise.SetFractalType(AssetKits.ParticleImage.Noise.FractalType)
+  id: SetFractalType(AssetKits.ParticleImage.Noise.FractalType)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetFractalType(FractalType)
+  nameWithType: Noise.SetFractalType(Noise.FractalType)
+  fullName: AssetKits.ParticleImage.Noise.SetFractalType(AssetKits.ParticleImage.Noise.FractalType)
+  type: Method
+  source:
+    id: SetFractalType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 181
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets method for combining octaves in all fractal noise types
+  remarks: >-
+    Default: None
+
+    Note: FractalType.DomainWarp... only affects DomainWarp(...)
+  example: []
+  syntax:
+    content: public void SetFractalType(Noise.FractalType fractalType)
+    parameters:
+    - id: fractalType
+      type: AssetKits.ParticleImage.Noise.FractalType
+    content.vb: Public Sub SetFractalType(fractalType As Noise.FractalType)
+  overload: AssetKits.ParticleImage.Noise.SetFractalType*
+- uid: AssetKits.ParticleImage.Noise.SetFractalOctaves(System.Int32)
+  commentId: M:AssetKits.ParticleImage.Noise.SetFractalOctaves(System.Int32)
+  id: SetFractalOctaves(System.Int32)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetFractalOctaves(int)
+  nameWithType: Noise.SetFractalOctaves(int)
+  fullName: AssetKits.ParticleImage.Noise.SetFractalOctaves(int)
+  type: Method
+  source:
+    id: SetFractalOctaves
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 189
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets octave count for all fractal noise types
+  remarks: 'Default: 3'
+  example: []
+  syntax:
+    content: public void SetFractalOctaves(int octaves)
+    parameters:
+    - id: octaves
+      type: System.Int32
+    content.vb: Public Sub SetFractalOctaves(octaves As Integer)
+  overload: AssetKits.ParticleImage.Noise.SetFractalOctaves*
+  nameWithType.vb: Noise.SetFractalOctaves(Integer)
+  fullName.vb: AssetKits.ParticleImage.Noise.SetFractalOctaves(Integer)
+  name.vb: SetFractalOctaves(Integer)
+- uid: AssetKits.ParticleImage.Noise.SetFractalLacunarity(System.Single)
+  commentId: M:AssetKits.ParticleImage.Noise.SetFractalLacunarity(System.Single)
+  id: SetFractalLacunarity(System.Single)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetFractalLacunarity(float)
+  nameWithType: Noise.SetFractalLacunarity(float)
+  fullName: AssetKits.ParticleImage.Noise.SetFractalLacunarity(float)
+  type: Method
+  source:
+    id: SetFractalLacunarity
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 201
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets octave lacunarity for all fractal noise types
+  remarks: 'Default: 2.0'
+  example: []
+  syntax:
+    content: public void SetFractalLacunarity(float lacunarity)
+    parameters:
+    - id: lacunarity
+      type: System.Single
+    content.vb: Public Sub SetFractalLacunarity(lacunarity As Single)
+  overload: AssetKits.ParticleImage.Noise.SetFractalLacunarity*
+  nameWithType.vb: Noise.SetFractalLacunarity(Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.SetFractalLacunarity(Single)
+  name.vb: SetFractalLacunarity(Single)
+- uid: AssetKits.ParticleImage.Noise.SetFractalGain(System.Single)
+  commentId: M:AssetKits.ParticleImage.Noise.SetFractalGain(System.Single)
+  id: SetFractalGain(System.Single)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetFractalGain(float)
+  nameWithType: Noise.SetFractalGain(float)
+  fullName: AssetKits.ParticleImage.Noise.SetFractalGain(float)
+  type: Method
+  source:
+    id: SetFractalGain
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 209
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets octave gain for all fractal noise types
+  remarks: 'Default: 0.5'
+  example: []
+  syntax:
+    content: public void SetFractalGain(float gain)
+    parameters:
+    - id: gain
+      type: System.Single
+    content.vb: Public Sub SetFractalGain(gain As Single)
+  overload: AssetKits.ParticleImage.Noise.SetFractalGain*
+  nameWithType.vb: Noise.SetFractalGain(Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.SetFractalGain(Single)
+  name.vb: SetFractalGain(Single)
+- uid: AssetKits.ParticleImage.Noise.SetFractalWeightedStrength(System.Single)
+  commentId: M:AssetKits.ParticleImage.Noise.SetFractalWeightedStrength(System.Single)
+  id: SetFractalWeightedStrength(System.Single)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetFractalWeightedStrength(float)
+  nameWithType: Noise.SetFractalWeightedStrength(float)
+  fullName: AssetKits.ParticleImage.Noise.SetFractalWeightedStrength(float)
+  type: Method
+  source:
+    id: SetFractalWeightedStrength
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 222
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets octave weighting for all none DomainWarp fratal types
+  remarks: >-
+    Default: 0.0
+
+    Note: Keep between 0...1 to maintain -1...1 output bounding
+  example: []
+  syntax:
+    content: public void SetFractalWeightedStrength(float weightedStrength)
+    parameters:
+    - id: weightedStrength
+      type: System.Single
+    content.vb: Public Sub SetFractalWeightedStrength(weightedStrength As Single)
+  overload: AssetKits.ParticleImage.Noise.SetFractalWeightedStrength*
+  nameWithType.vb: Noise.SetFractalWeightedStrength(Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.SetFractalWeightedStrength(Single)
+  name.vb: SetFractalWeightedStrength(Single)
+- uid: AssetKits.ParticleImage.Noise.SetFractalPingPongStrength(System.Single)
+  commentId: M:AssetKits.ParticleImage.Noise.SetFractalPingPongStrength(System.Single)
+  id: SetFractalPingPongStrength(System.Single)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetFractalPingPongStrength(float)
+  nameWithType: Noise.SetFractalPingPongStrength(float)
+  fullName: AssetKits.ParticleImage.Noise.SetFractalPingPongStrength(float)
+  type: Method
+  source:
+    id: SetFractalPingPongStrength
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 230
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets strength of the fractal ping pong effect
+  remarks: 'Default: 2.0'
+  example: []
+  syntax:
+    content: public void SetFractalPingPongStrength(float pingPongStrength)
+    parameters:
+    - id: pingPongStrength
+      type: System.Single
+    content.vb: Public Sub SetFractalPingPongStrength(pingPongStrength As Single)
+  overload: AssetKits.ParticleImage.Noise.SetFractalPingPongStrength*
+  nameWithType.vb: Noise.SetFractalPingPongStrength(Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.SetFractalPingPongStrength(Single)
+  name.vb: SetFractalPingPongStrength(Single)
+- uid: AssetKits.ParticleImage.Noise.SetCellularDistanceFunction(AssetKits.ParticleImage.Noise.CellularDistanceFunction)
+  commentId: M:AssetKits.ParticleImage.Noise.SetCellularDistanceFunction(AssetKits.ParticleImage.Noise.CellularDistanceFunction)
+  id: SetCellularDistanceFunction(AssetKits.ParticleImage.Noise.CellularDistanceFunction)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetCellularDistanceFunction(CellularDistanceFunction)
+  nameWithType: Noise.SetCellularDistanceFunction(Noise.CellularDistanceFunction)
+  fullName: AssetKits.ParticleImage.Noise.SetCellularDistanceFunction(AssetKits.ParticleImage.Noise.CellularDistanceFunction)
+  type: Method
+  source:
+    id: SetCellularDistanceFunction
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 239
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets distance function used in cellular noise calculations
+  remarks: 'Default: Distance'
+  example: []
+  syntax:
+    content: public void SetCellularDistanceFunction(Noise.CellularDistanceFunction cellularDistanceFunction)
+    parameters:
+    - id: cellularDistanceFunction
+      type: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+    content.vb: Public Sub SetCellularDistanceFunction(cellularDistanceFunction As Noise.CellularDistanceFunction)
+  overload: AssetKits.ParticleImage.Noise.SetCellularDistanceFunction*
+- uid: AssetKits.ParticleImage.Noise.SetCellularReturnType(AssetKits.ParticleImage.Noise.CellularReturnType)
+  commentId: M:AssetKits.ParticleImage.Noise.SetCellularReturnType(AssetKits.ParticleImage.Noise.CellularReturnType)
+  id: SetCellularReturnType(AssetKits.ParticleImage.Noise.CellularReturnType)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetCellularReturnType(CellularReturnType)
+  nameWithType: Noise.SetCellularReturnType(Noise.CellularReturnType)
+  fullName: AssetKits.ParticleImage.Noise.SetCellularReturnType(AssetKits.ParticleImage.Noise.CellularReturnType)
+  type: Method
+  source:
+    id: SetCellularReturnType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 247
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets return type from cellular noise calculations
+  remarks: 'Default: EuclideanSq'
+  example: []
+  syntax:
+    content: public void SetCellularReturnType(Noise.CellularReturnType cellularReturnType)
+    parameters:
+    - id: cellularReturnType
+      type: AssetKits.ParticleImage.Noise.CellularReturnType
+    content.vb: Public Sub SetCellularReturnType(cellularReturnType As Noise.CellularReturnType)
+  overload: AssetKits.ParticleImage.Noise.SetCellularReturnType*
+- uid: AssetKits.ParticleImage.Noise.SetCellularJitter(System.Single)
+  commentId: M:AssetKits.ParticleImage.Noise.SetCellularJitter(System.Single)
+  id: SetCellularJitter(System.Single)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetCellularJitter(float)
+  nameWithType: Noise.SetCellularJitter(float)
+  fullName: AssetKits.ParticleImage.Noise.SetCellularJitter(float)
+  type: Method
+  source:
+    id: SetCellularJitter
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 256
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets the maximum distance a cellular point can move from it's grid position
+  remarks: >-
+    Default: 1.0
+
+    Note: Setting this higher than 1 will cause artifacts
+  example: []
+  syntax:
+    content: public void SetCellularJitter(float cellularJitter)
+    parameters:
+    - id: cellularJitter
+      type: System.Single
+    content.vb: Public Sub SetCellularJitter(cellularJitter As Single)
+  overload: AssetKits.ParticleImage.Noise.SetCellularJitter*
+  nameWithType.vb: Noise.SetCellularJitter(Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.SetCellularJitter(Single)
+  name.vb: SetCellularJitter(Single)
+- uid: AssetKits.ParticleImage.Noise.SetDomainWarpType(AssetKits.ParticleImage.Noise.DomainWarpType)
+  commentId: M:AssetKits.ParticleImage.Noise.SetDomainWarpType(AssetKits.ParticleImage.Noise.DomainWarpType)
+  id: SetDomainWarpType(AssetKits.ParticleImage.Noise.DomainWarpType)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetDomainWarpType(DomainWarpType)
+  nameWithType: Noise.SetDomainWarpType(Noise.DomainWarpType)
+  fullName: AssetKits.ParticleImage.Noise.SetDomainWarpType(AssetKits.ParticleImage.Noise.DomainWarpType)
+  type: Method
+  source:
+    id: SetDomainWarpType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 265
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets the warp algorithm when using DomainWarp(...)
+  remarks: 'Default: OpenSimplex2'
+  example: []
+  syntax:
+    content: public void SetDomainWarpType(Noise.DomainWarpType domainWarpType)
+    parameters:
+    - id: domainWarpType
+      type: AssetKits.ParticleImage.Noise.DomainWarpType
+    content.vb: Public Sub SetDomainWarpType(domainWarpType As Noise.DomainWarpType)
+  overload: AssetKits.ParticleImage.Noise.SetDomainWarpType*
+- uid: AssetKits.ParticleImage.Noise.SetDomainWarpAmp(System.Single)
+  commentId: M:AssetKits.ParticleImage.Noise.SetDomainWarpAmp(System.Single)
+  id: SetDomainWarpAmp(System.Single)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: SetDomainWarpAmp(float)
+  nameWithType: Noise.SetDomainWarpAmp(float)
+  fullName: AssetKits.ParticleImage.Noise.SetDomainWarpAmp(float)
+  type: Method
+  source:
+    id: SetDomainWarpAmp
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 278
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: Sets the maximum warp distance from original position when using DomainWarp(...)
+  remarks: 'Default: 1.0'
+  example: []
+  syntax:
+    content: public void SetDomainWarpAmp(float domainWarpAmp)
+    parameters:
+    - id: domainWarpAmp
+      type: System.Single
+    content.vb: Public Sub SetDomainWarpAmp(domainWarpAmp As Single)
+  overload: AssetKits.ParticleImage.Noise.SetDomainWarpAmp*
+  nameWithType.vb: Noise.SetDomainWarpAmp(Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.SetDomainWarpAmp(Single)
+  name.vb: SetDomainWarpAmp(Single)
+- uid: AssetKits.ParticleImage.Noise.GetNoise(System.Single,System.Single)
+  commentId: M:AssetKits.ParticleImage.Noise.GetNoise(System.Single,System.Single)
+  id: GetNoise(System.Single,System.Single)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: GetNoise(float, float)
+  nameWithType: Noise.GetNoise(float, float)
+  fullName: AssetKits.ParticleImage.Noise.GetNoise(float, float)
+  type: Method
+  source:
+    id: GetNoise
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 287
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: 2D noise at given position using current settings
+  example: []
+  syntax:
+    content: public float GetNoise(float x, float y)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    return:
+      type: System.Single
+      description: Noise output bounded between -1...1
+    content.vb: Public Function GetNoise(x As Single, y As Single) As Single
+  overload: AssetKits.ParticleImage.Noise.GetNoise*
+  nameWithType.vb: Noise.GetNoise(Single, Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.GetNoise(Single, Single)
+  name.vb: GetNoise(Single, Single)
+- uid: AssetKits.ParticleImage.Noise.GetNoise(System.Single,System.Single,System.Single)
+  commentId: M:AssetKits.ParticleImage.Noise.GetNoise(System.Single,System.Single,System.Single)
+  id: GetNoise(System.Single,System.Single,System.Single)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: GetNoise(float, float, float)
+  nameWithType: Noise.GetNoise(float, float, float)
+  fullName: AssetKits.ParticleImage.Noise.GetNoise(float, float, float)
+  type: Method
+  source:
+    id: GetNoise
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 311
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: 3D noise at given position using current settings
+  example: []
+  syntax:
+    content: public float GetNoise(float x, float y, float z)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    return:
+      type: System.Single
+      description: Noise output bounded between -1...1
+    content.vb: Public Function GetNoise(x As Single, y As Single, z As Single) As Single
+  overload: AssetKits.ParticleImage.Noise.GetNoise*
+  nameWithType.vb: Noise.GetNoise(Single, Single, Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.GetNoise(Single, Single, Single)
+  name.vb: GetNoise(Single, Single, Single)
+- uid: AssetKits.ParticleImage.Noise.DomainWarp(System.Single@,System.Single@)
+  commentId: M:AssetKits.ParticleImage.Noise.DomainWarp(System.Single@,System.Single@)
+  id: DomainWarp(System.Single@,System.Single@)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: DomainWarp(ref float, ref float)
+  nameWithType: Noise.DomainWarp(ref float, ref float)
+  fullName: AssetKits.ParticleImage.Noise.DomainWarp(ref float, ref float)
+  type: Method
+  source:
+    id: DomainWarp
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 338
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: 2D warps the input position using current domain warp settings
+  example:
+  - >-
+    Example usage with GetNoise
+
+    <pre><code class="lang-csharp">DomainWarp(ref x, ref y)
+        noise = GetNoise(x, y)</code></pre>
+  syntax:
+    content: public void DomainWarp(ref float x, ref float y)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    content.vb: Public Sub DomainWarp(x As Single, y As Single)
+  overload: AssetKits.ParticleImage.Noise.DomainWarp*
+  nameWithType.vb: Noise.DomainWarp(Single, Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.DomainWarp(Single, Single)
+  name.vb: DomainWarp(Single, Single)
+- uid: AssetKits.ParticleImage.Noise.DomainWarp(System.Single@,System.Single@,System.Single@)
+  commentId: M:AssetKits.ParticleImage.Noise.DomainWarp(System.Single@,System.Single@,System.Single@)
+  id: DomainWarp(System.Single@,System.Single@,System.Single@)
+  parent: AssetKits.ParticleImage.Noise
+  langs:
+  - csharp
+  - vb
+  name: DomainWarp(ref float, ref float, ref float)
+  nameWithType: Noise.DomainWarp(ref float, ref float, ref float)
+  fullName: AssetKits.ParticleImage.Noise.DomainWarp(ref float, ref float, ref float)
+  type: Method
+  source:
+    id: DomainWarp
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\Utility\Noise.cs
+    startLine: 363
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage
+  summary: 3D warps the input position using current domain warp settings
+  example:
+  - >-
+    Example usage with GetNoise
+
+    <pre><code class="lang-csharp">DomainWarp(ref x, ref y, ref z)
+        noise = GetNoise(x, y, z)</code></pre>
+  syntax:
+    content: public void DomainWarp(ref float x, ref float y, ref float z)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    content.vb: Public Sub DomainWarp(x As Single, y As Single, z As Single)
+  overload: AssetKits.ParticleImage.Noise.DomainWarp*
+  nameWithType.vb: Noise.DomainWarp(Single, Single, Single)
+  fullName.vb: AssetKits.ParticleImage.Noise.DomainWarp(Single, Single, Single)
+  name.vb: DomainWarp(Single, Single, Single)
+references:
+- uid: AssetKits.ParticleImage
+  commentId: N:AssetKits.ParticleImage
+  href: AssetKits.html
+  name: AssetKits.ParticleImage
+  nameWithType: AssetKits.ParticleImage
+  fullName: AssetKits.ParticleImage
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AssetKits.ParticleImage.Noise.#ctor*
+  commentId: Overload:AssetKits.ParticleImage.Noise.#ctor
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise__ctor_System_Int32_
+  name: Noise
+  nameWithType: Noise.Noise
+  fullName: AssetKits.ParticleImage.Noise.Noise
+  nameWithType.vb: Noise.New
+  fullName.vb: AssetKits.ParticleImage.Noise.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AssetKits.ParticleImage.Noise.SetSeed*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetSeed
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetSeed_System_Int32_
+  name: SetSeed
+  nameWithType: Noise.SetSeed
+  fullName: AssetKits.ParticleImage.Noise.SetSeed
+- uid: AssetKits.ParticleImage.Noise.SetFrequency*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetFrequency
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetFrequency_System_Single_
+  name: SetFrequency
+  nameWithType: Noise.SetFrequency
+  fullName: AssetKits.ParticleImage.Noise.SetFrequency
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: AssetKits.ParticleImage.Noise.SetNoiseType*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetNoiseType
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetNoiseType_AssetKits_ParticleImage_Noise_NoiseType_
+  name: SetNoiseType
+  nameWithType: Noise.SetNoiseType
+  fullName: AssetKits.ParticleImage.Noise.SetNoiseType
+- uid: AssetKits.ParticleImage.Noise.NoiseType
+  commentId: T:AssetKits.ParticleImage.Noise.NoiseType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.NoiseType
+  nameWithType: Noise.NoiseType
+  fullName: AssetKits.ParticleImage.Noise.NoiseType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.NoiseType
+    name: NoiseType
+    href: AssetKits.ParticleImage.Noise.NoiseType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.NoiseType
+    name: NoiseType
+    href: AssetKits.ParticleImage.Noise.NoiseType.html
+- uid: AssetKits.ParticleImage.Noise.SetRotationType3D*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetRotationType3D
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetRotationType3D_AssetKits_ParticleImage_Noise_RotationType3D_
+  name: SetRotationType3D
+  nameWithType: Noise.SetRotationType3D
+  fullName: AssetKits.ParticleImage.Noise.SetRotationType3D
+- uid: AssetKits.ParticleImage.Noise.RotationType3D
+  commentId: T:AssetKits.ParticleImage.Noise.RotationType3D
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.RotationType3D
+  nameWithType: Noise.RotationType3D
+  fullName: AssetKits.ParticleImage.Noise.RotationType3D
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.RotationType3D
+    name: RotationType3D
+    href: AssetKits.ParticleImage.Noise.RotationType3D.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.RotationType3D
+    name: RotationType3D
+    href: AssetKits.ParticleImage.Noise.RotationType3D.html
+- uid: AssetKits.ParticleImage.Noise.SetFractalType*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetFractalType
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetFractalType_AssetKits_ParticleImage_Noise_FractalType_
+  name: SetFractalType
+  nameWithType: Noise.SetFractalType
+  fullName: AssetKits.ParticleImage.Noise.SetFractalType
+- uid: AssetKits.ParticleImage.Noise.FractalType
+  commentId: T:AssetKits.ParticleImage.Noise.FractalType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.FractalType
+  nameWithType: Noise.FractalType
+  fullName: AssetKits.ParticleImage.Noise.FractalType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.FractalType
+    name: FractalType
+    href: AssetKits.ParticleImage.Noise.FractalType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.FractalType
+    name: FractalType
+    href: AssetKits.ParticleImage.Noise.FractalType.html
+- uid: AssetKits.ParticleImage.Noise.SetFractalOctaves*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetFractalOctaves
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetFractalOctaves_System_Int32_
+  name: SetFractalOctaves
+  nameWithType: Noise.SetFractalOctaves
+  fullName: AssetKits.ParticleImage.Noise.SetFractalOctaves
+- uid: AssetKits.ParticleImage.Noise.SetFractalLacunarity*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetFractalLacunarity
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetFractalLacunarity_System_Single_
+  name: SetFractalLacunarity
+  nameWithType: Noise.SetFractalLacunarity
+  fullName: AssetKits.ParticleImage.Noise.SetFractalLacunarity
+- uid: AssetKits.ParticleImage.Noise.SetFractalGain*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetFractalGain
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetFractalGain_System_Single_
+  name: SetFractalGain
+  nameWithType: Noise.SetFractalGain
+  fullName: AssetKits.ParticleImage.Noise.SetFractalGain
+- uid: AssetKits.ParticleImage.Noise.SetFractalWeightedStrength*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetFractalWeightedStrength
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetFractalWeightedStrength_System_Single_
+  name: SetFractalWeightedStrength
+  nameWithType: Noise.SetFractalWeightedStrength
+  fullName: AssetKits.ParticleImage.Noise.SetFractalWeightedStrength
+- uid: AssetKits.ParticleImage.Noise.SetFractalPingPongStrength*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetFractalPingPongStrength
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetFractalPingPongStrength_System_Single_
+  name: SetFractalPingPongStrength
+  nameWithType: Noise.SetFractalPingPongStrength
+  fullName: AssetKits.ParticleImage.Noise.SetFractalPingPongStrength
+- uid: AssetKits.ParticleImage.Noise.SetCellularDistanceFunction*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetCellularDistanceFunction
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetCellularDistanceFunction_AssetKits_ParticleImage_Noise_CellularDistanceFunction_
+  name: SetCellularDistanceFunction
+  nameWithType: Noise.SetCellularDistanceFunction
+  fullName: AssetKits.ParticleImage.Noise.SetCellularDistanceFunction
+- uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  commentId: T:AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.CellularDistanceFunction
+  nameWithType: Noise.CellularDistanceFunction
+  fullName: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+    name: CellularDistanceFunction
+    href: AssetKits.ParticleImage.Noise.CellularDistanceFunction.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularDistanceFunction
+    name: CellularDistanceFunction
+    href: AssetKits.ParticleImage.Noise.CellularDistanceFunction.html
+- uid: AssetKits.ParticleImage.Noise.SetCellularReturnType*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetCellularReturnType
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetCellularReturnType_AssetKits_ParticleImage_Noise_CellularReturnType_
+  name: SetCellularReturnType
+  nameWithType: Noise.SetCellularReturnType
+  fullName: AssetKits.ParticleImage.Noise.SetCellularReturnType
+- uid: AssetKits.ParticleImage.Noise.CellularReturnType
+  commentId: T:AssetKits.ParticleImage.Noise.CellularReturnType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.CellularReturnType
+  nameWithType: Noise.CellularReturnType
+  fullName: AssetKits.ParticleImage.Noise.CellularReturnType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularReturnType
+    name: CellularReturnType
+    href: AssetKits.ParticleImage.Noise.CellularReturnType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.CellularReturnType
+    name: CellularReturnType
+    href: AssetKits.ParticleImage.Noise.CellularReturnType.html
+- uid: AssetKits.ParticleImage.Noise.SetCellularJitter*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetCellularJitter
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetCellularJitter_System_Single_
+  name: SetCellularJitter
+  nameWithType: Noise.SetCellularJitter
+  fullName: AssetKits.ParticleImage.Noise.SetCellularJitter
+- uid: AssetKits.ParticleImage.Noise.SetDomainWarpType*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetDomainWarpType
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetDomainWarpType_AssetKits_ParticleImage_Noise_DomainWarpType_
+  name: SetDomainWarpType
+  nameWithType: Noise.SetDomainWarpType
+  fullName: AssetKits.ParticleImage.Noise.SetDomainWarpType
+- uid: AssetKits.ParticleImage.Noise.DomainWarpType
+  commentId: T:AssetKits.ParticleImage.Noise.DomainWarpType
+  parent: AssetKits.ParticleImage
+  href: AssetKits.ParticleImage.Noise.html
+  name: Noise.DomainWarpType
+  nameWithType: Noise.DomainWarpType
+  fullName: AssetKits.ParticleImage.Noise.DomainWarpType
+  spec.csharp:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.DomainWarpType
+    name: DomainWarpType
+    href: AssetKits.ParticleImage.Noise.DomainWarpType.html
+  spec.vb:
+  - uid: AssetKits.ParticleImage.Noise
+    name: Noise
+    href: AssetKits.ParticleImage.Noise.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Noise.DomainWarpType
+    name: DomainWarpType
+    href: AssetKits.ParticleImage.Noise.DomainWarpType.html
+- uid: AssetKits.ParticleImage.Noise.SetDomainWarpAmp*
+  commentId: Overload:AssetKits.ParticleImage.Noise.SetDomainWarpAmp
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_SetDomainWarpAmp_System_Single_
+  name: SetDomainWarpAmp
+  nameWithType: Noise.SetDomainWarpAmp
+  fullName: AssetKits.ParticleImage.Noise.SetDomainWarpAmp
+- uid: AssetKits.ParticleImage.Noise.GetNoise*
+  commentId: Overload:AssetKits.ParticleImage.Noise.GetNoise
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_GetNoise_System_Single_System_Single_
+  name: GetNoise
+  nameWithType: Noise.GetNoise
+  fullName: AssetKits.ParticleImage.Noise.GetNoise
+- uid: AssetKits.ParticleImage.Noise.DomainWarp*
+  commentId: Overload:AssetKits.ParticleImage.Noise.DomainWarp
+  href: AssetKits.ParticleImage.Noise.html#AssetKits_ParticleImage_Noise_DomainWarp_System_Single__System_Single__
+  name: DomainWarp
+  nameWithType: Noise.DomainWarp
+  fullName: AssetKits.ParticleImage.Noise.DomainWarp

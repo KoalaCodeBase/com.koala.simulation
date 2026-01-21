@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.SimulationManager
+  commentId: T:Koala.Simulation.SimulationManager
+  id: SimulationManager
+  parent: Koala.Simulation
+  children:
+  - Koala.Simulation.SimulationManager.Singleton
+  langs:
+  - csharp
+  - vb
+  name: SimulationManager
+  nameWithType: SimulationManager
+  fullName: Koala.Simulation.SimulationManager
+  type: Class
+  source:
+    remote:
+      path: Runtime/SimulationManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: SimulationManager
+    path: ../Packages/com.koala.simulation/Runtime/SimulationManager.cs
+    startLine: 9
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation
+  syntax:
+    content: >-
+      [AddComponentMenu("Simulation/Simulation Manager")]
+
+      [Icon("Packages/com.koala.simulation/Editor/Icons/koala_important.png")]
+
+      [DisallowMultipleComponent]
+
+      [DefaultExecutionOrder(-100)]
+
+      public class SimulationManager : MonoBehaviour
+    content.vb: >-
+      <AddComponentMenu("Simulation/Simulation Manager")>
+
+      <Icon("Packages/com.koala.simulation/Editor/Icons/koala_important.png")>
+
+      <DisallowMultipleComponent>
+
+      <DefaultExecutionOrder(-100)>
+
+      Public Class SimulationManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Simulation/Simulation Manager
+  - type: UnityEngine.IconAttribute
+    ctor: UnityEngine.IconAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Packages/com.koala.simulation/Editor/Icons/koala_important.png
+  - type: UnityEngine.DisallowMultipleComponent
+    ctor: UnityEngine.DisallowMultipleComponent.#ctor
+    arguments: []
+  - type: UnityEngine.DefaultExecutionOrder
+    ctor: UnityEngine.DefaultExecutionOrder.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: -100
+- uid: Koala.Simulation.SimulationManager.Singleton
+  commentId: P:Koala.Simulation.SimulationManager.Singleton
+  id: Singleton
+  parent: Koala.Simulation.SimulationManager
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: SimulationManager.Singleton
+  fullName: Koala.Simulation.SimulationManager.Singleton
+  type: Property
+  source:
+    remote:
+      path: Runtime/SimulationManager.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Singleton
+    path: ../Packages/com.koala.simulation/Runtime/SimulationManager.cs
+    startLine: 15
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation
+  syntax:
+    content: public static SimulationManager Singleton { get; }
+    parameters: []
+    return:
+      type: Koala.Simulation.SimulationManager
+    content.vb: Public Shared Property Singleton As SimulationManager
+  overload: Koala.Simulation.SimulationManager.Singleton*
+references:
+- uid: Koala.Simulation
+  commentId: N:Koala.Simulation
+  href: Koala.html
+  name: Koala.Simulation
+  nameWithType: Koala.Simulation
+  fullName: Koala.Simulation
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.SimulationManager.Singleton*
+  commentId: Overload:Koala.Simulation.SimulationManager.Singleton
+  href: Koala.Simulation.SimulationManager.html#Koala_Simulation_SimulationManager_Singleton
+  name: Singleton
+  nameWithType: SimulationManager.Singleton
+  fullName: Koala.Simulation.SimulationManager.Singleton
+- uid: Koala.Simulation.SimulationManager
+  commentId: T:Koala.Simulation.SimulationManager
+  parent: Koala.Simulation
+  href: Koala.Simulation.SimulationManager.html
+  name: SimulationManager
+  nameWithType: SimulationManager
+  fullName: Koala.Simulation.SimulationManager

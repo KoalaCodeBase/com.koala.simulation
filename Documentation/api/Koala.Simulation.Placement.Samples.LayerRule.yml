@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Placement.Samples.LayerRule
+  commentId: T:Koala.Simulation.Placement.Samples.LayerRule
+  id: LayerRule
+  parent: Koala.Simulation.Placement.Samples
+  children:
+  - Koala.Simulation.Placement.Samples.LayerRule.#ctor(UnityEngine.LayerMask)
+  - Koala.Simulation.Placement.Samples.LayerRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  langs:
+  - csharp
+  - vb
+  name: LayerRule
+  nameWithType: LayerRule
+  fullName: Koala.Simulation.Placement.Samples.LayerRule
+  type: Class
+  source:
+    remote:
+      path: Runtime/Placement/Samples/LayerRule.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: LayerRule
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/LayerRule.cs
+    startLine: 4
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  syntax:
+    content: 'public sealed class LayerRule : IPlacementRule'
+    content.vb: Public NotInheritable Class LayerRule Implements IPlacementRule
+  inheritance:
+  - System.Object
+  implements:
+  - Koala.Simulation.Placement.IPlacementRule
+- uid: Koala.Simulation.Placement.Samples.LayerRule.#ctor(UnityEngine.LayerMask)
+  commentId: M:Koala.Simulation.Placement.Samples.LayerRule.#ctor(UnityEngine.LayerMask)
+  id: '#ctor(UnityEngine.LayerMask)'
+  parent: Koala.Simulation.Placement.Samples.LayerRule
+  langs:
+  - csharp
+  - vb
+  name: LayerRule(LayerMask)
+  nameWithType: LayerRule.LayerRule(LayerMask)
+  fullName: Koala.Simulation.Placement.Samples.LayerRule.LayerRule(UnityEngine.LayerMask)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Placement/Samples/LayerRule.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: .ctor
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/LayerRule.cs
+    startLine: 8
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  syntax:
+    content: public LayerRule(LayerMask allowedLayers)
+    parameters:
+    - id: allowedLayers
+      type: UnityEngine.LayerMask
+    content.vb: Public Sub New(allowedLayers As LayerMask)
+  overload: Koala.Simulation.Placement.Samples.LayerRule.#ctor*
+  nameWithType.vb: LayerRule.New(LayerMask)
+  fullName.vb: Koala.Simulation.Placement.Samples.LayerRule.New(UnityEngine.LayerMask)
+  name.vb: New(LayerMask)
+- uid: Koala.Simulation.Placement.Samples.LayerRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  commentId: M:Koala.Simulation.Placement.Samples.LayerRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  id: Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  parent: Koala.Simulation.Placement.Samples.LayerRule
+  langs:
+  - csharp
+  - vb
+  name: Validate(RaycastHit, IPlaceable)
+  nameWithType: LayerRule.Validate(RaycastHit, IPlaceable)
+  fullName: Koala.Simulation.Placement.Samples.LayerRule.Validate(UnityEngine.RaycastHit, Koala.Simulation.Placement.IPlaceable)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Placement/Samples/LayerRule.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Validate
+    path: ../Packages/com.koala.simulation/Runtime/Placement/Samples/LayerRule.cs
+    startLine: 13
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Placement.Samples
+  summary: Validates whether a placeable object can be placed at the raycast hit location.
+  example: []
+  syntax:
+    content: public bool Validate(RaycastHit hit, IPlaceable placeable)
+    parameters:
+    - id: hit
+      type: UnityEngine.RaycastHit
+      description: The raycast hit providing surface data.
+    - id: placeable
+      type: Koala.Simulation.Placement.IPlaceable
+      description: The object being placed.
+    return:
+      type: System.Boolean
+      description: True if placement is valid, false otherwise.
+    content.vb: Public Function Validate(hit As RaycastHit, placeable As IPlaceable) As Boolean
+  overload: Koala.Simulation.Placement.Samples.LayerRule.Validate*
+  implements:
+  - Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+references:
+- uid: Koala.Simulation.Placement.Samples
+  commentId: N:Koala.Simulation.Placement.Samples
+  href: Koala.html
+  name: Koala.Simulation.Placement.Samples
+  nameWithType: Koala.Simulation.Placement.Samples
+  fullName: Koala.Simulation.Placement.Samples
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  - name: .
+  - uid: Koala.Simulation.Placement.Samples
+    name: Samples
+    href: Koala.Simulation.Placement.Samples.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  - name: .
+  - uid: Koala.Simulation.Placement.Samples
+    name: Samples
+    href: Koala.Simulation.Placement.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Koala.Simulation.Placement.IPlacementRule
+  commentId: T:Koala.Simulation.Placement.IPlacementRule
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.IPlacementRule.html
+  name: IPlacementRule
+  nameWithType: IPlacementRule
+  fullName: Koala.Simulation.Placement.IPlacementRule
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Placement
+  commentId: N:Koala.Simulation.Placement
+  href: Koala.html
+  name: Koala.Simulation.Placement
+  nameWithType: Koala.Simulation.Placement
+  fullName: Koala.Simulation.Placement
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Placement
+    name: Placement
+    href: Koala.Simulation.Placement.html
+- uid: Koala.Simulation.Placement.Samples.LayerRule.#ctor*
+  commentId: Overload:Koala.Simulation.Placement.Samples.LayerRule.#ctor
+  href: Koala.Simulation.Placement.Samples.LayerRule.html#Koala_Simulation_Placement_Samples_LayerRule__ctor_UnityEngine_LayerMask_
+  name: LayerRule
+  nameWithType: LayerRule.LayerRule
+  fullName: Koala.Simulation.Placement.Samples.LayerRule.LayerRule
+  nameWithType.vb: LayerRule.New
+  fullName.vb: Koala.Simulation.Placement.Samples.LayerRule.New
+  name.vb: New
+- uid: UnityEngine.LayerMask
+  commentId: T:UnityEngine.LayerMask
+  parent: UnityEngine
+  isExternal: true
+  name: LayerMask
+  nameWithType: LayerMask
+  fullName: UnityEngine.LayerMask
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Placement.Samples.LayerRule.Validate*
+  commentId: Overload:Koala.Simulation.Placement.Samples.LayerRule.Validate
+  href: Koala.Simulation.Placement.Samples.LayerRule.html#Koala_Simulation_Placement_Samples_LayerRule_Validate_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  name: Validate
+  nameWithType: LayerRule.Validate
+  fullName: Koala.Simulation.Placement.Samples.LayerRule.Validate
+- uid: Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  commentId: M:Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+  parent: Koala.Simulation.Placement.IPlacementRule
+  isExternal: true
+  href: Koala.Simulation.Placement.IPlacementRule.html#Koala_Simulation_Placement_IPlacementRule_Validate_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  name: Validate(RaycastHit, IPlaceable)
+  nameWithType: IPlacementRule.Validate(RaycastHit, IPlaceable)
+  fullName: Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit, Koala.Simulation.Placement.IPlaceable)
+  spec.csharp:
+  - uid: Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+    name: Validate
+    href: Koala.Simulation.Placement.IPlacementRule.html#Koala_Simulation_Placement_IPlacementRule_Validate_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  - name: (
+  - uid: UnityEngine.RaycastHit
+    name: RaycastHit
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Koala.Simulation.Placement.IPlaceable
+    name: IPlaceable
+    href: Koala.Simulation.Placement.IPlaceable.html
+  - name: )
+  spec.vb:
+  - uid: Koala.Simulation.Placement.IPlacementRule.Validate(UnityEngine.RaycastHit,Koala.Simulation.Placement.IPlaceable)
+    name: Validate
+    href: Koala.Simulation.Placement.IPlacementRule.html#Koala_Simulation_Placement_IPlacementRule_Validate_UnityEngine_RaycastHit_Koala_Simulation_Placement_IPlaceable_
+  - name: (
+  - uid: UnityEngine.RaycastHit
+    name: RaycastHit
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Koala.Simulation.Placement.IPlaceable
+    name: IPlaceable
+    href: Koala.Simulation.Placement.IPlaceable.html
+  - name: )
+- uid: UnityEngine.RaycastHit
+  commentId: T:UnityEngine.RaycastHit
+  parent: UnityEngine
+  isExternal: true
+  name: RaycastHit
+  nameWithType: RaycastHit
+  fullName: UnityEngine.RaycastHit
+- uid: Koala.Simulation.Placement.IPlaceable
+  commentId: T:Koala.Simulation.Placement.IPlaceable
+  parent: Koala.Simulation.Placement
+  href: Koala.Simulation.Placement.IPlaceable.html
+  name: IPlaceable
+  nameWithType: IPlaceable
+  fullName: Koala.Simulation.Placement.IPlaceable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

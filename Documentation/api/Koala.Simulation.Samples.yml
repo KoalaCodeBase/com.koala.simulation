@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Samples
+  commentId: N:Koala.Simulation.Samples
+  id: Koala.Simulation.Samples
+  children:
+  - Koala.Simulation.Samples.PlacementSample
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Samples
+  nameWithType: Koala.Simulation.Samples
+  fullName: Koala.Simulation.Samples
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Samples.PlacementSample
+  commentId: T:Koala.Simulation.Samples.PlacementSample
+  href: Koala.Simulation.Samples.PlacementSample.html
+  name: PlacementSample
+  nameWithType: PlacementSample
+  fullName: Koala.Simulation.Samples.PlacementSample

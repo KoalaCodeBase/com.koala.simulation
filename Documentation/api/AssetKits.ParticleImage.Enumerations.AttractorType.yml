@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssetKits.ParticleImage.Enumerations.AttractorType
+  commentId: T:AssetKits.ParticleImage.Enumerations.AttractorType
+  id: AttractorType
+  parent: AssetKits.ParticleImage.Enumerations
+  children:
+  - AssetKits.ParticleImage.Enumerations.AttractorType.Pivot
+  - AssetKits.ParticleImage.Enumerations.AttractorType.Surface
+  langs:
+  - csharp
+  - vb
+  name: AttractorType
+  nameWithType: AttractorType
+  fullName: AssetKits.ParticleImage.Enumerations.AttractorType
+  type: Enum
+  source:
+    id: AttractorType
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2937
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: public enum AttractorType
+    content.vb: Public Enum AttractorType
+- uid: AssetKits.ParticleImage.Enumerations.AttractorType.Pivot
+  commentId: F:AssetKits.ParticleImage.Enumerations.AttractorType.Pivot
+  id: Pivot
+  parent: AssetKits.ParticleImage.Enumerations.AttractorType
+  langs:
+  - csharp
+  - vb
+  name: Pivot
+  nameWithType: AttractorType.Pivot
+  fullName: AssetKits.ParticleImage.Enumerations.AttractorType.Pivot
+  type: Field
+  source:
+    id: Pivot
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2939
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Pivot = 0
+    return:
+      type: AssetKits.ParticleImage.Enumerations.AttractorType
+- uid: AssetKits.ParticleImage.Enumerations.AttractorType.Surface
+  commentId: F:AssetKits.ParticleImage.Enumerations.AttractorType.Surface
+  id: Surface
+  parent: AssetKits.ParticleImage.Enumerations.AttractorType
+  langs:
+  - csharp
+  - vb
+  name: Surface
+  nameWithType: AttractorType.Surface
+  fullName: AssetKits.ParticleImage.Enumerations.AttractorType.Surface
+  type: Field
+  source:
+    id: Surface
+    path: C:\UnityProjects\Figure Shop Simulator\Assets\06_Plugins\AssetKits\ParticleImage\Runtime\ParticleImage.cs
+    startLine: 2939
+  assemblies:
+  - ParticleImage
+  namespace: AssetKits.ParticleImage.Enumerations
+  syntax:
+    content: Surface = 1
+    return:
+      type: AssetKits.ParticleImage.Enumerations.AttractorType
+references:
+- uid: AssetKits.ParticleImage.Enumerations
+  commentId: N:AssetKits.ParticleImage.Enumerations
+  href: AssetKits.html
+  name: AssetKits.ParticleImage.Enumerations
+  nameWithType: AssetKits.ParticleImage.Enumerations
+  fullName: AssetKits.ParticleImage.Enumerations
+  spec.csharp:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+  spec.vb:
+  - uid: AssetKits
+    name: AssetKits
+    href: AssetKits.html
+  - name: .
+  - uid: AssetKits.ParticleImage
+    name: ParticleImage
+    href: AssetKits.ParticleImage.html
+  - name: .
+  - uid: AssetKits.ParticleImage.Enumerations
+    name: Enumerations
+    href: AssetKits.ParticleImage.Enumerations.html
+- uid: AssetKits.ParticleImage.Enumerations.AttractorType
+  commentId: T:AssetKits.ParticleImage.Enumerations.AttractorType
+  parent: AssetKits.ParticleImage.Enumerations
+  href: AssetKits.ParticleImage.Enumerations.AttractorType.html
+  name: AttractorType
+  nameWithType: AttractorType
+  fullName: AssetKits.ParticleImage.Enumerations.AttractorType

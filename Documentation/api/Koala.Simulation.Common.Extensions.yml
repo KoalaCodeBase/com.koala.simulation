@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Common.Extensions
+  commentId: T:Koala.Simulation.Common.Extensions
+  id: Extensions
+  parent: Koala.Simulation.Common
+  children:
+  - Koala.Simulation.Common.Extensions.ToFloatArray(UnityEngine.Quaternion)
+  - Koala.Simulation.Common.Extensions.ToFloatArray(UnityEngine.Vector3)
+  - Koala.Simulation.Common.Extensions.ToQuaternion(System.Single[])
+  - Koala.Simulation.Common.Extensions.ToVector3(System.Single[])
+  langs:
+  - csharp
+  - vb
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Koala.Simulation.Common.Extensions
+  type: Class
+  source:
+    remote:
+      path: Runtime/Common/Extensions.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: Extensions
+    path: ../Packages/com.koala.simulation/Runtime/Common/Extensions.cs
+    startLine: 4
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Common
+  syntax:
+    content: public static class Extensions
+    content.vb: Public Module Extensions
+  inheritance:
+  - System.Object
+- uid: Koala.Simulation.Common.Extensions.ToVector3(System.Single[])
+  commentId: M:Koala.Simulation.Common.Extensions.ToVector3(System.Single[])
+  id: ToVector3(System.Single[])
+  isExtensionMethod: true
+  parent: Koala.Simulation.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: ToVector3(float[])
+  nameWithType: Extensions.ToVector3(float[])
+  fullName: Koala.Simulation.Common.Extensions.ToVector3(float[])
+  type: Method
+  source:
+    remote:
+      path: Runtime/Common/Extensions.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ToVector3
+    path: ../Packages/com.koala.simulation/Runtime/Common/Extensions.cs
+    startLine: 7
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Common
+  syntax:
+    content: public static Vector3 ToVector3(this float[] arr)
+    parameters:
+    - id: arr
+      type: System.Single[]
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function ToVector3(arr As Single()) As Vector3
+  overload: Koala.Simulation.Common.Extensions.ToVector3*
+  nameWithType.vb: Extensions.ToVector3(Single())
+  fullName.vb: Koala.Simulation.Common.Extensions.ToVector3(Single())
+  name.vb: ToVector3(Single())
+- uid: Koala.Simulation.Common.Extensions.ToFloatArray(UnityEngine.Vector3)
+  commentId: M:Koala.Simulation.Common.Extensions.ToFloatArray(UnityEngine.Vector3)
+  id: ToFloatArray(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Koala.Simulation.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: ToFloatArray(Vector3)
+  nameWithType: Extensions.ToFloatArray(Vector3)
+  fullName: Koala.Simulation.Common.Extensions.ToFloatArray(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Common/Extensions.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ToFloatArray
+    path: ../Packages/com.koala.simulation/Runtime/Common/Extensions.cs
+    startLine: 14
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Common
+  syntax:
+    content: public static float[] ToFloatArray(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: System.Single[]
+    content.vb: Public Shared Function ToFloatArray(v As Vector3) As Single()
+  overload: Koala.Simulation.Common.Extensions.ToFloatArray*
+- uid: Koala.Simulation.Common.Extensions.ToQuaternion(System.Single[])
+  commentId: M:Koala.Simulation.Common.Extensions.ToQuaternion(System.Single[])
+  id: ToQuaternion(System.Single[])
+  isExtensionMethod: true
+  parent: Koala.Simulation.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: ToQuaternion(float[])
+  nameWithType: Extensions.ToQuaternion(float[])
+  fullName: Koala.Simulation.Common.Extensions.ToQuaternion(float[])
+  type: Method
+  source:
+    remote:
+      path: Runtime/Common/Extensions.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ToQuaternion
+    path: ../Packages/com.koala.simulation/Runtime/Common/Extensions.cs
+    startLine: 19
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Common
+  syntax:
+    content: public static Quaternion ToQuaternion(this float[] arr)
+    parameters:
+    - id: arr
+      type: System.Single[]
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public Shared Function ToQuaternion(arr As Single()) As Quaternion
+  overload: Koala.Simulation.Common.Extensions.ToQuaternion*
+  nameWithType.vb: Extensions.ToQuaternion(Single())
+  fullName.vb: Koala.Simulation.Common.Extensions.ToQuaternion(Single())
+  name.vb: ToQuaternion(Single())
+- uid: Koala.Simulation.Common.Extensions.ToFloatArray(UnityEngine.Quaternion)
+  commentId: M:Koala.Simulation.Common.Extensions.ToFloatArray(UnityEngine.Quaternion)
+  id: ToFloatArray(UnityEngine.Quaternion)
+  isExtensionMethod: true
+  parent: Koala.Simulation.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: ToFloatArray(Quaternion)
+  nameWithType: Extensions.ToFloatArray(Quaternion)
+  fullName: Koala.Simulation.Common.Extensions.ToFloatArray(UnityEngine.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Common/Extensions.cs
+      branch: main
+      repo: https://github.com/KoalaCodeBase/com.koala.simulation.git
+    id: ToFloatArray
+    path: ../Packages/com.koala.simulation/Runtime/Common/Extensions.cs
+    startLine: 26
+  assemblies:
+  - Koala.Simulation
+  namespace: Koala.Simulation.Common
+  syntax:
+    content: public static float[] ToFloatArray(this Quaternion q)
+    parameters:
+    - id: q
+      type: UnityEngine.Quaternion
+    return:
+      type: System.Single[]
+    content.vb: Public Shared Function ToFloatArray(q As Quaternion) As Single()
+  overload: Koala.Simulation.Common.Extensions.ToFloatArray*
+references:
+- uid: Koala.Simulation.Common
+  commentId: N:Koala.Simulation.Common
+  href: Koala.html
+  name: Koala.Simulation.Common
+  nameWithType: Koala.Simulation.Common
+  fullName: Koala.Simulation.Common
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Common
+    name: Common
+    href: Koala.Simulation.Common.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Common
+    name: Common
+    href: Koala.Simulation.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koala.Simulation.Common.Extensions.ToVector3*
+  commentId: Overload:Koala.Simulation.Common.Extensions.ToVector3
+  href: Koala.Simulation.Common.Extensions.html#Koala_Simulation_Common_Extensions_ToVector3_System_Single___
+  name: ToVector3
+  nameWithType: Extensions.ToVector3
+  fullName: Koala.Simulation.Common.Extensions.ToVector3
+- uid: System.Single[]
+  isExternal: true
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Koala.Simulation.Common.Extensions.ToFloatArray*
+  commentId: Overload:Koala.Simulation.Common.Extensions.ToFloatArray
+  href: Koala.Simulation.Common.Extensions.html#Koala_Simulation_Common_Extensions_ToFloatArray_UnityEngine_Vector3_
+  name: ToFloatArray
+  nameWithType: Extensions.ToFloatArray
+  fullName: Koala.Simulation.Common.Extensions.ToFloatArray
+- uid: Koala.Simulation.Common.Extensions.ToQuaternion*
+  commentId: Overload:Koala.Simulation.Common.Extensions.ToQuaternion
+  href: Koala.Simulation.Common.Extensions.html#Koala_Simulation_Common_Extensions_ToQuaternion_System_Single___
+  name: ToQuaternion
+  nameWithType: Extensions.ToQuaternion
+  fullName: Koala.Simulation.Common.Extensions.ToQuaternion
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion

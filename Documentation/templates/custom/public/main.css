@@ -1,0 +1,294 @@
+#constructors,
+#methods,
+#properties,
+#fields,
+#events {
+    font-weight: 700;
+    /* daha kalın */
+    font-size: 1.6em;
+    /* biraz daha büyük */
+    border-bottom: 1px solid #ddd;
+    /* alt çizgi eklensin */
+    padding-bottom: 4px;
+    margin-top: 2em;
+}
+
+body {
+    color: #455463;
+}
+
+.bg-body {
+    --bs-bg-opacity: 1;
+    background-color: #222c37 !important;
+}
+
+h2,
+.h2 {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+h3,
+.h3 {
+    font-size: 1rem;
+    font-weight: 600 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00CCCC;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #00CCCC;
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.btn {
+    --bs-btn-color: #ffffff;
+}
+
+a {
+    color: #767676;
+    text-decoration: underline;
+}
+
+.xref {
+    color: #b83c82 !important;
+    text-decoration: underline;
+}
+
+.link-body-emphasis {
+    color: #455463 !important;
+    font-weight: 500;
+    text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+
+/* Unity Docs style for API tables */
+.unity-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    font-size: 14px;
+    table-layout: fixed;
+    /* kolon genişlikleri sabit */
+}
+
+.unity-table th {
+    font-size: 1em !important;
+    padding: 5px 10px !important;
+    background: #e6e6e6 !important;
+    border: #e6e6e6 1px solid !important;
+    border-bottom: #e6e6e6 1px solid !important;
+    color: #455463 !important;
+}
+
+/* Unity-style API tables */
+.unity-table td {
+    padding: 5px 10px;
+    vertical-align: top;
+    overflow: hidden;
+    /* taşanı gizle */
+    text-overflow: ellipsis;
+    /* ... ekle */
+    white-space: nowrap;
+    /* tek satır */
+}
+
+/* Kolon genişlikleri: 20% / 40% / 40% */
+.unity-table th:nth-child(1),
+.unity-table td:nth-child(1) {
+    width: 20%;
+}
+
+.unity-table th:nth-child(2),
+.unity-table td:nth-child(2) {
+    width: 40%;
+}
+
+.unity-table th:nth-child(3),
+.unity-table td:nth-child(3) {
+    width: 40%;
+}
+
+/* Kodlar */
+.unity-table code {
+    background: transparent;
+    color: #455463;
+    font-weight: normal;
+}
+
+/* Zebra striping */
+.unity-table tbody tr:nth-child(odd) td {
+    background: #f8f8f8 !important;
+}
+
+.unity-table tbody tr:hover td {
+    background: inherit !important;
+    border-top: 1px solid #00CCCC !important;
+    border-bottom: 1px solid #00CCCC !important;
+}
+
+.unity-table tbody tr:hover td:first-child {
+    border-left: 1px solid #00CCCC !important;
+}
+
+.unity-table tbody tr:hover td:last-child {
+    border-right: 1px solid #00CCCC !important;
+}
+
+.unity-table span.xref {
+    text-decoration: none;
+    color: #b83c82;
+    font-family: Consolas, monospace;
+    cursor: text;
+}
+
+.toc .expand-stub:before {
+    color: #19e3b1;
+}
+
+/* Genel inline code */
+code {
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+}
+
+/* Kod blokları */
+pre code {
+    display: block;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 16px;
+    color: #111;
+    overflow-x: auto;
+}
+
+.hljs {
+    background-color: #2d2d2d;
+    color: #CCCCCC;
+}
+
+/* Syntax highlighting renkleri */
+.hljs-keyword {
+    color: #CCCCCC;
+    /* koyu mavi */
+    font-weight: bold;
+}
+
+.hljs-title {
+    color: #e07eb3;
+    /* kırmızımsı string */
+}
+
+.hljs-comment {
+    color: #777777;
+    /* yeşil comment */
+    font-style: italic;
+}
+
+.hljs-number {
+    color: #CCCCCC;
+}
+
+.hljs-built_in {
+    color: #e07eb3;
+}
+
+.hljs-string {
+    color: #777777;
+}
+
+/* Popup overlay */
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-box {
+    background: #fff;
+    color: #222;
+    padding: 20px 24px;
+    border-radius: 8px;
+    max-width: 800px;
+    max-height: 500px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* İçeride mini tablo gibi layout */
+.popup-content {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    row-gap: 12px;
+    column-gap: 16px;
+}
+
+.popup-content div.label {
+    font-weight: bold;
+    color: #455463;
+}
+
+.popup-content div.value {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.popup-content .description code {
+    background: #f3f3f3;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+}
+
+.popup-content .description span.xref {
+    color: #b83c82;
+    font-family: Consolas, monospace;
+    text-decoration: underline;
+    cursor: text;
+}
+
+.popup-content .description p {
+    margin: 0 0 0.5em 0;
+    /* sadece altta yarım satır boşluk bırak */
+}
+
+.popup-content .description pre {
+    margin: 0.5em 0;
+}
+
+.popup-content .description ul,
+.popup-content .description ol {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+}

@@ -1,0 +1,106 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  id: Koala.Simulation.Inventory
+  children:
+  - Koala.Simulation.Inventory.Container
+  - Koala.Simulation.Inventory.ContainerDTO
+  - Koala.Simulation.Inventory.IContainerFilter
+  - Koala.Simulation.Inventory.ITransferAnimation
+  - Koala.Simulation.Inventory.InventoryFactory
+  - Koala.Simulation.Inventory.InventorySaver
+  - Koala.Simulation.Inventory.Item
+  - Koala.Simulation.Inventory.PrefabRegistry
+  langs:
+  - csharp
+  - vb
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  type: Namespace
+  assemblies:
+  - Koala.Simulation
+references:
+- uid: Koala.Simulation.Inventory.IContainerFilter
+  commentId: T:Koala.Simulation.Inventory.IContainerFilter
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.IContainerFilter.html
+  name: IContainerFilter
+  nameWithType: IContainerFilter
+  fullName: Koala.Simulation.Inventory.IContainerFilter
+- uid: Koala.Simulation.Inventory.PrefabRegistry
+  commentId: T:Koala.Simulation.Inventory.PrefabRegistry
+  href: Koala.Simulation.Inventory.PrefabRegistry.html
+  name: PrefabRegistry
+  nameWithType: PrefabRegistry
+  fullName: Koala.Simulation.Inventory.PrefabRegistry
+- uid: Koala.Simulation.Inventory.Container
+  commentId: T:Koala.Simulation.Inventory.Container
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.Container.html
+  name: Container
+  nameWithType: Container
+  fullName: Koala.Simulation.Inventory.Container
+- uid: Koala.Simulation.Inventory.InventoryFactory
+  commentId: T:Koala.Simulation.Inventory.InventoryFactory
+  href: Koala.Simulation.Inventory.InventoryFactory.html
+  name: InventoryFactory
+  nameWithType: InventoryFactory
+  fullName: Koala.Simulation.Inventory.InventoryFactory
+- uid: Koala.Simulation.Inventory.ContainerDTO
+  commentId: T:Koala.Simulation.Inventory.ContainerDTO
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.ContainerDTO.html
+  name: ContainerDTO
+  nameWithType: ContainerDTO
+  fullName: Koala.Simulation.Inventory.ContainerDTO
+- uid: Koala.Simulation.Inventory.ITransferAnimation
+  commentId: T:Koala.Simulation.Inventory.ITransferAnimation
+  href: Koala.Simulation.Inventory.ITransferAnimation.html
+  name: ITransferAnimation
+  nameWithType: ITransferAnimation
+  fullName: Koala.Simulation.Inventory.ITransferAnimation
+- uid: Koala.Simulation.Inventory.InventorySaver
+  commentId: T:Koala.Simulation.Inventory.InventorySaver
+  href: Koala.Simulation.Inventory.InventorySaver.html
+  name: InventorySaver
+  nameWithType: InventorySaver
+  fullName: Koala.Simulation.Inventory.InventorySaver
+- uid: Koala.Simulation.Inventory.Item
+  commentId: T:Koala.Simulation.Inventory.Item
+  parent: Koala.Simulation.Inventory
+  href: Koala.Simulation.Inventory.Item.html
+  name: Item
+  nameWithType: Item
+  fullName: Koala.Simulation.Inventory.Item
+- uid: Koala.Simulation.Inventory
+  commentId: N:Koala.Simulation.Inventory
+  href: Koala.html
+  name: Koala.Simulation.Inventory
+  nameWithType: Koala.Simulation.Inventory
+  fullName: Koala.Simulation.Inventory
+  spec.csharp:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
+  spec.vb:
+  - uid: Koala
+    name: Koala
+    href: Koala.html
+  - name: .
+  - uid: Koala.Simulation
+    name: Simulation
+    href: Koala.Simulation.html
+  - name: .
+  - uid: Koala.Simulation.Inventory
+    name: Inventory
+    href: Koala.Simulation.Inventory.html
